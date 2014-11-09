@@ -22,7 +22,7 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'p4.scholarpaws.com',
+			'host'      => 'localhost',
 			'database'  => 'shoes',
 			'username'  => 'root',
 			'password'  => 'BDBpQgPk4',
