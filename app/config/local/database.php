@@ -17,15 +17,15 @@ return array(
 	| choice installed on your machine before you begin development.
 	|
 	*/
-
+//////THIS IS USED ON do REGARDLESS OF WHAT LECTURE SAYS
 	'connections' => array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
 			'database'  => 'shoes',
-			'username'  => 'rootBLABLABLA',
-			'password'  => '',
+			'username'  => 'root',
+			'password'  => 'BDBpQgPk4',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
