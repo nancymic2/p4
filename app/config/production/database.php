@@ -22,10 +22,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
+			'host'      => 'scholarpaws.com',
 			'database'  => 'shoes',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => 'BDBpQgPk4N',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
