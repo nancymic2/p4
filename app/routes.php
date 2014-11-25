@@ -61,16 +61,19 @@ Route::get('/resumesearch', function()
 
 Route::get('/welcome', function()
 {
-   echo '<h2>Welcome</h2>';    
-   echo '<a href="resumesearch">resume search</a> <br>';
+   echo '<h2>Welcome</h2>';  
+   echo '<h3>';  
+
    echo '<a href="resume">add a resume</a> <br>';
+      echo '<a href="resumesearch">find your saved resumes</a> <br>';
+         echo '<a href="applications">add a completed application</a> <br>';
    echo '<a href="completedapps">find completed applications</a> <br>';
    echo '<a href="savedJobs">add a job</a> <br>';
    echo '<a href="jobstoapply">get jobs you need to apply to</a> <br>';
-   echo '<a href="applications">add a completed application</a> <br>';
+
    echo '<a href="logout">log out</a> <br>';
     
-   
+      echo '</h3>'; 
 
     //echo $email;
     
@@ -234,22 +237,24 @@ Route::post('/savedJobs',
         'before' => 'csrf', 
         function() {
 
-            $postedJob = new PostedJob;
-            $postedJob->user()->associate(Auth::user());
+            $postedjob = new Postedjob;
+            $postedjob->user()->associate(Auth::user());
          
-            $postedJob->company   = Input::get('company');
-            $postedJob->role    = Input::get('role');
-            $postedJob->salary    = Input::get('salary');
-            $postedJob->applyby    = Input::get('applyby');
-            $postedJob->url    = Input::get('url');
+            $postedjob->company   = Input::get('company');
+            $postedjob->role    = Input::get('role');
+            $postedjob->salary    = Input::get('salary');
+            $postedjob->applyby    = Input::get('applyby');
+            $postedjob->url    = Input::get('url');
            
             # Try to add the resume 
             try {
-                $postedJob->save();
+                $postedjob->save();
             }
             # Fail
             catch (Exception $e) {
-                return Redirect::to('/savedJobs')->with('flash_message', 'resume addition failed; please try again.')->withInput();
+                return Redirect::to('/savedJobs')->with('flash_message', 'resume addition failed; please try 
+
+again.')->withInput();
             }
 
             # Log the user in
