@@ -61,7 +61,7 @@ Route::get('/resumesearch', function()
 
 Route::get('/welcome', function()
 {
-       
+   echo '<h2>Welcome</h2>';    
    echo '<a href="resumesearch">resume search</a> <br>';
    echo '<a href="resume">add a resume</a> <br>';
    echo '<a href="completedapps">find completed applications</a> <br>';
@@ -120,7 +120,7 @@ Route::post('/signup',
             # Log the user in
            Auth::login($user);
 
-            return Redirect::to('/resume')->with('flash_message', 'Welcome to CareerTrax!');
+            return Redirect::to('/welcome')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
@@ -209,7 +209,7 @@ Route::post('/resume',
             # Log the user in
            // Auth::login($user);
 
-           // return Redirect::to('/list')->with('flash_message', 'Welcome to Foobooks!');
+           return Redirect::to('/welcome')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
@@ -255,7 +255,7 @@ Route::post('/savedJobs',
             # Log the user in
            // Auth::login($user);
 
-           // return Redirect::to('/list')->with('flash_message', 'Welcome to Foobooks!');
+            return Redirect::to('/welcome')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
@@ -308,7 +308,7 @@ Route::post('/applications',
             # Log the user in
            // Auth::login($user);
 
-           // return Redirect::to('/list')->with('flash_message', 'Welcome to Foobooks!');
+           return Redirect::to('/welcome')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
