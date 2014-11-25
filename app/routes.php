@@ -234,7 +234,7 @@ Route::post('/savedJobs',
         'before' => 'csrf', 
         function() {
 
-            $postedjob = new Postedjob;
+            $postedjob = new PostedJob;
             $postedjob->user()->associate(Auth::user());
          
             $postedjob->company   = Input::get('company');
