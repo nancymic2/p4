@@ -21,6 +21,7 @@ Route::get('/jobstoapply', function()
    $jobs = Postedjob::where('user_id', '=', Auth::user()->id)->get();
   
    echo $jobs;
+   echo '<br>  <a href="welcome">back</a> <br>';
     //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
    
 
@@ -35,6 +36,7 @@ Route::get('/completedapps', function()
    $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
   
    echo $completedapps;
+   echo '<br>  <a href="welcome">back</a> <br>';
     //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
    
 
@@ -48,7 +50,26 @@ Route::get('/resumesearch', function()
    $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
   
    echo $resumes;
+
+   echo '<br>  <a href="welcome">back</a> <br>';
     //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
+   
+
+    //echo $email;
+    
+});
+
+Route::get('/welcome', function()
+{
+       
+   echo '<a href="resumesearch">resume search</a> <br>';
+   echo '<a href="resume">add a resume</a> <br>';
+   echo '<a href="completedapps">find completed applications</a> <br>';
+   echo '<a href="savedJobs">add a job</a> <br>';
+   echo '<a href="jobstoapply">get jobs you need to apply to</a> <br>';
+   echo '<a href="applications">add a completed application</a> <br>';
+   echo '<a href="logout">log out</a> <br>';
+    
    
 
     //echo $email;
