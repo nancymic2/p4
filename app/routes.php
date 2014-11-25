@@ -234,18 +234,18 @@ Route::post('/savedJobs',
         'before' => 'csrf', 
         function() {
 
-            $postedjob = new PostedJob;
-            $postedjob->user()->associate(Auth::user());
+            $postedJob = new PostedJob;
+            $postedJob->user()->associate(Auth::user());
          
-            $postedjob->company   = Input::get('company');
-            $postedjob->role    = Input::get('role');
-            $postedjob->salary    = Input::get('salary');
-            $postedjob->applyby    = Input::get('applyby');
-            $postedjob->url    = Input::get('url');
+            $postedJob->company   = Input::get('company');
+            $postedJob->role    = Input::get('role');
+            $postedJob->salary    = Input::get('salary');
+            $postedJob->applyby    = Input::get('applyby');
+            $postedJob->url    = Input::get('url');
            
             # Try to add the resume 
             try {
-                $postedjob->save();
+                $postedJob->save();
             }
             # Fail
             catch (Exception $e) {
