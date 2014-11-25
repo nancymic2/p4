@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="hmin.css">
 </head>
 <body>
-@yield ('signup2')
+@yield ('home')
 
 
 <!--/////////////////-->

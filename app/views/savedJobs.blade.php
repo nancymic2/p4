@@ -17,7 +17,7 @@ role<br>
 
 
 salary<br>
-    {{ Form::textarea('salary') }}<br><br>
+    {{ Form::text('salary') }}<br><br>
 
     Apply by (enter as yyyy-mm-dd)<br>
     {{ Form::text('applyby') }}<br><br>
