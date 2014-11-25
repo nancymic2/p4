@@ -34,7 +34,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
     public function postedJob() {
         # user has many possibel jobs
         # Define a one-to-many relationship.
-        return $this->hasMany('Postedjob');
+        return $this->hasMany('PostedJob');
     }
 
     public function resume() {
