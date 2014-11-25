@@ -54,7 +54,7 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'scholarpaws.com',
+			'host'      => 'p4.scholarpaws.com',
 			'database'  => 'shoes',
 			'username'  => 'root',
 			'password'  => 'BDBpQgPk4N',
