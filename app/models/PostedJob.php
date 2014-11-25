@@ -1,7 +1,7 @@
 <?php
 
 
-class Postedjob extends Eloquent
+class PostedJob extends Eloquent
 {
     public function user() {
         # job belongs to user
