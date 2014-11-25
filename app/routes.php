@@ -14,6 +14,293 @@
 //debug from susans notes
 
 # /app/routes.php
+
+Route::get('/jobstoapply', function()
+{
+     
+   $jobs = Postedjob::where('user_id', '=', Auth::user()->id)->get();
+  
+   echo $jobs;
+    //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
+   
+
+    //echo $email;
+    
+});
+
+
+Route::get('/completedapps', function()
+{
+     
+   $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
+  
+   echo $completedapps;
+    //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
+   
+
+    //echo $email;
+    
+});
+
+Route::get('/resumesearch', function()
+{
+     
+   $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
+  
+   echo $resumes;
+    //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
+   
+
+    //echo $email;
+    
+});
+
+Route::get('/signup',
+    array(
+        'before' => 'guest',
+        function() {
+            return View::make('signup');
+        }
+    )
+);
+
+Route::post('/signup', 
+    array(
+        'before' => 'csrf', 
+        function() {
+
+            $user = new User;
+
+            $user->first    = Input::get('first');
+
+            $user->last    = Input::get('last');
+            $user->email    = Input::get('email');
+            $user->password = Hash::make(Input::get('password'));
+//$user->save();
+
+
+           // # Try to add the user 
+            try {
+                $user->save();
+            }
+
+            # Fail
+            catch (Exception $e) {
+               // dont resend the email or pword since email is taken. flash not working
+
+                return Redirect::to('/signup')->with('flash_message', 'Sign up failed; please try again.')->withInput(Input::except('password', 'email')); 
+
+            }
+
+
+
+
+
+            # Log the user in
+           Auth::login($user);
+
+            return Redirect::to('/resume')->with('flash_message', 'Welcome to CareerTrax!');
+
+        }
+    )
+);
+
+
+
+
+Route::get('/login',
+    array(
+        'before' => 'guest',
+        function() {
+            return View::make('login');
+        }
+    )
+);
+
+
+
+
+Route::post('/login', 
+    array(
+        'before' => 'csrf', 
+        function() {
+
+            $credentials = Input::only('email', 'password');
+
+            if (Auth::attempt($credentials, $remember = true)) {
+                return Redirect::intended('/')->with('flash_message', 'Welcome Back!');
+            }
+            else {
+                return Redirect::to('/login')->with('flash_message', 'Log in failed; please try again.');
+            }
+
+            return Redirect::to('login');
+        }
+    )
+);
+
+
+
+Route::get('/logout', function() {
+
+    # Log out
+    Auth::logout();
+
+    # Send them to the homepage
+    return Redirect::to('/');
+
+});
+
+
+
+
+
+Route::get('/resume',
+    array(
+       // 'before' => 'guest',
+        function() {
+            return View::make('resume');
+        }
+    )
+);
+
+Route::post('/resume', 
+    array(
+        'before' => 'csrf', 
+        function() {
+
+            $resume = new Resume;
+            $resume->user()->associate(Auth::user());
+         
+            $resume->url   = Input::get('url');
+            $resume->name    = Input::get('name');
+            $resume->resumetext    = Input::get('resumetext');
+           
+            # Try to add the resume 
+            try {
+                $resume->save();
+            }
+            # Fail
+            catch (Exception $e) {
+                return Redirect::to('/resume')->with('flash_message', 'resume addition failed; please try again.')->withInput();
+            }
+
+            # Log the user in
+           // Auth::login($user);
+
+           // return Redirect::to('/list')->with('flash_message', 'Welcome to Foobooks!');
+
+        }
+    )
+);
+
+
+////////////////
+
+
+
+Route::get('/savedJobs',
+    array(
+       // 'before' => 'guest',
+        function() {
+            return View::make('savedJobs');
+        }
+    )
+);
+
+Route::post('/savedJobs', 
+    array(
+        'before' => 'csrf', 
+        function() {
+
+            $postedjob = new Postedjob;
+            $postedjob->user()->associate(Auth::user());
+         
+            $postedjob->company   = Input::get('company');
+            $postedjob->role    = Input::get('role');
+            $postedjob->salary    = Input::get('salary');
+            $postedjob->applyby    = Input::get('applyby');
+            $postedjob->url    = Input::get('url');
+           
+            # Try to add the resume 
+            try {
+                $postedjob->save();
+            }
+            # Fail
+            catch (Exception $e) {
+                return Redirect::to('/savedJobs')->with('flash_message', 'resume addition failed; please try again.')->withInput();
+            }
+
+            # Log the user in
+           // Auth::login($user);
+
+           // return Redirect::to('/list')->with('flash_message', 'Welcome to Foobooks!');
+
+        }
+    )
+);
+
+
+
+Route::get('/applications',
+    array(
+       // 'before' => 'guest',
+        function() {
+            return View::make('applications');
+        }
+    )
+);
+
+Route::post('/applications', 
+    array(
+        'before' => 'csrf', 
+        function() {
+
+             $application = new Application;
+             $application->user()->associate(Auth::user());
+         
+             $application->company   = Input::get('company');
+             $application->role    = Input::get('role');
+             $application->city    = Input::get('city');
+             $application->salary    = Input::get('salary');
+             $application->applyDate    = Input::get('applyDate');
+             $application->followupBy    = Input::get('followupBy');
+             $application->hiringMgr    = Input::get('hiringMgr');
+             $application->decision    = Input::get('decision');
+             $application->rating    = Input::get('rating');
+             $application->resumeUsed    = Input::get('resumeUsed');
+             $application->howapplied    = Input::get('howapplied');
+             $application->recnumber    = Input::get('recnumber');
+             $application->website   = Input::get('website');
+             $application->username    = Input::get('username');
+             $application->password    = Input::get('password');
+           
+            # Try to add the resume 
+            try {
+                 $application->save();
+            }
+            # Fail
+            catch (Exception $e) {
+                return Redirect::to('/applications')->with('flash_message', 'resume addition failed; please try again.')->withInput();
+            }
+
+            # Log the user in
+           // Auth::login($user);
+
+           // return Redirect::to('/list')->with('flash_message', 'Welcome to Foobooks!');
+
+        }
+    )
+);
+
+//////////////////////
+//////////////////////
+/////////////////////
+/* ////////////////////////OTHER STUFF FOR TESTING ETC ////////////////////////////// */
+
+
+
+
 Route::get('/debug', function() {
 
     echo '<pre>';
@@ -62,13 +349,111 @@ Route::get('/debug', function() {
 
 
 
+Route::get('/practice-creating', function() {
+
+	class Buyshoe extends Eloquent {
+
+	}
+
+    # Instantiate a new shoe to buy model class
+    $buyshoe = new Buyshoe();
+
+    # Set 
+    $buyshoe->brand = 'louis vuitton';
+    $buyshoe->model = 'heel bliss';
+    $buyshoe->color= 'black';
+    $buyshoe->pic = 'http://ecx.images-amazon.com/images/I/3107onLBNLL._SL150_.jpg';
+    $buyshoe->size = 9;
+
+    # This is where the Eloquent ORM magic happens
+    $buyshoe->save();
+
+    return 'A new shoe you wih to buy has been added! Check your database to see...';
+
+});
 
 
 
+Route::get('/practice-reading', function() {
+
+
+	class Users extends Eloquent {
+
+	}
+
+    # The all() method will fetch all the rows from a Model/table
+    $users = Users::all();
+
+    # Make sure we have results before trying to print them...
+    if($users->isEmpty() != TRUE) {
+
+        # Typically we'd pass $books to a View, but for quick and dirty demonstration, let's just output here...
+        foreach($users as $user) {
+            echo $user->first.'<br>';
+            echo $user->last.'<br>';
+            echo $user->email.'<br>';
+
+        }
+    }
+    else {
+        return 'No users found';
+    }
+
+});
+
+
+Route::get('/getemails', function() {
+
+
+    class Users extends Eloquent {
+
+    }
+
+    # The all() method will fetch all the rows from a Model/table
+    $users = Users::all();
+
+    # Make sure we have results before trying to print them...
+    if($users->isEmpty() != TRUE) {
+
+        # Typically we'd pass $books to a View, but for quick and dirty demonstration, let's just output here...
+        foreach($users as $user) {
+            //echo $user->first.'<br>';
+            //echo $user->last.'<br>';
+            echo $user->email.'<br>';
+
+        }
+    }
+    else {
+        return 'No users found';
+    }
+
+});
 
 
 
+Route::get('/practice-deleting', function() {
 
+    class Buyshoe extends Eloquent {
+
+    }
+
+    # First get a book to delete
+    $buyshoe = Buyshoe::where('brand', 'LIKE', '%louis%')->first();
+
+    # If we found the book, delete it
+    if($buyshoe) {
+
+        # Goodbye!
+        $buyshoe->delete();
+
+        return "Deletion complete; check the database to see if it worked...";
+
+    }
+    else {
+        return "Can't delete - shoe not found.";
+    }
+
+});
 
 
 
@@ -119,7 +504,7 @@ Route::get('/', function()
 
 //text generator
 
-Route::get('/lorem', function()
+/*Route::get('/lorem', function()
 {
 
 $num = Input::get('num');
@@ -206,3 +591,4 @@ $theword .= $numbs;
 return View::make('password')->with('theword', $theword);
 
 });
+*/

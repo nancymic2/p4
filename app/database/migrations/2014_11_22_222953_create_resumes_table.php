@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBuybagsTable extends Migration {
+class CreateResumesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,27 +12,23 @@ class CreateBuybagsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('buybags', function($table) {
+	Schema::create('resumes', function($table) {
 
 			//primary key and AI. add time
 			$table->increments('id');
 			$table->timestamps();
 
+			$table->integer('user_id')->unsigned();
+			$table->foreign('user_id')->references('id')->on('users');
+
 			//fields
 
-			$table->string('brand');
-			$table->string('model');
-			$table->string('color');
-			
-			$table->decimal('buyprice');
-			$table->string('pic');
-
-
-		});
-
-		
-	}
-
+			$table->string('url')->nullable();
+				$table->string('name');
+			$table->text('resumetext')->nullable();
+	
+});
+}
 	/**
 	 * Reverse the migrations.
 	 *
@@ -40,7 +36,7 @@ class CreateBuybagsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('buybags');
+	Schema::drop('resumes');
 	}
 
 }

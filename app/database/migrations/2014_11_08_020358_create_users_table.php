@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSellbagsTable extends Migration {
+class CreateUsersTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -11,21 +11,20 @@ class CreateSellbagsTable extends Migration {
 	 * @return void
 	 */
 	public function up()
-	{
-		Schema::create('sellbags', function($table) {
+		{
+		Schema::create('users', function($table) {
 
 			//primary key and AI. add time
 			$table->increments('id');
 			$table->timestamps();
 
 			//fields
+            $table->string('remember_token', 100);
+			$table->string('first');
+			$table->string('last');
+			$table->string('email')->unique();
+			$table->string('password');
 
-			$table->string('brand');
-			$table->string('model');
-			$table->string('color');
-			
-			$table->decimal('sellprice');
-			$table->string('pic');
 
 
 		});
@@ -40,7 +39,7 @@ class CreateSellbagsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('sellbags');
+		Schema::drop('users');
 	}
 
 }
