@@ -23,22 +23,25 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	protected $hidden = array('password', 'remember_token');
 
+   
 
-
-
-	
-
-    // Artist __has_many__ Album
-    public function buybags()
-    {
-        return $this->hasMany('Buybags');
+    public function application() {
+        # user has many Applications
+        # Define a one-to-many relationship.
+        return $this->hasMany('Application');
     }
 
-    public function sellbags()
-    {
-        return $this->hasMany('Sellbags');
+    public function postedJob() {
+        # user has many possibel jobs
+        # Define a one-to-many relationship.
+        return $this->hasMany('Postedjob');
     }
 
+    public function resume() {
+        # user has many possible resumes
+        # Define a one-to-many relationship.
+        return $this->hasMany('Resume');
+    }
 
 
 
