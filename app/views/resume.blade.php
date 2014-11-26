@@ -26,8 +26,8 @@ resume text<br>
 {{ Form::close() }}
 
 
-
-
+<?php
+ echo '<a href="welcome">Cancel</a> <br>';
 
 
 
