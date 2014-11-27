@@ -23,7 +23,7 @@
 <?php 
 
 echo '<a class="btn btn-success" href="signup">sign up</a> <br> <p>&nbsp;</p>';
-echo '<a class="btn btn-warning" href="login">log in</a> <br>';
+echo '<a class="btn btn-warning" href="login">log &nbsp;in</a> <br>';
 //echo '<a href="logout">log out</a> <br>';
 ?>
 
