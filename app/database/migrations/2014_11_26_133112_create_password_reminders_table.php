@@ -14,9 +14,13 @@ class CreatePasswordRemindersTable extends Migration {
 	{
 		Schema::create('password_reminders', function(Blueprint $table)
 		{
+			$table->increments('id');//
+			$table->timestamps();//
 			$table->string('email')->index();
 			$table->string('token')->index();
-			$table->timestamp('created_at');
+			
+			$table->integer('user_id')->unsigned();//
+			$table->foreign('user_id')->references('id')->on('users');//
 		});
 	}
 

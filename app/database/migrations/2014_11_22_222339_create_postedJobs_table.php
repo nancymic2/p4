@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostedJobsTable extends Migration {
+class CreatePostedjobsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreatePostedJobsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('postedJobs', function($table) {
+		Schema::create('postedjobs', function($table) {
 
 			//primary key and AI. add time
 			$table->increments('id');
@@ -40,7 +40,7 @@ class CreatePostedJobsTable extends Migration {
 	 */
 	public function down()
 	{
-	Schema::drop('postedJobs');
+	Schema::drop('postedjobs');
 	}
 
 }
