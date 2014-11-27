@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="hmin.css">
 </head>
 <body>
+	<div class="container">
 	<header>
 		<nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
@@ -69,6 +70,7 @@
   </div><!-- /.container-fluid -->
 </nav>
 </header>
+</div>
 @yield ('index')
 
 
