@@ -5,12 +5,14 @@
 @section ('index')
 
 <div class="container">
-<h3>welcome</h3>
-<h4>join career trax!</h4>
+	<div class="col-sm-6"
+<h2>Welcome</h2>
+<h3>Join CareerTrax! or log in</h3>
+<p>CareerTrax lets you keep track of your job appplications, jobs you plan to apply for, and your resumes</p>
    
+	<div class="col-sm-6"
 
-
-
+</div>
 
 
 
@@ -26,7 +28,7 @@ echo '<a class="btn btn-warning" href="login">log in</a> <br>';
 ?>
 
 
-
+</div>
 
 </div>
 
