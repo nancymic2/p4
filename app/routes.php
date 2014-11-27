@@ -137,12 +137,10 @@ Route::post('/signup',
             catch (Exception $e) {
                // dont resend the email or pword since email is taken. flash not working
 
-                return Redirect::to('/signup')->with('flash_message', 'Sign up failed; please try again.')->withInput(Input::except('password', 'email')); 
+                //return Redirect::to('/signup')->with('flash_message', 'Sign up failed; please try again.')->withInput(Input::except('password', 'email')); 
+                return Redirect::to('/password/reset')->with('flash_message', 'Sign up failed; please try again.')->withInput(Input::except('password', 'email')); 
 
             }
-
-
-
 
 
             # Log the user in
