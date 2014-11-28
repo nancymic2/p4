@@ -47,19 +47,26 @@ Route::get('/jobstoapply', function()
   
    //echo $jobs;
 # loop through the Collection and access just the data
-   foreach($jobs as $job) {
-      echo 'role: ';
+foreach($jobs as $job) {
+      echo '<b>role:</b> ';
     echo $job['role']."<br>";
-} 
 
-foreach($jobs as $job) {
-    echo 'salary: ';
-    echo $job['salary']."<br>";
-}   
-
-foreach($jobs as $job) {
-      echo 'company: ';
+        echo 'company: ';
     echo $job['company']."<br>";
+
+        echo 'salary: ';
+    echo $job['salary']."<br>";
+
+            echo 'job url: ';
+    //echo $job['url']."<br>";
+            echo '<a href="'.$job['url'].'">'. $job['url'].'</a><br>';
+
+            echo 'Apply by: ';
+    echo $job['applyby']."<br>";
+
+
+    echo '------------------------<br>';
+
 } 
 
 
