@@ -62,7 +62,7 @@ foreach($jobs as $job) {
 
             echo '<b>job url:</b> ';
     //echo $job['url']."<br>";
-            echo '<a href="'.$job['url'].'">'. $job['url'].'</a><br>';
+            echo '<a href="'.$job['url'].'" target="_blank">'. $job['url'].'</a><br>';
 
             echo '<b>Apply by:</b> ';
     echo $job['applyby']."<br>";
