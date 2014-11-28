@@ -44,10 +44,13 @@ Route::get('/jobstoapply', function()
 {
      
    $jobs = Postedjob::where('user_id', '=', Auth::user()->id)->get();
-  
+  echo '<div class="container">'; 
+  echo '<p>';
    //echo $jobs;
 # loop through the Collection and access just the data
 foreach($jobs as $job) {
+
+
       echo '<b>role:</b> ';
     echo $job['role']."<br>";
 
@@ -65,8 +68,9 @@ foreach($jobs as $job) {
     echo $job['applyby']."<br>";
 
 
-    echo '------------------------<br>';
-
+    echo '____________________<br>';
+echo '</p>';
+echo '</div>';
 } 
 
 
