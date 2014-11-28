@@ -11,7 +11,7 @@ company<br>
     {{ Form::text('company') }}<br><br>
 
 
-role<br>
+role (required)<br>
     {{ Form::text('role') }}<br><br>
 
 
@@ -22,7 +22,7 @@ salary<br>
     Apply by (enter as yyyy-mm-dd)<br>
     {{ Form::text('applyby') }}<br><br>
 
-    Job listing URL<br>
+    Job listing URL (required)<br>
     {{ Form::text('url') }}<br><br>
 
 

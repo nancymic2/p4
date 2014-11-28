@@ -1,6 +1,7 @@
 @if (Session::has('error'))
   {{ trans(Session::get('reason')) }}
 @endif
+
  
 {{ Form::open(array('route' => array('password.update', $token))) }}
  
@@ -18,3 +19,4 @@
   <p>{{ Form::submit('Submit') }}</p>
  
 {{ Form::close() }}
+
