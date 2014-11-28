@@ -45,12 +45,38 @@ Route::get('/jobstoapply', function()
      
    $jobs = Postedjob::where('user_id', '=', Auth::user()->id)->get();
   
-   echo $jobs;
+   //echo $jobs;
+# loop through the Collection and access just the data
+   foreach($jobs as $job) {
+      echo 'role: ';
+    echo $job['role']."<br>";
+} 
+
+foreach($jobs as $job) {
+    echo 'salary: ';
+    echo $job['salary']."<br>";
+}   
+
+foreach($jobs as $job) {
+      echo 'company: ';
+    echo $job['company']."<br>";
+} 
+
+
+
    echo '<br>  <a href="welcome">back</a> <br>';
     //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
    
 
     //echo $email;
+
+
+
+ //  $collection = Book::all();
+
+
+
+
     
 });
 
