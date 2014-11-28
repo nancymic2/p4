@@ -18,7 +18,12 @@
 	<link rel="stylesheet" href="hmin.css">
 </head>
 <body>
-	
+	<div class="container">
+<img style="float:left" src="train2.jpg"> <h1>CareerTrax</h1>
+</div>
+</div>
+	<div class="jumbotron">
+
 	<header class="navbar-inverse">
 		<div class="container">
 		<nav  role="navigation">
