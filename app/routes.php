@@ -51,17 +51,17 @@ foreach($jobs as $job) {
       echo '<b>role:</b> ';
     echo $job['role']."<br>";
 
-        echo 'company: ';
+        echo '<b>company:</b> ';
     echo $job['company']."<br>";
 
-        echo 'salary: ';
+        echo '<b>salary:</b> ';
     echo $job['salary']."<br>";
 
-            echo 'job url: ';
+            echo '<b>job url:</b> ';
     //echo $job['url']."<br>";
             echo '<a href="'.$job['url'].'">'. $job['url'].'</a><br>';
 
-            echo 'Apply by: ';
+            echo '<b>Apply by:</b> ';
     echo $job['applyby']."<br>";
 
 
