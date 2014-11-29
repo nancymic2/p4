@@ -150,6 +150,8 @@ echo '<script> var data = "<php echo $resume_id[$i]; ?>" </script>';
 echo '<a href="deleteresume.php?id=' .$deleteres .'">' .'DELETE</a>'; 
 
     echo '<br>';
+
+    echo '<p style="color:red; font-weight: bold">THIS IS PERMANENT</P>';
     echo '____________________<br>';
 
     /// $buyshoe->delete();
