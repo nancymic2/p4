@@ -121,10 +121,13 @@ Route::get('/resumesearch', function()
 # loop through the Collection and access just the data
 foreach($resumes as $resume) {
 $i++;
-   $resume_names[$i] = $resume->name;
+   $resume_id[$i] = $resume->id;
 //echo $resume_names[$i];
     echo '<b>Resume name:</b> ';
     echo $resume['name']."<br>";
+
+    echo '<b>Resume id:</b> ';
+    echo $resume['id']."<br>";
 
     echo '<b>Resume text:</b> ';
     echo $resume['resumetext']."<br>";
@@ -136,27 +139,25 @@ $i++;
   
     echo '<a href="'.$resume['url'].'" target="_blank">'. $resume['url'].'</a><br>';
 
-    echo 'dump<br>'.$resume_names[$i];
+   // echo 'delete<br>'.$resume_id[$i];
+    echo '<br>';
+echo '<script> var data = "<php echo $resume_id[$i]; ?>" </script>';
 
+     $deleteres=$resume_id[$i];
+           
+     //echo $deleteres;
+          // onclick?  Session::put('applybydate', $applydate);
+echo '<a href="deleteresume.php?id=' .$deleteres .'">' .'DELETE</a>'; 
+
+    echo '<br>';
     echo '____________________<br>';
 
     /// $buyshoe->delete();
 
   }
-
-
-  ///////////function ////
-   ////////////$buyshoe->delete(); /////
-  //////////// end function  /////
-
-
-
-
-  echo $resume_names[1];
-  echo '<br>';
-  echo $resume_names[2];
-    echo '<br>';
-  echo $resume_names[3];
+//return View::make('deleteresume')->with('deleteres', $deleteres);
+echo '<a href="welcome">Back</a>';
+  
 echo '</p>';
 echo '</div>';
 
@@ -386,23 +387,26 @@ Route::post('/savedJobs',
             $postedjob->salary    = Input::get('salary');
             $postedjob->applyby    = Input::get('applyby');
             $postedjob->url    = Input::get('url');
+
+
            
-            # Try to add the resume 
+            # Try to add the job
             try {
                 $postedjob->save();
             }
             # Fail
             catch (Exception $e) {
-                return Redirect::to('/savedJobs')->with('flash_message', 'resume addition failed; please try 
-
-again.')->withInput();
+                 return Redirect::to('/savedJobs')->with('flash_message', 'resume addition failed; please try again.')->withInput();
             }
             //$calendardate=$postedjob['applyby'];
+            $jobs = json_decode($postedjob, TRUE);
+            $applydate=$jobs['applyby'];
+            Session::put('applybydate', $applydate);
 
-            # Log the user in
-           // Auth::login($user);
 
-            //return Redirect::to('/calendar')->with('flash_message', 'Welcome to CareerTrax!');
+//echo $jobs['applyby'];
+//echo $postedjob;
+
             return View::make('calendar');
             //->with Input(Input::only('goodate', '$applyby'));
              // return View::make('calendar')->with('applyby, $postedjob');
@@ -522,9 +526,9 @@ Route::get('/debug', function() {
 
 Route::get('/practice-creating', function() {
 
-	class Buyshoe extends Eloquent {
+  class Buyshoe extends Eloquent {
 
-	}
+  }
 
     # Instantiate a new shoe to buy model class
     $buyshoe = new Buyshoe();
@@ -548,9 +552,9 @@ Route::get('/practice-creating', function() {
 Route::get('/practice-reading', function() {
 
 
-	class Users extends Eloquent {
+  class Users extends Eloquent {
 
-	}
+  }
 
     # The all() method will fetch all the rows from a Model/table
     $users = Users::all();
@@ -604,18 +608,18 @@ Route::get('/getemails', function() {
 
 Route::get('/practice-deleting', function() {
 
-    class Buyshoe extends Eloquent {
+    class Postedjob extends Eloquent {
 
     }
 
     # First get a book to delete
-    $buyshoe = Buyshoe::where('brand', 'LIKE', '%louis%')->first();
+    $postedjob = Postedjob::where('compan or other filed', 'LIKE', '%name of company here%')->first();
 
     # If we found the book, delete it
-    if($buyshoe) {
+    if($postedjob) {
 
         # Goodbye!
-        $buyshoe->delete();
+        $postedjob->delete();
 
         return "Deletion complete; check the database to see if it worked...";
 
@@ -654,7 +658,7 @@ Route::get('mysql-test', function() {
 //// rereoute all error urls to /  reinstate later
 App::missing(function($exception)
 {
-	return View::make('index');
+  return View::make('index');
 });
 
 //////////////////////////////////
@@ -662,14 +666,15 @@ App::missing(function($exception)
 
 Route::get('/get-environment', function()
 {
-	echo "environment is " .App::environment();
-	
+  echo "environment is " .App::environment();
+  
 });
 
 
 Route::get('/', function()
 {
-	return View::make('index');
-	
+  return View::make('index');
+  
 });
+
 
