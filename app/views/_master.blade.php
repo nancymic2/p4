@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="container">
-<img style="float:left" src="train2.jpg"> <h1>CareerTrax</h1>
+<img style="float:left" src="train2.jpg"> <h1>CareerTrax</h1> <h3>Get your job hunt on track.</h3>
 </div>
 </div>
 	<div class="jumbotron">
