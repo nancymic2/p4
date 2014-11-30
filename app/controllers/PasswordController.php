@@ -13,10 +13,9 @@ $credentials = array('email' => Input::get('email'), 'password' => Input::get('p
 }
 
 
-
-public function reset($token)
+public function reset()
 {
-  return View::make('password.reset')->with('token', $token);
+  return View::make('password.reset');
 }
 
 
