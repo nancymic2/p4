@@ -27,17 +27,16 @@ Route::post('password/reset', array(
 ));
 
 
-Route::get('password/reset/{token}', array(
+Route::get('password/reset', array(
   'uses' => 'PasswordController@reset',
   'as' => 'password.reset'
 ));
 
 
-Route::post('password/reset/{token}', array(
+Route::post('password/reset', array(
   'uses' => 'PasswordController@update',
   'as' => 'password.update'
 ));
-
 
 
 Route::get('/jobstoapply', function()
@@ -139,7 +138,7 @@ $i++;
   
     echo '<a href="'.$resume['url'].'" target="_blank">'. $resume['url'].'</a><br>';
 
-   // echo 'delete<br>'.$resume_id[$i];
+   //echo 'delete<br>'.$resume_id[$i];
     echo '<br>';
 echo '<script> var data = "<php echo $resume_id[$i]; ?>" </script>';
 
