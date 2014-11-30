@@ -15,6 +15,12 @@
 
 # /app/routes.php
 
+Route::get('/', function()
+{
+  return View::make('index');
+  
+});
+
 Route::get('password/reset', array(
   'uses' => 'PasswordController@remind',
   'as' => 'password.remind'
@@ -243,6 +249,8 @@ Route::get('/calendar', function()
 
 
 Route::get('/welcome', function()
+ // Route::get('welcome', array('before' => 'auth', function()
+
 {
    echo '<h2>Welcome</h2>';  
    echo '<h3>';  
@@ -707,10 +715,6 @@ Route::get('/get-environment', function()
 });
 
 
-Route::get('/', function()
-{
-  return View::make('index');
-  
-});
+
 
 */
