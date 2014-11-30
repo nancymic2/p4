@@ -42,86 +42,153 @@ Route::post('password/reset', array(
 Route::get('/jobstoapply', function()
 {
      
-   $jobs = Postedjob::where('user_id', '=', Auth::user()->id)->get();
+  $jobs = Postedjob::where('user_id', '=', Auth::user()->id)->get();
   echo '<div class="container">'; 
   echo '<p>';
    //echo $jobs;
-# loop through the Collection and access just the data
+   # loop through the Collection and access just the data
 foreach($jobs as $job) {
 
 
-      echo '<b>role:</b> ';
+    echo '<b>role:</b> ';
     echo $job['role']."<br>";
 
-        echo '<b>company:</b> ';
+    echo '<b>company:</b> ';
     echo $job['company']."<br>";
 
-        echo '<b>salary:</b> ';
+    echo '<b>salary:</b> ';
     echo $job['salary']."<br>";
 
-            echo '<b>job url:</b> ';
+    echo '<b>job url:</b> ';
     //echo $job['url']."<br>";
-            echo '<a href="'.$job['url'].'" target="_blank">'. $job['url'].'</a><br>';
+    echo '<a href="'.$job['url'].'" target="_blank">'. $job['url'].'</a><br>';
 
-            echo '<b>Apply by:</b> ';
+    echo '<b>Apply by:</b> ';
     echo $job['applyby']."<br>";
 
-
     echo '____________________<br>';
-echo '</p>';
-echo '</div>';
+    echo '</p>';
+    echo '</div>';
 } 
-
-
 
    echo '<br>  <a href="welcome">back</a> <br>';
     //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
-   
-
     //echo $email;
+    //  $collection = Book::all();
+  
+});
 
 
+Route::get('/completedappsOld', function()
+{
 
- //  $collection = Book::all();
-
-
-
-
+   $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
+  
+   echo $completedapps;
+   echo '<br>  <a href="welcome">back</a> <br>';
+    //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
+    //echo $email;
     
 });
 
 
 Route::get('/completedapps', function()
 {
-     
-   $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
-  
-   echo $completedapps;
-   echo '<br>  <a href="welcome">back</a> <br>';
-    //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
-   
+  $i=0;     
+  $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
+  echo '<div class="container">'; 
+  echo '<p>';
 
-    //echo $email;
+# loop through the Collection and access just the data
+foreach($completedapps as $completedapp) {
+   $i++;
+   $app_id[$i] = $completedapp->id;
+    //echo $resume_names[$i];
+    echo '<b>company:</b> ';
+    echo $completedapp['company']."<br>";
+
+    echo '<b>Application id:</b> ';
+    echo $completedapp['id']."<br>";
+
+    echo '<b>City:</b> ';
+    echo $completedapp['city']."<br>";
+
+    echo '<b>Applied date:</b> ';
+    echo $completedapp['applyDate']."<br>";
+
+    echo '<b>Hiring Manager:</b> ';
+    echo $completedapp['hiringMgr']."<br>";
+
+    echo '<b>Salary:</b> ';
+    echo $completedapp['salary']."<br>";
+   
+    echo '<b>Follow up by:</b> ';
+    echo $completedapp['followupBy']."<br>";
+
+    echo '<b>Decision:</b> ';
+    echo $completedapp['decision']."<br>";
+
+    echo '<b>rating:</b> ';
+    echo $completedapp['rating']."<br>";
+
+    echo '<b>resume used:</b> ';
+    echo $completedapp['resumeUsed']."<br>";
+
+    echo '<b>How Applied:</b> ';
+    echo $completedapp['howapplied']."<br>";
+
+    echo '<b>Website:</b> ';
+    echo $completedapp['website']."<br>";
+
+    echo '<b>user name:</b> ';
+    echo $completedapp['username']."<br>";
+
+    echo '<b>password:</b> ';
+    echo $completedapp['password']."<br>";
+
+    echo '<b>rec number:</b> ';
+    echo $completedapp['recnumber']."<br>";
+   
+    echo '<br>';
+    echo '<script> var apldata = "<php echo $app_id[$i]; ?>" </script>';
+
+     $updateapp=$app_id[$i];
+           
+     //echo $deleteres;
+          // onclick?  Session::put('applybydate', $applydate);
+    echo '<a href="updateapplication.php?id=' .$updateapp .'">' .'UPDATE</a>'; 
+
+    echo '<br>';
+
+    echo '<p style="color:red; font-weight: bold">THIS IS PERMANENT</P>';
+    echo '____________________<br>';
+
+    /// $buyshoe->delete();
+
+  }
+//return View::make('deleteresume')->with('deleteres', $deleteres);
+echo '<a href="welcome">Back</a>';
+echo '</p>';
+echo '</div>';
     
 });
+
 
 Route::get('/resumesearch', function()
 {
 
-   $i=0;
-   $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
+  $i=0;
+  $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
       //$resumes->toArray();
-
- 
 
   echo '<div class="container">'; 
   echo '<p>';
   
 # loop through the Collection and access just the data
 foreach($resumes as $resume) {
-$i++;
+   $i++;
    $resume_id[$i] = $resume->id;
-//echo $resume_names[$i];
+   //echo $resume_names[$i];
     echo '<b>Resume name:</b> ';
     echo $resume['name']."<br>";
 
@@ -140,28 +207,24 @@ $i++;
 
    //echo 'delete<br>'.$resume_id[$i];
     echo '<br>';
-echo '<script> var data = "<php echo $resume_id[$i]; ?>" </script>';
+    echo '<script> var data = "<php echo $resume_id[$i]; ?>" </script>';
 
-     $deleteres=$resume_id[$i];
+    $deleteres=$resume_id[$i];
            
      //echo $deleteres;
           // onclick?  Session::put('applybydate', $applydate);
-echo '<a href="deleteresume.php?id=' .$deleteres .'">' .'DELETE</a>'; 
-
+    echo '<a href="deleteresume.php?id=' .$deleteres .'">' .'DELETE</a>'; 
     echo '<br>';
 
     echo '<p style="color:red; font-weight: bold">THIS IS PERMANENT</P>';
     echo '____________________<br>';
-
     /// $buyshoe->delete();
 
   }
-//return View::make('deleteresume')->with('deleteres', $deleteres);
+   //return View::make('deleteresume')->with('deleteres', $deleteres);
 echo '<a href="welcome">Back</a>';
-  
 echo '</p>';
 echo '</div>';
-
     
 });
 
@@ -172,36 +235,11 @@ Route::get('/calendar', function()
    echo '<h3>';  
 
    echo '<a href="resume">add a resume</a> <br>';
-
-    
-      echo '</h3>'; 
+   echo '</h3>'; 
 
     //echo $email;
     
 });
-
-
-Route::get('/lorem', function()
-{
-
-$num = Input::get('num');
-  
-if ($num > 20) 
-{
-  $num=20;
-}
-
-$generator = new Badcow\LoremIpsum\Generator();
-$paragraphs = $generator->getParagraphs($num);
-
-$someparas = implode('<p>', $paragraphs);
-
-return View::make('lorem')->with('someparas', $someparas);
-
-});
-
-
-
 
 
 Route::get('/welcome', function()
@@ -210,17 +248,15 @@ Route::get('/welcome', function()
    echo '<h3>';  
 
    echo '<a href="resume">add a resume</a> <br>';
-      echo '<a href="resumesearch">find your saved resumes</a> <br>';
-         echo '<a href="applications">add a completed application</a> <br>';
+   echo '<a href="resumesearch">find your saved resumes</a> <br>';
+   echo '<a href="applications">add a completed application</a> <br>';
    echo '<a href="completedapps">find completed applications</a> <br>';
    echo '<a href="savedJobs">add a job</a> <br>';
    echo '<a href="jobstoapply">get jobs you need to apply to</a> <br>';
 
    echo '<a href="logout">log out</a> <br>';
-    
-      echo '</h3>'; 
-
-    //echo $email;
+   echo '</h3>'; 
+   //echo $email;
     
 });
 
@@ -245,7 +281,7 @@ Route::post('/signup',
             $user->last    = Input::get('last');
             $user->email    = Input::get('email');
             $user->password = Hash::make(Input::get('password'));
-//$user->save();
+            //$user->save();
 
 
            // # Try to add the user 
@@ -405,8 +441,8 @@ Route::post('/savedJobs',
             Session::put('applybydate', $applydate);
 
 
-//echo $jobs['applyby'];
-//echo $postedjob;
+            //echo $jobs['applyby'];
+            //echo $postedjob;
 
             return View::make('calendar');
             //->with Input(Input::only('goodate', '$applyby'));
@@ -474,8 +510,7 @@ Route::post('/applications',
 /////////////////////
 /* ////////////////////////OTHER STUFF FOR TESTING ETC ////////////////////////////// */
 
-
-
+/*
 
 Route::get('/debug', function() {
 
@@ -678,4 +713,4 @@ Route::get('/', function()
   
 });
 
-
+*/
