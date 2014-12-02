@@ -34,7 +34,7 @@ salary<br>
 
 <?php
 Session::put('url', 'url');
-echo '<a href="welcome">Cancel</a> <br>';
+echo '<a href="/">Cancel</a> <br>';
 
 
 

@@ -27,7 +27,7 @@ resume text<br>
 
 
 <?php
- echo '<a href="welcome">Cancel</a> <br>';
+ echo '<a href="/">Cancel</a> <br>';
 
 
 

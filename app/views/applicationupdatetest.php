@@ -1,5 +1,7 @@
 
-
+<?php
+echo '<a href="welcome">Cancel</a> <br>';
+ $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
 
 
 
@@ -62,8 +64,7 @@
 
 {{ Form::close() }}
 
-<?php
-echo '<a href="/">Cancel</a> <br>';
+
 
 
 
