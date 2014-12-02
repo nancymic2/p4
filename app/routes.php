@@ -282,7 +282,7 @@ foreach($resumes as $resume) {
 
   }
    //
-echo '<a href="welcome">Back</a>';
+echo '<a href="/">Back</a>';
 echo '</p>';
 echo '</div>';
     
