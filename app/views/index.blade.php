@@ -1,4 +1,3 @@
-
 	
 @extends('_master')
 
@@ -6,18 +5,13 @@
 
 <div class="container">
 	<div class="col-sm-6"
-<h2>Welcome</h2>
-<h3>Join CareerTrax! or log in</h3>
+<h2>&nbsp;</h2>
+<h2>Join CareerTrax! or log in</h2>
 <p>CareerTrax lets you keep track of your job appplications, jobs you plan to apply for, and your resumes</p>
    
 	<div class="col-sm-6"
 
 </div>
-
-
-
-
-
 
 
 <?php 
@@ -34,4 +28,3 @@ echo '<a class="btn btn-primary" href="/logout">&nbsp;log &nbsp;out</a> <br>';
 </div>
 
 @stop
-
