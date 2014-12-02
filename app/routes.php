@@ -11,15 +11,77 @@
 |
 */
 
-//debug from susans notes
 
-# /app/routes.php
+/////////////////////////////
+Route::get('/edit', function() {
+
+  $firstnames = User::where('id', '=', Auth::user()->id)->get();
+  echo '<div class="container">'; 
+  echo '<p>';
+   //echo $jobs;
+   # loop through the Collection and access just the data
+foreach($firstnames as $firstname) {
+
+
+    echo '<b>name:</b> ';
+    echo $firstname['first']."<br>";
+  }
+
+/* $view  = '<form method="POST" action="">'; 
+ $view .= 'First: <input type="text" name="first">'; 
+ $view .= '<input type="submit">'; 
+$view .= '</form>'; 
+ return $view;*/
+
+echo '<form method="POST" action="edit">'; 
+echo'First: <input type="text" name="first">'; 
+echo '<input type="submit">'; 
+echo '</form>'; 
+ //return View::make('nameupdate');
+
+ }); 
+
+Route::post('/edit', 
+    array(
+        //'before' => 'csrf', 
+        function() {
+
+            $user = new User;
+            $user->user()->associate(Auth::user());
+         
+            $user->first   = Input::get('first');
+
+
+
+           
+            # Try to add the name
+            try {
+                $user->save();
+            }
+            # Fail
+            catch (Exception $e) {
+                 return Redirect::to('/index')->with('flash_message', 'resume addition failed; please try again.')->withInput();
+            }
+
+
+        }
+    )
+);
+
+
 
 Route::get('/', function()
 {
   return View::make('index');
   
 });
+
+Route::get('/applicationupdate', function()
+{
+  return View::make('applicationupdate');
+  
+});
+
 
 Route::get('password/reset', array(
   'uses' => 'PasswordController@remind',
@@ -44,8 +106,8 @@ Route::post('password/reset', array(
   'as' => 'password.update'
 ));
 
+Route::get('jobstoapply', array('before' => 'auth', function()
 
-Route::get('/jobstoapply', function()
 {
      
   $jobs = Postedjob::where('user_id', '=', Auth::user()->id)->get();
@@ -82,7 +144,7 @@ foreach($jobs as $job) {
     //echo $email;
     //  $collection = Book::all();
   
-});
+}));
 
 
 Route::get('/completedappsOld', function()
@@ -98,7 +160,11 @@ Route::get('/completedappsOld', function()
 });
 
 
-Route::get('/completedapps', function()
+Route::get('completedapps', array('before' => 'auth', function()
+        
+            
+
+//Route::get('/completedapps', function()
 {
   $i=0;     
   $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
@@ -177,10 +243,10 @@ echo '<a href="welcome">Back</a>';
 echo '</p>';
 echo '</div>';
     
-});
+}));
 
+Route::get('resumesearch', array('before' => 'auth', function()
 
-Route::get('/resumesearch', function()
 {
 
   $i=0;
@@ -222,17 +288,22 @@ foreach($resumes as $resume) {
     echo '<a href="deleteresume.php?id=' .$deleteres .'">' .'DELETE</a>'; 
     echo '<br>';
 
+    echo '<a href="updateresume.php?id=' .$deleteres .'">' .'UPDATE RESUME TEXT</a>'; 
+
+
+    echo '<br>';
+
     echo '<p style="color:red; font-weight: bold">THIS IS PERMANENT</P>';
     echo '____________________<br>';
-    /// $buyshoe->delete();
+   
 
   }
-   //return View::make('deleteresume')->with('deleteres', $deleteres);
+   //
 echo '<a href="welcome">Back</a>';
 echo '</p>';
 echo '</div>';
     
-});
+}));
 
 
 Route::get('/calendar', function()
@@ -248,8 +319,8 @@ Route::get('/calendar', function()
 });
 
 
-Route::get('/welcome', function()
- // Route::get('welcome', array('before' => 'auth', function()
+//Route::get('/welcome', function()
+Route::get('welcome', array('before' => 'auth', function()
 
 {
    echo '<h2>Welcome</h2>';  
@@ -266,7 +337,7 @@ Route::get('/welcome', function()
    echo '</h3>'; 
    //echo $email;
     
-});
+}));
 
 Route::get('/signup',
     array(
@@ -366,10 +437,8 @@ Route::get('/logout', function() {
 
 
 
-Route::get('/resume',
-    array(
-       // 'before' => 'guest',
-        function() {
+Route::get('resume', array('before' => 'auth', function()
+         {
             return View::make('resume');
         }
     )
@@ -408,16 +477,14 @@ Route::post('/resume',
 
 ////////////////
 
-
-
-Route::get('/savedJobs',
-    array(
-       // 'before' => 'guest',
-        function() {
+Route::get('savedJobs', array('before' => 'auth', function()
+         {
             return View::make('savedJobs');
         }
     )
 );
+
+
 
 Route::post('/savedJobs', 
     array(
@@ -460,16 +527,13 @@ Route::post('/savedJobs',
     )
 );
 
-
-
-Route::get('/applications',
-    array(
-       // 'before' => 'guest',
-        function() {
+Route::get('applications', array('before' => 'auth', function()
+         {
             return View::make('applications');
         }
     )
 );
+
 
 Route::post('/applications', 
     array(
