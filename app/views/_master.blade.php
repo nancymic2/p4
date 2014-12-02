@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-	<!-- Latest compiled and minified CSS -->
+  <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
 <!-- Optional theme -->
@@ -15,18 +15,18 @@
 <!-- Latest compiled and minified JavaScript -->
 
   <title>Career Trax</title>
-	<link rel="stylesheet" href="hmin.css">
+  <link rel="stylesheet" href="hmin.css">
 </head>
 <body>
-	<div class="container">
+  <div class="container" style="margin:30px;">
 <img style="float:left" src="train2.jpg"> <h1>CareerTrax</h1> <h3>Get your job hunt on track.</h3>
 </div>
 </div>
-	<div class="jumbotron">
+  <!--<div class="jumbotron">-->
 
-	<header class="navbar-inverse">
-		<div class="container">
-		<nav  role="navigation">
+  <header class="navbar-inverse">
+    <div class="container">
+    <nav  role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -41,43 +41,19 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
-        <li><a href="/applications">Add an App</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
+        <li><a href="/applications">Add Application</a></li>
+        <li><a href="/savedJobs">Add a Job</a></li>
+        <li><a href="/completedapps">Find Completed Apps</a></li>
+        <li><a href="/resumesearch">Find Your Resumes</a></li>
+        <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+      
       </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search my jobs">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Add Resume</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
+     
+      
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+  <!--</div> container-fluid --> 
 </nav>
 </header>
 </div>
@@ -90,4 +66,5 @@
 
 </body>
 </html>
+
 
