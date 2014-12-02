@@ -7,7 +7,16 @@
 	<div class="col-sm-6"
 <h2>&nbsp;</h2>
 <h2>Join CareerTrax! or log in</h2>
-<p>CareerTrax lets you keep track of your job appplications, jobs you plan to apply for, and your resumes</p>
+<p>CareerTrax lets you keep track of 
+	<ul><li>your job appplications</li>
+		<li>jobs you plan to apply for</li>
+	    <li>your resumes</li>
+	    <li>important dates</li>
+	    <li>your candidate login info</li>
+	</ul>    
+</p>
+	<p>No ads, not artilces, no clutter, and nothing to sell. Just a place to track your jub hunt activities and
+		get calendar reminders.</p>
    
 	<div class="col-sm-6"
 
