@@ -267,15 +267,17 @@ foreach($resumes as $resume) {
      //echo $deleteres;
           // onclick?  Session::put('applybydate', $applydate);
     echo '<a href="deleteresume.php?id=' .$deleteres .'">' .'DELETE</a>'; 
+  
+    echo '<span style="color:red; font-weight: bold">&nbsp;THIS IS PERMANENT!</span>';
+    echo '<br>';
     echo '<br>';
 
-    echo '<a href="updateresume.php?id=' .$deleteres .'">' .'UPDATE RESUME TEXT</a>'; 
-
-
-    echo '<br>';
-
-    echo '<p style="color:red; font-weight: bold">THIS IS PERMANENT</P>';
+    echo '<a href="updateresume.php?id=' .$deleteres .'">' .'UPDATE RESUME TEXT</a><br>'; 
     echo '____________________<br>';
+
+   
+
+
    
 
   }
