@@ -7,11 +7,11 @@
 
 {{ Form::open(array('url' => '/login')) }}
 
-    Email<br>
-    {{ Form::text('email') }}<br><br>
+    Email&nbsp;
+    {{ Form::text('email') }} &nbsp;
 
-    Password:<br>
-    {{ Form::password('password') }}<br><br>
+    Password:&nbsp;
+    {{ Form::password('password') }}&nbsp;
 
     {{ Form::submit('Submit') }}
 
@@ -19,7 +19,7 @@
 
 
 
-
+@extends('_master')
 
 
 
