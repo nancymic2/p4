@@ -24,7 +24,8 @@ foreach($firstnames as $firstname) {
 
 
     echo '<b>name:</b> ';
-    echo $firstname['first']."<br>";
+    echo $firstname['first'].'&nbsp;'.$firstname['last']."<br>";
+
   }
 
 /* $view  = '<form method="POST" action="">'; 
@@ -34,38 +35,18 @@ $view .= '</form>';
  return $view;*/
 
 echo '<form method="POST" action="edit">'; 
-echo'First: <input type="text" name="first">'; 
+echo'Change last name: <input type="text" name="last">'; 
 echo '<input type="submit">'; 
 echo '</form>'; 
  //return View::make('nameupdate');
 
  }); 
 
-Route::post('/edit', 
-    array(
-        //'before' => 'csrf', 
-        function() {
-
-            $user = new User;
-            $user->user()->associate(Auth::user());
-         
-            $user->first   = Input::get('first');
-
-
-
-           
-            # Try to add the name
-            try {
-                $user->save();
-            }
-            # Fail
-            catch (Exception $e) {
-                 return Redirect::to('/index')->with('flash_message', 'resume addition failed; please try again.')->withInput();
-            }
-
-
-        }
-    )
+Route::post('/edit', function() {
+    echo 'Your last name has been changed in our database';
+//return View::make('password')->with('theword', $theword);
+}
+    
 );
 
 
@@ -473,7 +454,9 @@ Route::post('/resume',
         }
     )
 );
+////////////////////////pass value to view
 
+//return View::make('password')->with('theword', $theword);
 
 ////////////////
 
