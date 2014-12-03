@@ -1,3 +1,11 @@
+@extends('_master')
+
+@section ('savedJobs')
+
+<div class="container">
+	<div class="col-sm-6">
+<h2>&nbsp;</h2>
+<h2>Add a job</h2>
 
 
 
@@ -36,6 +44,11 @@ salary<br>
 Session::put('url', 'url');
 echo '<a href="/">Cancel</a> <br>';
 
+?>
+
+</div>
+</div>
+@stop
 
 
 

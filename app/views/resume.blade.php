@@ -1,4 +1,11 @@
+@extends('_master')
 
+@section ('resume')
+
+<div class="container">
+	<div class="col-sm-6">
+<h2>&nbsp;</h2>
+<h2>Add a resume</h2>
 
 
 
@@ -29,7 +36,9 @@ resume text<br>
 <?php
  echo '<a href="/">Cancel</a> <br>';
 
+?>
 
-
-
+</div>
+</div>
+@stop
 

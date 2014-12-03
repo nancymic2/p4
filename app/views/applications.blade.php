@@ -1,5 +1,13 @@
 
 
+@extends('_master')
+
+@section ('applications')
+
+<div class="container">
+    <div class="col-sm-6">
+<h2>&nbsp;</h2>
+<h2>Add a completed application</h2>
 
 
 
@@ -66,6 +74,11 @@
 echo '<a href="/">Cancel</a> <br>';
 
 
+?>
+
+</div>
+</div>
+@stop
 
 
 
