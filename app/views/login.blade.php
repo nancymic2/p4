@@ -1,5 +1,13 @@
 
 
+@extends('_master')
+
+@section ('login')
+
+<div class="container">
+	<div class="col-sm-6">
+<h2>&nbsp;</h2>
+<h2>Please log in</h2>
 
 
 
@@ -19,7 +27,10 @@
 
 
 
-@extends('_master')
+</div>
+</div>
+@stop
+
 
 
 
