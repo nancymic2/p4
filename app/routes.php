@@ -11,6 +11,14 @@
 |
 */
 
+Route::get('/job/create', 'JobController@getCreate');
+Route::post('/job/create', 'JobController@postCreate');
+
+
+
+Route::get('/resume/create', 'ResumeController@getCreate');
+Route::post('/resume/create', 'ResumeController@postCreate');
+
 
 /////////////////////////////
 Route::get('/edit', function() {
@@ -120,7 +128,7 @@ foreach($jobs as $job) {
     echo '</div>';
 } 
 
-   echo '<br>  <a href="welcome">back</a> <br>';
+   echo '<br>  <a href="/">back</a> <br>';
     //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
     //echo $email;
     //  $collection = Book::all();
@@ -134,7 +142,7 @@ Route::get('/completedappsOld', function()
    $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
   
    echo $completedapps;
-   echo '<br>  <a href="welcome">back</a> <br>';
+   echo '<br>  <a href="/">back</a> <br>';
     //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
     //echo $email;
     
@@ -220,7 +228,7 @@ foreach($completedapps as $completedapp) {
 
   }
 //return View::make('deleteresume')->with('deleteres', $deleteres);
-echo '<a href="welcome">Back</a>';
+echo '<a href="/">Back</a>';
 echo '</p>';
 echo '</div>';
     
@@ -291,7 +299,7 @@ echo '</div>';
 
 Route::get('/calendar', function()
 {
-   echo '<h2>add to google canendar</h2>';  
+   echo '<h2>add to google calendar</h2>';  
    echo '<h3>';  
 
    echo '<a href="resume">add a resume</a> <br>';
@@ -364,7 +372,7 @@ Route::post('/signup',
             # Log the user in
            Auth::login($user);
 
-            return Redirect::to('/welcome')->with('flash_message', 'Welcome to CareerTrax!');
+            return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
@@ -393,7 +401,7 @@ Route::post('/login',
             $credentials = Input::only('email', 'password');
 
             if (Auth::attempt($credentials, $remember = true)) {
-                return Redirect::intended('/welcome')->with('flash_message', 'Welcome Back!');
+                return Redirect::intended('/')->with('flash_message', 'Welcome Back!');
             }
             else {
                 return Redirect::to('/login')->with('flash_message', 'Log in failed; please try again.');
@@ -415,7 +423,6 @@ Route::get('/logout', function() {
     return Redirect::to('/');
 
 });
-
 
 
 
@@ -451,11 +458,12 @@ Route::post('/resume',
             # Log the user in
            // Auth::login($user);
 
-           return Redirect::to('/welcome')->with('flash_message', 'Welcome to CareerTrax!');
+           return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
 );
+
 ////////////////////////pass value to view
 
 //return View::make('password')->with('theword', $theword);
@@ -556,7 +564,7 @@ Route::post('/applications',
             # Log the user in
            // Auth::login($user);
 
-           return Redirect::to('/welcome')->with('flash_message', 'Welcome to CareerTrax!');
+           return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
