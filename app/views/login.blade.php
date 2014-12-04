@@ -15,11 +15,11 @@
 
 {{ Form::open(array('url' => '/login')) }}
 
-    Email&nbsp;
-    {{ Form::text('email') }} &nbsp;
+    Email&nbsp;<br>
+    {{ Form::text('email') }} &nbsp; <br>
 
-    Password:&nbsp;
-    {{ Form::password('password') }}&nbsp;
+    Password:&nbsp;<br>
+    {{ Form::password('password') }}&nbsp; <br><br>
 
     {{ Form::submit('Submit') }}
 
