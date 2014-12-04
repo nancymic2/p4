@@ -16,53 +16,52 @@
 {{ Form::open(array('url' => '/applications')) }}
 
     company<br>
-    {{ Form::text('company') }}<br><br>
+    {{ Form::text('company', '', array('class'=>'form-control'))}} 
 
 
     role<br>
-    {{ Form::text('role') }}<br><br>
+    {{ Form::text('role', '', array('class'=>'form-control'))}} 
 
 
     salary<br>
-    {{ Form::text('salary') }}<br><br>
+    {{ Form::text('salary', '', array('class'=>'form-control'))}} 
 
     Applied Date (enter as yyyy-mm-dd)<br>
-    {{ Form::text('applyDate') }}<br><br>
+    {{ Form::text('applyDate', '', array('class'=>'form-control'))}} 
 
     City<br>
-    {{ Form::text('city') }}<br><br>
+    {{ Form::text('city', '', array('class'=>'form-control'))}} 
 
     Hiring Manager<br>
-    {{ Form::text('hiringMgr') }}<br><br>
+    {{ Form::text('hiringMgr', '', array('class'=>'form-control'))}} 
 
     Follow up by (enter as yyyy-mm-dd)<br>
-    {{ Form::text('followupBy') }}<br><br>
+    {{ Form::text('followupBy', '', array('class'=>'form-control'))}} 
 
     decision<br>
-    {{ Form::text('decision') }}<br><br>
+    {{ Form::text('decision', '', array('class'=>'form-control'))}} 
 
     rating<br>
-    {{ Form::text('rating') }}<br><br>
+    {{ Form::text('rating', '', array('class'=>'form-control'))}} 
 
     Resume used<br>
-    {{ Form::text('resumeUsed') }}<br><br>
+    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} 
 
     how applied<br>
-    {{ Form::text('howapplied') }}<br><br>
+    {{ Form::text('howapplied', '', array('class'=>'form-control'))}} 
 
     rec number<br>
-    {{ Form::text('recnumber') }}<br><br>
+    {{ Form::text('recnumber', '', array('class'=>'form-control'))}} 
 
     website<br>
-    {{ Form::text('website') }}<br><br>
+    {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
 
      user name<br>
-    {{ Form::text('username') }}<br><br>
-
+    {{ Form::text('username', '', array('class'=>'form-control'))}} 
 
      password<br>
-    {{ Form::text('password') }}<br><br>
+    {{ Form::text('password', '', array('class'=>'form-control'))}} 
 
 
 

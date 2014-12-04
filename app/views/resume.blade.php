@@ -15,16 +15,16 @@
 {{ Form::open(array('url' => '/resume')) }}
 
 resume Name<br>
-    {{ Form::text('name') }}<br><br>
+    {{ Form::text('name', '', array('class'=>'form-control'))}} 
 
 
 resume url<br>
-    {{ Form::text('url') }}<br><br>
+    {{ Form::text('url', '', array('class'=>'form-control'))}} 
 
 
 
 resume text<br>
-    {{ Form::textarea('resumetext') }}<br><br>
+    {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} 
 
 
 

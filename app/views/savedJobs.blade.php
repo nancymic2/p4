@@ -16,26 +16,26 @@
 {{ Form::open(array('url' => '/savedJobs')) }}
 
 company<br>
-    {{ Form::text('company') }}<br><br>
+    {{ Form::text('company', '', array('class'=>'form-control'))}} 
 
 
 role (required)<br>
-    {{ Form::text('role') }}<br><br>
+    {{ Form::text('role', '', array('class'=>'form-control'))}} 
 
 
 
 salary<br>
-    {{ Form::text('salary') }}<br><br>
+    {{ Form::text('salary', '', array('class'=>'form-control'))}} 
 
     Apply by (enter as yyyy-mm-dd)<br>
-    {{ Form::text('applyby') }}<br><br>
+    {{ Form::text('applyby', '', array('class'=>'form-control'))}} 
 
     Job listing URL (required)<br>
-    {{ Form::text('url') }}<br><br>
+    {{ Form::text('url', '', array('class'=>'form-control'))}} 
 
 
 
-    {{ Form::submit('Submit') }}
+    {{ Form::submit('Submit', '', array('class'=>'form-control'))}} 
 
 {{ Form::close() }}
 
