@@ -40,7 +40,8 @@
 
 {{ Form::close() }}
 
-
+<br>
+ <a class="btn btn-warning" href="/login">Or log in</a> <br> &nbsp;
 </div>
 </div>
 @stop

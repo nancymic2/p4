@@ -26,6 +26,8 @@
 {{ Form::close() }}
 
 <!--password field was called password not text change  for bootstrap-->
+<br>
+ <a class="btn btn-warning" href="/signup">Or sign up</a> <br> &nbsp;
 
 </div>
 </div>
