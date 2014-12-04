@@ -61,16 +61,19 @@
     {{ Form::text('username', '', array('class'=>'form-control'))}} 
 
      password<br>
-    {{ Form::text('password', '', array('class'=>'form-control'))}} 
+  {{ Form::text('password', '', array('class'=>'form-control'))}} <br>
+
+
+  {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
 
 
-    {{ Form::submit('Submit') }}
+  
 
 {{ Form::close() }}
 
 <?php
-echo '<a href="/">Cancel</a> <br>';
+echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
 
 
 ?>

@@ -15,7 +15,7 @@
 	    <li>your candidate login info</li>
 	</ul>    
 </p>
-	<p>No ads, not artilces, no clutter, and nothing to sell. Just a place to track your jub hunt activities and
+	<p>No ads, no artilces, no clutter, and nothing to sell. Just a place to track your jub hunt activities and
 		get calendar reminders.</p>
    
 	<div class="col-sm-6"
@@ -27,7 +27,7 @@
 
 echo '<a class="btn btn-success" href="/signup">sign up</a> <br> <p>&nbsp;</p>';
 echo '<a class="btn btn-primary" href="/login">&nbsp;log &nbsp;in&nbsp;</a> <br> <p>&nbsp;</p>';
-echo '<a class="btn btn-primary" href="/logout">&nbsp;log &nbsp;out</a> <br>';
+//echo '<a class="btn btn-primary" href="/logout">&nbsp;log &nbsp;out</a> <br>';
 echo '<br><a href="/edit">change account</a> <br>';
 //echo '<a href="logout">log out</a> <br>';
 ?>

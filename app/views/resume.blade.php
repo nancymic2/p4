@@ -24,17 +24,17 @@ resume url<br>
 
 
 resume text<br>
-    {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} 
+    {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} <br>
 
 
 
-    {{ Form::submit('Submit') }}
+    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
 {{ Form::close() }}
 
 
 <?php
- echo '<a href="/">Cancel</a> <br>';
+echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
 
 ?>
 

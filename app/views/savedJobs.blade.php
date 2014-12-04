@@ -31,19 +31,19 @@ salary<br>
     {{ Form::text('applyby', '', array('class'=>'form-control'))}} 
 
     Job listing URL (required)<br>
-    {{ Form::text('url', '', array('class'=>'form-control'))}} 
+    {{ Form::text('url', '', array('class'=>'form-control'))}} <br>
 
 
 
-    {{ Form::submit('Submit', '', array('class'=>'form-control'))}} 
+ {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
 {{ Form::close() }}
 
 
 <?php
 Session::put('url', 'url');
-echo '<a href="/">Cancel</a> <br>';
-
+//echo '<a href="/">Cancel</a> <br>';
+echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
 ?>
 
 </div>
