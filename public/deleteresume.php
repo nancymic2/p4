@@ -24,7 +24,7 @@ $id = $_GET['id'];
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "BDBpQgPk4N";
 $dbname = "shoes";
 
 // Create connection
@@ -47,7 +47,7 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 
-echo '<br><a class="btn btn-success" href="/">Back</a>';
+echo '<br><a class="btn btn-success" href="/">OK</a>';
 ?>
 
 </body>
