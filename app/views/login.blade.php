@@ -4,7 +4,7 @@
 
 @section ('login')
 
-<div class="container">
+<div class="container" style="width:500px; margin-left: -10px;">
 	<div class="col-sm-6">
 <h2>&nbsp;</h2>
 <h2>Please log in</h2>
