@@ -16,16 +16,16 @@
 {{ Form::open(array('url' => '/login')) }}
 
     Email&nbsp;<br>
-    {{ Form::text('email') }} &nbsp; <br>
+    {{ Form::text('email', '', array('class'=>'form-control'))}}  &nbsp; <br>
 
     Password:&nbsp;<br>
-    {{ Form::password('password') }}&nbsp; <br><br>
+    {{ Form::text('password', '', array('class'=>'form-control'))}} &nbsp; <br><br>
 
-    {{ Form::submit('Submit') }}
+    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
 {{ Form::close() }}
 
-
+<!--password field was called password not text change  for bootstrap-->
 
 </div>
 </div>
