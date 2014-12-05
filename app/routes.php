@@ -11,6 +11,57 @@
 |
 */
 
+Route::get('changelast', array('before' => 'auth', function()
+
+{
+     
+ $names = User::where('id', '=', Auth::user()->id)->get();
+ 
+   //echo $jobs;
+   # loop through the Collection and access just the data
+foreach($names as $name) {
+
+
+   // echo '<b>email:</b> ';
+    //echo $name['email'];
+
+    echo '<b>Name:</b> ';
+    echo $name['first'];
+    echo ' ';
+    echo $name['last'];
+    echo '<br>';
+//$oldemail=$name['email'];
+$id=$name['id'];
+ echo '<a href="chemail.php?id=' .$id .'">' .'change last name</a>'; 
+  
+   }
+echo '<br>';
+echo '<a href="/">Back</a>';
+echo '</p>';
+echo '</div>';
+    
+}));
+
+Route::get('myemail', array('before' => 'auth', function()
+
+{
+     
+ $names = User::where('id', '=', Auth::user()->id)->get();
+ 
+   //echo $jobs;
+   # loop through the Collection and access just the data
+foreach($names as $name) {
+
+
+    echo '<b>email:</b> ';
+    echo $name['email'];
+
+  }
+
+}));
+
+
+
 Route::get('/job/create', 'JobController@getCreate');
 Route::post('/job/create', 'JobController@postCreate');
 
@@ -283,12 +334,7 @@ foreach($resumes as $resume) {
     echo '<a href="updateresume.php?id=' .$deleteres .'">' .'UPDATE RESUME TEXT</a><br>'; 
     echo '____________________<br>';
 
-   
-
-
-   
-
-  }
+   }
    //
 echo '<a href="/">Back</a>';
 echo '</p>';
@@ -775,3 +821,4 @@ Route::get('/get-environment', function()
 
 
 */
+
