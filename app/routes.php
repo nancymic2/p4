@@ -38,7 +38,14 @@ foreach($names as $name) {
     echo '<br>';
   
    }
+
+   echo '<br>';
+echo '<a href="/changelast">Edit Account</a>';
 echo '<br>';
+
+echo '<a href="/password/remind">Request new Password</a>';
+echo '<br>';
+
 echo '<a href="/">Back</a>';
 
 
@@ -67,7 +74,7 @@ foreach($names as $name) {
     echo '<br>';
 //$oldemail=$name['email'];
 $id=$name['id'];
- echo '<a href="chemail.php?id=' .$id .'">' .'change last name</a>'; 
+ echo '<a href="chemail.php?id=' .$id .'">' .'change name</a>'; 
   
    }
 echo '<br>';
@@ -158,7 +165,7 @@ Route::get('/applicationupdate', function()
 });
 
 
-Route::get('password/reset', array(
+Route::get('password/remind', array(
   'uses' => 'PasswordController@remind',
   'as' => 'password.remind'
 ));
@@ -169,7 +176,7 @@ Route::post('password/reset', array(
   'as' => 'password.request'
 ));
 
-
+/*
 Route::get('password/reset', array(
   'uses' => 'PasswordController@reset',
   'as' => 'password.reset'
@@ -180,6 +187,18 @@ Route::post('password/reset', array(
   'uses' => 'PasswordController@update',
   'as' => 'password.update'
 ));
+
+*/
+Route::get('password/reset/{token}', array(
+  'uses' => 'PasswordController@reset',
+  'as' => 'password.reset'
+));
+
+Route::post('password/reset/{token}', array(
+  'uses' => 'PasswordController@update',
+  'as' => 'password.update'
+));
+
 
 Route::get('jobstoapply', array('before' => 'auth', function()
 
@@ -366,7 +385,7 @@ foreach($resumes as $resume) {
     echo '<br>';
     echo '<br>';
 
-    echo '<a href="updateresume.php?id=' .$deleteres .'">' .'UPDATE RESUME TEXT</a><br>'; 
+    
     echo '____________________<br>';
 
    }
@@ -488,7 +507,7 @@ Route::post('/login',
                 return Redirect::to('/login')->with('flash_message', 'Log in failed; please try again.');
             }
 
-            return Redirect::to('/welcome');
+            return Redirect::to('/');
         }
     )
 );

@@ -36,6 +36,7 @@ class RemindersController extends Controller {
 	 * @return Response
 	 */
 	public function getReset($token = null)
+	//public function getReset($token)
 	{
 		if (is_null($token)) App::abort(404);
 

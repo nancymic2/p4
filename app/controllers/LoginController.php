@@ -43,7 +43,7 @@ class LoginController extends BaseController {
                 return Redirect::to('/login')->with('flash_message', 'Log in failed; please try again.');
             }
 
-            return Redirect::to('/welcome');
+            return Redirect::to('/');
 
     }
 
