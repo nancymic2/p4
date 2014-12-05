@@ -26,9 +26,9 @@
 <?php 
 
 echo '<a class="btn btn-success" href="/signup">sign up</a> <br> <p>&nbsp;</p>';
-echo '<a class="btn btn-primary" href="/login">&nbsp;log &nbsp;in&nbsp;</a> <br> <p>&nbsp;</p>';
+echo '<a class="btn btn-primary" href="/login">&nbsp;log &nbsp;in&nbsp;</a> <p>&nbsp;</p>';
 //echo '<a class="btn btn-primary" href="/logout">&nbsp;log &nbsp;out</a> <br>';
-echo '<br><a href="/edit">change account</a> <br>';
+echo '<a href="/changelast">change account</a> <br>';
 //echo '<a href="logout">log out</a> <br>';
 ?>
 
