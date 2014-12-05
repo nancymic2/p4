@@ -18,9 +18,37 @@ class ResumeController extends BaseController {
 	parent::__construct();
 	}
 
-	public function showWelcome()
-	{
-		return View::make('hello');
-	}
+
+public function getCreate() {
+            return View::make('resume');   ///this is wrong it point to the old route
+        }
+ 
+
+
+public function postCreate() {
+
+            $resume = new Resume;
+            $resume->user()->associate(Auth::user());
+         
+            $resume->url   = Input::get('url');
+            $resume->name    = Input::get('name');
+            $resume->resumetext    = Input::get('resumetext');
+           
+            # Try to add the resume 
+            try {
+                $resume->save();
+            }
+            # Fail
+            catch (Exception $e) {
+                return Redirect::to('/')->with('flash_message', 'resume addition failed; please try again.')->withInput();
+            }
+
+            # Log the user in
+           // Auth::login($user);
+
+           return Redirect::to('/welcome')->with('flash_message', 'Welcome to CareerTrax!');
+
+        }
+    
 
 }

@@ -70,6 +70,8 @@
 
 @yield ('signup')
 
+@yield ('jobstoapply')
+
 
 
 <!--/////////////////-->

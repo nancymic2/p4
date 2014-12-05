@@ -11,6 +11,41 @@
 |
 */
 
+Route::get('account', array('before' => 'auth', function()
+
+{
+     
+ $names = User::where('id', '=', Auth::user()->id)->get();
+ 
+   //echo $jobs;
+   # loop through the Collection and access just the data
+foreach($names as $name) {
+
+
+   // echo '<b>email:</b> ';
+    //echo $name['email'];
+
+    echo '<b>Name:</b> ';
+    echo $name['first'];
+    echo ' ';
+    echo $name['last'];
+    echo '<br>';
+      echo '<b>Email:</b> ';
+    echo $name['email'];
+    echo '<br>';
+      echo '<b>Joined:</b> ';
+    echo $name['created_at'];
+    echo '<br>';
+  
+   }
+echo '<br>';
+echo '<a href="/">Back</a>';
+
+
+    
+}));
+
+
 Route::get('changelast', array('before' => 'auth', function()
 
 {
