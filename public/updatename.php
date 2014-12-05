@@ -25,6 +25,8 @@ if ($conn->query($sql) === TRUE) {
 echo "Last name ";
 echo "has been updated successfully to ";
 echo $newname;
+echo '<br>';
+echo '<a href="/">Back</a>';
 
 } else {
     echo "Error updating record: " . $conn->error;
