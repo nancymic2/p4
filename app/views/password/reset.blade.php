@@ -1,6 +1,9 @@
 @if (Session::has('error'))
   {{ trans(Session::get('reason')) }}
 @endif
+@extends('_master')
+
+@section ('reset')
 
  
 {{ Form::open(array('route' => array('password.update'))) }}
@@ -22,5 +25,5 @@
 
 
 
-
+@stop
 

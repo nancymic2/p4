@@ -1,3 +1,12 @@
+
+@extends('_master')
+
+@section ('remind')
+
+
+
+
+
 @if (Session::has('error'))
   {{ trans(Session::get('reason')) }}
 @elseif (Session::has('success'))
@@ -12,3 +21,5 @@
   <p>{{ Form::submit('Submit') }}</p>
  
 {{ Form::close() }}
+
+@stop

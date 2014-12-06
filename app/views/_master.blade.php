@@ -19,7 +19,7 @@
 </head>
 <body>
   <div class="container" style="margin:30px;">
-<img style="float:left" src="train2.jpg"> <h1>CareerTrax</h1> <h3>Get your job hunt on track.</h3>
+<img style="float:left" src="http://p4.scholarpaws.com/train2.jpg"> <h1>CareerTrax</h1> <h3>Get your job hunt on track.</h3>
 </div>
 </div>
   <!--<div class="jumbotron">-->
@@ -71,6 +71,10 @@
 @yield ('signup')
 
 @yield ('jobstoapply')
+
+@yield ('remind')
+
+@yield ('reset')
 
 
 
