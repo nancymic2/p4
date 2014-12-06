@@ -332,7 +332,7 @@ foreach($completedapps as $completedapp) {
            
      //echo $deleteres;
           // onclick?  Session::put('applybydate', $applydate);
-    echo '<a href="updateapplication.php?id=' .$updateapp .'">' .'UPDATE</a>'; 
+  
 
     echo '<br>';
 
