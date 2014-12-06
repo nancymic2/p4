@@ -107,7 +107,7 @@ echo '<br>';
 echo '<a href="/password/remind">Request new Password</a>';
 echo '<br>';
 
-echo '<a href="/">Back</a>';
+
 
 echo $stylesend;
     
@@ -201,7 +201,7 @@ $id=$name['id'];
    }
    
 echo '<br>';
-echo '<a href="/">Back</a>';
+
 echo '</p>';
 echo $stylesend;
     
