@@ -337,7 +337,7 @@ foreach($completedapps as $completedapp) {
     echo '<br>';
 
     
-    echo '____________________<br>';
+    echo '____________________<br><p>&nbsp;</p>';
 
     /// $buyshoe->delete();
 
