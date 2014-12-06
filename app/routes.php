@@ -428,7 +428,7 @@ foreach($jobs as $job) {
     
 } 
 
-   echo '<br>  <a href="/">back</a> <br>';
+   echo '<br>';
     //$email = User::where('user_id', '=', Auth::user()->id)->get('email');
     //echo $email;
     //  $collection = Book::all();
@@ -596,7 +596,6 @@ foreach($completedapps as $completedapp) {
 
   }
 //return View::make('deleteresume')->with('deleteres', $deleteres);
-echo '<a href="/">Back</a>';
 echo '</p>';
 
  echo $stylesend;   
@@ -713,7 +712,7 @@ foreach($resumes as $resume) {
 
    }
    //
-echo '<a href="/">Back</a>';
+
 echo '</p>';
 echo '</div>';
     echo $stylesend;
