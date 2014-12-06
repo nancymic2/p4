@@ -163,6 +163,9 @@ Route::get('/applicationupdate', function()
   return View::make('applicationupdate');
   
 });
+////////////////////////////////////
+
+
 
 
 Route::get('password/remind', array(
@@ -175,6 +178,7 @@ Route::post('password/reset', array(
   'uses' => 'PasswordController@request',
   'as' => 'password.request'
 ));
+
 
 /*
 Route::get('password/reset', array(
@@ -189,15 +193,21 @@ Route::post('password/reset', array(
 ));
 
 */
+
 Route::get('password/reset/{token}', array(
   'uses' => 'PasswordController@reset',
   'as' => 'password.reset'
 ));
 
-Route::post('password/reset/{token}', array(
+//added $ in front ot token. undef error goes away but diff error dec 6 9am
+Route::post('password/update/', array(
   'uses' => 'PasswordController@update',
   'as' => 'password.update'
 ));
+
+
+
+/////////////////////////////////
 
 
 Route::get('jobstoapply', array('before' => 'auth', function()
