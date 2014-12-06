@@ -42,12 +42,12 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
         # Define a one-to-many relationship.
         return $this->hasMany('Resume');
     }
-
+/*
     public function updatepword() {
         # user has many possible resumes
         # Define a one-to-many relationship.
         return $this->hasMany('Password_reminder');
     }
-
+*/
 
 }

@@ -12,6 +12,9 @@
 */
 
 
+
+
+
 Route::get('account', array('before' => 'auth', function()
 
 {
@@ -297,7 +300,7 @@ Route::get('password/remind', array(
 ));
 
 
-Route::post('password/reset', array(
+Route::post('password/remind', array(
   'uses' => 'PasswordController@request',
   'as' => 'password.request'
 ));
@@ -314,8 +317,8 @@ Route::post('password/reset', array(
   'uses' => 'PasswordController@update',
   'as' => 'password.update'
 ));
-
 */
+
 
 Route::get('password/reset/{token}', array(
   'uses' => 'PasswordController@reset',
@@ -323,7 +326,7 @@ Route::get('password/reset/{token}', array(
 ));
 
 //added $ in front ot token. undef error goes away but diff error dec 6 9am
-Route::post('password/update/', array(
+Route::post('password/reset', array(
   'uses' => 'PasswordController@update',
   'as' => 'password.update'
 ));

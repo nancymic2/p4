@@ -12,8 +12,12 @@
 @elseif (Session::has('success'))
   An email with the password reset has been sent.
 @endif
- 
+
+
+
 {{ Form::open(array('route' => 'password.request')) }}
+
+
  
   <p>{{ Form::label('email', 'Email') }}
   {{ Form::text('email') }}</p>

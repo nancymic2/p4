@@ -22,7 +22,11 @@ public function reset()
 public function update()
 {
   //$credentials = array('email' => Input::get('email'));
-  $credentials = array('email' => Input::get('email'), 'password' => Input::get('password'), 'password_confirmation' => Input::get('password_confirmation'));
+  $credentials = array('email' => Input::get('email'), 
+    'password' => Input::get('password'), 
+    'password_confirmation' => Input::get('password_confirmation'),
+'token' => Input::get('token'),
+    );
  
   return Password::reset($credentials, function($user, $password)
   {

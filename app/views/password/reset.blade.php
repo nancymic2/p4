@@ -7,6 +7,8 @@
 
  
 {{ Form::open(array('route' => array('password.update'))) }}
+
+
  
   <p>{{ Form::label('email', 'Email') }}
   {{ Form::text('email') }}</p>
