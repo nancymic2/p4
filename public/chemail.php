@@ -70,7 +70,7 @@ $id = $_GET['id'];
 
 		echo '<form method="post" id=$id action="updatename2.php">';
 		echo '<input type=hidden name=hidden1 value='. $id.'>';
-		echo 'new first name:<input type="text" name="newname2">';
+		echo 'new first name:    <input type="text" name="newname2">    ';
 	//echo 'new email:<input type="text" name="newemail">';
 		echo '<input type="submit">';
 		echo '</form>';
@@ -80,7 +80,7 @@ $id = $_GET['id'];
 
 		echo '<form method="post" id=$id action="updatename.php">';
 		echo '<input type=hidden name=hidden1 value='. $id.'>';
-		echo 'new last name:<input type="text" name="newname">';
+		echo 'new last name:    <input type="text" name="newname">    ';
 	//echo 'new email:<input type="text" name="newemail">';
 		echo '<input type="submit">';
 		echo '</form>';
