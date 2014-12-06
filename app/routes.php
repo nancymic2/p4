@@ -336,7 +336,7 @@ foreach($completedapps as $completedapp) {
 
     echo '<br>';
 
-    echo '<p style="color:red; font-weight: bold">THIS IS PERMANENT</P>';
+    
     echo '____________________<br>';
 
     /// $buyshoe->delete();
