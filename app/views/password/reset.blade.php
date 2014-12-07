@@ -19,7 +19,7 @@
   <p>{{ Form::label('password_confirmation', 'Password confirm') }}
   {{ Form::text('password_confirmation') }}</p>
  
-  
+  <input type="hidden" name="token" value="{{ $token }}">
  
   <p>{{ Form::submit('Submit') }}</p>
  

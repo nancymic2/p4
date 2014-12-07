@@ -291,9 +291,9 @@ Route::get('/applicationupdate', function()
 });
 ////////////////////////////////////
 
+///////////good//////////
 
-
-
+/*
 Route::get('password/remind', array(
   'uses' => 'PasswordController@remind',
   'as' => 'password.remind'
@@ -304,7 +304,7 @@ Route::post('password/remind', array(
   'uses' => 'PasswordController@request',
   'as' => 'password.request'
 ));
-
+*/
 
 /*
 Route::get('password/reset', array(
@@ -319,8 +319,8 @@ Route::post('password/reset', array(
 ));
 */
 
-
-Route::get('password/reset/{token}', array(
+//////////good///////////
+/*Route::get('password/reset/{token}', array(
   'uses' => 'PasswordController@reset',
   'as' => 'password.reset'
 ));
@@ -329,9 +329,30 @@ Route::get('password/reset/{token}', array(
 Route::post('password/reset', array(
   'uses' => 'PasswordController@update',
   'as' => 'password.update'
+)); */
+/////////////////////////////
+
+Route::get('password/reset/{token}', array(
+  'uses' => 'RemindersController@getReset',
+  'as' => 'password.reset'
+));
+
+//added $ in front ot token. undef error goes away but diff error dec 6 9am
+Route::post('password/reset/{token}', array(
+  'uses' => 'RemindersController@postReset',
+  'as' => 'password.update'
+));
+
+Route::get('password/remind', array(
+  'uses' => 'RemindersController@getRemind',
+  'as' => 'password.remind'
 ));
 
 
+Route::post('password/remind', array(
+  'uses' => 'RemindersController@postRemind',
+  'as' => 'password.request'
+));
 
 /////////////////////////////////
 
