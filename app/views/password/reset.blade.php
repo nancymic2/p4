@@ -4,7 +4,7 @@
 @extends('_master')
 
 @section ('reset')
-
+<p>&nbsp;</p>
  
 {{ Form::open(array('route' => array('password.update'))) }}
 
@@ -26,7 +26,7 @@
 {{ Form::close() }}
 
 <br>
-Your password will be reset in our database.
+Clicking Submit will reset your password in our database.
 <br>
 
 @stop
