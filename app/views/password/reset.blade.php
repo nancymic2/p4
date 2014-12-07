@@ -25,7 +25,9 @@
  
 {{ Form::close() }}
 
-
+<br>
+Your password will be reset in our database.
+<br>
 
 @stop
 

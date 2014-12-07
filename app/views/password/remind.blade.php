@@ -26,4 +26,8 @@
  
 {{ Form::close() }}
 
+<br>
+A password reset link will be sent to this email address.
+<br>
+
 @stop
