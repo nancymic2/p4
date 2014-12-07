@@ -20,14 +20,13 @@
 
  
   <p>{{ Form::label('email', 'Email') }}
-  {{ Form::text('email') }}</p>
- 
-  <p>{{ Form::submit('Submit') }}</p>
+  {{ Form::text('email') }}&nbsp;&nbsp;&nbsp;{{ Form::submit('Submit') }}</p>
  
 {{ Form::close() }}
 
 <br>
-A password reset link will be sent to this email address.
+Clicking Submit will send a password reset link to this email address.<br>
+Please check your email.
 <br>
 
 @stop
