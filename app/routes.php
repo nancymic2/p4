@@ -1221,4 +1221,96 @@ Route::get('/get-environment', function()
 
 
 */
+/*
+
+Route::get('/charting', function()
+{
+  $i=0;     
+  $allsalaries = Postedjob::where('salary');
+  
+//echo $allsalaries;
+
+
+
+  echo '<div class="container">'; 
+  echo '<p>';
+  
+
+# loop through the Collection and access just the data
+foreach($allsalaries as $salary) {
+   $i++;
+   $asalary[$i] = $salary;
+    echo $asalary[$i];
+    echo '<b>company:</b> ';
+    //echo $completedapp['company']."<br>";
+
+  } }
+    );*/
+
+Route::get('/charter', function() {
+
+
+  class Postedjobs extends Eloquent {
+
+  }
+
+  $i=0;
+
+    # The all() method will fetch all the rows from a Model/table
+    $postedjobs = Postedjobs::all();
+
+    # Make sure we have results before trying to print them...
+    if($postedjobs->isEmpty() != TRUE) {
+
+
+      $low = array();
+      $med = array();
+      $high = array();
+        # Typically we'd pass $books to a View, but for quick and dirty demonstration, let's just output here...
+        foreach($postedjobs as $postedjob) {
+           //echo $postedjob->salary.'<br>';
+            $sal = $postedjob->salary;
+            if ($sal < 500) 
+            {
+              
+              $low[$i] = $sal;
+            }
+
+            elseif ($sal > 500  && $sal < 10000)
+            {
+
+              $med[$i] = $sal;
+            }
+
+            elseif ($sal > 10000)
+            {
+
+              $high[$i] = $sal;
+            }
+
+
+
+
+           // $numbers[$i] = $sal;
+            //echo $sal;
+            //echo '<br>';
+            $i++;
+
+        }
+
+
+    $countlow= count($low);
+    $countmed= count($med);
+    $counthigh= count($high);
+
+    $salarycount = array ($countlow, $countmed, $counthigh);
+    //echo $salarycount[0];
+    }
+    else {
+        return 'No sal found';
+    }
+return View::make('chart')->with('salarycount', $salarycount);
+});
+
+
 
