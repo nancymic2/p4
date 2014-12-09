@@ -1010,7 +1010,17 @@ Route::post('/applications',
             # Log the user in
            // Auth::login($user);
 
-           return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
+           //return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
+
+            $jobs = json_decode($application, TRUE);
+            $followupBy=$jobs['followupBy'];
+            Session::put('followupBy', $followupBy);
+
+
+            //echo $jobs['applyby'];
+            //echo $postedjob;
+
+            return View::make('calendar2');
 
         }
     )
