@@ -34,14 +34,14 @@ $newdata2=$salarycount[2];
       data.addColumn('string', 'salary');
       data.addColumn('number', 'jobs');
       data.addRows([
-        ['under $500', <?php echo $newdata0; ?>],
-        ['$500 to 10,000', <?php echo $newdata1; ?>],
-        ['over $10,000', <?php echo $newdata2; ?>],
+        ['under $75000', <?php echo $newdata0; ?>],
+        ['$75000 to 100,000', <?php echo $newdata1; ?>],
+        ['over $100,000', <?php echo $newdata2; ?>],
  
       ]);
 
       // Set chart options
-      var options = {'title':'Monthly Salary frequencies across the site',
+      var options = {'title':'Annual Salary frequencies across the site',
                      'width':700,
                      'height':400};
 

@@ -1280,19 +1280,19 @@ Route::get('/charter', function() {
         foreach($postedjobs as $postedjob) {
            //echo $postedjob->salary.'<br>';
             $sal = $postedjob->salary;
-            if ($sal < 500) 
+            if ($sal < 75000) 
             {
               
               $low[$i] = $sal;
             }
 
-            elseif ($sal > 500  && $sal < 10000)
+            elseif ($sal > 75000  && $sal < 100000)
             {
 
               $med[$i] = $sal;
             }
 
-            elseif ($sal > 10000)
+            elseif ($sal > 100000)
             {
 
               $high[$i] = $sal;
