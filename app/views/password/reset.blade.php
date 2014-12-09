@@ -5,7 +5,7 @@
 
 @section ('reset')
 <p>&nbsp;</p>
-<p>Passwords must be at least 7 charaacters long.</p>
+<p>Passwords must be at least 7 characters long.</p>
  
 {{ Form::open(array('route' => array('password.update'))) }}
 
