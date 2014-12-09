@@ -6,6 +6,9 @@
 	<div class="col-sm-6">
 <h2>&nbsp;</h2>
 <h2>Add a job</h2>
+<p>Here you can add jobs you see and wish to apply for <br>
+	as soon as you have a chance. You can add a reminder to your<br>
+	google calendar here too.</p>
 
 
 

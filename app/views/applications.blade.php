@@ -8,7 +8,10 @@
     <div class="col-sm-6">
 <h2>&nbsp;</h2>
 <h2>Add a completed application</h2>
-
+<p>Add info about applications you have made.<br>
+    Stop forgetting where you applied, what resume<br>
+    you used, and what the username and password were<br> to the application site!</p>
+  <p>  If you have an interview, add the date and get a Google calendar reminder</p>
 
 
 
