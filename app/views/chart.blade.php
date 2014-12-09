@@ -68,7 +68,8 @@ $newdata2=$salarycount[2];
   <link rel="stylesheet" href="hmin.css">
 </head>
 <body>
-
+  <br>
+<h3>This chart shows monthly salaries from jobs saved by all users of the site </h3>
 
 
 <!--Div that will hold the pie chart-->
