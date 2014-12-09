@@ -17,7 +17,7 @@ $newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=&
 ///////////////////////////////////
 
 $newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=applyToJob&dates='
-.$newdate.'T090000'.'/'.$newdate.'T123000&details=&sprop=&location=Online">add to google calendar</a>'; 
+.$newdate.'T090000'.'/'.$newdate.'T123000&details=&sprop=&location=Online"><h3>add to google calendar</h3></a>'; 
 
 
 /*$newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=applyToJob&dates='
@@ -31,4 +31,4 @@ $newesturl2=str_replace('<br>', '', $newesturl);
 echo '<br>'; 
 echo $newesturl2;
 echo '<br>'; 
-echo '<a href="/">Back</a>'; 
+echo '<a href="/savedJobs">Back</a>'; 
