@@ -1,0 +1,91 @@
+<style type="text/css">
+    #demo {
+        width:110px;
+        margin-right:auto;
+        margin-left:auto;
+    }
+
+    #progressbar {
+        width:208px;
+        height:18px;
+        display:block;
+        border-left:1px solid #ccc;
+       border-bottom:1px solid #ccc;
+        border-right:1px solid #ccc;
+        border-top:1px solid #ccc;
+
+        overflow:hidden;
+        background-color: white;
+    }
+
+    #progress {
+        display:block;
+        height:100px;
+        width:0%;
+    }
+
+    .progressbarValid {
+        background-color:green;
+        background-image: -o-linear-gradient(-90deg, #8AD702 0%, #389100 100%);
+      background-image: -moz-linear-gradient(-90deg, #8AD702 0%, #389100 100%);
+      background-image: -webkit-linear-gradient(-90deg, #8AD702 0%, #389100 100%);
+      background-image: -ms-linear-gradient(-90deg, #8AD702 0%, #389100 100%);
+      background-image: linear-gradient(-90deg, #8AD702 0%, #389100 100%);
+    }
+
+    .progressbarInvalid {
+        background-color:red;
+        background-image: -o-linear-gradient(-90deg, #F94046 0%, #92080B 100%);
+      background-image: -moz-linear-gradient(-90deg, #F94046 0%, #92080B 100%);
+      background-image: -webkit-linear-gradient(-90deg, #F94046 0%, #92080B 100%);
+      background-image: -ms-linear-gradient(-90deg, #F94046 0%, #92080B 100%);
+      background-image: linear-gradient(-90deg, #F94046 0%, #92080B 100%);
+    }
+
+    #status {
+        height:70px;
+        width:108px;
+        //border:1px solid #ccc;
+       // border-bottom-right-radius: 8px;
+        //border-bottom-left-radius: 8px;
+        background-color: white;
+    }
+
+    #password {
+        width:100%;
+        height:30px;
+        font-size:15px;
+        line-height:20px;
+        border-radius: 8px;
+        padding: 4px;
+
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        margin-bottom: 9px;
+        color: #555555;
+        border: 1px solid #cccccc;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        -webkit-text-security: disc;
+        -webkit-appearance: textfield;
+        outline: none;
+    }
+
+    #complexityLabel {
+        width:50%;
+        text-align:center;
+        margin-top:10px;
+        font-size:10px;
+        line-height:15px;
+    }
+
+    #complexity {
+        width:100%;
+        text-align:center;
+        font-family:"Helvetica Neue", "Helvetica", Arial, sans-serif;
+        font-weight:bold;
+        font-size:15px;
+        line-height:20px;
+        margin-top:5px;
+    }
+
+</style>
