@@ -566,7 +566,6 @@ background-color: #eeeeee;
 $stylesend='</body></html>';
 
 
-
 ///////////////            
 
 //Route::get('/completedapps', function()
@@ -576,6 +575,8 @@ $stylesend='</body></html>';
   
 echo $styles;
   echo '<div class="container">'; 
+  echo '<h2>Your completed applications</h2>';
+
   echo '<p>';
   
 
