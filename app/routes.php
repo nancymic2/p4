@@ -653,7 +653,11 @@ Route::get('resumesearch', array('before' => 'auth', function()
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-
+<style type="text/css">
+td {
+     padding: 11px;
+ }
+ </style>
   <title>Career Trax</title>
   <link rel="stylesheet" href="hmin.css">
 </head>
@@ -704,49 +708,58 @@ $stylesend='</body></html>';
       //$resumes->toArray();
 echo $styles;
   echo '<div class="container">'; 
-  echo '<p>';
+   echo '<p>&nbsp;</p>';
+   echo '<h2>Your resumes</h2>';
+ 
+  echo '<table border="1" width="750" cellpadding="20">';
   
 # loop through the Collection and access just the data
 foreach($resumes as $resume) {
    $i++;
    $resume_id[$i] = $resume->id;
    //echo $resume_names[$i];
-    echo '<b>Resume name:</b> ';
-    echo $resume['name']."<br>";
+   echo '<tr>';
+    echo '<td width="150" style="background-color:#CCCCFF;"><b>Resume name:</b></td> ';
+    echo '<td style="background-color:#CCCCFF;"><b>'.$resume['name']."</b></td>";
+echo '</tr><tr>';
+    echo '<td><b>Resume id:</b> </td>';
+    echo '<td>'.$resume['id']."</td>";
+echo '</tr><tr>';
+    echo '<td><b>Resume text:</b> </td>';
+    echo '<td>'.$resume['resumetext']."</td>";
+echo '</tr><tr>';
+    echo '<td><b>Added:</b> </td>';
+    echo '<td>'.$resume['created_at']."</td>";
+echo '</tr><tr>';
+    echo '<td><b>Resume url:</b></td> ';
 
-    echo '<b>Resume id:</b> ';
-    echo $resume['id']."<br>";
-
-    echo '<b>Resume text:</b> ';
-    echo $resume['resumetext']."<br>";
-
-    echo '<b>Added:</b> ';
-    echo $resume['created_at']."<br>";
-
-    echo '<b>Resume url:</b> ';
-  
-    echo '<a href="'.$resume['url'].'" target="_blank">'. $resume['url'].'</a><br>';
-
+    echo '<td><a href="'.$resume['url'].'" target="_blank">'. $resume['url'].'</a></td><br>';
+echo '</tr>';
    //echo 'delete<br>'.$resume_id[$i];
     echo '<br>';
     echo '<script> var data = "<php echo $resume_id[$i]; ?>" </script>';
 
     $deleteres=$resume_id[$i];
-           
+    
+    echo '<tr>';       
      //echo $deleteres;
           // onclick?  Session::put('applybydate', $applydate);
-    echo '<a href="deleteresume.php?id=' .$deleteres .'">' .'DELETE</a>'; 
+
+    echo '<td colspan="2">';      
+    echo '<a href="deleteresume.php?id=' .$deleteres .'">' .'DELETE THIS RESUME</a>'; 
+     echo '<br>';      
+    echo '<span style="color:red; font-weight: bold;">THIS IS PERMANENT!</span>';
   
-    echo '<span style="color:red; font-weight: bold">&nbsp;THIS IS PERMANENT!</span>';
     echo '<br>';
-    echo '<br>';
-
+    echo '</td>'; 
+    echo '</tr>';
+    echo '<tr>';     
     
-    echo '____________________<br>';
-
+  echo '<td colspan="2" style="background-color:#3399FF;">                         </td>';
+   echo '</tr>';      
    }
    //
-
+echo '</table>';      
 echo '</p>';
 echo '</div>';
     echo $stylesend;
