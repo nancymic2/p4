@@ -587,7 +587,7 @@ foreach($completedapps as $completedapp) {
     //echo $resume_names[$i];
    echo '<div class="myappls">';
    echo '<div class="reshead">';
-   echo 'Resume '.$i;
+   echo 'Application '.$i;
    echo '</div>';
     echo '<b>role:</b> ';
     echo $completedapp['role']."<br>";
