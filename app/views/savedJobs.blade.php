@@ -44,7 +44,7 @@ role (required)<br>
 salary<br>
     {{ Form::text('salary', '', array('class'=>'form-control'))}} 
 
-    Apply by (enter as yyyy-mm-dd)<br>
+    Apply by <br>
  <input class="date" name="applyby" type="text" size="46"  id="applyby" /><br>
 
     Job listing URL (required)<br>
