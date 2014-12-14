@@ -2,6 +2,20 @@
 
 @section ('savedJobs')
 
+<link rel="stylesheet"
+href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css"
+type="text/css" media="all" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"
+type="text/javascript"></script>
+<script src="//code.jquery.com/jquery-1.9.1.js"></script> 
+<script
+src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"
+type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('input.date').datepicker({dateFormat: 'yy-mm-dd'});
+})
+</script>
 <div class="container">
 	<div class="col-sm-6">
 <h2>&nbsp;</h2>
@@ -31,7 +45,7 @@ salary<br>
     {{ Form::text('salary', '', array('class'=>'form-control'))}} 
 
     Apply by (enter as yyyy-mm-dd)<br>
-    {{ Form::text('applyby', '', array('class'=>'form-control'))}} 
+ <input class="date" name="applyby" type="text" size="46"  id="applyby" /><br>
 
     Job listing URL (required)<br>
     {{ Form::text('url', '', array('class'=>'form-control'))}} <br>
@@ -52,8 +66,4 @@ echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
 </div>
 </div>
 @stop
-
-
-
-
 
