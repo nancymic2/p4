@@ -497,7 +497,24 @@ $styles='<!DOCTYPE html>
 
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
+<style type="text/css">
+.myappls {
+  border: 2px dotted #00CCFF;
+  border-radius: 15px;
+  padding: 12px;
+  width: 30%;
+  color: #0099FF;
+  margin-bottom: 10px;
+}
+.reshead {
+background-color: #eeeeee;
+  color: #0099FF;
+  border-radius: 10px;
+  padding: 6px;
+  padding-left: 10px;
+  margin-bottom: 8px;
+}
+</style>
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
@@ -567,6 +584,13 @@ foreach($completedapps as $completedapp) {
    $i++;
    $app_id[$i] = $completedapp->id;
     //echo $resume_names[$i];
+   echo '<div class="myappls">';
+   echo '<div class="reshead">';
+   echo 'Resume '.$i;
+   echo '</div>';
+    echo '<b>role:</b> ';
+    echo $completedapp['role']."<br>";
+
     echo '<b>company:</b> ';
     echo $completedapp['company']."<br>";
 
@@ -624,7 +648,7 @@ foreach($completedapps as $completedapp) {
     echo '<br>';
 
     
-    echo '____________________<br><p>&nbsp;</p>';
+    echo '</div>';
 
     /// $buyshoe->delete();
 
