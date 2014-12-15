@@ -81,6 +81,7 @@ $stylesend='</body></html>';
      
  $names = User::where('id', '=', Auth::user()->id)->get();
  echo $styles;
+ echo '<p>&nbsp;</p>';
    //echo $jobs;
    # loop through the Collection and access just the data
 foreach($names as $name) {
@@ -181,7 +182,7 @@ Route::get('changelast', array('before' => 'auth', function()
 </header>';
 $stylesend='</body></html>';
 echo $styles;
-     
+echo '<p>&nbsp;</p>';    
  $names = User::where('id', '=', Auth::user()->id)->get();
  
    //echo $jobs;
@@ -379,6 +380,24 @@ Route::get('jobstoapply', array('before' => 'auth', function()
 
   <title>Career Trax</title>
   <link rel="stylesheet" href="hmin.css">
+  <style type="text/css">
+.myappls {
+  border: 2px dotted #00CCFF;
+  border-radius: 15px;
+  padding: 12px;
+  width: 30%;
+  color: #0099FF;
+  margin-bottom: 10px;
+}
+.reshead {
+background-color: #eeeeee;
+  color: #0099FF;
+  border-radius: 10px;
+  padding: 6px;
+  padding-left: 10px;
+  margin-bottom: 8px;
+}
+</style>
 </head>
 <body>
   <div class="container" style="margin:30px;">
@@ -430,41 +449,39 @@ $stylesend='</body></html>';
   $jobs = Postedjob::where('user_id', '=', Auth::user()->id)->get();
   echo $styles;
   echo '<div class="container">'; 
-  echo '<p>&nbsp;</p>';
-   echo '<h2>Your Saved Jobs</h2>';
-    echo '<h3>Remember to apply!</h3>';
-  echo '<table border="1" cellpadding="20">';
+  echo '<h2>Your Saved Jobs</h2>';
+
    //echo $jobs;
    # loop through the Collection and access just the data
 foreach($jobs as $job) {
+     echo '<div class="myappls">';
+   echo '<div class="reshead">';
+   echo 'Saved Job';
+   echo '</div>';
 
+    echo '<b>role:</b> ';
+    echo $job['role']."<br>";
 
-echo '<tr>';
-    echo '<td><b>role:</b></td>';
-    echo '<td>'.$job['role'].'</td>';
-echo '</tr><tr>';
-    echo '<td><b>company:</b> </td>';
-    echo '<td>'.$job['company'].'</td>';
-echo '</tr><tr>';
-    echo '<td><b>salary:</b></td> ';
-    echo '<td>'.$job['salary'].'</td>';
-echo '</tr><tr>';
-    echo '<td><b>job url:</b></td> ';
+    echo '<b>company:</b> ';
+    echo $job['company']."<br>";
 
+    echo '<b>salary:</b> ';
+    echo $job['salary']."<br>";
+
+    echo '<b>job url:</b> ';
     //echo $job['url']."<br>";
-    echo '<td>';
     echo '<a href="'.$job['url'].'" target="_blank">'. $job['url'].'</a><br>';
-    echo '</td>';
-echo '</tr><tr>';
-    echo '<td><b>Apply by:</b></td> ';
-    echo '<td>'.$job['applyby'].'</td>';
-    echo '</tr><tr>';
-    echo '<td colspan="2" style="background-color:#3399FF;">                         </td>';
 
-  
+    echo '<b>Apply by:</b> ';
+    echo $job['applyby']."<br>";
+
+    
+    echo '</p>';
+    echo '</div>';
+    
 } 
-
-   echo '</td></table>';
+  
+   echo '<br>';
 
    echo $stylesend;
   
@@ -734,9 +751,9 @@ $stylesend='</body></html>';
 echo $styles;
   echo '<div class="container">'; 
    echo '<p>&nbsp;</p>';
-   echo '<h2>Your resumes</h2>';
+   echo '<h2>Your saved resumes</h2>';
  
-  echo '<table border="1" width="750" cellpadding="20">';
+  echo '<table  width="750" cellpadding="20" style="border: 2px dotted #00CCFF; border-radius: 10px;">';
   
 # loop through the Collection and access just the data
 foreach($resumes as $resume) {
@@ -744,8 +761,8 @@ foreach($resumes as $resume) {
    $resume_id[$i] = $resume->id;
    //echo $resume_names[$i];
    echo '<tr>';
-    echo '<td width="150" style="background-color:#CCCCFF;"><b>Resume name:</b></td> ';
-    echo '<td style="background-color:#CCCCFF;"><b>'.$resume['name']."</b></td>";
+    echo '<td width="150" style="background-color:#eeeeee;"><b>Resume name:</b></td> ';
+    echo '<td style="background-color:#eeeeee;"><b>'.$resume['name']."</b></td>";
 echo '</tr><tr>';
     echo '<td><b>Resume id:</b> </td>';
     echo '<td>'.$resume['id']."</td>";
@@ -780,7 +797,7 @@ echo '</tr>';
     echo '</tr>';
     echo '<tr>';     
     
-  echo '<td colspan="2" style="background-color:#3399FF;">                         </td>';
+  echo '<td colspan="2" style="background-color:#CCCCFF;">                         </td>';
    echo '</tr>';      
    }
    //
