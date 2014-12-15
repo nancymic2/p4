@@ -456,11 +456,12 @@ $stylesend='</body></html>';
 foreach($jobs as $job) {
      echo '<div class="myappls">';
    echo '<div class="reshead">';
-   echo 'Saved Job';
-   echo '</div>';
-
+  
+   
     echo '<b>role:</b> ';
     echo $job['role']."<br>";
+
+    echo '</div>';
 
     echo '<b>company:</b> ';
     echo $job['company']."<br>";
