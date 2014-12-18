@@ -1,25 +1,70 @@
-## Laravel PHP Framework
+#Nancy Michell
+###CSCI E-15
+###Project 4
+####December 17, 2014
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+**Project URL [http://p4.scholarpaws.com](http://p4.scholarpaws.com)**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+**Git URL [https://github.com/nancymic2/p4.git](https://github.com/nancymic2/p4.git)**
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
++ Project 4 is a website and database for keeping track of your activities during a job search.
+It features operations for:
+	+ creating records for completed job applications
+	+ creating records for new posted jobs
+	+ creating records for resumes
+	+ creating user account
+	+ storing resume text or links to stored resumes
+	+ find returns all the user's saved resumes
+	+ find returns all the user's saved jobs
+	+ find returns all the user's saved completed applications
+	+ users are properly routed based on their logged in / logged out / registered status
+	+ password changer sends email to user with link/token for changing password
+	+ signup screen has password complexity meter
+	+ home page has google charts dynamic chart that reads the CareerTrax databse for salary info (just for fun)
+	+ add a completed application page has cool circular input control
+	+ incorporated jQuery date picker on the save a job page
+	+ signup page has password strength meter
+	+ save a job has datepicker
+	+ add application has knob input control
+	+ add application can generate google calendar reminders
+	+ add job can generate google calendar reminders
+	+ Password reset is working properly
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Tables:
++ Users (users)
++ Resumes (resumes)
++ Saved jobs (postedjobs)
++ Completed applications (applications)
++ Password reminders (password_reminders)
++ Database name (shoes :-))
 
-## Official Documentation
+CRUD operations are:
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
++ **Create**: a new  resume record, a new application record, a new saved job record, a new user record
++ **Read**: return resumes, return jobs, return applications, read data for salary chart, read account info
++ **Update**: change first name, change last name
++ **Delete**: delete resume
 
-### Contributing To Laravel
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
++ Code is both mine and from a variety of places:
+	+ The knob/dial input on the add application page is a jQuery plugin from [http://anthonyterrien.com/knob/](http://anthonyterrien.com/knob/ "http://anthonyterrien.com/knob/") with settings approriate for page.
+	+  The datepickeer on saved jobs page is from jQuery UI [http://jqueryui.com/datepicker/](http://jqueryui.com/datepicker/ "http://jqueryui.com/datepicker/")
+	+ The password meter is complexify [http://danpalmer.me/jquery-complexify/](http://danpalmer.me/jquery-complexify/ "http://danpalmer.me/jquery-complexify/") 
+	and [http://tutorialzine.com/2012/06/beautiful-password-strength-indicator/](http://tutorialzine.com/2012/06/beautiful-password-strength-indicator/ "http://tutorialzine.com/2012/06/beautiful-password-strength-indicator/")
+	+ The dynamic salary chart on the home page is from google charts [https://developers.google.com/chart/](https://developers.google.com/chart/ "https://developers.google.com/chart/")
+	+ Styles are based on bootstrap
 
-### License
++ GitHub URL is [https://github.com/nancymic2/p4.git](https://github.com/nancymic2/p4.git)
++ note: image is modified by me from Google images
++ Potential issues:
+	+ I was not able to move all my code to controllers (yet) This is planned.
+	+ I plan to relate resumes to applications
+	+ I plan to add update capability to applications
+	+ I plan to add upload for resume files
+	+ I will also add styles to separate files as soon as I move code out of routes into views
+	+ I might encrypt the job site password field. The career trax password id of course hashed
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+
+
+***
