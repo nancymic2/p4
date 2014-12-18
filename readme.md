@@ -23,7 +23,6 @@ It features operations for:
 	+ home page has google charts dynamic chart that reads the CareerTrax databse for salary info (just for fun)
 	+ add a completed application page has cool circular input control
 	+ incorporated jQuery date picker on the save a job page
-	+ signup page has password strength meter
 	+ add application can generate google calendar reminders
 	+ add job can generate google calendar reminders
 
