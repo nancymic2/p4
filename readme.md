@@ -24,13 +24,12 @@ It features operations for:
 	+ add a completed application page has cool circular input control
 	+ incorporated jQuery date picker on the save a job page
 	+ signup page has password strength meter
-	+ save a job has datepicker
-	+ add application has knob input control
 	+ add application can generate google calendar reminders
 	+ add job can generate google calendar reminders
-	+ Password reset is working properly
+
 
 Tables:
+
 + Users (users)
 + Resumes (resumes)
 + Saved jobs (postedjobs)
