@@ -60,7 +60,7 @@ CRUD operations are:
 	+ I plan to add update capability to applications
 	+ I plan to add upload for resume files
 	+ I will also add styles to separate files as soon as I move code out of routes into views
-	+ I might encrypt the job site password field. The career trax password id of course hashed
+	+ I might encrypt the job site password field. The career trax password is of course hashed
 
 
 
