@@ -64,8 +64,7 @@ Route::get('account', array('before' => 'auth', function()
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="/applications">Add Application</a></li>
-       <!-- <li><a href="/savedJobs">Add a Job</a></li>-->
-       <li><a href="http://nancymichell.us/wordpres/?page_id=176">Add a Job</a>
+        <li><a href="/savedJobs">Add a Job</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
@@ -168,8 +167,7 @@ Route::get('changelast', array('before' => 'auth', function()
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="/applications">Add Application</a></li>
-               <!-- <li><a href="/savedJobs">Add a Job</a></li>-->
-       <li><a href="http://nancymichell.us/wordpres/?page_id=176">Add a Job</a>
+        <li><a href="/savedJobs">Add a Job</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
@@ -428,8 +426,8 @@ background-color: #eeeeee;
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="/applications">Add Application</a></li>
-               <!-- <li><a href="/savedJobs">Add a Job</a></li>-->
-       <li><a href="http://nancymichell.us/wordpres/?page_id=176">Add a Job</a>        <li><a href="/completedapps">Find Completed Apps</a></li>
+        <li><a href="/savedJobs">Add a Job</a></li>
+        <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
         <li><a href="/logout">Log Out</a></li>
@@ -570,8 +568,7 @@ background-color: #eeeeee;
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="/applications">Add Application</a></li>
-               <!-- <li><a href="/savedJobs">Add a Job</a></li>-->
-       <li><a href="http://nancymichell.us/wordpres/?page_id=176">Add a Job</a>
+        <li><a href="/savedJobs">Add a Job</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
@@ -734,8 +731,7 @@ td {
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="/applications">Add Application</a></li>
-               <!-- <li><a href="/savedJobs">Add a Job</a></li>-->
-       <li><a href="http://nancymichell.us/wordpres/?page_id=176">Add a Job</a>
+        <li><a href="/savedJobs">Add a Job</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
