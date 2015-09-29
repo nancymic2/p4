@@ -22,11 +22,26 @@ $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
 <h2>Add a Company</h2>
 <p>Here you can add companies and their Career websites,<br>
  along with your credentials for them. This function is <br>
- completely changing. Nust be rewritten to add companies. <br>
+ completely changing. Must be rewritten to add companies. <br>
  Need new database table and all new queries.
 	note, the add a reminder to your<br>
 	google calendar feature will be rewritten and moved to add a job.</p>
 	<h4>Ignore salary, role and other fields for now. This is a placeholder page pending DB restructure</h4>
+	Here you will be able to:
+	<ul>
+		<li>Add a company</li>
+		<li>Add their contact info</li>
+
+		<li>Add their career website</li>
+
+		<li>Add username and password to career site</li>
+
+		<li>Add contact names</li>
+
+		<li>relate to jobs you've added to the DB</li>
+
+		</ul>
+
 
 
 
