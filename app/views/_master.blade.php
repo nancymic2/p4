@@ -48,9 +48,11 @@
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="/applications">Add Application</a></li>
         <li><a href="/savedJobs">Add a Job</a></li>
-        <li><a href="/completedapps">Find Completed Apps</a></li>
+        <!--<li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
-        <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+        <li><a href="/jobstoapply">Find Saved Jobs</a></li>-->  
+        <!--commented out 929-->
+        
         <li><a href="/logout">Log Out</a></li>
       
       </ul>
