@@ -13,9 +13,9 @@
 
 
 
+//below i changed before auth to before guest and test no auth on 9-29
 
-
-Route::get('account', array('before' => 'auth', function()
+Route::get('account', array('before' => 'guest', function()
 
 {
      $styles='<!DOCTYPE html>
@@ -118,7 +118,8 @@ echo $stylesend;
 }));
 
 
-Route::get('changelast', array('before' => 'auth', function()
+//below i changed before auth to before guest and test no auth on 9-29
+Route::get('changelast', array('before' => 'guest', function()
 
 {
    $styles='<!DOCTYPE html>
@@ -211,7 +212,9 @@ echo $stylesend;
     
 }));
 
-Route::get('myemail', array('before' => 'auth', function()
+//below i changed before auth to before guest and test no auth on 9-29
+
+Route::get('myemail', array('before' => 'guest', function()
 
 {
      
@@ -357,8 +360,8 @@ Route::post('password/remind', array(
 
 /////////////////////////////////
 
-
-Route::get('jobstoapply', array('before' => 'auth', function()
+//below i changed before auth to before guest and test no auth on 9-29
+Route::get('jobstoapply', array('before' => 'guest', function()
 
 {
 
@@ -501,8 +504,9 @@ Route::get('/completedappsOld', function()
     
 });
 
+//below i changed before auth to before guest and test no auth on 9-29
 
-Route::get('completedapps', array('before' => 'auth', function()
+Route::get('completedapps', array('before' => 'guest', function()
   {      
 ////////////////
 $styles='<!DOCTYPE html>
@@ -678,7 +682,8 @@ echo '</p>';
  echo $stylesend;   
 }));
 
-Route::get('resumesearch', array('before' => 'auth', function()
+//below i changed before auth to before guest and test no auth on 9-29
+Route::get('resumesearch', array('before' => 'guest', function()
 
 {
   $styles='<!DOCTYPE html>
@@ -938,7 +943,7 @@ Route::get('/logout', function() {
 
 
 
-//below i changed before auth to before guest and test no auth
+//below i changed before auth to before guest and test no auth on 9-29
 Route::get('resume', array('before' => 'guest', function()
          {
             return View::make('resume');
@@ -982,7 +987,8 @@ Route::post('/resume',
 
 ////////////////
 
-Route::get('savedJobs', array('before' => 'auth', function()
+//below i changed before auth to before guest and test no auth on 9-29
+Route::get('savedJobs', array('before' => 'guest', function()
          {
             return View::make('savedJobs');
         }
@@ -1032,7 +1038,8 @@ Route::post('/savedJobs',
     )
 );
 
-Route::get('applications', array('before' => 'auth', function()
+//below i changed before auth to before guest and test no auth on 9-29
+Route::get('applications', array('before' => 'guest', function()
          {
             return View::make('applications');
         }
