@@ -938,8 +938,8 @@ Route::get('/logout', function() {
 
 
 
-
-Route::get('resume', array('before' => 'auth', function()
+//below i changed before auth to before guest and test no auth
+Route::get('resume', array('before' => 'guest', function()
          {
             return View::make('resume');
         }
