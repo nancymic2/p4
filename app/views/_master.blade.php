@@ -45,7 +45,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-        <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
+        <!--<li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>-->
+
+        <!-- changed above to make resume not the active link. above it it alsways atve -->
+
+        <li><a href="/resume">Add Resume</a></li>
 
         <!--changed add app to add job text link only 9-29   test to see if master.blade is used everywhere-->
         <li><a href="/applications">Add a Job</a></li>
