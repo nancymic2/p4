@@ -26,7 +26,7 @@ $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
  Need new database table and all new queries.
 	note, the add a reminder to your<br>
 	google calendar feature will be rewritten and moved to add a job.</p>
-	<h4>Ignore salary field for now</h4>
+	<h4>Ignore salary, role and other fields for now. This is a placeholder page pending DB restructure</h4>
 
 
 
