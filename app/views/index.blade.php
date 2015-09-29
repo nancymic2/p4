@@ -6,7 +6,7 @@
 <div class="container">
 	<div class="col-sm-6"
 <h2>&nbsp;</h2>
-<h2>Join CareerTrax! or take a spin without an account for now</h2>
+<h2>Join CareerTrax! or take a spin without an account for now. Later the pages will be behind the login screen.</h2>
 <p>CareerTrax lets you keep track of 
 	<ul><li>your job appplications</li>
 		<li>jobs you plan to apply for</li>
