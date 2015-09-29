@@ -19,10 +19,13 @@ $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
 <div class="container">
 	<div class="col-sm-6">
 <h2>&nbsp;</h2>
-<h2>Add a job</h2>
-<p>Here you can add jobs you see and wish to apply for <br>
-	as soon as you have a chance. You can add a reminder to your<br>
-	google calendar here too.</p>
+<h2>Add a Company</h2>
+<p>Here you can add companies and their Career websites,<br>
+ along with your credentials for them. This function is <br>
+ completely changing. Nust be rewritten to add companies. <br>
+ Need new database table and all new queries.
+	note, the add a reminder to your<br>
+	google calendar feature will be rewritten and moved to add a job.</p>
 
 
 
