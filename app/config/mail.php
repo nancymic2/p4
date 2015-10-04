@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'p4wa15@gmail.com', 'name' => 'careerTrax'),
+	'from' => array('address' => 'p4dwa15@gmail.com', 'name' => 'careerTrax'),
 
 	/*
 	|--------------------------------------------------------------------------
