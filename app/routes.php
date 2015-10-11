@@ -39,7 +39,7 @@ Route::get('account', array('before' => 'auth', function()
 </head>
 <body>
   <div class="container" style="margin:30px;">
-<img style="float:left" src="train2.jpg"> <h1>CareerTrax</h1> <h3>Get your job hunt on track.</h3>
+<img style="float:left" src="train2.jpg"> <h1>Get your job hunt on track.</h1>
 </div>
 </div>
   <!--<div class="jumbotron">-->
@@ -143,7 +143,7 @@ Route::get('changelast', array('before' => 'auth', function()
 </head>
 <body>
   <div class="container" style="margin:30px;">
-<img style="float:left" src="train2.jpg"> <h1>CareerTrax</h1> <h3>Get your job hunt on track.</h3>
+<img style="float:left" src="train2.jpg"> <h1>Get your job hunt on track.</h1>
 </div>
 </div>
   <!--<div class="jumbotron">-->
@@ -403,7 +403,7 @@ background-color: #eeeeee;
 </head>
 <body>
   <div class="container" style="margin:30px;">
-<img style="float:left" src="train2.jpg"> <h1>CareerTrax</h1> <h3>Get your job hunt on track.</h3>
+<img style="float:left" src="train2.jpg"> <h1>Get your job hunt on track.</h1>
 </div>
 </div>
   <!--<div class="jumbotron">-->
@@ -546,7 +546,7 @@ background-color: #eeeeee;
 </head>
 <body>
   <div class="container" style="margin:30px;">
-<img style="float:left" src="train2.jpg"> <h1>CareerTrax</h1> <h3>Get your job hunt on track.</h3>
+<img style="float:left" src="train2.jpg"> <h1>Get your job hunt on track.</h1>
 </div>
 </div>
   <!--<div class="jumbotron">-->
@@ -710,7 +710,7 @@ td {
 </head>
 <body>
   <div class="container" style="margin:30px;">
-<img style="float:left" src="train2.jpg"> <h1>CareerTrax</h1> <h3>Get your job hunt on track.</h3>
+<img style="float:left" src="train2.jpg"> <h1>Get your job hunt on track.</h1>
 </div>
 </div>
   <!--<div class="jumbotron">-->
