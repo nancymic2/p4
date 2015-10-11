@@ -998,7 +998,7 @@ Route::post('/company',
             $company = new Company;
             $company->user()->associate(Auth::user());
          
-            $company->url   = Input::get('url');
+            $company->website   = Input::get('website');
             $company->company    = Input::get('company');
             $company->street    = Input::get('street');
            
