@@ -113,7 +113,7 @@
 
 <h2>&nbsp;</h2>
 <h2>Add a Company</h2>
-<p>Add a company</p>
+
 
 
 
@@ -122,12 +122,12 @@
 
 {{ Form::open(array('url' => '/company')) }}
 
-///////
+
     <h3>First rate this company</h3><br>
  <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
 
 value="44"><br>
-///////
+
 
 company Name<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
