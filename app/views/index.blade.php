@@ -18,9 +18,7 @@
 	<p>No ads, no artilces, no clutter, and nothing to sell. Just a place to track your jub hunt activities and
 		get calendar reminders.</p>
   <?php  echo '<a class="btn btn-primary" href="/charter">see salary chart</a> <p>&nbsp;</p>'; ?>
-	<div class="col-sm-6"
 
-</div>
 
 
 <?php 
