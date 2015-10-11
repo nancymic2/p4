@@ -53,7 +53,7 @@
 
         <!--changed add app to add job text link only 9-29   test to see if master.blade is used everywhere-->
         <li><a href="/applications">Add a Job</a></li>
-        <li><a href="/savedJobs">Add a Company</a></li>
+        <li><a href="/savedJobs">Add Something</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
