@@ -28,7 +28,9 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.gmail.com',
+	//'host' => 'smtp.gmail.com',
+	'host' => 'smtp.mail.yahoo.com',
+
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +56,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'p4dwa15@gmail.com', 'name' => 'careerTrax'),
+	'from' => array('address' => 'career_trax@mail.yahoo.com', 'name' => 'careerTrax'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +82,7 @@ return array(
 	|
 	*/
 
-	'username' => 'p4dwa15',
+	'username' => 'career_trax',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +95,7 @@ return array(
 	|
 	*/
 
-	'password' => 'maxwelldworkin',
+	'password' => '33jobsstreet',
 
 	/*
 	|--------------------------------------------------------------------------
