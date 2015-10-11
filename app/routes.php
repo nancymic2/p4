@@ -68,6 +68,7 @@ Route::get('account', array('before' => 'auth', function()
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+        <li><a href="/company">Add Company</a></li>
         <li><a href="/logout">Log Out</a></li>
       
       </ul>
@@ -171,6 +172,7 @@ Route::get('changelast', array('before' => 'auth', function()
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+        <li><a href="/company">Add Company</a></li>
         <li><a href="/logout">Log Out</a></li>
       
       </ul>
@@ -430,6 +432,7 @@ background-color: #eeeeee;
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+        <li><a href="/company">Add Company</a></li>
         <li><a href="/logout">Log Out</a></li>
       
       </ul>
@@ -572,6 +575,7 @@ background-color: #eeeeee;
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+        <li><a href="/company">Add Company</a></li>
         <li><a href="/logout">Log Out</a></li>
       
       </ul>
@@ -735,6 +739,7 @@ td {
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+            <li><a href="/company">Add Company</a></li>
         <li><a href="/logout">Log Out</a></li>
       
       </ul>
@@ -975,6 +980,47 @@ Route::post('/resume',
         }
     )
 );
+
+
+///// added 10-11-15
+Route::get('company', array('before' => 'auth', function()
+         {
+            return View::make('company');
+        }
+    )
+);
+
+Route::post('/company', 
+    array(
+        'before' => 'csrf', 
+        function() {
+
+            $company = new Company;
+            $company->user()->associate(Auth::user());
+         
+            $company->url   = Input::get('url');
+            $company->company    = Input::get('company');
+            $company->street    = Input::get('street');
+           
+            # Try to add the company 
+            try {
+                $company->save();
+            }
+            # Fail
+            catch (Exception $e) {
+                return Redirect::to('/company')->with('flash_message', 'resume addition failed; please try again.')->withInput();
+            }
+
+            # Log the user in
+           // Auth::login($user);
+
+           return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
+
+        }
+    )
+);
+
+////////////////////////////
 
 ////////////////////////pass value to view
 
