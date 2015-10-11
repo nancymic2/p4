@@ -1001,6 +1001,7 @@ Route::post('/company',
             $company->website   = Input::get('website');
             $company->company    = Input::get('company');
             $company->street    = Input::get('street');
+             $company->rating    = Input::get('rating');
            
             # Try to add the company 
             try {
