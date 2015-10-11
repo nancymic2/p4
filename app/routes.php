@@ -63,7 +63,7 @@ Route::get('account', array('before' => 'auth', function()
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
-        <li><a href="/applications">Add Application</a></li>
+        <li><a href="/applications">Add a Job</a></li>
         <li><a href="/savedJobs">Add Something</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
@@ -167,7 +167,7 @@ Route::get('changelast', array('before' => 'auth', function()
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
-        <li><a href="/applications">Add Application</a></li>
+        <li><a href="/applications">Add a Job</a></li>
         <li><a href="/savedJobs">Add Something</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
@@ -427,7 +427,7 @@ background-color: #eeeeee;
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
-        <li><a href="/applications">Add Application</a></li>
+        <li><a href="/applications">Add a Job</a></li>
         <li><a href="/savedJobs">Add Something</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
@@ -570,7 +570,7 @@ background-color: #eeeeee;
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
-        <li><a href="/applications">Add Application</a></li>
+        <li><a href="/applications">Add a Job</a></li>
         <li><a href="/savedJobs">Add Something</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
@@ -734,7 +734,7 @@ td {
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
-        <li><a href="/applications">Add Application</a></li>
+        <li><a href="/applications">Add a Job</a></li>
         <li><a href="/savedJobs">Add Something</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
