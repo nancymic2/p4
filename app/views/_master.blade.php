@@ -57,6 +57,7 @@
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+         <li><a href="/company">Add Company</a></li>
         <!--WAS commented out 929-->
 
         <li><a href="/logout">Log Out</a></li>
@@ -88,6 +89,8 @@
 @yield ('reset')
 
 @yield ('chart')
+
+@yield ('company')
 
 
 <!--/////////////////-->
