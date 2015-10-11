@@ -25,7 +25,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
    
 
-    public function application() {
+    public function application() {  ///// not used 10-11-2015
         # user has many Applications
         # Define a one-to-many relationship.
         return $this->hasMany('Application');
@@ -42,6 +42,24 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
         # Define a one-to-many relationship.
         return $this->hasMany('Resume');
     }
+
+/////below added 10-11-2015
+
+    public function company() {
+        # user has many possible companies
+        # Define a one-to-many relationship.
+        return $this->hasMany('Company');
+    }
+
+    public function recruiter() {
+        # user has many possible recruiters
+        # Define a one-to-many relationship.
+        return $this->hasMany('Recruiter');
+    }
+
+
+
+
 /*
     public function updatepword() {
         # user has many possible resumes
