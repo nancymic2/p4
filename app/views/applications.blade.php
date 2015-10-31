@@ -167,8 +167,12 @@ value="44"><br>-->
     Hiring Manager<br>
     {{ Form::text('hiringMgr', '', array('class'=>'form-control'))}} 
 
-    Interview Date (enter as yyyy-mm-dd)<br>
+    <!--Interview Date (enter as yyyy-mm-dd)<br>
     {{ Form::text('followupBy', '', array('class'=>'form-control'))}} 
+    -->
+
+    Interview Date <br>
+     <input class="date" name="followupBy" type="text" size="46"  id="followupBy" /><br>
 
     decision<br>
     {{ Form::text('decision', '', array('class'=>'form-control'))}} 
