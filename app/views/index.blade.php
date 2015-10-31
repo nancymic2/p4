@@ -7,7 +7,8 @@
 	<div class="col-sm-6"
 <h2>&nbsp;</h2>
 <h2>Join CareerTrax! All user pages are behind the login screen.</h2>
-<h3>test credentials: user test@test.com, password testtest</h3>
+<p>test credentials: user test@test.com, password: testtest</p>
+<p>To see soe data, try user: 4@5.com,  password: 123456
 <p>CareerTrax lets you keep track of 
 	<ul><li>your job appplications</li>
 		<li>jobs you plan to apply for</li>
