@@ -1491,6 +1491,75 @@ Route::get('/charter', function() {
 return View::make('chart')->with('salarycount', $salarycount);
 });
 
+///////////////////////////
+
+/*
+
+Route::get('/coratings', function() {
 
 
+  class Companies extends Eloquent {
+
+  }
+
+  $i=0;
+
+    # The all() method will fetch all the rows from a Model/table
+    $companies = Companies::all();
+
+    # Make sure we have results before trying to print them...
+    if($companies->isEmpty() != TRUE) {
+
+
+      $low = array();
+      $med = array();
+      $high = array();
+        # Typically we'd pass $books to a View, but for quick and dirty demonstration, let's just output here...
+        foreach($companies as $company) {
+           //echo $postedjob->salary.'<br>';
+            $sal = $company->rating;
+            if ($sal < 75000) 
+            {
+              
+              $low[$i] = $sal;
+            }
+
+            elseif ($sal > 75000  && $sal < 100000)
+            {
+
+              $med[$i] = $sal;
+            }
+
+            elseif ($sal > 100000)
+            {
+
+              $high[$i] = $sal;
+            }
+
+
+
+
+           // $numbers[$i] = $sal;
+            //echo $sal;
+            //echo '<br>';
+            $i++;
+
+        }
+
+
+    $countlow= count($low);
+    $countmed= count($med);
+    $counthigh= count($high);
+
+    $salarycount = array ($countlow, $countmed, $counthigh);
+    //echo $salarycount[0];
+    }
+    else {
+        return 'No sal found';
+    }
+return View::make('chart')->with('salarycount', $salarycount);
+});
+
+
+*/
 
