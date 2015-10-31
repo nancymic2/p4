@@ -15,7 +15,8 @@
                     })
                 </script>
         </head>
-<div class='layout-document'>
+<div class="container">
+    <div class="col-sm-6">
 
 
 
