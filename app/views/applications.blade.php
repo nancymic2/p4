@@ -128,8 +128,10 @@
 
 value="44"><br>
 
-    company<br>
+    add company<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
+
+    or select previous company<br>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
 
     role<br>
