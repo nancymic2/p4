@@ -131,9 +131,6 @@ value="44"><br>
     company<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
 
-    <!--{{ Form::select('category', $categories) }}  10/31/15 -->
-
-
 
     role<br>
     {{ Form::text('role', '', array('class'=>'form-control'))}} 
@@ -193,7 +190,6 @@ echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
 </div>
 </div>
 @stop
-
 
 
 
