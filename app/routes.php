@@ -1082,6 +1082,12 @@ Route::post('/savedJobs',
 Route::get('applications', array('before' => 'auth', function()
          {
             //return View::make('applications');  //commented out 10/31/15
+
+          // 10/31/15 create the array to hold companies from companies table - $company_lists
+          // us the lists method of eloquent
+          // grab the company and id from the companie table for the logged in user
+          //return view applications plus the array
+          
           $company_lists = Company::lists('company', 'id');  /// 10/31/15
 
           return View::make('applications', array('company_lists' => $company_lists));  ///10/31/15
