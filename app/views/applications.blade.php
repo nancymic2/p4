@@ -172,7 +172,7 @@ value="44"><br>-->
     -->
 
     Interview Date <br>
-     <input class="date" name="followupBy" type="text" size="46"  id="followupBy" /><br>
+     <input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
 
     decision<br>
     {{ Form::text('decision', '', array('class'=>'form-control'))}} 
