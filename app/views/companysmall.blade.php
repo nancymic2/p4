@@ -121,7 +121,7 @@
     <h3>First rate this company</h3>
  <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
 
-value="44">
+value="44"><br>
 
 
 company Name<br>
