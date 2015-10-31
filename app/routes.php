@@ -1081,7 +1081,10 @@ Route::post('/savedJobs',
 
 Route::get('applications', array('before' => 'auth', function()
          {
-            return View::make('applications');
+            //return View::make('applications');  //commented out 10/31/15
+          $company_lists = companies::lists('company', 'id');  /// 10/31/15
+
+          return View::make('applications', array('company_lists' => $company_lists));  ///10/31/15
         }
     )
 );
