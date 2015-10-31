@@ -130,10 +130,11 @@
 
 {{ Form::open(array('url' => '/applications')) }}
 
-    <h3>First rate this job prospect</h3><br>
+   <!-- <h3>First rate this job prospect</h3><br>
  <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
 
-value="44"><br>
+value="44"><br>-->
+<!-- remove rating -->
 <a href="#" onclick='window.open("/companysmall", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=100, width=400, height=400, menubar=0, status=0, titlebar=0, toolbar=0, nomenubar=no, status=no, titlebar=no, toolbar=no" );'>Add a company</a>
 
    <!-- add company<br>
