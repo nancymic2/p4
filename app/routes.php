@@ -1026,7 +1026,7 @@ Route::post('/company',
 ///// added 10-11-15
 Route::get('companysmall', array('before' => 'auth', function()
          {
-            return View::make('company');
+            return View::make('companysmall');
         }
     )
 );
