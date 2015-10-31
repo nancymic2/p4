@@ -6,7 +6,8 @@
 <div class="container">
 	<div class="col-sm-6"
 <h2>&nbsp;</h2>
-<h2>Join CareerTrax! All user pages are behind the login screen. Salary chart working without login. Company ratings to come</h2>
+<h2>Join CareerTrax! All user pages are behind the login screen.</h2>
+<h3>test credentials: user test@test.com, password testtest</h3>
 <p>CareerTrax lets you keep track of 
 	<ul><li>your job appplications</li>
 		<li>jobs you plan to apply for</li>
