@@ -127,7 +127,7 @@
  <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
 
 value="44"><br>
-<a href="/company" target="_blank">Add a company</a>
+<a href="/company" target="_blank" width="500" height="400">Add a company</a>
 
    <!-- add company<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
