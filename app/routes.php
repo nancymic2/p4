@@ -1031,7 +1031,9 @@ Route::get('companysmall', array('before' => 'auth', function()
     )
 );
 
-Route::post('/companysmall', 
+// Route::post('/companysmall',   dcomment out. try no route on post
+
+  Route::post('/companysmall', 
     array(
         'before' => 'csrf', 
         function() {
@@ -1057,6 +1059,7 @@ Route::post('/companysmall',
            // Auth::login($user);
 
           // return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
+            return Redirect::to('/companysmall');
 
         }
     )
