@@ -1056,7 +1056,7 @@ Route::post('/companysmall',
             # Log the user in
            // Auth::login($user);
 
-           return; // Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
+          // return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
