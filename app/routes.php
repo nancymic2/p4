@@ -1087,7 +1087,7 @@ Route::get('applications', array('before' => 'auth', function()
           // us the lists method of eloquent
           // grab the company and id from the companie table for the logged in user
           //return view applications plus the array
-          
+
           $company_lists = Company::lists('company', 'id');  /// 10/31/15
 
           return View::make('applications', array('company_lists' => $company_lists));  ///10/31/15
@@ -1104,7 +1104,9 @@ Route::post('/applications',
              $application = new Application;
              $application->user()->associate(Auth::user());
          
-             $application->company   = Input::get('company');
+          $application->company   = Input::get('company_id');  /// added 10/31/15  need to remove company textbox or add field in db for extra co.
+
+             ///$application->company   = Input::get('company');   //commented out 10/31/15  replaced by select
              $application->role    = Input::get('role');
              $application->city    = Input::get('city');
              $application->salary    = Input::get('salary');
