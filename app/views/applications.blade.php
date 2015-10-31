@@ -158,7 +158,7 @@ value="44"><br>-->
     -->
 
     Applied Date <br>
-     <input class="date" name="applyDate" type="text" size="25"  id="applyDate" /><br>
+     <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
 
 
     City<br>
