@@ -1,14 +1,14 @@
 @extends('_master')
 
-@section ('applications')
-
+@section ('company')
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
                         <script src="jquery.knob.js"></script>
                 <link href="/css/layout.css" rel="stylesheet">
-</head>
-<div class='layout-document'>
 
+<div class="container">
+	<div class="col-sm-6">
 
+<!-- ////////////added 10-11-15 ////// -->
 
 <script>
 
@@ -107,94 +107,53 @@
         });
     </script>
 
+<!--///////////// -->
 
 
-<div class="container">
-    <div class="col-sm-6">
+
 <h2>&nbsp;</h2>
-<h2>Add a Job</h2>
-<p>Add info about applications you have made.<br>
-    Stop forgetting where you applied, what resume<br>
-    you used, and what the username and password were<br> to the application site!</p>
-  <p>  If you have an interview, add the date and get a Google calendar reminder</p>
+<h2>Add a Company</h2>
 
 
 
 
-{{ Form::open(array('url' => '/applications')) }}
 
-    <h3>First rate this job prospect</h3><br>
+
+
+{{ Form::open(array('url' => '/company')) }}
+
+
+    <h3>First rate this company</h3><br>
  <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
 
 value="44"><br>
-<a href="#" onclick='window.open("/companysmall", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=500, left=500, width=400, height=400", top="200", left="200");'>Add a company</a>
 
-   <!-- add company<br>
+
+company Name<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
-    --> <!-- commented out to remove company text box replace with select -->
-
-    or select previous company<br>
-     {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
-
-     <br>
-    role<br>
-    {{ Form::text('role', '', array('class'=>'form-control'))}} 
 
 
-    salary<br>
-    {{ Form::text('salary', '', array('class'=>'form-control'))}} 
-
-    Applied Date (enter as yyyy-mm-dd)<br>
-    {{ Form::text('applyDate', '', array('class'=>'form-control'))}} 
-
-    City<br>
-    {{ Form::text('city', '', array('class'=>'form-control'))}} 
-
-    Hiring Manager<br>
-    {{ Form::text('hiringMgr', '', array('class'=>'form-control'))}} 
-
-    Interview Date (enter as yyyy-mm-dd)<br>
-    {{ Form::text('followupBy', '', array('class'=>'form-control'))}} 
-
-    decision<br>
-    {{ Form::text('decision', '', array('class'=>'form-control'))}} 
-
-
-    Resume used<br>
-    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} 
-
-    how applied<br>
-    {{ Form::text('howapplied', '', array('class'=>'form-control'))}} 
-
-    rec number<br>
-    {{ Form::text('recnumber', '', array('class'=>'form-control'))}} 
-
-    website<br>
+company website<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
 
-     user name<br>
-    {{ Form::text('username', '', array('class'=>'form-control'))}} 
 
-     password<br>
-    {{ Form::text('password', '', array('class'=>'form-control'))}} <br>
+company street<br>
+    {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
 
 
-    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
+    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
 {{ Form::close() }}
 
+
 <?php
 echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
-
 
 ?>
 
 </div>
 </div>
-</div>
 @stop
-
-
 

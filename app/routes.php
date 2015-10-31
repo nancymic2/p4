@@ -1021,7 +1021,49 @@ Route::post('/company',
     )
 );
 
-////////////////////////////
+///////////////////////////////////////////////
+/////////////small version of company update
+///// added 10-11-15
+Route::get('companysmall', array('before' => 'auth', function()
+         {
+            return View::make('company');
+        }
+    )
+);
+
+Route::post('/companysmall', 
+    array(
+        'before' => 'csrf', 
+        function() {
+
+            $company = new Company;
+            $company->user()->associate(Auth::user());
+         
+            $company->website   = Input::get('website');
+            $company->company    = Input::get('company');
+            $company->street    = Input::get('street');
+             $company->rating    = Input::get('rating');
+           
+            # Try to add the company 
+            try {
+                $company->save();
+            }
+            # Fail
+            catch (Exception $e) {
+                return Redirect::to('/companysmall')->with('flash_message', 'resume addition failed; please try again.')->withInput();
+            }
+
+            # Log the user in
+           // Auth::login($user);
+
+           return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
+
+        }
+    )
+);
+
+//////////////////////////////////////////////////
+////////////////////////////  end small company CRUD
 
 ////////////////////////pass value to view
 
