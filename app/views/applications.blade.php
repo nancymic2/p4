@@ -127,7 +127,37 @@
   <p>  If you have an interview, add the date and get a Google calendar reminder</p>
 
 
+<!--           added 11/1/15  --------------- -->
+<div id="companyhide">
+{{ Form::open(array('url' => '/company')) }}
 
+
+    <h3>First rate this company</h3><br>
+ <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
+
+value="44"><br>
+
+
+company Name<br>
+    {{ Form::text('company', '', array('class'=>'form-control'))}} 
+
+
+company website<br>
+    {{ Form::text('website', '', array('class'=>'form-control'))}} 
+
+
+
+company street<br>
+    {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
+
+
+
+    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
+
+{{ Form::close() }}
+
+</div>
+<!--           added 11/1/15  --------------- -->
 
 {{ Form::open(array('url' => '/applications')) }}
 
