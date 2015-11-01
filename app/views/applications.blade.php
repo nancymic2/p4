@@ -125,10 +125,13 @@
     Stop forgetting where you applied, what resume<br>
     you used, and what the username and password were<br> to the application site!</p>
   <p>  If you have an interview, add the date and get a Google calendar reminder</p>
+<scrit type="text/javascript">
+
+</script>
 
 
 <!--           added 11/1/15  --------------- -->
-<div id="companyhide">
+<div id="companyhide" style="visibility: hidden;">
 {{ Form::open(array('url' => '/company')) }}
 
 
