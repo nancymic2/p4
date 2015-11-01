@@ -125,16 +125,11 @@
     Stop forgetting where you applied, what resume<br>
     you used, and what the username and password were<br> to the application site!</p>
   <p>  If you have an interview, add the date and get a Google calendar reminder</p>
-<script type="text/javascript">
-function opencompany(){
-coForm=document.getElementById("companyhide");
-alert("we are in");
-coForm.style.display='block';
-</script>
+
 
 
 <!--           added 11/1/15  --------------- -->
-<div id="companyhide" style="display:none;">
+<!--<div id="companyhide" style="display:none;">
 {{ Form::open(array('url' => '/company')) }}
 
 
@@ -162,7 +157,7 @@ company street<br>
 
 {{ Form::close() }}
 
-</div>
+</div>-->
 <!--           added 11/1/15  --------------- -->
 
 {{ Form::open(array('url' => '/applications')) }}
@@ -173,10 +168,24 @@ company street<br>
 value="44"><br>-->
 <!-- remove rating -->
 <!--<a href="#" onclick='window.open("/companysmall", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=100, width=400, height=400, menubar=0, status=0, titlebar=0, toolbar=0, nomenubar=no, status=no, titlebar=no, toolbar=no" );'>Add a company</a>-->
-<a href="#" onclick='document.getElementById("companyhide").style.display="block";'>Add a company</a>
+<a href="#" onclick='document.getElementById("companyhide2").style.display="block";'>Add a company</a>
    <!-- add company<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
     --> <!-- commented out to remove company text box replace with select -->
+<div id="companyhide2" style="display:none;">
+    company Name<br>
+    {{ Form::text('company', '', array('class'=>'form-control'))}} 
+
+
+    company website<br>
+    {{ Form::text('website', '', array('class'=>'form-control'))}} 
+
+
+
+    company street<br>
+    {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
+
+</div>
 
     or select previous company<br>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
