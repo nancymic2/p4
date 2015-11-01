@@ -270,8 +270,9 @@ value="44"><br>-->
 {{ Form::close() }}
 
 </div>
+
 <?php
-echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
+echo '<br><a class="btn btn-danger" href="/">Cancel</a> <br><br>' ;
 
 
 ?>
