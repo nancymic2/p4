@@ -180,34 +180,30 @@ value="44"><br>-->
 
 
 <h3>First rate this company</h3><br>
- <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
-
-value="44"><br>
+ <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true value="44"><br>
 
 
-company Name<br>
+    company Name<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
 
 
-company website<br>
+    company website<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
     company user name<br>
     {{ Form::text('username', '', array('class'=>'form-control'))}} 
 
-        company password<br>
-    {{ Form::text('password', '', array('class'=>'form-control'))}} 
+    company password<br>
+    {{ Form::text('pasword', '', array('class'=>'form-control'))}} 
 
 
-
-company street<br>
+    company street<br>
     {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
-
 
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
-{{ Form::close() }}
+    {{ Form::close() }}
 
 </div>
 <div id="companyhideDB" style="display:none;">

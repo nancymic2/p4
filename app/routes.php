@@ -1003,7 +1003,7 @@ Route::post('/company',
             $company->street    = Input::get('street');
             $company->rating    = Input::get('rating');
             $company->username    = Input::get('username');
-            $company->password    = Input::get('password');
+            $company->pasword    = Input::get('pasword');
            
             # Try to add the company 
             try {
