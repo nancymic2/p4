@@ -160,7 +160,7 @@ company street<br>
 </div>-->
 <!--           added 11/1/15  --------------- -->
 
-{{ Form::open(array('url' => '/applications')) }}
+
 
    <!-- <h3>First rate this job prospect</h3><br>
  <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
@@ -205,6 +205,7 @@ company street<br>
 
 </div>
 <div id="companyhideDB" style="display:none;">
+    {{ Form::open(array('url' => '/applications')) }}
     or select previous company<br>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
 
