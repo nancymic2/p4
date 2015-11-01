@@ -1126,7 +1126,7 @@ Route::post('/savedJobs',
     )
 );
 
-Route::get('applications', array('before' => 'auth', function
+Route::get('applications', array('before' => 'auth', function()
          {
             //return View::make('applications');  //commented out 10/31/15
 
