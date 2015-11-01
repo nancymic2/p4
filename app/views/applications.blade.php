@@ -210,7 +210,7 @@ value="44"><br>-->
     {{ Form::open(array('url' => '/applications')) }}
     or select previous company<br>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
-       {{ Form::select('resume_id', $resume_lists) }} <!-- 11/1/15  -->
+       {{ Form::select('user_id', $resume_lists) }} <!-- 11/1/15  -->
 
 
 
