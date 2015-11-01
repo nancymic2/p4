@@ -126,9 +126,9 @@
     you used, and what the username and password were<br> to the application site!</p>
   <p>  If you have an interview, add the date and get a Google calendar reminder</p>
 <script type="text/javascript">
-opencompany(){
+function opencompany(){
 coForm=document.getElementById("companyhide");
-coForm.display=block;
+coForm.display='block';
 </script>
 
 
