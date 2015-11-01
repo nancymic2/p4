@@ -207,7 +207,7 @@ company street<br>
 <div id="companyhideDB" style="display:none;">
     or select previous company<br>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
-</div>
+
      <br>
     role<br>
     {{ Form::text('role', '', array('class'=>'form-control'))}} 
@@ -266,6 +266,7 @@ company street<br>
 
 {{ Form::close() }}
 
+</div>
 <?php
 echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
 
