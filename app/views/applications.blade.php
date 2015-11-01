@@ -168,7 +168,7 @@ company street<br>
 value="44"><br>-->
 <!-- remove rating -->
 <!--<a href="#" onclick='window.open("/companysmall", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=100, width=400, height=400, menubar=0, status=0, titlebar=0, toolbar=0, nomenubar=no, status=no, titlebar=no, toolbar=no" );'>Add a company</a>-->
-<a href="#" onclick='document.getElementById("companyhide2").style.display="block";'>Add the company if you have nt added previously</a>
+<a href="#" onclick='document.getElementById("companyhide2").style.display="block"; document.getElementById("companyhideDB").style.display="none"; '>Add the company if you have nt added previously</a>
    <!-- add company<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
     --> <!-- commented out to remove company text box replace with select -->
@@ -186,10 +186,10 @@ value="44"><br>-->
     {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
 
 </div>
-
+<div id="companyhideDB" style="display:none;">
     or select previous company<br>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
-
+</dvi>
      <br>
     role<br>
     {{ Form::text('role', '', array('class'=>'form-control'))}} 
