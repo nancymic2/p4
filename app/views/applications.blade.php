@@ -131,7 +131,7 @@
 
 
 <!--           added 11/1/15  --------------- -->
-<div id="companyhide" style="visibility: hidden;">
+<div id="companyhide" style="display:none;">
 {{ Form::open(array('url' => '/company')) }}
 
 
