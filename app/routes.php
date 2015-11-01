@@ -1126,7 +1126,7 @@ Route::post('/savedJobs',
     )
 );
 
-Route::get('applications', array('before' => 'auth', function()
+Route::get('applications', array('before' => 'auth', function
          {
             //return View::make('applications');  //commented out 10/31/15
 
@@ -1134,8 +1134,8 @@ Route::get('applications', array('before' => 'auth', function()
           // us the lists method of eloquent
           // grab the company and id from the companie table for the logged in user
           //return view applications plus the array
-
-          $company_lists = Company::lists('company', 'id');  /// 10/31/15
+             $resume_lists->user()->associate(Auth::user());
+          $company_lists = Company::lists('company', 'id');  /// 10/31/
            $resume_lists = Resume::lists('name', 'user_id');  /// 11/1/15
 
           return View::make('applications', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists));  ///10/31/15
