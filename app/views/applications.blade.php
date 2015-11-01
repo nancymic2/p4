@@ -192,6 +192,12 @@ company Name<br>
 company website<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
+    company user name<br>
+    {{ Form::text('username', '', array('class'=>'form-control'))}} 
+
+        company password<br>
+    {{ Form::text('password', '', array('class'=>'form-control'))}} 
+
 
 
 company street<br>
