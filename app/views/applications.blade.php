@@ -128,7 +128,7 @@
 <script type="text/javascript">
 function opencompany(){
 coForm=document.getElementById("companyhide");
-coForm.display='block';
+coForm.style.display='block';
 </script>
 
 
