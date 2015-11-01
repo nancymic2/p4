@@ -125,8 +125,10 @@
     Stop forgetting where you applied, what resume<br>
     you used, and what the username and password were<br> to the application site!</p>
   <p>  If you have an interview, add the date and get a Google calendar reminder</p>
-<scrit type="text/javascript">
-
+<script type="text/javascript">
+opencompany(){
+coForm=document.getElementById("companyhide");
+coForm.display=block;
 </script>
 
 
@@ -170,7 +172,7 @@ company street<br>
 value="44"><br>-->
 <!-- remove rating -->
 <!--<a href="#" onclick='window.open("/companysmall", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=100, width=400, height=400, menubar=0, status=0, titlebar=0, toolbar=0, nomenubar=no, status=no, titlebar=no, toolbar=no" );'>Add a company</a>-->
-<a href="#" onclick='document.getElementById("companyhide").display="block";'>Add a company</a>
+<a href="#" onclick='opencompany();'>Add a company</a>
    <!-- add company<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
     --> <!-- commented out to remove company text box replace with select -->
