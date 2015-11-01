@@ -189,7 +189,7 @@ value="44"><br>-->
 <div id="companyhideDB" style="display:none;">
     or select previous company<br>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
-</dvi>
+</div>
      <br>
     role<br>
     {{ Form::text('role', '', array('class'=>'form-control'))}} 
