@@ -176,17 +176,32 @@ value="44"><br>-->
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
     --> <!-- commented out to remove company text box replace with select -->
 <div id="companyhide2" style="display:none;">
-    company Name<br>
+   {{ Form::open(array('url' => '/company')) }}
+
+
+<h3>First rate this company</h3><br>
+ <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
+
+value="44"><br>
+
+
+company Name<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
 
 
-    company website<br>
+company website<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
 
 
-    company street<br>
+company street<br>
     {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
+
+
+
+    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
+
+{{ Form::close() }}
 
 </div>
 <div id="companyhideDB" style="display:none;">
