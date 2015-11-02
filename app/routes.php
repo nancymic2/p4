@@ -1138,7 +1138,7 @@ Route::get('applications', array('before' => 'auth', function()
           //$resume_lists = Resume::where('user_id', '=', $user->id)->lists('name', 'user_id');
           $company_lists = Company::lists('company', 'id');  /// 10/31/
           
-            $resume_lists = Resume::lists('resume', 'id');  /// 11/1/15
+            $resume_lists = Resume::lists('name', 'id');  /// 11/1/15
           //$resume_lists = Resume::lists('name', $user);  /// 11/1/15
          // $resume_lists->user()->associate(Auth::user()); /// 11/1/15  /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/1/15
 
