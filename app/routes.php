@@ -1172,7 +1172,7 @@ Route::post('/applications',
              $application->hiringMgr    = Input::get('hiringMgr');
              $application->decision    = Input::get('decision');
              $application->rating    = Input::get('rating');
-             $application->resumeUsed    = Input::get('resume_lists');
+             $application->resumeUsed    = Input::get('resumeUsed');
              $application->howapplied    = Input::get('howapplied');
              $application->recnumber    = Input::get('recnumber');
              $application->website   = Input::get('website');
