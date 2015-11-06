@@ -186,7 +186,8 @@ value="44"><br>-->
     or select previous company<br>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
  <!-- 11/1/15  -->
-
+<br>
+      {{ Form::select('user_id', $resume_lists) }} 
 
 
      <br>
