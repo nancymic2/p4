@@ -176,10 +176,11 @@ value="44"><br>-->
 </div>
 <div id="companyhideDB" style="display:none;">
     {{ Form::open(array('url' => '/applications')) }}
-    or select previous company<br>
+    <h4>or select previous company</h4><br>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
  <!-- 11/1/15  -->
 <br>
+<h4>or select existing resume</h4><br>
       {{ Form::select('user_id', $resume_lists) }} 
 
 
