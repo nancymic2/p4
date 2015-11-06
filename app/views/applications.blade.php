@@ -207,8 +207,8 @@ value="44"><br>-->
     decision<br>
     {{ Form::text('decision', '', array('class'=>'form-control'))}} 
 
-    Resume used<br>
-    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} <!--change this as it comes from db -->
+   <!-- Resume used<br>
+    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} change this as it comes from db -->
 
     Applied by email? Add email <br>
     {{ Form::text('howapplied', '', array('class'=>'form-control'))}} 
