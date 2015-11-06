@@ -173,14 +173,8 @@ value="44"><br>-->
 </div>
 <div id="companyhideDB" style="display:none;">
 {{ Form::open(array('url' => '/applications')) }}
-<!--$company_lists = array_combine($company_lists, $company_lists); //Copies the array values to keys
-{{ Form::select('company_id',  $company_lists, Input::old('company_id), array('class' => 'form-control')) }} -->
-    
-<!-- put back -->
-
-
      <h4>Select existng company</h4>
-     {{ Form::select('company_id', $company_lists) }}  
+     {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
  <!-- 11/1/15  -->
        
       <h4>Select existing resume</h4>
@@ -276,5 +270,4 @@ echo '<br><a class="btn btn-danger" href="/applications">Cancel</a>';
 </div>
 </div>
 @stop
-
 
