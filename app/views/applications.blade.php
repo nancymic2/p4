@@ -128,37 +128,7 @@
 
 
 
-<!--           added 11/1/15  --------------- -->
-<!--<div id="companyhide" style="display:none;">
-{{ Form::open(array('url' => '/company')) }}
 
-
-    <h3>First rate this company</h3><br>
- <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
-
-value="44"><br>
-
-
-company Name<br>
-    {{ Form::text('company', '', array('class'=>'form-control'))}} 
-
-
-company website<br>
-    {{ Form::text('website', '', array('class'=>'form-control'))}} 
-
-
-
-company street<br>
-    {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
-
-
-
-    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
-
-{{ Form::close() }}
-
-</div>-->
-<!--           added 11/1/15  --------------- -->
 
 
 
@@ -172,6 +142,11 @@ value="44"><br>-->
   
 <br><a href="#companies" onclick='document.getElementById("companyhide2").style.display="none"; document.getElementById("companyhideDB").style.display="block"; '>Then associate job with a saved company</a>
 
+<br>
+
+<a href="#resume" onclick='document.getElementById("resumehide").style.display="block"; document.getElementById("resumehideDB").style.display="none"; '>Then: Add the resume used if you have not added previously</a>
+  
+<br><a href="#resume" onclick='document.getElementById("resumehide").style.display="none"; document.getElementById("companyhideDB").style.display="block"; '>Then associate that resume with this job</a>
    <!-- add company<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
     --> <!-- commented out to remove company text box replace with select -->
@@ -210,7 +185,7 @@ value="44"><br>-->
     {{ Form::open(array('url' => '/applications')) }}
     or select previous company<br>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
-       {{ Form::select('user_id', $resume_lists) }} <!-- 11/1/15  -->
+ <!-- 11/1/15  -->
 
 
 
@@ -281,6 +256,38 @@ echo '<br><a class="btn btn-danger" href="/">Cancel</a> <br><br>' ;
 ?>
 
 </div>
+
+<div id="resumehide" style="display:none;">
+<p>Add resume text to remind you of your resume, or<br>
+    add a URL to your resume on Google docs or Monster<br>
+    or wheverever it is saved</p>
+
+          {{ Form::select('user_id', $resume_lists) }} 
+
+{{ Form::open(array('url' => '/resume')) }}
+
+resume Name<br>
+    {{ Form::text('name', '', array('class'=>'form-control'))}} 
+
+resume url<br>
+    {{ Form::text('url', '', array('class'=>'form-control'))}} 
+
+resume text<br>
+    {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} <br>
+
+    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
+
+{{ Form::close() }}
+
+
+<?php
+echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
+
+?>
+<div> 
+
+
+
 </div>
 </div>
 @stop
