@@ -134,7 +134,7 @@ value="44"><br>-->
 <a href="#companies" onclick='document.getElementById("companyhide2").style.display="block"; document.getElementById("companyhideDB").style.display="none"; document.getElementById("resumehideDB").style.display="none"; document.getElementById("resumehide").style.display="none";'>First: Add the company if you have not added previously</a>
 <br> <a href="#resume" onclick='document.getElementById("resumehide").style.display="block"; document.getElementById("resumehideDB").style.display="none"; '>Then: Add the resume used if you have not added previously</a>
  
-<br><a href="#companies" onclick='document.getElementById("companyhide2").style.display="none"; document.getElementById("resumehide").style.display="none"; document.getElementById("companyhideDB").style.display="block"; '>Then associate resume and company</a>
+<br><a href="#companies" onclick='document.getElementById("companyhide2").style.display="none"; document.getElementById("resumehide").style.display="none"; document.getElementById("companyhideDB").style.display="block"; '>Then add job details</a>
 
 <br>
 
@@ -173,7 +173,7 @@ value="44"><br>-->
 </div>
 <div id="companyhideDB" style="display:none;">
 {{ Form::open(array('url' => '/applications')) }}
-     <h4>Select existng company</h4>
+     <h4>Select existing company</h4>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
  <!-- 11/1/15  -->
        
