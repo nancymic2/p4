@@ -1151,7 +1151,7 @@ Route::get('applications', array('before' => 'auth', function()
           //return View::make('index', compact('client'));
 //return View::make('applications', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists));  ///10/31/15
 
-          return View::make('applications', array('company_lists' => $company_lists), array('resumes' => $resume_lists));  ///10/31/15
+          return View::make('applications', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists));  ///10/31/15
         }
     )
 );
