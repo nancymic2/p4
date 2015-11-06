@@ -192,7 +192,7 @@ value="44"><br>-->
     Applied Date <br>
      <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
 
-    City<br>
+    Interview address<br>
     {{ Form::text('city', '', array('class'=>'form-control'))}} 
 
     Hiring Manager<br>
@@ -208,22 +208,22 @@ value="44"><br>-->
     {{ Form::text('decision', '', array('class'=>'form-control'))}} 
 
     Resume used<br>
-    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} 
+    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} <!--change this as it comes from db -->
 
-    how applied<br>
+    Applied by email? Add email <br>
     {{ Form::text('howapplied', '', array('class'=>'form-control'))}} 
 
     rec number<br>
     {{ Form::text('recnumber', '', array('class'=>'form-control'))}} 
 
-    website<br>
+    this job's website URL <br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
-     user name<br>
+     <!--user name<br>
     {{ Form::text('username', '', array('class'=>'form-control'))}} 
 
      password<br>
-    {{ Form::text('password', '', array('class'=>'form-control'))}} <br>
+    {{ Form::text('password', '', array('class'=>'form-control'))}} <br> -->
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
