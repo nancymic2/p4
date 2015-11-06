@@ -154,7 +154,6 @@ value="44"><br>-->
     company Name<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
 
-
     company website<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
@@ -164,10 +163,8 @@ value="44"><br>-->
     company password<br>
     {{ Form::text('pasword', '', array('class'=>'form-control'))}} 
 
-
     company street<br>
     {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
-
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
@@ -175,30 +172,25 @@ value="44"><br>-->
 
 </div>
 <div id="companyhideDB" style="display:none;">
-    {{ Form::open(array('url' => '/applications')) }}
-    <h4>or select previous company</h4><br>
+{{ Form::open(array('url' => '/applications')) }}
+     <h4>Select existng company</h4>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
  <!-- 11/1/15  -->
-<br>
-<h4>or select existing resume</h4><br>
+       
+      <h4>Select existing resume</h4>
       {{ Form::select('user_id', $resume_lists) }} 
 
-
-     <br>
-    role<br>
+     <br>role<br>
     {{ Form::text('role', '', array('class'=>'form-control'))}} 
-
 
     salary<br>
     {{ Form::text('salary', '', array('class'=>'form-control'))}} 
 
     <!--Applied Date (enter as yyyy-mm-dd)<br>
-    {{ Form::text('applyDate', '', array('class'=>'form-control'))}} 
-    -->
+    {{ Form::text('applyDate', '', array('class'=>'form-control'))}}   -->
 
     Applied Date <br>
      <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
-
 
     City<br>
     {{ Form::text('city', '', array('class'=>'form-control'))}} 
@@ -207,15 +199,13 @@ value="44"><br>-->
     {{ Form::text('hiringMgr', '', array('class'=>'form-control'))}} 
 
     <!--Interview Date (enter as yyyy-mm-dd)<br>
-    {{ Form::text('followupBy', '', array('class'=>'form-control'))}} 
-    -->
+    {{ Form::text('followupBy', '', array('class'=>'form-control'))}}  -->
 
     Interview Date <br>
      <input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
 
     decision<br>
     {{ Form::text('decision', '', array('class'=>'form-control'))}} 
-
 
     Resume used<br>
     {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} 
@@ -229,13 +219,11 @@ value="44"><br>-->
     website<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
-
      user name<br>
     {{ Form::text('username', '', array('class'=>'form-control'))}} 
 
      password<br>
     {{ Form::text('password', '', array('class'=>'form-control'))}} <br>
-
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
@@ -246,10 +234,7 @@ value="44"><br>-->
 
 <?php
 echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
-
-
 ?>
-
 </div>
 
 <div id="resumehide" style="display:none;">
@@ -261,23 +246,22 @@ echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
 
 {{ Form::open(array('url' => '/resume')) }}
 
-resume Name<br>
-    {{ Form::text('name', '', array('class'=>'form-control'))}} 
+    resume Name<br>
+        {{ Form::text('name', '', array('class'=>'form-control'))}} 
 
-resume url<br>
-    {{ Form::text('url', '', array('class'=>'form-control'))}} 
+    resume url<br>
+        {{ Form::text('url', '', array('class'=>'form-control'))}} 
 
-resume text<br>
-    {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} <br>
+    resume text<br>
+        {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} <br>
 
-    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
+        {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
 {{ Form::close() }}
 
 
 <?php
 echo '<br><a class="btn btn-danger" href="/applications">Cancel</a>';
-
 ?>
 <div> 
 
