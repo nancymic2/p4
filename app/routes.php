@@ -1138,16 +1138,17 @@ Route::get('applications', array('before' => 'auth', function()
           
          // $company_lists = Company::lists('company', 'id');  /// 10/31/
           
-          $company_lists = Company::where('user_id', '=', $user->id)->lists('company', 'user_id');
+          //$company_lists = Company::where('user_id', '=', $user->id)->lists('company', 'user_id');
 
           //$resume_lists = Resume::where('user_id', '=', $user->id)->lists('name', 'user_id');
 
-          //$company_lists = Company::lists('company', 'user_id')->where('user_id','=', $user->id)->get();
+         
 
           /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
 
 
           $resume_lists = DB::table('resumes')->where('user_id', $user->id)->lists('name');
+          $company_lists = DB::table('companies')->where('user_id', $user->id)->lists('company');
           //return View::make('index', compact('client'));
 //return View::make('applications', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists));  ///10/31/15
 
