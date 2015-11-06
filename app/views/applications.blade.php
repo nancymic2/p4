@@ -134,7 +134,7 @@ value="44"><br>-->
 <a href="#companies" onclick='document.getElementById("companyhide2").style.display="block"; document.getElementById("companyhideDB").style.display="none"; document.getElementById("resumehideDB").style.display="none"; document.getElementById("resumehide").style.display="none";'>First: Add the company if you have not added previously</a>
 <br> <a href="#resume" onclick='document.getElementById("resumehide").style.display="block"; document.getElementById("resumehideDB").style.display="none"; '>Then: Add the resume used if you have not added previously</a>
  
-<br><a href="#companies" onclick='document.getElementById("companyhide2").style.display="none"; document.getElementById("resumehide").style.display="none"; document.getElementById("companyhideDB").style.display="block"; '>Then add job details</a>
+<br><a href="#companies" onclick='document.getElementById("companyhide2").style.display="none"; document.getElementById("resumehide").style.display="none"; document.getElementById("companyhideDB").style.display="block"; '>Then associate resume and company</a>
 
 <br>
 
@@ -173,11 +173,11 @@ value="44"><br>-->
 </div>
 <div id="companyhideDB" style="display:none;">
 {{ Form::open(array('url' => '/applications')) }}
-     <h4>Select your company</h4>
+     <h4>Select existng company</h4>
      {{ Form::select('company_id', $company_lists) }} <!-- 10/31/15  -->
  <!-- 11/1/15  -->
        
-      <h4>Select resume used</h4>
+      <h4>Select existing resume</h4>
       {{ Form::select('user_id', $resume_lists) }} 
 
      <br>role<br>
@@ -192,7 +192,7 @@ value="44"><br>-->
     Applied Date <br>
      <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
 
-    Interview address<br>
+    City<br>
     {{ Form::text('city', '', array('class'=>'form-control'))}} 
 
     Hiring Manager<br>
@@ -207,23 +207,23 @@ value="44"><br>-->
     decision<br>
     {{ Form::text('decision', '', array('class'=>'form-control'))}} 
 
-   <!-- Resume used<br>
-    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} change this as it comes from db -->
+    Resume used<br>
+    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} 
 
-    Applied by email? Add email <br>
+    how applied<br>
     {{ Form::text('howapplied', '', array('class'=>'form-control'))}} 
 
     rec number<br>
     {{ Form::text('recnumber', '', array('class'=>'form-control'))}} 
 
-    this job's website URL <br>
+    website<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
-     <!--user name<br>
+     user name<br>
     {{ Form::text('username', '', array('class'=>'form-control'))}} 
 
      password<br>
-    {{ Form::text('password', '', array('class'=>'form-control'))}} <br> -->
+    {{ Form::text('password', '', array('class'=>'form-control'))}} <br>
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
@@ -242,10 +242,9 @@ echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
     add a URL to your resume on Google docs or Monster<br>
     or wheverever it is saved</p>
 
-    {{ Form::select('user_id', $resume_lists) }} <!--moved out again from form -->
+          {{ Form::select('user_id', $resume_lists) }} 
 
 {{ Form::open(array('url' => '/resume')) }}
-
 
     resume Name<br>
         {{ Form::text('name', '', array('class'=>'form-control'))}} 
@@ -271,6 +270,5 @@ echo '<br><a class="btn btn-danger" href="/applications">Cancel</a>';
 </div>
 </div>
 @stop
-
 
 

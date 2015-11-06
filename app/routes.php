@@ -1574,4 +1574,3 @@ return View::make('chart')->with('salarycount', $salarycount);
 
 
 */
-
