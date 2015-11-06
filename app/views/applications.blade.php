@@ -242,9 +242,10 @@ echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
     add a URL to your resume on Google docs or Monster<br>
     or wheverever it is saved</p>
 
-          {{ Form::select('user_id', $resume_lists) }} 
+
 
 {{ Form::open(array('url' => '/resume')) }}
+    {{ Form::select('user_id', $resume_lists) }} <!--moved into form -->
 
     resume Name<br>
         {{ Form::text('name', '', array('class'=>'form-control'))}} 
