@@ -1140,7 +1140,7 @@ Route::get('applications', array('before' => 'auth', function()
           
          // $resume_lists = Resume::lists('name', 'user_id'); /// 11/1/15
 
-          Resume::where('user_id', '=', $user->id)->get()->lists('name', 'user_id');
+          $resume_lists = Resume::where('user_id', '=', $user->id)->lists('name', 'user_id');
 
           //$resume_lists = Resume::where('votes', '>', 100)->get();
           //$resume_lists = Resume::lists('user_id', 'name')->where('user_id', '=',Auth::user()->id)->get();
