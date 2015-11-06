@@ -975,7 +975,7 @@ Route::post('/resume',
             # Log the user in
            // Auth::login($user);
 
-           return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
+           return Redirect::to('/applications')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )

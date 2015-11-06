@@ -125,13 +125,6 @@
     Stop forgetting where you applied, what resume<br>
     you used, and what the username and password were<br> to the application site!</p>
   <p>  If you have an interview, add the date and get a Google calendar reminder</p>
-
-
-
-
-
-
-
    <!-- <h3>First rate this job prospect</h3><br>
  <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
 
@@ -251,7 +244,7 @@ value="44"><br>-->
 </div>
 
 <?php
-echo '<br><a class="btn btn-danger" href="/">Cancel</a> <br><br>' ;
+echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
 
 
 ?>
@@ -282,7 +275,7 @@ resume text<br>
 
 
 <?php
-echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
+echo '<br><a class="btn btn-danger" href="/applications">Cancel</a>';
 
 ?>
 <div> 
