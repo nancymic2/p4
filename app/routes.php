@@ -1023,6 +1023,62 @@ Route::post('/company',
     )
 );
 
+
+///////////////////EXPENSES /////////////
+
+Route::get('expenses', array('before' => 'auth', function()
+         {
+            return View::make('expenses');
+        }
+    )
+);
+
+// Route::post('/companysmall',   dcomment out. try no route on post
+
+  Route::post('/expenses', 
+    array(
+        'before' => 'csrf', 
+        function() {
+
+            $expense = new Expense;
+            $expense->user()->associate(Auth::user());
+            $expense->company_id   = Input::get('company_id ');   ////  add to dropdown later
+            $expense->application_id   = Input::get('application_id');  ////  add to dropdown later
+         
+            $expense->gas   = Input::get('gas');
+            $expense->airfare    = Input::get('airfare');
+            $expense->train    = Input::get('train');
+            $expense->hotel    = Input::get('hotel');
+            $expense->meals    = Input::get('meals');
+            $expense->stamps    = Input::get('stamps');
+            $expense->ink    = Input::get('ink');
+            $expense->paper    = Input::get('paper');
+            $expense->hardware    = Input::get('hardware');
+            $expense->portfolio    = Input::get('portfolio');
+            $expense->phone    = Input::get('phone');
+            $expense->clothing    = Input::get('clothing');
+            $expense->entertainment    = Input::get('entertainment');
+            $expense->comments    = Input::get('comments');
+           
+            # Try to add the company 
+            try {
+                $expense->save();
+            }
+            # Fail
+            catch (Exception $e) {
+                return Redirect::to('/expenses')->with('flash_message', 'expenses addition failed; please try again.')->withInput();
+            }
+
+            # Log the user in
+           // Auth::login($user);
+
+          // return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
+            return Redirect::to('/expenses');
+
+        }
+    )
+);
+
 ///////////////////////////////////////////////
 /////////////small version of company update
 ///// added 10-11-15

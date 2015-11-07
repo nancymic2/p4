@@ -91,6 +91,7 @@
 @yield ('chart')
 
 @yield ('company')
+@yield ('expenses')
 
 
 <!--/////////////////-->
