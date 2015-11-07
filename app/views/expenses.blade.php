@@ -3,7 +3,7 @@
 @section ('expenses')
 
 <div class="container">
-	<div class="col-sm-6">
+    <div class="col-sm-6">
 <h2>&nbsp;</h2>
 <h2>Add expenses</h2>
 
@@ -15,9 +15,9 @@
 
 {{ Form::open(array('url' => '/expenses')) }}
 <br>
-    <!--{{ Form::select('company_id', $company_lists) }} commented ut 11-7 105 pm-->
+
 company_id<br>
-   {{ Form::text('company_id', '', array('class'=>'form-control'))}} 
+    {{ Form::text('company_id', '', array('class'=>'form-control'))}} 
 application_id<br>
     {{ Form::text('application_id', '', array('class'=>'form-control'))}} 
 
@@ -67,4 +67,3 @@ echo '<br><a class="btn btn-danger" href="/expenses">Cancel</a>';
 </div>
 </div>
 @stop
-
