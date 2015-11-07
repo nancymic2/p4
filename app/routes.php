@@ -1034,7 +1034,8 @@ Route::get('expenses', array('before' => 'auth', function()
           
           $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
           ////////////////////////////////////////////////////////////////////
-            return View::make('expenses');
+          return View::make('expenses', array('company_lists' => $company_lists));  
+            //return View::make('expenses');
         }
     )
 );
