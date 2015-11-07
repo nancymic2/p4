@@ -64,7 +64,7 @@ Route::get('account', array('before' => 'auth', function()
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="/applications">Add a Job</a></li>
-        <li><a href="/expenses">Add Expenses</a></li>
+        <li><a href="/savedJobs">Add Something</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
@@ -168,7 +168,7 @@ Route::get('changelast', array('before' => 'auth', function()
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="/applications">Add a Job</a></li>
-        <li><a href="/expenses">Add Expenses</a></li>
+        <li><a href="/savedJobs">Add Something</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
@@ -428,7 +428,7 @@ background-color: #eeeeee;
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="/applications">Add a Job</a></li>
-        <li><a href="/expenses">Add Expenses</a></li>
+        <li><a href="/savedJobs">Add Something</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
@@ -571,7 +571,7 @@ background-color: #eeeeee;
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="/applications">Add a Job</a></li>
-        <li><a href="/expenses">Add Expenses</a></li>
+        <li><a href="/savedJobs">Add Something</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
@@ -735,7 +735,7 @@ td {
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="/applications">Add a Job</a></li>
-        <li><a href="/expenses">Add Expenses</a></li>
+        <li><a href="/savedJobs">Add Something</a></li>
         <li><a href="/completedapps">Find Completed Apps</a></li>
         <li><a href="/resumesearch">Find Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
@@ -1041,7 +1041,7 @@ Route::get('expenses', array('before' => 'auth', function()
         function() {
 
             $expense = new Expense;
-            //$expense->user()->associate(Auth::user());
+            $expense->user()->associate(Auth::user());
             $expense->company_id   = Input::get('company_id');   ////  add to dropdown later
             $expense->application_id   = Input::get('application_id');  ////  add to dropdown later
          
