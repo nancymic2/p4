@@ -111,9 +111,6 @@ echo '<br>';
 
 echo '<a href="/password/remind">Request new Password</a>';
 echo '<br>';
-
-
-
 echo $stylesend;
     
 }));
@@ -190,8 +187,6 @@ echo '<p>&nbsp;</p>';
    //echo $jobs;
    # loop through the Collection and access just the data
 foreach($names as $name) {
-
-
    // echo '<b>email:</b> ';
     //echo $name['email'];
 
@@ -216,14 +211,12 @@ echo $stylesend;
 Route::get('myemail', array('before' => 'auth', function()
 
 {
-     
+  
  $names = User::where('id', '=', Auth::user()->id)->get();
  
    //echo $jobs;
    # loop through the Collection and access just the data
 foreach($names as $name) {
-
-
     echo '<b>email:</b> ';
     echo $name['email'];
 
@@ -231,17 +224,11 @@ foreach($names as $name) {
 
 }));
 
-
-
 Route::get('/job/create', 'JobController@getCreate');
 Route::post('/job/create', 'JobController@postCreate');
-
-
-
 Route::get('/resume/create', 'ResumeController@getCreate');
 Route::post('/resume/create', 'ResumeController@postCreate');
-
-
+///THESE CNTROLLERS SEEM TO WORK
 /////////////////////////////
 Route::get('/edit', function() {
 
@@ -907,9 +894,6 @@ Route::get('/login',
     )
 );
 
-
-
-
 Route::post('/login', 
     array(
         'before' => 'csrf', 
@@ -929,8 +913,6 @@ Route::post('/login',
     )
 );
 
-
-
 Route::get('/logout', function() {
 
     # Log out
@@ -940,9 +922,6 @@ Route::get('/logout', function() {
     return Redirect::to('/');
 
 });
-
-
-
 
 Route::get('resume', array('before' => 'auth', function()
          {
@@ -1033,8 +1012,6 @@ Route::get('expenses', array('before' => 'auth', function()
     )
 );
 
-// Route::post('/companysmall',   dcomment out. try no route on post
-
   Route::post('/expenses', 
     array(
         'before' => 'csrf', 
@@ -1123,14 +1100,9 @@ Route::get('companysmall', array('before' => 'auth', function()
     )
 );
 
-//////////////////////////////////////////////////
-////////////////////////////  end small company CRUD
-
 ////////////////////////pass value to view
 
 //return View::make('password')->with('theword', $theword);
-
-////////////////
 
 Route::get('savedJobs', array('before' => 'auth', function()
          {
@@ -1138,8 +1110,6 @@ Route::get('savedJobs', array('before' => 'auth', function()
         }
     )
 );
-
-
 
 Route::post('/savedJobs', 
     array(
@@ -1155,8 +1125,6 @@ Route::post('/savedJobs',
             $postedjob->applyby    = Input::get('applyby');
             $postedjob->url    = Input::get('url');
 
-
-           
             # Try to add the job
             try {
                 $postedjob->save();
@@ -1169,10 +1137,6 @@ Route::post('/savedJobs',
             $jobs = json_decode($postedjob, TRUE);
             $applydate=$jobs['applyby'];
             Session::put('applybydate', $applydate);
-
-
-            //echo $jobs['applyby'];
-            //echo $postedjob;
 
             return View::make('calendar');
             //->with Input(Input::only('goodate', '$applyby'));
@@ -1218,7 +1182,8 @@ Route::post('/applications',
              $application = new Application;
              $application->user()->associate(Auth::user());
          
-             $application->company   = Input::get('company_id'); //Input::only('company_id') gets array. Input::get('company_id')gets index of the //select (0 to x)as co  try to convert here!!!
+             $application->company   = Input::get('company_id'); //Input::only('company_id') gets array. 
+             //Input::get('company_id')gets index of the //select (0 to x)as co  try to convert here!!!
 
              ///$application->company   = Input::get('company');   //commented out 10/31/15  replaced by select
              $application->role    = Input::get('role');
@@ -1254,8 +1219,7 @@ Route::post('/applications',
             $followupBy=$jobs['followupBy'];
             Session::put('followupBy', $followupBy);
 
-
-            //echo $jobs['applyby'];
+           //echo $jobs['applyby'];
             //echo $postedjob;
 
             return View::make('calendar2');
@@ -1265,9 +1229,6 @@ Route::post('/applications',
 );
 
 //////////////////////
-//////////////////////
-
-
 Route::get('/charter', function() {
 
 
@@ -1309,12 +1270,6 @@ Route::get('/charter', function() {
               $high[$i] = $sal;
             }
 
-
-
-
-           // $numbers[$i] = $sal;
-            //echo $sal;
-            //echo '<br>';
             $i++;
 
         }

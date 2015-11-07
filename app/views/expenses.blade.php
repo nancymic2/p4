@@ -7,12 +7,6 @@
 <h2>&nbsp;</h2>
 <h2>Add expenses</h2>
 
-
-
-
-
-
-
 {{ Form::open(array('url' => '/expenses')) }}
 <br>
 
@@ -20,13 +14,10 @@ company_id<br>
     {{ Form::text('company_id', '', array('class'=>'form-control'))}} 
 application_id<br>
     {{ Form::text('application_id', '', array('class'=>'form-control'))}} 
-
 gas<br>
     {{ Form::text('gas', '', array('class'=>'form-control'))}} 
-
 airfare<br>
     {{ Form::text('airfare', '', array('class'=>'form-control'))}} 
-
 train<br>
     {{ Form::text('train', '', array('class'=>'form-control'))}} 
 hotel<br>
