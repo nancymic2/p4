@@ -174,7 +174,7 @@ value="44"><br>-->
 <div id="companyhideDB" style="display:none;">
 {{ Form::open(array('url' => '/applications')) }}
      <h4>Select existng company</h4>
-     {{ Form::select('company_id', $company_lists) }} <!-- this yieds the INDEX of the selected option 11/6-->
+     {{ Form::select('company_id', $company_lists) }} <!-- this yieds the INDEX of the selected 11/6-->
  <!-- 11/1/15  -->
        
       <h4>Select existing resume</h4>
@@ -238,11 +238,11 @@ echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
 </div>
 
 <div id="resumehide" style="display:none;">
-<p>Add resume text to remind you of your resume, or<br>
+<!--<p>Add resume text to remind you of your resume, or<br>
     add a URL to your resume on Google docs or Monster<br>
     or wheverever it is saved</p>
 
-          {{ Form::select('user_id', $resume_lists) }} 
+          {{ Form::select('user_id', $resume_lists) }}    commented out 11/17/15  811 am-->
 
 {{ Form::open(array('url' => '/resume')) }}
 
