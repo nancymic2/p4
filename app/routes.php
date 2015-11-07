@@ -1161,7 +1161,7 @@ Route::post('/applications',
              $application = new Application;
              $application->user()->associate(Auth::user());
          
-             $application->company   = Input::only('company_id'); //now gettting index of the select (0 to x)as co  try to convert here!!!
+             $application->company   = Input::get('company_id'); //Input::only('company_id') gets array. Input::get('company_id')gets index of the //select (0 to x)as co  try to convert here!!!
 
              ///$application->company   = Input::get('company');   //commented out 10/31/15  replaced by select
              $application->role    = Input::get('role');
