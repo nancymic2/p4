@@ -58,7 +58,7 @@ comments<br>
 
 {{ Form::close() }}
 
-@yield ('company')
+
 <?php
 echo '<br><a class="btn btn-danger" href="/expenses">Cancel</a>';
 
