@@ -236,7 +236,7 @@ value="44"><br>-->
 echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
 ?>
 </div>
-
+<br>
 <div id="resumehide" style="display:none;">
 <!--<p>Add resume text to remind you of your resume, or<br>
     add a URL to your resume on Google docs or Monster<br>
