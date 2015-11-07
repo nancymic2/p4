@@ -1041,7 +1041,7 @@ Route::get('expenses', array('before' => 'auth', function()
         function() {
 
             $expense = new Expense;
-            $expense->user()->associate(Auth::user());
+            //$expense->user()->associate(Auth::user());
             $expense->company_id   = Input::get('company_id');   ////  add to dropdown later
             $expense->application_id   = Input::get('application_id');  ////  add to dropdown later
          
