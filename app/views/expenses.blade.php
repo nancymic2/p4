@@ -17,9 +17,9 @@
 <br>
 
 company_id<br>
-    {{ Form::text('gas', '', array('class'=>'form-control'))}} 
+    {{ Form::text('company_id', '', array('class'=>'form-control'))}} 
 application_id<br>
-    {{ Form::text('gas', '', array('class'=>'form-control'))}} 
+    {{ Form::text('application_id', '', array('class'=>'form-control'))}} 
 
 gas<br>
     {{ Form::text('gas', '', array('class'=>'form-control'))}} 
@@ -30,27 +30,27 @@ airfare<br>
 train<br>
     {{ Form::text('train', '', array('class'=>'form-control'))}} 
 hotel<br>
-    {{ Form::text('train', '', array('class'=>'form-control'))}} 
+    {{ Form::text('hotel', '', array('class'=>'form-control'))}} 
 meals<br>
-    {{ Form::text('train', '', array('class'=>'form-control'))}}
+    {{ Form::text('meals', '', array('class'=>'form-control'))}}
 stamps<br>
-    {{ Form::text('train', '', array('class'=>'form-control'))}}
+    {{ Form::text('stamps', '', array('class'=>'form-control'))}}
 ink<br>
-    {{ Form::text('train', '', array('class'=>'form-control'))}}
+    {{ Form::text('ink', '', array('class'=>'form-control'))}}
 paper<br>
-    {{ Form::text('train', '', array('class'=>'form-control'))}}
+    {{ Form::text('paper', '', array('class'=>'form-control'))}}
 hardware<br>
-    {{ Form::text('train', '', array('class'=>'form-control'))}}
+    {{ Form::text('hardware', '', array('class'=>'form-control'))}}
 portfolio<br>
-    {{ Form::text('train', '', array('class'=>'form-control'))}}
+    {{ Form::text('portfolio', '', array('class'=>'form-control'))}}
 phone<br>
-    {{ Form::text('train', '', array('class'=>'form-control'))}}
+    {{ Form::text('phone', '', array('class'=>'form-control'))}}
 clothing<br>
-    {{ Form::text('train', '', array('class'=>'form-control'))}}
+    {{ Form::text('clothing', '', array('class'=>'form-control'))}}
 entertainment<br>
-    {{ Form::text('train', '', array('class'=>'form-control'))}}
+    {{ Form::text('entertainment', '', array('class'=>'form-control'))}}
 comments<br>
-    {{ Form::textarea('train', '', array('class'=>'form-control'))}}
+    {{ Form::textarea('comments', '', array('class'=>'form-control'))}}
 
 
 <br>
