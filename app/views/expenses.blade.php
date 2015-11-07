@@ -1,6 +1,6 @@
 @extends('_master')
 
-@section ('expeses')
+@section ('expenses')
 
 <div class="container">
 	<div class="col-sm-6">
