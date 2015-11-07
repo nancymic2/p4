@@ -1173,14 +1173,14 @@ Route::post('/applications',
              $application->hiringMgr    = Input::get('hiringMgr');
              $application->decision    = Input::get('decision');
              $application->rating    = Input::get('rating');
-             $application->resumeUsed    = Input::get('user_id');  //resumeUsed was
+             $application->resumeUsed    = Input::get('user_id');  //THIS IS REALLY THE RESME ID FROM RESUMES TABLE
              $application->howapplied    = Input::get('howapplied');
              $application->recnumber    = Input::get('recnumber');
              $application->website   = Input::get('website');
-             $application->username    = Input::get('username');
-             $application->password    = Input::get('password');
+             //$application->username    = Input::get('username');
+             //$application->password    = Input::get('password');
            
-            # Try to add the resume 
+            # Try to add the job 
             try {
                  $application->save();
             }

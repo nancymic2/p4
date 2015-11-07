@@ -207,23 +207,23 @@ value="44"><br>-->
     decision<br>
     {{ Form::text('decision', '', array('class'=>'form-control'))}} 
 
-    Resume used<br>
-    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} 
+    <!--Resume used<br>
+    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} -->
 
-    how applied<br>
+    address if applied by email<br>
     {{ Form::text('howapplied', '', array('class'=>'form-control'))}} 
 
     rec number<br>
     {{ Form::text('recnumber', '', array('class'=>'form-control'))}} 
 
-    website<br>
+    URL of job posting<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
-     user name<br>
+    <!-- user name<br>
     {{ Form::text('username', '', array('class'=>'form-control'))}} 
 
      password<br>
-    {{ Form::text('password', '', array('class'=>'form-control'))}} <br>
+    {{ Form::text('password', '', array('class'=>'form-control'))}} <br> -->
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
