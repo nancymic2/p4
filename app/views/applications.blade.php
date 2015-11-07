@@ -246,15 +246,15 @@ echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
 
 {{ Form::open(array('url' => '/resume')) }}
 
-    resume Name<br>
+    
         {{ Form::text('name', '', array('class'=>'form-control'))}} 
+    resume Name<br>
 
-    resume url<br>
         {{ Form::text('url', '', array('class'=>'form-control'))}} 
+    resume url<br>
 
-    resume text<br>
         {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} <br>
-
+    resume text<br>
         {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
 {{ Form::close() }}
