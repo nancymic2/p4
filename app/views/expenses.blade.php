@@ -50,7 +50,7 @@ clothing<br>
 entertainment<br>
     {{ Form::text('entertainment', '', array('class'=>'form-control'))}}
 comments<br>
-    {{ Form::textarea('comments', '', array('class'=>'form-control'))}}
+    {{ Form::text('comments', '', array('class'=>'form-control'))}}
 
 
 <br>
