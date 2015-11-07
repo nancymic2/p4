@@ -16,7 +16,7 @@
 
 
 {{ Form::open(array('url' => '/resume')) }}
-
+<br>
 resume Name<br>
     {{ Form::text('name', '', array('class'=>'form-control'))}} 
 
