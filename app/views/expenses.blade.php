@@ -17,38 +17,38 @@
 <br>
 
 company_id<br>
-    {{ Form::integer('company_id', '', array('class'=>'form-control'))}} 
+    {{ Form::int('company_id', '', array('class'=>'form-control'))}} 
 application_id<br>
-    {{ Form::integer('application_id', '', array('class'=>'form-control'))}} 
+    {{ Form::int('application_id', '', array('class'=>'form-control'))}} 
 
 gas<br>
-    {{ Form::integer('gas', '', array('class'=>'form-control'))}} 
+    {{ Form::int('gas', '', array('class'=>'form-control'))}} 
 
 airfare<br>
-    {{ Form::integer('airfare', '', array('class'=>'form-control'))}} 
+    {{ Form::int('airfare', '', array('class'=>'form-control'))}} 
 
 train<br>
-    {{ Form::integer('train', '', array('class'=>'form-control'))}} 
+    {{ Form::int('train', '', array('class'=>'form-control'))}} 
 hotel<br>
-    {{ Form::integer('hotel', '', array('class'=>'form-control'))}} 
+    {{ Form::int('hotel', '', array('class'=>'form-control'))}} 
 meals<br>
-    {{ Form::integer('meals', '', array('class'=>'form-control'))}}
+    {{ Form::int('meals', '', array('class'=>'form-control'))}}
 stamps<br>
-    {{ Form::integer('stamps', '', array('class'=>'form-control'))}}
+    {{ Form::int('stamps', '', array('class'=>'form-control'))}}
 ink<br>
-    {{ Form::integer('ink', '', array('class'=>'form-control'))}}
+    {{ Form::int('ink', '', array('class'=>'form-control'))}}
 paper<br>
-    {{ Form::integer('paper', '', array('class'=>'form-control'))}}
+    {{ Form::int('paper', '', array('class'=>'form-control'))}}
 hardware<br>
-    {{ Form::integer('hardware', '', array('class'=>'form-control'))}}
+    {{ Form::int('hardware', '', array('class'=>'form-control'))}}
 portfolio<br>
-    {{ Form::integer('portfolio', '', array('class'=>'form-control'))}}
+    {{ Form::int('portfolio', '', array('class'=>'form-control'))}}
 phone<br>
-    {{ Form::integer('phone', '', array('class'=>'form-control'))}}
+    {{ Form::int('phone', '', array('class'=>'form-control'))}}
 clothing<br>
-    {{ Form::integer('clothing', '', array('class'=>'form-control'))}}
+    {{ Form::int('clothing', '', array('class'=>'form-control'))}}
 entertainment<br>
-    {{ Form::integer('entertainment', '', array('class'=>'form-control'))}}
+    {{ Form::int('entertainment', '', array('class'=>'form-control'))}}
 comments<br>
     {{ Form::textarea('comments', '', array('class'=>'form-control'))}}
 
