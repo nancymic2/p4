@@ -1161,7 +1161,7 @@ Route::post('/applications',
              $application = new Application;
              $application->user()->associate(Auth::user());
          
-             $application->company   = Input::only('company'); //Input::get('company_id');  /// added 10/31/15  need to remove company textbox or add field in db for extra co.
+             $application->company   = Input::get('company_id'); //Input::get('company_id');  /// added 10/31/15  need to remove company textbox or add field in db for extra co.
 
              ///$application->company   = Input::get('company');   //commented out 10/31/15  replaced by select
              $application->role    = Input::get('role');
