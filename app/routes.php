@@ -10,67 +10,7 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-$styles='<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-
-  <title>Career Trax</title>
-  <link rel="stylesheet" href="hmin.css">
-</head>
-<body>
-  <div class="container" style="margin:30px;">
-<img style="float:left" src="train2.jpg"> <h1>Get your job hunt on track.</h1>
-</div>
-</div>
-  <!--<div class="jumbotron">-->
-
-  <header class="navbar-inverse">
-    <div class="container">
-    <nav  role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">CareerTrax</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-        <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
-        <li><a href="/applications">Add a Job</a></li>
-        <li><a href="/savedJobs">Add Something</a></li>
-        <li><a href="/completedapps">Find Completed Apps</a></li>
-        <li><a href="/resumesearch">Find Your Resumes</a></li>
-        <li><a href="/jobstoapply">Find Saved Jobs</a></li>
-        <li><a href="/company">Add Company</a></li>
-        <li><a href="/logout">Log Out</a></li>
-      
-      </ul>
-     
-      
-    </div><!-- /.navbar-collapse -->
-  <!--</div> container-fluid --> 
-</nav>
-</header>';
-$stylesend='</body></html>';
 
 
 
@@ -78,7 +18,7 @@ $stylesend='</body></html>';
 Route::get('account', array('before' => 'auth', function()
 
 {
-$styles='<!DOCTYPE html>
+     $styles='<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -171,7 +111,6 @@ echo '<br>';
 
 echo '<a href="/password/remind">Request new Password</a>';
 echo '<br>';
-global $stylesend;
 echo $stylesend;
     
 }));
@@ -180,7 +119,67 @@ echo $stylesend;
 Route::get('changelast', array('before' => 'auth', function()
 
 {
-global $styles;  
+   $styles='<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+
+  <title>Career Trax</title>
+  <link rel="stylesheet" href="hmin.css">
+</head>
+<body>
+  <div class="container" style="margin:30px;">
+<img style="float:left" src="train2.jpg"> <h1>Get your job hunt on track.</h1>
+</div>
+</div>
+  <!--<div class="jumbotron">-->
+
+  <header class="navbar-inverse">
+    <div class="container">
+    <nav  role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">CareerTrax</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+        <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
+        <li><a href="/applications">Add a Job</a></li>
+        <li><a href="/savedJobs">Add Something</a></li>
+        <li><a href="/completedapps">Find Completed Apps</a></li>
+        <li><a href="/resumesearch">Find Your Resumes</a></li>
+        <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+        <li><a href="/company">Add Company</a></li>
+        <li><a href="/logout">Log Out</a></li>
+      
+      </ul>
+     
+      
+    </div><!-- /.navbar-collapse -->
+  <!--</div> container-fluid --> 
+</nav>
+</header>';
+$stylesend='</body></html>';
 echo $styles;
 echo '<p>&nbsp;</p>';    
  $names = User::where('id', '=', Auth::user()->id)->get();
@@ -205,7 +204,6 @@ $id=$name['id'];
 echo '<br>';
 
 echo '</p>';
-global $stylesend;
 echo $stylesend;
     
 }));
@@ -353,10 +351,92 @@ Route::get('jobstoapply', array('before' => 'auth', function()
 
 {
 
- 
+  $styles='<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+
+  <title>Career Trax</title>
+  <link rel="stylesheet" href="hmin.css">
+  <style type="text/css">
+.myappls {
+  border: 2px dotted #00CCFF;
+  border-radius: 15px;
+  padding: 12px;
+  width: 30%;
+  color: #0099FF;
+  margin-bottom: 10px;
+}
+.reshead {
+background-color: #eeeeee;
+  color: #0099FF;
+  border-radius: 10px;
+  padding: 6px;
+  padding-left: 10px;
+  margin-bottom: 8px;
+}
+</style>
+</head>
+<body>
+  <div class="container" style="margin:30px;">
+<img style="float:left" src="train2.jpg"> <h1>Get your job hunt on track.</h1>
+</div>
+</div>
+  <!--<div class="jumbotron">-->
+
+  <header class="navbar-inverse">
+    <div class="container">
+    <nav  role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">CareerTrax</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+        <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
+        <li><a href="/applications">Add a Job</a></li>
+        <li><a href="/savedJobs">Add Something</a></li>
+        <li><a href="/completedapps">Find Completed Apps</a></li>
+        <li><a href="/resumesearch">Find Your Resumes</a></li>
+        <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+        <li><a href="/company">Add Company</a></li>
+        <li><a href="/logout">Log Out</a></li>
+      
+      </ul>
+     
+      
+    </div><!-- /.navbar-collapse -->
+  <!--</div> container-fluid --> 
+</nav>
+<style type="text/css">
+td {
+     padding: 11px;
+ }
+ </style>
+</header>';
+$stylesend='</body></html>';
      
   $jobs = Postedjob::where('user_id', '=', Auth::user()->id)->get();
-  global $styles;
   echo $styles;
   echo '<div class="container">'; 
   echo '<h2>Your Saved Jobs</h2>';
@@ -393,7 +473,7 @@ foreach($jobs as $job) {
 } 
   
    echo '<br>';
-global $stylesend;
+
    echo $stylesend;
   
 }));
@@ -415,7 +495,84 @@ Route::get('/completedappsOld', function()
 Route::get('completedapps', array('before' => 'auth', function()
   {      
 ////////////////
-//remnoved styles
+$styles='<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<style type="text/css">
+.myappls {
+  border: 2px dotted #00CCFF;
+  border-radius: 15px;
+  padding: 12px;
+  width: 30%;
+  color: #0099FF;
+  margin-bottom: 10px;
+}
+.reshead {
+background-color: #eeeeee;
+  color: #0099FF;
+  border-radius: 10px;
+  padding: 6px;
+  padding-left: 10px;
+  margin-bottom: 8px;
+}
+</style>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+
+  <title>Career Trax</title>
+  <link rel="stylesheet" href="hmin.css">
+</head>
+<body>
+  <div class="container" style="margin:30px;">
+<img style="float:left" src="train2.jpg"> <h1>Get your job hunt on track.</h1>
+</div>
+</div>
+  <!--<div class="jumbotron">-->
+
+  <header class="navbar-inverse">
+    <div class="container">
+    <nav  role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">CareerTrax</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+        <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
+        <li><a href="/applications">Add a Job</a></li>
+        <li><a href="/savedJobs">Add Something</a></li>
+        <li><a href="/completedapps">Find Completed Apps</a></li>
+        <li><a href="/resumesearch">Find Your Resumes</a></li>
+        <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+        <li><a href="/company">Add Company</a></li>
+        <li><a href="/logout">Log Out</a></li>
+      
+      </ul>
+     
+      
+    </div><!-- /.navbar-collapse -->
+  <!--</div> container-fluid --> 
+</nav>
+</header>';
+$stylesend='</body></html>';
 
 
 ///////////////            
@@ -424,10 +581,11 @@ Route::get('completedapps', array('before' => 'auth', function()
 
   $i=0;     
   $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
-  global $styles;
-  echo $styles;
+  
+echo $styles;
   echo '<div class="container">'; 
   echo '<h2>Your completed applications</h2>';
+
   echo '<p>';
   
 
@@ -499,6 +657,7 @@ foreach($completedapps as $completedapp) {
 
     echo '<br>';
 
+    
     echo '</div>';
 
     /// $buyshoe->delete();
@@ -506,19 +665,82 @@ foreach($completedapps as $completedapp) {
   }
 //return View::make('deleteresume')->with('deleteres', $deleteres);
 echo '</p>';
-global $stylesend;
-echo $stylesend;   
+
+ echo $stylesend;   
 }));
 
 Route::get('resumesearch', array('before' => 'auth', function()
 
 {
-  
+  $styles='<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<style type="text/css">
+td {
+     padding: 11px;
+ }
+ </style>
+  <title>Career Trax</title>
+  <link rel="stylesheet" href="hmin.css">
+</head>
+<body>
+  <div class="container" style="margin:30px;">
+<img style="float:left" src="train2.jpg"> <h1>Get your job hunt on track.</h1>
+</div>
+</div>
+  <!--<div class="jumbotron">-->
+
+  <header class="navbar-inverse">
+    <div class="container">
+    <nav  role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">CareerTrax</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+        <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
+        <li><a href="/applications">Add a Job</a></li>
+        <li><a href="/savedJobs">Add Something</a></li>
+        <li><a href="/completedapps">Find Completed Apps</a></li>
+        <li><a href="/resumesearch">Find Your Resumes</a></li>
+        <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+            <li><a href="/company">Add Company</a></li>
+        <li><a href="/logout">Log Out</a></li>
+      
+      </ul>
+     
+      
+    </div><!-- /.navbar-collapse -->
+  <!--</div> container-fluid --> 
+</nav>
+</header>';
+$stylesend='</body></html>';
 
   $i=0;
   $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
       //$resumes->toArray();
-global $styles;
 echo $styles;
   echo '<div class="container">'; 
    echo '<p>&nbsp;</p>';
@@ -575,8 +797,7 @@ echo '</tr>';
 echo '</table>';      
 echo '</p>';
 echo '</div>';
-global $stylesend;
-echo $stylesend;
+    echo $stylesend;
 }));
 
 
