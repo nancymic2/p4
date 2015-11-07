@@ -1139,9 +1139,10 @@ Route::get('applications', array('before' => 'auth', function()
           /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
           $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
 
-          $resume_lists = DB::table('resumes')->where('user_id', $user->id)->lists('name');
-          //$company_lists = DB::table('companies')->where('user_id', $user->id)->lists('company'); //REVERT TO THIS
+          //$resume_lists = DB::table('resumes')->where('user_id', $user->id)->lists('name');
+          //$company_lists = DB::table('companies')->where('user_id', $user->id)->lists('company'); //only index
 
+          $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');
 
           return View::make('applications', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists));  ///10/31/15
         }
@@ -1172,7 +1173,7 @@ Route::post('/applications',
              $application->hiringMgr    = Input::get('hiringMgr');
              $application->decision    = Input::get('decision');
              $application->rating    = Input::get('rating');
-             $application->resumeUsed    = Input::get('resumeUsed');
+             $application->resumeUsed    = Input::get('user_id');  //resumeUsed was
              $application->howapplied    = Input::get('howapplied');
              $application->recnumber    = Input::get('recnumber');
              $application->website   = Input::get('website');
