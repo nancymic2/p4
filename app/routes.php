@@ -171,6 +171,7 @@ echo '<br>';
 
 echo '<a href="/password/remind">Request new Password</a>';
 echo '<br>';
+global $stylesend;
 echo $stylesend;
     
 }));
@@ -498,7 +499,6 @@ foreach($completedapps as $completedapp) {
 
     echo '<br>';
 
-    
     echo '</div>';
 
     /// $buyshoe->delete();
