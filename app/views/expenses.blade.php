@@ -15,9 +15,9 @@
 
 {{ Form::open(array('url' => '/expenses')) }}
 <br>
-   {{ Form::select('company_id', $company_lists) }}
+    <!--{{ Form::select('company_id', $company_lists) }} commented ut 11-7 105 pm-->
 company_id<br>
-    <!--{{ Form::text('company_id', '', array('class'=>'form-control'))}} commented ut 11-7 105 pm-->
+   {{ Form::text('company_id', '', array('class'=>'form-control'))}} 
 application_id<br>
     {{ Form::text('application_id', '', array('class'=>'form-control'))}} 
 
