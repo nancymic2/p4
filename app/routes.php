@@ -1028,14 +1028,13 @@ Route::post('/company',
 
 Route::get('expenses', array('before' => 'auth', function()
          {
-          ////////////ADDED 11-7  11-7 105 pm-->/////////////////////////////
-          $user = Auth::user();
-          
-          
+          ////////////ADD later 11-7 broken->/////////////////////////////
+          /*$user = Auth::user();
+                 
           $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
           ////////////////////////////////////////////////////////////////////
-          return View::make('expenses', array('company_lists' => $company_lists));  
-            //return View::make('expenses');
+          return View::make('expenses', array('company_lists' => $company_lists));  */
+          return View::make('expenses');
         }
     )
 );
