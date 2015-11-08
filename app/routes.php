@@ -632,7 +632,7 @@ Route::get('expenses', array('before' => 'auth', function()
           
           /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
           $company1_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
-          $company1_lists = array_add($company1_lists, '0', ''); 
+          //$company1_lists = array_add($company1_lists, '0', ''); 
 
           $application_lists = Application::where('user_id', '=', $user->id)->get()->lists('recnumber', 'id');
 
