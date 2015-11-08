@@ -632,6 +632,7 @@ Route::get('expenses', array('before' => 'auth', function()
           
           /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
           $company1_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
+          $company1_lists = array_add($company1_lists, '0', ''); 
 
           $application_lists = Application::where('user_id', '=', $user->id)->get()->lists('recnumber', 'id');
 
@@ -655,9 +656,9 @@ Route::get('expenses', array('before' => 'auth', function()
             $expense = new Expense;
             $expense->user()->associate(Auth::user());
             $expense->company_id   = Input::get('company_id');   ////  add to dropdown later
-            if (company1_lists['company']=='') {   //prob an assoc array here
-                $expense->company_id   = '';
-            }
+           // if (company1_lists['company']=='') {   //prob an assoc array here
+               // $expense->company_id   = '';
+            //}
 
             $expense->application_id   = Input::get('recnumber');  ////  add to dropdown later
          
