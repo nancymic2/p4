@@ -10,9 +10,12 @@
 	add a URL to your resume on Google docs or Monster<br>
 	or wheverever it is saved</p>
 
-{{ Form::open(array('url' => '/resume')) }}  
 
-<!--{{ Form::open(['route'=>'/resume', 'files'=>true]) }} -->
+
+
+
+
+{{ Form::open(array('url' => '/resume')) }}
 <br>
 resume Name<br>
     {{ Form::text('name', '', array('class'=>'form-control'))}} 
@@ -41,4 +44,3 @@ echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
 </div>
 </div>
 @stop
-
