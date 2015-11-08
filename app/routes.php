@@ -81,7 +81,7 @@ Route::get('account', array('before' => 'auth', function()
 $stylesend='</body></html>';
      
  $names = User::where('id', '=', Auth::user()->id)->get();
- echo $styles;
+ include 'head.php';
  echo '<p>&nbsp;</p>';
    //echo $jobs;
    # loop through the Collection and access just the data
