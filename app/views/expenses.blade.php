@@ -9,9 +9,12 @@
 
 {{ Form::open(array('url' => '/expenses')) }}
 <br>
+  <h4>Select existng company</h4>
+     {{ Form::select('company_id', $company1_lists) }
 
-company_id<br>
-    {{ Form::text('company_id', '', array('class'=>'form-control'))}} 
+
+<!--company_id<br>
+    {{ Form::text('company_id', '', array('class'=>'form-control'))}} -->
 application_id<br>
     {{ Form::text('application_id', '', array('class'=>'form-control'))}} 
 gas<br>
