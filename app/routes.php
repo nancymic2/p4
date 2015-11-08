@@ -631,14 +631,14 @@ Route::get('expenses', array('before' => 'auth', function()
           $user = Auth::user();
           
           /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
-          $company1_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
+          $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
 
           //$resume_lists = DB::table('resumes')->where('user_id', $user->id)->lists('name');
           //$company_lists = DB::table('companies')->where('user_id', $user->id)->lists('company'); //only index
 
         
 
-          return View::make('applications', array('company1_lists' => $company1_lists));  ///10/31/15
+          return View::make('applications', array('company_lists' => $company_lists));  ///10/31/15
 
           //return View::make('expenses');
         }

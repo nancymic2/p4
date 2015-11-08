@@ -10,7 +10,7 @@
 {{ Form::open(array('url' => '/expenses')) }}
 <br>
   <h4>Select existng company</h4>
-     {{ Form::select('company_id', $company1_lists) }
+     {{ Form::select('company_id', $company_lists) }
 
 
 <!--company_id<br>
