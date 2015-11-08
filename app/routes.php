@@ -655,6 +655,10 @@ Route::get('expenses', array('before' => 'auth', function()
             $expense = new Expense;
             $expense->user()->associate(Auth::user());
             $expense->company_id   = Input::get('company_id');   ////  add to dropdown later
+            if ($company1_lists[0]=='') {
+                $expense->company_id   = '';
+            }
+
             $expense->application_id   = Input::get('recnumber');  ////  add to dropdown later
          
             $expense->gas   = Input::get('gas');
