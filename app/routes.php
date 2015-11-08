@@ -437,7 +437,7 @@ td {
 $stylesend='</body></html>';
      
   $jobs = Postedjob::where('user_id', '=', Auth::user()->id)->get();
-  echo $styles;
+  include 'head.php';
   echo '<div class="container">'; 
   echo '<h2>Your Saved Jobs</h2>';
 
