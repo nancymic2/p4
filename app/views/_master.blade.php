@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
 <script type="text/javascript" src="jquery.complexify.js"></script>
+<script type="text/javascript" src="rater.js"></script>
 
   <title>Career Trax</title>
   <link rel="stylesheet" href="hmin.css">
