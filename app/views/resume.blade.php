@@ -10,7 +10,6 @@
 	add a URL to your resume on Google docs or Monster<br>
 	or wheverever it is saved</p>
 
-
 <!--{{ Form::open(array('url' => '/resume')) }}  -->
 
 {{ Form::open(['route'=>'resume', 'files'=>true]) }}
