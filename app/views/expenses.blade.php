@@ -21,7 +21,8 @@
 
      {{ Form::select('recnumber', $application_lists) }}
 <br>
-gas<br>
+<h4>Add expenses</h4>
+gasoline<br>
     {{ Form::text('gas', '', array('class'=>'form-control'))}} 
 airfare<br>
     {{ Form::text('airfare', '', array('class'=>'form-control'))}} 
