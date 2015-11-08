@@ -9,14 +9,14 @@
 
 {{ Form::open(array('url' => '/expenses')) }}
 <br>
-  <h4>Select existng company</h4>
- 
+  <h5>Add expense to one of your companies</h5>
+
      {{ Form::select('company_id', $company1_lists) }}
 <br>
 
 <!--company_id<br>
     {{ Form::text('company_id', '', array('class'=>'form-control'))}} -->
-job name<br>
+ <h5>Add expense to one of your jobs</h5>
     <!--{{ Form::text('application_id', '', array('class'=>'form-control'))}}  add select instead -->
 
      {{ Form::select('recnumber', $application_lists) }}
