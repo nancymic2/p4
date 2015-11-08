@@ -11,7 +11,7 @@
 <br>
   <h4>Select existng company</h4>
      {{ Form::select('company_id', $company1_lists) }}
-
+<br>
 
 <!--company_id<br>
     {{ Form::text('company_id', '', array('class'=>'form-control'))}} -->
@@ -19,6 +19,7 @@ application_id<br>
     <!--{{ Form::text('application_id', '', array('class'=>'form-control'))}}  add select instead -->
 
      {{ Form::select('recnumber', $application_lists) }}
+<br>
 gas<br>
     {{ Form::text('gas', '', array('class'=>'form-control'))}} 
 airfare<br>
