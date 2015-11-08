@@ -655,7 +655,7 @@ Route::get('expenses', array('before' => 'auth', function()
             $expense = new Expense;
             $expense->user()->associate(Auth::user());
             $expense->company_id   = Input::get('company_id');   ////  add to dropdown later
-            if ($company1_lists[0]=='') {
+            if (company_id=='') {
                 $expense->company_id   = '';
             }
 
