@@ -15,7 +15,7 @@
 
 <!--{{ Form::open(['route'=>'pizzas.store', 'files'=>true]) }}   added 11/8  below   'files'=>true--> 
 
-{{ Form::open(array('url' => '/resume'), 'files'=>true) }}
+{{ Form::open(array('url' => '/resume'), 'files'->true) }}
 <br>
 resume Name<br>
     {{ Form::text('name', '', array('class'=>'form-control'))}} 
