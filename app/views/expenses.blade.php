@@ -16,7 +16,9 @@
 <!--company_id<br>
     {{ Form::text('company_id', '', array('class'=>'form-control'))}} -->
 application_id<br>
-    {{ Form::text('application_id', '', array('class'=>'form-control'))}} 
+    //{{ Form::text('application_id', '', array('class'=>'form-control'))}} 
+
+     {{ Form::select('recnumber', $application_lists) }}
 gas<br>
     {{ Form::text('gas', '', array('class'=>'form-control'))}} 
 airfare<br>

@@ -633,12 +633,14 @@ Route::get('expenses', array('before' => 'auth', function()
           /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
           $company1_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
 
+          $application_lists = Application::where('user_id', '=', $user->id)->get()->lists('recnumber', 'id');
+
           //$resume_lists = DB::table('resumes')->where('user_id', $user->id)->lists('name');
           //$company_lists = DB::table('companies')->where('user_id', $user->id)->lists('company'); //only index
 
-        
+           //sample return View::make('applications', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists));
 
-          return View::make('expenses', array('company1_lists' => $company1_lists));  ///10/31/15
+          return View::make('expenses', array('company1_lists' => $company1_lists), array('application_lists' => $application_lists));       ///10/31/15
 
           //return View::make('expenses');
         }
@@ -653,7 +655,7 @@ Route::get('expenses', array('before' => 'auth', function()
             $expense = new Expense;
             $expense->user()->associate(Auth::user());
             $expense->company_id   = Input::get('company_id');   ////  add to dropdown later
-            $expense->application_id   = Input::get('application_id');  ////  add to dropdown later
+            $expense->application_id   = Input::get('recnumber');  ////  add to dropdown later
          
             $expense->gas   = Input::get('gas');
             $expense->airfare    = Input::get('airfare');
