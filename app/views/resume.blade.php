@@ -12,7 +12,7 @@
 
 <!--{{ Form::open(array('url' => '/resume')) }}  -->
 
-{{ Form::open(['route'=>'resume', 'files'=>true]) }}
+{{ Form::open(['route'=>'/resume', 'files'=>true]) }}
 <br>
 resume Name<br>
     {{ Form::text('name', '', array('class'=>'form-control'))}} 
