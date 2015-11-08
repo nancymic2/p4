@@ -638,7 +638,7 @@ Route::get('expenses', array('before' => 'auth', function()
 
         
 
-          return View::make('expenses', array('company_lists' => $company1_lists));  ///10/31/15
+          return View::make('expenses', array('company1_lists' => $company1_lists));  ///10/31/15
 
           //return View::make('expenses');
         }
