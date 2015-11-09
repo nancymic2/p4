@@ -1,11 +1,14 @@
 @extends('_master')
 
-@section ('company')
+@section ('applications')
 
-<div class="container">
-    <div class="col-sm-6">
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+                        <script src="jquery.knob.js"></script>
+                <link href="/css/layout.css" rel="stylesheet">
+</head>
+<div class='layout-document'>
 
-////////////added 10-11-15
+
 
 <script>
 
@@ -104,45 +107,89 @@
         });
     </script>
 
-/////////////
 
 
-
+<div class="container">
+    <div class="col-sm-6">
 <h2>&nbsp;</h2>
-<h2>Add a Company</h2>
-<p>Add a company</p>
+<h2>Add a completed application</h2>
+<p>Add info about applications you have made.<br>
+    Stop forgetting where you applied, what resume<br>
+    you used, and what the username and password were<br> to the application site!</p>
+  <p>  If you have an interview, add the date and get a Google calendar reminder</p>
 
 
 
 
+{{ Form::open(array('url' => '/applications')) }}
 
+    <h3>First rate this job prospect</h3><br>
+ <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
 
-{{ Form::open(array('url' => '/company')) }}
+value="44"><br>
 
-company Name<br>
+    company<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
 
 
-company website<br>
+    role<br>
+    {{ Form::text('role', '', array('class'=>'form-control'))}} 
+
+
+    salary<br>
+    {{ Form::text('salary', '', array('class'=>'form-control'))}} 
+
+    Applied Date (enter as yyyy-mm-dd)<br>
+    {{ Form::text('applyDate', '', array('class'=>'form-control'))}} 
+
+    City<br>
+    {{ Form::text('city', '', array('class'=>'form-control'))}} 
+
+    Hiring Manager<br>
+    {{ Form::text('hiringMgr', '', array('class'=>'form-control'))}} 
+
+    Interview Date (enter as yyyy-mm-dd)<br>
+    {{ Form::text('followupBy', '', array('class'=>'form-control'))}} 
+
+    decision<br>
+    {{ Form::text('decision', '', array('class'=>'form-control'))}} 
+
+
+    Resume used<br>
+    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} 
+
+    how applied<br>
+    {{ Form::text('howapplied', '', array('class'=>'form-control'))}} 
+
+    rec number<br>
+    {{ Form::text('recnumber', '', array('class'=>'form-control'))}} 
+
+    website<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
 
+     user name<br>
+    {{ Form::text('username', '', array('class'=>'form-control'))}} 
 
-company street<br>
-    {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
+     password<br>
+    {{ Form::text('password', '', array('class'=>'form-control'))}} <br>
 
 
+    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
-    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
 {{ Form::close() }}
 
-
 <?php
 echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
+
 
 ?>
 
 </div>
 </div>
+</div>
 @stop
+
+
+
