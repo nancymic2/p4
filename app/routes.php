@@ -354,8 +354,8 @@ foreach($completedapps as $completedapp) {
       //////echo $resumeCurr;  //is this JSON?
 
       $res[] = json_decode($resumeCurr, true);
-      $res['name'] [0];
-
+      //$res['name'] [0];
+echo gettype($res);
 
     echo '</td>';
     echo '<td>';
