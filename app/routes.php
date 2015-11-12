@@ -359,6 +359,7 @@ foreach($completedapps as $completedapp) {
 
       echo count($res);
        $mystring=serialize($res);
+       echo $mystring;
        echo gettype($mystring);
 //echo $res['name'];
 //$keys = array_keys($res);
