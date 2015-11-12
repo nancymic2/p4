@@ -351,7 +351,7 @@ foreach($completedapps as $completedapp) {
     //echo $theresume2;
 /////////////////////////////////////////////////////////////////// resumes where id = $theresume
     $resumeCurr = Resume::where('id', '=', $theresume)->get();
-      echo $resumeCurr['url'];
+      echo $resumeCurr('url');
     echo '</td>';
     echo '<td>';
     //echo '<b>How Applied:</b> ';
