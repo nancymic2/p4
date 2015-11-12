@@ -975,6 +975,13 @@ Route::post('/editcompany',
     )
 );
 
+
+Route::get('company/edit/{id}', 'CompanyController@getEdit'); 
+Route::post('company/edit/{id}', 'CompanyController@postEdit'); 
+
+
+
+
 ///////////////////////////
 
 /*
