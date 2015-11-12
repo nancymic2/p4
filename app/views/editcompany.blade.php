@@ -10,8 +10,8 @@
 
 {{ Form::model($company) }}
 
-company Name<br>
-    {{ Form::text('company', '', array('class'=>'form-control'))}} 
+<!--company Name<br>
+    {{ Form::text('company', '', array('class'=>'form-control'))}} -->
 
 
 company website<br>
