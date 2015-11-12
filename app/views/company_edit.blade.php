@@ -4,7 +4,7 @@
 
 
 
-@section('content')
+
 
 	{{ Form::model($company, ['method' => 'post', 'action' => ['CompanyController@postEdit', $company->id]]) }}
 	
