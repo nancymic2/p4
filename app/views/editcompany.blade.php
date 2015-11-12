@@ -11,7 +11,7 @@
 <!--  {{ Form::model($company, array('route' => array('editcompany', $company->id))) }} -->
 
 
-{{ Form::model($company, array('route' => array('editcompany, $website->id))) }}
+{{ Form::model($company) }}
 
 
 
