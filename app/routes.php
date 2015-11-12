@@ -273,7 +273,7 @@ include 'head.php';
   echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4"> 
 
   <caption>
-  Ranking Tables for States: Population Change from 2000 to 2010
+  Your Applications
   </caption>
   <thead>
     <tr>  
