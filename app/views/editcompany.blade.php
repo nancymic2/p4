@@ -16,7 +16,7 @@
 
 
 company Name<br>
-    {{ Form::text('company', '', array('class'=>'form-control'))}} 
+    {{ Form::text('username', '', array('class'=>'form-control'))}} 
 
 
 company website<br>
