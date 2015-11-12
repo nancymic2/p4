@@ -356,6 +356,7 @@ foreach($completedapps as $completedapp) {
       $res[] = json_decode($resumeCurr, true);
       //$res['name'] [0];
 echo gettype($res);
+echo sizeof($res);
 
     echo '</td>';
     echo '<td>';
