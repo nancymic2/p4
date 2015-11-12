@@ -350,7 +350,7 @@ foreach($completedapps as $completedapp) {
     //$theresume2=$resumes[$theresume];
     //echo $theresume2;
 /////////////////////////////////////////////////////////////////// resumes where id = $theresume
-    $resumeCurr = Resume::where('id', '=', $theresume->get();
+    $resumeCurr = Resume::where('id', '=', $theresume)->get();
       echo $resumeCurr;
     echo '</td>';
     echo '<td>';
