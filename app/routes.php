@@ -281,13 +281,14 @@ include 'head.php';
       <th>Role</th>
       <th>City</th>
       <th>Date applied</th>
-      <th>City</th>
+      
       <th>Hiring manager</th>
 
       <th>Follow up by</th>
       <th>rating</th>
       <th>Resume</th>
-      <th>City</th>
+      <th>website</th>
+      <th>name</th>
 
     </tr>  </thead>   <tbody>';
 
@@ -296,10 +297,10 @@ foreach($completedapps as $completedapp) {
    $i++;
    $app_id[$i] = $completedapp->id;
     //echo $resume_names[$i];
-   echo '<div class="myappls">';
-   echo '<div class="reshead">';
-   echo 'Application '.$i;
-   echo '</div>';
+   //echo '<div class="myappls">';
+   //echo '<div class="reshead">';
+   //echo 'Application '.$i;
+   //echo '</div>';
 
 
     echo '<tr>';
@@ -374,6 +375,7 @@ foreach($completedapps as $completedapp) {
           // onclick?  Session::put('applybydate', $applydate);
   
 
+  }
     echo '<br>';
 
     echo '</tbody> </table>';
@@ -381,12 +383,13 @@ foreach($completedapps as $completedapp) {
 
     /// $buyshoe->delete();
 
-  }
 //return View::make('deleteresume')->with('deleteres', $deleteres);
 echo '</p>';
 
  echo $stylesend;   
 }));
+
+
 
 Route::get('resumesearch', array('before' => 'auth', function()
 
