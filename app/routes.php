@@ -933,63 +933,42 @@ Route::any('form-submit', function(){
 });
 
 
+
+
+//Route::get('company/edit/{id}', 'CompanyController@getEdit'); 
+//Route::post('company/edit/{id}', 'CompanyController@postEdit'); 
+
+///// added 10-11-15
 Route::get('editcompany', array('before' => 'auth', function()
-         {
-          $user = Auth::user();
-          $company = Company::findOrFail($user);
-            return View::make('editcompany', compact('company'));
+    {
+        $company = Company::find($id);
+
+        if (!$company->update(Input::all())) {
+            return Redirect::back()
+                    ->with('message', 'Something wrong happened while saving your model')
+                    ->withInput();
         }
+
+   return Redirect::to('/editcmpany')->with('flash_message', 'Welcome to CareerTrax!');
+    }
     )
 );
 
 Route::post('/editcompany', 
     array(
         'before' => 'csrf', 
-        function() {
-
-            $company = new Company;
-            $company->user()->associate(Auth::user());
-         
-            $company->website   = Input::get('website');
-            $company->company    = Input::get('company');
-            $company->street    = Input::get('street');
-            $company->rating    = Input::get('rating');
-            $company->username    = Input::get('username');
-            $company->pasword    = Input::get('pasword');
-           
-            # Try to add the company 
-            try {
-                $company->save();
-            }
-            # Fail
-            catch (Exception $e) {
-                return Redirect::to('/edtcompany')->with('flash_message', 'resume addition failed; please try again.')->withInput();
-            }
-
-            # Log the user in
-           // Auth::login($user);
-
-           return Redirect::to('/editcmpany')->with('flash_message', 'Welcome to CareerTrax!');
-
-        }
+        function() 
+        {
+    
+    $company = Company::findOrFail($id);
+    $company->fill(Input::all());
+    $company->save();
+    
+ return Redirect::to('/editcmpany')->with('flash_message', 'Welcome to CareerTrax!');
+    
+  }
     )
 );
-
-
-//Route::get('company/edit/{id}', 'CompanyController@getEdit'); 
-//Route::post('company/edit/{id}', 'CompanyController@postEdit'); 
-
-
-Route::get('company/edit/{id}', array(
-  'uses' => 'CompanyController@getEdit',
-  'as' => 'company.saved'
-));
-
-//added $ in front ot token. undef error goes away but diff error dec 6 9am
-Route::post('company/edit/{id}', array(
-  'uses' => 'CompanyController@postEdit'
-  
-));
 
 
 ///////////////////////////
