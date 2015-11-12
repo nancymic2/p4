@@ -943,11 +943,11 @@ Route::get('editcompany', array('before' => 'auth', function()
     {
         $company = Company::all();
 
-        if (!$company->update(Input::all())) {
+       /* if (!$company->update(Input::all())) {
             return Redirect::back()
                     ->with('message', 'Something wrong happened while saving your model')
                     ->withInput();
-        }
+        }*/
 
     return View::make('editcompany');
     }
