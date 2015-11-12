@@ -1,6 +1,6 @@
 @extends('_master')
 
-@section ('editcompany')
+@section ('company_edit')
 
 
 

@@ -980,6 +980,16 @@ Route::get('company/edit/{id}', 'CompanyController@getEdit');
 Route::post('company/edit/{id}', 'CompanyController@postEdit'); 
 
 
+Route::get('company/edit/{id}', array(
+  'uses' => 'CompanyController@getEdit',
+  'as' => 'company.saved'
+));
+
+//added $ in front ot token. undef error goes away but diff error dec 6 9am
+Route::post('company/edit/{id}', array(
+  'uses' => 'CompanyController@postEdit'
+  
+));
 
 
 ///////////////////////////
