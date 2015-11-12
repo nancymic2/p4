@@ -270,7 +270,7 @@ include 'head.php';
   echo '<h2>Your completed applications</h2>';
 
   echo '<p>';
-  echo '<table id="myTable" class="tablesorter"> 
+  echo '<table id="myTable" class="tablesorter" border="1"> 
 
   <caption>
   Ranking Tables for States: Population Change from 2000 to 2010
