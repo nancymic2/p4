@@ -357,6 +357,7 @@ foreach($completedapps as $completedapp) {
       //$res['name'] [0];
 echo gettype($res);
 echo sizeof($res);
+echo count($res);
 
     echo '</td>';
     echo '<td>';
