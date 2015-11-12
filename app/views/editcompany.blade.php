@@ -8,10 +8,10 @@
 
 
 
-{{ Form::model($company) }}
+Form::model($company, array('route' => array('company.update', $company->id)))
 
-<!--company Name<br>
-    {{ Form::text('company', '', array('class'=>'form-control'))}} -->
+company Name<br>
+    {{ Form::text('company', '', array('class'=>'form-control'))}} 
 
 
 company website<br>

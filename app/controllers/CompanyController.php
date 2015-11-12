@@ -52,3 +52,31 @@ public function postCreate() {
     
 
 }
+
+
+
+    public function getEdit($id)
+    {
+        $company = Company::find($id);
+
+        if (!$company->update(Input::all())) {
+            return Redirect::back()
+                    ->with('message', 'Something wrong happened while saving your model')
+                    ->withInput();
+        }
+
+        return Redirect::route('company.saved')
+                    ->with('message', 'User updated.');
+    }
+
+///////////// save edited co
+
+	public function postEdit($id) {
+		
+		$company = Company::findOrFail($id);
+		$company->fill(Input::all());
+		$company->save();
+		
+		return Redirect::action('CompanyController@getIndex')->with('flash_message','Your changes have been saved.');
+		
+	}
