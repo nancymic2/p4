@@ -345,12 +345,13 @@ foreach($completedapps as $completedapp) {
     echo '</td>';
     echo '<td>';
     //echo '<b>resume used:</b> ';
-    echo $completedapp['resumeUsed']."<br>";
+    echo $completedapp['resumeUsed']."<br>"; //this equals the resume id on resume table
     $theresume=$completedapp['resumeUsed'];
-    $theresume2=$resumes[$theresume];
-    echo $theresume2;
-///////////////////////////////////////////////////////////////////
-
+    //$theresume2=$resumes[$theresume];
+    //echo $theresume2;
+/////////////////////////////////////////////////////////////////// resumes where id = $theresume
+    $resumeCurr = Resume::where('id', '=', $theresume->get();
+      echo $resumeCurr;
     echo '</td>';
     echo '<td>';
     //echo '<b>How Applied:</b> ';
