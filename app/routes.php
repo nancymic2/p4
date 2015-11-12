@@ -949,7 +949,7 @@ Route::get('editcompany', array('before' => 'auth', $id, function()
                     ->withInput();
         }
 
-   return Redirect::to('/editcmpany')->with('flash_message', 'Welcome to CareerTrax!');
+    return View::make('editcompany');
     }
     )
 );
@@ -964,7 +964,7 @@ Route::post('/editcompany',
     $company->fill(Input::all());
     $company->save();
     
- return Redirect::to('/editcmpany')->with('flash_message', 'Welcome to CareerTrax!');
+ return Redirect::to('/editcompany')->with('flash_message', 'Welcome to CareerTrax!');
     
   }
     )
