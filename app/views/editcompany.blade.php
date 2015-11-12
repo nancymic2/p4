@@ -1,7 +1,7 @@
 
 @extends('_master')
 
-@section ('editoldcompany')
+@section ('editcompany')
 
 <div class="container">
     <div class="col-sm-6">
