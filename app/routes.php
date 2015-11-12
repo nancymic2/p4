@@ -389,7 +389,7 @@ echo count($res);
            
      //echo $deleteres;
           // onclick?  Session::put('applybydate', $applydate);
-  
+  unset($res);
 
   }
     echo '<br>';
