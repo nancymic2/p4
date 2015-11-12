@@ -1,9 +1,6 @@
 @extends('_master')
 
-
-@section('title')
-	Edit Company
-@stop
+@section ('editcompany')
 
 
 
