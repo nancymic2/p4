@@ -270,7 +270,7 @@ include 'head.php';
   echo '<h2>Your completed applications</h2>';
 
   echo '<p>';
-  echo '<table id="myTable" class="tablesorter" border="1" cellpadding="4"> 
+  echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4"> 
 
   <caption>
   Ranking Tables for States: Population Change from 2000 to 2010
@@ -366,7 +366,7 @@ foreach($completedapps as $completedapp) {
     
     echo '</tr>';
 
-    echo '<tr> <td colspan="10" bgcolor="gray"></td></tr>';
+   // echo '<tr> <td colspan="10" bgcolor="gray"></td></tr>';
    
    
     echo '<script> var apldata = "<php echo $app_id[$i]; ?>" </script>';
