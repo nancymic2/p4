@@ -16,6 +16,26 @@
 
   <title>Career Trax</title>
   <link rel="stylesheet" href="hmin.css">
+<script type="text/javascript" src="js/jquery-latest.js"></script> 
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script> 
+
+<style type="text/css">
+#myTable > thead{
+  cursor: pointer;
+} 
+</style>
+</head>
+<body>
+<script type="text/javascript" >
+$(document).ready(function() 
+{ 
+	$("#myTable").tablesorter(); 
+} 
+); 
+ 
+
+
+</script>
 </head>
 <body>
   <div class="container" style="margin:30px;">
