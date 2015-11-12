@@ -9,7 +9,7 @@
 
 
 <!--  {{ Form::model($company, array('route' => array('editcompany', $company->id))) }} -->
-  {{ Form::model($company) }} 
+{{ Form::model($company, array('route' => array('editcompany, $company->id))) }}
 
 company Name<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
