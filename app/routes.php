@@ -363,9 +363,9 @@ foreach($completedapps as $completedapp) {
     echo $completedapp['recnumber']."<br>";
     echo '</td>';
     
-    echo '    </tr>   </tbody> </table>';
+    echo '</tr>';
    
-    echo '<br>';
+   
     echo '<script> var apldata = "<php echo $app_id[$i]; ?>" </script>';
 
      $updateapp=$app_id[$i];
@@ -376,7 +376,7 @@ foreach($completedapps as $completedapp) {
 
     echo '<br>';
 
-    
+    echo '</tbody> </table>';
     echo '</div>';
 
     /// $buyshoe->delete();
