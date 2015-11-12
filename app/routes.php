@@ -264,6 +264,7 @@ $stylesend='</body></html>';
 
   $i=0;     
   $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
+  $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
   
 include 'head.php';
   echo '<div class="container">'; 
@@ -345,6 +346,11 @@ foreach($completedapps as $completedapp) {
     echo '<td>';
     //echo '<b>resume used:</b> ';
     echo $completedapp['resumeUsed']."<br>";
+    $theresume=$completedapp['resumeUsed'];
+    $theresume2=$resumes[$theresume];
+    echo $theresume2;
+///////////////////////////////////////////////////////////////////
+
     echo '</td>';
     echo '<td>';
     //echo '<b>How Applied:</b> ';
