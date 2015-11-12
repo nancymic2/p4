@@ -351,7 +351,7 @@ foreach($completedapps as $completedapp) {
     //echo $theresume2;
 /////////////////////////////////////////////////////////////////// resumes where id = $theresume
     $resumeCurr = Resume::where('id', '=', $theresume)->get();
-    echo $resumeCurr;  //is this JSON?
+    //echo $resumeCurr;  //is this JSON?
 
       $res[] = json_decode($resumeCurr, true);
 
