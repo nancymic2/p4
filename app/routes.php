@@ -358,7 +358,7 @@ foreach($completedapps as $completedapp) {
       echo gettype($res);
 
       echo count($res);
-      echo $res[0]->name;
+      echo $res[0];
 //echo $res['name'];
 //$keys = array_keys($res);
 //echo $res[$keys[1]];
