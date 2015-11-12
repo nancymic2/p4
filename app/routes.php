@@ -270,7 +270,26 @@ include 'head.php';
   echo '<h2>Your completed applications</h2>';
 
   echo '<p>';
-  
+  echo '<table id="myTable" class="tablesorter"> 
+
+  <caption>
+  Ranking Tables for States: Population Change from 2000 to 2010
+  </caption>
+  <thead>
+    <tr>  
+      <th>Company</th>
+      <th>Role</th>
+      <th>City</th>
+      <th>Date applied</th>
+      <th>City</th>
+      <th>Hiring manager</th>
+
+      <th>Follow up by</th>
+      <th>rating</th>
+      <th>Resume</th>
+      <th>City</th>
+
+    </tr>  </thead>   <tbody>';
 
 # loop through the Collection and access just the data
 foreach($completedapps as $completedapp) {
@@ -281,53 +300,70 @@ foreach($completedapps as $completedapp) {
    echo '<div class="reshead">';
    echo 'Application '.$i;
    echo '</div>';
-    echo '<b>role:</b> ';
-    echo $completedapp['role']."<br>";
 
-    echo '<b>company:</b> ';
+
+    echo '<tr>';
+    echo '<td>';
+
+    //echo '<b>company:</b> ';
     echo $completedapp['company']."<br>";
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>role:</b> ';
+    echo $completedapp['role']."<br>";
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>Application id:</b> ';
+    //echo $completedapp['id']."<br>";
 
-    echo '<b>Application id:</b> ';
-    echo $completedapp['id']."<br>";
-
-    echo '<b>City:</b> ';
+    //echo '<b>City:</b> ';
     echo $completedapp['city']."<br>";
-
-    echo '<b>Applied date:</b> ';
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>Applied date:</b> ';
     echo $completedapp['applyDate']."<br>";
-
-    echo '<b>Hiring Manager:</b> ';
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>Hiring Manager:</b> ';
     echo $completedapp['hiringMgr']."<br>";
-
-    echo '<b>Salary:</b> ';
-    echo $completedapp['salary']."<br>";
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>Salary:</b> ';
+    //echo $completedapp['salary']."<br>";
    
-    echo '<b>Follow up by:</b> ';
+    //echo '<b>Follow up by:</b> ';
     echo $completedapp['followupBy']."<br>";
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>Decision:</b> ';
+    //echo $completedapp['decision']."<br>";
 
-    echo '<b>Decision:</b> ';
-    echo $completedapp['decision']."<br>";
-
-    echo '<b>rating:</b> ';
+    //echo '<b>rating:</b> ';
     echo $completedapp['rating']."<br>";
-
-    echo '<b>resume used:</b> ';
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>resume used:</b> ';
     echo $completedapp['resumeUsed']."<br>";
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>How Applied:</b> ';
+    //echo $completedapp['howapplied']."<br>";
 
-    echo '<b>How Applied:</b> ';
-    echo $completedapp['howapplied']."<br>";
-
-    echo '<b>Website:</b> ';
+    //echo '<b>Website:</b> ';
     echo $completedapp['website']."<br>";
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>user name:</b> ';
+    //echo $completedapp['username']."<br>";
 
-    echo '<b>user name:</b> ';
-    echo $completedapp['username']."<br>";
+    //echo '<b>password:</b> ';
+    //echo $completedapp['password']."<br>";
 
-    echo '<b>password:</b> ';
-    echo $completedapp['password']."<br>";
-
-    echo '<b>job name:</b> ';
+    //echo '<b>job name:</b> ';
     echo $completedapp['recnumber']."<br>";
+    echo '</td>';
+    
+    echo '    </tr>   </tbody> </table>';
    
     echo '<br>';
     echo '<script> var apldata = "<php echo $app_id[$i]; ?>" </script>';
