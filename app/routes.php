@@ -366,7 +366,7 @@ foreach($completedapps as $completedapp) {
     
     echo '</tr>';
 
-    echo '<tr> <td colspan="10"></td></tr>';
+    echo '<tr> <td colspan="10" bgcolor="blue"></td></tr>';
    
    
     echo '<script> var apldata = "<php echo $app_id[$i]; ?>" </script>';
