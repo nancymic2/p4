@@ -118,7 +118,7 @@ value="44"><br>-->
     address if applied by email<br>
     {{ Form::text('howapplied', '', array('class'=>'form-control'))}} 
 
-    rec number<br>
+    job name<br>
     {{ Form::text('recnumber', '', array('class'=>'form-control'))}} 
 
     URL of job posting<br>
