@@ -326,7 +326,7 @@ foreach($completedapps as $completedapp) {
     echo '<b>password:</b> ';
     echo $completedapp['password']."<br>";
 
-    echo '<b>rec number:</b> ';
+    echo '<b>job name:</b> ';
     echo $completedapp['recnumber']."<br>";
    
     echo '<br>';
