@@ -935,7 +935,8 @@ Route::any('form-submit', function(){
 
 Route::get('editcompany', array('before' => 'auth', function()
          {
-          $company = Company::findOrFail($id);
+          $user = Auth::user();
+          $company = Company::findOrFail($user);
             return View::make('editcompany', compact('company'));
         }
     )
