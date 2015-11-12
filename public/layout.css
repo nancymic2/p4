@@ -104,3 +104,7 @@ div.header {
 td, th {
     padding: 3px !important;
 }
+
+th {
+background-color: #eeeeee;
+}
