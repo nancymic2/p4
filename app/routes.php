@@ -939,9 +939,9 @@ Route::any('form-submit', function(){
 //Route::post('company/edit/{id}', 'CompanyController@postEdit'); 
 
 ///// added 10-11-15
-Route::get('editcompany', array('before' => 'auth', function()
+Route::get('editcompany', array('before' => 'auth', $id, function()
     {
-        $company = Company::find($company);
+        $company = Company::find($id);
 
         if (!$company->update(Input::all())) {
             return Redirect::back()
