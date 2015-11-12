@@ -101,3 +101,6 @@ div.header {
     font-size: 16px;
     border-bottom: 1px dotted #ccc;
 }
+td, th {
+    padding: 3px !important;
+}

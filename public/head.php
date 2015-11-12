@@ -16,6 +16,7 @@
 
   <title>Career Trax</title>
   <link rel="stylesheet" href="hmin.css">
+  <link rel="stylesheet" href="layout.css">
 <script type="text/javascript" src="js/jquery-latest.js"></script> 
 <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script> 
 
