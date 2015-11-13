@@ -362,22 +362,22 @@ foreach($completedapps as $completedapp) {
     //$theresume2=$resumes[$theresume];
     //echo $theresume2;
 /////////////////////////////////////////////////////////////////// resumes where id = $theresume
-    $resumeCurr = Resume::where('id', '=', $theresume)->get();
+    //$resumeCurr = Resume::where('id', '=', $theresume)->get();
 
    // $myres = $resum
     //echo $resumeCurr;  //is this JSON?
     $key = array_search($theresume, $resid);
     echo $resum[$key];
 
-      $res[] = json_decode($resumeCurr, true);
+      //$res[] = json_decode($resumeCurr, true);
 
       //echo gettype($res);
 
       //echo count($res);
-       $mystring=serialize($res);
+       //$mystring=serialize($res);
        //echo $mystring;
 
-       $pieces = explode(":", $mystring);
+       //$pieces = explode(":", $mystring);
        //echo $pieces[35];
       // echo gettype($mystring);
 //echo $res['name'];
