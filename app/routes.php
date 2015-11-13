@@ -1047,7 +1047,8 @@ Route::get('editcompany2', array('before' => 'auth', function()
         echo $company->rating;
 
         }
-      return View::make('editcompany2');
+
+      return View::make('editcompany2')->with('company', $company);
     }
     )
 );
