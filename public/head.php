@@ -63,8 +63,8 @@ $(document).ready(function()
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-        <li><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
-        <li><a href="/applications">Add a Job and Company</a></li>
+
+        <li><a href="/applications">Add a Job, Company, Resume</a></li>
         <li><a href="/expenses">Add Expenses</a></li>
         <li><a href="/completedapps">See your Jobs</a></li>
         <li><a href="/resumesearch">See Your Resumes</a></li>
