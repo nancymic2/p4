@@ -1073,7 +1073,7 @@ Route::post('/editcompany2',
     $company->fill(Input::all());
     $company->save();
     
- return Redirect::to('/editcompany')->with('flash_message', 'Welcome to CareerTrax!');
+ return Redirect::to('/editcompany2)->with('flash_message', 'Welcome to CareerTrax!');
     
   }
     )
