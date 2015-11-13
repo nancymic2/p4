@@ -292,6 +292,15 @@ include 'head.php';
       <th>name</th>
 
     </tr>  </thead>   <tbody>';
+$resum[]="";
+
+    foreach($resumes as $resume) {
+   $i++;
+   $res_id[$i] = $resume->id;
+ }
+
+///^^^ get all resumes. get resume name where resume id = resumeCurr
+
 
 # loop through the Collection and access just the data
 foreach($completedapps as $completedapp) {
@@ -351,6 +360,8 @@ foreach($completedapps as $completedapp) {
     //echo $theresume2;
 /////////////////////////////////////////////////////////////////// resumes where id = $theresume
     $resumeCurr = Resume::where('id', '=', $theresume)->get();
+
+   // $myres = $resum
     //echo $resumeCurr;  //is this JSON?
 
       $res[] = json_decode($resumeCurr, true);
