@@ -1011,18 +1011,18 @@ Route::any('form-submit', function(){
 
           return View::make('applications', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists));  ///10/31/15
 
-///// added 10-11-15
+/* ///// added 10-11-15
 Route::get('editcompany', array('before' => 'auth', function()
     {
 0/31/15
-
+*/
        /* if (!$company->update(Input::all())) {
             return Redirect::back()
                     ->with('message', 'Something wrong happened while saving your model')
                     ->withInput();
         }*/
 
-    return View::make('editcompany');
+ /*   return View::make('editcompany');
     }
     )
 );
@@ -1041,7 +1041,7 @@ Route::post('/editcompany',
     
   }
     )
-);
+); */
 
 
 ///////////////////////////
