@@ -1058,7 +1058,7 @@ Route::get('editcompany2', array('before' => 'auth', function()
           //$company_lists = DB::table('companies')->where('user_id', $user->id)->lists('company'); //only index
 
 
-          return View::make('editc', array('company_lists' => $company_lists));  ///1
+          return View::make('editcompany2', array('company_lists' => $company_lists));  ///1
     }
     )
 );
