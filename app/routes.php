@@ -292,8 +292,8 @@ include 'head.php';
       <th>name</th>
 
     </tr>  </thead>   <tbody>';
-//$resum[]="";
-//$resid[]="";
+$resum[]="";
+$resid[]="";
     foreach($resumes as $resume) {
    $i++;
    $resum[$i] = $resume->name;
@@ -303,7 +303,7 @@ include 'head.php';
  }
 
 ///^^^ get all resumes. get resume name where resume id = resumeCurr
-//$key = array_search('green', $array);
+
 
 # loop through the Collection and access just the data
 foreach($completedapps as $completedapp) {
@@ -357,7 +357,7 @@ foreach($completedapps as $completedapp) {
     echo '</td>';
     echo '<td>';
     //echo '<b>resume used:</b> ';
-    echo $completedapp['resumeUsed']."<br>"; //this equals the resume id on resume table
+    //echo $completedapp['resumeUsed']."<br>"; //this equals the resume id on resume table
     $theresume=$completedapp['resumeUsed'];
     //$theresume2=$resumes[$theresume];
     //echo $theresume2;
@@ -366,6 +366,8 @@ foreach($completedapps as $completedapp) {
 
    // $myres = $resum
     //echo $resumeCurr;  //is this JSON?
+    $key = array_search($theresume, $resid);
+    echo $resum[$key];
 
       $res[] = json_decode($resumeCurr, true);
 
@@ -373,10 +375,10 @@ foreach($completedapps as $completedapp) {
 
       //echo count($res);
        $mystring=serialize($res);
-       echo $mystring;
+       //echo $mystring;
 
        $pieces = explode(":", $mystring);
-       echo $pieces[35];
+       //echo $pieces[35];
       // echo gettype($mystring);
 //echo $res['name'];
 //$keys = array_keys($res);
