@@ -1073,7 +1073,7 @@ Route::post('/editcompany2',
     $company->fill(Input::all());
     $company->save();
     
- return Redirect::to('/editcompany2);
+ return Redirect::to('/editcompany2');
     
   }
     )
