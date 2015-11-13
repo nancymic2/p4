@@ -274,7 +274,7 @@ include 'head.php';
   echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4"> 
 
   <caption>
-  Your Applications
+  Sort Your Applications by field
   </caption>
   <thead>
     <tr>  
