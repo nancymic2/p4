@@ -295,9 +295,9 @@ include 'head.php';
 $resum[]="";
 $resid[]="";
     foreach($resumes as $resume) {
-   $i++;
-   $resum[$i] = $resume->name;
-   $resid[$i] = $resume->id;
+   $j++;
+   $resum[$j] = $resume->name;
+   $resid[$j] = $resume->id;
    //echo $resum[$i];
    //echo $resid[$i];
  }
