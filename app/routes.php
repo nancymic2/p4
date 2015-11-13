@@ -992,7 +992,7 @@ return View::make('chart')->with('salarycount', $salarycount);
 
 
 //app/routes.php
-Route::get('/upload' function(){
+Route::get('/upload', function(){
 
   return View::make('upload');
 });
