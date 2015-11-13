@@ -96,6 +96,7 @@
 @yield ('expenses')
 
 @yield ('editcompany')
+@yield ('editcompany2')
 @yield ('content')
 
 <!--/////////////////-->

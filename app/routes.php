@@ -466,7 +466,7 @@ echo '</tr>';
 
     echo '<td colspan="2">';      
     echo '<a href="deleteresume.php?id=' .$deleteres .'">' .'DELETE THIS RESUME</a>'; 
-     echo '<br>';      
+    echo '<br>';      
     echo '<span style="color:red; font-weight: bold;">THIS IS PERMANENT!</span>';
   
     echo '<br>';
@@ -1036,6 +1036,42 @@ Route::post('/editcompany',
 
 
 ///////////////////////////
+
+
+Route::get('editcompany2', array('before' => 'auth', function()
+    {
+        $companies = Company::all();
+
+       /* if (!$company->update(Input::all())) {
+            return Redirect::back()
+                    ->with('message', 'Something wrong happened while saving your model')
+                    ->withInput();
+        }*/
+
+    return View::make('editcompany2', compact('companies'));
+    }
+    )
+);
+
+Route::post('/editcompany2', 
+    array(
+        'before' => 'csrf', 
+        function() 
+        {
+    
+    $company = Company::findOrFail($id);
+    $company->fill(Input::all());
+    $company->save();
+    
+ return Redirect::to('/editcompany')->with('flash_message', 'Welcome to CareerTrax!');
+    
+  }
+    )
+);
+
+
+
+
 
 /*
 
