@@ -298,8 +298,8 @@ $resid[]="";
    $i++;
    $resum[$i] = $resume->name;
    $resid[$i] = $resume->id;
-   echo $resum[$i];
-   echo $resid[$i];
+   //echo $resum[$i];
+   //echo $resid[$i];
  }
 
 ///^^^ get all resumes. get resume name where resume id = resumeCurr
