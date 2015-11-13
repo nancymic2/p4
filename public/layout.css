@@ -108,3 +108,7 @@ td, th {
 th {
 background-color: #eeeeee;
 }
+
+table {
+border-radius: 12px;
+}
