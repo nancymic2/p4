@@ -360,6 +360,9 @@ foreach($completedapps as $completedapp) {
       //echo count($res);
        $mystring=serialize($res);
        echo $mystring;
+
+       $pieces = explode(":", $mystring);
+       echo $pieces[9];
       // echo gettype($mystring);
 //echo $res['name'];
 //$keys = array_keys($res);
