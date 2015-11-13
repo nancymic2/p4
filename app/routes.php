@@ -355,12 +355,12 @@ foreach($completedapps as $completedapp) {
 
       $res[] = json_decode($resumeCurr, true);
 
-      echo gettype($res);
+      //echo gettype($res);
 
-      echo count($res);
+      //echo count($res);
        $mystring=serialize($res);
        echo $mystring;
-       echo gettype($mystring);
+      // echo gettype($mystring);
 //echo $res['name'];
 //$keys = array_keys($res);
 //echo $res[$keys[1]];
