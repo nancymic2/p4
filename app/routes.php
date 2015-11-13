@@ -296,7 +296,7 @@ $resum[]="";
 
     foreach($resumes as $resume) {
    $i++;
-   $resum[$i] = $resume->id;
+   $resum[$i] = $resume->name;
    echo $resum[$i];
  }
 
