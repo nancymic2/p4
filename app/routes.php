@@ -1069,10 +1069,10 @@ Route::post('/editcompany2',
         function() 
         {
     
-    $company = Company::findOrFail($id);
+   /* $company = Company::findOrFail($id);
     $company->fill(Input::all());
     $company->save();
-    
+    */
  return Redirect::to('/editcompany2');
     
   }
