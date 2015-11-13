@@ -262,7 +262,8 @@ $stylesend='</body></html>';
 
 //Route::get('/completedapps', function()
 
-  $i=0;     
+  $i=0;  
+  $j=0;   
   $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
   $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
   
