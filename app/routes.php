@@ -1043,11 +1043,11 @@ Route::get('editcompany2', array('before' => 'auth', function()
         $companies = Company::all();
 
 
-foreach($companies as $company) {
-echo {{{$company->rating}}};
+        foreach($companies as $company) {
+        echo $company->rating;
 
-}
-    return View::make('editcompany2');
+        }
+      return View::make('editcompany2');
     }
     )
 );
