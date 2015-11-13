@@ -988,6 +988,20 @@ return View::make('chart')->with('salarycount', $salarycount);
 });
 
 
+//////////////////////
+
+
+//app/routes.php
+Route::get('/upload' function(){
+
+  return View::make('upload');
+});
+
+Route::post('/upload', 'HomeController@upload');
+
+
+///////////////////
+
 Route::get('uploadresume', function(){
  return View::make('uploadresume');
 });

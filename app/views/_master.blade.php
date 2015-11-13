@@ -95,7 +95,7 @@
 @yield ('editcompany')
 @yield ('editcompany2')
 @yield ('content')
-
+@yield ('form')
 <!--/////////////////-->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
