@@ -292,8 +292,8 @@ include 'head.php';
       <th>name</th>
 
     </tr>  </thead>   <tbody>';
-$resum[]="";
-$resid[]="";
+//$resum[]="";
+//$resid[]="";
     foreach($resumes as $resume) {
    $i++;
    $resum[$i] = $resume->name;
@@ -303,7 +303,7 @@ $resid[]="";
  }
 
 ///^^^ get all resumes. get resume name where resume id = resumeCurr
-
+//$key = array_search('green', $array);
 
 # loop through the Collection and access just the data
 foreach($completedapps as $completedapp) {
