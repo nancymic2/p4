@@ -66,7 +66,7 @@ $(document).ready(function()
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="/applications">Add a Job and Company</a></li>
         <li><a href="/exenses">Add Expenses</a></li>
-        <li><a href="/completedapps">See your Jobs/a></li>
+        <li><a href="/completedapps">See your Jobs</a></li>
         <li><a href="/resumesearch">See Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
         <!--<li><a href="/company">Add Company</a></li>-->
