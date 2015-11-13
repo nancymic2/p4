@@ -50,15 +50,12 @@
 
         <!-- changed above to make resume not the active link. above it it alsways atve -->
 
-        <li><a href="/resume">Add Resume</a></li>
 
-        <!--changed add app to add job text link only 9-29   test to see if master.blade is used everywhere-->
-        <li><a href="/applications">Add a Job</a></li>
-        <li><a href="/expenses">Add Expenses</a></li>
-        <li><a href="/completedapps">Find Completed Apps</a></li>
-        <li><a href="/resumesearch">Find Your Resumes</a></li>
-        <li><a href="/jobstoapply">Find Saved Jobs</a></li>
-         <li><a href="/company">Add Company</a></li>
+        <li><a href="/applications">Add a Job and Company</a></li>
+        <li><a href="/resume">Add Resume</a></li>
+        <li><a href="/exenses">Add Expenses</a></li>
+        <li><a href="/completedapps">See your Jobs</a></li>
+        <li><a href="/resumesearch">See Your Resumes</a></li>
         <!--WAS commented out 929-->
 
         <li><a href="/logout">Log Out</a></li>

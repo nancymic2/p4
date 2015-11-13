@@ -68,7 +68,7 @@ $(document).ready(function()
         <li><a href="/exenses">Add Expenses</a></li>
         <li><a href="/completedapps">See your Jobs</a></li>
         <li><a href="/resumesearch">See Your Resumes</a></li>
-        <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+    
         <!--<li><a href="/company">Add Company</a></li>-->
         <li><a href="/logout">Log Out</a></li>
       
