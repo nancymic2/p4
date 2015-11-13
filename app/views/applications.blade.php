@@ -59,13 +59,13 @@ value="44"><br>-->
     company Name<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
 
-    company website<br>
+    company career site<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
-    company user name<br>
+    career site user name<br>
     {{ Form::text('username', '', array('class'=>'form-control'))}} 
 
-    company password<br>
+    career site password<br>
     {{ Form::text('pasword', '', array('class'=>'form-control'))}} 
 
     company street<br>
