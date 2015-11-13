@@ -296,7 +296,8 @@ $resum[]="";
 
     foreach($resumes as $resume) {
    $i++;
-   $res_id[$i] = $resume->id;
+   $resum[$i] = $resume->id;
+   echo $resum[$i];
  }
 
 ///^^^ get all resumes. get resume name where resume id = resumeCurr
