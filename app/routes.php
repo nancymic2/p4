@@ -362,7 +362,7 @@ foreach($completedapps as $completedapp) {
        echo $mystring;
 
        $pieces = explode(":", $mystring);
-       echo $pieces[19];
+       echo $pieces[29];
       // echo gettype($mystring);
 //echo $res['name'];
 //$keys = array_keys($res);
