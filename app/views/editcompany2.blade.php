@@ -1,39 +1,15 @@
 
 @extends('_master')
 
-@section ('editcompany')
+@section ('editcompany2')
 
 <div class="container">
     <div class="col-sm-6">
 
 
-
-<!--  {{ Form::model($company, array('route' => array('editcompany', $company->id))) }} -->
-
-
-{{ Form::model($company) }}
-
-
-
-company Name<br>
-    {{ Form::text('username', '', array('class'=>'form-control'))}} 
-
-
-company website<br>
-    {{ Form::text('website', '', array('class'=>'form-control'))}} 
-
-
-
-company street<br>
-    {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
-
-
-
-    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
-
-{{ Form::close() }}
-
-
+@foreach ($companies as $company)
+{{{$company->rating}}}
+@endforeach
 
 <?php
 echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
