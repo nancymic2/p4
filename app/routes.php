@@ -1042,13 +1042,12 @@ Route::get('editcompany2', array('before' => 'auth', function()
     {
         $companies = Company::all();
 
-       /* if (!$company->update(Input::all())) {
-            return Redirect::back()
-                    ->with('message', 'Something wrong happened while saving your model')
-                    ->withInput();
-        }*/
 
-    return View::make('editcompany2', compact('companies'));
+foreach($companies as $company) {
+echo {{{$company->rating}}};
+
+}
+    return View::make('editcompany2');
     }
     )
 );
