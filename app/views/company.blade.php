@@ -131,7 +131,10 @@ company website<br>
 company street<br>
     {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
 
+<input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+<input name="userfile" type="file" id="userfile"> 
 
+<input name="upload" type="submit" class="box" id="upload" value=" Upload ">
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
