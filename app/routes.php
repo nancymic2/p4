@@ -391,7 +391,9 @@ foreach($completedapps as $completedapp) {
 
     //echo '<b>Website:</b> ';
     echo '<a href="';
-    echo $completedapp['website']."<br>";
+    echo $completedapp['website'];
+    echo '">';
+    echo $completedapp['website'];
     echo '</a>';
     echo '</td>';
     echo '<td>';
