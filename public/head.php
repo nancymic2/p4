@@ -64,12 +64,12 @@ $(document).ready(function()
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
         <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
-        <li><a href="/applications">Add a Job</a></li>
-        <li><a href="/savedJobs">Add Something</a></li>
-        <li><a href="/completedapps">Find Completed Apps</a></li>
-        <li><a href="/resumesearch">Find Your Resumes</a></li>
+        <li><a href="/applications">Add a Job and Company</a></li>
+        <li><a href="/exenses">Add Expenses</a></li>
+        <li><a href="/completedapps">See your Jobs/a></li>
+        <li><a href="/resumesearch">See Your Resumes</a></li>
         <li><a href="/jobstoapply">Find Saved Jobs</a></li>
-        <li><a href="/company">Add Company</a></li>
+        <!--<li><a href="/company">Add Company</a></li>-->
         <li><a href="/logout">Log Out</a></li>
       
       </ul>

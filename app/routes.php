@@ -508,7 +508,7 @@ Route::get('welcome', array('before' => 'auth', function()
    echo '<a href="resume">add a resume</a> <br>';
    echo '<a href="resumesearch">find your saved resumes</a> <br>';
    echo '<a href="applications">add a completed application</a> <br>';
-   echo '<a href="completedapps">find completed applications</a> <br>';
+   echo '<a href="completedapps">see your jobs</a> <br>';
    echo '<a href="savedJobs">add a job</a> <br>';
    echo '<a href="jobstoapply">get jobs you need to apply to</a> <br>';
 
