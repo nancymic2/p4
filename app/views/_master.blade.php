@@ -53,7 +53,7 @@
 
         <li><a href="/applications">Add a Job and Company</a></li>
         <li><a href="/resume">Add Resume</a></li>
-        <li><a href="/exenses">Add Expenses</a></li>
+        <li><a href="/expenses">Add Expenses</a></li>
         <li><a href="/completedapps">See your Jobs</a></li>
         <li><a href="/resumesearch">See Your Resumes</a></li>
         <!--WAS commented out 929-->
