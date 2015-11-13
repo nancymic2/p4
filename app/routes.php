@@ -390,7 +390,9 @@ foreach($completedapps as $completedapp) {
     //echo $completedapp['howapplied']."<br>";
 
     //echo '<b>Website:</b> ';
+    echo '<a href="';
     echo $completedapp['website']."<br>";
+    echo '</a>';
     echo '</td>';
     echo '<td>';
     //echo '<b>user name:</b> ';
