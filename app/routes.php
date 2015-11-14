@@ -1136,6 +1136,8 @@ foreach($expenses as $expense) {
     echo '<td>';
     //echo '<b>role:</b> ';
     echo $expense['gas']."<br>";
+    $gasexp=$expense['gas'];
+      echo gettype($gasexp);
     echo '</td>';
     echo '<td>';
     //echo '<b>Application id:</b> ';
