@@ -68,7 +68,7 @@ value="44"><br>-->
     career site password<br>
     {{ Form::text('pasword', '', array('class'=>'form-control'))}} 
 
-    company street<br>
+    company address<br>
     {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
