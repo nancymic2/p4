@@ -1059,13 +1059,13 @@ $stylesend='</body></html>';
   
 include 'head.php';
   echo '<div class="container">'; 
-  echo '<h2>Your completed applications</h2>';
+  echo '<h2>Your Expenses</h2>';
 
   echo '<p>';
   echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4"> 
 
   <caption>
-  Sort Your Applications by field
+  Sort Your Expenses by field
   </caption>
   <thead>
     <tr>  
