@@ -333,7 +333,7 @@ foreach($completedapps as $completedapp) {
 
 
     //echo '<b>company:</b> ';
-    echo $completedapp['company']."<br>";
+    //echo $completedapp['company']."<br>";
     echo '</td>';
     echo '<td>';
     //echo '<b>role:</b> ';
