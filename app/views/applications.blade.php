@@ -181,14 +181,7 @@ if (diva.style.display=="none") {
 {{ Form::close() }}
 
 
-<?php
-echo '<br><a class="btn btn-danger" href="/applications">Cancel</a>';
-?>
-<div> 
 
-
-
-</div>
 </div>
 
 @stop
