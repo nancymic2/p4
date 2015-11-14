@@ -158,7 +158,7 @@ if (diva.style.display=="none") {
 ?>
 </div>
 <br>
-<div id="resumehide" style="display:none; position: relative; left: 20px;">
+<div id="resumehide" style="display:none;">
 <!--<p>Add resume text to remind you of your resume, or<br>
     add a URL to your resume on Google docs or Monster<br>
     or wheverever it is saved</p>
