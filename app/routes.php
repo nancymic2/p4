@@ -1048,6 +1048,19 @@ Route::get('expensereport', array('before' => 'auth', function()
 ////////////////
 
 $stylesend='</body></html>';
+$tgas=0;
+$tair=0;
+$ttrain=0;
+$thotel=0;
+$tmeals=0;
+$tstamps=0;
+$tink=0;
+$tpaper=0;
+$thardware=0;
+$tportfolio=0;
+$tphone=0;
+$tclothing=0;
+$tentertainment=0;
 
 
   $l=0;  
@@ -1136,8 +1149,7 @@ foreach($expenses as $expense) {
     echo '<td>';
     //echo '<b>role:</b> ';
     echo $expense['gas']."<br>";
-    $gasexp=$expense['gas'];
-      echo gettype($gasexp);
+
     echo '</td>';
     echo '<td>';
     //echo '<b>Application id:</b> ';
@@ -1211,9 +1223,48 @@ foreach($expenses as $expense) {
     echo '<br>';
 
     echo '</tbody> </table>';
+
+    echo '<table><tr>';
+
+    echo '<td>';
+    echo '</td>';
+
+    echo '<td>';
+    echo '</td>';
+
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+    
+    echo '</tr></table>';
     echo '</div>';
 
-    /// $buyshoe->delete();
+   
 
 //return View::make('deleteresume')->with('deleteres', $deleteres);
 echo '</p>';
