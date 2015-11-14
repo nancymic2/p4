@@ -1131,6 +1131,9 @@ foreach($expenses as $expense) {
     //echo $completedapp['company']."<br>";
     echo '</td>';
     echo '<td>';
+    ///job goes here
+    echo '</td>';
+    echo '<td>';
     //echo '<b>role:</b> ';
     echo $expense['gas']."<br>";
     echo '</td>';
