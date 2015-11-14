@@ -169,15 +169,15 @@ if (diva.style.display=="none") {
 
 {{ Form::open(array('url' => '/resume')) }}
 
-     resume Name<br>
+     Give your resume a name<br>
         {{ Form::text('name', '', array('class'=>'form-control'))}} 
-    resume Name<br>
+   Provide a link to your resume in Google Docs, DropBox, etc.<br>
 
         {{ Form::text('url', '', array('class'=>'form-control'))}} 
-    resume url<br>
+    Add notes about this resume<br>
 
         {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} <br>
-    resume text<br><br>
+  <br><br>
         {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
 {{ Form::close() }}
