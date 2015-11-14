@@ -1075,30 +1075,30 @@ include 'head.php';
   echo '<h2>Your Expenses</h2>';
 
   echo '<p>';
-  echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4"> 
+  echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4" width="100%"> 
 
   <caption>
   Sort Your Expenses by field
   </caption>
   <thead>
     <tr>  
-      <th width="100">Company</th>
-      <th width="100">Job</th>
-      <th width="100">Gas</th>
-      <th width="100">Air</th>
+      <th width="6.66666%">Company</th>
+      <th width="6.66666%">Job</th>
+      <th width="6.66666%">Gas</th>
+      <th width="6.66666%">Air</th>
       
-      <th width="100">Train</th>
+      <th width="6.66666%">Train</th>
 
-      <th width="100">Hotel</th>
-      <th width="100">Meals</th>
-      <th width="100">Postage</th>
-      <th width="100">Ink</th>
-      <th width="100">Paper</th>
-      <th width="100">Hardware</th>
-      <th width="100">Portfolio</th>
-      <th width="100">Phone</th>
-      <th width="100">Clothing</th>
-      <th width="100">Entertainment</th>
+      <th width="6.66666%">Hotel</th>
+      <th width="6.66666%">Meals</th>
+      <th width="6.66666%">Postage</th>
+      <th width="6.66666%">Ink</th>
+      <th width="6.66666%">Paper</th>
+      <th width="6.66666%">Hardware</th>
+      <th width="6.66666%">Portfolio</th>
+      <th width="6.66666%">Phone</th>
+      <th width="6.66666%">Clothing</th>
+      <th width="6.66666%">Entertainment</th>
 
 
 
@@ -1247,52 +1247,52 @@ foreach($expenses as $expense) {
 
     echo '</tbody> </table>';
 
-    echo '<table border="2" cellpadding="4"> <tr>';
+    echo '<table border="2" cellpadding="4" width="100%"> <tr>';
 
-    echo '<td width="100">';
+    echo '<td width="6.66666%">';
     echo "Totals";
     echo '</td>';
 
-    echo '<td width="100">';
+    echo '<td width="6.66666%">';
     echo '</td>';
 
-    echo '<td width="100">';
+    echo '<td width="6.66666%">';
     echo $tgas;
     echo '</td>';
-    echo '<td width="100">';
+    echo '<td width="6.66666%">';
      echo $tair;
     echo '</td>';
-    echo '<td width="100">';
+    echo '<td width="6.66666%">';
     echo $ttrain;
     echo '</td>';
-    echo '<td width="100">';
+    echo '<td width="6.66666%">';
      echo $thotel;
     echo '</td>';
-        echo '<td width="100">';
+        echo '<td width="6.66666%">';
          echo $tmeals;
     echo '</td>';
-        echo '<td width="100">';
+        echo '<td width="6.66666%">';
          echo $tstamps;
     echo '</td>';
-        echo '<td width="100">';
+        echo '<td width="6.66666%">';
          echo $tink;
     echo '</td>';
-        echo '<td width="100">';
+        echo '<td width="6.66666%">';
          echo $tpaper;
     echo '</td>';
-        echo '<td width="100">';
+        echo '<td width="6.66666%">';
          echo $thardware;
     echo '</td>';
-        echo '<td width="100">';
+        echo '<td width="6.66666%">';
          echo $tportfolio;
     echo '</td>';
-        echo '<td width="100">';
+        echo '<td width="6.66666%">';
          echo $tphone;
     echo '</td>';
-        echo '<td width="100">';
+        echo '<td width="6.66666%">';
          echo $tclothing;
     echo '</td>';
-        echo '<td width="100">';
+        echo '<td width="6.66666%">';
          echo $tentertainment;
     echo '</td>';
 
