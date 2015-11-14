@@ -158,7 +158,7 @@ if (diva.style.display=="none") {
 <?php
 //echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
 ?>
-</div>
+
 <br>
 <div id="resumehide" style="display:none;">
 <!--<p>Add resume text to remind you of your resume, or<br>
@@ -185,5 +185,5 @@ if (diva.style.display=="none") {
 <br><br><br>
 
 </div>
-
+</div>
 @stop
