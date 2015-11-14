@@ -50,12 +50,13 @@
 
         <!-- changed above to make resume not the active link. above it it alsways atve -->
 
-
         <li><a href="/applications">Add a Job, Company, Resume</a></li>
-        
         <li><a href="/expenses">Add Expenses</a></li>
-        <li><a href="/completedapps">See your Jobs</a></li>
-        <li><a href="/resumesearch">See Your Resumes</a></li>
+        <li><a href="/expensereport">View Expenses</a></li>
+        <li><a href="/completedapps">View Your Jobs</a></li>
+        <li><a href="/resumesearch">View Your Resumes</a></li>
+
+
         <!--WAS commented out 929-->
 
         <li><a href="/logout">Log Out</a></li>
