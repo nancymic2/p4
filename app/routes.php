@@ -310,7 +310,7 @@ $corp[]="";
 $corpid[]="";
     foreach($companies as $company) {
    $k++;
-   $corp[$k] = $company->name;
+   $corp[$k] = $company->company;
    $corpid[$k] = $company->id;
    echo $corp[$i];
    echo $corpid[$i];
