@@ -166,16 +166,16 @@ if (diva.style.display=="none") {
           {{ Form::select('user_id', $resume_lists) }}    commented out 11/17/15  811 am-->
 
 {{ Form::open(array('url' => '/resume')) }}
-<h3>Enter resume details</h3><br>
-     Give your resume a name<br>
-        {{ Form::text('name', '', array('class'=>'form-control'))}} 
-   
-  Provide a link to your resume <br>
-        {{ Form::text('url', '', array('class'=>'form-control'))}} 
-  
-   Add notes about your resume<br>
-        {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} <br>
 
+    
+        {{ Form::text('name', '', array('class'=>'form-control'))}} 
+    resume Name<br>
+
+        {{ Form::text('url', '', array('class'=>'form-control'))}} 
+    resume url<br>
+
+        {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} <br>
+    resume text<br>
         {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
 {{ Form::close() }}
@@ -192,4 +192,3 @@ echo '<br><a class="btn btn-danger" href="/applications">Cancel</a>';
 </div>
 
 @stop
-
