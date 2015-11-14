@@ -266,6 +266,7 @@ $stylesend='</body></html>';
   $j=0;   
   $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
   $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
+  $companies = Company::where('user_id', '=', Auth::user()->id)->get();
   
 include 'head.php';
   echo '<div class="container">'; 
@@ -303,6 +304,18 @@ $resid[]="";
    //echo $resid[$i];
  }
 
+
+$corp[]="";
+$corpid[]="";
+    foreach($companies as $company) {
+   $k++;
+   $corp[$k] = $company->name;
+   $corpid[$k] = $company->id;
+   //echo $resum[$i];
+   //echo $resid[$i];
+ }
+
+
 ///^^^ get all resumes. get resume name where resume id = resumeCurr
 
 
@@ -319,6 +332,18 @@ foreach($completedapps as $completedapp) {
 
     echo '<tr>';
     echo '<td>';
+
+    $thecompany=$completedapp['company'];
+    //$theresume2=$resumes[$theresume];
+    //echo $theresume2;
+/////////////////////////////////////////////////////////////////// resumes where id = $theresume
+    //$resumeCurr = Resume::where('id', '=', $theresume)->get();
+
+   // $myres = $resum
+    //echo $resumeCurr;  //is this JSON?
+    $key = array_search($thecompany, $corpid);
+    echo $corp[$key];
+
 
     //echo '<b>company:</b> ';
     echo $completedapp['company']."<br>";
