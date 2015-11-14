@@ -1163,7 +1163,7 @@ foreach($expenses as $expense) {
     //echo '<b>Applied date:</b> ';
     echo $expense['train']."<br>";
     $trimtrain=trim($expense['train']);
-    $ttrain=$trimtrain+$train;
+    $ttrain=$trimtrain+$ttrain;
     echo '</td>';
     echo '<td>';
     //echo '<b>Hiring Manager:</b> ';
