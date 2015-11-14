@@ -312,8 +312,8 @@ $corpid[]="";
    $k++;
    $corp[$k] = $company->company;
    $corpid[$k] = $company->id;
-   echo $corp[$i];
-   echo $corpid[$i];
+  // echo $corp[$i];
+  // echo $corpid[$i];
  }
 
 
