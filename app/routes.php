@@ -1308,6 +1308,8 @@ echo '<br><br>';
  echo $stylesend;   
 }));
 
+
+
 /* ///// added 10-11-15
 Route::get('editcompany', array('before' => 'auth', function()
     {
