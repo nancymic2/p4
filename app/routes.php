@@ -1224,43 +1224,44 @@ foreach($expenses as $expense) {
 
     echo '</tbody> </table>';
 
-    echo '<table><tr>';
+    echo '<table border="1"><tr>';
+
+    echo '<td>';
+    echo "some";
+    echo '</td>';
 
     echo '<td>';
     echo '</td>';
 
-    echo '<td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
+    echo '</td>';
+        echo '<td>';
     echo '</td>';
 
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-        echo '<td>';
-    echo '</td>';
-    
     echo '</tr></table>';
     echo '</div>';
 
