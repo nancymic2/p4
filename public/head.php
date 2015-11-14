@@ -16,7 +16,7 @@
 
   <title>Career Trax</title>
   <link rel="stylesheet" href="hmin.css">
-  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="css/layout.css">
 <script type="text/javascript" src="js/jquery-latest.js"></script> 
 <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script> 
 
@@ -63,14 +63,13 @@ $(document).ready(function()
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-
-        <li><a href="/applications">Add a Job, Company, Resume</a></li>
-        <li><a href="/expenses">Add Expenses</a></li>
-        <li><a href="/expensereport">View Expenses</a></li>
-        <li><a href="/completedapps">View Your Jobs</a></li>
-        <li><a href="/resumesearch">View Your Resumes</a></li>
-    
-        <!--<li><a href="/company">Add Company</a></li>-->
+        <li class="active"><a href="/resume">Add Resume<span class="sr-only">(current)</span></a></li>
+        <li><a href="/applications">Add a Job</a></li>
+        <li><a href="/savedJobs">Add Something</a></li>
+        <li><a href="/completedapps">Find Completed Apps</a></li>
+        <li><a href="/resumesearch">Find Your Resumes</a></li>
+        <li><a href="/jobstoapply">Find Saved Jobs</a></li>
+        <li><a href="/company">Add Company</a></li>
         <li><a href="/logout">Log Out</a></li>
       
       </ul>

@@ -110,5 +110,5 @@ background-color: #eeeeee;
 }
 
 table {
-border-radius: 12px;
+border-radius: 12px !important;
 }
