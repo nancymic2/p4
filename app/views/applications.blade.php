@@ -36,13 +36,26 @@
 value="44"><br>-->
 <!-- remove rating -->
 <!--<a href="#" onclick='window.open("/companysmall", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=100, width=400, height=400, menubar=0, status=0, titlebar=0, toolbar=0, nomenubar=no, status=no, titlebar=no, toolbar=no" );'>Add a company</a>-->
-<a href="#companies" onclick='document.getElementById("companyhide2").style.display="block"; document.getElementById("companyhideDB").style.display="none"; document.getElementById("resumehideDB").style.display="none"; document.getElementById("resumehide").style.display="none";'><h4>1. Add the company if you have not added previously</h4></a>
- <a href="#resume" onclick='document.getElementById("resumehide").style.display="block"; document.getElementById("companyhide2").style.display="none"; document.getElementById("resumehideDB").style.display="none"; '><h4>2. Add the resume used if you have not added previously</h4></a>
- 
-<a href="#companies" onclick='document.getElementById("companyhide2").style.display="none"; document.getElementById("resumehide").style.display="none"; document.getElementById("companyhideDB").style.display="block"; '><h4>3. Add the job</h4></a>
+<a href="#companies" onclick='toggle("companyhide2", "resumehide", "resumehideDB");'><h4>1. Add the company if you have not added previously</h4></a>
+ <a href="#resume" onclick='toggle("resumehide", "companyhide2",  "resumehideDB");'>
+ <h4>2. Add the resume used if you have not added previously</h4></a>
+ <a href="#companies" onclick='toggle("resumehideDB", "resumehide", "companyhide2");'>
+ <h4>3. Add the job</h4></a>
 
 
+<script type="text/javascript">
+function toggle(adiv, bdiv, cdiv){
+if (adiv.style.display=="none") {
+    adiv.style.display="block";
+    bdiv.style.display="none";
+    cdiv.style.display="none";
+}
 
+
+}
+
+
+</script>
   
 <!--<br><a href="#resume" onclick='document.getElementById("resumehide").style.display="none"; document.getElementById("companyhideDB").style.display="block"; '>Then associate that resume with this job</a>-->
    <!-- add company<br>
@@ -78,7 +91,7 @@ value="44"><br>-->
 </div>
 <div id="companyhideDB" style="display:none;">
 {{ Form::open(array('url' => '/applications')) }}
-     <h4>Select existng company</h4>
+     <h4>Select existing company</h4>
      {{ Form::select('company_id', $company_lists) }} <!-- this yieds the INDEX of the selected 11/6-->
  <!-- 11/1/15  -->
        
