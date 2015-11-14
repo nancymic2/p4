@@ -1039,7 +1039,182 @@ Route::any('form-submit', function(){
 
 
 
+///////////////////
 
+
+
+Route::get('expensereport', array('before' => 'auth', function()
+  {      
+////////////////
+
+$stylesend='</body></html>';
+
+
+  $l=0;  
+  $m=0;   
+  $n=0;
+  $allexp = Expense::where('user_id', '=', Auth::user()->id)->get();
+  $applications = Application::where('user_id', '=', Auth::user()->id)->get();
+  $companies = Company::where('user_id', '=', Auth::user()->id)->get();
+  
+include 'head.php';
+  echo '<div class="container">'; 
+  echo '<h2>Your completed applications</h2>';
+
+  echo '<p>';
+  echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4"> 
+
+  <caption>
+  Sort Your Applications by field
+  </caption>
+  <thead>
+    <tr>  
+      <th>Company</th>
+      <th>Job</th>
+      <th>Gas</th>
+      <th>Air</th>
+      
+      <th>Train</th>
+
+      <th>Hotel</th>
+      <th>Meals</th>
+      <th>Postage</th>
+      <th>Ink</th>
+      <th>Paper</th>
+      <th>Hardware</th>
+      <th>Portfolio</th>
+      <th>Phone</th>
+      <th>Clothing</th>
+      <th>Entertainment</th>
+
+
+
+    </tr>  </thead>   <tbody>';
+/*$resum[]="";
+$resid[]="";
+    foreach($resumes as $resume) {
+   $l++;
+   $resum[$l] = $resume->name;
+   $resid[$l] = $resume->id;
+   //echo $resum[$i];
+   //echo $resid[$i];
+ } */
+
+
+$corp[]="";
+$corpid[]="";
+    foreach($companies as $company) {
+   $m++;
+   $corp[$m] = $company->company;
+   $corpid[$m] = $company->id;
+  // echo $corp[$i];
+  // echo $corpid[$i];
+ }
+
+
+# loop through the Collection and access just the data
+foreach($expenses as $expense) {
+   $n++;
+   $exp_id[$n] = $expense->id;
+
+
+    echo '<tr>';
+    echo '<td>';
+
+    $thecompany=$expense['company'];
+
+    $key = array_search($thecompany, $corpid);
+    echo $corp[$key];
+
+
+    //echo '<b>company:</b> ';
+    //echo $completedapp['company']."<br>";
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>role:</b> ';
+    echo $expense['gas']."<br>";
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>Application id:</b> ';
+    //echo $completedapp['id']."<br>";
+
+    //echo '<b>City:</b> ';
+    echo $expense['airfare']."<br>";
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>Applied date:</b> ';
+    echo $expense['train']."<br>";
+    echo '</td>';
+    echo '<td>';
+    //echo '<b>Hiring Manager:</b> ';
+    echo $expense['hotel']."<br>";
+    echo '</td>';
+    echo '<td>';
+
+    echo $expense['meals']."<br>";
+    echo '</td>';
+    echo '<td>';
+
+    echo $expense['stamps']."<br>";
+    echo '</td>';
+    //echo '<td>';
+    //echo '<b>resume used:</b> ';
+    //echo $completedapp['resumeUsed']."<br>"; //this equals the resume id on resume table
+   // $theresume=$completedapp['resumeUsed'];
+
+    //$key = array_search($theresume, $resid);
+    //echo $resum[$key];
+
+    //echo '</td>';
+    echo '<td>';
+
+    echo $$expense['ink'];
+    echo '</td>';
+    echo '<td>';
+    echo $expense['paper']."<br>";
+    echo '</td>';
+        echo '<td>';
+    echo $expense['hardware']."<br>";
+    echo '</td>';
+        echo '<td>';
+    echo $expense['portfolio']."<br>";
+    echo '</td>';
+        echo '<td>';
+    echo $expense['phone']."<br>";
+    echo '</td>';
+        echo '<td>';
+    echo $expense['clothing']."<br>";
+    echo '</td>';
+        echo '<td>';
+    echo $expense['entertainment']."<br>";
+    echo '</td>';
+    
+    echo '</tr>';
+
+   // echo '<tr> <td colspan="10" bgcolor="gray"></td></tr>';
+   
+   
+    echo '<script> var apldata = "<php echo $app_id[$i]; ?>" </script>';
+
+    //$updateapp=$app_id[$i];
+           
+     //echo $deleteres;
+          // onclick?  Session::put('applybydate', $applydate);
+  //unset($res);
+
+  }
+    echo '<br>';
+
+    echo '</tbody> </table>';
+    echo '</div>';
+
+    /// $buyshoe->delete();
+
+//return View::make('deleteresume')->with('deleteres', $deleteres);
+echo '</p>';
+
+ echo $stylesend;   
+}));
 
 /* ///// added 10-11-15
 Route::get('editcompany', array('before' => 'auth', function()
