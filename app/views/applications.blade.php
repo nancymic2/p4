@@ -37,7 +37,7 @@ value="44"><br>-->
 <!-- remove rating -->
 <!--<a href="#" onclick='window.open("/companysmall", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=100, width=400, height=400, menubar=0, status=0, titlebar=0, toolbar=0, nomenubar=no, status=no, titlebar=no, toolbar=no" );'>Add a company</a>-->
 <a href="#companies" onclick='document.getElementById("companyhide2").style.display="block"; document.getElementById("companyhideDB").style.display="none"; document.getElementById("resumehideDB").style.display="none"; document.getElementById("resumehide").style.display="none";'>First: Add the company if you have not added previously</a>
-<br> <a href="#resume" onclick='document.getElementById("resumehide").style.display="block"; document.getElementById("resumehideDB").style.display="none"; '>Then: Add the resume used if you have not added previously</a>
+<br> <a href="#resume" onclick='document.getElementById("resumehide").style.display="block"; document.getElementById("companyhide2").style.display="none"; document.getElementById("resumehideDB").style.display="none"; '>Then: Add the resume used if you have not added previously</a>
  
 <br><a href="#companies" onclick='document.getElementById("companyhide2").style.display="none"; document.getElementById("resumehide").style.display="none"; document.getElementById("companyhideDB").style.display="block"; '>Then associate resume and company</a>
 
