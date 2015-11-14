@@ -167,7 +167,7 @@ if (diva.style.display=="none") {
 
 {{ Form::open(array('url' => '/resume')) }}
 
-    
+     resume Name<br>
         {{ Form::text('name', '', array('class'=>'form-control'))}} 
     resume Name<br>
 
