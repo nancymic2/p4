@@ -291,7 +291,7 @@ include 'head.php';
       <th>Follow up by</th>
       <th>rating</th>
       <th>Resume name</th>
-      <th>website</th>
+      <th>Job link</th>
       <th>Job name</th>
 
     </tr>  </thead>   <tbody>';
