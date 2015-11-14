@@ -264,6 +264,7 @@ $stylesend='</body></html>';
 
   $i=0;  
   $j=0;   
+  $k=0;
   $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
   $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
   $companies = Company::where('user_id', '=', Auth::user()->id)->get();
