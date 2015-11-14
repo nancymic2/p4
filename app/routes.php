@@ -312,36 +312,22 @@ $corpid[]="";
    $k++;
    $corp[$k] = $company->name;
    $corpid[$k] = $company->id;
-   //echo $resum[$i];
-   //echo $resid[$i];
+   echo $corp[$i];
+   echo $corpid[$i];
  }
-
-
-///^^^ get all resumes. get resume name where resume id = resumeCurr
 
 
 # loop through the Collection and access just the data
 foreach($completedapps as $completedapp) {
    $i++;
    $app_id[$i] = $completedapp->id;
-    //echo $resume_names[$i];
-   //echo '<div class="myappls">';
-   //echo '<div class="reshead">';
-   //echo 'Application '.$i;
-   //echo '</div>';
 
 
     echo '<tr>';
     echo '<td>';
 
     $thecompany=$completedapp['company'];
-    //$theresume2=$resumes[$theresume];
-    //echo $theresume2;
-/////////////////////////////////////////////////////////////////// resumes where id = $theresume
-    //$resumeCurr = Resume::where('id', '=', $theresume)->get();
 
-   // $myres = $resum
-    //echo $resumeCurr;  //is this JSON?
     $key = array_search($thecompany, $corpid);
     echo $corp[$key];
 
@@ -386,13 +372,7 @@ foreach($completedapps as $completedapp) {
     //echo '<b>resume used:</b> ';
     //echo $completedapp['resumeUsed']."<br>"; //this equals the resume id on resume table
     $theresume=$completedapp['resumeUsed'];
-    //$theresume2=$resumes[$theresume];
-    //echo $theresume2;
-/////////////////////////////////////////////////////////////////// resumes where id = $theresume
-    //$resumeCurr = Resume::where('id', '=', $theresume)->get();
 
-   // $myres = $resum
-    //echo $resumeCurr;  //is this JSON?
     $key = array_search($theresume, $resid);
     echo $resum[$key];
 
