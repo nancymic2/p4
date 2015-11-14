@@ -1148,7 +1148,10 @@ foreach($expenses as $expense) {
     echo '</td>';
     echo '<td>';
     //echo '<b>role:</b> ';
-    echo $expense['gas']."<br>";
+    echo $expense['gas'];
+
+    $trimgas=trim($expense['gas']);
+    $tgas=$trimgas+$tgas;
 
     echo '</td>';
     echo '<td>';
@@ -1233,7 +1236,8 @@ foreach($expenses as $expense) {
     echo '<td>';
     echo '</td>';
 
-        echo '<td>';
+    echo '<td>';
+    echo $tgas;
     echo '</td>';
         echo '<td>';
     echo '</td>';
@@ -1259,8 +1263,7 @@ foreach($expenses as $expense) {
     echo '</td>';
         echo '<td>';
     echo '</td>';
-        echo '<td>';
-    echo '</td>';
+
 
     echo '</tr></table>';
     echo '</div>';
