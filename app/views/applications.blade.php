@@ -154,7 +154,7 @@ if (diva.style.display=="none") {
 </div>
 
 <?php
-echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
+//echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
 ?>
 </div>
 <br>
