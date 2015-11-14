@@ -177,7 +177,7 @@ if (diva.style.display=="none") {
     resume url<br>
 
         {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} <br>
-    resume text<br>
+    resume text<br><br>
         {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
 {{ Form::close() }}
