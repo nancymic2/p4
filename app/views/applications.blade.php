@@ -45,10 +45,13 @@ value="44"><br>-->
 
 <script type="text/javascript">
 function toggle(adiv, bdiv, cdiv){
-if (adiv.style.display=="none") {
-    adiv.style.display="block";
-    bdiv.style.display="none";
-    cdiv.style.display="none";
+    diva=document.getElementById(adiv);
+    divb=document.getElementById(bdiv);
+    divc=document.getElementById(cdiv);
+if (diva.style.display=="none") {
+    diva.style.display="block";
+    dib.style.display="none";
+    divc.style.display="none";
 }
 
 
