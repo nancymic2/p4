@@ -100,7 +100,7 @@ if (diva.style.display=="none") {
     <!-- {{ Form::select('company_id', $company_lists) }} this yieds the INDEX of the selected 11/6-->
  <!-- 11/1/15  -->
 
- {{ Form::select('company_id', $company::lists('company', 'id'), null, ['placeholder' => 'none']) }}
+ {{ Form::select('company_id', $company::lists('company_id', 'id'), null, ['placeholder' => 'none']) }}
        
       <h4>Select existing resume</h4>
       {{ Form::select('user_id', $resume_lists) }} 
