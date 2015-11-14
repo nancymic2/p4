@@ -437,7 +437,7 @@ foreach($completedapps as $completedapp) {
 
 //return View::make('deleteresume')->with('deleteres', $deleteres);
 echo '</p>';
-
+echo '<br><br>';
  echo $stylesend;   
 }));
 
@@ -1304,7 +1304,7 @@ foreach($expenses as $expense) {
 
 //return View::make('deleteresume')->with('deleteres', $deleteres);
 echo '</p>';
-
+echo '<br><br>';
  echo $stylesend;   
 }));
 
