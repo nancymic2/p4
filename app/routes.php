@@ -1250,7 +1250,7 @@ foreach($expenses as $expense) {
     echo '<table border="2" cellpadding="4" style="width: 100%; table-layout: fixed;"> <tr>';
 
     echo '<td style="width: 6.66%;">';
-    echo "Totals";
+    echo '<b>Totals</b>';
     echo '</td>';
 
     echo '<td style="width: 6.66%;">';
