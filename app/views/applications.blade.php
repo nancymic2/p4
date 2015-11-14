@@ -145,7 +145,7 @@ if (diva.style.display=="none") {
 
      password<br>
     {{ Form::text('password', '', array('class'=>'form-control'))}} <br> -->
-
+<br><br>
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
 
