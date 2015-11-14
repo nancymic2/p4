@@ -1098,7 +1098,7 @@ include 'head.php';
       <th style="width: 6.66%;">Portfolio</th>
       <th style="width: 6.66%;">Phone</th>
       <th style="width: 6.66%;">Clothing</th>
-      <th style="width: 6.66%;">Entertainment</th>
+      <th style="width: 6.66%;">Entertain</th>
 
 
 
