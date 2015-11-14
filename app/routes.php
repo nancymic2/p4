@@ -1075,7 +1075,7 @@ include 'head.php';
   echo '<h2>Your Expenses</h2>';
 
   echo '<p>';
-  echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4" style="width: 100%;"> 
+  echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4" style="width: 100%; table-layout: fixed;"> 
 
   <caption>
   Sort Your Expenses by field
@@ -1247,7 +1247,7 @@ foreach($expenses as $expense) {
 
     echo '</tbody> </table>';
 
-    echo '<table border="2" cellpadding="4" style="width: 100%;"> <tr>';
+    echo '<table border="2" cellpadding="4" style="width: 100%; table-layout: fixed;"> <tr>';
 
     echo '<td style="width: 6.66%;">';
     echo "Totals";
