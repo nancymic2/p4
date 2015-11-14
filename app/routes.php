@@ -1053,7 +1053,7 @@ $stylesend='</body></html>';
   $l=0;  
   $m=0;   
   $n=0;
-  $allexp = Expense::where('user_id', '=', Auth::user()->id)->get();
+  $expenses = Expense::where('user_id', '=', Auth::user()->id)->get();
   $applications = Application::where('user_id', '=', Auth::user()->id)->get();
   $companies = Company::where('user_id', '=', Auth::user()->id)->get();
   
