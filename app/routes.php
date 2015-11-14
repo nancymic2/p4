@@ -1082,23 +1082,23 @@ include 'head.php';
   </caption>
   <thead>
     <tr>  
-      <th width="86">Company</th>
-      <th width="86">Job</th>
-      <th width="86">Gas</th>
-      <th width="86">Air</th>
+      <th width="92">Company</th>
+      <th width="92">Job</th>
+      <th width="92">Gas</th>
+      <th width="92">Air</th>
       
-      <th width="86">Train</th>
+      <th width="92">Train</th>
 
-      <th width="86">Hotel</th>
-      <th width="86">Meals</th>
-      <th width="86">Postage</th>
-      <th width="86">Ink</th>
-      <th width="86">Paper</th>
-      <th width="86">Hardware</th>
-      <th width="86">Portfolio</th>
-      <th width="86">Phone</th>
-      <th width="86">Clothing</th>
-      <th width="86">Entertainment</th>
+      <th width="92">Hotel</th>
+      <th width="92">Meals</th>
+      <th width="92">Postage</th>
+      <th width="92">Ink</th>
+      <th width="92">Paper</th>
+      <th width="92">Hardware</th>
+      <th width="92">Portfolio</th>
+      <th width="92">Phone</th>
+      <th width="92">Clothing</th>
+      <th width="92">Entertainment</th>
 
 
 
@@ -1249,50 +1249,50 @@ foreach($expenses as $expense) {
 
     echo '<table border="2" cellpadding="4"> <tr>';
 
-    echo '<td width="86">';
+    echo '<td width="92">';
     echo "Totals";
     echo '</td>';
 
-    echo '<td width="86">';
+    echo '<td width="92">';
     echo '</td>';
 
-    echo '<td width="86">';
+    echo '<td width="92">';
     echo $tgas;
     echo '</td>';
-    echo '<td width="86">';
+    echo '<td width="92">';
      echo $tair;
     echo '</td>';
-    echo '<td width="86">';
+    echo '<td width="92">';
     echo $ttrain;
     echo '</td>';
-    echo '<td width="86">';
+    echo '<td width="92">';
      echo $thotel;
     echo '</td>';
-        echo '<td width="86">';
+        echo '<td width="92">';
          echo $tmeals;
     echo '</td>';
-        echo '<td width="86">';
+        echo '<td width="92">';
          echo $tstamps;
     echo '</td>';
-        echo '<td width="86">';
+        echo '<td width="92">';
          echo $tink;
     echo '</td>';
-        echo '<td width="86">';
+        echo '<td width="92">';
          echo $tpaper;
     echo '</td>';
-        echo '<td width="86">';
+        echo '<td width="92">';
          echo $thardware;
     echo '</td>';
-        echo '<td width="86">';
+        echo '<td width="92">';
          echo $tportfolio;
     echo '</td>';
-        echo '<td width="86">';
+        echo '<td width="92">';
          echo $tphone;
     echo '</td>';
-        echo '<td width="86">';
+        echo '<td width="92">';
          echo $tclothing;
     echo '</td>';
-        echo '<td width="86">';
+        echo '<td width="92">';
          echo $tentertainment;
     echo '</td>';
 
