@@ -36,10 +36,10 @@
 value="44"><br>-->
 <!-- remove rating -->
 <!--<a href="#" onclick='window.open("/companysmall", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=100, width=400, height=400, menubar=0, status=0, titlebar=0, toolbar=0, nomenubar=no, status=no, titlebar=no, toolbar=no" );'>Add a company</a>-->
-<a href="#companies" onclick='toggle("companyhide2", "resumehide", "resumehideDB");'><h4>1. Add the company if you have not added previously</h4></a>
- <a href="#resume" onclick='toggle("resumehide", "companyhide2",  "resumehideDB");'>
+<a href="#companies" onclick='toggle("companyhide2", "resumehide", "companyhideDB");'><h4>1. Add the company if you have not added previously</h4></a>
+ <a href="#resume" onclick='toggle("resumehide", "companyhide2",  "companyhideDB");'>
  <h4>2. Add the resume used if you have not added previously</h4></a>
- <a href="#companies" onclick='toggle("resumehideDB", "resumehide", "companyhide2");'>
+ <a href="#companies" onclick='toggle("companyhideDB", "resumehide", "companyhide2");'>
  <h4>3. Add the job</h4></a>
 
 
