@@ -168,7 +168,7 @@ if (diva.style.display=="none") {
           {{ Form::select('user_id', $resume_lists) }}    commented out 11/17/15  811 am-->
 
 {{ Form::open(array('url' => '/resume')) }}
-
+<h4>Add resume information</h4>
      Give your resume a name<br>
         {{ Form::text('name', '', array('class'=>'form-control'))}} 
    Provide a link to your resume in Google Docs, DropBox, etc.<br>
@@ -176,7 +176,7 @@ if (diva.style.display=="none") {
         {{ Form::text('url', '', array('class'=>'form-control'))}} 
     Add notes about this resume<br>
 
-        {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} <br>
+        {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} 
   <br><br>
         {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
