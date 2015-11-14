@@ -1227,7 +1227,7 @@ foreach($expenses as $expense) {
     echo '<table border="1"><tr>';
 
     echo '<td>';
-    echo "some";
+    echo "Totals";
     echo '</td>';
 
     echo '<td>';
