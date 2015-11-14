@@ -42,6 +42,8 @@ value="44"><br>-->
  <a href="#companies" onclick='toggle("companyhideDB", "resumehide", "companyhide2");'>
  <h4>3. Add the job</h4></a>
 
+<br><br>
+
 
 <script type="text/javascript">
 function toggle(adiv, bdiv, cdiv){
