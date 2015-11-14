@@ -50,7 +50,7 @@ function toggle(adiv, bdiv, cdiv){
     divc=document.getElementById(cdiv);
 if (diva.style.display=="none") {
     diva.style.display="block";
-    dib.style.display="none";
+    divb.style.display="none";
     divc.style.display="none";
 }
 
