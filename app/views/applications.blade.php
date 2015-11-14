@@ -90,7 +90,7 @@ if (diva.style.display=="none") {
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
     {{ Form::close() }}
-
+<br><br><br>
 </div>
 <div id="companyhideDB" style="display:none;">
 {{ Form::open(array('url' => '/applications')) }}
@@ -150,7 +150,7 @@ if (diva.style.display=="none") {
 
 
 {{ Form::close() }}
-
+<br><br><br>
 </div>
 
 <?php
@@ -180,7 +180,7 @@ if (diva.style.display=="none") {
 
 {{ Form::close() }}
 
-
+<br><br><br>
 
 </div>
 
