@@ -1293,7 +1293,7 @@ foreach($expenses as $expense) {
          echo $tclothing;
     echo '</td>';
         echo '<td>';
-         echo $tentertaimnent;
+         echo $tentertainment;
     echo '</td>';
 
 
