@@ -1168,7 +1168,7 @@ foreach($expenses as $expense) {
     //echo '</td>';
     echo '<td>';
 
-    echo $$expense['ink'];
+    echo $expense['ink'];
     echo '</td>';
     echo '<td>';
     echo $expense['paper']."<br>";
