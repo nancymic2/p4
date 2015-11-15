@@ -7,7 +7,7 @@
     <div class="col-sm-6">
 
 
-{{ Form::open('company/update', 'PUT')}}
+{{ Form::open(array('url' => 'company/update')) }}
 
         {{ Form::label('rating', 'Rating') }}
         {{ Form::text('rating', $company->rating) }}
