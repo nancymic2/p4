@@ -1416,65 +1416,30 @@ Route::post('/applicationsrating',
 
   
 
+  Route::get('user/edit/{id}', array('as' => 'user.edit', function($id) 
+    {
+        // return our view and Nerd information
+        return View::make('user-edit') // pulls app/views/nerd-edit.blade.php use user/edit/1 or other id number
+            ->with('user', User::find($id));
+    }));
 
-
-
-
-  ///maybe just get the company id          
-/*
-$servername = "localhost";
-$username = "root";
-$password = "BDBpQgPk4N";
-$dbname = "shoes";
-$newname2 = $_POST['newname2'];
-$id2= $_POST['hidden1'];
-//echo $newname;
-//echo $id2;
-
-//echo $id;
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
- // Check connection
- if ($conn->connect_error) {
-     die("Connection failed: " . $conn->connect_error);
-} 
-
-//echo $newname;
-
-
-$sql = "UPDATE company SET website = '$newname2' WHERE id = $id";
-
-if ($conn->query($sql) === TRUE) {
-echo "First name ";
-echo "has been updated successfully to ";
-echo $newname2;
-echo '<br>';
-echo '<a href="/">Back</a>';
-
-} else {
-    echo "Error updating record: " . $conn->error;
+    // route to process the form
+   Route::post('/user/edit/{id}', 
+    array(
+        'before' => 'csrf', 
+        function() {
+          $id =Input::get('id');
+           //$user  = user::find(1);  got to get the co id. take from url if need be cause ive had enough
+           $user  = User::find($id);  ///works when id is hardcoded
+            //$user->id   =Input::get('id');  //just added
+            $user->first   = Input::get('first');
+             $user->last   = Input::get('last');
+             $user->email   = Input::get('email');
+             $user->save();
+             return Redirect::to('/'); // YES NO? 
 }
+));
 
-$conn->close();
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+  
 
 
