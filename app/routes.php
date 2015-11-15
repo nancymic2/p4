@@ -1761,6 +1761,7 @@ Route::post('/applicationsrating',
 
     // route to process the form
     Route::post('company/edit', function() {
+            $company = Company::findOrFail($id);
         
             $company->website   = Input::get('website');
 
@@ -1770,3 +1771,10 @@ Route::post('/applicationsrating',
 
       //put the update code here
     });
+
+      public function postEdit($id) {
+    
+    /*$company = Company::findOrFail($id);
+    $company->fill(Input::all());
+    $company->save();
+    */
