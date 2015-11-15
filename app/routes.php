@@ -378,8 +378,11 @@ foreach($completedapps as $completedapp) {
     $theresume=$completedapp['resumeUsed'];
 
     $key = array_search($theresume, $resid);
-    echo $resum[$key];
 
+    echo '<a href="/resume/edit/'.$theresume;  ///
+    echo '">';  ////
+    echo $resum[$key];
+    echo '</a>';  ///
       //$res[] = json_decode($resumeCurr, true);
 
       //echo gettype($res);
