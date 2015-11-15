@@ -55,8 +55,31 @@ public function postCreate() {
 
 
 
-    public function getEdit($id)
+    public function get_edit($id)
     {
+
+	return View::make('company.edit')
+	->with('company', Company::find($id))
+    }
+
+
+ public function put_update()
+ {
+    $id = Input::get('id');  //just added
+         
+    Company::update($id, array(
+
+        'website' => Input::get('website'),
+        'rating' => Input::get('rating'),
+
+        ));
+
+return Redirect::to_route('company', $id)->with('message', 'success');
+
+ }
+
+
+/*
         $company = Company::find($id);
 
         if (!$company->update(Input::all())) {
@@ -80,3 +103,4 @@ public function postCreate() {
 		return Redirect::action('CompanyController@getIndex')->with('flash_message','Your changes have been saved.');
 		
 	}
+*/

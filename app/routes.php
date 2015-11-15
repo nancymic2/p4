@@ -1794,3 +1794,7 @@ Route::post('/applicationsrating',
     $company->fill(Input::all());
     $company->save();
     */
+
+ Route::get('company/(:any)/edit', array('as'=>'edit_company', 'uses'=>'company@edit'));
+
+ Route::put('company/update', array('uses'=>'company@update'));
