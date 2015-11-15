@@ -1773,13 +1773,17 @@ Route::post('/applicationsrating',
 
     // route to process the form
     Route::post('company/edit', function() {
-           // $company = Company::findOrFail($id);
-        
-            //$company->website   = Input::get('website');
 
-           // $company->rating    = Input::get('rating');
 
-            //$company->save();
+         
+            $company->website   = Input::get('website');
+
+            $company->rating    = Input::get('rating');
+
+           
+            # Try to add the company 
+       
+                $company->save();
 
       //put the update code here
     });
