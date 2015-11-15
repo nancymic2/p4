@@ -9,7 +9,7 @@
 <h2>&nbsp;</h2>
 
 
-<h3>Edit Company</h3>
+<h3>View or Edit Company</h3>
 <br>
  {{ Form::model($company, array('route' => 'company.edit', $company->id)) }}    
 
