@@ -1755,7 +1755,7 @@ Route::post('/applicationsrating',
   Route::get('company/edit/{id}', array('as' => 'company.edit', function($id) 
     {
         // return our view and Nerd information
-        return View::make('company-edit') // pulls app/views/nerd-edit.blade.php
+        return View::make('company-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
             ->with('company', Company::find($id));
     }));
 
