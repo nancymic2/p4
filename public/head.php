@@ -83,32 +83,28 @@ $(document).ready(function()
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="./" class="navbar-brand">Bootstrap 3 Menu Generator</a>
+      <a href="/" class="navbar-brand">Home</a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
         <li>
-          <a href="#">Getting started</a>
+        <a href="/applications">Add a Job, Company, Resume</a>
+
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
+            <li><a href="user">Udate</a></li>
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
             <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="/logout">Log Out</a></li>
           </ul>
         </li>
-        <li>
-          <a href="#">Components</a>
-        </li>
-        <li>
-          <a href="#">JavaScript</a>
-        </li>
-        <li class="active">
-          <a href="#">Customize</a>
-        </li>
+        <li><a href="/expenses">Add Expenses</a></li>
+        <li><a href="/expensereport">View Expenses</a></li>
+        <li><a href="/completedapps">View Your Jobs</a></li>
+        <li><a href="/resumesearch">View Your Resumes</a></li>
       </ul>
     </nav>
   </div>
