@@ -421,8 +421,8 @@ foreach($completedapps as $completedapp) {
     //echo '<b>job name:</b> ';
      echo '<a href="/application/edit/'.$app_id[$i];
      echo '">';
-    echo $completedapp['recnumber']."<br>"; //job name
-    echo '<.a>';
+    echo $completedapp['recnumber']; //job name
+    echo '</a>';
     echo '</td>';
     
     echo '</tr>';
