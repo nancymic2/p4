@@ -1772,7 +1772,7 @@ Route::post('/applicationsrating',
     }));
 
     // route to process the form
-    Route::post('company/edit', function() {
+    Route::post('/company', function() {
 
 
          
