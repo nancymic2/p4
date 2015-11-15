@@ -21,6 +21,7 @@
         {{ Form::label('website', 'Website') }}
         {{ Form::text('website') }}      
 <br><br>
+ {{ Form::hidden('id', $company->id) }}  <!-- just added -->
         {{ Form::submit('Update Company') }}
 <br><br>
     {{ Form::close() }}
@@ -28,12 +29,6 @@
 
 
 <br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
-
-<script type="text/javascript">
-function goBack() {
-    window.history.back();
-}
-</script
 
 </div>
 </div>

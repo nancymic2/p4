@@ -1774,7 +1774,7 @@ Route::post('/applicationsrating',
     // route to process the form
     Route::post('/company', function() {
 
-
+            $company->id   = Input::get('id');  //just added
          
             $company->website   = Input::get('website');
 
