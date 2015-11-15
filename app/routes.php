@@ -1772,9 +1772,9 @@ Route::post('/applicationsrating',
       //put the update code here
     });
 
-      public function postEdit($id) {
+      /* public function postEdit($id) {
     
-    /*$company = Company::findOrFail($id);
+   $company = Company::findOrFail($id);
     $company->fill(Input::all());
     $company->save();
     */
