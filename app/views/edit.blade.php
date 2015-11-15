@@ -7,7 +7,7 @@
     <div class="col-sm-6">
 
 
-{{ Form::open(array('url' => 'company/update')) }}
+{{ Form::open(array('url' => 'company/edit')) }}
 
         {{ Form::label('rating', 'Rating') }}
         {{ Form::text('rating', $company->rating) }}
@@ -16,7 +16,7 @@
         {{ Form::label('website', 'Website') }}
         {{ Form::text('website', $company->website) }}      
 <br><br>
- 		{{ Form::hidden('id', $company->id) }}  <!-- just added -->
+ {{ Form::hidden('id', $company->id) }}  <!-- just added -->
         {{ Form::submit('Update Company') }}
 <br><br>
     	{{ Form::close() }}
