@@ -1761,5 +1761,12 @@ Route::post('/applicationsrating',
 
     // route to process the form
     Route::post('company/edit', function() {
-        // process our form
+        
+            $company->website   = Input::get('website');
+
+            $company->rating    = Input::get('rating');
+
+            $company->save();
+
+      //put the update code here
     });
