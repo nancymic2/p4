@@ -63,7 +63,7 @@ public function postCreate() {
     }
 
 
- public function put_update()
+ public function update()
  {
     $id = Input::get('id');  //just added
          
