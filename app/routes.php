@@ -471,7 +471,7 @@ include 'head.php';
    echo '<p>&nbsp;</p>';
    echo '<h2>Your saved resumes</h2>';
  
-  echo '<table  width="750" cellpadding="20" style="border: 2px dotted #00CCFF; border-radius: 10px;">';
+  echo '<table  width="750" cellpadding="20" style="border: 2px solid; border-radius: 10px;">';
   
 # loop through the Collection and access just the data
 foreach($resumes as $resume) {
