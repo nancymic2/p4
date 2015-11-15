@@ -1761,11 +1761,11 @@ Route::post('/applicationsrating',
 
     // route to process the form
     Route::post('company/edit', function($id) {
-            $company = Company::findOrFail($id);
+           // $company = Company::findOrFail($id);
         
-            $company->website   = Input::get('website');
+            //$company->website   = Input::get('website');
 
-            $company->rating    = Input::get('rating');
+           // $company->rating    = Input::get('rating');
 
             $company->save();
 
