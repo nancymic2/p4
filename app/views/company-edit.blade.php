@@ -20,11 +20,11 @@
         <!-- email -->
         {{ Form::label('website', 'Website') }}
         {{ Form::email('website') }}      
-
+<br><br>
         {{ Form::submit('Update Co!') }}
 <br><br>
     {{ Form::close() }}
-<br><br>
+<br>
 
 <?php
 echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
