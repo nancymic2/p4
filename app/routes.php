@@ -1399,12 +1399,21 @@ Route::post('/applicationsrating',
     }));
 
     // route to process the form
-    Route::post('company/edit', function() {
+   Route::post('/company/edit', 
+    array(
+        'before' => 'csrf', 
+        function() {
             $company->id = Input::get('id');  //just added
             $company->website   = Input::get('website');
             $company->rating    = Input::get('rating');
              $company->save();
 });
+
+  
+
+
+
+
 
   ///maybe just get the company id          
 /*
