@@ -69,8 +69,8 @@ $(document).ready(function()
         <li><a href="/expensereport">View Expenses</a></li>
         <li><a href="/completedapps">View Your Jobs</a></li>
         <li><a href="/resumesearch">View Your Resumes</a></li>
-        <li class="dropdown">
- Dropdown Example
+        <li class="dropdown"><a href="#">
+ Dropdown Example</a>
  
   <ul class="dropdown-menu">
     <li><a href="#">HTML</a></li>
