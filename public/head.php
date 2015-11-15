@@ -40,7 +40,7 @@ $(document).ready(function()
 </head>
 <body>
   <div class="container" style="margin:30px;">
-<img style="float:left" src="train2.jpg"> <h1>Get your job hunt on track.</h1>
+<img style="float:left" src="train2.jpg"> <br><h2>Get your job hunt on track.</h2>
 </div>
 </div>
   <!--<div class="jumbotron">-->
