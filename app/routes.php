@@ -1779,7 +1779,7 @@ Route::post('/applicationsrating',
     // route to process the form
     Route::post('company/edit', function() {
           $id = Input::get('id');  //just added
-             $website => Input::get('website'),
+             $website = Input::get('website');
 
             DB::table('company')
             ->where('id', $id)
