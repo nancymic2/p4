@@ -467,8 +467,8 @@ $stylesend='</body></html>';
   $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
       //$resumes->toArray();
 include 'head.php';
-  echo '<div class="container">'; 
-   echo '<p>&nbsp;</p>';
+  //echo '<div class="container">'; 
+   //echo '<p>&nbsp;</p>';
    echo '<h2>Your saved resumes</h2>';
  
   echo '<table  width="750" cellpadding="20" style="border: 2px solid; border-radius: 10px;">';
