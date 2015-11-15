@@ -329,8 +329,11 @@ foreach($completedapps as $completedapp) {
     $thecompany=$completedapp['company'];
 
     $key = array_search($thecompany, $corpid);
-    echo $corp[$key];
 
+    echo '<a href="/company/edit/'.$thecompany;  ///
+    echo '">';  ////
+    echo $corp[$key];
+    echo '</a>';  ///
 
     //echo '<b>company:</b> ';
     //echo $completedapp['company']."<br>";
