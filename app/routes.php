@@ -1763,11 +1763,11 @@ Route::post('/applicationsrating',
     )
 );
 
- Route::get('company/(:any)/edit', array('as'=>'edit_company', 'uses'=>'company@edit'));
+ //Route::get('company/(:any)/edit', array('as'=>'edit_company', 'uses'=>'company@edit'));
 
- Route::put('company/update', array('uses'=>'company@update'));
+ //Route::put('company/update', array('uses'=>'company@update'));
 
- 
+
 
   Route::get('company/edit/{id}', array('as' => 'company.edit', function($id) 
     {
