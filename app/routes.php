@@ -1426,7 +1426,7 @@ Route::post('/applicationsrating',
     // route to process the form
    Route::post('/user/edit/{id}', 
     array(
-        'before' => 'csrf', 
+        'before' => 'auth', 
         function() {
           $id =Input::get('id');
            //$user  = user::find(1);  got to get the co id. take from url if need be cause ive had enough
