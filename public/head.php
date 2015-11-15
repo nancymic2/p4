@@ -69,10 +69,10 @@ $(document).ready(function()
         <li><a href="/expensereport">View Expenses</a></li>
         <li><a href="/completedapps">View Your Jobs</a></li>
         <li><a href="/resumesearch">View Your Resumes</a></li>
-        <li class="dropdown"><a href="#">
+        <li id="ddown"><a href="#" onclick='document.getElementById("dm").style.display="block";'>
  Dropdown Example</a>
  
-  <ul class="dropdown-menu">
+  <ul id="dm" style="display: none;">
     <li><a href="#">HTML</a></li>
     <li><a href="#">CSS</a></li>
     <li><a href="#">JavaScript</a></li>
