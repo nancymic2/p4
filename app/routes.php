@@ -1760,7 +1760,7 @@ Route::post('/applicationsrating',
     }));
 
     // route to process the form
-    Route::post('company/edit', function($id) {
+    Route::post('company/edit', function() {
            // $company = Company::findOrFail($id);
         
             //$company->website   = Input::get('website');
