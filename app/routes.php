@@ -1399,7 +1399,7 @@ Route::post('/applicationsrating',
     }));
 
     // route to process the form
-   Route::post('/company/edit', 
+   Route::post('/company/edit/(:any)', 
     array(
         'before' => 'csrf', 
         function() {
