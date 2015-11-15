@@ -61,7 +61,7 @@ $(document).ready(function()
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <!--  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
   
         <li><a href="/applications">Add a Job, Company, Resume</a></li>
@@ -83,7 +83,81 @@ $(document).ready(function()
       </ul>
      
       
-    </div><!-- /.navbar-collapse -->
+    </div>-->
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="final.html">Simon</a>
+            </li>
+            <li>
+              <a href="cards.html">Match</a>
+            </li>
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Stuff<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="http://nancymichell.us">Me</a>
+                </li>
+                <li>
+                  <a href="http://docs.hpcloud.com">Work</a>
+                </li>
+                <li>
+                  <a href="https://social.msdn.microsoft.com/Search/en-US?query=nancy%20michell&emptyWatermark=true&ac=2">Old Work</a>
+                </li>
+                <li class="divider">
+                </li>
+                <li>
+                  <a href="http://p4.scholarpaws.com">Coming Up</a>
+                </li>
+                <li class="divider">
+                </li>
+                <li>
+                  <a href="http://docs.hpcloud.com/content/documentation/commercial/GA1/ServicesFlow/">code: me. art: M Rosado</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!--<form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" value="subject">
+            </div> <button type="submit" action="mailto: nancyamichell@yahoo.com" class="btn btn-default">Submit</button>
+          </form>-->
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="http://nancymichell.us/s/travel/php/">Travel</a>
+            </li>
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="http://extension.harvard.edu">School</a>
+                </li>
+                <li>
+                  <a href="http://p3.scholarpaws.com">My Web tools</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/nancymichell">LinkedIn</a>
+                </li>
+                <li class="divider">
+                </li>
+                <li>
+                  <a href="http://nancymichell.us/examples/final.html">Play dress-up</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+
+
+
+
+
+
+
+    <!-- /.navbar-collapse -->
   <!--</div> container-fluid --> 
+
 </nav>
 </header>
