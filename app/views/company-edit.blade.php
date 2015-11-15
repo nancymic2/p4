@@ -22,7 +22,7 @@
         {{ Form::email('website') }}      
 
         {{ Form::submit('Update Co!') }}
-
+<br><br>
     {{ Form::close() }}
 <br><br>
 
