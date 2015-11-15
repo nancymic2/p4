@@ -1750,3 +1750,16 @@ Route::post('/applicationsrating',
         }
     )
 );
+
+
+  Route::get('company/edit/{id}', array('as' => 'company.edit', function($id) 
+    {
+        // return our view and Nerd information
+        return View::make('company-edit') // pulls app/views/nerd-edit.blade.php
+            ->with('company', Company::find($id));
+    }));
+
+    // route to process the form
+    Route::post('company/edit', function() {
+        // process our form
+    });
