@@ -1772,7 +1772,7 @@ Route::post('/applicationsrating',
     }));
 
     // route to process the form
-    Route::post('/company', function() {
+    Route::post('company/edit', function() {
 
             $company->id   = Input::get('id');  //just added
          
