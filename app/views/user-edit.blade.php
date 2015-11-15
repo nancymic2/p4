@@ -15,7 +15,7 @@
 
         <!-- name -->
         {{ Form::label('first', 'First) }}
-        {{ Form::text('First') }}
+        {{ Form::text('first') }}
 <br><br>
         <!-- email -->
         {{ Form::label('last', 'Last') }}
