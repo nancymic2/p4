@@ -1410,6 +1410,7 @@ Route::post('/applicationsrating',
             $company->website   = Input::get('website');
              $company->rating   = Input::get('rating');
              $company->save();
+             return Redirect::to('/completedapps'); // YES NO? 
 }
 ));
 
