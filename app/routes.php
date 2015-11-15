@@ -1416,9 +1416,9 @@ Route::post('/applicationsrating',
 
   
 
-  Route::get('user/edit/{id}', array('as' => 'user.edit', function($id) 
+  Route::get('user/edit/{id}', array('as' => 'user.edit', 'before' => 'auth', function($id)  //just added before
     {
-        // return our view and Nerd information
+        $user = Auth::user();// just added 
         return View::make('user-edit') // pulls app/views/nerd-edit.blade.php use user/edit/1 or other id number
             ->with('user', User::find($id));
     }));
