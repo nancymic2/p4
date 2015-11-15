@@ -15,6 +15,28 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
+<style type="text/css">
+.navbar-inverse { background-color: #222222}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #080808}
+.dropdown-menu { background-color: #ffffff}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #428bca}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #080808}
+.navbar-inverse .navbar-brand { color: #999999}
+.navbar-inverse .navbar-brand:hover { color: #ffffff}
+.navbar-inverse .navbar-nav>li>a { color: #999999}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #ffffff}
+.dropdown-menu>li>a { color: #333333}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #ffffff}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #ffffff}
+</style>
 
   <title>Career Trax</title>
   <link rel="stylesheet" href="hmin.css">
@@ -47,119 +69,44 @@ $(document).ready(function()
 </div>
   <!--<div class="jumbotron">-->
 
-  <header class="navbar-inverse">
-    <div class="container">
-    <nav  role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">CareerTrax</a>
+      <a href="./" class="navbar-brand">Bootstrap 3 Menu Generator</a>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-  <!--  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-  
-        <li><a href="/applications">Add a Job, Company, Resume</a></li>
-        <li><a href="/expenses">Add Expenses</a></li>
-        <li><a href="/expensereport">View Expenses</a></li>
-        <li><a href="/completedapps">View Your Jobs</a></li>
-        <li><a href="/resumesearch">View Your Resumes</a></li>
-        <li id="ddown"><a href="#" onclick='document.getElementById("dm").style.display="block";'>
- Dropdown Example</a>
- 
-  <ul id="dm" style="display: none;">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
-</li>
-        <li><a href="/logout">Log Out</a></li>
-      
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#">Getting started</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Components</a>
+        </li>
+        <li>
+          <a href="#">JavaScript</a>
+        </li>
+        <li class="active">
+          <a href="#">Customize</a>
+        </li>
       </ul>
-     
-      
-    </div>-->
-
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="final.html">Simon</a>
-            </li>
-            <li>
-              <a href="cards.html">Match</a>
-            </li>
-            <li class="dropdown">
-               <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Stuff<strong class="caret"></strong></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="http://nancymichell.us">Me</a>
-                </li>
-                <li>
-                  <a href="http://docs.hpcloud.com">Work</a>
-                </li>
-                <li>
-                  <a href="https://social.msdn.microsoft.com/Search/en-US?query=nancy%20michell&emptyWatermark=true&ac=2">Old Work</a>
-                </li>
-                <li class="divider">
-                </li>
-                <li>
-                  <a href="http://p4.scholarpaws.com">Coming Up</a>
-                </li>
-                <li class="divider">
-                </li>
-                <li>
-                  <a href="http://docs.hpcloud.com/content/documentation/commercial/GA1/ServicesFlow/">code: me. art: M Rosado</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <!--<form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" value="subject">
-            </div> <button type="submit" action="mailto: nancyamichell@yahoo.com" class="btn btn-default">Submit</button>
-          </form>-->
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="http://nancymichell.us/s/travel/php/">Travel</a>
-            </li>
-            <li class="dropdown">
-               <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<strong class="caret"></strong></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="http://extension.harvard.edu">School</a>
-                </li>
-                <li>
-                  <a href="http://p3.scholarpaws.com">My Web tools</a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/nancymichell">LinkedIn</a>
-                </li>
-                <li class="divider">
-                </li>
-                <li>
-                  <a href="http://nancymichell.us/examples/final.html">Play dress-up</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        
-
-
-
-
-
-
-
-    <!-- /.navbar-collapse -->
-  <!--</div> container-fluid --> 
-
-</nav>
+    </nav>
+  </div>
 </header>
+
+
