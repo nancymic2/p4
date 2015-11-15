@@ -40,7 +40,7 @@ $(document).ready(function()
 </head>
 <body>
   <div class="container" style="margin:30px;">
-<img style="float:left" src="train2.jpg"> 
+<img style="float:left" src="http://p4.scholarpaws.com/train2.jpg">
 </div>
 </div>
   <!--<div class="jumbotron">-->
