@@ -1767,7 +1767,7 @@ Route::post('/applicationsrating',
 
            // $company->rating    = Input::get('rating');
 
-            $company->save();
+            //$company->save();
 
       //put the update code here
     });
