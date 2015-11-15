@@ -1407,7 +1407,8 @@ Route::post('/applicationsrating',
             $company->website   = Input::get('website');
             $company->rating    = Input::get('rating');
              $company->save();
-});
+}
+));
 
   
 
