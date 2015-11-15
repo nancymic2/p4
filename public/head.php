@@ -68,8 +68,7 @@ $(document).ready(function()
 <body>
   <div class="container" style="margin:30px;">
 <img style="float:left" src="train2.jpg"> <h1>Get your job hunt on track.</h1>
-</div>
-</div>
+
   <!--<div class="jumbotron">-->
 
   <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
@@ -113,6 +112,7 @@ $(document).ready(function()
       </ul>
     </nav>
   </div>
+</div>
 </div>
 </div>
 </header>
