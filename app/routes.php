@@ -1403,9 +1403,9 @@ Route::post('/applicationsrating',
     array(
         'before' => 'csrf', 
         function() {
-            //$company->id = Input::get('id');  //just added
-            $company->website   = Input::get('website');
-            $company->rating    = Input::get('rating');
+            'id' = Input::get('id');  //just added
+           'website'   = Input::get('website');
+           'rating'    = Input::get('rating');
              $company->save();
 }
 ));
