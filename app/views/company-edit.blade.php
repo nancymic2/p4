@@ -27,10 +27,7 @@
 <br>
 
 
-<br><a class="btn btn-danger" onclick="goBack()">Cancel</a>
-
-
-
+<br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
 
 <script type="text/javascript">
 function goBack() {
