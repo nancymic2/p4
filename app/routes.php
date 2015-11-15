@@ -1774,20 +1774,28 @@ Route::post('/applicationsrating',
     // route to process the form
     Route::post('company/edit', function() {
 
-            $company->id   = Input::get('id');  //just added
+            //$company->id   = Input::get('id');  //just added
          
-            $company->website   = Input::get('website');
+           // $company->website   = Input::get('website');
 
-            $company->rating    = Input::get('rating');
+           // $company->rating    = Input::get('rating');
 
            
-            # Try to add the company 
+ 
+    $id = Input::get('id');  //just added
+         
+    Company::update($id, array(
+
+        'website' => Input::get('website'),
+        'rating' => Input::get('rating'),
+
+        ));
        
-                $company->save();
+        $company->save();
 
       //put the update code here  
 
-    });
+});
 
 
     
