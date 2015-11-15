@@ -19,9 +19,9 @@
 <br><br>
         <!-- email -->
         {{ Form::label('website', 'Website') }}
-        {{ Form::email('website') }}      
+        {{ Form::text('website') }}      
 <br><br>
-        {{ Form::submit('Update Co!') }}
+        {{ Form::submit('Update Company') }}
 <br><br>
     {{ Form::close() }}
 <br>
@@ -33,4 +33,6 @@ echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
 
 </div>
 </div>
+
+<!-- note use email as the type vs text if you want validation -->
 @stop
