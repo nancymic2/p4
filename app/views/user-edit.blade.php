@@ -14,7 +14,7 @@
  {{ Form::model($user, array('route' => 'user.edit', $user->id)) }}    
 
         <!-- name -->
-        {{ Form::label('first', 'First) }}
+        {{ Form::label('first', 'First') }}
         {{ Form::text('first') }}
 <br><br>
         <!-- email -->
