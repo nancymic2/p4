@@ -56,7 +56,7 @@ $(document).ready(function()
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">CT</a>
+      <a class="navbar-brand" href="/"><u>CT</u></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,9 +64,9 @@ $(document).ready(function()
           <ul class="nav navbar-nav">
   
         <li><a href="/applications">Add a Job, Company, Resume</a></li>
+        <li><a href="/completedapps">View/edit Jobs, Company, Resume</a></li>
         <li><a href="/expenses">Add Expenses</a></li>
-        <li><a href="/expensereport">View Expenses</a></li>
-        <li><a href="/completedapps">View Your Jobs</a></li>
+        <li><a href="/expensereport">View/Edit Expenses</a></li>
         <li><a href="/resumesearch">View Your Resumes</a></li>
         <?php 
 
