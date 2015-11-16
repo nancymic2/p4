@@ -1422,7 +1422,7 @@ Route::post('/applicationsrating',
         return View::make('user-edit') // pulls app/views/nerd-edit.blade.php use user/edit/1 or other id number
             ->with('user', User::find($id));  ///change $id to $user
     }));
-
+//return View::make('chart')->with('salarycount', $salarycount);
     // route to process the form
    Route::post('/user/edit/{id}', 
     array(
