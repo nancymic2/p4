@@ -76,7 +76,7 @@ $id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, n
 
 echo '<li><a href="/user/edit/';
 echo $id;
-echo'">change acct info</a> </li>';
+echo'">Edit acct info</a> </li>';
 //echo '<a href="logout">log out</a> <br>';
 ?>
         <li><a href="/logout">Log Out</a></li>
@@ -90,3 +90,8 @@ echo'">change acct info</a> </li>';
 </div>
 
 </header>
+<style>
+a:{
+  color: red;
+}
+</style>
