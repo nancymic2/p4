@@ -24,6 +24,11 @@
 #myTable > thead{
   cursor: pointer;
 } 
+
+.navbar-inverse .navbar-nav>li>a {
+color: #D0ECF5 !important;
+}
+
 </style>
 </head>
 <body>
