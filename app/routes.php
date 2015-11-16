@@ -1097,7 +1097,7 @@ include 'head.php';
   </caption>
   <thead>
     <tr>  
-      <th style="width: 6.66%;">Company</th>
+      <th style="width: 6.66%;">Date</th>
       <th style="width: 6.66%;">Job</th>
       <th style="width: 6.66%;">Gas</th>
       <th style="width: 6.66%;">Air</th>
@@ -1148,7 +1148,7 @@ foreach($expenses as $expense) {
 
     echo '<tr>';
     echo '<td>';
-
+echo $expense['exp_date'];
     $thecompany=$expense['company'];
 
     $key = array_search($thecompany, $corpid);
