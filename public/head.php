@@ -32,6 +32,10 @@ color: #D0ECF5 !important;
 color: #ffffff !important;
 }
 
+.navbar-inverse .navbar-nav>li>a .hover {
+color: #ffffff !important;
+}
+
 </style>
 </head>
 <body>
