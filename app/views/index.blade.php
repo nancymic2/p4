@@ -25,7 +25,7 @@
 
 
 <?php 
-$user = Auth::user();
+$user = Auth::user(id);
 echo '<a class="btn btn-success" href="/signup">sign up</a> <br> <p>&nbsp;</p>';
 echo '<a class="btn btn-primary" href="/login">&nbsp;log &nbsp;in&nbsp;</a> <p>&nbsp;</p>';
 //echo '<a class="btn btn-primary" href="/logout">&nbsp;log &nbsp;out</a> <br>';
