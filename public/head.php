@@ -42,7 +42,6 @@ $(document).ready(function()
   <div class="container" style="margin:30px;">
 <img style="float:left" src="http://p4.scholarpaws.com/train2.jpg">
 </div>
-</div>
   <!--<div class="jumbotron">-->
 
   <header class="navbar-inverse">
@@ -75,6 +74,8 @@ $(document).ready(function()
      
       
     </div><!-- /.navbar-collapse -->
-  <!--</div> container-fluid --> 
+</div>  <!--</div> container-fluid --> 
 </nav>
+</div>
+
 </header>
