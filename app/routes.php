@@ -1452,6 +1452,7 @@ Route::post('/applicationsrating',
 
   Route::get('application/edit/{id}', array('as' => 'application.edit', function($id) 
     {
+      $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
         // return our view and Nerd information
         return View::make('application-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
             ->with('application', Application::find($id));
