@@ -28,9 +28,9 @@
 
  <h5>Add expense to one of your companies</h5>
 
-  <!--   {{ Form::select('company_id', $company1_lists) }}  working. try below -->
+     {{ Form::select('company_id', $company1_lists) }}  
 
-       {{ Form::select('company_id', [null => '000000'] + $company1_lists) }}
+       <!--{{ Form::select('company_id', [null => '000000'] + $company1_lists) }} -->
 <br>
 
 <!--company_id<br>
