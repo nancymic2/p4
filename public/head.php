@@ -44,7 +44,7 @@ $(document).ready(function()
 </div>
   <!--<div class="jumbotron">-->
 
-  <header class="navbar">
+  <header class="navbar-inverse">
     <div class="container">
     <nav  role="navigation">
   <div class="container-fluid">
