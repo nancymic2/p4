@@ -422,12 +422,14 @@ foreach($completedapps as $completedapp) {
     //echo $completedapp['password']."<br>";
 
     //echo '<b>job name:</b> ';
-     echo '<a href="/application/edit/'.$app_id[$i];
-     echo '">';
+    echo $app_id[$i];
+    echo '  ';
+    echo '<a href="/application/edit/'.$app_id[$i];
+    echo '">';
     echo $completedapp['recnumber']; //job name
     echo '</a>';
-    echo '  ';
-    echo $app_id[$i];
+    
+    
     echo '</td>';
     
     echo '</tr>';
