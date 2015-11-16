@@ -13,7 +13,7 @@
 <br>
  {{ Form::model($application, array('route' => 'application.edit', $application->id)) }}    
 
-
+{{ Form::select('company_id', $company1_lists) }} <!--try -->
     company Name<br>
     {{ Form::text('company')}} 
 <br>
