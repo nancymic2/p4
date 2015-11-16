@@ -26,11 +26,11 @@
      <input class="date" name="exp_date" type="text" size="10"  id="exp_date" /><br>
 
 
-  <h5>Add expense to one of your companies</h5>
+ <!-- <h5>Add expense to one of your companies</h5>
 
      {{ Form::select('company_id', $company1_lists) }}
 <br>
-
+-->
 <!--company_id<br>
     {{ Form::text('company_id', '', array('class'=>'form-control'))}} -->
  <h5>Add expense to one of your jobs</h5>
