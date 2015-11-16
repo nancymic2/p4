@@ -426,6 +426,8 @@ foreach($completedapps as $completedapp) {
      echo '">';
     echo $completedapp['recnumber']; //job name
     echo '</a>';
+    echo '  ';
+    echo $app_id[$i];
     echo '</td>';
     
     echo '</tr>';
