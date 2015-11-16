@@ -16,13 +16,13 @@
 
     company Name<br>
     {{ Form::text('company')}} 
-
+<br>
     role<br>
     {{ Form::text('role')}} 
-
+<br>
     job name<br>
     {{ Form::text('recnumber')}} 
-
+<br>
     hire manager<br>
     {{ Form::text('hiringMgr')}} 
 
@@ -31,7 +31,7 @@
         {{ Form::submit('Update job') }}
 <br><br>
     {{ Form::close() }}
-<br>
+
 
 
 <br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
