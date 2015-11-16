@@ -26,17 +26,17 @@
      <input class="date" name="exp_date" type="text" size="10"  id="exp_date" /><br>
 
 
- <h5>Add expense to one of your companies</h5>
+ <!--<h5>Add expense to one of your companies</h5>-->
 
-    <!-- {{ Form::select('company_id', $company1_lists) }}  -->
+    <!--{{ Form::select('company_id', $company1_lists) }}  WORKING. REMOVE SO USER DOES NOT HAVE TO CHOOSE-->
 
-{{ Form::select('company_id', array($company1_lists, null, ['placeholder' => '000000']) }}
-       <!--{{ Form::select('company_id', [null => '000000'] + $company1_lists) }} -->
+
+       <!--{{ Form::select('company_id', [null => '000000'] + $company1_lists) }} WORKING DOES NOT PASS EXTRA VAL HOWEVER-->
 <br>
 
 <!--company_id<br>
     {{ Form::text('company_id', '', array('class'=>'form-control'))}} -->
- <h5>Add expense to one of your jobs</h5>
+ <h5>Associate expense with one of your jobs</h5>
     <!--{{ Form::text('application_id', '', array('class'=>'form-control'))}}  add select instead -->
 
      {{ Form::select('recnumber', $application_lists) }}
