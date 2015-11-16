@@ -1444,3 +1444,29 @@ Route::post('/applicationsrating',
   
 
 
+
+
+  Route::get('application/edit/{id}', array('as' => 'application.edit', function($id) 
+    {
+        // return our view and Nerd information
+        return View::make('application-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
+            ->with('application', Application::find($id));
+    }));
+
+    // route to process the form
+   Route::post('/application/edit/{id}', 
+    array(
+        'before' => 'csrf', 
+        function() {
+          $id =Input::get('id');
+           //$company  = Company::find(1);  got to get the co id. take from url if need be cause ive had enough
+           $application  = Application::find($id);  ///works when id is hardcoded
+            //$company->id   =Input::get('id');  //just added
+            $application->company   = Input::get('company');
+             $application->role   = Input::get('role');
+               $application->recnumber   = Input::get('recnumber');
+             $application->hiringMgr   = Input::get('hiringMgr');
+              $application->save();
+             return Redirect::to('/completedapps'); // YES NO? 
+}
+));
