@@ -30,7 +30,7 @@
 
   <!--   {{ Form::select('company_id', $company1_lists) }}  working. try below -->
 
-       {{ Form::select('company_id', [null => 'none'] + $company1_lists) }}
+       {{ Form::select('company_id', [null => 'NULL'] + $company1_lists) }}
 <br>
 
 <!--company_id<br>
