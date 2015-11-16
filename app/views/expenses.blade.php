@@ -22,6 +22,7 @@
 
 {{ Form::open(array('url' => '/expenses')) }}
 <br>
+ <h5>Date of expense</h5>
      <input class="date" name="exp_date" type="text" size="10"  id="exp_date" /><br>
 
 
