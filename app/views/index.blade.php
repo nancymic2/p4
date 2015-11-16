@@ -25,7 +25,9 @@
 
 
 <?php 
-$user = Auth::user(id);
+
+$user = Auth::user();
+$id = Auth::user()->id;
 echo '<a class="btn btn-success" href="/signup">sign up</a> <br> <p>&nbsp;</p>';
 echo '<a class="btn btn-primary" href="/login">&nbsp;log &nbsp;in&nbsp;</a> <p>&nbsp;</p>';
 //echo '<a class="btn btn-primary" href="/logout">&nbsp;log &nbsp;out</a> <br>';
@@ -34,7 +36,7 @@ echo '<a href="/changelast">change account</a> <br>';
 echo '<a href="/password/remind">change password</a> <br>';
 
 echo '<a href="/user/edit/';
-echo $user;
+echo $id;
 echo'">change acct info</a> <br>';
 //echo '<a href="logout">log out</a> <br>';
 ?>
