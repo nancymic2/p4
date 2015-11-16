@@ -63,11 +63,11 @@ $(document).ready(function()
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
   
-        <li><a href="/applications">Add a Job, Company, Resume</a></li>
-        <li><a href="/completedapps">View/edit Jobs, Company, Resume</a></li>
+        <li><a href="/applications">Add Job, Company, Resume</a></li>
+        <li><a href="/completedapps">View/Edit Jobs, Company, Resume</a></li>
         <li><a href="/expenses">Add Expenses</a></li>
         <li><a href="/expensereport">View/Edit Expenses</a></li>
-        <li><a href="/resumesearch">View Your Resumes</a></li>
+       
         <?php 
 
 $user = Auth::user();
