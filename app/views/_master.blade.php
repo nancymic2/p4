@@ -33,7 +33,7 @@ include 'head.php';
 @yield ('upload')
 @yield ('edit')
 @yield ('user-edit')
-
+@yield ('resume-edit')
 @yield ('application-edit')
 <!--/////////////////-->
 

@@ -1474,3 +1474,30 @@ Route::post('/applicationsrating',
              return Redirect::to('/completedapps'); // YES NO? 
 }
 ));
+
+
+
+  Route::get('resume/edit/{id}', array('as' => 'resume.edit', function($id) 
+    {
+        // return our view and Nerd information
+        return View::make('resume-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
+            ->with('resume', Resume::find($id));
+    }));
+
+    // route to process the form
+   Route::post('/resume/edit/{id}', 
+    array(
+        'before' => 'csrf', 
+        function() {
+          $id =Input::get('id');
+           //$company  = Company::find(1);  got to get the co id. take from url if need be cause ive had enough
+           $resume  = Resume::find($id);  ///works when id is hardcoded
+            //$company->id   =Input::get('id');  //just added
+              $resume->url   = Input::get('url');   //calulate later
+              $resume->name   = Input::get('name');
+              $resume->resumetext   = Input::get('resumetext');
+          
+              $resume->save();
+             return Redirect::to('/completedapps'); // YES NO? 
+}
+));
