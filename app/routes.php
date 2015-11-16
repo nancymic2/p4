@@ -297,7 +297,7 @@ include 'head.php';
       <th>Job rating</th>
       <th>Resume name</th>
       <th>Job link</th>
-      <th>Job name / ID</th>
+      <th>Job ID / name</th>
 
     </tr>  </thead>   <tbody>';
 $resum[]="";
