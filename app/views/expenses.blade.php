@@ -30,8 +30,7 @@
 
     <!-- {{ Form::select('company_id', $company1_lists) }}  -->
 
-        {{ Form::select('company_id', array($company1_lists, null, ['placeholder' => '000000']) }}
-
+{{ Form::select('company_id', array($company1_lists, null, ['placeholder' => '000000']) }}
        <!--{{ Form::select('company_id', [null => '000000'] + $company1_lists) }} -->
 <br>
 
