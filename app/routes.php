@@ -294,7 +294,7 @@ include 'head.php';
       <th>Hiring manager</th>
 
       <th>Follow up by</th>
-      <th>rating</th>
+      <th>Job rating</th>
       <th>Resume name</th>
       <th>Job link</th>
       <th>Job name</th>
