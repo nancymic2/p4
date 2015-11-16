@@ -28,6 +28,9 @@
 .navbar-inverse .navbar-nav>li>a {
 color: #D0ECF5 !important;
 }
+.navbar-inverse .navbar-nav>li>a:active {
+color: #ffffff !important;
+}
 
 </style>
 </head>
