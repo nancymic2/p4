@@ -281,7 +281,7 @@ include 'head.php';
   <caption>
   <h3>Sort Your Applications by field</h3>
   <h4>Click Company to see or edit Company record</h4>
-  <h4>Click Resume to see or edit Resume record (not hooked up yet)</h4>
+  <h4>Click Resume to see or edit Resume record</h4>
   <h4>Click Job name to see or edit Job record </h4>
   </caption>
   <thead>
