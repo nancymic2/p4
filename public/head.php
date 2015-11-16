@@ -68,6 +68,17 @@ $(document).ready(function()
         <li><a href="/expensereport">View Expenses</a></li>
         <li><a href="/completedapps">View Your Jobs</a></li>
         <li><a href="/resumesearch">View Your Resumes</a></li>
+        <?php 
+
+$user = Auth::user();
+$id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, not an array/object of
+
+
+echo '<li><a href="/user/edit/';
+echo $id;
+echo'">change acct info</a> </li>';
+//echo '<a href="logout">log out</a> <br>';
+?>
         <li><a href="/logout">Log Out</a></li>
       
       </ul>
