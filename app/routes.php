@@ -759,6 +759,7 @@ Route::get('expenses', array('before' => 'auth', function()
 
             $expense = new Expense;
             $expense->user()->associate(Auth::user());
+             $expense->exp_date   = Input::get('exp_date');
             $expense->company_id   = Input::get('company_id');   ////  add to dropdown later
             $expense->application_id   = Input::get('recnumber');  ////  add to dropdown later
          
