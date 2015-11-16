@@ -91,7 +91,7 @@ echo'">Edit acct info</a> </li>';
 
 </header>
 <style>
-a:{
+.nav navbar-nav:{
   color: red;
 }
 </style>
