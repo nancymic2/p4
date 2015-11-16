@@ -90,8 +90,3 @@ echo'">Edit acct info</a> </li>';
 </div>
 
 </header>
-<style type="text/css">
-.nav navbar-nav {
-  color: red !important;
-}
-</style>
