@@ -48,13 +48,13 @@
   $companies = Company::where('user_id', '=', Auth::user()->id)->get();
     
   echo '<div class="container">'; 
-  echo '<h2>Your Companies</h2>';
+
 
   echo '<p>';
   echo '<table border="2" cellpadding="4" style="width: 40%; table-layout: fixed;"> 
     <tr>  
-      <td>Company name</td>
-      <td>Company ID</td>
+      <td><b>Company name</b></td>
+      <td><b>Company ID</b></td>
       
       </tr>';
 //# loop through the Collection and access just the data
