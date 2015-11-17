@@ -1449,7 +1449,9 @@ Route::post('/applicationsrating',
 
 
 
+/*
 
+///////////try to get company name ////////////////////////////////////////////////////////
   Route::get('application/edit/{id}', array('as' => 'application.edit', function($id) 
     {
       $i=0;
@@ -1482,6 +1484,19 @@ Route::post('/applicationsrating',
     return View::make('application-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
             ->with('application', Application::find($id), ['company' => $companyname], ['company_lists' => $company_lists] );
     }));
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+  Route::get('application/edit/{id}', array('as' => 'application.edit', function($id) 
+    {
+      $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
+        // return our view 
+        return View::make('application-edit') // pulls app/views/application-edit.blade.php use company/edit/1 or other id number
+            ->with('application', Application::find($id));
+    }));
+
 
     // route to process the form
    Route::post('/application/edit/{id}', 
