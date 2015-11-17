@@ -115,7 +115,7 @@ $(document).ready(function()
         <li><a href="/expensereport">Edit Expenses</a></li>-->
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="href="/applications"">add job</a></li>
+            <li><a href="href=/applications">add job</a></li>
             <li><a href="/completedapps">see jobs</a></li>
             <li><a href="#">Page 1-3</a></li>
           </ul>
@@ -178,3 +178,4 @@ echo'">Edit acct info</a> </li>';
 </div>
 
 </header>
+</div>
