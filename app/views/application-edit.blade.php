@@ -12,11 +12,7 @@
 <h3>View or Edit Appication</h3>
 <br>
 
-{{ Form::open(array('url' => '/applications')) }}
-     <h4>Select existing company</h4>
-    {{ Form::select('company_id', $company_lists) }}
 
-    {{ Form::close() }}
 
  {{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company)) }}    
 
