@@ -77,7 +77,7 @@ $i++;
 
  
   }
-      echo '</table>';
+      echo '</table><br><br>';
   ?>
 </div>
 
