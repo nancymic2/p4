@@ -12,11 +12,8 @@
 <h3>View or Edit Appication</h3>
 <br>
 
-<?php
-echo $company;
-?>
 
- {{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company, $company->company)) }}    
+ {{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company)) }}    
 
 
 <br>
