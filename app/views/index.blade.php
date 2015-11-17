@@ -32,8 +32,8 @@ $id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, n
 echo '<a class="btn btn-success" href="/signup">sign up</a> <br> <p>&nbsp;</p>';
 echo '<a class="btn btn-primary" href="/login">&nbsp;log &nbsp;in&nbsp;</a> <p>&nbsp;</p>';
 //echo '<a class="btn btn-primary" href="/logout">&nbsp;log &nbsp;out</a> <br>';
-echo '<a href="/account">get account details</a> <br>';
-echo '<a href="/changelast">change account</a> <br>';
+//echo '<a href="/account">get account details</a> <br>';
+//echo '<a href="/changelast">change account</a> <br>';
 echo '<a href="/password/remind">change password</a> <br>';
 
 echo '<a href="/user/edit/';
