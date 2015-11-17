@@ -4,7 +4,9 @@
 @section ('application-edit')
 
 
-
+<div class="container">
+<div class="col-sm-6">
+<h2>&nbsp;</h2>
 
 
 <h3>View or Edit Appication</h3>
@@ -83,7 +85,8 @@ $i++;
       echo '</table><br><br>';
   ?>
 </div>
-
+</div>
+</div>
 
 <!-- note use email as the type vs text if you want validation -->
 @stop
