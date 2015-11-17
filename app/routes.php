@@ -1452,10 +1452,20 @@ Route::post('/applicationsrating',
 
   Route::get('application/edit/{id}', array('as' => 'application.edit', function($id) 
     {
+      $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
       $companies = Company::where('user_id', '=', Auth::user()->id)->get();//just added
+
+  // echo $corp[$i];
+  // echo $corpid[$i];
+
+       $thecompany=$completedapp['company'];
+      $coname= $companies[$thecompany]->company->get();
+
+    
+
         // return our view and Nerd information
         return View::make('application-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
-            ->with('application', Application::find($id));
+            ->with('application', Application::find($id), $coname);
     }));
 
     // route to process the form
