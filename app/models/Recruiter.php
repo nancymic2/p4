@@ -16,4 +16,5 @@ class Recruiter extends Eloquent
         return $this->belongsTo('Company');
     }
 
+
 }
