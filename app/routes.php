@@ -1587,7 +1587,7 @@ foreach($companies as $company) {
 
     echo '<tr>';
     echo '<td>';
-    echo $company['Company'];
+    echo $company['company'];
 
     echo '</td>';
     echo '<td>';
