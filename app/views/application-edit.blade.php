@@ -12,7 +12,7 @@
 <h3>View or Edit Appication</h3>
 <br>
  {{ Form::model($application, array('route' => 'application.edit', $application->id)) }}    
-<!--{{ Form::select('company_id', $company_lists) }} -->
+
 
     company Name<br>
     {{ Form::text('company')}} 
