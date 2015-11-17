@@ -17,7 +17,8 @@
 
 
 <br>
-    company Name<br>
+    company ID<br>
+    Note, if you want to associate with another company, you must view your companies and change thi ID accordingly.<br>
     {{ Form::text('company')}} 
 <br>
     role<br>
