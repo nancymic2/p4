@@ -55,9 +55,9 @@
   echo '<table border="2" cellpadding="4" style="width: 40%; table-layout: fixed;"> 
     <tr>  
       <td bgcolor="#eeeeee"><b>Company ID</b></td>
-      <td><b>Company name</b></td>
-      <td><b>Company ID</b></td>
-      <td><b>Company name</b></td>
+      <td bgcolor="#eeeeee"><b>Company name</b></td>
+      <td bgcolor="#eeeeee"><b>Company ID</b></td>
+      <td bgcolor="#eeeeee"><b>Company name</b></td>
          
       </tr><tr>';
       $i=2;
