@@ -90,11 +90,11 @@ $(document).ready(function()
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
   
-        <li><a href="/applications">Add Job, Company, Resume</a></li>
-        <li><a href="/completedapps">View/Edit Jobs, Company, Resume</a></li>
-         <li><a href="/companyreport">View/Edit Companies</a></li>
-        <li><a href="/expenses">Add Expenses</a></li>
-        <li><a href="/expensereport">View/Edit Expenses</a></li>
+        <li><a href="/applications"><b>+</b>Job, Company, Resume</a></li>
+        <li><a href="/completedapps">Edit Jobs, Company, Resume</a></li>
+         <li><a href="/companyreport">Edit Companies</a></li>
+        <li><a href="/expenses"><b>+</b>Expenses</a></li>
+        <li><a href="/expensereport">Edit Expenses</a></li>
        
         <?php 
 
