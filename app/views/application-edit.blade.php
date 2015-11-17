@@ -51,7 +51,7 @@
 
 
   echo '<p>';
-  echo '<table border="2" cellpadding="4" style="width: 40%; table-layout: fixed;"> 
+  echo '<table border="2" cellpadding="4" style="width: 30%; table-layout: fixed;"> 
     <tr>  
       <td><b>Company name</b></td>
       <td><b>Company ID</b></td>
@@ -71,7 +71,7 @@ foreach($companies as $company) {
     
     echo '</tr>';
 
-    echo '</table><table border="1" cellpadding="4" style="width: 40%; table-layout: fixed;">';
+    echo '</table><table border="1" cellpadding="4" style="width: 30%; table-layout: fixed;">';
  
   }
   ?>
