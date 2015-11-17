@@ -54,7 +54,7 @@
 
   echo '<p>';
   echo '<table border="2" cellpadding="4" style="width: 40%; table-layout: fixed;">';
-echo '<tr><td colspan="4"><b><a href="#" onclick="document.getElementById("companies").style.display="none";">Close</a></b></td></tr>'; 
+
    
 
    echo '<tr>  
