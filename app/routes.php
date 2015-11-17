@@ -1587,7 +1587,14 @@ foreach($companies as $company) {
 
     echo '<tr>';
     echo '<td>';
+  
+
+
+    echo '<a href="/company/edit/'.$company['id'];  ///
+    echo '">';  ////
     echo $company['company'];
+    echo '</a>';  
+
 
     echo '</td>';
     echo '<td>';
