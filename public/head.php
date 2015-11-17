@@ -108,26 +108,48 @@ $(document).ready(function()
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
   
-        <li><a href="/applications"><b>+</b>Job, Company, Resume</a></li>
+        <!--<li><a href="/applications"><b>+</b>Job, Company, Resume</a></li>
         <li><a href="/completedapps">Edit Jobs, Company, Resume</a></li>
          <li><a href="/companyreport">Edit Companies</a></li>
         <li><a href="/expenses"><b>+</b>Expenses</a></li>
-        <li><a href="/expensereport">Edit Expenses</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <li><a href="/expensereport">Edit Expenses</a></li>-->
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="href="/applications"">add job</a></li>
+            <li><a href="/completedapps">see jobs</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Resumes<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/applications">add resume</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Companies<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/companyreport">see companies</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Expenses<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/expensereport">Expense report</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recruiters<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Page 1-1</a></li>
             <li><a href="#">Page 1-2</a></li>
             <li><a href="#">Page 1-3</a></li>
           </ul>
         </li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Your Account<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Page 1-1</a></li>
             <li><a href="#">Page 1-2</a></li>
