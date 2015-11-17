@@ -14,7 +14,7 @@
                     $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
                     })
                 </script>
-        </head>
+        <!--</head>-->
 <div class="container">
     <div class="col-sm-6">
 
