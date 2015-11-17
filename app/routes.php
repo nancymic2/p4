@@ -1564,7 +1564,8 @@ $stylesend='</body></html>';
   echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4" style="width: 100%; table-layout: fixed;"> 
 
   <caption>
-  Sort Your Companies by field
+  <h4>Sort Your Companies by field</h4>
+  <h4>Click company name to edit company</h4>
   </caption>
   <thead>
     <tr>  
