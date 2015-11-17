@@ -11,6 +11,9 @@
 
 <h3>View or Edit Appication</h3>
 <br>
+<?php 
+echo $companyname;
+?>
  {{ Form::model($application, array('route' => 'application.edit', $application->id)) }}    
 
 
