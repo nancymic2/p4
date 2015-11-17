@@ -54,7 +54,7 @@
   echo '<p>';
   echo '<table border="2" cellpadding="4" style="width: 40%; table-layout: fixed;"> 
     <tr>  
-      <td><b>Company ID</b></td>
+      <td bgcolor="#eeeeee"><b>Company ID</b></td>
       <td><b>Company name</b></td>
       <td><b>Company ID</b></td>
       <td><b>Company name</b></td>
