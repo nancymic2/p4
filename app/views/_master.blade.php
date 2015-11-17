@@ -1,6 +1,6 @@
 <?php
 
-//took out head 11/17 432pm
+include 'head.php';
 
 ?>
 @yield ('index')
