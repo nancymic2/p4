@@ -1458,7 +1458,7 @@ Route::post('/applicationsrating',
   // echo $corp[$i];
   // echo $corpid[$i];
 
-       $thecompany=$completedapp['company'];
+       $thecompany=$completedapps['company'];
       $coname= $companies[$thecompany]->company->get();
 
     
