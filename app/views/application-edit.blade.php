@@ -19,8 +19,7 @@
 <br>
     
     If you want to associate this job with another company, you must <b><a href="#" onclick='document.getElementById("companies").style.display="block";'>view your companies</a></b> 
-    and change this ID accordingly.<br> <b><a href="#" onclick='document.getElementById("companies").style.display="none";'>Close</a></b> 
-   .<br>
+    and change this ID accordingly.<br> 
     You may see all of your <a href="/companyreport">full company records here.</a><br>
     company ID<br>
     {{ Form::text('company')}} 
@@ -45,7 +44,8 @@
 <br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
 
 <div id="companies" style="display:none; position: absolute; top: 200px; left: 200px; z-index: 5;">
-
+<b><a href="#" onclick='document.getElementById("companies").style.display="none";'>Close</a></b> 
+   <br>
 <?php
   $companies = Company::where('user_id', '=', Auth::user()->id)->get();
     
