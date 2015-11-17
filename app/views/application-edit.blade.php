@@ -20,6 +20,7 @@
     
     Note, if you want to associate with another company, you must <a href="#" onclick='document.getElementById("companies").style.display="block";'>view your companies</a> 
     and change this ID accordingly.<br>
+    You may see all of your <a href="/companyreport">full company records here.</a>
     company ID<br>
     {{ Form::text('company')}} 
 <br>
