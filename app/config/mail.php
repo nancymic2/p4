@@ -29,7 +29,7 @@ return array(
 	*/
 
 	//'host' => 'smtp.gmail.com',
-	'host' => 'smtp.mail.yahoo.com',
+	'host' => 'smtp.gmail.com',
 
 
 	/*
@@ -56,7 +56,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'career_trax@mail.yahoo.com', 'name' => 'careerTrax'),
+	'from' => array('address' => 'yourcareertrax@gmail.com', 'name' => 'yourcareerTrax'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -95,7 +95,7 @@ return array(
 	|
 	*/
 
-	'password' => '33jobsstreet',
+	'password' => '106hollywood',
 
 	/*
 	|--------------------------------------------------------------------------
