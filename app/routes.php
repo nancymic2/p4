@@ -1457,32 +1457,27 @@ Route::post('/applicationsrating',
       $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
       $companies = Company::where('user_id', '=', Auth::user()->id)->get();//just added
       $corp[]="";
-$corpid[]="";
+      $corpid[]="";
     foreach($companies as $company) {
-   $k++;
-   $corp[$k] = $company->company;
-   $corpid[$k] = $company->id;  ///get this users compnanies into array
-  // echo $corp[$i];
-  // echo $corpid[$i];
- }
+       $k++;
+       $corp[$k] = $company->company; //array of company names
+       $corpid[$k] = $company->id;  ///array or that co ids
+      // echo $corp[$i];
+      // echo $corpid[$i];
+    }
 
-foreach($completedapps as $completedapp) {
-   $i++;
-   $app_id[$i] = $completedapp->id;  //get this users comp apps into array
+    foreach($completedapps as $completedapp) {
+       $i++;
+       $app_id[$i] = $completedapp->id;  //get this user's completedapps into array
 
-    $thecompany=$completedapp['company']; //array of company ids
-  }
+       $thecompany=$completedapp['company']; //create array of the company ids stored in those completed apps records
+    }
 
-    $key = array_search($thecompany, $corp); //get index to the NAME of the co
+    $key = array_search($thecompany, $corp); //get index to the NAME of the company (company is table name AND name of company)
 
-    $companyname= $corp[$key];
+    $companyname= $corp[$key]; //should be the name of the company indexed by company id of available application records
 
-
-
-    
-
-        // return our view and Nerd information
-        return View::make('application-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
+    return View::make('application-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
             ->with('application', Application::find($id), ['company' => $companyname]);
     }));
 

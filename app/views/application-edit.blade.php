@@ -14,7 +14,9 @@
 
  {{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company)) }}    
 
-
+<br>
+{{ Form::select('company_id', $company_lists) }} 
+<br>
     company Name<br>
     {{ Form::text('company')}} 
 <br>
