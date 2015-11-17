@@ -1483,7 +1483,7 @@ foreach($completedapps as $completedapp) {
 
         // return our view and Nerd information
         return View::make('application-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
-            ->with('application', Application::find($id), $companyname);
+            ->with('application', Application::find($id), ['company' => $companyname]);
     }));
 
     // route to process the form
