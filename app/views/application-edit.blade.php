@@ -8,7 +8,7 @@
 <div class="col-sm-6">
 <h2>&nbsp;</h2>
 
-
+<div class ="form-control">
 <h3>View or Edit Appication</h3>
 <br>
  {{ Form::model($application, array('route' => 'application.edit', $application->id)) }}    
@@ -33,7 +33,7 @@
     {{ Form::close() }}
 
 
-
+</div>
 <br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
 <!-- note use email as the type vs text if you want validation -->
 @stop
