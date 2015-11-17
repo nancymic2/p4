@@ -1543,7 +1543,7 @@ Route::post('/applicationsrating',
 }
 ));
 
-   
+
 
 
 
@@ -1561,7 +1561,7 @@ $stylesend='</body></html>';
   echo '<h2>Your Companies</h2>';
 
   echo '<p>';
-  echo '<table id="myTable2" class="tablesorter" border="2" cellpadding="4" style="width: 100%; table-layout: fixed;"> 
+  echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4" style="width: 100%; table-layout: fixed;"> 
 
   <caption>
   Sort Your Companies by field
