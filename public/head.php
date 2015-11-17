@@ -55,8 +55,7 @@ color: #ffffff !important;
 }
 
 </style>
-</head>
-<body>
+
 <script type="text/javascript" >
 $(document).ready(function() 
 { 
