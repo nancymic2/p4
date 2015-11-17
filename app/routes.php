@@ -1452,6 +1452,8 @@ Route::post('/applicationsrating',
 
   Route::get('application/edit/{id}', array('as' => 'application.edit', function($id) 
     {
+      $i=0;
+      $k=0;
       $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
       $companies = Company::where('user_id', '=', Auth::user()->id)->get();//just added
       $corp[]="";
