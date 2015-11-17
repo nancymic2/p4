@@ -1456,6 +1456,7 @@ Route::post('/applicationsrating',
       $k=0;
       $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
       $companies = Company::where('user_id', '=', Auth::user()->id)->get();//just added
+      $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
       $corp[]="";
       $corpid[]="";
     foreach($companies as $company) {
@@ -1478,7 +1479,7 @@ Route::post('/applicationsrating',
     $companyname= $corp[$key]; //should be the name of the company indexed by company id of available application records
 
     return View::make('application-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
-            ->with('application', Application::find($id), ['company' => $companyname]);
+            ->with('application', Application::find($id), ['company' => $companyname], 'company_lists' => $company_lists );
     }));
 
     // route to process the form
