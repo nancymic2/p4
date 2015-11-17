@@ -18,7 +18,7 @@
 
 <br>
     
-    Note, if you want to associate with another company, you must view your companies and change this ID accordingly.<br>
+    Note, if you want to associate with another company, you must <a href="/companyreport" target="_blank">view your companies</a> and change this ID accordingly.<br>
     company ID<br>
     {{ Form::text('company')}} 
 <br>
