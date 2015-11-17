@@ -53,8 +53,11 @@
 
 
   echo '<p>';
-  echo '<table border="2" cellpadding="4" style="width: 40%; table-layout: fixed;"> 
-    <tr>  
+  echo '<table border="2" cellpadding="4" style="width: 40%; table-layout: fixed;">';
+echo '<tr><td colspan="4"></td></tr><b><a href="#" onclick='document.getElementById("companies").style.display="none";'>Close</a></b>'; 
+   
+
+   echo '<tr>  
       <td bgcolor="#eeeeee"><b>Company ID</b></td>
       <td bgcolor="#eeeeee"><b>Company name</b></td>
       <td bgcolor="#eeeeee"><b>Company ID</b></td>
