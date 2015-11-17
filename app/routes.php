@@ -1479,7 +1479,7 @@ Route::post('/applicationsrating',
     $companyname= $corp[$key]; //should be the name of the company indexed by company id of available application records
 
     return View::make('application-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
-            ->with('application', Application::find($id), ['company' => $companyname], 'company_lists' => $company_lists );
+            ->with('application', Application::find($id), ['company' => $companyname], ['company_lists' => $company_lists] );
     }));
 
     // route to process the form
