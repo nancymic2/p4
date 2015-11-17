@@ -38,7 +38,7 @@ echo '<a href="/password/remind">change password</a> <br>';
 
 echo '<a href="/user/edit/';
 echo $id;
-echo'">change acct info</a> <br>';
+//echo'">change acct info</a> <br>';
 //echo '<a href="logout">log out</a> <br>';
 ?>
 
