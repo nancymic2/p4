@@ -1,5 +1,5 @@
 
-<?php
+
 
 
 Route::get('companyreport', array('before' => 'auth', function()

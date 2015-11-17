@@ -55,12 +55,15 @@
     <tr>  
       <td><b>Company name</b></td>
       <td><b>Company ID</b></td>
+      <td><b>Company name</b></td>
+      <td><b>Company ID</b></td>
       
-      </tr>';
+      </tr><tr>';
+      $i=2;
 //# loop through the Collection and access just the data
 foreach($companies as $company) {
+$i++;
 
-    echo '<tr>';
     echo '<td>';
  ////
     echo $company['id'];
@@ -68,12 +71,13 @@ foreach($companies as $company) {
     echo '<td>';
     echo $company['company'];    
     echo '</td>';
-    
-    echo '</tr>';
+    if ($i%2==0) {
+        echo '</tr><tr>';
+    }
 
-    echo '</table><table border="1" cellpadding="4" style="width: 30%; table-layout: fixed;">';
  
   }
+      echo '</table>;
   ?>
 </div>
 
