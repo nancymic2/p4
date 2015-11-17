@@ -18,7 +18,7 @@
 
 <br>
     
-    Note, if you want to associate this job application with another company, you must <a href="#" onclick='document.getElementById("companies").style.display="block";'>view your companies</a> 
+    If you want to associate this job with another company, you must <b><a href="#" onclick='document.getElementById("companies").style.display="block";'>view your companies</a></b> 
     and change this ID accordingly.<br>
     You may see all of your <a href="/companyreport">full company records here.</a><br>
     company ID<br>
