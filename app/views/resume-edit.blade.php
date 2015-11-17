@@ -20,7 +20,7 @@
     {{ Form::text('name')}} 
 <br>
     notes<br>
-    {{ Form::text('resumetext')}} 
+    {{ Form::textarea('resumetext')}} 
 
 
   <br><br>
