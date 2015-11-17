@@ -16,7 +16,7 @@
 echo $company;
 ?>
 
- {{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company)) }}    
+ {{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company, $company->company)) }}    
 
 
 <br>
