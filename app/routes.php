@@ -1454,7 +1454,7 @@ Route::post('/applicationsrating',
     {
       $i=0;
       $k=0;
-      $completedapps = Application::where('user_id', '=', Auth::user()->id)->get();
+       $user = Auth::user();cation::where('user_id', '=', Auth::user()->id)->get();
       $companies = Company::where('user_id', '=', Auth::user()->id)->get();//just added
       $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
       $corp[]="";
