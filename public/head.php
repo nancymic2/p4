@@ -64,8 +64,13 @@ $(document).ready(function()
 ); 
  
 function droplist(){
-document.getElementById("dd1").childNodes.style.display="block";
 
+     var childNodes = document.getElementById("dd1").childNodes;
+        for(var i=0; i<childNodes.length; i++) {
+
+           childNodes[i].style.display="block";
+
+        }
 }
 
 </script>
