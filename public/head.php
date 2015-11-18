@@ -96,6 +96,10 @@ $(document).ready(function()
       </ul>
     </li>
   <li><a href="#" >Help</a></li>
+              <li><a href="#">SubMenu 1</a></li>
+            <li><a href="#">SubMenu 2</a></li>
+            <li><a href="#">SubMenu 3</a></li>
+            <li><a href="#">SubMenu 4</a></li>
   </ul>
 </nav>
 
