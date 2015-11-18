@@ -154,7 +154,7 @@ $(document).ready(function()
 
 
 
-        <?php 
+<!--<?php 
 
 $user = Auth::user();
 $id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, not an array/object of
@@ -165,7 +165,7 @@ echo $id;
 echo'">Edit acct info</a> </li>';
 //echo '<a href="logout">log out</a> <br>';
 ?>
-       
+ -->      
       
 
 </div>
