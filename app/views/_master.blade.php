@@ -1,4 +1,8 @@
+<?php
 
+include 'head.php';
+
+?>
 @yield ('index')
 
 @yield ('resume')
