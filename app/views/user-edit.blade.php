@@ -2,7 +2,7 @@
 @extends('_master')
 
 @section ('user-edit')
-<link rel="stylesheet" href="css/MenuStyle.css">
+<link rel="stylesheet" href="../../public/css/MenuStyle.css">
 
 <div class="container">
 <div class="col-sm-6">
