@@ -122,22 +122,35 @@ $(document).ready(function()
               <li><a href="#">Service 4</a></li>
             </ul>
           </li>
-      <li><a href="#">Companies</a>
-                    <ul>
-               <li><a href="/applications">Add</a></li>
-              <li><a href="/companyreport">View All</a>
-                <ul>
-                  <li><a href="#">SubMenu 1</a></li>
-                  <li><a href="#">SubMenu 2</a></li>
-                  <li><a href="#">SubMenu 3</a></li>
-                  <li><a href="#">SubMenu 4</a></li>
-                </ul>         
-              </li>         
-              <li><a href="#">Service 4</a></li>
-            </ul>
-          </li>
+        <li><a href="#">Companies</a>
+                      <ul>
+                 <li><a href="/applications">Add</a></li>
+                <li><a href="/companyreport">View All</a>
+                  <ul>
+                    <li><a href="#">SubMenu 1</a></li>
+                    <li><a href="#">SubMenu 2</a></li>
+                    <li><a href="#">SubMenu 3</a></li>
+                    <li><a href="#">SubMenu 4</a></li>
+                  </ul>         
+                </li>         
+                <li><a href="#">Service 4</a></li>
+              </ul>
+            </li>
       <li><a href="#">SubMenu 3</a></li>
-      <li><a href="#">SubMenu 4</a></li>
+      <li><a href="#">Goodies</a>
+                      <ul>
+                 <li><a href="/charter">Salary Chart</a></li>
+                  <li><a href="/charter">Ratings</a>
+                  <ul>
+                    <li><a href="#">SubMenu 1</a></li>
+                    <li><a href="#">SubMenu 2</a></li>
+                    <li><a href="#">SubMenu 3</a></li>
+                    <li><a href="#">SubMenu 4</a></li>
+                  </ul>         
+                </li>         
+                <li><a href="#">Service 4</a></li>
+              </ul>
+            </li>
   </ul>
 </nav>
 
