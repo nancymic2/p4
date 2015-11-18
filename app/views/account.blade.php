@@ -13,9 +13,9 @@ $user = Auth::user();
 $id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, not an array/object of
 
 
-echo '<li><a href="/user/edit/';
+echo '<h3><a href="/user/edit/';
 echo $id;
-echo'">Edit acct info</a> </li>';
+echo'">Edit acct info</a> </h3>';
 //echo '<a href="logout">log out</a> <br>';
 
 //CANNOT TRY TO ACCESS THIS ON ANY GUEST PAGE
