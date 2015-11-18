@@ -94,7 +94,7 @@ $(document).ready(function()
                   <li><a href="#">SubMenu 4</a></li>
                 </ul> -->        
               </li>         
-              <li><a href="#">Service 4</a></li>
+              <li><a href="/account">Edit Account</a></li>
             </ul>
           </li>
       <li><a href="#" >Help</a></li>

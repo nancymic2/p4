@@ -1423,7 +1423,7 @@ Route::post('/applicationsrating',
 
   Route::get('user/edit/{id}', array('as' => 'user.edit', 'before' => 'auth', function($id)  //just added before
     {
-     
+
         $user = Auth::user();// just added 
         return View::make('user-edit') // pulls app/views/nerd-edit.blade.php use user/edit/1 or other id number
             ->with('user', User::find($id));  ///change $id to $user
@@ -1654,3 +1654,10 @@ echo '</p>';
 echo '<br><br>';
  echo $stylesend;   
 }));
+
+Route::get('account', array('before' => 'auth', function()
+         {
+            return View::make('account');
+        }
+    )
+);
