@@ -75,7 +75,7 @@ $(document).ready(function()
   <!--<div class="jumbotron">-->
 
 
-<div id="wrapper">
+<div id="wrapper" style="clear:all;">
 
 <nav id="nav">
   <ul id="navigation">
