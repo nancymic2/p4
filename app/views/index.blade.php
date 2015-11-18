@@ -3,9 +3,7 @@
 
 @section ('index')
 
-<div class="container">
-	<div class="col-sm-6"
-<h2>&nbsp;</h2>
+
 <h2>Welcome to CareerTrax!</h2>
 <p>test credentials: user test@test.com, password: testtest</p>
 <p>To see some data, try user: 4@5.com,  password: 123456
@@ -21,9 +19,5 @@
 </p>
 
 
-
-</div>
-
-</div>
 
 @stop

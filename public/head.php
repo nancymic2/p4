@@ -39,147 +39,65 @@
 <script type="text/javascript" src="js/jquery-latest.js"></script> 
 <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script> 
 
-<style type="text/css">
-#myTable > thead{
-  cursor: pointer;
-} 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-.navbar-inverse .navbar-nav>li>a {
-color: #D0ECF5 !important;
-}
-.navbar-inverse .navbar-nav>li>a:active {
-color: #ffffff !important;
-}
+    <title>Bootstrap 3, from LayoutIt!</title>
 
-.navbar-inverse .navbar-nav>li>a:hover {
-color: #ffffff !important;
-}
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
 
-</style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-<script type="text/javascript" >
-$(document).ready(function() 
-{ 
-  $("#myTable").tablesorter(); 
-} 
-); 
- 
+  </head>
+  <body>
 
-
-</script>
-</head>
-<body>
-
-  <div class="container" style="margin:30px;">
-  <img style="float:left" src="http://p4.scholarpaws.com/train2.jpg">
-</div>
-  <!--<div class="jumbotron">-->
-
-
-<div id="wrapper" style="clear:all; margin-top: -30px;">
-
-<nav id="nav">
-  <ul id="navigation">
-    <li><a href="/">Home</a></li>
-    <li><a href="#">Account</a>
-            <ul>
-            
-            
-                <li><a href="/signup">Sign Up</a></li>
-               <li><a href="/logout">Log Out</a></li>
-              <li><a href="/password/remind">Change Password</a>
-                <!--<ul>
-                  <li><a href="#">SubMenu 1</a></li>
-                  <li><a href="#">SubMenu 2</a></li>
-                  <li><a href="#">SubMenu 3</a></li>
-                  <li><a href="#">SubMenu 4</a></li>
-                </ul> -->        
-              </li>         
-              <li><a href="/account">Edit Account</a></li>
-            </ul>
-          </li>
-      
-      <li><a href="#">Jobs</a>
-                    <ul>
-               <li><a href="/applications">Add</a></li>
-              <li><a href="/completedapps">View All</a>
-                <ul>
-                  <li><a href="#">SubMenu 1</a></li>
-                  <li><a href="#">SubMenu 2</a></li>
-                  <li><a href="#">SubMenu 3</a></li>
-                  <li><a href="#">SubMenu 4</a></li>
-                </ul>         
-              </li>         
-              <li><a href="#">Service 4</a></li>
-            </ul>
-          </li>
-        <li><a href="#">Companies</a>
-                      <ul>
-                 <li><a href="/company">Add</a></li>
-                <li><a href="/companyreport">View All</a>
-                  <ul>
-                    <li><a href="#">SubMenu 1</a></li>
-                    <li><a href="#">SubMenu 2</a></li>
-                    <li><a href="#">SubMenu 3</a></li>
-                    <li><a href="#">SubMenu 4</a></li>
-                  </ul>         
-                </li>         
-                <li><a href="#">Service 4</a></li>
-              </ul>
+    <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron">
+        <h2>
+          Hello, world!
+        </h2>
+        <p>
+          This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+        </p>
+        <p>
+          <a class="btn btn-primary btn-large" href="#">Learn more</a>
+        </p>
+      </div>
+      <ul class="nav nav-pills">
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Profile</a>
+        </li>
+        <li class="disabled">
+          <a href="#">Messages</a>
+        </li>
+        <li class="dropdown pull-right">
+           <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<strong class="caret"></strong></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#">Action</a>
             </li>
-        <li><a href="#">Resumes</a>
-                      <ul>
-                 <li><a href="/resume">Add</a></li>
-                <li><a href="/companyreport">View All</a>
-                         
-                </li>         
-                <li><a href="#">Service 4</a></li>
-              </ul>
+            <li>
+              <a href="#">Another action</a>
             </li>
-        <li><a href="#">Contacts</a>
-                      <ul>
-                 <li><a href="/recruiters">Add</a></li>
-                <li><a href="/recruitersreport">View All</a>
-                         
-                </li>         
-                <li><a href="#">Service 4</a></li>
-              </ul>
+            <li>
+              <a href="#">Something else here</a>
             </li>
-      <li><a href="#">Expenses</a>
-               <ul>
-                 <li><a href="/expenses">Add Expenses</a></li>
-                  <li><a href="/expensereport">View all Expenses</a>
-                          
-                </li>         
-                <li><a href="#">Service 4</a></li>
-              </ul>
+            <li class="divider">
             </li>
-      <li><a href="#">Goodies</a>
-              <ul>
-                 <li><a href="/charter">Salary Chart</a></li>
-                  <li><a href="/charter">Ratings</a>
-                  <ul>
-                    <li><a href="#">SubMenu 1</a></li>
-                    <li><a href="#">SubMenu 2</a></li>
-                    <li><a href="#">SubMenu 3</a></li>
-                    <li><a href="#">SubMenu 4</a></li>
-                  </ul>         
-                </li>         
-                <li><a href="#">Service 4</a></li>
-              </ul>
+            <li>
+              <a href="#">Separated link</a>
             </li>
-      
-      <li><a href="/about">About</a></li>
-      <li><a href="#" >Help</a></li>
-      <li><a href="/login">Log In</a></li>
-  </ul>
-</nav>
-
-</div><!--end wrapper-->
-
-<br>
-
-
-</div>
-<br>
- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+          </ul>
+        </li>
+      </ul>

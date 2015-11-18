@@ -2,8 +2,7 @@
 
 @section ('account')
 
-<div class="container">
-	<div class="col-sm-6">
+
 <h2>View/edit account info</h2>
 
 
@@ -27,6 +26,5 @@ echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
 
 ?>
 
-</div>
-</div>
+
 @stop
