@@ -152,6 +152,7 @@ $(document).ready(function()
               </ul>
             </li>
       <li><a href="/login">Log In</a></li>
+      <li><a href="/about">About</a></li>
   </ul>
 </nav>
 
