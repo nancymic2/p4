@@ -1558,7 +1558,7 @@ $stylesend='</body></html>';
   $companies = Company::where('user_id', '=', Auth::user()->id)->get();
   
   include 'head.php';
-  echo '<div class="container">'; 
+  echo '<br><div class="container">'; 
   echo '<h2>Your Companies</h2>';
 
   echo '<p>';
