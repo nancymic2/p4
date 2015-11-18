@@ -126,9 +126,17 @@ $(document).ready(function()
                 <li><a href="#">Service 4</a></li>
               </ul>
             </li>
-      <li><a href="#">SubMenu 3</a></li>
+      <li><a href="#">Expenses</a>
+               <ul>
+                 <li><a href="/expenses">Add Expenses</a></li>
+                  <li><a href="/expensereport">View all Expenses</a>
+                          
+                </li>         
+                <li><a href="#">Service 4</a></li>
+              </ul>
+            </li>
       <li><a href="#">Goodies</a>
-                      <ul>
+              <ul>
                  <li><a href="/charter">Salary Chart</a></li>
                   <li><a href="/charter">Ratings</a>
                   <ul>
