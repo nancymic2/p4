@@ -151,8 +151,5 @@ $(document).ready(function()
 <br>
 
 
-
-    
-      
-
 </div>
+<br>
