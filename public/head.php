@@ -111,7 +111,7 @@ $(document).ready(function()
       <li><a href="#">Jobs</a>
                     <ul>
                <li><a href="/applications">Add</a></li>
-              <li><a href="#">Service 3 &raquo;</a>
+              <li><a href="/completedapps">View All</a>
                 <ul>
                   <li><a href="#">SubMenu 1</a></li>
                   <li><a href="#">SubMenu 2</a></li>
