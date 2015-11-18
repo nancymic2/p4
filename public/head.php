@@ -114,7 +114,7 @@ $(document).ready(function()
           </li>
         <li><a href="#">Companies</a>
                       <ul>
-                 <li><a href="/applications">Add</a></li>
+                 <li><a href="/company">Add</a></li>
                 <li><a href="/companyreport">View All</a>
                   <ul>
                     <li><a href="#">SubMenu 1</a></li>
@@ -122,6 +122,15 @@ $(document).ready(function()
                     <li><a href="#">SubMenu 3</a></li>
                     <li><a href="#">SubMenu 4</a></li>
                   </ul>         
+                </li>         
+                <li><a href="#">Service 4</a></li>
+              </ul>
+            </li>
+        <li><a href="#">Contacts</a>
+                      <ul>
+                 <li><a href="/recruiters">Add</a></li>
+                <li><a href="/recruitersreport">View All</a>
+                         
                 </li>         
                 <li><a href="#">Service 4</a></li>
               </ul>
