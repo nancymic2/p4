@@ -79,39 +79,52 @@ $(document).ready(function()
 
 <nav id="nav">
   <ul id="navigation">
-    <li><a href="#">Home</a></li>
+    <li><a href="/">Home</a></li>
     <li><a href="#">Account</a>
-      <ul>
-      
-          <?php 
+            <ul>
+            
+                <?php 
 
-          $user = Auth::user();
-          $id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, not an array/object of
+                $user = Auth::user();
+                $id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, not an array/object of
 
 
-          echo '<li><a href="/user/edit/';
-          echo $id;
-          echo'">Edit acct info</a> </li>';
-          //echo '<a href="logout">log out</a> <br>';
-          ?>
-
-        <li><a href="#">Service 2</a></li>
-        <li><a href="#">Service 3 &raquo;</a>
-          <ul>
-            <li><a href="#">SubMenu 1</a></li>
-            <li><a href="#">SubMenu 2</a></li>
-            <li><a href="#">SubMenu 3</a></li>
-            <li><a href="#">SubMenu 4</a></li>
-          </ul>         
-        </li>         
-        <li><a href="#">Service 4</a></li>
-      </ul>
-    </li>
-  <li><a href="#" >Help</a></li>
-              <li><a href="#">SubMenu 1</a></li>
-            <li><a href="#">SubMenu 2</a></li>
-            <li><a href="#">SubMenu 3</a></li>
-            <li><a href="#">SubMenu 4</a></li>
+                echo '<li><a href="/user/edit/';
+                echo $id;
+                echo'">Edit acct info</a> </li>';
+                //echo '<a href="logout">log out</a> <br>';
+                ?>
+                <li><a href="/signup">Sign Up</a></li>
+               <li><a href="/logout">Log Out</a></li>
+              <li><a href="#">Service 3 &raquo;</a>
+                <ul>
+                  <li><a href="#">SubMenu 1</a></li>
+                  <li><a href="#">SubMenu 2</a></li>
+                  <li><a href="#">SubMenu 3</a></li>
+                  <li><a href="#">SubMenu 4</a></li>
+                </ul>         
+              </li>         
+              <li><a href="#">Service 4</a></li>
+            </ul>
+          </li>
+      <li><a href="#" >Help</a></li>
+      <li><a href="#">Jobs</a>
+                    <ul>
+               <li><a href="/applications">Add</a></li>
+              <li><a href="#">Service 3 &raquo;</a>
+                <ul>
+                  <li><a href="#">SubMenu 1</a></li>
+                  <li><a href="#">SubMenu 2</a></li>
+                  <li><a href="#">SubMenu 3</a></li>
+                  <li><a href="#">SubMenu 4</a></li>
+                </ul>         
+              </li>         
+              <li><a href="#">Service 4</a></li>
+            </ul>
+          </li>
+      <li><a href="#">SubMenu 2</a></li>
+      <li><a href="#">SubMenu 3</a></li>
+      <li><a href="#">SubMenu 4</a></li>
   </ul>
 </nav>
 
@@ -139,15 +152,7 @@ echo $id;
 echo'">Edit acct info</a> </li>';
 //echo '<a href="logout">log out</a> <br>';
 ?>
-        <li><a href="/logout">Log Out</a></li>
+       
       
-      </ul>
-     
-      
-    </div><!-- /.navbar-collapse -->
-</div>  <!--</div> container-fluid --> 
-</nav>
-</div>
 
-</header>
 </div>
