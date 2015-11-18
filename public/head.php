@@ -96,13 +96,13 @@ $(document).ready(function()
                 ?>
                 <li><a href="/signup">Sign Up</a></li>
                <li><a href="/logout">Log Out</a></li>
-              <li><a href="#">Service 3 &raquo;</a>
-                <ul>
+              <li><a href="/password/remind">Change Password</a>
+                <!--<ul>
                   <li><a href="#">SubMenu 1</a></li>
                   <li><a href="#">SubMenu 2</a></li>
                   <li><a href="#">SubMenu 3</a></li>
                   <li><a href="#">SubMenu 4</a></li>
-                </ul>         
+                </ul> -->        
               </li>         
               <li><a href="#">Service 4</a></li>
             </ul>
