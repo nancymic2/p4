@@ -63,15 +63,7 @@ $(document).ready(function()
 } 
 ); 
  
-function droplist(){
 
-     var childNodes = document.getElementById("dd1").childNodes;
-        for(var i=0; i<childNodes.length; i++) {
-
-           childNodes[i].style.display="block";
-
-        }
-}
 
 </script>
 </head>
@@ -80,6 +72,20 @@ function droplist(){
 <img style="float:left" src="http://p4.scholarpaws.com/train2.jpg">
 </div>
   <!--<div class="jumbotron">-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <header class="navbar-inverse">
@@ -101,20 +107,11 @@ function droplist(){
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
   
-            <li><a id="dd1" href="#" onclick="droplist("dd1");"><b>+</b>Job, Company, Resume</a></li>
-            <ul style="display: none; z-index: 10;">
-              <li>1</li>
-              <li>2</li>
-            </ul>
-      </div>
-
+        <!--<li><a href="/applications"><b>+</b>Job, Company, Resume</a></li>
         <li><a href="/completedapps">Edit Jobs, Company, Resume</a></li>
          <li><a href="/companyreport">Edit Companies</a></li>
         <li><a href="/expenses"><b>+</b>Expenses</a></li>
-        <li><a href="/expensereport">Edit Expenses</a></li>
-
-
-
+        <li><a href="/expensereport">Edit Expenses</a></li>-->
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="href=/applications">add job</a></li>
