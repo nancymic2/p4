@@ -69,8 +69,9 @@ $(document).ready(function()
 </script>
 </head>
 <body>
+<div class="getborder" style="border: 1px solid gray;">
   <div class="container" style="margin:30px;">
-<img style="float:left" src="http://p4.scholarpaws.com/train2.jpg">
+  <img style="float:left" src="http://p4.scholarpaws.com/train2.jpg">
 </div>
   <!--<div class="jumbotron">-->
 
@@ -181,3 +182,4 @@ $(document).ready(function()
 
 </div>
 <br>
+</div>
