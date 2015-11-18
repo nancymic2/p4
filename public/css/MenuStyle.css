@@ -18,14 +18,14 @@ ol, ul {
 /* Main Styles */	
 	
 #wrapper{
-	width:620px;
+	width:100%;
 	margin:0 auto;
 	margin-top:100px;
 }
 
 #nav {
 	position:relative;
-	width:620px;
+	width:100%;
 	margin:0 auto;
 }
 
