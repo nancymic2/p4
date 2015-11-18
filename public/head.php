@@ -97,7 +97,7 @@ $(document).ready(function()
               <li><a href="/account">Edit Account</a></li>
             </ul>
           </li>
-      <li><a href="#" >Help</a></li>
+      
       <li><a href="#">Jobs</a>
                     <ul>
                <li><a href="/applications">Add</a></li>
@@ -169,6 +169,7 @@ $(document).ready(function()
             </li>
       
       <li><a href="/about">About</a></li>
+      <li><a href="#" >Help</a></li>
       <li><a href="/login">Log In</a></li>
   </ul>
 </nav>
