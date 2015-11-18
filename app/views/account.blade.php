@@ -13,7 +13,7 @@ $user = Auth::user();
 $id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, not an array/object of
 
 
-echo '<h3><a href="/user/edit/';
+echo '<a class="btn btn-success "href="/user/edit/';
 echo $id;
 echo'">Edit acct info</a> </h3>';
 //echo '<a href="logout">log out</a> <br>';
