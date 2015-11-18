@@ -167,8 +167,9 @@ $(document).ready(function()
                 <li><a href="#">Service 4</a></li>
               </ul>
             </li>
-      <li><a href="/login">Log In</a></li>
+      
       <li><a href="/about">About</a></li>
+      <li><a href="/login">Log In</a></li>
   </ul>
 </nav>
 
