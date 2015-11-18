@@ -126,6 +126,15 @@ $(document).ready(function()
                 <li><a href="#">Service 4</a></li>
               </ul>
             </li>
+        <li><a href="#">Resumes</a>
+                      <ul>
+                 <li><a href="/resume">Add</a></li>
+                <li><a href="/companyreport">View All</a>
+                         
+                </li>         
+                <li><a href="#">Service 4</a></li>
+              </ul>
+            </li>
         <li><a href="#">Contacts</a>
                       <ul>
                  <li><a href="/recruiters">Add</a></li>
