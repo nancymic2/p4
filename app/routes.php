@@ -1744,7 +1744,7 @@ foreach($resumes as $resume) {
 
 //return View::make('deleteresume')->with('deleteres', $deleteres);
 echo '</p>';
-echo '</div>'
+echo '</div>';
 echo '<br><br>';
  echo $stylesend;   
 }));
