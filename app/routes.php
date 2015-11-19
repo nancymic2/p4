@@ -1694,16 +1694,16 @@ $stylesend='</body></html>';
   echo '<table id="myTable" class="tablesorter table" border="2" cellpadding="4" style="width: 100%; table-layout: fixed;"> 
 
   <caption>
-  <h4>Sort Your Companies by field</h4>
-  <h4>Click company name to edit company</h4>
+  <h4>Sort Your Resumes by field</h4>
+  <h4>Click resume name to edit resume</h4>
   </caption>
   <thead>
     <tr>  
-      <th style="width: 9.09%;">Resume name</th>
-      <th style="width: 9.09%;">Resume ID</th>
-      <th style="width: 9.09%;">Added</th>
-      <th style="width: 9.09%;">Resume Link</th>
-      <th style="width: 9.09%;">Resume notes</th>
+      <th style="width: 10%;">Resume name</th>
+      <th style="width: 5%;">Resume ID</th>
+      <th style="width: 10%;">Added</th>
+      <th style="width: 25%;">Resume Link</th>
+      <th style="width: 50%;">Resume notes</th>
 
       </tr>  </thead>   <tbody>';
 //# loop through the Collection and access just the data
