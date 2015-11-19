@@ -64,6 +64,7 @@
         <li><a href="/charter">Charts</a></li>
         <li><a href="/logout">Log Out</a></li>
         <li><a href="/login">Login</a></li>
+        <li><a href="/password/remind">Forgot password</a></li> 
       
       </ul>
      </div><!-- /.navbar-collapse -->
