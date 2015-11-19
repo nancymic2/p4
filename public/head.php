@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+<script type="text/javascript" src="js/jquery-latest.js"></script> 
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script> 
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
@@ -17,8 +18,7 @@
   <title>Career Trax</title>
   <link rel="stylesheet" href="hmin.css">
   <link rel="stylesheet" href="css/layout.css">
-<script type="text/javascript" src="js/jquery-latest.js"></script> 
-<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script> 
+
 
 <style type="text/css">
 #myTable > thead{
