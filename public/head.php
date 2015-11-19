@@ -65,12 +65,16 @@ $(document).ready(function()
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
   
-        <li><a href="/applications">Add a Job, Company, Resume</a></li>
-        <li><a href="/expenses">Add Expenses</a></li>
+        <li><a href="/applications">+ Job, Co, Res</a></li>
+        <li><a href="/expenses">Expenses</a></li>
         <li><a href="/expensereport">View Expenses</a></li>
-        <li><a href="/completedapps">View Your Jobs</a></li>
-        <li><a href="/resumesearch">View Your Resumes</a></li>
+        <li><a href="/completedapps">View Jobs</a></li>
+        <li><a href="/resumesearch">View Res</a></li>
+        <li><a href="/companyreport">View co</a></li>
+        <li><a href="/account">account</a></li>
         <li><a href="/logout">Log Out</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/charter">charts</a></li>
       
       </ul>
      
