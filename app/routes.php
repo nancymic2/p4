@@ -1090,6 +1090,7 @@ $tentertainment=0;
   $companies = Company::where('user_id', '=', Auth::user()->id)->get();
   
 include 'head.php';
+include 'js/jquery.tablesorter.min.js';
   echo '<div class="container">'; 
   echo '<h2>Your Expenses</h2>';
 
