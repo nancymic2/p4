@@ -1082,6 +1082,15 @@ $tphone=0;
 $tclothing=0;
 $tentertainment=0;
 
+$file = 'myexpenses.csv'; ///
+file_put_contents($file, "");  ///
+
+// Open the file to get existing content
+$current = file_get_contents($file);  ///
+
+$current .= 'date, job, gas, air, train, hotel, meals, postage, ink, paper, hardware, portfolio, phone, clothing, entertainment';
+
+$current .= "\n";
 
   $l=0;  
   $m=0;   
@@ -1155,6 +1164,11 @@ foreach($expenses as $expense) {
     echo '<tr>';
     echo '<td>';
 echo $expense['exp_date'];
+
+  $current .= $expense['exp_date'];
+  $current .= ",";
+
+
     $thecompany=$expense['company'];
 
     $key = array_search($thecompany, $corpid);
@@ -1172,36 +1186,61 @@ echo $expense['exp_date'];
     echo $expense['gas'];
 
     $trimgas=trim($expense['gas']);
+
+  $current .= $trimgas;
+  $current .= ",";
+
+
     $tgas=$trimgas+$tgas;
 
     echo '</td>';
     echo '<td>';
     echo $expense['airfare']."<br>";
     $trimair=trim($expense['airfare']);
+
+  $current .= $trimair;
+  $current .= ",";
+
     $tair=$trimair+$tair;
     echo '</td>';
     echo '<td>';
     //echo '<b>Applied date:</b> ';
     echo $expense['train']."<br>";
     $trimtrain=trim($expense['train']);
+
+  $current .= $trimtrain;
+  $current .= ",";
+
     $ttrain=$trimtrain+$ttrain;
     echo '</td>';
     echo '<td>';
     //echo '<b>Hiring Manager:</b> ';
     echo $expense['hotel']."<br>";
     $trimhotel=trim($expense['hotel']);
+
+  $current .= $trimhotel;
+  $current .= ",";
+
     $thotel=$trimhotel+$thotel;
     echo '</td>';
     echo '<td>';
 
     echo $expense['meals']."<br>";
     $trimmeals=trim($expense['meals']);
+
+  $current .= $trimmeals;
+  $current .= ",";
+
     $tmeals=$trimmeals+$tmeals;
     echo '</td>';
     echo '<td>';
 
     echo $expense['stamps']."<br>";
     $trimstamps=trim($expense['stamps']);
+
+  $current .= $trimstamps;
+  $current .= ",";
+
     $tstamps=$trimstamps+$tstamps;
     echo '</td>';
     //echo '<td>';
@@ -1217,36 +1256,65 @@ echo $expense['exp_date'];
 
     echo $expense['ink'];
     $trimink=trim($expense['ink']);
+
+  $current .= $trimink;
+  $current .= ",";
+
     $tink=$trimink+$tink;
     echo '</td>';
     echo '<td>';
     echo $expense['paper']."<br>";
     $trimpaper=trim($expense['paper']);
+
+  $current .= $trimpaper;
+  $current .= ",";
+
     $tpaper=$trimpaper+$tpaper;
     echo '</td>';
         echo '<td>';
     echo $expense['hardware']."<br>";
     $trimhardware=trim($expense['hardware']);
+
+  $current .= $trimhardware;
+  $current .= ",";
+
     $thardware=$trimhardware+$thardware;
     echo '</td>';
         echo '<td>';
     echo $expense['portfolio']."<br>";
     $trimportfolio=trim($expense['portfolio']);
+
+  $current .= $trimportfolio;
+  $current .= ",";
+
     $tportfolio=$trimportfolio+$tportfolio;
     echo '</td>';
         echo '<td>';
     echo $expense['phone']."<br>";
     $trimphone=trim($expense['phone']);
+
+  $current .= $trimphone;
+  $current .= ",";
+
+
     $tphone=$trimphone+$tphone;
     echo '</td>';
         echo '<td>';
     echo $expense['clothing']."<br>";
     $trimclothing=trim($expense['clothing']);
+
+  $current .= $trimclothing;
+  $current .= ",";
     $tclothing=$trimclothing+$tclothing;
     echo '</td>';
         echo '<td>';
     echo $expense['entertainment']."<br>";
     $trimentertainment=trim($expense['entertainment']);
+
+  $current .= $trimentertainment;
+  $current .= ",";
+
+
     $tentertainment=$trimentertainment+$tentertainment;
     echo '</td>';
     
@@ -1262,6 +1330,7 @@ echo $expense['exp_date'];
      //echo $deleteres;
           // onclick?  Session::put('applybydate', $applydate);
   //unset($res);
+$current .= "\n";
 
   }
     echo '<br>';
@@ -1326,6 +1395,17 @@ echo $expense['exp_date'];
 //return View::make('deleteresume')->with('deleteres', $deleteres);
 echo '</p>';
 echo '<br><br>';
+
+file_put_contents($file, $current);
+
+echo '<div id="stuff" style="width:730px; margin-top: 20px; margin-bottom: 20px; border: 1px solid gray; padding-left: 20px; padding-bottom: 20px; padding-right: 20px;">'; 
+echo '<br>';
+echo '<h3>Download:</h3>';
+echo '<div class="csv">download <u><a href="myexpenses.csv">the file</a></u> in CSV format</div>';
+//echo 'because you really need a file';
+echo '</div>';
+
+
  echo $stylesend;   
 }));
 
