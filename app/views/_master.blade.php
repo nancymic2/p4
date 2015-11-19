@@ -142,6 +142,7 @@
 @yield ('application-edit')
 @yield ('account')
 @yield ('help')
+@yield ('calendar')
 <!--/////////////////-->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
