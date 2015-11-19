@@ -1405,7 +1405,7 @@ file_put_contents($file, $current);
 
 echo '<div id="stuff" style="width:730px; margin-top: 20px; margin-bottom: 20px; border: 1px solid gray; padding-left: 20px; padding-bottom: 20px; padding-right: 20px;">'; 
 echo '<br>';
-echo '<h3>Download:</h3>';
+echo '<h3>Download the Excel file:</h3>';
 echo '<div class="csv">download <u><a href="myexpenses.csv">the file</a></u> in CSV format</div>';
 //echo 'because you really need a file';
 echo '</div>';
