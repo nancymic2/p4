@@ -74,7 +74,7 @@
           <ul class="dropdown-menu">
             <li><a href="/completedapps">Jobs</a></li>
             <li><a href="/resumesearch">Resumes</a></li>
-            <li><a href="/companyreport">Companie</a></li>
+            <li><a href="/companyreport">Companies</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="/expensereport">Expense Report</a></li>
             <li role="separator" class="divider"></li>
