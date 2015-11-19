@@ -1673,25 +1673,104 @@ Route::get('/help',
 );
 
 
+
+
 Route::get('choose_resume', array('before' => 'auth', function()
-         {
-            //return View::make('applications');  //commented out 10/31/15
+  {      
+////////////////
 
-          // 10/31/15 create the array to hold companies from companies table - $company_lists
-          // us the lists method of eloquent
-          // grab the company and id from the companie table for the logged in user
-          //return view applications plus the array
-          $user = Auth::user();
-          
-          /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
-          $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
+$stylesend='</body></html>';
 
-          //$resume_lists = DB::table('resumes')->where('user_id', $user->id)->lists('name');
-          //$company_lists = DB::table('companies')->where('user_id', $user->id)->lists('company'); //only index
 
-          $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');
+  $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
+  
+  include 'head.php';
+  echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.tablesorter.min.js"></script>';
+  echo '<br><div class="container">'; 
+  echo '<h2>Your Resumes</h2>';
 
-          return View::make('choose_resume', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists));  ///10/31/15
-        }
-    )
-);
+  echo '<p>';
+  echo '<div class="table-responsive">';
+  echo '<table id="myTable" class="tablesorter table" border="2" cellpadding="4" style="width: 100%; table-layout: fixed;"> 
+
+  <caption>
+  <h4>Sort Your Companies by field</h4>
+  <h4>Click company name to edit company</h4>
+  </caption>
+  <thead>
+    <tr>  
+      <th style="width: 9.09%;">Resume name</th>
+      <th style="width: 9.09%;">Resume ID</th>
+      <th style="width: 9.09%;">Added</th>
+      <th style="width: 9.09%;">Resume Link</th>
+      <th style="width: 9.09%;">Resume notes</th>
+
+      </tr>  </thead>   <tbody>';
+//# loop through the Collection and access just the data
+foreach($resumes as $resume) {
+
+    echo '<tr>';
+    echo '<td>';
+  
+
+
+    echo '<a href="/resume/edit/'.$resume['id'];  ///
+    echo '">';  ////
+    echo $resume['name'];
+    echo '</a>';  
+
+
+    echo '</td>';
+    echo '<td>';
+    echo $resume['id'];    
+    echo '</td>';
+    echo '<td>';
+    echo $resume['created_at'];
+    echo '</td>';
+    echo '<td>';
+    echo $resume['url'];
+    echo '</td>';
+    echo '<td>';
+
+    echo $resume['resumetext'];
+    echo '</td>';
+   
+    echo '</tr>';
+
+    echo '</tbody> </table>';
+    
+
+   }
+
+//return View::make('deleteresume')->with('deleteres', $deleteres);
+echo '</p>';
+echo '</div>'
+echo '<br><br>';
+ echo $stylesend;   
+}));
+
+
+  Route::get('resume/edit/{id}', array('as' => 'resume.edit', function($id) 
+    {
+        // return our view and Nerd information
+        return View::make('resume-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
+            ->with('resume', Resume::find($id));
+    }));
+
+    // route to process the form
+   Route::post('/resume/edit/{id}', 
+    array(
+        'before' => 'csrf', 
+        function() {
+          $id =Input::get('id');
+           //$company  = Company::find(1);  got to get the co id. take from url if need be cause ive had enough
+           $resume  = Resume::find($id);  ///works when id is hardcoded
+            //$company->id   =Input::get('id');  //just added
+            $resume->name   = Input::get('name');
+             $resume->url   = Input::get('url');
+            $resume->resumetext   = Input::get('resumetext');
+
+             $resume->save();
+             return Redirect::to('/choose_resume'); // YES NO? 
+}
+));

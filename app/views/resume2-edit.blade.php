@@ -3,7 +3,6 @@
 
 @section ('resume-edit')
 
-
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
                         <script src="jquery.knob.js"></script>
                 <link href="/css/layout.css" rel="stylesheet">
@@ -20,34 +19,29 @@
 <div class="container">
     <div class="col-sm-6">
 <h2>&nbsp;</h2>
-
-
-<h3>View or Edit Resume</h3>
+<h3>View or Edit Company</h3>
 <br>
- {{ Form::model($resume, array('route' => 'resume.edit', $resume->id)) }}    
-    Resume  name<br>
-    {{ Form::text('name')}} 
-<br>
+ {{ Form::model($company, array('route' => 'company.edit', $company->id)) }}    
 
-    Resume link<br>
-    {{ Form::text('url')}} 
-<br>
-
-    notes<br>
-    {{ Form::textarea('resumetext')}} 
-
-
-  <br><br>
- {{ Form::hidden('id', $resume->id) }}  <!-- just added -->
-        {{ Form::submit('Update resume') }}
+        <!-- name -->
+        {{ Form::label('rating', 'Rating') }}
+        {{ Form::text('rating') }}
+<br><br>
+        <!-- email -->
+        {{ Form::label('website', 'Website') }}
+        {{ Form::text('website') }}      
+<br><br>
+ {{ Form::hidden('id', $company->id) }}  <!-- just added -->
+        {{ Form::submit('Update Company') }}
 <br><br>
     {{ Form::close() }}
-
+<br>
 
 
 <br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
-<!-- note use email as the type vs text if you want validation -->
 
 </div>
 </div>
+
+<!-- note use email as the type vs text if you want validation -->
 @stop
