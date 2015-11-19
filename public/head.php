@@ -13,7 +13,9 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
+<script type="text/javascript" src="js/jquery-latest.js"></script> 
+
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script> 
 
   <title>Career Trax</title>
   <link rel="stylesheet" href="hmin.css">
