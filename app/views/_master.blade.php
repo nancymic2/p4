@@ -69,40 +69,7 @@
 </nav>
 </header>
 </div>
-@yield ('index')
 
-@yield ('resume')
-
-@yield ('savedJobs')
-
-@yield ('applications')
-
-@yield ('login')
-
-@yield ('signup')
-
-@yield ('jobstoapply')
-
-@yield ('remind')
-
-@yield ('reset')
-
-@yield ('chart')
-
-@yield ('company')
-
-@yield ('expenses')
-
-@yield ('editcompany')
-@yield ('editcompany2')
-@yield ('content')
-@yield ('upload')
-<!--/////////////////-->
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
-</body>
-</html>
 
 
 @yield ('index')
@@ -141,4 +108,5 @@
 <!--/////////////////-->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
+</body>
+</html>
