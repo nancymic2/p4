@@ -1559,6 +1559,7 @@ $stylesend='</body></html>';
   $companies = Company::where('user_id', '=', Auth::user()->id)->get();
   
   include 'head.php';
+  echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.tablesorter.min.js"></script>';
   echo '<br><div class="container">'; 
   echo '<h2>Your Companies</h2>';
 
