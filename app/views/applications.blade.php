@@ -30,10 +30,7 @@
     Stop forgetting where you applied, what resume<br>
     you used, and what the username and password were<br> to the application site!</p>
   <p>  If you have an interview, add the date and get a Google calendar reminder</p>
-   <h3>First rate this job prospect</h3><br>
- <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
 
-value="44"><br>
 <!-- remove rating -->
 <!--<a href="#" onclick='window.open("/companysmall", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=100, width=400, height=400, menubar=0, status=0, titlebar=0, toolbar=0, nomenubar=no, status=no, titlebar=no, toolbar=no" );'>Add a company</a>-->
 <a href="#companies" onclick='toggle("companyhide2", "resumehide", "companyhideDB");'><h4>1. Add the company if you have not added previously</h4></a>
@@ -96,6 +93,11 @@ if (diva.style.display=="none") {
 </div>
 <div id="companyhideDB" style="display:none;">
 {{ Form::open(array('url' => '/applications')) }}
+
+   <h3>First rate this job prospect</h3><br>
+ <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
+
+value="44"><br>
      <h4>Select existing company</h4>
     {{ Form::select('company_id', $company_lists) }} <!--this yieds the INDEX of the selected 11/6-->
  <!-- 11/1/15  -->
