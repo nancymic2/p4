@@ -72,17 +72,6 @@
 
 
 
-
-
-
-
-.tablesorter tr:first-child:hover td{
-	background:-o-linear-gradient(bottom, #71b2f2 5%, #71b2f2 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #71b2f2), color-stop(1, #71b2f2) );
-	background:-moz-linear-gradient( center top, #71b2f2 5%, #71b2f2 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#71b2f2", endColorstr="#71b2f2");	background: -o-linear-gradient(top,#71b2f2,71b2f2);
-
-	background-color:#71b2f2;
-}
 .tablesorter tr:first-child td:first-child{
 	border-width:0px 0px 1px 0px;
 }
