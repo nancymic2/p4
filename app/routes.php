@@ -1165,7 +1165,7 @@ foreach($expenses as $expense) {
     echo '<td>';
 echo $expense['exp_date'];
 
-  $current .= $expense['exp_date'];
+  $current .= $expense['created_at'];
   $current .= ",";
 
 
