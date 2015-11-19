@@ -1393,7 +1393,6 @@ $current .= "\n";
 
 
     echo '</tr></table>';
-    echo '</div>';
 
    
 
@@ -1408,6 +1407,7 @@ echo '<br>';
 echo '<h3>Download the Excel file:</h3>';
 echo '<div class="csv">download <u><a href="myexpenses.csv">the file</a></u> in CSV format</div>';
 //echo 'because you really need a file';
+echo '</div>';
 echo '</div>';
 
 
