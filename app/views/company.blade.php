@@ -118,17 +118,8 @@
         });
     </script>
 
-/////////////
-
-
-
 <h2>&nbsp;</h2>
 <h2>Add a Company</h2>
-
-
-
-
-
 
 
 {{ Form::open(array('url' => '/company')) }}
@@ -156,7 +147,7 @@ company street<br>
 
 
 <?php
-echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
+echo '<br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>';
 
 ?>
 
