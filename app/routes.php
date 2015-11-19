@@ -1180,6 +1180,11 @@ echo $expense['exp_date'];
     echo '</td>';
     echo '<td>';
     ///job goes here
+
+  $current .= '" "';
+  $current .= ",";
+
+
     echo '</td>';
     echo '<td>';
     //echo '<b>role:</b> ';
