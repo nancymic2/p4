@@ -60,7 +60,7 @@
         <li><a href="/resumesearch">View Resumes</a></li>
         <li><a href="/companyreport">View Companies</a></li>
         <li><a href="/account">Account</a></li>
-        <li><a href="/charter">Help</a></li>
+        <li><a href="/help">Help</a></li>
         <li><a href="/charter">Charts</a></li>
         <li><a href="/logout">Log Out</a></li>
         <li><a href="/login">Login</a></li>
