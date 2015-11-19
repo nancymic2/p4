@@ -1104,6 +1104,10 @@ echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.ta
   echo '<div class="container">'; 
   echo '<h2>Your Expenses</h2>';
 
+echo '<h3>Download the Excel file:</h3>';
+echo 'download <u><a href="myexpenses.csv">the file</a></u> in CSV format';
+//echo 'because you really need a file';
+
   echo '<p>';
   echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4" style="width: 100%; table-layout: fixed;"> 
 
@@ -1402,12 +1406,7 @@ echo '<br><br>';
 
 file_put_contents($file, $current);
 
-echo '<div id="stuff" style="width:730px; margin-top: 20px; margin-bottom: 20px;  margin-left: 120px; background-color: #eeeeee; border: 1px solid gray; padding-left: 20px; padding-bottom: 20px; padding-right: 20px;">'; 
-echo '<br>';
-echo '<h3>Download the Excel file:</h3>';
-echo '<div class="csv">download <u><a href="myexpenses.csv">the file</a></u> in CSV format</div>';
-//echo 'because you really need a file';
-echo '</div>';
+
 echo '</div>';
 
 
