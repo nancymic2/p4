@@ -5,61 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
-<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery-latest.js"></script> 
-
-<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.tablesorter.min.js"></script> 
-
-  <title>Career Trax</title>
-  <link rel="stylesheet" href="hmin.css">
-  <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery-latest.js"></script> 
+    <script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.tablesorter.min.js"></script> 
+    <link rel="stylesheet" href="hmin.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>Career Trax</title>
 
 
-<style type="text/css">
-#myTable > thead{
-  cursor: pointer;
-} 
-</style>
+    <style type="text/css">
+      #myTable > thead{
+        cursor: pointer;
+      } 
+    </style>
+
+    <script type="text/javascript" >
+      $(document).ready(function() 
+      { 
+        $("#myTable").tablesorter(); 
+      }); 
+    </script>
 </head>
 <body>
-<script type="text/javascript" >
-$(document).ready(function() 
-{ 
-  $("#myTable").tablesorter(); 
-} 
-); 
- 
-
-
-</script>
-</head>
-<body>
-  <div class="container" style="margin:30px;">
+<div class="container" style="margin:30px;">
 <img style="float:left" src="http://p4.scholarpaws.com/train2.jpg">
 </div>
 </div>
   <!--<div class="jumbotron">-->
 
-  <header class="navbar-inverse">
+  <header class="navbar-inverse" style="width: 100%;">
     <div class="container">
     <nav  role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">CT</a>
-    </div>
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">CT</a>
+      </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -76,42 +64,27 @@ $(document).ready(function()
         <li><a href="/charter">Charts</a></li>
         <li><a href="/logout">Log Out</a></li>
         <li><a href="/login">Login</a></li>
- 
       
       </ul>
-     
-      
-    </div><!-- /.navbar-collapse -->
-  <!--</div> container-fluid --> 
-</nav>
-</header>
+     </div><!-- /.navbar-collapse -->
+    <!--</div> container-fluid --> 
+    </nav>
+  </header>
 </div></div></div><br><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/scripts.js"></script>
 
 
 @yield ('index')
-
 @yield ('resume')
-
 @yield ('savedJobs')
-
 @yield ('applications')
-
 @yield ('login')
-
 @yield ('signup')
-
 @yield ('jobstoapply')
-
 @yield ('remind')
-
 @yield ('reset')
-
 @yield ('chart')
-
 @yield ('company')
-
 @yield ('expenses')
-
 @yield ('editcompany')
 @yield ('company-edit')
 @yield ('content')
