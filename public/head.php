@@ -73,7 +73,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/completedapps">Jobs</a></li>
-            <li><a href="/resumesearch">Resumes</a></li>
+            <li><a href="/choose_resume">Resumes</a></li>
             <li><a href="/companyreport">Companies</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="/expensereport">Expense Report</a></li>
@@ -87,7 +87,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/completedapps">Job</a></li>
-            <li><a href="/completedapps">Resume</a></li>
+            <li><a href="/choose_resume">Resumes</a></li>
             <li><a href="/completedapps">Companies</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="/expensereport">Expenses</a></li>
