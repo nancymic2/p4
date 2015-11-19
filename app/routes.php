@@ -1728,7 +1728,12 @@ foreach($resumes as $resume) {
     echo $resume['created_at'];
     echo '</td>';
     echo '<td>';
+    echo '<a href="';
     echo $resume['url'];
+    echo '">';
+    echo $resume['url'];
+    echo '</a>';
+
     echo '</td>';
     echo '<td>';
 
