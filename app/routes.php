@@ -19,7 +19,7 @@ Route::get('account', array('before' => 'auth', function()
 
 {
     
-$stylesend='</div></div></div><br><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/scripts.js"></script></body></html>';
+$stylesend='</body></html>';
      
  $names = User::where('id', '=', Auth::user()->id)->get();
  include 'head.php';
@@ -61,7 +61,7 @@ Route::get('changelast', array('before' => 'auth', function()
 
 {
    
-$stylesend='</div></div></div><br><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/scripts.js"></script></body></html>';
+$stylesend='</body></html>';
 include 'head.php';
 echo '<p>&nbsp;</p>';    
  $names = User::where('id', '=', Auth::user()->id)->get();
@@ -195,7 +195,7 @@ Route::get('jobstoapply', array('before' => 'auth', function()
 {
 
 
-$stylesend='</div></div></div><br><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/scripts.js"></script></body></html>';
+$stylesend='</body></html>';
      
   $jobs = Postedjob::where('user_id', '=', Auth::user()->id)->get();
   include 'head.php';
@@ -257,7 +257,7 @@ Route::get('completedapps', array('before' => 'auth', function()
   {      
 ////////////////
 
-$stylesend='</div></div></div><br><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/scripts.js"></script></body></html>';
+$stylesend='</body></html>';
 
 
 ///////////////            
@@ -465,7 +465,7 @@ Route::get('resumesearch', array('before' => 'auth', function()
 
 {
  
-$stylesend='</div></div></div><br><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/scripts.js"></script></body></html>';
+$stylesend='</body></html>';
 
   $i=0;
   $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
@@ -1066,7 +1066,7 @@ Route::get('expensereport', array('before' => 'auth', function()
   {      
 ////////////////
 
-$stylesend='</div></div></div><br><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/scripts.js"></script></body></html>';
+$stylesend='</body></html>';
 $tgas=0;
 $tair=0;
 $ttrain=0;
@@ -1552,7 +1552,7 @@ Route::get('companyreport', array('before' => 'auth', function()
   {      
 ////////////////
 
-$stylesend='</div></div></div><br><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/scripts.js"></script></body></html>';
+$stylesend='</body></html>';
 
 
   $companies = Company::where('user_id', '=', Auth::user()->id)->get();

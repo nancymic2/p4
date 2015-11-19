@@ -78,3 +78,4 @@ $(document).ready(function()
   <!--</div> container-fluid --> 
 </nav>
 </header>
+</div></div></div><br><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/scripts.js"></script>
