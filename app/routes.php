@@ -1702,8 +1702,8 @@ $stylesend='</body></html>';
       <th style="width: 10%;">Resume name</th>
       <th style="width: 5%;">Res ID</th>
       <th style="width: 10%;">Added</th>
-      <th style="width: 25%;">Resume Link</th>
-      <th style="width: 50%;">Resume notes</th>
+      <th style="width: 20%;">Resume Link</th>
+      <th style="width: 55%;">Resume notes</th>
 
       </tr>  </thead>   <tbody>';
 //# loop through the Collection and access just the data
