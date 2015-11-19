@@ -72,17 +72,32 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/applications">Job</a></li>
-            <li><a href="/applications">Resume</a></li>
-            <li><a href="/applications">Company</a></li>
+            <li><a href="/completedapps">Jobs</a></li>
+            <li><a href="/resumesearch">Resumes</a></li>
+            <li><a href="/companyreport">Companie</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="/expenses">Expense</a></li>
+            <li><a href="/expensereport">Expense Report</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/completedapps">Job</a></li>
+            <li><a href="/competedapps">Resume</a></li>
+            <li><a href="/completedapps">Companies</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="/expensereport">Expenses</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+
 
 
       </ul>
