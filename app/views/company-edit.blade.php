@@ -3,7 +3,6 @@
 
 @section ('company-edit')
 
-
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
                         <script src="jquery.knob.js"></script>
                 <link href="/css/layout.css" rel="stylesheet">
@@ -20,7 +19,6 @@
 <div class="container">
     <div class="col-sm-6">
 <h2>&nbsp;</h2>
-
 <h3>View or Edit Company</h3>
 <br>
  {{ Form::model($company, array('route' => 'company.edit', $company->id)) }}    
