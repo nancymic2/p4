@@ -1181,7 +1181,7 @@ echo $expense['exp_date'];
     echo '<td>';
     ///job goes here
 
-  $current .= '" "';
+  $current .= '---';
   $current .= ",";
 
 
