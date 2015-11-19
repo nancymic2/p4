@@ -1664,3 +1664,12 @@ Route::get('account', array('before' => 'auth', function()
         }
     )
 );
+
+Route::get('/help',
+    array(
+        'before' => 'guest',
+        function() {
+            return View::make('help');
+        }
+    )
+);
