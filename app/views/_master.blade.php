@@ -87,7 +87,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/completedapps">Job</a></li>
-            <li><a href="/competedapps">Resume</a></li>
+            <li><a href="/completedapps">Resume</a></li>
             <li><a href="/completedapps">Companies</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="/expensereport">Expenses</a></li>
