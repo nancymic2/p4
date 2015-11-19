@@ -1088,7 +1088,7 @@ file_put_contents($file, "");  ///
 // Open the file to get existing content
 $current = file_get_contents($file);  ///
 
-$current .= 'date, job, gas, air, train, hotel, meals, postage, ink, paper, hardware, portfolio, phone, clothing, entertainment';
+$current .= 'date, job ID, gas, air, train, hotel, meals, postage, ink, paper, hardware, portfolio, phone, clothing, entertainment';
 
 $current .= "\n";
 
@@ -1185,9 +1185,9 @@ echo $expense['exp_date'];
     echo '<td>';
     ///job goes here
 
-  $current .= '---';
+  $current .= $expense['application_id'];
   $current .= ",";
-
+    echo $expense['application_id'];
 
     echo '</td>';
     echo '<td>';
