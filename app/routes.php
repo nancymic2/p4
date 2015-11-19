@@ -1671,3 +1671,27 @@ Route::get('/help',
             return View::make('help');
         }
 );
+
+
+Route::get('choose_resume', array('before' => 'auth', function()
+         {
+            //return View::make('applications');  //commented out 10/31/15
+
+          // 10/31/15 create the array to hold companies from companies table - $company_lists
+          // us the lists method of eloquent
+          // grab the company and id from the companie table for the logged in user
+          //return view applications plus the array
+          $user = Auth::user();
+          
+          /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
+          $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
+
+          //$resume_lists = DB::table('resumes')->where('user_id', $user->id)->lists('name');
+          //$company_lists = DB::table('companies')->where('user_id', $user->id)->lists('company'); //only index
+
+          $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');
+
+          return View::make('choose_resume', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists));  ///10/31/15
+        }
+    )
+);
