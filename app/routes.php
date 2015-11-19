@@ -1737,11 +1737,10 @@ foreach($resumes as $resume) {
    
     echo '</tr>';
 
-    echo '</tbody> </table>';
-    
 
    }
-
+  echo '</tbody> </table>';
+    
 //return View::make('deleteresume')->with('deleteres', $deleteres);
 echo '</p>';
 echo '</div>';
