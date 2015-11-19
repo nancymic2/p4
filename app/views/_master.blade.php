@@ -11,6 +11,7 @@
     <script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.tablesorter.min.js"></script> 
     <link rel="stylesheet" href="hmin.css">
     <link rel="stylesheet" href="css/layout.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/umd/dropdown.js"></script>
     <title>Career Trax</title>
 
 
