@@ -1118,7 +1118,7 @@ echo '<b>*Note</b>, in Excel you may have to format the date column as date to s
   <thead>
     <tr>  
       <th style="width: 6.66%;">Date</th>
-      <th style="width: 6.66%;">Job</th>
+      <th style="width: 6.66%;">Job ID</th>
       <th style="width: 6.66%;">Gas</th>
       <th style="width: 6.66%;">Air</th>
       
