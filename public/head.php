@@ -6,21 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-                        <script src="jquery.knob.js"></script>
-                <link href="/css/layout.css" rel="stylesheet">
-                <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" type="text/css" media="all" />
-                <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
-                <script src="//code.jquery.com/jquery-1.9.1.js"></script> 
-                <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>
-                <script type="text/javascript">
-                    $(document).ready(function(){
-                    $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
-                    })
-                </script>
-
-                
-
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
@@ -39,18 +24,6 @@
 #myTable > thead{
   cursor: pointer;
 } 
-
-.navbar-inverse .navbar-nav>li>a {
-color: #D0ECF5 !important;
-}
-.navbar-inverse .navbar-nav>li>a:active {
-color: #ffffff !important;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover {
-color: #ffffff !important;
-}
-
 </style>
 </head>
 <body>
@@ -69,6 +42,7 @@ $(document).ready(function()
   <div class="container" style="margin:30px;">
 <img style="float:left" src="http://p4.scholarpaws.com/train2.jpg">
 </div>
+</div>
   <!--<div class="jumbotron">-->
 
   <header class="navbar-inverse">
@@ -83,38 +57,24 @@ $(document).ready(function()
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><u>CT</u></a>
+      <a class="navbar-brand" href="/">CT</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
   
-        <li><a href="/applications"><b>+</b>Job, Company, Resume</a></li>
-        <li><a href="/completedapps">Edit Jobs, Company, Resume</a></li>
-         <li><a href="/companyreport">Edit Companies</a></li>
-        <li><a href="/expenses"><b>+</b>Expenses</a></li>
-        <li><a href="/expensereport">Edit Expenses</a></li>
-       
-        <?php 
-
-$user = Auth::user();
-$id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, not an array/object of
-
-
-echo '<li><a href="/user/edit/';
-echo $id;
-echo'">Edit acct info</a> </li>';
-//echo '<a href="logout">log out</a> <br>';
-?>
+        <li><a href="/applications">Add a Job, Company, Resume</a></li>
+        <li><a href="/expenses">Add Expenses</a></li>
+        <li><a href="/expensereport">View Expenses</a></li>
+        <li><a href="/completedapps">View Your Jobs</a></li>
+        <li><a href="/resumesearch">View Your Resumes</a></li>
         <li><a href="/logout">Log Out</a></li>
       
       </ul>
      
       
     </div><!-- /.navbar-collapse -->
-</div>  <!--</div> container-fluid --> 
+  <!--</div> container-fluid --> 
 </nav>
-</div>
-
 </header>
