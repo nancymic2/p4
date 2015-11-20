@@ -103,7 +103,7 @@
           <ul class="dropdown-menu">
             <li><a href="/account">Edit Account Info</a></li>
             <li><a href="/profile">Add Profile</a></li>
-            <li><a href="/completedapps">Companies</a></li>
+            <li><a href="/profile">Edit Profile</a></li>
             <li><a href="#">Contact</a></li>
          
           </ul>
