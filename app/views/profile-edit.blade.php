@@ -1,7 +1,7 @@
 
 @extends('_master')
 
-@section ('resume-edit')
+@section ('profile-edit')
 
 
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
@@ -22,19 +22,30 @@
 <h2>&nbsp;</h2>
 
 
-<h3>View or Edit Resume</h3>
+<h3>View or Edit Profile</h3>
 <br>
- {{ Form::model($resume, array('route' => 'resume.edit', $resume->id)) }}    
-    Resume  name<br>
-    {{ Form::text('name')}} 
-<br>
-
-    Resume link<br>
-    {{ Form::text('url')}} 
+ {{ Form::model($profile, array('route' => 'profile.edit', $profile->id)) }}    
+    Degree<br>
+    {{ Form::text('degree')}} 
 <br>
 
-    notes<br>
-    {{ Form::textarea('resumetext')}} 
+    Concentration<br>
+    {{ Form::text('major')}} 
+<br>
+
+    Years of exp<br>
+    {{ Form::text('tenure')}} 
+<br>
+
+    industry<br>
+    {{ Form::text('industry')}} 
+
+    salary<br>
+    {{ Form::text('salrange')}} 
+<br>
+    state<br>
+    {{ Form::text('state')}} 
+<br>
 
 
   <br><br>
