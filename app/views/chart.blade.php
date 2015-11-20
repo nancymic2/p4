@@ -11,11 +11,7 @@
                 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>
 
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/umd/dropdown.js" type="text/javascript"></script>
-                                <script type="text/javascript">
-                    $(document).ready(function(){
-                    $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
-                    })
-                </script>
+
 <div class="container">
     <div class="col-sm-6">
 <?php
@@ -106,7 +102,8 @@ $newdata2=$salarycount[2];
 <!--Div that will hold the pie chart-->
     <div id="chart_div" style="width:400; height:300"></div>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
+</div>
+</div>
 </body>
 </html>
 @stop
