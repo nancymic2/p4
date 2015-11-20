@@ -1951,3 +1951,29 @@ Route::post('/profile',
              return Redirect::to('/account'); // YES NO? 
 }
 ));
+
+
+ Route::get('expense/edit/{id}', array('as' => 'expense.edit', function($id) 
+    {
+        // return our view and Nerd information
+        return View::make('expense-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
+            ->with('expense', Expense::find($id));
+    }));
+
+    // route to process the form
+   Route::post('/expense/edit/{id}', 
+    array(
+        'before' => 'csrf', 
+        function() {
+          $id =Input::get('id');
+           //$company  = Company::find(1);  got to get the co id. take from url if need be cause ive had enough
+           $expense  = Expense::find($id);  ///works when id is hardcoded
+            //
+              $expense->gas   = Input::get('gas');   //calulate later
+              $expense->air   = Input::get('air');
+              $expense->train   = Input::get('train');
+          
+              $expense->save();
+             return Redirect::to('/expensereport'); // YES NO? 
+}
+));

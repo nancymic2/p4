@@ -158,6 +158,7 @@
 @yield ('csv')
 @yield ('profile')
 @yield ('profile-edit')
+@yield ('expense-edit')
 
 <!--/////////////////-->
 
