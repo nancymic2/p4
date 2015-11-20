@@ -41,6 +41,13 @@
 
 }
 
+$curuser=Auth::user()->id)->get();
+
+DB::table('profiles')
+            ->where('user_id', $curuser)
+            ->update(array('tenure' => 88));
+
+
 ?>
 <b>Add new values below:</b>
 
