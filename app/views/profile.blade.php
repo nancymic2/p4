@@ -23,9 +23,7 @@
 
 {{ Form::open(array('url' => '/profile')) }}
 <br>
-<?php
-echo Form::selectRange('number', 40000, 20);
-?>
+
 
  <input name="state">
 <select>
@@ -87,16 +85,16 @@ echo Form::selectRange('number', 40000, 20);
 
 
 resume Name<br>
-    {{ Form::text('name', '', array('class'=>'form-control'))}} 
+    {{ Form::text('tenure', '', array('class'=>'form-control'))}} 
 
 
 resume url<br>
-    {{ Form::text('url', '', array('class'=>'form-control'))}} 
+    {{ Form::text('degree', '', array('class'=>'form-control'))}} 
 
 
 
 resume text<br>
-    {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} <br>
+    {{ Form::textarea('major', '', array('class'=>'form-control'))}} <br>
 
 
 
