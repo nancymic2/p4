@@ -1935,11 +1935,14 @@ Route::post('/profile',
            //$company  = Company::find(1);  got to get the co id. take from url if need be cause ive had enough
            $profile  = Profile::find($id);  ///works when id is hardcoded
             //$company->id   =Input::get('id');  //just added
-              $profile->url   = Input::get('url');   //calulate later
-              $profile->name   = Input::get('name');
-              $profile->profiletext   = Input::get('profiletext');
+              $profile->degree   = Input::get('degree');   //calulate later
+              $profile->major   = Input::get('major');
+              $profile->tenure   = Input::get('tenure');
+              $profile->industry   = Input::get('industry');
+              $profile->salrange   = Input::get('salrange');
+              $profile->state   = Input::get('state');
           
               $profile->save();
-             return Redirect::to('/completedapps'); // YES NO? 
+             return Redirect::to('/account'); // YES NO? 
 }
 ));
