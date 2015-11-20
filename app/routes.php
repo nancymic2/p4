@@ -1874,7 +1874,7 @@ Route::get('profile', array('before' => 'auth', function()
 
             $profiles = Profile::where('user_id', '=', Auth::user()->id)->get();
             foreach($profiles as $profile) {
-              if ($profie['user_id']=='user_id'){
+              if ($profile['user_id']=='user_id'){
                 return View::make('account');
               }
             }
