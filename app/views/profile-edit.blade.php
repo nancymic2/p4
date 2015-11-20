@@ -39,7 +39,7 @@
 
     industry<br>
     {{ Form::text('industry')}} 
-
+<br>
     salary<br>
     {{ Form::text('salrange')}} 
 <br>
