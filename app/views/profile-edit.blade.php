@@ -58,7 +58,7 @@
 
 <br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
 <!-- note use email as the type vs text if you want validation -->
-
+<br><br>
 </div>
 </div>
 @stop
