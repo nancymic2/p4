@@ -2,25 +2,22 @@
 @extends('_master')
 
 @section ('chart')
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/umd/dropdown.js" type="text/javascript"></script>
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-                        <script src="jquery.knob.js"></script>
+                <script src="jquery.knob.js"></script>
                 <link href="/css/layout.css" rel="stylesheet">
                 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" type="text/css" media="all" />
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
                 <script src="//code.jquery.com/jquery-1.9.1.js"></script> 
                 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>
-
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/umd/dropdown.js" type="text/javascript"></script>
-      
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
                   <!-- Latest compiled and minified CSS -->
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
-                <!-- Optional theme -->
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
 
 <?php
@@ -84,7 +81,7 @@ $newdata2=$salarycount[2];
   <div class="container">
     <div class="col-sm-6">
   <br>
-<h3>This chart shows annual salaries of all jobs users saved to apply to later.</h3><h3> However, new charts showing the user some analytics of their job hunt activities will be here later </h3>
+<h3>This chart shows annual salaries of all jobs users saved to apply to later.</h3>
 
 
 <!--Div that will hold the pie chart-->
