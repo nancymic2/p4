@@ -24,8 +24,7 @@
 {{ Form::open(array('url' => '/profile')) }}
 <br>
 
-
- 
+State<br>
 <select name="state">
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
@@ -81,7 +80,7 @@
 </select>
 
 
- <br>
+ <br><br>
 Highest Degree<br>
 <select name="degree">
 	<option value="doctoral">Doctoral</option>
@@ -90,11 +89,11 @@ Highest Degree<br>
 	<option value="high school">High School</option>
 
 </select>
-<br>
+<br><br>
 
 Highest Salary Range<br>
 <select name="salrange">
-	<option value="34">Under 40,000/option>
+	<option value="34">Under 40,000</option>
 	<option value="46">40,000 - 60,000</option>
 	<option value="68">61,000 - 80,000</option>
 	<option value="810">81,000 - 100, 000</option>
@@ -105,7 +104,7 @@ Highest Salary Range<br>
 
 </select>
 
-
+<br><br>
 experience<br>
     {{ Form::text('tenure', '', array('class'=>'form-control'))}} 
 
