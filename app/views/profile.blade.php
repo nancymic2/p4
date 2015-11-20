@@ -81,6 +81,33 @@
 </select>
 
 <br><br>
+
+<select name="industry">
+	<option value="Actuarial Science">Actuarial</option>	
+	<option value="Art">Art</option>		
+	<option value="med">Medical</option>		
+	<option value="Biological Sciences">Biology</option>		
+	<option value="Chemistry">Chemistry</option>	
+	<option value="Chemical Engineering">Nursing</option>		
+	<option value="Computer Engineering">Computer Engineering</option>		
+	<option value="Computer Science">Computer Science</option>		
+	<option value="Electrical Engineering">Electrical Engineering</option>		
+	<option value="Classics">Classics</option>		
+	<option value="Communication">Communications</option>		
+	<option value="Earth Science">Earth Science</option>		
+	<option value="Economics">Economics</option>		
+	<option value="English">English</option>		
+	<option value="Environmental Studies">Environmental Studies</option>		
+	<option value="History">History</option>		
+	<option value="Mathematics">Mathematics</option>		
+	<option value="Pharmacology">Pharmacology</option>		
+	<option value="Philosophy"></option>		
+	<option value="Physics">Physics</option>		
+	<option value="Political Science">Political Science</option>	
+	<option value="Psychology">Psychology</option>	
+</select>
+<br><br>
+
 <b>Years of experience</b><br>
 
 <select name="tenure">
