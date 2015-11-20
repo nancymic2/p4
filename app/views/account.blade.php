@@ -25,6 +25,8 @@
 
 $user = Auth::user();
 $id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, not an array/object of
+ $profileid = Profile::where('user_id', '=', Auth::user()->id)->get();
+//now get profile id for the users profle
 
 echo '<a class="btn btn-success "href="/user/edit/';
 echo $id;
@@ -33,7 +35,7 @@ echo'">Edit acct info</a> </h3>';
 echo '<br><br>';
 
 echo '<a class="btn btn-success "href="/profile/edit/';
-echo $id;
+echo $profileid['id'];
 echo'">Edit profile</a> </h3>';
 //echo '<a href="logout">log out</a> <br>';
 
