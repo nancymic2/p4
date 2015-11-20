@@ -102,7 +102,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/account">Edit Account Info</a></li>
-            <li><a href="/completedapps">Resume</a></li>
+            <li><a href="/profile">Add Profile</a></li>
             <li><a href="/completedapps">Companies</a></li>
             <li><a href="#">Contact</a></li>
          
@@ -116,10 +116,10 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/logout">Log Out</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Goodies<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
+            <li><a href="/charter">Salary Charts</a></li>
+            <li><a href="/charter">Industry Stats</a></li>
             <li><a href="#">Something else here</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>
@@ -156,6 +156,7 @@
 @yield ('help')
 @yield ('calendar')
 @yield ('csv')
+@yield ('profile')
 
 <!--/////////////////-->
 

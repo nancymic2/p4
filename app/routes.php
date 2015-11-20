@@ -1865,3 +1865,46 @@ echo '<br><br>';
              return Redirect::to('/choose_resume'); // YES NO? 
 }
 ));
+
+
+
+///// added 11-20-15
+Route::get('profile', array('before' => 'auth', function()
+         {
+            return View::make('profile');
+        }
+    )
+);
+
+Route::post('/profile', 
+    array(
+        'before' => 'csrf', 
+        function() {
+
+            $profile = new Profile;
+            $profile->user()->associate(Auth::user());
+         
+            $profile->degree   = Input::get('degree');
+            $profile->major    = Input::get('major');
+            $profile->tenure    = Input::get('tenure');
+            $profile->industry    = Input::get('industry');
+            $profile->salrange    = Input::get('salrange');
+            $profile->state    = Input::get('state');
+           
+            # Try to add the profile 
+            try {
+                $profile->save();
+            }
+            # Fail
+            catch (Exception $e) {
+                return Redirect::to('/profile')->with('flash_message', 'resume addition failed; please try again.')->withInput();
+            }
+
+            # Log the user in
+           // Auth::login($user);
+
+           return Redirect::to('/profile')->with('flash_message', 'Welcome to CareerTrax!');
+
+        }
+    )
+);
