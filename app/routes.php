@@ -1122,7 +1122,7 @@ echo '<b>*Note</b>, in Excel you may have to format the date column as date to s
   <thead>
     <tr>  
       <th style="width: 6.66%;">Date</th>
-      <th style="width: 6.66%;">Job ID</th>
+      <th style="width: 3.33%;">Job ID</th>
       <th style="width: 6.66%;">Gas</th>
       <th style="width: 6.66%;">Air</th>
       
@@ -1138,6 +1138,7 @@ echo '<b>*Note</b>, in Excel you may have to format the date column as date to s
       <th style="width: 6.66%;">Phone</th>
       <th style="width: 6.66%;">Clothing</th>
       <th style="width: 6.66%;">Entertain</th>
+      <th style="width: 3.33%;">Exp ID</th>
 
 
 
@@ -1331,7 +1332,8 @@ echo $expense['exp_date'];
 
     $tentertainment=$trimentertainment+$tentertainment;
     echo '</td>';
-    
+    echo '<td>';
+    echo $expense['id']."<br>";
     echo '</tr>';
 
    // echo '<tr> <td colspan="10" bgcolor="gray"></td></tr>';
@@ -1357,7 +1359,7 @@ $current .= "\n";
     echo '<b>Totals</b>';
     echo '</td>';
 
-    echo '<td style="width: 6.66%;"><b>';
+    echo '<td style="width: 3.33%;"><b>';
     echo '</b></td>';
 
     echo '<td style="width: 6.66%; text-align:right;"><b>';
@@ -1399,7 +1401,8 @@ $current .= "\n";
         echo '<td style="width: 6.66%; text-align:right;"><b>';
          echo $tentertainment;
     echo '</b></td>';
-
+   echo '<td style="width: 3.33%;"><b>';
+    echo '</b></td>';
 
     echo '</tr></table>';
 
