@@ -39,14 +39,11 @@
         echo $profile['tenure'];
         echo '<br>';
 
-}
-
-$curuser=Auth::user()->id->get();
-
-DB::table('profiles')
-            ->where('user_id', $curuser)
+        DB::table('profiles')
+            ->where('id', $profile['id'])
             ->update(array('tenure' => 88));
 
+}
 
 ?>
 <b>Add new values below:</b>
