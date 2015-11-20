@@ -21,9 +21,12 @@
 <h2>Help and FAQs</h2>
 
 <ul>
+    <li>What does it cost to join CareerTrax? CareerTrax is free!</li>
+    <li>Will you sell my personal information? No we wiill never sell or share yuor information with anyone.</li>
+    <li>But you are showing salaries and degrees and other information on the site? Yes but that information come from all users and is aggregated and is not personally identifiable.</li>
 	<li>Why can't I add a profle? If you are redirected to the edit profile page, that means there already exists a profile for your user ID.</li>
 	<li>Why can't I see dates when I open my expense report CSV file in Excel? The CSV file is formatted propery. You must format the date column in excel to be date.</li>
-	<li>3</li>
+	
 	<li>4</li>
 </ul>
 
