@@ -157,6 +157,7 @@
 @yield ('calendar')
 @yield ('csv')
 @yield ('profile')
+@yield ('profile-edit')
 
 <!--/////////////////-->
 
