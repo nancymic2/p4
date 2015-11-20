@@ -105,8 +105,18 @@ Highest Salary Range<br>
 </select>
 
 <br><br>
-experience<br>
-    {{ Form::text('tenure', '', array('class'=>'form-control'))}} 
+years of experience<br>
+
+<select name="tenure">
+	<option value="2">Under 2</option>
+	<option value="4">2-4</option>
+	<option value="8">5-8</option>
+	<option value="12">9-12</option>
+	<option value="18">12-18</option>
+	<option value="25">19-25</option>
+	<option value="99">Over 25</option>
+
+</select>
 
 
 
