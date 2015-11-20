@@ -82,19 +82,39 @@
 
 
  <br>
+Highest Degree<br>
+<select name="degree">
+	<option value="doctoral">Doctoral</option>
+	<option value="masters">Masters</option>
+	<option value="bachelor">Bachelor</option>
+	<option value="high school">High School</option>
+
+</select>
+<br>
+
+Highest Salary Range<br>
+<select name="salrange">
+	<option value="34">Under 40,000/option>
+	<option value="46">40,000 - 60,000</option>
+	<option value="68">61,000 - 80,000</option>
+	<option value="810">81,000 - 100, 000</option>
+	<option value="1012">101,000 - 120,000</option>
+	<option value="1214">121,000 - 140,000</option>
+	<option value="1416">141,000 - 160,000</option>
+	<option value="1699">Over 161,000</option>
+
+</select>
 
 
 experience<br>
     {{ Form::text('tenure', '', array('class'=>'form-control'))}} 
 
 
-highest degree<br>
-    {{ Form::text('degree', '', array('class'=>'form-control'))}} 
 
 
 
 major<br>
-    {{ Form::textarea('major', '', array('class'=>'form-control'))}} <br>
+    {{ Form::text('major', '', array('class'=>'form-control'))}} <br>
 
 
 
