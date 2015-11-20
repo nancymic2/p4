@@ -21,8 +21,8 @@
 <h2>Help and FAQs</h2>
 
 <ul>
-	<li>1</li>
-	<li>2</li>
+	<li>Why can't I add a profle? If you are redirected to the edit profile page, that means there already exists a profile for your user ID.</li>
+	<li>Why can't I see dates when I open my expense report CSV file in Excel? The CSV file is formatted propery. You must format the date column in excel to be date.</li>
 	<li>3</li>
 	<li>4</li>
 </ul>
