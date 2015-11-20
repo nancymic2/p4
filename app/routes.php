@@ -1333,7 +1333,11 @@ echo $expense['exp_date'];
     $tentertainment=$trimentertainment+$tentertainment;
     echo '</td>';
     echo '<td>';
-    echo $expense['id']."<br>";
+    echo '<a href="/expense/edit/';
+    echo $expense['id'];
+    echo '">';
+    echo $expense['id'];
+    echo '</a>';
     echo '</tr>';
 
    // echo '<tr> <td colspan="10" bgcolor="gray"></td></tr>';
