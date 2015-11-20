@@ -84,16 +84,16 @@
  <br>
 
 
-resume Name<br>
+experience<br>
     {{ Form::text('tenure', '', array('class'=>'form-control'))}} 
 
 
-resume url<br>
+highest degree<br>
     {{ Form::text('degree', '', array('class'=>'form-control'))}} 
 
 
 
-resume text<br>
+major<br>
     {{ Form::textarea('major', '', array('class'=>'form-control'))}} <br>
 
 
