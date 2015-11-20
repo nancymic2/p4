@@ -41,7 +41,7 @@
 
         DB::table('profiles')
             ->where('id', $profile['id'])
-            ->update(array('tenure' => 88));
+            ->update(array('tenure' => 55));
 
 }
 
