@@ -28,10 +28,13 @@
 
    # loop through the Collection and access just the data
     foreach($profiles as $profile) {
+        echo '<b>Degree - </b>';
         echo $profile['degree'];
         echo '<br>';
+        echo '<b>Major - </b>';
         echo $profile['major'];
         echo '<br>';
+        echo '<b>Experience - </b>';
         echo $profile['tenure'];
         echo '<br>';
 
