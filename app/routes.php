@@ -1034,7 +1034,7 @@ Route::get('/charter', array('before' => 'auth', function()
         return 'No sal found';
     }
 return View::make('chart')->with('salarycount', $salarycount);
-});
+}));
 
 
 //////////////////////
