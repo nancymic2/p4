@@ -1871,10 +1871,10 @@ echo '<br><br>';
 ///// added 11-20-15
 Route::get('profile', array('before' => 'auth', function()
          {
-$user=Auth::user()->id)->get();
+$user = Auth::user();
             $profiles = Profile::where('user_id', '=', Auth::user()->id)->get();
             foreach($profiles as $profile) {
-              if ($profile['user_id']==$user) {
+              if ($user['id']==$profile['user_id']) {
 
                 return Redirect::to('/account'); 
               }
