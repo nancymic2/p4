@@ -35,7 +35,7 @@ echo'">Edit acct info</a> </h3>';
 echo '<br><br>';
 
 echo '<a class="btn btn-success "href="/profile/edit/';
-echo $profileid['id'];
+echo $profileid;
 echo'">Edit profile</a> </h3>';
 //echo '<a href="logout">log out</a> <br>';
 
