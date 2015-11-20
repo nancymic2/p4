@@ -23,6 +23,80 @@
 
 {{ Form::open(array('url' => '/profile')) }}
 <br>
+Highest Degree<br>
+<select name="degree">
+	<option value="doctoral">Doctoral</option>
+	<option value="masters">Masters</option>
+	<option value="bachelor">Bachelor</option>
+	<option value="high school">High School</option>
+
+</select>
+<br><br>
+
+
+major<br>
+
+
+<select name="major">
+	<option value="Actuarial Science">Actuarial Science</option>	
+	<option value="Anthropology">Anthropology</option>		
+	<option value="Art">Art</option>		
+	<option value="Biochemistry">Biochemistry</option>		
+	<option value="Biological Sciences">Biological Sciences</option>		
+	<option value="Chemistry">Chemistry</option>	
+	<option value="Chemical Engineering">Chemical Engineering</option>		
+	<option value="Computer Engineering">Computer Engineering</option>		
+	<option value="Computer Science">Computer Science</option>		
+	<option value="Electrical Engineering">Electrical Engineering</option>		
+	<option value="Classics">Classics</option>		
+	<option value="Communication">Communications</option>		
+	<option value="Earth Science">Earth Science</option>		
+	<option value="Economics">Economics</option>		
+	<option value="English">English</option>		
+	<option value="Environmental Studies">Environmental Studies</option>		
+	<option value="History">History</option>		
+	<option value="Mathematics">Mathematics</option>		
+	<option value="Pharmacology">Pharmacology</option>		
+	<option value="Philosophy"></option>		
+	<option value="Physics">Physics</option>		
+	<option value="Political Science">Political Science</option>	
+	<option value="Psychology">Psychology</option>	
+</select>
+<br><br>
+
+
+
+
+Highest Salary Range<br>
+<select name="salrange">
+	<option value="34">Under 40,000</option>
+	<option value="46">40,000 - 60,000</option>
+	<option value="68">61,000 - 80,000</option>
+	<option value="810">81,000 - 100, 000</option>
+	<option value="1012">101,000 - 120,000</option>
+	<option value="1214">121,000 - 140,000</option>
+	<option value="1416">141,000 - 160,000</option>
+	<option value="1699">Over 161,000</option>
+
+</select>
+
+<br><br>
+years of experience<br>
+
+<select name="tenure">
+	<option value="2">Under 2</option>
+	<option value="4">2-4</option>
+	<option value="8">5-8</option>
+	<option value="12">9-12</option>
+	<option value="18">12-18</option>
+	<option value="25">19-25</option>
+	<option value="99">Over 25</option>
+
+</select>
+
+
+
+<br><br>
 
 State<br>
 <select name="state">
@@ -81,76 +155,6 @@ State<br>
 
 
  <br><br>
-Highest Degree<br>
-<select name="degree">
-	<option value="doctoral">Doctoral</option>
-	<option value="masters">Masters</option>
-	<option value="bachelor">Bachelor</option>
-	<option value="high school">High School</option>
-
-</select>
-<br><br>
-
-Highest Salary Range<br>
-<select name="salrange">
-	<option value="34">Under 40,000</option>
-	<option value="46">40,000 - 60,000</option>
-	<option value="68">61,000 - 80,000</option>
-	<option value="810">81,000 - 100, 000</option>
-	<option value="1012">101,000 - 120,000</option>
-	<option value="1214">121,000 - 140,000</option>
-	<option value="1416">141,000 - 160,000</option>
-	<option value="1699">Over 161,000</option>
-
-</select>
-
-<br><br>
-years of experience<br>
-
-<select name="tenure">
-	<option value="2">Under 2</option>
-	<option value="4">2-4</option>
-	<option value="8">5-8</option>
-	<option value="12">9-12</option>
-	<option value="18">12-18</option>
-	<option value="25">19-25</option>
-	<option value="99">Over 25</option>
-
-</select>
-
-
-
-<br><br>
-
-major<br>
-
-
-<select name="major">
-	<option value="Actuarial Science">Actuarial Science</option>	
-	<option value="Anthropology">Anthropology</option>		
-	<option value="Art">Art</option>		
-	<option value="Biochemistry">Biochemistry</option>		
-	<option value="Biological Sciences">Biological Sciences</option>		
-	<option value="Chemistry">Chemistry</option>	
-	<option value="Chemical Engineering">Chemical Engineering</option>		
-	<option value="Computer Engineering">Computer Engineering</option>		
-	<option value="Computer Science">Computer Science</option>		
-	<option value="Electrical Engineering">Electrical Engineering</option>		
-	<option value="Classics">Classics</option>		
-	<option value="Communication">Communications</option>		
-	<option value="Earth Science">Earth Science</option>		
-	<option value="Economics">Economics</option>		
-	<option value="English">English</option>		
-	<option value="Environmental Studies">Environmental Studies</option>		
-	<option value="History">History</option>		
-	<option value="Mathematics">Mathematics</option>		
-	<option value="Pharmacology">Pharmacology</option>		
-	<option value="Philosophy"></option>		
-	<option value="Physics">Physics</option>		
-	<option value="Political Science">Political Science</option>	
-	<option value="Psychology">Psychology</option>	
-</select>
-<br><br>
 
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
