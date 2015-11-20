@@ -49,8 +49,8 @@
 
 
   <br><br>
- {{ Form::hidden('id', $resume->id) }}  <!-- just added -->
-        {{ Form::submit('Update resume') }}
+ {{ Form::hidden('id', $profile->id) }}  <!-- just added -->
+        {{ Form::submit('Update profile') }}
 <br><br>
     {{ Form::close() }}
 
