@@ -19,7 +19,7 @@
 
 <div class="container">
     <div class="col-sm-6">
-<h2>&nbsp;</h2>
+
 
 
 <h3>View or Edit Profile</h3>
