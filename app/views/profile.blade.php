@@ -25,8 +25,8 @@
 <br>
 
 
- <input name="state">
-<select>
+ 
+<select name="state">
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
 	<option value="AZ">Arizona</option>
@@ -79,7 +79,7 @@
 	<option value="WI">Wisconsin</option>
 	<option value="WY">Wyoming</option>
 </select>
-</input>
+
 
  <br>
 
