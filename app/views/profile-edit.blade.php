@@ -78,36 +78,7 @@ function upprofile()
 <br>
 <b>Add new values below:</b>
 
-<br>
- {{ Form::model($profile, array('route' => 'profile.edit', $profile->id)) }}    
-    Degree<br>
-    {{ Form::text('degree')}} 
-<br>
 
-    Concentration<br>
-    {{ Form::text('major')}} 
-<br>
-
-    Years of exp<br>
-    {{ Form::text('tenure')}} 
-<br>
-
-    industry<br>
-    {{ Form::text('industry')}} 
-<br>
-    salary<br>
-    {{ Form::text('salrange')}} 
-<br>
-    state<br>
-    {{ Form::text('state')}} 
-<br>
-
-
-  <br><br>
- {{ Form::hidden('id', $profile->id) }}  <!-- just added -->
-        {{ Form::submit('Update profile') }}
-<br><br>
-    {{ Form::close() }}
 
 
 
