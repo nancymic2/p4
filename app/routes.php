@@ -1874,7 +1874,7 @@ Route::get('profile', array('before' => 'auth', function()
 
             $profiles = Profile::where('user_id', '=', Auth::user()->id)->get();
             foreach($profiles as $profile) {
-              if ($profile['user_id']=='user_id'){
+              if ($profile['user_id']==(Auth::user()->id)->get()){
                 echo '<script type="text/javascript">alert("hi");</script>';
                 return Redirect::to('/account'); 
               }
