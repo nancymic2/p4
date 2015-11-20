@@ -23,7 +23,7 @@
 
 {{ Form::open(array('url' => '/profile')) }}
 <br>
-Highest Degree<br>
+<b>Highest Degree</b><br>
 <select name="degree">
 	<option value="doctoral">Doctoral</option>
 	<option value="masters">Masters</option>
@@ -34,7 +34,7 @@ Highest Degree<br>
 <br><br>
 
 
-major<br>
+<b>Major</b><br>
 
 
 <select name="major">
@@ -67,7 +67,7 @@ major<br>
 
 
 
-Highest Salary Range<br>
+<b>Highest Salary Range</b><br>
 <select name="salrange">
 	<option value="34">Under 40,000</option>
 	<option value="46">40,000 - 60,000</option>
@@ -81,7 +81,7 @@ Highest Salary Range<br>
 </select>
 
 <br><br>
-years of experience<br>
+<b>Years of experience</b><br>
 
 <select name="tenure">
 	<option value="2">Under 2</option>
@@ -98,7 +98,7 @@ years of experience<br>
 
 <br><br>
 
-State<br>
+<b>State where employed</b><br>
 <select name="state">
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
