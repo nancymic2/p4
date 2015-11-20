@@ -81,7 +81,7 @@
 </select>
 
 <br><br>
-
+<b>Industry</b><br>
 <select name="industry">
 	<option value="Actuarial Science">Actuarial</option>	
 	<option value="Art">Art</option>		
