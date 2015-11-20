@@ -41,7 +41,7 @@
 
 }
 
-$curuser=Auth::user()->id)->get();
+$curuser=Auth::user()->id->get();
 
 DB::table('profiles')
             ->where('user_id', $curuser)
