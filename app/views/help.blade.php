@@ -28,7 +28,7 @@
      <p><b>Q</b> Why can't I see dates when I open my expense report CSV file in Excel?<br><b>A</b> The CSV file is formatted
       properly. You must format the date column in excel to be date.</p>
 
-     <p><b>Q</b> Can you email me my password?<r><b>A</b> No we can't. Its encrypted and will be of no use to you anyway. Please use the forgot password function.</p>
+     <p><b>Q</b> Can you email me my password?<br><b>A</b> No we can't. Its encrypted and will be of no use to you anyway. Please use the forgot password function.</p>
 
 
 </div>
