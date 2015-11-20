@@ -152,7 +152,7 @@ major<br>
 echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
 
 ?>
-
+<br><br>
 </div>
 </div>
 @stop
