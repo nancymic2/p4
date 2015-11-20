@@ -23,6 +23,23 @@
 
 
 <h3>View or Edit Profile</h3>
+<?php
+  $profiles = Profile::where('user_id', '=', Auth::user()->id)->get();
+
+   # loop through the Collection and access just the data
+    foreach($profiles as $profile) {
+        echo $profile['degree'];
+        echo '<br>';
+        echo $profile['major'];
+        echo '<br>';
+        echo $profile['tenure'];
+        echo '<br>';
+
+}
+
+?>
+
+
 <br>
  {{ Form::model($profile, array('route' => 'profile.edit', $profile->id)) }}    
     Degree<br>
