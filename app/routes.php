@@ -974,9 +974,11 @@ Route::post('/applications',
     )
 );
 
-//////////////////////
-Route::get('/charter', function() {
+//////////////////////Route::get('expensereport', array('before' => 'auth', function()
 
+
+Route::get('/charter', array('before' => 'auth', function()
+  {  
 
   class Postedjobs extends Eloquent {
 
