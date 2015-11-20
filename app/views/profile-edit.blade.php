@@ -23,6 +23,7 @@
 
 
 <h3>View or Edit Profile</h3>
+<b>Current values:</b><br>
 <?php
   $profiles = Profile::where('user_id', '=', Auth::user()->id)->get();
 
@@ -41,7 +42,7 @@
 }
 
 ?>
-
+<b>Add new values below:</b>
 
 <br>
  {{ Form::model($profile, array('route' => 'profile.edit', $profile->id)) }}    
