@@ -1110,7 +1110,8 @@ echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.ta
 echo '<h3>Download the Excel file:</h3>';
 echo 'download <u><a href="myexpenses.csv">the file</a></u> in CSV format<br>';
 echo 'CSV is also better for phone viewing<br>';
-echo '<b>*Note</b>, in Excel you may have to format the date column as date to see dates';
+echo '<b>*Note</b>, in Excel you may have to format the date column as date to see dates<br>';
+echo 'Click on Exp ID to edit that expense record.';
 //echo 'because you really need a file';
 
   echo '<p>';
