@@ -27,8 +27,6 @@
 <?php
   $profiles = Profile::where('user_id', '=', Auth::user()->id)->get();
 
-  echo'';
-
    # loop through the Collection and access just the data
     foreach($profiles as $profile) {
         echo '<b>Degree - </b>';
@@ -41,44 +39,45 @@
         echo $profile['tenure'];
         echo '<br>';
 
-       
+        DB::table('profiles')
+            ->where('id', $profile['id'])
+            ->update(array('tenure' => 88));
 
 }
 
 ?>
-
-<br>
-
-<form method="post" action="upprofile()">
-<select name="degree">
-    <option value="doctoral">Doctoral</option>
-    <option value="masters">Masters</option>
-    <option value="bachelor">Bachelor</option>
-    <option value="high school">High School</option>
-
-</select>!-- assign a name for the button -->
- <input type="submit" value="Submit">
-</form>
-
-
-<?php
-function upprofile()
-{
-     $profiles = Profile::where('user_id', '=', Auth::user()->id)->get();
-
-    foreach($profiles as $profile) {
-    DB::table('profiles')
-            ->where('id', $profile['id'])
-            ->update(array('degree' => $profile['degree']));
-   
-} 
-
-?>
-
-<br>
 <b>Add new values below:</b>
 
+<br>
+ {{ Form::model($profile, array('route' => 'profile.edit', $profile->id)) }}    
+    Degree<br>
+    {{ Form::text('degree')}} 
+<br>
 
+    Concentration<br>
+    {{ Form::text('major')}} 
+<br>
+
+    Years of exp<br>
+    {{ Form::text('tenure')}} 
+<br>
+
+    industry<br>
+    {{ Form::text('industry')}} 
+<br>
+    salary<br>
+    {{ Form::text('salrange')}} 
+<br>
+    state<br>
+    {{ Form::text('state')}} 
+<br>
+
+
+  <br><br>
+ {{ Form::hidden('id', $profile->id) }}  <!-- just added -->
+        {{ Form::submit('Update profile') }}
+<br><br>
+    {{ Form::close() }}
 
 
 
