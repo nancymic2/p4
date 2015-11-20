@@ -113,8 +113,49 @@ experience<br>
 
 
 major<br>
-    {{ Form::text('major', '', array('class'=>'form-control'))}} <br>
 
+
+<select name="major">
+	<option value="Actuarial Science">Actuarial Science</option>	
+	<option value="Anthropology">Anthropology</option>		
+
+	<option value="Art">Art</option>		
+	
+	<option value="Biochemistry">Biochemistry</option>		
+	
+	<option value="Biological Sciences">Biological Sciences</option>		
+	
+	
+	<option value="Chemistry">Chemistry</option>	
+	<option value="Chemical Engineering">Chemical Engineering</option>		
+	<option value="Computer Engineering">Computer Engineering</option>		
+	<option value="Computer Science">Computer Science</option>		
+	<option value="Electrical Engineering">Electrical Engineering</option>		
+
+	<option value="Classics">Classics</option>		
+	<option value="Communication">Communications</option>		
+
+	<option value="Earth Science">Earth Science</option>		
+	
+	<option value="Economics">Economics</option>		
+
+	<option value="English">English</option>		
+	<option value="Environmental Studies">Environmental Studies</option>		
+	
+
+	<option value="History">History</option>		
+	
+	<option value="Mathematics">Mathematics</option>		
+
+	<option value="Pharmacology">Pharmacology</option>		
+	<option value="Philosophy"></option>		
+	
+	<option value="Physics">Physics</option>		
+	
+	<option value="Political Science">Political Science</option>	
+	<option value="Psychology">Psychology</option>	
+</select>
+<br>
 
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
