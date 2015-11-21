@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="css/layout.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/umd/dropdown.js"></script>
     <title>Career Trax</title>
-
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                    $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
+                    })
+                </script>
 
     <style type="text/css">
       #myTable > thead{
