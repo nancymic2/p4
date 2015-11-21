@@ -176,11 +176,12 @@ Route::post('password/reset/{token}', array(
   'as' => 'password.update'
 ));
 
-Route::get('password/remind', array(
+Route::get('password/remind', array('before' => 'guest',
   'uses' => 'RemindersController@getRemind',
   'as' => 'password.remind'
 ));
 
+/////////////////////////// playing wth fire ^^  11/21/235pm
 
 Route::post('password/remind', array(
   'uses' => 'RemindersController@postRemind',
