@@ -289,7 +289,7 @@ echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.ta
   <h4>Click Company to see or edit Company record</h4>
   <h4>Click Resume to see or edit Resume record</h4>
   <h4>Click Job name to see or edit Job record </h4>
-  <h4><a href="myjobs.csv">Download the Excel file in CSV format<a>&#8659;</h4>
+  <h4><a href="myjobs.csv">Download the Excel file in CSV format<a> <b>&#8659;</b></h4>
   <h5>Use report when needed for unemployment, etc.</h5>
   </caption>
   <thead>
@@ -1133,7 +1133,7 @@ echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.ta
   echo '<div class="container">'; 
   echo '<h2>Your Expenses</h2>';
 
-echo '<h3>Download the Excel file:</h3>';
+echo '<h3>Download the Excel file: <b>&#8659;</b></h3>';
 echo 'download <u><a href="myexpenses.csv">the file</a></u> in CSV format<br>';
 echo 'CSV is also better for phone viewing<br>';
 echo '<b>*Note</b>, in Excel you may have to format the date column as date to see dates<br>';
