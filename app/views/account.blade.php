@@ -25,7 +25,7 @@
 
 $user = Auth::user();
 $id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, not an array/object of
-$profiles = Profiles::all();
+$profiles = Profile::all();
 
 
 //now get profile id for the users profle
