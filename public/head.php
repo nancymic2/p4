@@ -102,9 +102,9 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/account">Edit Account Info</a></li>
+            <li><a href="/account">Edit Account/profile Info</a></li>
             <li><a href="/profile">Create Profile</a></li>
-            <li><a href="/profile">Edit Profile</a></li>
+            <!--<li><a href="/profile">Edit Profile</a></li>-->
             <li><a href="/password/remind">Forgot Password</a></li>
             <li><a href="#">Contact</a></li>
          
