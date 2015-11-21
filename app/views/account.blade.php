@@ -27,7 +27,9 @@ $user = Auth::user();
 $id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, not an array/object of
 
 //now get profile id for the users profle
-             $profiles = Profile::where('user_id', '=', Auth::user()->id)->get();
+             //$profiles = Profile::where('user_id', '=', Auth::user()->id)->get();
+
+$profiles = Profile::where('user_id', '=', Auth::user()->id)->find();
             foreach($profiles as $profile) {
               if ($user['id']==$profile['user_id']) {
 
