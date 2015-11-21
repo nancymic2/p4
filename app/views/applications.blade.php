@@ -64,6 +64,7 @@ if (diva.style.display=="none") {
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
     --> <!-- commented out to remove company text box replace with select -->
 <div id="companyhide2" style="display:none;">
+    <div class='layout-document'> <!-- just added for knob-->
    {{ Form::open(array('url' => '/company')) }}
 
 
@@ -91,6 +92,7 @@ if (diva.style.display=="none") {
     {{ Form::close() }}
 <br><br><br>
 </div>
+</div> <!-- just added for knob-->
 <div id="companyhideDB" style="display:none;">
 {{ Form::open(array('url' => '/applications')) }}
 
