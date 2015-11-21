@@ -70,9 +70,12 @@ if (diva.style.display=="none") {
 <h3>First rate this company</h3><br>
  
 
-  <input type="radio" name="rating" value="1" checked>1
+  <input type="radio" name="rating" value="1" checked>1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2
+  &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4
+  &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5
+
   <br>
-  <input type="radio" name="rating" value="2">2
+  
 <br>
     company Name<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
