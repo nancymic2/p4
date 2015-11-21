@@ -28,9 +28,7 @@ return array(
 	|
 	*/
 
-	//'host' => 'smtp.gmail.com',
-	'host' => 'smtp.sendgrid.net',
-
+	'host' => 'smtp.gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -56,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'nancyamichell@yahoo.com', 'name' => 'yourcareerTrax'),
+	'from' => array('address' => 'p4wa15@gmail.com', 'name' => 'careerTrax'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -82,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'nancymichell',
+	'username' => 'p4dwa15',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -95,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'horsestapler1',
+	'password' => 'maxwelldworkin',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -106,7 +104,7 @@ return array(
 	| the path to where Sendmail lives on this server. A default path has
 	| been provided here, which will work well on most of your systems.
 	|
-	*/ 
+	*/
 
 	'sendmail' => '/usr/sbin/sendmail -bs',
 
