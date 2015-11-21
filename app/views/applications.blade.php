@@ -67,7 +67,7 @@ if (diva.style.display=="none") {
    {{ Form::open(array('url' => '/company')) }}
 
 
-<h3>First rate this company</h3><br>
+<h3>Rate this company</h3><br>
  
 
   <input type="radio" name="rating" value="1" checked>1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2
@@ -100,10 +100,12 @@ if (diva.style.display=="none") {
 <div id="companyhideDB" style="display:none;">
 {{ Form::open(array('url' => '/applications')) }}
 
-   <h3>First rate this job prospect</h3><br>
- <input name="rating" class="knob" data-width="100" data-min="0" data-max="12"  data-displayPrevious=true 
+   <h3>Rate this job prospect</h3><br>
+  <input type="radio" name="rating" value="1" checked>1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2
+  &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4
+  &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5
 
-value="44"><br>
+  <br>
      <h4>Select existing company</h4>
     {{ Form::select('company_id', $company_lists) }} <!--this yieds the INDEX of the selected 11/6-->
  <!-- 11/1/15  -->
