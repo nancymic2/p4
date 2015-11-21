@@ -25,46 +25,40 @@
 
 $user = Auth::user();
 $id = Auth::user()->id;  //note this works bec there is only 1 logged-in user, not an array/object of
+$profiles = Profiles::all();
+
 
 //now get profile id for the users profle
              //$profiles = Profile::where('user_id', '=', Auth::user()->id)->get();
 
-$profiles = Profile::where('user_id', '=', Auth::user()->id)->find();
-  if ($profiles){
+//$profiles = Profile::where('user_id', '=', Auth::user()->id)->get();
+  
             foreach($profiles as $profile) {
               if ($user['id']==$profile['user_id']) {
 
                 $profileid=$profile['id'];
+
+                echo '<a class="btn btn-success "href="/user/edit/';
+                echo $id;
+                echo'">Edit acct info</a> </h3>';
+
+                echo '<br><br>';
+
+                echo '<a class="btn btn-success "href="/profile/edit/';
+                echo $profileid;
+                echo'">Edit profile</a> </h3>';
               }
+
+              else {
+                echo '<a class="btn btn-success "href="/user/edit/';
+                echo $id;
+                echo'">Edit acct info</a> </h3>';
             }
- 
+  }
 
-echo '<a class="btn btn-success "href="/user/edit/';
-echo $id;
-echo'">Edit acct info</a> </h3>';
-
-echo '<br><br>';
-
-echo '<a class="btn btn-success "href="/profile/edit/';
-echo $profileid;
-echo'">Edit profile</a> </h3>';
-
- }
-
- else {
-    echo '<a class="btn btn-success "href="/user/edit/';
-    echo $id;
-    echo'">Edit acct info</a> </h3>';
- }
 //echo '<a href="logout">log out</a> <br>';
 
 //CANNOT TRY TO ACCESS THIS ON ANY GUEST PAGE
-
-
-
-
-
-
 ?>
 
 <br>
