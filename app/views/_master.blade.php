@@ -29,8 +29,9 @@
     </script>
 </head>
 <body>
+<img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/train2.jpg">
 <div class="container" style="margin:30px;">
-<img style="float:left; max-width: 130%;" class="img-responsive" src="http://p4.scholarpaws.com/train2.jpg">
+
 </div>
 </div>
   <!--<div class="jumbotron">-->
