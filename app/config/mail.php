@@ -29,7 +29,7 @@ return array(
 	*/
 
 	//'host' => 'smtp.gmail.com',
-	'host' => 'smtp.sparkpostmail.com',
+	'host' => 'smtp.sendgrid.net',
 
 
 	/*
@@ -43,7 +43,7 @@ return array(
 	|
 	*/
 
-	'port' => 587,
+	'port' => 465,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -69,7 +69,7 @@ return array(
 	|
 	*/
 
-	'encryption' => 'STARTTLS',
+	'encryption' => 'ssl',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -82,7 +82,7 @@ return array(
 	|
 	*/
 
-	//'username' => 'SMTP_Injection',
+	'username' => 'nancymichell',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -95,7 +95,7 @@ return array(
 	|
 	*/
 
-	'password' => '84d708b5dd0f1053743f579a8d195a97125f1d38',
+	'password' => 'horsestapler1',
 
 	/*
 	|--------------------------------------------------------------------------
