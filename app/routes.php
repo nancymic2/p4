@@ -554,6 +554,7 @@ echo '</tr>';
 echo '</table>';      
 echo '</p>';
 echo '</div>';
+echo '</div>';
     echo $stylesend;
 }));
 
