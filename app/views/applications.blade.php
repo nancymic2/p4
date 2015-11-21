@@ -113,12 +113,8 @@
 
 
 
-    
-                <script type="text/javascript">
-                    $(document).ready(function(){
-                    $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
-                    })
-                </script>
+
+
         <!--</head>-->
 <div class="container">
     <div class="col-sm-6">
@@ -300,4 +296,9 @@ value="44"><br>
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
                         <script src="jquery.knob.js"></script>
                 <link href="/css/layout.css" rel="stylesheet">
+                                <script type="text/javascript">
+                    $(document).ready(function(){
+                    $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
+                    })
+                </script>
 @stop
