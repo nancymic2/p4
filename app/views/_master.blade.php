@@ -165,6 +165,6 @@
 <!--/////////////////-->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png">
+<br><br><img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png">
 </body>
 </html>
