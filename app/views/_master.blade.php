@@ -72,7 +72,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/completedapps">Jobs</a></li>
+            <li><a href="/completedapps">Your Job Applications</a></li>
             <li><a href="/choose_resume">Resumes</a></li>
             <li><a href="/companyreport">Companies</a></li>
             <li><a href="#">Contact</a></li>
