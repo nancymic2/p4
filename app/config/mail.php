@@ -29,7 +29,7 @@ return array(
 	*/
 
 	//'host' => 'smtp.gmail.com',
-	'host' => 'smtp.gmail.com',
+	'host' => 'smtp.sparkpostmail.com',
 
 
 	/*
@@ -43,7 +43,7 @@ return array(
 	|
 	*/
 
-	'port' => 465,
+	'port' => 587,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'nanmichell@gmail.com', 'name' => 'yourcareerTrax'),
+	'from' => array('address' => 'nancyamichell@yahoo.com', 'name' => 'yourcareerTrax'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -69,7 +69,7 @@ return array(
 	|
 	*/
 
-	'encryption' => 'tls',
+	'encryption' => 'STARTTLS',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -82,7 +82,7 @@ return array(
 	|
 	*/
 
-	//'username' => 'career_trax',
+	//'username' => 'SMTP_Injection',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -95,7 +95,7 @@ return array(
 	|
 	*/
 
-	'password' => '33Oxfordst',
+	'password' => '84d708b5dd0f1053743f579a8d195a97125f1d38',
 
 	/*
 	|--------------------------------------------------------------------------
