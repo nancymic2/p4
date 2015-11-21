@@ -195,4 +195,5 @@ if (diva.style.display=="none") {
 
 </div>
 </div>
+</div>
 @stop
