@@ -105,6 +105,7 @@
             <li><a href="/account">Edit Account Info</a></li>
             <li><a href="/profile">Create Profile</a></li>
             <li><a href="/profile">Edit Profile</a></li>
+            <li><a href="/password/remind">Forgot Password</a></li>
             <li><a href="#">Contact</a></li>
          
           </ul>
