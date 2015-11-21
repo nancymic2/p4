@@ -19,7 +19,7 @@ Route::get('account', array('before' => 'auth', function()
 
 {
     
-$stylesend='</body></html>';
+$stylesend='<img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
      
  $names = User::where('id', '=', Auth::user()->id)->get();
  include 'head.php';
@@ -61,7 +61,7 @@ Route::get('changelast', array('before' => 'auth', function()
 
 {
    
-$stylesend='</body></html>';
+$stylesend='<img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
 include 'head.php';
 echo '<p>&nbsp;</p>';    
  $names = User::where('id', '=', Auth::user()->id)->get();
@@ -196,7 +196,7 @@ Route::get('jobstoapply', array('before' => 'auth', function()
 {
 
 
-$stylesend='</body></html>';
+$stylesend='<img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
      
   $jobs = Postedjob::where('user_id', '=', Auth::user()->id)->get();
   include 'head.php';
@@ -258,7 +258,7 @@ Route::get('completedapps', array('before' => 'auth', function()
   {      
 ////////////////
 
-$stylesend='</body></html>';
+$stylesend='<img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
 
 $file = 'myjobs.csv'; ///
 file_put_contents($file, "");  ///
@@ -493,7 +493,7 @@ Route::get('resumesearch', array('before' => 'auth', function()
 
 {
  
-$stylesend='</body></html>';
+$stylesend='<img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
 
   $i=0;
   $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
@@ -1096,7 +1096,7 @@ Route::get('expensereport', array('before' => 'auth', function()
   {      
 ////////////////
 
-$stylesend='</body></html>';
+$stylesend='<img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
 $tgas=0;
 $tair=0;
 $ttrain=0;
@@ -1678,7 +1678,7 @@ Route::get('companyreport', array('before' => 'auth', function()
   {      
 ////////////////
 
-$stylesend='</body></html>';
+$stylesend='<img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
 
 
   $companies = Company::where('user_id', '=', Auth::user()->id)->get();
@@ -1803,7 +1803,7 @@ Route::get('choose_resume', array('before' => 'auth', function()
   {      
 ////////////////
 
-$stylesend='</body></html>';
+$stylesend='<img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
 
 
   $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
