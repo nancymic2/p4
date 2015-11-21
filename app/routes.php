@@ -259,10 +259,15 @@ Route::get('completedapps', array('before' => 'auth', function()
 
 $stylesend='</body></html>';
 
+$file = 'myjobs.csv'; ///
+file_put_contents($file, "");  ///
 
-///////////////            
+// Open the file to get existing content
+$current = file_get_contents($file);  ///
 
-//Route::get('/completedapps', function()
+$current .= 'Company, Role, City, Date Applied, Contact, Followup, Job Rating, Resume, Job Link, Job ID / Name';
+
+$current .= "\n";
 
   $i=0;  
   $j=0;   
@@ -341,12 +346,15 @@ foreach($completedapps as $completedapp) {
     echo $corp[$key];
     echo '</a>';  ///
 
-    //echo '<b>company:</b> ';
-    //echo $completedapp['company']."<br>";
+  $current .= $corp[$key];
+  $current .= ",";
     echo '</td>';
     echo '<td>';
     //echo '<b>role:</b> ';
     echo $completedapp['role']."<br>";
+  $current .= $completedapp['role'];
+  $current .= ",";
+
     echo '</td>';
     echo '<td>';
     //echo '<b>Application id:</b> ';
@@ -354,14 +362,20 @@ foreach($completedapps as $completedapp) {
 
     //echo '<b>City:</b> ';
     echo $completedapp['city']."<br>";
+  $current .= $completedapp['city'];
+  $current .= ",";
     echo '</td>';
     echo '<td>';
     //echo '<b>Applied date:</b> ';
     echo $completedapp['applyDate']."<br>";
+  $current .= $completedapp['applyDate'];
+  $current .= ",";
     echo '</td>';
     echo '<td>';
     //echo '<b>Hiring Manager:</b> ';
     echo $completedapp['hiringMgr']."<br>";
+  $current .= $completedapp['hiringMgr'];
+  $current .= ",";
     echo '</td>';
     echo '<td>';
     //echo '<b>Salary:</b> ';
@@ -369,6 +383,8 @@ foreach($completedapps as $completedapp) {
    
     //echo '<b>Follow up by:</b> ';
     echo $completedapp['followupBy']."<br>";
+  $current .= $completedapp['followupBy'];
+  $current .= ",";
     echo '</td>';
     echo '<td>';
     //echo '<b>Decision:</b> ';
@@ -376,6 +392,8 @@ foreach($completedapps as $completedapp) {
 
     //echo '<b>rating:</b> ';
     echo $completedapp['rating']."<br>";
+  $current .= $completedapp['rating'];
+  $current .= ",";
     echo '</td>';
     echo '<td>';
     //echo '<b>resume used:</b> ';
@@ -388,6 +406,8 @@ foreach($completedapps as $completedapp) {
     echo '">';  ////
     echo $resum[$key];
     echo '</a>';  ///
+  $current .= $resum[$key];
+  $current .= ",";
       //$res[] = json_decode($resumeCurr, true);
 
       //echo gettype($res);
@@ -414,6 +434,8 @@ foreach($completedapps as $completedapp) {
     echo '">';
     echo $completedapp['website'];
     echo '</a>';
+  $current .= $completedapp['website'];
+  $current .= ",";
     echo '</td>';
     echo '<td>';
     //echo '<b>user name:</b> ';
@@ -429,7 +451,8 @@ foreach($completedapps as $completedapp) {
     echo '">';
     echo $completedapp['recnumber']; //job name
     echo '</a>';
-    
+  $current .= $completedapp['recnumber'];
+  $current .= ","; 
     
     echo '</td>';
     
@@ -445,6 +468,7 @@ foreach($completedapps as $completedapp) {
      //echo $deleteres;
           // onclick?  Session::put('applybydate', $applydate);
   unset($res);
+  $current .= "\n";
 
   }
     echo '<br>';
@@ -452,12 +476,12 @@ foreach($completedapps as $completedapp) {
     echo '</tbody> </table>';
     echo '</div>';
 
-    /// $buyshoe->delete();
+file_put_contents($file, $current);
 
 //return View::make('deleteresume')->with('deleteres', $deleteres);
 echo '</p>';
 echo '<br><br>';
- echo $stylesend;   
+echo $stylesend;   
 }));
 
 
