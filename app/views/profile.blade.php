@@ -101,7 +101,7 @@
 	<option value="History">History</option>		
 	<option value="Mathematics">Mathematics</option>		
 	<option value="Pharmacology">Pharmacology</option>		
-	<option value="Philosophy"></option>		
+	<option value="Philosophy">Philosophy</option>		
 	<option value="Physics">Physics</option>		
 	<option value="Political Science">Political Science</option>	
 	<option value="Psychology">Psychology</option>	
