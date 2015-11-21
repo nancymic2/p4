@@ -56,7 +56,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'yourcareertrax@gmail.com', 'name' => 'yourcareerTrax'),
+	'from' => array('address' => 'nanmichell@gmail.com', 'name' => 'yourcareerTrax'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -82,7 +82,7 @@ return array(
 	|
 	*/
 
-	'username' => 'career_trax',
+	//'username' => 'career_trax',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -95,7 +95,7 @@ return array(
 	|
 	*/
 
-	'password' => '106hollywood',
+	'password' => '33Oxfordst',
 
 	/*
 	|--------------------------------------------------------------------------
