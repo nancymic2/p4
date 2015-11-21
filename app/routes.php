@@ -452,8 +452,8 @@ foreach($completedapps as $completedapp) {
     echo '">';
     echo $completedapp['recnumber']; //job name
     echo '</a>';
-  $current .= $completedapp['recnumber'];
-  $current .= ","; 
+  $current .= $app_id[$i].$completedapp['recnumber'];
+ //$current .= ","; 
     
     echo '</td>';
     
