@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'careertrax.yandex.com', 'name' => 'careerTrax'),
+	'from' => array('address' => 'careertrax@yandex.com', 'name' => 'careerTrax'),
 
 	/*
 	|--------------------------------------------------------------------------
