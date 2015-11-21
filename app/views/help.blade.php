@@ -32,7 +32,7 @@
       properly. You must format the date column in excel to be date.</p>
 
      <p><b>Q</b> Can you email me my password?<br><b>A</b> No we can't. It's encrypted and will be of no use to you anyway.<BR>
-      Please use the <a href="/password/remind">forgot password function</a>.</p>
+      Please use the <a href="/password/remind"><b>forgot password function</b></a>.</p>
 
 
 </div>
