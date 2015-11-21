@@ -285,11 +285,12 @@ echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.ta
   echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4"> 
 
   <caption>
-  <h3>Sort Your Applications by field</h3>
+  <h3>Sort Your Job Applications by field</h3>
   <h4>Click Company to see or edit Company record</h4>
   <h4>Click Resume to see or edit Resume record</h4>
   <h4>Click Job name to see or edit Job record </h4>
   <h4><a href="myjobs.csv">Download the Excel file in CSV format<a></h4>
+  <h5>Use report when needed for unemployment, etc.</h5>
   </caption>
   <thead>
     <tr>  
