@@ -70,7 +70,7 @@ if (diva.style.display=="none") {
 <h3>Rate this company</h3><br>
  
 
-  <input type="radio" name="rating" value="1" checked>1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2
+  <input type="radio" name="rating" value="1">1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2
   &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4
   &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5
 
@@ -101,7 +101,7 @@ if (diva.style.display=="none") {
 {{ Form::open(array('url' => '/applications')) }}
 
    <h3>Rate this job prospect</h3><br>
-  <input type="radio" name="rating" value="1" checked>1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2
+  <input type="radio" name="rating" value="1">1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2
   &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4
   &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5
 
