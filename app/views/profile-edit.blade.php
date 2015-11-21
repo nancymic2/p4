@@ -38,11 +38,15 @@
         echo '<b>Experience - </b>';
         echo $profile['tenure'];
         echo '<br>';
-
-        DB::table('profiles')
-            ->where('id', $profile['id'])
-            ->update(array('tenure' => 55));
-
+                echo '<b>Industry - </b>';
+        echo $profile['industry'];
+        echo '<br>';
+                echo '<b>Salary - </b>';
+        echo $profile['salrange'];
+        echo '<br>';
+                echo '<b>US State - </b>';
+        echo $profile['state'];
+        echo '<br>';
 }
 
 ?>
