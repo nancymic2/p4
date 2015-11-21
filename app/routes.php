@@ -1874,6 +1874,7 @@ foreach($resumes as $resume) {
 echo '</p>';
 echo '</div>';
 echo '<br><br>';
+echo '</div>';
  echo $stylesend;   
 }));
 
