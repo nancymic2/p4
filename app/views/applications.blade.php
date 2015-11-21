@@ -3,26 +3,17 @@
 @section ('applications')
 
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-                <script src="jquery.knob.js"></script>
+                        <script src="jquery.knob.js"></script>
                 <link href="/css/layout.css" rel="stylesheet">
                 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" type="text/css" media="all" />
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
                 <script src="//code.jquery.com/jquery-1.9.1.js"></script> 
                 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>
-
-                                <script type="text/javascript">
+                <script type="text/javascript">
                     $(document).ready(function(){
                     $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
                     })
                 </script>
-
-
-
-
-
-
-
-
         <!--</head>-->
 <div class="container">
     <div class="col-sm-6">
@@ -73,7 +64,6 @@ if (diva.style.display=="none") {
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
     --> <!-- commented out to remove company text box replace with select -->
 <div id="companyhide2" style="display:none;">
-    <div class='layout-document'> <!-- just added for knob-->
    {{ Form::open(array('url' => '/company')) }}
 
 
@@ -101,7 +91,6 @@ if (diva.style.display=="none") {
     {{ Form::close() }}
 <br><br><br>
 </div>
-</div> <!-- just added for knob-->
 <div id="companyhideDB" style="display:none;">
 {{ Form::open(array('url' => '/applications')) }}
 
@@ -201,8 +190,4 @@ value="44"><br>
 
 </div>
 </div>
-                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-                        <script src="jquery.knob.js"></script>
-                <link href="/css/layout.css" rel="stylesheet">
-
 @stop
