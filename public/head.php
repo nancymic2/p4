@@ -133,5 +133,5 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
+  <img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png">
 <br><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/scripts.js"></script>
