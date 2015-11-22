@@ -26,6 +26,9 @@
 <br>
 <b>Current date is:&nbsp;</b>
  <?php
+ call_user_func(function() {
+
+
 $myid=$application->id;
 $applications = Application::where('user_id', '=', Auth::user()->id)->get();
 $dates[]="";
@@ -46,6 +49,7 @@ $k=0;
    //echo $state[]
  }
   echo $mydate;
+  });
   ?>
 
 
