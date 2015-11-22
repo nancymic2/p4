@@ -27,7 +27,7 @@
 <b>Current date is:&nbsp;</b>
  <?php
  call_user_func(function() {
-
+$application=0;
 
 $myid=$application->id;
 $applications = Application::where('user_id', '=', Auth::user()->id)->get();
