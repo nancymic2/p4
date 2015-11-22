@@ -83,7 +83,7 @@ call_user_func(function() {
      <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
     
 
-   Interview Date. Note you MUST<br> re-enter this date<br> <a href="/completedapps"><b><u>Check your dates</u></b><a> <br>
+   Interview Date. Note you MUST<br> re-enter this date<br> <a href="/completedapps"><b><u>Check your dates</u></b></a> <br>
      <input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
     
     city<br>
