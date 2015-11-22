@@ -38,7 +38,7 @@
         {{ Form::label('phone', 'Phone') }}
         {{ Form::text('phone') }}  
   <br>
-        {{ Form::label('careersite', 'Careersite') }}
+        {{ Form::label('careersite', 'Zip') }}
         {{ Form::text('careersite') }}  
   <br>
         {{ Form::label('rating', 'Rating') }}
