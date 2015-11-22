@@ -45,7 +45,7 @@
 
  <?php
   $myid=$company->id;
-  echo $myid['state'];
+  //echo $myid['state'];
   echo $myid;
   ?>
   <b>company state</b><br>
