@@ -744,6 +744,7 @@ Route::post('/company',
             $company->pasword    = Input::get('pasword');
             $company->state    = Input::get('state');
             $company->phone    = Input::get('phone');
+            $company->careersite    = Input::get('careersite');  /*used for zip */
            
             # Try to add the company 
             try {
