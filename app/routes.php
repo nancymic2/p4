@@ -2060,7 +2060,7 @@ Route::post('/recruiter',
         'before' => 'csrf', 
         function() {
 
-            $recruiter = new Recruiter
+            $recruiter = new Recruiter;
             $recruiter->user()->associate(Auth::user());
 
             $recruiter->company_id    = Input::get('company_id');
