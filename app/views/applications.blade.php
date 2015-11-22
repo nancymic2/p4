@@ -150,12 +150,16 @@ if (diva.style.display=="none") {
 </select>
 <br>
 <br>
+        company zip<br>
+    {{ Form::text('careersite', '', array('class'=>'form-control'))}} <br>  <!-- used for zip -->
         company phone<br>
     {{ Form::text('phone', '', array('class'=>'form-control'))}} <br>
 
     {{ Form::submit('Create', array('class'=>'btn btn-default'))}}         
 
     {{ Form::close() }}
+
+
 <br><br><br>
 </div>
 <div id="companyhideDB" style="display:none;">
