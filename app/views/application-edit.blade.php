@@ -77,7 +77,7 @@ call_user_func(function() {
 <br>
     salary<br>
     {{ Form::text('salary')}} 
-<br>
+<br><br>
 
     Applied Date. Note you MUST<br> re-enter this date <br>
      <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
