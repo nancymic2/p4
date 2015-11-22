@@ -477,14 +477,14 @@ foreach($completedapps as $completedapp) {
     echo '<br>';
 
     echo '</tbody> </table>';
-    echo '</div>';
+    //echo '</div>';
 
 file_put_contents($file, $current);
 
 //return View::make('deleteresume')->with('deleteres', $deleteres);
 echo '</p>';
 echo '<br><br>';
-echo '<br><a class="btn btn-info" onclick="window.history.back()">Back</a></div>';
+echo '<br><a class="btn btn-info" onclick="window.history.back()">Back</a></div></div>';
 echo $stylesend;   
 }));
 
