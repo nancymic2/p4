@@ -42,7 +42,7 @@
 
   
   
-
+<b>Current state is:&nbsp;</b>
  <?php
 $myid=$company->id;
 $companies = Company::where('user_id', '=', Auth::user()->id)->get();
@@ -57,9 +57,9 @@ $k=0;
 
    //$key = array_search('green', $array); // $key = 2;
     $mystate = $states[$key1];
-    echo '<h4>current state is ';
+ 
     echo $mystate;
-    echo ' </h4>';
+   
     $k++;
    //echo $state[]
  }
