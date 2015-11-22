@@ -35,7 +35,7 @@
 
     train<br>
     {{ Form::text('train')}} 
-
+<br>
     hotel<br>
     {{ Form::text('hotel')}} 
 <br>
