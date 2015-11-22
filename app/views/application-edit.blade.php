@@ -24,14 +24,7 @@
 
 <h3>View or Edit Appication</h3>
 <br>
-{{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company)) }}     
 
-    current applyBy<br>
-    {{ Form::text('applyBy')}} 
-     current followupBy<br>
-    {{ Form::text('followupBy)}} 
-
-       {{ Form::close() }}  <!--only used to display dates -->
 
 
  {{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company)) }}    
