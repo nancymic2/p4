@@ -1554,7 +1554,7 @@ Route::post('/applicationsrating',
             $company->rating   = Input::get('rating');
 
              $company->save();
-             return Redirect::to('/completedapps'); // YES NO? 
+             return Redirect::to('/companyreport'); // YES NO? 
 }
 ));
 
