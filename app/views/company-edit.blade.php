@@ -40,8 +40,8 @@
         {{ Form::text('city') }}  
   <br>
 
-  current state is
-  <br>
+  
+  
 
  <?php
 $myid=$company->id;
@@ -57,7 +57,9 @@ $k=0;
 
    //$key = array_search('green', $array); // $key = 2;
     $mystate = $states[$key1];
+    echo '<h4>current state is ';
     echo $mystate;
+    echo ' </h4>';
     $k++;
    //echo $state[]
  }
