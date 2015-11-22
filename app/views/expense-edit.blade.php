@@ -36,6 +36,50 @@
     train<br>
     {{ Form::text('train')}} 
 
+    hotel<br>
+    {{ Form::text('hotel')}} 
+<br>
+
+    meals<br>
+    {{ Form::text('meals')}} 
+<br>
+
+    postage<br>
+    {{ Form::text('stamps')}} 
+<br>
+
+    ink<br>
+    {{ Form::text('ink')}} 
+<br>
+
+    paper<br>
+    {{ Form::text('paper')}} 
+<br>
+
+    hardware<br>
+    {{ Form::text('hardware')}} 
+<br>
+
+    portfolio<br>
+    {{ Form::text('portfolio')}} 
+<br>
+
+    phone<br>
+    {{ Form::text('phone')}} 
+<br>
+
+    clothing<br>
+    {{ Form::text('clothing')}} 
+<br>
+
+    entertainment<br>
+    {{ Form::text('entertainment')}} 
+<br>
+
+    comments<br>
+    {{ Form::textarea('comments')}} 
+<br>
+
 
   <br><br>
  {{ Form::hidden('id', $expense->id) }}  <!-- just added -->
