@@ -30,6 +30,7 @@ $myid=$application->id;
 $applications = Application::where('user_id', '=', Auth::user()->id)->get();
 $dates[]="";
 $dateids[]="";
+$mydate="";
 $k=0;
     foreach($applications as $application) {
    
@@ -39,11 +40,12 @@ $k=0;
    //$key = array_search('green', $array); // $key = 2;
     $mydate = $dates[$key1];
  
-    echo $mydate;
+   
    
     $k++;
    //echo $state[]
  }
+  echo $mydate;
   ?>
 
 
