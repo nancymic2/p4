@@ -38,7 +38,7 @@
         {{ Form::label('phone', 'Phone') }}
         {{ Form::text('phone') }}  
   <br>
-        {{ Form::label('careersite', 'Zip') }}
+        {{ Form::label('careersite', 'Careersite') }}
         {{ Form::text('careersite') }}  
   <br>
         {{ Form::label('rating', 'Rating') }}
@@ -47,8 +47,8 @@
         {{ Form::label('username', 'Username') }}
         {{ Form::text('username') }}  
   <br>     <!-- name -->
-        {{ Form::label('password', 'Password') }}
-        {{ Form::text('password') }}
+        {{ Form::label('pasword', 'Password') }}
+        {{ Form::text('pasword') }}
 <br><br>
     
 <br><br>
