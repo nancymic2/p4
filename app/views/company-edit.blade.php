@@ -48,6 +48,7 @@ $myid=$company->id;
 $companies = Company::where('user_id', '=', Auth::user()->id)->get();
 $states[]="";
 $corpid[]="";
+$k=0;
     foreach($companies as $company) {
    $k++;
    $states[$k] = $company->state;
