@@ -55,13 +55,10 @@ Comments<br>
     {{ Form::textarea('recruiter_comments', '', array('class'=>'form-control'))}} 
 <br>
 Referred by<br>
-    {{ Form::text('recruiter_name', '', array('class'=>'form-control'))}} 
+    {{ Form::text('recruiter_referred_by', '', array('class'=>'form-control'))}} 
 <br>
 
 
-
-resume text<br>
-    {{ Form::textarea('resumetext', '', array('class'=>'form-control'))}} <br>
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
