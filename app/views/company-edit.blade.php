@@ -39,6 +39,15 @@
           <br>
         {{ Form::text('city') }}  
   <br>
+
+  current state is
+  <br>
+
+ <?php
+  $myid=$company->id;
+  echo $company[$myid];
+
+  ?>
   <b>company state</b><br>
 <select name="state">
     <option value="AL"> </option>
