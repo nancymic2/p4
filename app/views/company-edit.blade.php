@@ -56,7 +56,7 @@ $corpid[]="";
 
    //$key = array_search('green', $array); // $key = 2;
     $mystate = array_search($states, $key1);
-    echo $mystate
+    echo $mystate;
    //echo $state[]
  }
 
