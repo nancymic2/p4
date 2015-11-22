@@ -29,7 +29,7 @@
     {{ Form::text('gas')}} 
 <br>
 
-    airfare<br>
+    air<br>
     {{ Form::text('air')}} 
 <br>
 
