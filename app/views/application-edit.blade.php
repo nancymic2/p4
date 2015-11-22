@@ -65,7 +65,7 @@ call_user_func(function() {
     
     If you want to associate this job with another company, you must <b><u><a href="#divs" onclick='document.getElementById("companies").style.display="block";'>view your companies</a></u></b> 
     and change this ID accordingly.<br> 
-    <a name="divs"></a>You may see all of your <a href="/companyreport">full company records here.</a><br>
+    <a name="divs"></a><br>
     company ID<br>
     {{ Form::text('company')}} 
 <br>
