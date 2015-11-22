@@ -54,6 +54,7 @@ $k=0;
    //echo $state[]
  }
   echo $mydate;
+   echo $mydate2;
   });
   ?>
 
