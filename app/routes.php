@@ -754,7 +754,6 @@ Route::post('/company',
             catch (Exception $e) {
                 return Redirect::to('/company')->with('flash_message', 'resume addition failed; please try again.')->withInput();
             }
-
             # Log the user in
            // Auth::login($user);
 
