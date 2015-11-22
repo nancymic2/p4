@@ -87,8 +87,12 @@ if (diva.style.display=="none") {
     career site password<br>
     {{ Form::text('pasword', '', array('class'=>'form-control'))}} 
 
-    company address<br>
+    company street<br>
     {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
+        company city<br>
+    {{ Form::text('city', '', array('class'=>'form-control'))}} <br>
+ 
+
 
    Company state<br>
 <select name="state">
@@ -144,6 +148,9 @@ if (diva.style.display=="none") {
     <option value="WI">Wisconsin</option>
     <option value="WY">Wyoming</option>
 </select>
+
+        company phone<br>
+    {{ Form::text('phone', '', array('class'=>'form-control'))}} <br>
 
     {{ Form::submit('Create', array('class'=>'btn btn-default'))}}         
 

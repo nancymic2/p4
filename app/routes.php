@@ -738,9 +738,11 @@ Route::post('/company',
             $company->website   = Input::get('website');
             $company->company    = Input::get('company');
             $company->street    = Input::get('street');
+            $company->city    = Input::get('city');
             $company->rating    = Input::get('rating');
             $company->username    = Input::get('username');
             $company->pasword    = Input::get('pasword');
+            $company->state    = Input::get('state');
            
             # Try to add the company 
             try {
