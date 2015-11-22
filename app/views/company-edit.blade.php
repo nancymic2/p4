@@ -66,7 +66,7 @@ $k=0;
 
   ?>
   <br>
-  <b>company state</b><br>
+  <b>change company state</b><br>
 <select name="state">
     <option value="AL"> </option>
     <option value="AL">Alabama</option>
