@@ -41,7 +41,7 @@
     {{ Form::text('role')}} 
 <br>
     resume<br>
-    {{ Form::text('resume')}} 
+    {{ Form::text('resumeUsed')}} 
 <br>
     salary<br>
     {{ Form::text('salary')}} 
