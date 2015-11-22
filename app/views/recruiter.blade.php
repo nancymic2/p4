@@ -23,9 +23,7 @@
 
 {{ Form::open(array('url' => '/recruiter')) }}
 <br>
-Company<br>
-    {{ Form::text('company_id', '', array('class'=>'form-control'))}} 
-<br>
+
 Name<br>
     {{ Form::text('recruiter_name', '', array('class'=>'form-control'))}} 
 <br>
