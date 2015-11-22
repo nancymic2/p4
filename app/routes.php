@@ -2045,3 +2045,50 @@ Route::post('/profile',
              return Redirect::to('/expensereport'); // YES NO? 
 }
 ));
+
+
+///// added 10-11-15
+Route::get('recruiters', array('before' => 'auth', function()
+         {
+            return View::make('recruiters');
+        }
+    )
+);
+
+Route::post('/recruiters', 
+    array(
+        'before' => 'csrf', 
+        function() {
+
+            $recruiter = new Recruiter
+            $recruiter->user()->associate(Auth::user());
+
+            $recruiter->company_id    = Input::get('company_id');
+         
+            $recruiter->recruiter_name   = Input::get('recruiter_name');
+            $recruiter->recruiter_address   = Input::get('recruiter_address');
+            $recruiter->recruiter_phone   = Input::get('recruiter_phone');
+            $recruiter->recruiter_email   = Input::get('recruiter_email');
+            $recruiter->recruiter_company   = Input::get('recruiter_company');
+            $recruiter->recruiter_rating   = Input::get('recruiter_rating');
+            $recruiter->recruiter_comments   = Input::get('recruiter_comments');
+            $recruiter->recruiter_referred_by   = Input::get('recruiter_referred_by');
+
+ /*used for zip */
+           
+            # Try to add the recruiter 
+            try {
+                $recruiter->save();
+            }
+            # Fail
+            catch (Exception $e) {
+                return Redirect::to('/recruiter')->with('flash_message', 'resume addition failed; please try again.')->withInput();
+            }
+            # Log the user in
+           // Auth::login($user);
+
+           return Redirect::to('/applications')->with('flash_message', 'Welcome to CareerTrax!');
+
+        }
+    )
+);

@@ -62,7 +62,7 @@
             <li><a href="/applications">Job</a></li>
             <li><a href="/applications">Resume</a></li>
             <li><a href="/applications">Company</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/recruiters">Contact/recruiter</a></li>
             <li><a href="/expenses">Expense</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>
