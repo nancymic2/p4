@@ -1651,10 +1651,16 @@ Route::post('/applicationsrating',
            //$company  = Company::find(1);  got to get the co id. take from url if need be cause ive had enough
            $application  = Application::find($id);  ///works when id is hardcoded
             //$company->id   =Input::get('id');  //just added
-            $application->company   = Input::get('company');   //calulate later
-             $application->role   = Input::get('role');
-               $application->recnumber   = Input::get('recnumber');
-             $application->hiringMgr   = Input::get('hiringMgr');
+              $application->company   = Input::get('company');   //calulate later
+              $application->role   = Input::get('role');
+              $application->resume   = Input::get('resume');
+              $application->salary   = Input::get('salary');
+              $application->applyDate   = Input::get('applyDate');
+              $application->followupBy   = Input::get('followupBy');
+              $application->city   = Input::get('city');
+
+              $application->hiringMgr   = Input::get('hiringMgr');
+              $application->recnumber   = Input::get('recnumber');
               $application->save();
              return Redirect::to('/completedapps'); // YES NO? 
 }
