@@ -149,6 +149,7 @@ if (diva.style.display=="none") {
     <option value="WY">Wyoming</option>
 </select>
 <br>
+<br>
         company phone<br>
     {{ Form::text('phone', '', array('class'=>'form-control'))}} <br>
 
