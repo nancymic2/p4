@@ -64,9 +64,8 @@ $k=0;
    //echo $state[]
  }
 
-
-
   ?>
+  <br>
   <b>company state</b><br>
 <select name="state">
     <option value="AL"> </option>
