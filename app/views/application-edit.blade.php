@@ -32,16 +32,21 @@ $application=0;
 $myid=0;
 $applications = Application::where('user_id', '=', Auth::user()->id)->get();
 $dates[]="";
+$dates2[]="";
 $dateids[]="";
 $mydate="";
+$mydate2="";
 $k=0;
     foreach($applications as $application) {
    
    $dates[$k] = $application->followupBy;
+   $dates2[$k] = $application->applyDate;
+
    $dateids[$k] = $application->id;
    $key1 = array_search($myid, $dateids); // $key = 2;
    //$key = array_search('green', $array); // $key = 2;
     $mydate = $dates[$key1];
+      $mydate2 = $dates2[$key1];
  
    
    
