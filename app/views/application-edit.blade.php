@@ -49,10 +49,11 @@
 
     Applied Date <br>
      <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
-    <br>
+    
 
    Interview Date <br>
      <input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
+    
     city<br>
     {{ Form::text('city')}} 
 <br>
@@ -61,11 +62,11 @@
     hire manager<br>
     {{ Form::text('hiringMgr')}} 
 
-  <br><br>
+  <br>
       job name<br>
     {{ Form::text('recnumber')}} 
 <br>
-
+<br>
  {{ Form::hidden('id', $application->id) }}  <!-- just added -->
         {{ Form::submit('Update job') }}
 <br><br>
