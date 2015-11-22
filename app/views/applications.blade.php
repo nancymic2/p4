@@ -12,17 +12,7 @@
                 <script type="text/javascript">
                     $(document).ready(function(){
                     $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
-
-bubbles=document.GetElementsByClassName("rate");
-for(var i=0; var<=bubbles.length; i++){
-        bubbles[i].addEventListener("click", function(){
-          rating=this.id;
-          document.getElementById("rater").value=rating;
-        }, false);
-}
-
-
-})
+                    })
                 </script>
         <!--</head>-->
 <div class="container">
@@ -73,25 +63,17 @@ if (diva.style.display=="none") {
    <!-- add company<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
     --> <!-- commented out to remove company text box replace with select -->
-
 <div id="companyhide2" style="display:none;">
-
-<div class="rate" id="3" name="rating"><br>&nbsp;&nbsp;&nbsp;<b>3</b></div>
-<div id="4"  class="rate"><br>&nbsp;&nbsp;&nbsp;<b>4</b></div>
-<div id="5"  class="rate"><br>&nbsp;&nbsp;&nbsp;<b>5</b></div>
-
    {{ Form::open(array('url' => '/company')) }}
 
 
 <h3>Rate this company</h3><br>
- <div style="width:60px; height: 60px; "
+ 
 
-  <input id="rater" type="hidden" name="rating" value="0">
+  <input type="radio" name="rating" value="1">1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5
 
   <br>
   
-
-
 <br>
     company Name<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
@@ -277,19 +259,4 @@ if (diva.style.display=="none") {
 </div>
 </div>
 </div>
-<style> 
-.rate {
-    border: 2px solid #a1a1a1;
-
-    background: red;
-    width: 30px;
-    height: 30px;
-    border-radius: 25px;
-line-height:10px;
-
-
-}
-
-</style>
-
 @stop
