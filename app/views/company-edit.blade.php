@@ -23,31 +23,32 @@
 <br>
  {{ Form::model($company, array('route' => 'company.edit', $company->id)) }}    
 
-     company Name<br>
-    {{ Form::text('company') }} 
+        {{ Form::label('company', 'Company') }}
+        {{ Form::text('company') }}  
             <!-- email -->
         {{ Form::label('website', 'Website') }}
-        {{ Form::text('website') }}  
-         user name<br>
-    {{ Form::text('username') }} 
-         password<br>
-    {{ Form::text('password') }} 
-         company street<br>
-    {{ Form::text('street') }} 
-         company city<br>
-    {{ Form::text('city') }} 
+        {{ Form::text('website') }} 
 
-   
+        {{ Form::label('street', 'Street') }}
+        {{ Form::text('street') }}  
 
-         company zip<br>
-    {{ Form::text('careersite') }} <!-- for zip -->
-         company phone<br>
-    {{ Form::text('phone') }} 
+        {{ Form::label('city', 'City') }}
+        {{ Form::text('city') }}  
 
+        {{ Form::label('phone', 'Phone') }}
+        {{ Form::text('phone') }}  
 
-        <!-- name -->
+        {{ Form::label('careersite', 'Zip') }}
+        {{ Form::text('careersite') }}  
+
         {{ Form::label('rating', 'Rating') }}
-        {{ Form::text('rating') }}
+        {{ Form::text('rating') }}  
+
+        {{ Form::label('username', 'Username') }}
+        {{ Form::text('username') }}  
+        <!-- name -->
+        {{ Form::label('password', 'Password') }}
+        {{ Form::text('password') }}
 <br><br>
     
 <br><br>
