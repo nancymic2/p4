@@ -47,17 +47,18 @@
 $myid=$company->id;
 $companies = Company::where('user_id', '=', Auth::user()->id)->get();
 $states[]="";
-$corpid[]="";
+$corpids[]="";
 $k=0;
     foreach($companies as $company) {
-   $k++;
+   
    $states[$k] = $company->state;
-   $corpid[$k] = $company->id;
-   $key1 = array_search($myid, $corpid); // $key = 2;
+   $corpids[$k] = $company->id;
+   $key1 = array_search($myid, $corpids); // $key = 2;
 
    //$key = array_search('green', $array); // $key = 2;
-    $mystate = array_search($states, $key1);
+    $mystate = array_search($key1, $states);
     echo $mystate;
+    $k++;
    //echo $state[]
  }
 
