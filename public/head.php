@@ -90,7 +90,7 @@
           <ul class="dropdown-menu">
             <li><a href="/completedapps">Job</a></li>
             <li><a href="/choose_resume">Resumes</a></li>
-            <li><a href="/completedapps">Companies</a></li>
+            <li><a href="/companyreport">Companies</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="/expensereport">Expenses</a></li>
             <li role="separator" class="divider"></li>
