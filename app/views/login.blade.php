@@ -34,7 +34,7 @@
     Password:&nbsp;<br>
     {{ Form::text('password', '', array('class'=>'form-control'))}} &nbsp; <br><br>
 
-    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
+    {{ Form::submit('Log In', array('class'=>'btn btn-default'))}}   
 
 {{ Form::close() }}
 
