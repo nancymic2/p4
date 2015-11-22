@@ -1,6 +1,20 @@
 @extends('_master')
 
 @section ('applications')
+<style> 
+.rate {
+    border: 2px solid #a1a1a1;
+
+    background: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+line-height:10px;
+
+
+}
+
+</style>
 
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
                         <script src="jquery.knob.js"></script>
