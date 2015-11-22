@@ -208,6 +208,8 @@
 </select>
 <br>
 <br>
+        company zip<br>
+    {{ Form::text('careersite', '', array('class'=>'form-control'))}} <br>  <!-- used for zip -->
         company phone<br>
     {{ Form::text('phone', '', array('class'=>'form-control'))}} <br>
 
