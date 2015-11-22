@@ -122,25 +122,99 @@
 <h2>Add a Company</h2>
 
 
-{{ Form::open(array('url' => '/company')) }}
+ {{ Form::open(array('url' => '/company')) }}
 
-company Name<br>
+
+<h3>Rate this company</h3><br>
+ 
+
+  <input type="radio" name="rating" value="1">1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5
+
+  <br>
+  
+<br>
+    company Name<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
 
-
-company website<br>
+    company career site<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
+    career site user name<br>
+    {{ Form::text('username', '', array('class'=>'form-control'))}} 
 
+    career site password<br>
+    {{ Form::text('pasword', '', array('class'=>'form-control'))}} 
 
-company street<br>
+    company street<br>
     {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
+        company city<br>
+    {{ Form::text('city', '', array('class'=>'form-control'))}} <br>
+ 
 
 
+   Company state<br>
+<select name="state">
+    <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+    <option value="DE">Delaware</option>
+    <option value="DC">District Of Columbia</option>
+    <option value="FL">Florida</option>
+    <option value="GA">Georgia</option>
+    <option value="HI">Hawaii</option>
+    <option value="ID">Idaho</option>
+    <option value="IL">Illinois</option>
+    <option value="IN">Indiana</option>
+    <option value="IA">Iowa</option>
+    <option value="KS">Kansas</option>
+    <option value="KY">Kentucky</option>
+    <option value="LA">Louisiana</option>
+    <option value="ME">Maine</option>
+    <option value="MD">Maryland</option>
+    <option value="MA">Massachusetts</option>
+    <option value="MI">Michigan</option>
+    <option value="MN">Minnesota</option>
+    <option value="MS">Mississippi</option>
+    <option value="MO">Missouri</option>
+    <option value="MT">Montana</option>
+    <option value="NE">Nebraska</option>
+    <option value="NV">Nevada</option>
+    <option value="NH">New Hampshire</option>
+    <option value="NJ">New Jersey</option>
+    <option value="NM">New Mexico</option>
+    <option value="NY">New York</option>
+    <option value="NC">North Carolina</option>
+    <option value="ND">North Dakota</option>
+    <option value="OH">Ohio</option>
+    <option value="OK">Oklahoma</option>
+    <option value="OR">Oregon</option>
+    <option value="PA">Pennsylvania</option>
+    <option value="RI">Rhode Island</option>
+    <option value="SC">South Carolina</option>
+    <option value="SD">South Dakota</option>
+    <option value="TN">Tennessee</option>
+    <option value="TX">Texas</option>
+    <option value="UT">Utah</option>
+    <option value="VT">Vermont</option>
+    <option value="VA">Virginia</option>
+    <option value="WA">Washington</option>
+    <option value="WV">West Virginia</option>
+    <option value="WI">Wisconsin</option>
+    <option value="WY">Wyoming</option>
+</select>
+<br>
+<br>
+        company phone<br>
+    {{ Form::text('phone', '', array('class'=>'form-control'))}} <br>
 
-    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
+    {{ Form::submit('Create', array('class'=>'btn btn-default'))}}         
 
-{{ Form::close() }}
+    {{ Form::close() }}
+<br><br><br>
 
 
 <?php
