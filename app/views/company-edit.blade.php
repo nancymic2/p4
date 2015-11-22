@@ -39,7 +39,7 @@
           <br>
         {{ Form::text('city') }}  
   <br>
-  <b>State where employed</b><br>
+  <b>company state</b><br>
 <select name="state">
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>
