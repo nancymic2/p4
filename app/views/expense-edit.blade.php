@@ -30,7 +30,7 @@
 <br>
 
     airfare<br>
-    {{ Form::text('airfare')}} 
+    {{ Form::text('air')}} 
 <br>
 
     train<br>
