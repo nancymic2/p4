@@ -37,7 +37,7 @@ $mydate="";
 $k=0;
     foreach($applications as $application) {
    
-   $dates[$k] = $application->applyDate;
+   $dates[$k] = $application->followupBy;
    $dateids[$k] = $application->id;
    $key1 = array_search($myid, $dateids); // $key = 2;
    //$key = array_search('green', $array); // $key = 2;
