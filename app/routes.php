@@ -734,17 +734,21 @@ Route::post('/company',
 
             $company = new Company;
             $company->user()->associate(Auth::user());
+            $company->rating    = Input::get('rating');
+            $company->company    = Input::get('company');
          
             $company->website   = Input::get('website');
-            $company->company    = Input::get('company');
-            $company->street    = Input::get('street');
-            $company->city    = Input::get('city');
-            $company->rating    = Input::get('rating');
             $company->username    = Input::get('username');
             $company->pasword    = Input::get('pasword');
+
+            $company->street    = Input::get('street');
+            $company->city    = Input::get('city');
+
+
             $company->state    = Input::get('state');
+            $company->careersite    = Input::get('careersite'); 
             $company->phone    = Input::get('phone');
-            $company->careersite    = Input::get('careersite');  /*used for zip */
+ /*used for zip */
            
             # Try to add the company 
             try {
