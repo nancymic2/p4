@@ -44,10 +44,24 @@
   <br>
 
  <?php
-  $myid=$company->id;
- $thecompanyrecord = Company::where('id', '=', $myid)->get();
-    echo gettype($thecompanyrecord);
-  echo $myid;
+$myid=$company->id;
+$companies = Company::where('user_id', '=', Auth::user()->id)->get();
+$states[]="";
+$corpid[]="";
+    foreach($companies as $company) {
+   $k++;
+   $states[$k] = $company->state;
+   $corpid[$k] = $company->id;
+   $key1 = array_search($myid, $corpid); // $key = 2;
+
+   //$key = array_search('green', $array); // $key = 2;
+    $mystate = array_search($states, $key1);
+    echo $mystate
+   //echo $state[]
+ }
+
+
+
   ?>
   <b>company state</b><br>
 <select name="state">
