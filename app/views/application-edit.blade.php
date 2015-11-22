@@ -152,7 +152,7 @@ $i++;
 </div>
 </div>
 </div>
-</div>
+
 
 <!-- note use email as the type vs text if you want validation -->
 @stop
