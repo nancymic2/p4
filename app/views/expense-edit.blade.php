@@ -29,8 +29,8 @@
     {{ Form::text('gas')}} 
 <br>
 
-    air<br>
-    {{ Form::text('air')}} 
+    airfare<br>
+    {{ Form::text('airfare')}} 
 <br>
 
     train<br>
