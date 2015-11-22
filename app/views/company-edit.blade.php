@@ -20,25 +20,6 @@
     <div class="col-sm-6">
 <h2>&nbsp;</h2>
 <h3>View or Edit Company</h3>
-
- {{ Form::model($company, array('route' => 'company.edit', $company->id)) }}    
-
-
-  <br>          <!-- email -->
-        {{ Form::label('website', 'Website') }}
-          <br>
-        {{ Form::text('website') }} 
-  <br>
-        {{ Form::label('street', 'Street') }}
-          <br>
-        {{ Form::text('street') }}  
-  <br>
-        {{ Form::label('city', 'City') }}
-          <br>
-        {{ Form::text('city') }}  
-  <br>
-
-  
   
 <b>Current state is:&nbsp;</b>
  <?php
@@ -64,7 +45,26 @@ $k=0;
 
   ?>
   <br>
+
+ {{ Form::model($company, array('route' => 'company.edit', $company->id)) }}    
+
+
+  <br>          <!-- email -->
+        {{ Form::label('website', 'Website') }}
+          <br>
+        {{ Form::text('website') }} 
+  <br>
+        {{ Form::label('street', 'Street') }}
+          <br>
+        {{ Form::text('street') }}  
+  <br>
+        {{ Form::label('city', 'City') }}
+          <br>
+        {{ Form::text('city') }}  
+  <br>
+
   
+
 <br>
         {{ Form::label('phone', 'Phone') }}
           <br>
