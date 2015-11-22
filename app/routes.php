@@ -1546,7 +1546,7 @@ Route::post('/applicationsrating',
             $company->website   = Input::get('website');
             $company->street   = Input::get('street');
             $company->city   = Input::get('city');
-
+            $company->state   = Input::get('state');
             $company->phone   = Input::get('phone');
             $company->careersite   = Input::get('careersite');
             $company->username   = Input::get('username');
