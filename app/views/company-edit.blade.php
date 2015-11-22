@@ -113,14 +113,14 @@
         {{ Form::label('pasword', 'Password') }}
           <br>
         {{ Form::text('pasword') }}
-<br><br>
+<br>
     
-<br><br>
+<br>
  {{ Form::hidden('id', $company->id) }}  <!-- just added -->
         {{ Form::submit('Update Company') }}
-<br><br>
-    {{ Form::close() }}
 <br>
+    {{ Form::close() }}
+
 
 
 <br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
