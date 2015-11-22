@@ -2048,14 +2048,14 @@ Route::post('/profile',
 
 
 ///// added 10-11-15
-Route::get('recruiters', array('before' => 'auth', function()
+Route::get('recruiter', array('before' => 'auth', function()
          {
             return View::make('recruiters');
         }
     )
 );
 
-Route::post('/recruiters', 
+Route::post('/recruiter', 
     array(
         'before' => 'csrf', 
         function() {

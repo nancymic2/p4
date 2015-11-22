@@ -161,7 +161,7 @@
 @yield ('profile')
 @yield ('profile-edit')
 @yield ('expense-edit')
-@yield ('recruiters')
+@yield ('recruiter')
 
 <!--/////////////////-->
 
