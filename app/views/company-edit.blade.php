@@ -45,7 +45,8 @@
 
  <?php
   $myid=$company->id;
-  //echo $myid['state'];
+ $thecompanyrecord = Company::where('id', '=', $myid->get();
+    echo $thecompanyrecord['state'];
   echo $myid;
   ?>
   <b>company state</b><br>
