@@ -79,11 +79,11 @@ call_user_func(function() {
     {{ Form::text('salary')}} 
 <br>
 
-    Applied Date <br>
+    Applied Date. Note you MUST re-enter this date <br>
      <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
     
 
-   Interview Date <br>
+   Interview Date. Note you MUST re-enter this date  <br>
      <input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
     
     city<br>
