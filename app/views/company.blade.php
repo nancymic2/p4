@@ -214,7 +214,7 @@
     {{ Form::submit('Create', array('class'=>'btn btn-default'))}}         
 
     {{ Form::close() }}
-<br><br><br>
+<br>
 
 
 <?php
