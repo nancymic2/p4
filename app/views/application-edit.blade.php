@@ -40,8 +40,8 @@
     role<br>
     {{ Form::text('role')}} 
 <br>
-      <h4>Select existing resume</h4>
-      {{ Form::select('user_id', $resume_lists) }} 
+    resume<br>
+    {{ Form::text('resume')}} 
 <br>
     salary<br>
     {{ Form::text('salary')}} 
