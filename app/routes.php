@@ -743,6 +743,7 @@ Route::post('/company',
             $company->username    = Input::get('username');
             $company->pasword    = Input::get('pasword');
             $company->state    = Input::get('state');
+            $company->phone    = Input::get('phone');
            
             # Try to add the company 
             try {
