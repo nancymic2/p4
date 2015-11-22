@@ -64,7 +64,7 @@
   <br><br>
       job name<br>
     {{ Form::text('recnumber')}} 
-<br
+<br>
 
  {{ Form::hidden('id', $application->id) }}  <!-- just added -->
         {{ Form::submit('Update job') }}
