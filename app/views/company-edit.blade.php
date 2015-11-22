@@ -24,15 +24,19 @@
  {{ Form::model($company, array('route' => 'company.edit', $company->id)) }}    
 
         {{ Form::label('company', 'Company') }}
+          <br>
         {{ Form::text('company') }}  
   <br>          <!-- email -->
         {{ Form::label('website', 'Website') }}
+          <br>
         {{ Form::text('website') }} 
   <br>
         {{ Form::label('street', 'Street') }}
+          <br>
         {{ Form::text('street') }}  
   <br>
         {{ Form::label('city', 'City') }}
+          <br>
         {{ Form::text('city') }}  
   <br>
   <b>State where employed</b><br>
@@ -91,18 +95,23 @@
 </select>
 <br>
         {{ Form::label('phone', 'Phone') }}
+          <br>
         {{ Form::text('phone') }}  
   <br>
         {{ Form::label('careersite', 'Careersite') }}
+          <br>
         {{ Form::text('careersite') }}  
   <br>
         {{ Form::label('rating', 'Rating') }}
+          <br>
         {{ Form::text('rating') }}  
   <br>
         {{ Form::label('username', 'Username') }}
+          <br>
         {{ Form::text('username') }}  
   <br>     <!-- name -->
         {{ Form::label('pasword', 'Password') }}
+          <br>
         {{ Form::text('pasword') }}
 <br><br>
     
