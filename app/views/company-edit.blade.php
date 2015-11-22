@@ -41,6 +41,7 @@
   <br>
   <b>company state</b><br>
 <select name="state">
+    <option value="AL"> </option>
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>
     <option value="AZ">Arizona</option>
