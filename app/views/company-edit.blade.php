@@ -25,28 +25,28 @@
 
         {{ Form::label('company', 'Company') }}
         {{ Form::text('company') }}  
-            <!-- email -->
+  <br>          <!-- email -->
         {{ Form::label('website', 'Website') }}
         {{ Form::text('website') }} 
-
+  <br>
         {{ Form::label('street', 'Street') }}
         {{ Form::text('street') }}  
-
+  <br>
         {{ Form::label('city', 'City') }}
         {{ Form::text('city') }}  
-
+  <br>
         {{ Form::label('phone', 'Phone') }}
         {{ Form::text('phone') }}  
-
+  <br>
         {{ Form::label('careersite', 'Zip') }}
         {{ Form::text('careersite') }}  
-
+  <br>
         {{ Form::label('rating', 'Rating') }}
         {{ Form::text('rating') }}  
-
+  <br>
         {{ Form::label('username', 'Username') }}
         {{ Form::text('username') }}  
-        <!-- name -->
+  <br>     <!-- name -->
         {{ Form::label('password', 'Password') }}
         {{ Form::text('password') }}
 <br><br>
