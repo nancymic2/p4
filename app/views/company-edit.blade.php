@@ -26,22 +26,6 @@
   <br>
 
  {{ Form::model($company, array('route' => 'company.edit', $company->id)) }}    
-
-
-  <br>          <!-- email -->
-        {{ Form::label('website', 'Website') }}
-          <br>
-        {{ Form::text('website') }} 
-  <br>
-        {{ Form::label('street', 'Street') }}
-          <br>
-        {{ Form::text('street') }}  
-  <br>
-        {{ Form::label('city', 'City') }}
-          <br>
-        {{ Form::text('city') }}  
-  <br>
-
   <b>State </b><br>
 <select name="state">
  
@@ -97,6 +81,23 @@
     <option value="WI">Wisconsin</option>
     <option value="WY">Wyoming</option>
 </select>
+
+
+
+  <br>          <!-- email -->
+        {{ Form::label('website', 'Website') }}
+          <br>
+        {{ Form::text('website') }} 
+  <br>
+        {{ Form::label('street', 'Street') }}
+          <br>
+        {{ Form::text('street') }}  
+  <br>
+        {{ Form::label('city', 'City') }}
+          <br>
+        {{ Form::text('city') }}  
+  <br>
+
 
 
 
