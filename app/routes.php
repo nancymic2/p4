@@ -2022,6 +2022,17 @@ Route::post('/profile',
               $expense->gas   = Input::get('gas');   //calulate later
               $expense->airfare   = Input::get('airfare');
               $expense->train   = Input::get('train');
+              $expense->hotel   = Input::get('hotel'); 
+              $expense->meals   = Input::get('meals'); 
+              $expense->stamps   = Input::get('stamps'); 
+              $expense->ink   = Input::get('ink'); 
+              $expense->paper   = Input::get('paper'); 
+              $expense->hardware   = Input::get('hardware'); 
+              $expense->portfolio   = Input::get('portfolio'); 
+              $expense->phone   = Input::get('phone'); 
+              $expense->clothing   = Input::get('clothing'); 
+              $expense->entertainment   = Input::get('entertainment'); 
+              $expense->comments   = Input::get('comments'); 
           
               $expense->save();
              return Redirect::to('/expensereport'); // YES NO? 
