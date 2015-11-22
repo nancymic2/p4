@@ -56,7 +56,7 @@ $k=0;
    $key1 = array_search($myid, $corpids); // $key = 2;
 
    //$key = array_search('green', $array); // $key = 2;
-    $mystate = array_search($key1, $states);
+    $mystate = $states[$key1];
     echo $mystate;
     $k++;
    //echo $state[]
