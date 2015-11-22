@@ -21,7 +21,7 @@
 <h2>Add a recruiter or contact</h2>
 
 
-{{ Form::open(array('url' => '/recruiters')) }}
+{{ Form::open(array('url' => '/recruiter')) }}
 <br>
 Company<br>
     {{ Form::text('company_id', '', array('class'=>'form-control'))}} 
