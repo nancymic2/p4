@@ -1542,7 +1542,7 @@ Route::post('/applicationsrating',
            //$company  = Company::find(1);  got to get the co id. take from url if need be cause ive had enough
            $company  = Company::find($id);  ///works when id is hardcoded
             //$company->id   =Input::get('id');  //just added
-            $company->company   = Input::get('company');
+            //$company->company   = Input::get('company');
             $company->website   = Input::get('website');
             $company->street   = Input::get('street');
             $company->city   = Input::get('city');
