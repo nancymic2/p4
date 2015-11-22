@@ -24,6 +24,27 @@
 
 <h3>View or Edit Appication</h3>
 <br>
+<b>Current date is:&nbsp;</b>
+ <?php
+$myid=$application->id;
+$applications = Application::where('user_id', '=', Auth::user()->id)->get();
+$dates[]="";
+$dateids[]="";
+$k=0;
+    foreach($applications as $application) {
+   
+   $dates[$k] = $application->applyDate;
+   $dateids[$k] = $application->id;
+   $key1 = array_search($myid, $dateids); // $key = 2;
+   //$key = array_search('green', $array); // $key = 2;
+    $mydate = $dates[$key1];
+ 
+    echo $mydate;
+   
+    $k++;
+   //echo $state[]
+ }
+  ?>
 
 
 
