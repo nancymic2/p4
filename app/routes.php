@@ -1750,7 +1750,7 @@ foreach($companies as $company) {
     echo '</td>';
     echo '<td>';
 
-    echo $company['password'];
+    echo $company['pasword'];
     echo '</td>';
     echo '<td>';
 
