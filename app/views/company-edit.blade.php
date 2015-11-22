@@ -26,7 +26,7 @@
   <br>
 
  {{ Form::model($company, array('route' => 'company.edit', $company->id)) }}    
-  
+
 
   <br>          <!-- email -->
         {{ Form::label('website', 'Website') }}
@@ -62,7 +62,7 @@
           <br>
         {{ Form::text('username') }}  
   <br>     <!-- name -->
-        {{ Form::label('pasword', 'Password') }}
+        {{ Form::label('pasword', 'Pasword') }}
           <br>
         {{ Form::text('pasword') }}
 <br>
