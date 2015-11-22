@@ -57,7 +57,7 @@
     {{ Form::text('city')}} 
 <br>
 
->
+
     hire manager<br>
     {{ Form::text('hiringMgr')}} 
 
