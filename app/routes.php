@@ -1542,8 +1542,17 @@ Route::post('/applicationsrating',
            //$company  = Company::find(1);  got to get the co id. take from url if need be cause ive had enough
            $company  = Company::find($id);  ///works when id is hardcoded
             //$company->id   =Input::get('id');  //just added
+            $company->company   = Input::get('company');
             $company->website   = Input::get('website');
-             $company->rating   = Input::get('rating');
+            $company->street   = Input::get('street');
+            $company->city   = Input::get('city');
+            $company->state   = Input::get('state');
+            $company->phone   = Input::get('phone');
+            $company->careersite   = Input::get('careersite');
+            $company->username   = Input::get('username');
+            $company->pasword   = Input::get('pasword');
+            $company->rating   = Input::get('rating');
+
              $company->save();
              return Redirect::to('/completedapps'); // YES NO? 
 }
@@ -2007,7 +2016,7 @@ Route::post('/profile',
            $expense  = Expense::find($id);  ///works when id is hardcoded
             //
               $expense->gas   = Input::get('gas');   //calulate later
-              $expense->air   = Input::get('air');
+              $expense->airfare   = Input::get('airfare');
               $expense->train   = Input::get('train');
           
               $expense->save();
