@@ -23,9 +23,7 @@
 
  {{ Form::model($company, array('route' => 'company.edit', $company->id)) }}    
 
-        {{ Form::label('company', 'Company') }}
-          <br>
-        {{ Form::text('company') }}  
+
   <br>          <!-- email -->
         {{ Form::label('website', 'Website') }}
           <br>
