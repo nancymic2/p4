@@ -46,7 +46,7 @@
  <?php
   $myid=$company->id;
  $thecompanyrecord = Company::where('id', '=', $myid)->get();
-    echo typeof($thecompanyrecord);
+    echo gettype($thecompanyrecord);
   echo $myid;
   ?>
   <b>company state</b><br>
