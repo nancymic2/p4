@@ -41,7 +41,7 @@
           <br>
         {{ Form::text('city') }}  
   <br>
-
+State <br>
 <select name="state">
     <option value=""></option>
     <option value="AL">Alabama</option>
