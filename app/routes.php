@@ -2050,7 +2050,7 @@ Route::post('/profile',
 ///// added 10-11-15
 Route::get('recruiter', array('before' => 'auth', function()
          {
-            return View::make('recruiters');
+            return View::make('recruiter');
         }
     )
 );
