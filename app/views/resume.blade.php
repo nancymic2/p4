@@ -54,9 +54,9 @@ echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
 
 ?>
 
-@if(Session::has('success'))
+@if(Session::has('flash_message'))
     <div class="alert-box success">
-        <h2>{{ Session::get('success') }}</h2>
+        <h2>{{ Session::get('flash_message') }}</h2>
     </div>
 @endif
 
