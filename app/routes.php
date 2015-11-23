@@ -2097,3 +2097,100 @@ Route::post('/recruiter',
         }
     )
 );
+
+
+
+Route::get('contactreport', array('before' => 'auth', function()
+  {      
+////////////////
+
+$stylesend='<br><br><img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
+
+
+  $recruiters = Recruiter::where('user_id', '=', Auth::user()->id)->get();
+  
+  include 'head.php';
+  echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.tablesorter.min.js"></script>';
+  echo '<br><div class="container">'; 
+  echo '<h2>Your Contacts</h2>';
+
+  echo '<p>';
+  echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4" style="width: 100%; table-layout: fixed;"> 
+
+  <caption>
+  <h4>Sort Your Contacts by field</h4>
+  <h4>Click company name to edit company</h4>
+  </caption>
+  <thead>
+    <tr>  
+      <th style="width: 9.09%;">Company name</th>
+      <th style="width: 9.09%;">Company ID</th>
+      <th style="width: 9.09%;">Career site</th>
+      <th style="width: 9.09%;">Career site user name</th>
+      
+      <th style="width: 9.09%;">Career site password</th>
+
+      <th style="width: 9.09%;">Company street</th>
+      <th style="width: 9.09%;">Company city</th>
+      <th style="width: 9.09%;">Company state</th>
+     
+      </tr>  </thead>   <tbody>';
+//# loop through the Collection and access just the data
+foreach($recruiters as $recruiter) {
+
+    echo '<tr>';
+    echo '<td>';
+  
+
+
+    echo '<a href="/recruiter/edit/'.$recruiter['id'];  ///
+    echo '">';  ////
+    echo $recruiter['recruiter_name'];
+    echo '</a>';  
+
+
+    echo '</td>';
+    echo '<td>';
+    echo $recruiter['recruiter_address'];    
+    echo '</td>';
+    echo '<td>';
+    echo $recruiter['recruiter_phone'];
+    echo '</td>';
+    echo '<td>';
+    echo $recruiter['recruiter_email'];
+    echo '</td>';
+    echo '<td>';
+
+    echo $recruiter['company_id'];
+    echo '</td>';
+    echo '<td>';
+
+    echo $recruiter['recruiter_rating'];
+    echo '</td>';
+    echo '<td>';
+
+    echo $recruiter['recruiter_comments'];
+    echo '</td>';
+    echo '<td>';
+
+    echo $recruiter['recruiter_referred_by'];
+    echo '</td>';
+
+   
+     
+    echo '</tr>';
+
+    echo '<script> var apldata = "<php echo $app_id[$i]; ?>" </script>';
+
+
+  }
+    echo '<br>';
+    echo '</tbody> </table>';
+    echo '</div>';
+
+   
+
+echo '</p>';
+echo '<br><br>';
+ echo $stylesend;   
+}));
