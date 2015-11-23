@@ -24,6 +24,8 @@
 
 <h3>View or Edit Recruiter</h3>
 <br>
+
+
  {{ Form::model($recruiter, array('route' => 'recruiter.edit', $recruiter->id)) }}    
     Resume  name<br>
     {{ Form::text('recruiter_name')}} 

@@ -90,7 +90,7 @@
             <li><a href="/completedapps">Your Jobs</a></li>
             <li><a href="/choose_resume">Your Resumes</a></li>
             <li><a href="/companyreport">Your Companies</a></li>
-            <li><a href="#">Your Contacts</a></li>
+            <li><a href="/contactreport">Your Contacts</a></li>
             <li><a href="/expensereport">Your Expenses</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>
