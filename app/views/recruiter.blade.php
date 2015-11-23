@@ -26,7 +26,7 @@
 
 Name<br>
     {{ Form::text('recruiter_name', '', array('class'=>'form-control'))}} 
-<br>
+<!--<br>
 Address<br>
     {{ Form::text('recruiter_address', '', array('class'=>'form-control'))}} 
 <br>
@@ -48,7 +48,7 @@ Comments<br>
 Referred by<br>
     {{ Form::text('recruiter_referred_by', '', array('class'=>'form-control'))}} 
 <br>
-
+-->
 
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
