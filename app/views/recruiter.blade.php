@@ -27,27 +27,7 @@
 Name<br>
     {{ Form::text('recruiter_name', '', array('class'=>'form-control'))}} 
 <br>
-Address<br>
-    {{ Form::text('recruiter_address', '', array('class'=>'form-control'))}} 
-<br>
-Phone<br>
-    {{ Form::text('recruiter_phone', '', array('class'=>'form-control'))}} 
-<br>
-email<br>
-    {{ Form::text('recruiter_email', '', array('class'=>'form-control'))}} 
-<br>
-company<br>
-    {{ Form::text('recruiter_company', '', array('class'=>'form-control'))}} 
-<br>
-Rating<br>
-    {{ Form::text('recruiter_rating', '', array('class'=>'form-control'))}} 
-<br>
-Comments<br>
-    {{ Form::textarea('recruiter_comments', '', array('class'=>'form-control'))}} 
-<br>
-Referred by<br>
-    {{ Form::text('recruiter_referred_by', '', array('class'=>'form-control'))}} 
-<br>
+
 
 
 
