@@ -34,8 +34,8 @@ Phone<br>
     {{ Form::text('recruiter_phone', '', array('class'=>'form-control'))}} 
 <br>
 email<br>
-<input type="email" name="recruiter_email">
-    <!--{{ Form::text('recruiter_email', '', array('class'=>'form-control'))}} -->
+
+{{ Form::text('recruiter_email', '', array('class'=>'form-control'))}} 
 <br>
 company<br>
     <!--{{ Form::text('recruiter_company', '', array('class'=>'form-control'))}} -->
