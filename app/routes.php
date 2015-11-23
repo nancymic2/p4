@@ -2054,7 +2054,8 @@ Route::get('recruiter', array('before' => 'auth', function()
           
           /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
           $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
-            return View::make('recruiter');
+
+            return View::make('recruiter', array('company_lists' => $company_lists)); 
         }
     )
 );
