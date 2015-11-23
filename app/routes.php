@@ -2113,7 +2113,6 @@ $stylesend='<br><br><img style="float:left; max-width: 100%;" class="img-respons
   echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.tablesorter.min.js"></script>';
   echo '<br><div class="container">'; 
   echo '<h2>Your Contacts</h2>';
-
   echo '<p>';
   echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4" style="width: 100%; table-layout: fixed;"> 
 
