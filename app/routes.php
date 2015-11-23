@@ -280,7 +280,7 @@ $current .= "\n";
 include 'head.php';
 echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.tablesorter.min.js"></script>';
   echo '<div class="container">'; 
-  echo '<h2>Your completed applications</h2>';
+  echo '<h2>Your Jobs</h2>';
 
   echo '<p>';
   echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4"> 

@@ -39,7 +39,7 @@ email<br>
 company<br>
     <!--{{ Form::text('recruiter_company', '', array('class'=>'form-control'))}} -->
 
-        {{ Form::select('company_id', $company_lists) }}
+{{ Form::select('company_id', $company_lists) }}
 <br>
 Rating<br>
     {{ Form::text('recruiter_rating', '', array('class'=>'form-control'))}} 
@@ -53,7 +53,7 @@ Referred by<br>
 
 
 
-    {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
+{{ Form::submit('Submit', array('class'=>'btn btn-default'))}}         
 
 {{ Form::close() }}
 
