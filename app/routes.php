@@ -2118,7 +2118,7 @@ $stylesend='<br><br><img style="float:left; max-width: 100%;" class="img-respons
 
   <caption>
   <h4>Sort Your Contacts by field</h4>
-  <h4>Click company name to edit company</h4>
+  <h4>Click contact name to edit contact</h4>
   </caption>
   <thead>
     <tr>  
