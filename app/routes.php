@@ -2122,16 +2122,16 @@ $stylesend='<br><br><img style="float:left; max-width: 100%;" class="img-respons
   </caption>
   <thead>
     <tr>  
-      <th style="width: 9.09%;">Company name</th>
-      <th style="width: 9.09%;">Company ID</th>
-      <th style="width: 9.09%;">Career site</th>
-      <th style="width: 9.09%;">Career site user name</th>
+      <th style="width: 9.09%;">Contact Name</th>
+      <th style="width: 9.09%;">Address</th>
+      <th style="width: 9.09%;">Phone</th>
+      <th style="width: 9.09%;">email</th>
       
-      <th style="width: 9.09%;">Career site password</th>
+      <th style="width: 9.09%;">Company</th>
 
-      <th style="width: 9.09%;">Company street</th>
-      <th style="width: 9.09%;">Company city</th>
-      <th style="width: 9.09%;">Company state</th>
+      <th style="width: 9.09%;">Rating</th>
+      <th style="width: 9.09%;">Comments</th>
+      <th style="width: 9.09%;">Referred By</th>
      
       </tr>  </thead>   <tbody>';
 //# loop through the Collection and access just the data
