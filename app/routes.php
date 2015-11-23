@@ -2069,7 +2069,7 @@ Route::post('/recruiter',
             $recruiter->user()->associate(Auth::user());
 
 
-         
+            $recruiter->company_id   = Input::get('company_id');
             $recruiter->recruiter_name   = Input::get('recruiter_name');
             $recruiter->recruiter_address   = Input::get('recruiter_address');
             $recruiter->recruiter_phone   = Input::get('recruiter_phone');
