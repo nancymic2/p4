@@ -37,7 +37,9 @@ email<br>
     {{ Form::text('recruiter_email', '', array('class'=>'form-control'))}} 
 <br>
 company<br>
-    {{ Form::text('recruiter_company', '', array('class'=>'form-control'))}} 
+    <!--{{ Form::text('recruiter_company', '', array('class'=>'form-control'))}} -->
+
+        {{ Form::select('company_id', $company_lists) }}
 <br>
 Rating<br>
     {{ Form::text('recruiter_rating', '', array('class'=>'form-control'))}} 
