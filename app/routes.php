@@ -185,7 +185,10 @@ Route::get('password/remind', array(
 
 Route::post('password/remind', array(
   'uses' => 'RemindersController@postRemind',
-  'as' => 'password.request'
+  'as' => 'password.request', function() 
+  {
+    return Redirect::to('/success')
+  }
 ));
 
 /////////////////////////////////
