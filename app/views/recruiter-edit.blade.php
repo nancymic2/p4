@@ -22,7 +22,7 @@
 <h2>&nbsp;</h2>
 
 
-<h3>View or Edit Recruiter</h3>
+<h3>View or Edit Recruiter/Contact</h3>
 <br>
 
 
