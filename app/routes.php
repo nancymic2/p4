@@ -712,8 +712,9 @@ Route::post('/resume',
 
             # Log the user in
            // Auth::login($user);
-            Session::flash('message', 'My message');
-            Session::put('message1', 'welcome');
+Session::flash('success', 'Your resume added');
+
+
 
            return Redirect::to('/applications')->withMessage('Welcome to CareerTrax!');
 
