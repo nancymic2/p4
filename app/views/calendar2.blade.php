@@ -25,6 +25,8 @@ $googlecal='<a href="https://calendar.google.com/calendar/render?action=TEMPLATE
 
 /*$newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=applyToJob&dates='
 .$newdate.'T090000'.'/'.$newdate.'T123000&details=&sprop=&location=Online"'.' target="_blank">add to google calendar</a>'; */
+echo $jobtime;
+echo '<br>';
 echo '<a href="';
 echo 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Interview&dates=';
 echo $jobdate;
