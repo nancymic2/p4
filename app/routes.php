@@ -712,11 +712,11 @@ Route::post('/resume',
 
             # Log the user in
            // Auth::login($user);
-Session::flash('success', 'Your resume added');
+Session::flash('success', 'Your resume has been added');
 
 
 
-           return Redirect::to('/applications')->withMessage('Welcome to CareerTrax!');
+           return Redirect::to('/resume')->withMessage('Welcome to CareerTrax!');
 
         }
     )
