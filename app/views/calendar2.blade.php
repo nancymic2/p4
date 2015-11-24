@@ -28,7 +28,7 @@ $googlecal='<a href="https://calendar.google.com/calendar/render?action=TEMPLATE
 
 $newesturl=str_replace('%3Cbr%3E', '', $newerurl); 
 $newesturl2=str_replace('<br>', '', $newesturl); 
-
+echo $newdate2;
 echo 'Your job has been created.';
 echo '<br>'; 
 //echo $googlecal;
