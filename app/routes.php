@@ -635,7 +635,7 @@ Route::post('/signup',
             # Log the user in
            Auth::login($user);
 
-            return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
+            return Redirect::to('/success')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
@@ -716,7 +716,7 @@ Session::flash('success', 'Your resume has been added');
 
 
 
-           return Redirect::to('/success')->withMessage('Welcome to CareerTrax!');
+           return Redirect::to('/applications')->withMessage('Welcome to CareerTrax!');
 
         }
     )
@@ -775,7 +775,7 @@ Route::post('/company',
             # Log the user in
            // Auth::login($user);
 
-           return Redirect::to('/success')->with('flash_message', 'Welcome to CareerTrax!');
+           return Redirect::to('/applications')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
