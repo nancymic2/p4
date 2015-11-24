@@ -1005,11 +1005,7 @@ Route::post('/applications',
                 return Redirect::to('/applications')->with('flash_message', 'resume addition failed; please try again.')->withInput();
             }
 
-            # Log the user in
-           // Auth::login($user);
 
-
-           //return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
 
             $jobs = json_decode($application, TRUE);
             $followupBy=$jobs['followupBy'];
@@ -1022,8 +1018,6 @@ Route::post('/applications',
             Session::put('googlecal', $googlecal);
              //Session::put('intTime', $time);
 
-           //echo $jobs['applyby'];
-            //echo $postedjob;
 
             return View::make('calendar2');
 

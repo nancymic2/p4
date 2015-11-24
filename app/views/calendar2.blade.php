@@ -9,13 +9,13 @@ echo '<a href="';
 echo 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Interview&dates=';
 echo $jobdate;
 echo '&details=&sprop=&location=toBeDetermined#eventpage_6">';
-echo 'add to cal<a>';
+echo '<h3>Add to Google Calendar</h3></a>';
 
 echo '<br>';
 
-echo 'Your job has been created.';
+echo '<h4>Your job has been created.</h4>';
 echo '<br>'; 
 //echo $googlecal;
 
 echo '<br>'; 
-echo '<br><a class="btn btn-info" onclick="window.history.back()">Cancel</a></div></div>';
+echo '<br><a herf="#" onclick="window.history.back()">Cancel</a></div></div>';
