@@ -201,7 +201,7 @@ if (diva.style.display=="none") {
 
     Interview Date <br>
      <input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
-
+Interview Time<br>
  <select name="rating">
   <option value="0">12:00 am</option>
   <option value="1">1:00 am</option>
@@ -228,7 +228,7 @@ if (diva.style.display=="none") {
   <option value="22">10:00 pm</option>
   <option value="23">11:00 pm</option>
 </select>
-
+<br><br>
     <!--Resume used<br>
     {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} -->
 
