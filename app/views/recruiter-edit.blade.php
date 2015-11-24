@@ -27,15 +27,15 @@
 
 
  {{ Form::model($recruiter, array('route' => 'recruiter.edit', $recruiter->id)) }}    
-    Resume  name<br>
+    Contact  name<br>
     {{ Form::text('recruiter_name')}} 
 <br>
 
-    Resume link<br>
+    Address<br>
     {{ Form::text('recruiter_address')}} 
 <br>
 
-    notes<br>
+    Phone<br>
     {{ Form::textarea('recruiter_phone')}} 
 
 
