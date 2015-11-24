@@ -716,8 +716,16 @@ Session::flash('success', 'Your resume has been added');
 
 
 
-           return Redirect::to('/applications')->withMessage('Welcome to CareerTrax!');
+           return Redirect::to('/success')->withMessage('Welcome to CareerTrax!');
 
+        }
+    )
+);
+
+
+Route::get('success', array('before' => 'auth', function()
+         {
+           echo '<h4>Your record has been updated.</h4><br><a class="btn btn-success" onclick="window.history.back()">Great Thanks!</a>'
         }
     )
 );
