@@ -22,6 +22,8 @@
 
 
     <p><b>Q</b> What does it cost to join CareerTrax? <br><b>A</b> CareerTrax is free!</p>
+    <p><b>Q</b> Why should I use CareerTrax?<br><b>A</b> We think you'll like CareerTrax because all of your valuable job search information is maintained
+        for you right here. You can throw away your cocktail napkins, and not worry when your next hard drive with all your Excel sheets crashes and is gone forever.</p>
      <p><b>Q</b> Will you sell my personal information?<br><b>A</b> No we wiill never sell or share your information with anyone.</p>
      <p><b>Q</b> But you are showing salaries and degrees and other information on the site?<br><b>A</b> Yes but that information comes from all users and is aggregated and is not personally identifiable.</p>
      <p><b>Q</b> Why can't I add a profle?<br><b>A</b> If you are redirected to the edit profile page, 
