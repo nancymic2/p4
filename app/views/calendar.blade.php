@@ -55,3 +55,4 @@ echo '<br>';
 echo $newesturl2;
 echo '<br>'; 
 echo '<a href="/savedJobs">Back</a>'; 
+?>
