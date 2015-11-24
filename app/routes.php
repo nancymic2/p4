@@ -635,7 +635,7 @@ Route::post('/signup',
             # Log the user in
            Auth::login($user);
 
-            return Redirect::to('/success')->with('flash_message', 'Welcome to CareerTrax!');
+            return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
@@ -718,16 +718,6 @@ Session::flash('success', 'Your resume has been added');
 
            return Redirect::to('/applications')->withMessage('Welcome to CareerTrax!');
 
-        }
-    )
-);
-
-
-Route::get('success', array('before' => 'auth', function()
-         {
-           include 'head.php';
-           echo '<h4>Your record has been updated.</h4><br><a class="btn btn-success" href="/">Great Thanks!</a>';
-           echo '<br><br><img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
         }
     )
 );
@@ -845,7 +835,7 @@ Route::get('expenses', array('before' => 'auth', function()
            // Auth::login($user);
 
           // return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
-            return Redirect::to('/success');
+            return Redirect::to('/expenses');
 
         }
     )
@@ -1017,7 +1007,7 @@ Route::post('/applications',
            //echo $jobs['applyby'];
             //echo $postedjob;
 
-            return View::make('calendar2');
+            return View::make('applications');
 
         }
     )
@@ -1572,7 +1562,7 @@ Route::post('/applicationsrating',
             $company->rating   = Input::get('rating');
 
              $company->save();
-             return Redirect::to('/success'); // YES NO? 
+             return Redirect::to('/companyreport'); // YES NO? 
 }
 ));
 
@@ -1599,7 +1589,7 @@ Route::post('/applicationsrating',
              $user->last   = Input::get('last');
              $user->email   = Input::get('email');
              $user->save();
-             return Redirect::to('/success'); // YES NO? 
+             return Redirect::to('/'); // YES NO? 
 }
 ));
 
@@ -1676,7 +1666,7 @@ Route::post('/applicationsrating',
               $application->hiringMgr   = Input::get('hiringMgr');
               $application->recnumber   = Input::get('recnumber');
               $application->save();
-             return Redirect::to('/success'); // YES NO? 
+             return Redirect::to('/completedapps'); // YES NO? 
 }
 ));
 
@@ -1703,7 +1693,7 @@ Route::post('/applicationsrating',
               $resume->resumetext   = Input::get('resumetext');
           
               $resume->save();
-             return Redirect::to('/success'); // YES NO? 
+             return Redirect::to('/completedapps'); // YES NO? 
 }
 ));
 
@@ -1937,7 +1927,7 @@ echo '</div>';
             $resume->resumetext   = Input::get('resumetext');
 
              $resume->save();
-             return Redirect::to('/success'); // YES NO? 
+             return Redirect::to('/choose_resume'); // YES NO? 
 }
 ));
 
@@ -1987,7 +1977,7 @@ Route::post('/profile',
             # Log the user in
            // Auth::login($user);
 
-           return Redirect::to('/success')->with('flash_message', 'Welcome to CareerTrax!');
+           return Redirect::to('/profile')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
@@ -2018,7 +2008,7 @@ Route::post('/profile',
               $profile->state   = Input::get('state');
           
               $profile->save();
-             return Redirect::to('/success'); // YES NO? 
+             return Redirect::to('/account'); // YES NO? 
 }
 ));
 
@@ -2055,7 +2045,7 @@ Route::post('/profile',
               $expense->comments   = Input::get('comments'); 
           
               $expense->save();
-             return Redirect::to('/success'); // YES NO? 
+             return Redirect::to('/expensereport'); // YES NO? 
 }
 ));
 
@@ -2105,7 +2095,7 @@ Route::post('/recruiter',
             # Log the user in
            // Auth::login($user);
 
-           return Redirect::to('/success')->with('flash_message', 'Welcome to CareerTrax!');
+           return Redirect::to('/applications')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
@@ -2230,6 +2220,6 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
               $recruiter->recruiter_phone  = Input::get('recruiter_phone');
           
               $recruiter->save();
-             return Redirect::to('/success'); // YES NO? 
+             return Redirect::to('/contactreport'); // YES NO? 
 }
 ));
