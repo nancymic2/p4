@@ -9,6 +9,7 @@ $newdate=str_replace('-', '', $jobdate).'<br>';
 echo $newdate;
 $newdate2=$newdate+1;
 
+https://calendar.google.com/calendar/render?action=TEMPLATE&text=Interview&dates=20151124T030000/20151124T040000&details=&sprop=&location=toBeDetermined#eventpage_6
 
 /////////////////WORKING//////////////
 /*
@@ -24,6 +25,20 @@ $googlecal='<a href="https://calendar.google.com/calendar/render?action=TEMPLATE
 
 /*$newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=applyToJob&dates='
 .$newdate.'T090000'.'/'.$newdate.'T123000&details=&sprop=&location=Online"'.' target="_blank">add to google calendar</a>'; */
+echo '<a href="';
+echo 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Interview&dates=';
+echo $jobdate;
+echo 'T';
+echo $jobtime;
+echo '/';
+echo $jobdate;
+echo 'T';
+echo $jobtime;
+echo '&details=&sprop=&location=toBeDetermined#eventpage_6">';
+echo 'add to cal<a>';
+
+
+
 
 
 $newesturl=str_replace('%3Cbr%3E', '', $newerurl); 
