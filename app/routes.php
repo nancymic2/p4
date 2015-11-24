@@ -1008,12 +1008,18 @@ Route::post('/applications',
             # Log the user in
            // Auth::login($user);
 
+
            //return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
 
             $jobs = json_decode($application, TRUE);
             $followupBy=$jobs['followupBy'];
             $time=$jobs['rating'];
-            Session::put('followupBy', $followupBy, 'intTime', $time);
+
+            $newdate=str_replace('-', '', $followupBy); 
+            $newtime='T'.$jobs['rating'];
+            $googlecal=$newdate.$newtime.'/'.$newdate.$newtime;
+
+            Session::put('googlecal', $googlecal);
              //Session::put('intTime', $time);
 
            //echo $jobs['applyby'];
