@@ -18,9 +18,8 @@ $newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=&
 */
 ///////////////////////////////////
 
-$newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Interview&dates='
-.$newdate.'T'.$jobtime.'/'.$newdate.'T'.$jobmins."&details=&sprop=&location=toBeDetermined".">"';
-<h3>add your interview date to google calendar</h3></a>'; 
+$newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Interview&dates='.$newdate.'T'.$jobtime.'/'.$newdate.'T'.$jobmins.'&details=&sprop=&location=toBeDetermined'.'>';
+echo '<h3>add your interview date to google calendar</h3></a>'; 
 
 
 /*$newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=applyToJob&dates='
