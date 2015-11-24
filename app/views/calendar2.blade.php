@@ -1,7 +1,7 @@
 <?php
 $jobdate = Session::get('followupBy');
 $jobtime = Session::get('intTime');
-$jobmins=$jobtime+'003000';
+$jobmins=$jobtime;
 //echo 'test';
 //echo $jobdate;
 
