@@ -1,5 +1,5 @@
 @extends('_master')
-
+@section ('resume')
 
 
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
@@ -23,7 +23,7 @@
 	add a URL to your resume on Google docs or Monster<br>
 	or wheverever it is saved</p>
 
-@section ('resume')
+
 @if(Session::has('succes'))
 <div  style="z-index: 10; position: absolute; top: 500px; left: 400px; padding: 25px; background-color: #ffff33;">{{ Session::get('success') }}</div>
 @endif
