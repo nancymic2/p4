@@ -774,7 +774,7 @@ Route::post('/company',
             }
             # Log the user in
            // Auth::login($user);
-Session::flash('success', 'Your compan has been added');
+Session::flash('success', 'Your company has been added');
            return Redirect::to('/applications')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
@@ -1010,11 +1010,14 @@ Route::post('/applications',
 
            //return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
 
-            $times = json_decode($application, TRUE);
-            $applydate=$times['applyDate'];
-            Session::put('applybydate', $applydate);
+            $jobs = json_decode($application, TRUE);
+            $followupBy=$jobs['followupBy'];
+            Session::put('followupBy', $followupBy);
 
-            return View::make('success');
+           //echo $jobs['applyby'];
+            //echo $postedjob;
+
+            return View::make('calendar2');
 
         }
     )
