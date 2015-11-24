@@ -82,7 +82,7 @@ $newdata2=$salarycount[2];
   <div class="container">
     <div class="col-sm-6">
   <br>
-<h3>This chart shows annual salaries of all jobs users saved to apply to later.</h3>
+<h3>This chart shows annual salaries of all users.</h3>
 
 
 <!--Div that will hold the pie chart-->
