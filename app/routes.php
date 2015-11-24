@@ -178,10 +178,7 @@ Route::post('password/reset/{token}', array(
 
 Route::get('password/remind', array(
   'uses' => 'RemindersController@getRemind',
-  'as' => 'password.remind', function() 
-  {
-    return Redirect::to('/success');
-  }
+  'as' => 'password.remind'
 ));
 
 /////////////////////////// playing wth fire ^^  11/21/235pm
@@ -729,13 +726,13 @@ Session::flash('success', 'Your resume has been added');
 );
 
 
-Route::get('success', array('before' => 'auth', function()
+Route::get('success',  function()
          {
            include 'head.php';
            echo '<h4>Your record has been updated.</h4><br><a class="btn btn-success" href="/">Great Thanks!</a>';
            echo '<br><br><img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
         }
-    )
+    
 );
 
 
