@@ -1017,7 +1017,7 @@ Route::post('/applications',
            //echo $jobs['applyby'];
             //echo $postedjob;
 
-            return View::make('calendar2');
+            return View::make('applications');
 
         }
     )
