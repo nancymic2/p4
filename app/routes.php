@@ -774,7 +774,7 @@ Route::post('/company',
             }
             # Log the user in
            // Auth::login($user);
-Session::flash('success', 'Your company has been added');
+
            return Redirect::to('/applications')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
@@ -1017,7 +1017,7 @@ Route::post('/applications',
            //echo $jobs['applyby'];
             //echo $postedjob;
 
-            return View::make('applications');
+            return View::make('calendar2');
 
         }
     )
