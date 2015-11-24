@@ -174,12 +174,11 @@ if (diva.style.display=="none") {
     {{ Form::select('company_id', $company_lists) }} <!--this yieds the INDEX of the selected 11/6-->
  <!-- 11/1/15  -->
 
- 
        
-      <h4>Select existing resume</h4>
-      {{ Form::select('user_id', $resume_lists) }} 
+    <h4>Select existing resume</h4>
+    {{ Form::select('user_id', $resume_lists) }} 
 
-     <br>role<br>
+    <br>role<br>
     {{ Form::text('role', '', array('class'=>'form-control'))}} 
 
     salary<br>
@@ -203,8 +202,7 @@ if (diva.style.display=="none") {
     Interview Date <br>
      <input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
 
-    decision<br>
-    {{ Form::text('decision', '', array('class'=>'form-control'))}} 
+ 
 
     <!--Resume used<br>
     {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} -->
@@ -218,11 +216,6 @@ if (diva.style.display=="none") {
     URL of job posting<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
-    <!-- user name<br>
-    {{ Form::text('username', '', array('class'=>'form-control'))}} 
-
-     password<br>
-    {{ Form::text('password', '', array('class'=>'form-control'))}} <br> -->
 <br><br>
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 

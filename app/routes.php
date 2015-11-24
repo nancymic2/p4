@@ -987,7 +987,7 @@ Route::post('/applications',
              $application->applyDate    = Input::get('applyDate');
              $application->followupBy    = Input::get('followupBy');
              $application->hiringMgr    = Input::get('hiringMgr');
-             $application->decision    = Input::get('decision');
+
              $application->rating    = Input::get('rating');
              $application->resumeUsed    = Input::get('user_id');  //THIS IS REALLY THE RESME ID FROM RESUMES TABLE
              $application->howapplied    = Input::get('howapplied');
