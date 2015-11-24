@@ -1032,7 +1032,7 @@ foreach($companies as $company) {   ///////////
 
             $newdate=str_replace('-', '', $followupBy); 
             $newtime='T'.$jobs['rating'];
-            $googlecal=.$location.'&dates='.$newdate.$newtime.'/'.$newdate.$newtime;
+            $googlecal=$location.'&dates='.$newdate.$newtime.'/'.$newdate.$newtime;
 
             Session::put('googlecal', $googlecal);
              //Session::put('intTime', $time);
