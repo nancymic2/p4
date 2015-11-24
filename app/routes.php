@@ -985,6 +985,8 @@ Route::post('/applications',
             alert()
           }
           */
+              $location='';
+             $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
              $application = new Application;
              $application->user()->associate(Auth::user());
          
@@ -1016,6 +1018,12 @@ Route::post('/applications',
                 return Redirect::to('/applications')->with('flash_message', 'resume addition failed; please try again.')->withInput();
             }
 
+foreach($companies as $company) {   ///////////
+    if ($company['id']==$application['company_id']) {  /////////////
+      $location=$company['company'];   ///////////
+    }
+
+}
 
 
             $jobs = json_decode($application, TRUE);
@@ -1024,7 +1032,7 @@ Route::post('/applications',
 
             $newdate=str_replace('-', '', $followupBy); 
             $newtime='T'.$jobs['rating'];
-            $googlecal=$newdate.$newtime.'/'.$newdate.$newtime;
+            $googlecal=.$location.'&dates='.$newdate.$newtime.'/'.$newdate.$newtime;
 
             Session::put('googlecal', $googlecal);
              //Session::put('intTime', $time);
