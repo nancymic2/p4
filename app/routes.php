@@ -738,7 +738,7 @@ Route::get('success',  function()
 Route::get('successpassword',  function()
          {
            include 'head.php';
-           echo '<h4>Your password token has been sent.</h4><br><a class="btn btn-success" href="/">Great Thanks!</a>';
+           echo '<h4>Your password change email has been sent.</h4><br><a class="btn btn-success" href="/">Great Thanks!</a>';
            echo '<br><br><img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
         }
     
