@@ -34,10 +34,7 @@ resume text<br>
 {{ Form::close() }}
 
 
-<?php
-echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
-
-?>
+<br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
 
 </div>
 </div>
