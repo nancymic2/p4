@@ -725,7 +725,9 @@ Session::flash('success', 'Your resume has been added');
 
 Route::get('success', array('before' => 'auth', function()
          {
+           include 'head.php';
            echo '<h4>Your record has been updated.</h4><br><a class="btn btn-success" onclick="window.history.back()">Great Thanks!</a>';
+           echo '<br><br><img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
         }
     )
 );
