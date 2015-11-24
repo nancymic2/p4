@@ -17,7 +17,7 @@ $newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=&
 ///////////////////////////////////
 
 $newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Interview&dates='
-.$newdate.'T090000'.'/'.$newdate.'T123000&details=&sprop=&location=toBeDetermined"><h3>add to google calendar</h3></a>'; 
+.$newdate.'T090000'.'/'.$newdate.'T123000&details=&sprop=&location=toBeDetermined"><h3>add your interview date to google calendar</h3></a>'; 
 
 
 /*$newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=applyToJob&dates='
@@ -27,8 +27,8 @@ $newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=I
 $newesturl=str_replace('%3Cbr%3E', '', $newerurl); 
 $newesturl2=str_replace('<br>', '', $newesturl); 
 
-
+echo 'Your job has been created.'
 echo '<br>'; 
 echo $newesturl2;
 echo '<br>'; 
-echo '<a href="/applications">Back</a>'; 
+echo '<br><a class="btn btn-info" onclick="window.history.back()">Cancel</a></div></div>';
