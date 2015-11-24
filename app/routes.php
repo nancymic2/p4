@@ -1014,6 +1014,7 @@ Route::post('/applications',
             $followupBy=$jobs['followupBy'];
             $time=$jobs['rating'];
             Session::put('followupBy', $followupBy, 'intTime', $time);
+             //Session::put('intTime', $time);
 
            //echo $jobs['applyby'];
             //echo $postedjob;
