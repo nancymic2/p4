@@ -51,20 +51,11 @@ resume text<br>
 
 <?php
 echo '<br><a class="btn btn-danger" href="/">Cancel</a>';
-Session::get('success');
 
 
 ?>
 
-Session::get('success');
 
-
-
-@if(Session::has('flash_message'))
-    <div class="alert-box success">
-        <h2>{{ Session::get('flash_message') }}</h2>
-    </div>
-@endif
 
 </div>
 </div>
