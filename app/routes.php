@@ -302,7 +302,7 @@ echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.ta
       
       <th>Hiring manager</th>
 
-      <th>Follow up by</th>
+      <th>Interview date</th>
       <th>Job rating</th>
       <th>Resume name</th>
       <th>Job link</th>
