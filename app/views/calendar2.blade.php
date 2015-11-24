@@ -31,7 +31,7 @@ $newesturl2=str_replace('<br>', '', $newesturl);
 
 echo 'Your job has been created.';
 echo '<br>'; 
-echo $googlecal;
+//echo $googlecal;
 echo $newesturl2;
 echo '<br>'; 
 echo '<br><a class="btn btn-info" onclick="window.history.back()">Cancel</a></div></div>';
