@@ -774,7 +774,7 @@ Route::post('/company',
             }
             # Log the user in
            // Auth::login($user);
-
+Session::flash('success', 'Your company has been added');
            return Redirect::to('/applications')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
