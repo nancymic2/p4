@@ -1010,9 +1010,9 @@ Route::post('/applications',
 
            //return Redirect::to('/')->with('flash_message', 'Welcome to CareerTrax!');
 
-            $times = json_decode($application, TRUE);
-            $applydate=$times['applyDate'];
-            Session::put('applybydate', $applydate);
+           // $times = json_decode($application, TRUE);
+            //$applydate=$times['applyDate'];
+           // Session::put('applybydate', $applydate);
 
             return View::make('calendar');
 
