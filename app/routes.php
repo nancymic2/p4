@@ -178,7 +178,10 @@ Route::post('password/reset/{token}', array(
 
 Route::get('password/remind', array(
   'uses' => 'RemindersController@getRemind',
-  'as' => 'password.remind'
+  'as' => 'password.remind', function() 
+  {
+    return Redirect::to('/success');
+  }
 ));
 
 /////////////////////////// playing wth fire ^^  11/21/235pm
