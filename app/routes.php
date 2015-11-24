@@ -725,7 +725,7 @@ Session::flash('success', 'Your resume has been added');
 
 Route::get('success', array('before' => 'auth', function()
          {
-           echo '<h4>Your record has been updated.</h4><br><a class="btn btn-success" onclick="window.history.back()">Great Thanks!</a>'
+           echo '<h4>Your record has been updated.</h4><br><a class="btn btn-success" onclick="window.history.back()">Great Thanks!</a>';
         }
     )
 );
