@@ -263,6 +263,10 @@ if (diva.style.display=="none") {
 </div>
 </div>
 </div>
-
+@if(Session::has('success'))
+    <div class="alert-box success">
+        <h2>{{ Session::get('success') }}</h2>
+    </div>
+@endif
 
 @stop
