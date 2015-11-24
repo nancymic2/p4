@@ -27,7 +27,7 @@ $newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=I
 $newesturl=str_replace('%3Cbr%3E', '', $newerurl); 
 $newesturl2=str_replace('<br>', '', $newesturl); 
 
-echo 'Your job has been created.'
+echo 'Your job has been created.';
 echo '<br>'; 
 echo $newesturl2;
 echo '<br>'; 
