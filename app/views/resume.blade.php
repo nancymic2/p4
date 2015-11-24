@@ -1,5 +1,8 @@
 @extends('_master')
 @section ('resume')
+@if(Session::has('succes'))
+<div  style="z-index: 10; position: absolute; top: 500px; left: 400px; padding: 25px; background-color: #ffff33;">{{ Session::get('success') }}</div>
+@endif
 
 
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
@@ -24,9 +27,6 @@
 	or wheverever it is saved</p>
 
 
-@if(Session::has('succes'))
-<div  style="z-index: 10; position: absolute; top: 500px; left: 400px; padding: 25px; background-color: #ffff33;">{{ Session::get('success') }}</div>
-@endif
 
 
 
