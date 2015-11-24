@@ -1,6 +1,9 @@
 @extends('_master')
 
 @section ('resume')
+@if (Session::has('message'))
+    <div class="alert alert-info">{{ Session::get('message') }}</div>
+@endif
 
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
                         <script src="jquery.knob.js"></script>
