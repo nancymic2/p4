@@ -716,7 +716,7 @@ Session::flash('success', 'Your resume has been added');
 
 
 
-           return Redirect::to('/help')->withMessage('Welcome to CareerTrax!');
+           return Redirect::to('/applications')->withMessage('Welcome to CareerTrax!');
 
         }
     )
