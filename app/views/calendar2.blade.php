@@ -1,5 +1,7 @@
 <?php
 $jobdate = Session::get('followupBy');
+$jobtime = Session::get('intTime');
+$jobmins=$jobtime+'003000';
 //echo 'test';
 //echo $jobdate;
 
@@ -17,7 +19,7 @@ $newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=&
 ///////////////////////////////////
 
 $newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Interview&dates='
-.$newdate.'T090000'.'/'.$newdate.'T123000&details=&sprop=&location=toBeDetermined"><h3>add your interview date to google calendar</h3></a>'; 
+.$newdate.'T'.$jobtime.'/'.$newdate.'T'.$jobmins.&details=&sprop=&location=toBeDetermined"><h3>add your interview date to google calendar</h3></a>'; 
 
 
 /*$newerurl= '<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=applyToJob&dates='

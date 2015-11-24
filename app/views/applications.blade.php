@@ -201,7 +201,7 @@ if (diva.style.display=="none") {
 
     Interview Date <br>
      <input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
-Interview Time<br>
+Interview Time<br>  <!-- use rating field for time instead -->
  <select name="rating">
   <option value="000000">12:00 am</option>
   <option value="010000">1:00 am</option>

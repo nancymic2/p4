@@ -1012,7 +1012,8 @@ Route::post('/applications',
 
             $jobs = json_decode($application, TRUE);
             $followupBy=$jobs['followupBy'];
-            Session::put('followupBy', $followupBy);
+            $time=$jobs['rating'];
+            Session::put('followupBy', $followupBy, 'intTime', $time);
 
            //echo $jobs['applyby'];
             //echo $postedjob;
