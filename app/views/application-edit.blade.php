@@ -54,7 +54,7 @@ call_user_func(function() {
     echo $mydate;
     echo '<br>';
     echo $mydate2;
-    echo $id;
+    //echo $id;
 
     //$curintdate=$application->'followupBy';
     //echo $curintdate;
