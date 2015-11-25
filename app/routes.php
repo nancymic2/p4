@@ -1017,7 +1017,7 @@ Route::post('/applications',
             catch (Exception $e) {
                 return Redirect::to('/applications')->with('flash_message', 'resume addition failed; please try again.')->withInput();
             }
-            
+
             $mycompany= Input::get('company_id');
             foreach($companies as $company) {   ///////////
                 if ($company['id']==$mycompany) {  /////////////
@@ -1685,7 +1685,16 @@ Route::post('/applicationsrating',
         function() {
           $id =Input::get('id');
            //$company  = Company::find(1);  got to get the co id. take from url if need be cause ive had enough
-           $application  = Application::find($id);  ///works when id is hardcoded
+
+
+             $application  = Application::find($id);  ///works when id is hardcoded
+
+             $location='';
+             $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
+             $application = new Application;
+             $application->user()->associate(Auth::user());
+         
+             $application->company   = Input::get('company_id'); //Input::only('company_id') gets array. 
             //$company->id   =Input::get('id');  //just added
               $application->company   = Input::get('company');   //calulate later
               $application->role   = Input::get('role');
@@ -1698,7 +1707,31 @@ Route::post('/applicationsrating',
               $application->hiringMgr   = Input::get('hiringMgr');
               $application->recnumber   = Input::get('recnumber');
               $application->save();
-             return Redirect::to('/success'); // YES NO? 
+             return Redirect::to('/success');
+
+
+            $mycompany= Input::get('company_id');
+            foreach($companies as $company) {   ///////////
+                if ($company['id']==$mycompany) {  /////////////
+                  $location=$company['company'];   ///////////
+                }
+
+            }
+
+
+            $jobs = json_decode($application, TRUE);
+            $followupBy=$jobs['followupBy'];
+            $time=$jobs['rating'];
+
+            $newdate=str_replace('-', '', $followupBy); 
+            $newtime='T'.$jobs['rating'];
+            $googlecal=$location.'&dates='.$newdate.$newtime.'/'.$newdate.$newtime;
+
+            Session::put('googlecal', $googlecal);
+             //Session::put('intTime', $time);
+
+
+            return View::make('calendar2'); // YES NO? 
 }
 ));
 
