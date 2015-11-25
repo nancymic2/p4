@@ -64,10 +64,7 @@
             <li><a href="/applications">Company</a></li>
             <li><a href="/recruiter">Contact/recruiter</a></li>
             <li><a href="/expenses">Expense</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+
           </ul>
         </li>
 
@@ -79,10 +76,7 @@
             <li><a href="/companyreport">Your Companies</a></li>
             <li><a href="/contactreport">Your Contacts</a></li>
             <li><a href="/expensereport">Your Expense Report</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+ 
           </ul>
         </li>
         <li class="dropdown">
@@ -93,10 +87,7 @@
             <li><a href="/companyreport">Your Companies</a></li>
             <li><a href="/contactreport">Your Contacts</a></li>
             <li><a href="/expensereport">Your Expenses</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+
           </ul>
         </li>
 
@@ -125,8 +116,7 @@
             <li><a href="/charter">Salary Chart</a></li>
             <li><a href="/charter">Industry Stats</a></li>
             <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+
           </ul>
         </li>
       </ul>

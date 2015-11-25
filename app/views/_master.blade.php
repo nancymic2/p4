@@ -114,8 +114,7 @@
             <li><a href="/charter">Salary Charts</a></li>
             <li><a href="/charter">Industry Stats</a></li>
             <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+
           </ul>
         </li>
       </ul>
