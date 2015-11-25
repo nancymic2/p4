@@ -35,7 +35,8 @@ echo $jobdate;
 echo '&details=&sprop=&location=toBeDetermined#eventpage_6">';
 echo '<h3>Add to Google Calendar</h3></a>';
 
-echo '<br><a href="#" onclick="window.history.back()">Cancel</a>';
+
+echo  '<br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>';
 
 ?>
 
