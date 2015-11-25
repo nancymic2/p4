@@ -27,6 +27,9 @@ street
 			{{ Form::text('street') }}
 		</div>
 		
+		rating<br>
+			{{ Form::text('rating') }}
+			<br>
 
 		
 		{{ Form::submit('Save') }}

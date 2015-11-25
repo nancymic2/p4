@@ -77,6 +77,11 @@ call_user_func(function() {
 <br>
     salary<br>
     {{ Form::text('salary')}} 
+
+    <br>
+
+        rating<br>
+      {{ Form::text('rating') }}
 <br><br>
 
     Applied Date. Note you MUST<br> re-enter this date <br>
