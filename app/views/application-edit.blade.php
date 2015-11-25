@@ -30,9 +30,7 @@ call_user_func(function() {
 //$mynewdate= 'route' -> ('application.edit', $application->id);
   //$interviewDate = Session::get('currentintdate');
     $application=0;
-$mynewestid=Application::find($id);
-$mynewestdate=$mynewestid['followupBy'];
-echo $mynewestdate;
+    
 
     $myid=0;
     $applications = Application::where('user_id', '=', Auth::user()->id)->get();
