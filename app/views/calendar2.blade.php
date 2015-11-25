@@ -10,7 +10,7 @@ echo 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Interview
 
 
 echo $jobdate;
-echo '&details=&sprop=&location=toBeDetermined#eventpage_6" target="_blank">';
+echo '&details=&sprop=&location=toBeDetermined#eventpage_6">';
 echo '<h3>Add to Google Calendar</h3></a>';
 
 echo '<br><a href="#" onclick="window.history.back()">Cancel</a>';
