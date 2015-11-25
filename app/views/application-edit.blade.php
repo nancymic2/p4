@@ -27,8 +27,8 @@
 <b>Current date is:&nbsp;</b>
  <?php
 call_user_func(function() {
-
-  $interviewDate = Session::get('currentintdate');
+$mynewdate= 'route' => ('application.edit', $application->id);
+  //$interviewDate = Session::get('currentintdate');
     $application=0;
 
     $myid=0;
