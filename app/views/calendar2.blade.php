@@ -6,7 +6,9 @@ $jobdate = Session::get('googlecal');
 echo '<h4>Your job has been created.</h4>';
 
 echo '<a href="';
-echo 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Interview&dates=';
+echo 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Interview';
+
+
 echo $jobdate;
 echo '&details=&sprop=&location=toBeDetermined#eventpage_6">';
 echo '<h3>Add to Google Calendar</h3></a>';
