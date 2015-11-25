@@ -19,11 +19,7 @@
 
                   <!-- Latest compiled and minified CSS -->
 
-            <script type="text/javascript">
-                    $(document).ready(function(){
-                    $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
-                    })
-                </script>
+
 
 <div class="container">
     <div class="col-sm-6">
