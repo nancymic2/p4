@@ -52,6 +52,7 @@ call_user_func(function() {
            //echo $state[]
        }
     echo $mydate;
+    echo '<br>';
     echo $mydate2;
 });
 ?>
