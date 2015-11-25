@@ -27,6 +27,8 @@
 <b>Current date is:&nbsp;</b>
  <?php
 call_user_func(function() {
+
+  $interviewDate = Session::get('currentintdate');
     $application=0;
 
     $myid=0;
@@ -54,6 +56,7 @@ call_user_func(function() {
     echo $mydate;
     echo '<br>';
     echo $mydate2;
+    echo $interviewDate;
     //echo $id;
 
     //$curintdate=$application->'followupBy';
