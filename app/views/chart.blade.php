@@ -81,7 +81,7 @@ $newdata2=$salarycount[2];
 
 <!--Div that will hold the pie chart-->
 <div id="chart_div" style="width:400; height:300"></div>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 </div>
 </div>
 
