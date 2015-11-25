@@ -1017,9 +1017,9 @@ Route::post('/applications',
             catch (Exception $e) {
                 return Redirect::to('/applications')->with('flash_message', 'resume addition failed; please try again.')->withInput();
             }
-
+$mycompany= Input::get('company_id');
 foreach($companies as $company) {   ///////////
-    if ($company['id']==$application['company_id']) {  /////////////
+    if ($company['id']==$mycompany) {  /////////////
       $location=$company['company'];   ///////////
     }
 
