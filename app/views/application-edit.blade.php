@@ -80,8 +80,33 @@ call_user_func(function() {
 
     <br>
 
-        interview time<br>
-      {{ Form::text('rating') }}
+interview time<br>
+<select name="rating">
+  <option value="000000">12:00 am</option>
+  <option value="010000">1:00 am</option>
+  <option value="020000">2:00 am</option>
+  <option value="030000">3:00 am</option>
+  <option value="040000">4:00 am</option>
+  <option value="050000">5:00 am</option>
+  <option value="060000">6:00 am</option>
+  <option value="070000">7:00 am</option>
+  <option value="080000">8:00 am</option>
+  <option value="090000">9:00 am</option>
+  <option value="100000">10:00 am</option>
+  <option value="110000">11:00 am</option>
+  <option value="120000">12:00 pm</option>
+  <option value="130000">1:00 pm</option>
+  <option value="140000">2:00 pm</option>
+  <option value="150000">3:00 pm</option>
+  <option value="160000">4:00 pm</option>
+  <option value="170000">5:00 pm</option>
+  <option value="180000">6:00 pm</option>
+  <option value="190000">7:00 pm</option>
+  <option value="200000">8:00 pm</option>
+  <option value="210000">9:00 pm</option>
+  <option value="220000">10:00 pm</option>
+  <option value="230000">11:00 pm</option>
+</select>
 <br><br>
 
     Applied Date. Note you MUST<br> re-enter this date <br>
