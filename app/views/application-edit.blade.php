@@ -63,8 +63,8 @@ call_user_func(function() {
 
 <br>
     
-    If you want to associate this job with another company, you must <b><u><a href="#divs" onclick='document.getElementById("companies").style.display="block";'>view your companies</a></u></b> 
-    and change this ID accordingly.<br> 
+    <!--If you want to associate this job with another company, you must <b><u><a href="#divs" onclick='document.getElementById("companies").style.display="block";'>view your companies</a></u></b> 
+    and change this ID accordingly.<br> -->
     <a name="divs"></a><br>
      <h4>Select existing company</h4>
     {{ Form::select('company_id', $company_lists) }} <!--this yieds the INDEX of the selected 11/6-->
@@ -109,12 +109,14 @@ interview time<br>
 </select>
 <br><br>
 
+
+   Interview Date. Note you MUST<br> re-enter this date<br> <a href="/completedapps"><b><u>Check your dates</u></b></a> <br>
+     <br><input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
+
     Applied Date. Note you MUST<br> re-enter this date <br>
      <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
     
 
-   Interview Date. Note you MUST<br> re-enter this date<br> <a href="/completedapps"><b><u>Check your dates</u></b></a> <br>
-     <br><input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
     
     city<br>
     {{ Form::text('city')}} 
