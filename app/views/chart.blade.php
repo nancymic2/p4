@@ -81,10 +81,8 @@ $newdata2=$salarycount[2];
 
   <title>Career Trax</title>
   <link rel="stylesheet" href="hmin.css">
-</head>
-<body>
-  <div class="container">
-    <div class="col-sm-6">
+
+ 
   <br>
 <h3>This chart shows annual salaries of all users.</h3>
 
