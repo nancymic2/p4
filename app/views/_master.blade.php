@@ -78,10 +78,7 @@
             <li><a href="/companyreport">Your Companies</a></li>
             <li><a href="/contactreport">Your Contacts</a></li>
             <li><a href="/expensereport">Your Expense Report</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+
           </ul>
         </li>
         <li class="dropdown">
@@ -92,10 +89,7 @@
             <li><a href="/companyreport">Your Companies</a></li>
             <li><a href="/contactreport">Your Contacts</a></li>
             <li><a href="/expensereport">Your Expenses</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+   
           </ul>
         </li>
 
