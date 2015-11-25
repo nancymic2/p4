@@ -1707,8 +1707,7 @@ Route::post('/applicationsrating',
               $application->hiringMgr   = Input::get('hiringMgr');
               $application->recnumber   = Input::get('recnumber');
               $application->save();
-             return Redirect::to('/success');
-
+             
 
             $mycompany= Input::get('company_id');
             foreach($companies as $company) {   ///////////
