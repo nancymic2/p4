@@ -68,17 +68,17 @@ call_user_func(function() {
     <a name="divs"></a><br>
      <h4>Select existing company</h4>
     {{ Form::select('company_id', $company_lists) }} <!--this yieds the INDEX of the selected 11/6-->
-<br>
+<br> <br>
     role<br>
     {{ Form::text('role')}} 
-<br>
+<br> <br>
     resume<br>
     {{ Form::text('resumeUsed')}} 
-<br>
+<br> <br>
     salary<br>
     {{ Form::text('salary')}} 
 
-    <br>
+    <br> <br>
 
 interview time<br>
 <select name="rating">
@@ -120,13 +120,13 @@ interview time<br>
     
     city<br>
     {{ Form::text('city')}} 
-<br>
+<br> <br>
 
 
     hire manager<br>
     {{ Form::text('hiringMgr')}} 
 
-  <br>
+  <br> <br>
       job name<br>
     {{ Form::text('recnumber')}} 
 <br>
