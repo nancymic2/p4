@@ -32,8 +32,7 @@
         add profile page, then you have not previously created a profile under your current user ID.</p>
      <p><b>Q</b> Why can't I see dates when I open my expense report CSV file in Excel?<br><b>A</b> The CSV file is formatted
       properly. You must format the date column in excel to be date.</p>
-     <p><b>Q</b> I can't set a Google calendar reminder?<br><b>A</b> You are probably not already logged into Google.<BR>
-      Please use the <a href="/password/remind"><b>forgot password function</b></a>.</p>
+     <p><b>Q</b> I can't set a Google calendar reminder?<br><b>A</b> You are probably not already logged into Google.</p>
      <p><b>Q</b> Can you email me my password?<br><b>A</b> No we can't. It's encrypted and will be of no use to you anyway.<BR>
       Please use the <a href="/password/remind"><b>forgot password function</b></a>.</p>
 
