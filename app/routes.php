@@ -1703,7 +1703,7 @@ Route::post('/applicationsrating',
               $application->applyDate   = Input::get('applyDate');
               $application->followupBy   = Input::get('followupBy');
               $application->city   = Input::get('city');
-
+              $application->rating   = Input::get('rating');
               $application->hiringMgr   = Input::get('hiringMgr');
               $application->recnumber   = Input::get('recnumber');
               $application->save();
