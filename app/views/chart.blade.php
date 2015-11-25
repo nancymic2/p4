@@ -21,9 +21,7 @@
 
 
 
-<div class="container">
-    <div class="col-sm-6">
-<h2>&nbsp;</h2>
+
 
 <?php
 
@@ -74,8 +72,9 @@ $newdata2=$salarycount[2];
     }
     </script>
 
+<div class="container">
+    <div class="col-sm-6">
 
-  <br>
 <h3>This chart shows annual salaries of all users.</h3>
 
 
