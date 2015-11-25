@@ -1696,7 +1696,7 @@ Route::post('/applicationsrating',
          
              $application->company   = Input::get('company_id'); //Input::only('company_id') gets array. 
             //$company->id   =Input::get('id');  //just added
-              $application->company   = Input::get('company');   //calulate later
+              //$application->company   = Input::get('company');   //calulate later
               $application->role   = Input::get('role');
               $application->resumeUsed   = Input::get('resumeUsed');
               $application->salary   = Input::get('salary');
