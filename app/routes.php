@@ -1671,9 +1671,13 @@ Route::post('/applicationsrating',
 
   Route::get('application/edit/{id}', array('as' => 'application.edit', function($id) 
     {
+      $user = Auth::user();
+          
+          /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
+      $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
       $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
         // return our view 
-        return View::make('application-edit') // pulls app/views/application-edit.blade.php use company/edit/1 or other id number
+        return View::make('application-edit', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists)) // pulls app/views/application-edit.blade.php use company/edit/1 or other id number
             ->with('application', Application::find($id));
     }));
 
