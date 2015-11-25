@@ -11,6 +11,7 @@
                 <link href="/css/layout.css" rel="stylesheet">
                 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" type="text/css" media="all" />
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
+
                 <script src="//code.jquery.com/jquery-1.9.1.js"></script> 
                 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +20,15 @@
 
                   <!-- Latest compiled and minified CSS -->
 
+            <script type="text/javascript">
+                    $(document).ready(function(){
+                    $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
+                    })
+                </script>
 
+<div class="container">
+    <div class="col-sm-6">
+<h2>&nbsp;</h2>
 
 <?php
 
@@ -90,6 +99,5 @@ $newdata2=$salarycount[2];
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </div>
 </div>
-</body>
-</html>
+
 @stop
