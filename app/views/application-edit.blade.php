@@ -110,7 +110,7 @@ interview time<br>
 <br><br>
 
 
-   Interview Date. Note you MUST<br> re-enter this date<br> <a href="/completedapps"><b><u>Check your dates</u></b></a> <br>
+   Interview Date. Note you MUST<br> re-enter this date<br> <a href="/completedapps"><b><u>Check your stored dates</u></b></a> <br>
      <br><input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
 <br>
     Applied Date. Note you MUST<br> re-enter this date <br>
