@@ -251,7 +251,7 @@ Interview Time<br>  <!-- use rating field for time instead -->
 
 <br><br><br>
 
-
+</div>
 <?php
 //echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
 ?>
