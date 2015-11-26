@@ -280,7 +280,6 @@ Interview Time<br>  <!-- use rating field for time instead -->
 {{ Form::close() }}
 
 <br><br><br>
-
 </div>
 </div>
 </div>
