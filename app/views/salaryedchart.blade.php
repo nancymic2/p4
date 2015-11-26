@@ -33,6 +33,15 @@
                     echo $profile['salrange'];
 
                  }
+echo '<script="text/javascript">';
+echo 'alert("hi")';
+echo '</script>';
+
+
+
+
+
+
 ?>
 
 
