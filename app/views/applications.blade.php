@@ -165,14 +165,15 @@ if (diva.style.display=="none") {
 <div id="companyhideDB" style="display:none;">
  
 {{ Form::open(array('url' => '/applications')) }}
- <div class="form-group">
+
   <!-- <h3>Rate this job prospect</h3><br>
   <input type="radio" name="rating" value="1">1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5
 -->
 
   <br>
      <h4>Select existing company</h4>
-    {{ Form::select('company_id', $company_lists, ['class'=>'form-control']) }} <!--this yieds the INDEX of the selected 11/6-->
+     {{ Form::select('company_id', $company_lists, null, ['class'=>'form-control']) }}
+   <!--Form::select('company_id', $company_lists, ['class'=>'form-control']) }} --> <!--this yieds the INDEX of the selected 11/6-->
  <!-- 11/1/15  -->
 
        
@@ -249,7 +250,7 @@ Interview Time<br>  <!-- use rating field for time instead -->
 {{ Form::close() }}
 
 <br><br><br>
-</div>
+
 
 <?php
 //echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
