@@ -246,7 +246,7 @@ Interview Time<br>  <!-- use rating field for time instead -->
 <br><br>
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
-
+</div>
 {{ Form::close() }}
 
 <br><br><br>
