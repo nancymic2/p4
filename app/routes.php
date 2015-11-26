@@ -2303,11 +2303,11 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
           echo '<h2>Your Jobs</h2>';
 
           echo '<p>';
-          echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4"> ';
+          echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4" style="width: 50%; table-layout: fixed;">';
           echo '<thead>
                 <tr>  
-                  <th>Company</th>
-                  <th>Rating</th></tr>  </thead>   <tbody>';
+                  <th style="width: 60%;">Company</th>
+                  <th style="width: 40%;">Rating</th></tr>  </thead>   <tbody>';
                       $companies = Company::all();
                       foreach ($companies as $company) {
                           echo '<tr><td>';
