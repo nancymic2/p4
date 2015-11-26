@@ -24,7 +24,7 @@
 $a=array("red","green");
 
  			$salaryarray=[''];
-            $eduarray=array('');
+            $eduarray=[''];
 
             $profiles = Profile::all();
                  foreach ($profiles as $profile) {
@@ -32,13 +32,13 @@ $a=array("red","green");
                  	 array_push($eduarray, $profile['degree']);
                     //echo $profile['degree'];
                    // echo $profile['salrange'];
-                 	 echo $eduarray[0];
+                 	 echo $eduarray['0'];
 
                  }
 ?>
 
                 <script type="text/javascript">
-					alert('<?php echo $eduarray[0]; ?>');  //this is how to wrap js around php statement. uck or insert php into js function
+					alert('<?php echo $eduarray['0']; ?>');  //this is how to wrap js around php statement. uck or insert php into js function
 					alert('hi');   // also see chart.blade for js in php in
 				</script>
 
