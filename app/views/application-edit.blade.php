@@ -77,21 +77,21 @@ call_user_func(function() {
     and change this ID accordingly.<br> -->
     <a name="divs"></a><br>
      You MUST reenter the company
-    {{ Form::select('company_id', $company_lists, null, ['class'=>'form-control']) }} <!--this yieds the INDEX of the selected 11/6-->
+    {{ Form::select('company_id', $company_lists) }} <!--this yieds the INDEX of the selected 11/6-->
 <br> <br>
     role<br>
     {{ Form::text('role', '', array('class'=>'form-control'))}} 
 <br> <br>
     resume<br>
-    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} 
+    {{ Form::text('resumeUsed')}} 
 <br> <br>
     salary<br>
-    {{ Form::text('salary', '', array('class'=>'form-control'))}} 
+    {{ Form::text('salary')}} 
 
     <br> <br>
 
 interview time<br>
-<select name="rating" class="form-control">
+<select name="rating">
   <option value="000000">12:00 am</option>
   <option value="010000">1:00 am</option>
   <option value="020000">2:00 am</option>
@@ -121,24 +121,24 @@ interview time<br>
 
 
    Interview Date. Note you MUST<br> re-enter this date<br> <a href="/completedapps"><b><u>Check your stored dates</u></b></a> <br>
-     <br><input class="date form-control" name="followupBy" type="text" size="10"  id="followupBy" /><br>
+     <br><input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
 <br>
     Applied Date. Note you MUST<br> re-enter this date <br>
-     <input class="date form-control" name="applyDate" type="text" size="10"  id="applyDate" /><br>
+     <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
     
 <br>
     
     city<br>
-    {{ Form::text('city', '', array('class'=>'form-control'))}} 
+    {{ Form::text('city')}} 
 <br> <br>
 
 
     hire manager<br>
-    {{ Form::text('hiringMgr', '', array('class'=>'form-control'))}} 
+    {{ Form::text('hiringMgr')}} 
 
   <br> <br>
       job name<br>
-    {{ Form::text('recnumber', '', array('class'=>'form-control'))}} 
+    {{ Form::text('recnumber')}} 
 <br>
 <br>
  {{ Form::hidden('id', $application->id) }}  <!-- just added -->
