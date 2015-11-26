@@ -2319,7 +2319,7 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
                       }
                       echo '</tbody></table>';
                       echo '<br><br><img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
-'
+
 
         }
     )
