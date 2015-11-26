@@ -2309,7 +2309,7 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
                   <th>Company</th>
                   <th>Rating</th></tr>  </thead>   <tbody>';
                       $companies = Company::all();
-                      foreach $companies as $company {
+                      foreach ($companies as $company) {
                           echo '<tr><td>'
                           echo $company['company'];
                           echo '</td><td>';
