@@ -202,7 +202,7 @@ if (diva.style.display=="none") {
     {{ Form::text('followupBy', '', array('class'=>'form-control'))}}  -->
 
     Interview Date <br>
-     <input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
+     <input class="date form-control" name="followupBy" type="text" size="10"  id="followupBy" /><br>
 Interview Time<br>  <!-- use rating field for time instead -->
  <select name="rating" class="form-control">
   <option value="000000">12:00 am</option>
