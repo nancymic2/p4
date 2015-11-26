@@ -37,7 +37,7 @@
 ?>
 
                 <script type="text/javascript">
-					alert(<?php echo "howdy php"; ?>);
+					alert('<?php echo "howdy php"; ?>');
 					alert('hi');
 				</script>
 
