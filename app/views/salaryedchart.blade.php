@@ -37,7 +37,7 @@
 ?>
 
                 <script type="text/javascript">
-					//<?php echo $eduarray[1]; ?>;
+					<?php echo "howdy php"; ?>;
 					alert('hi');
 				</script>
 
