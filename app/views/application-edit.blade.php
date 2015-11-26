@@ -80,7 +80,7 @@ call_user_func(function() {
     {{ Form::select('company_id', $company_lists) }} <!--this yieds the INDEX of the selected 11/6-->
 <br> <br>
     role<br>
-    {{ Form::text('role', '', array('class'=>'form-control'))}} 
+    {{ Form::text('role')}} 
 <br> <br>
     resume<br>
     {{ Form::text('resumeUsed')}} 
