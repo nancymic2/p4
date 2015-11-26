@@ -111,11 +111,11 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/logout">Log Out</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Goodies<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Metrics<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/charter">Salary Chart</a></li>
             <li><a href="/charter">Industry Stats</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="/companyRatings">Company Ratings</a></li>
 
           </ul>
         </li>
