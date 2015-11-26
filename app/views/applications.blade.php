@@ -194,10 +194,10 @@ if (diva.style.display=="none") {
 
     City<br>
     {{ Form::text('city', '', array('class'=>'form-control'))}} 
-
+<br>
     Hiring Manager<br>
     {{ Form::text('hiringMgr', '', array('class'=>'form-control'))}} 
-
+<br>
     <!--Interview Date (enter as yyyy-mm-dd)<br>
     {{ Form::text('followupBy', '', array('class'=>'form-control'))}}  -->
 
@@ -236,17 +236,17 @@ Interview Time<br>  <!-- use rating field for time instead -->
 
     address if applied by email<br>
     {{ Form::text('howapplied', '', array('class'=>'form-control'))}} 
-
+<br>
     job name<br>
     {{ Form::text('recnumber', '', array('class'=>'form-control'))}} 
-
+<br>
     URL of job posting<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
 
 <br><br>
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
-</div>
+
 {{ Form::close() }}
 
 <br><br><br>
