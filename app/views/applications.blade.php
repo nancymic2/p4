@@ -246,7 +246,7 @@ Interview Time<br>  <!-- use rating field for time instead -->
 <br><br>
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
-</div>
+
 {{ Form::close() }}
 
 <br><br><br>
@@ -255,7 +255,7 @@ Interview Time<br>  <!-- use rating field for time instead -->
 <?php
 //echo '<br><a class="btn btn-danger" href="/applications">Cancel</a> <br><br>' ;
 ?>
-</div>
+
 <br>
 <div id="resumehide" style="display:none;">
 <!--<p>Add resume text to remind you of your resume, or<br>
