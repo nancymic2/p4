@@ -171,7 +171,7 @@ if (diva.style.display=="none") {
 
   <br>
      <h4>Select existing company</h4>
-    {{ Form::select('company_id', $company_lists) }} <!--this yieds the INDEX of the selected 11/6-->
+    {{ Form::select('company_id', $company_lists, ['class'=>'form-control']) }} <!--this yieds the INDEX of the selected 11/6-->
  <!-- 11/1/15  -->
 
        
