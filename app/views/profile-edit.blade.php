@@ -132,14 +132,14 @@
 <br>
     salary<br>
 <select name="salrange">
-    <option value="34">Under 40,000</option>
-    <option value="46">40,000 - 60,000</option>
-    <option value="68">61,000 - 80,000</option>
-    <option value="810">81,000 - 100, 000</option>
-    <option value="1012">101,000 - 120,000</option>
-    <option value="1214">121,000 - 140,000</option>
-    <option value="1416">141,000 - 160,000</option>
-    <option value="1699">Over 161,000</option>
+    <option value="40">Under 40,000</option>
+    <option value="50">40,000 - 60,000</option>
+    <option value="70">61,000 - 80,000</option>
+    <option value="88">81,000 - 100, 000</option>
+    <option value="120">101,000 - 120,000</option>
+    <option value="130">121,000 - 140,000</option>
+    <option value="150">141,000 - 160,000</option>
+    <option value="161">Over 161,000</option>
 
 </select>
 <br>

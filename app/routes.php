@@ -2325,3 +2325,11 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
         }
     )
 );
+
+   Route::get('edsalary', array('before' => 'auth', function()
+         {
+
+
+         }
+    )
+);
