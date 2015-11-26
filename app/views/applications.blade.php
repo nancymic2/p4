@@ -176,7 +176,7 @@ if (diva.style.display=="none") {
 
        
     <h4>Select existing resume</h4>
-    {{ Form::select('user_id', $resume_lists) }} 
+    {{ Form::select('user_id', $resume_lists, array('class'=>'form-control')) }} 
 
     <br>role<br>
     {{ Form::text('role', '', array('class'=>'form-control'))}} 
