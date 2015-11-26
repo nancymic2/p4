@@ -14,6 +14,12 @@
                     $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
                     })
                 </script>
+                <script type="text/javascript">
+					<?php echo $eduarray[1]; ?>;
+					alert('hi');
+
+
+				</script>
 
 <div class="container">
     <div class="col-sm-6">
@@ -35,14 +41,7 @@
                  }
 ?>
 
-<script type="text/javascript">
 
-
-		<?php echo $eduarray[1]; ?>;
-alert('hi');
-
-
-</script>
 
 <br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
 <!-- note use email as the type vs text if you want validation -->
