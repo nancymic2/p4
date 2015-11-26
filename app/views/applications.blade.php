@@ -163,6 +163,7 @@ if (diva.style.display=="none") {
 <br><br><br>
 </div>
 <div id="companyhideDB" style="display:none;">
+  <div class="form-group">
 {{ Form::open(array('url' => '/applications')) }}
 
   <!-- <h3>Rate this job prospect</h3><br>
@@ -246,6 +247,7 @@ Interview Time<br>  <!-- use rating field for time instead -->
 
 
 {{ Form::close() }}
+</div>
 <br><br><br>
 </div>
 
