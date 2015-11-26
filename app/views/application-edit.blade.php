@@ -91,7 +91,7 @@ call_user_func(function() {
     <br> <br>
 
 interview time<br>
-<select name="rating">
+<select name="rating" class="form-control">
   <option value="000000">12:00 am</option>
   <option value="010000">1:00 am</option>
   <option value="020000">2:00 am</option>
@@ -121,10 +121,10 @@ interview time<br>
 
 
    Interview Date. Note you MUST<br> re-enter this date<br> <a href="/completedapps"><b><u>Check your stored dates</u></b></a> <br>
-     <br><input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
+     <br><input class="date form-control" name="followupBy" type="text" size="10"  id="followupBy" /><br>
 <br>
     Applied Date. Note you MUST<br> re-enter this date <br>
-     <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
+     <input class="date form-control" name="applyDate" type="text" size="10"  id="applyDate" /><br>
     
 <br>
     
