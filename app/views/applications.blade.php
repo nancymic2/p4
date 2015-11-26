@@ -70,7 +70,7 @@ if (diva.style.display=="none") {
 <h3>Rate this company</h3><br>
  
 
-  <input type="radio" name="rating" value="1">1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5
+  <input type="radio" name="rating" value="1">1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="6">6&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="7">7
 
   <br>
   
@@ -95,7 +95,7 @@ if (diva.style.display=="none") {
 
 
    Company state<br>
-<select name="state">
+<select name="state" class="form-control">
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>
     <option value="AZ">Arizona</option>
@@ -202,7 +202,7 @@ if (diva.style.display=="none") {
     Interview Date <br>
      <input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
 Interview Time<br>  <!-- use rating field for time instead -->
- <select name="rating">
+ <select name="rating" class="form-control">
   <option value="000000">12:00 am</option>
   <option value="010000">1:00 am</option>
   <option value="020000">2:00 am</option>

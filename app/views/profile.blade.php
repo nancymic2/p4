@@ -37,7 +37,7 @@
 <b>Major</b><br>
 
 
-<select name="major">
+<select name="major" class="form-control">
 	<option value="Actuarial Science">Actuarial Science</option>	
 	<option value="Anthropology">Anthropology</option>		
 	<option value="Art">Art</option>		
@@ -68,7 +68,7 @@
 
 
 <b>Highest Salary Range</b><br>
-<select name="salrange">
+<select name="salrange" class="form-control">
 	<option value="40">Under 40,000</option>
 	<option value="50">40,000 - 60,000</option>
 	<option value="70">61,000 - 80,000</option>
@@ -82,7 +82,7 @@
 
 <br><br>
 <b>Industry</b><br>
-<select name="industry">
+<select name="industry" class="form-control">
 	<option value="Actuarial Science">Actuarial</option>	
 	<option value="Art">Art</option>		
 	<option value="med">Medical</option>		
@@ -110,7 +110,7 @@
 
 <b>Years of experience</b><br>
 
-<select name="tenure">
+<select name="tenure" class="form-control">
 	<option value="2">Under 2</option>
 	<option value="4">2-4</option>
 	<option value="8">5-8</option>
@@ -126,7 +126,7 @@
 <br><br>
 
 <b>State where employed</b><br>
-<select name="state">
+<select name="state" class="form-control">
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
 	<option value="AZ">Arizona</option>
