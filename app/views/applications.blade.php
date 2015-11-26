@@ -163,9 +163,9 @@ if (diva.style.display=="none") {
 <br><br><br>
 </div>
 <div id="companyhideDB" style="display:none;">
-  <div class="form-group">
+ 
 {{ Form::open(array('url' => '/applications')) }}
-
+ <div class="form-group">
   <!-- <h3>Rate this job prospect</h3><br>
   <input type="radio" name="rating" value="1">1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5
 -->
@@ -245,9 +245,9 @@ Interview Time<br>  <!-- use rating field for time instead -->
 <br><br>
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   
 
-
-{{ Form::close() }}
 </div>
+{{ Form::close() }}
+
 <br><br><br>
 </div>
 
