@@ -2294,3 +2294,33 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
              return Redirect::to('/success'); // YES NO? 
 }
 ));
+
+   Route::get('companyRatings', array('before' => 'auth', function()
+         {
+          include 'head.php';
+          echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.tablesorter.min.js"></script>';
+          echo '<div class="container">'; 
+          echo '<h2>Your Jobs</h2>';
+
+          echo '<p>';
+          echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4"> ';
+          echo '<thead>
+                <tr>  
+                  <th>Company</th>
+                  <th>Rating</th></tr>  </thead>   <tbody>';
+                      $companies = Company::all();
+                      foreach $companies as $company {
+                          echo '<tr><td>'
+                          echo $company['company'];
+                          echo '</td><td>';
+                          echo $company['rating'];
+                          echo '</td></tr>';
+
+                      }
+                      echo '</tbody></table>;'
+                      echo '<br><br><img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
+'
+
+        }
+    )
+);
