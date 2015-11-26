@@ -39,11 +39,8 @@
 	window.onload=function(){
 
 		<?php echo $eduarray[1]; ?>
-
+alert('hi');
 	};
-
-
-
 
 </script>
 
