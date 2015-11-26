@@ -21,10 +21,10 @@
 <h2>&nbsp;</h2>
 
 <?php
-
+$a=array("red","green");
 
  			$salaryarray=[''];
-            $eduarray=[''];
+            $eduarray=array('');
 
             $profiles = Profile::all();
                  foreach ($profiles as $profile) {
