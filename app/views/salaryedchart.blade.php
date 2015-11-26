@@ -34,7 +34,9 @@
 
                  }
 echo '<script="text/javascript">';
+echo 'window.onload=function(){';
 echo 'alert("hi")';
+echo '};';
 echo '</script>';
 
 
