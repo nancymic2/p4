@@ -24,7 +24,7 @@
 {{ Form::open(array('url' => '/profile')) }}
 <br>
 <b>Highest Degree</b><br>
-<select name="degree">
+<select name="degree" class="form-control">
 	<option value="doctoral">Doctoral</option>
 	<option value="masters">Masters</option>
 	<option value="bachelor">Bachelor</option>
