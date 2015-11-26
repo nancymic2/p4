@@ -2339,5 +2339,6 @@ echo $profile['degree'];
 echo $profile['salrange'];
 
          }
+       }
     )
 );
