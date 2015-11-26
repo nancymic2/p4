@@ -190,7 +190,7 @@ if (diva.style.display=="none") {
     {{ Form::text('applyDate', '', array('class'=>'form-control'))}}   -->
 
     Applied Date <br>
-     <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
+     <input class="date form-control" name="applyDate" type="text" size="10"  id="applyDate" /><br>
 
     City<br>
     {{ Form::text('city', '', array('class'=>'form-control'))}} 
