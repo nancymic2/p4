@@ -2335,10 +2335,17 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
                  foreach ($profiles as $profile) {
                   array_push($salaryarray, $profile['salrange']);
                   array_push($eduarray, $profile['degree']);
-echo $profile['degree'];
-echo $profile['salrange'];
+                    echo $profile['degree'];
+                    echo $profile['salrange'];
 
-         }
+                 }
        }
+    )
+);
+
+   Route::get('salaryedchart', array('before' => 'auth', function()
+         {
+            return View::make('salaryedchart');
+        }
     )
 );
