@@ -182,10 +182,10 @@ if (diva.style.display=="none") {
 
     <br>role<br>
     {{ Form::text('role', '', array('class'=>'form-control'))}} 
-
+<br>
     salary<br>
     {{ Form::text('salary', '', array('class'=>'form-control'))}} 
-
+<br>
     <!--Applied Date (enter as yyyy-mm-dd)<br>
     {{ Form::text('applyDate', '', array('class'=>'form-control'))}}   -->
 
@@ -230,7 +230,7 @@ Interview Time<br>  <!-- use rating field for time instead -->
   <option value="220000">10:00 pm</option>
   <option value="230000">11:00 pm</option>
 </select>
-<br><br>
+<br>
     <!--Resume used<br>
     {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} -->
 
