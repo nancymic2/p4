@@ -38,7 +38,7 @@ $a=array("red","green");
 ?>
 
                 <script type="text/javascript">
-					alert('<?php echo 'howdy php'; ?>');  //this is how to wrap js around php statement. uck or insert php into js function
+					alert('<?php echo "howdy php"; ?>');  //this is how to wrap js around php statement. uck or insert php into js function
 					alert('hi');   // also see chart.blade for js in php in
 				</script>
 
