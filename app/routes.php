@@ -2310,9 +2310,9 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
                   <th style="width: 40%;">Average Rating</th></tr>  </thead>   <tbody>';
                       $companies = Company::all();
                       foreach ($companies as $company) {
-                          echo '<tr><td text-align:left;">';
+                          echo '<tr><td style="text-align: left;">';
                           echo $company['company'];
-                          echo '</td><td text-align:left;">';
+                          echo '</td><td style="text-align:left;">';
                           echo $company['rating'];
                           echo '</td></tr>';
 
