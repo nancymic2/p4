@@ -29,23 +29,23 @@
                  foreach ($profiles as $profile) {
                   	array_push($salaryarray, $profile['salrange']);
                  	 array_push($eduarray, $profile['degree']);
-                    echo $profile['degree'];
-                    echo $profile['salrange'];
+                    //echo $profile['degree'];
+                   // echo $profile['salrange'];
 
                  }
-echo '<script="text/javascript">';
-echo 'window.onload=function(){alert("hi")};';
-
-echo '</script>';
-
-
-
-
-
-
 ?>
 
+<script type="text/javascript">
+	window.onload=function(){
 
+		<?php echo $eduarray[1]; ?>
+
+	};
+
+
+
+
+</script>
 
 <br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
 <!-- note use email as the type vs text if you want validation -->
