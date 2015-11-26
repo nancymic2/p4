@@ -50,7 +50,7 @@
 }
 
 ?>
-<b>Change values below. Be sure to select a value for every parameter; otherwise the defaults wi be stored:</b>
+<b>Change values below. Be sure to select a value for every parameter; otherwise the defaults will be stored:</b>
 
 <br>
  {{ Form::model($profile, array('route' => 'profile.edit', $profile->id)) }}    
