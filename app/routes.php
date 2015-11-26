@@ -2328,7 +2328,15 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
 
    Route::get('edsalary', array('before' => 'auth', function()
          {
+            $salaryarray=[''];
+            $eduarray=[''];
 
+            $profiles = Profile::all();
+                 foreach ($profiles as $profile) {
+                  array_push($salaryarray, $profile['salrange']);
+                  array_push($eduarray, $profile['degree']);
+echo $profile['degree'];
+echo $profile['salrange'];
 
          }
     )
