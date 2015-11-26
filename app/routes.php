@@ -2310,14 +2310,14 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
                   <th>Rating</th></tr>  </thead>   <tbody>';
                       $companies = Company::all();
                       foreach ($companies as $company) {
-                          echo '<tr><td>'
+                          echo '<tr><td>';
                           echo $company['company'];
                           echo '</td><td>';
                           echo $company['rating'];
                           echo '</td></tr>';
 
                       }
-                      echo '</tbody></table>;'
+                      echo '</tbody></table>';
                       echo '<br><br><img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
 '
 
