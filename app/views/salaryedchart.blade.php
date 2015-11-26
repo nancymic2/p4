@@ -37,8 +37,8 @@
 ?>
 
                 <script type="text/javascript">
-					alert('<?php echo "howdy php ", $profile[1]; ?>');  //this is how to wrap js around php statement. uck or insert php into js function
-					alert('hi');   // also see chart.blade for js in php in js
+					alert('<?php echo $eduarray[0]; ?>');  //this is how to wrap js around php statement. uck or insert php into js function
+					alert('hi');   // also see chart.blade for js in php in
 				</script>
 
 <br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
