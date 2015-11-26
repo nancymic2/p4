@@ -32,6 +32,7 @@
                  	 array_push($eduarray, $profile['degree']);
                     //echo $profile['degree'];
                    // echo $profile['salrange'];
+                 	 echo $eduarray[0];
 
                  }
 ?>
