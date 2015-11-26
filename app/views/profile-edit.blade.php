@@ -55,7 +55,7 @@
 <br>
  {{ Form::model($profile, array('route' => 'profile.edit', $profile->id)) }}    
     Degree<br>
-<select name="degree">
+<select name="degree" class="form-control">
     <option value="doctoral">Doctoral</option>
     <option value="masters">Masters</option>
     <option value="bachelor">Bachelor</option>
