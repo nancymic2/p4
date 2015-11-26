@@ -77,16 +77,16 @@ call_user_func(function() {
     and change this ID accordingly.<br> -->
     <a name="divs"></a><br>
      You MUST reenter the company
-    {{ Form::select('company_id', $company_lists) }} <!--this yieds the INDEX of the selected 11/6-->
+    {{ Form::select('company_id', $company_lists, null, ['class'=>'form-control']) }} <!--this yieds the INDEX of the selected 11/6-->
 <br> <br>
     role<br>
-    {{ Form::text('role')}} 
+    {{ Form::text('role', '', array('class'=>'form-control'))}} 
 <br> <br>
     resume<br>
-    {{ Form::text('resumeUsed')}} 
+    {{ Form::text('resumeUsed', '', array('class'=>'form-control'))}} 
 <br> <br>
     salary<br>
-    {{ Form::text('salary')}} 
+    {{ Form::text('salary', '', array('class'=>'form-control'))}} 
 
     <br> <br>
 
@@ -129,16 +129,16 @@ interview time<br>
 <br>
     
     city<br>
-    {{ Form::text('city')}} 
+    {{ Form::text('city', '', array('class'=>'form-control'))}} 
 <br> <br>
 
 
     hire manager<br>
-    {{ Form::text('hiringMgr')}} 
+    {{ Form::text('hiringMgr', '', array('class'=>'form-control'))}} 
 
   <br> <br>
       job name<br>
-    {{ Form::text('recnumber')}} 
+    {{ Form::text('recnumber', '', array('class'=>'form-control'))}} 
 <br>
 <br>
  {{ Form::hidden('id', $application->id) }}  <!-- just added -->
