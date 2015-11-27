@@ -18,7 +18,7 @@
 
 <div class="container">
     <div class="col-sm-6">
-<h2>&nbsp;</h2>
+
 
 <?php
 $a=array("red","green");
@@ -56,7 +56,7 @@ $a=array("red","green");
 				</script>
 
 
-				<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
     google.load("visualization", "1", {packages:["corechart"]});
     google.setOnLoadCallback(drawSeriesChart);
@@ -89,7 +89,7 @@ $a=array("red","green");
     }
     </script>
  <div id="series_chart_div" style="width: 900px; height: 500px;"></div>
-<br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
+<br><a class="btn btn-success" onclick="window.history.back()">Cancel</a>
 <!-- note use email as the type vs text if you want validation -->
 <br><br>
 </div>
