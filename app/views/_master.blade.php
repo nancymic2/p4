@@ -53,6 +53,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li><a href="/signup">Sign up</a></li>
         <li><a href="/login">Log in</a></li>
         <li><a href="/help">Help</a></li>
         <li class="dropdown">
