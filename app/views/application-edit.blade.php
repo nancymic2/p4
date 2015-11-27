@@ -102,7 +102,8 @@
     {{ Form::text('role')}} 
  <br>
     resume<br>
-    {{ Form::text('resumeUsed')}} 
+        {{ Form::select('resume_id', $resume_lists) }}
+    <!--{{ Form::text('resumeUsed')}} -->
  <br>
     salary<br>
     {{ Form::text('salary')}} 
