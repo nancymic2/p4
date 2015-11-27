@@ -39,7 +39,7 @@ $a=array("red","green");
                  	  echo '<br>';
 print_r($salaryarray);
 echo '<br>';
-echo ($salaryarray[0][1]);
+//echo ($salaryarray[0][1]);
                  }
 ?>
 
