@@ -40,7 +40,13 @@ $curapp=Application::where('id', '=', $appid);
        echo $newestdate;
          
        }
-           echo '<br>';
+    echo '<br>';
+echo gettype($application);
+    echo '<br>';
+    echo gettype($curapp);
+        echo '<br>';
+            echo gettype($newestdate);
+            echo '<br>';
 
     echo $appid;
     echo '<br>';
