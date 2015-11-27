@@ -29,9 +29,10 @@
         $application  = Application::find($appid); 
         $job = json_decode($application, TRUE);
 
-        $resumes = Resume::where('user_id', '=', Auth::user()->id)->get(); 
+        $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
+        $companies = Company::where('user_id', '=', Auth::user()->id)->get();  
 
-        //////// TIME AD DATE  ////////////////
+        //////// GET TIME AD DATE  ////////////////
         echo '<b>Your stored interview date is:</b><br>';
         $followupBy=$job['followupBy'];
         echo  $followupBy;
@@ -60,9 +61,9 @@
         echo $applyDate;
         echo '<br>';
         //////// END TIME AD DATE  ////////////////
-
+        //////// GET RESUME  ////////////////
 //company is stored by id so get from companies table
-        echo 'Your stored resume is:<br>';
+        echo '<b>The resume you used for this job is:</b><br>';
         foreach($resumes as $resume) {
             if ($resume['id']==$job['resumeUsed']){
                echo $resume['name'];
@@ -70,7 +71,16 @@
 
         }  
 
+         //////// END RESUME  ////////////////
+         //////// GET RESUME  ////////////////
+        echo '<br>';
+        echo '<b>The company you stored for this job is:</b><br>';
+        foreach($companies as $company) {
+            if ($company['id']==$job['company']){
+               echo $company['company'];
+            }
 
+        }  
     });
 ?>
 
