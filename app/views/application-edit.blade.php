@@ -45,7 +45,7 @@ $curapp=Application::where('id', '=', $appid);
     echo '<br>';
     echo gettype($curapp);
         echo '<br>';
-            echo gettype($newestdate);
+            //echo gettype($newestdate);
             echo '<br>';
 
     echo $appid;
