@@ -43,7 +43,7 @@ $curapp=Application::where('id', '=', $appid);
     $k=0;
     //foreach($applications as $application) {
         foreach($curapp as $application) {
-       $newestdate= $application->followupBy;
+       $newestdate= $application->role;
        echo $newestdate;
            $dates[$k] = $application->followupBy;
            $dates2[$k] = $application->applyDate;
