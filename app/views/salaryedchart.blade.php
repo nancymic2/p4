@@ -23,26 +23,26 @@
 <?php
 $a=array("red","green");
 
- 			$salaryarray=[];
+ 			$salaryarray=array();
             $eduarray= array();
             $i=0;
             $profiles = Profile::all();
                  foreach ($profiles as $profile) {
                   	array_push($salaryarray, $profile['salrange']);
                  	$eduarray = $profile['degree'];
-                 	 print_r($eduarray);
+                 	 //print_r($eduarray);
                  	 echo '<br>';
-                 	 echo gettype($eduarray);
+                 	 //echo gettype($eduarray);
                  	 echo '<br>';
 					 print_r($salaryarray);
 					 echo '<br>';
 //echo ($salaryarray[0][1]);
-					 echo count($salaryarray);
+					 //echo count($salaryarray);
 					 echo '<br>';
 					 echo $salaryarray[$i];
-
+            		 $i++;
                  }
-             $i++;
+             
 ?>
 
                 <script type="text/javascript">
