@@ -29,12 +29,14 @@ $a=array("red","green");
             $profiles = Profile::all();
                  foreach ($profiles as $profile) {
                   	array_push($salaryarray, $profile['salrange']);
-                 	$eduarray += $profile['degree'];
+                 	$eduarray = $profile['degree'];
                     //echo $profile['degree'];
                    // echo $profile['salrange'];
                  	 //echo $eduarray['0'];
                  	 print_r($eduarray);
+                 	 echo '<br>';
                  	 echo gettype($eduarray);
+                 	  echo '<br>';
 
                  }
 ?>
