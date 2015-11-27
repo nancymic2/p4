@@ -64,8 +64,9 @@
 //company is stored by id so get from companies table
         echo 'Your stored resume is:<br>';
         foreach($resumes as $resume) {
-          if ($resume['id']==$job['resumeUsed']);
-          echo $resume['name'];
+            if ($resume['id']==$job['resumeUsed']){
+               echo $resume['name'];
+            }
 
         }  
 
