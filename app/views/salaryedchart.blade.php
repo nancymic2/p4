@@ -33,6 +33,7 @@ $a=array("red","green");
                     //echo $profile['degree'];
                    // echo $profile['salrange'];
                  	 echo $eduarray['0'];
+                 	 print_r($eduarray);
 
                  }
 ?>
