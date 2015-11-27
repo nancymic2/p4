@@ -23,7 +23,7 @@
 <?php
 $a=array("red","green");
 
- 			$salaryarray=[''];
+ 			$salaryarray=[];
             $eduarray= array();
 
             $profiles = Profile::all();
