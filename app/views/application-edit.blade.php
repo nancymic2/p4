@@ -41,6 +41,9 @@
           $mytime=$mytime-1200;
           $ampm='pm';
         }
+        elseif ($mytime==1200) {
+          $ampm='noon';
+        }
         else {
           $ampm='am';
         }
