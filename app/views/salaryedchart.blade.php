@@ -30,16 +30,14 @@ $a=array("red","green");
                  foreach ($profiles as $profile) {
                   	array_push($salaryarray, $profile['salrange']);
                  	$eduarray = $profile['degree'];
-                    //echo $profile['degree'];
-                   // echo $profile['salrange'];
-                 	 //echo $eduarray['0'];
                  	 print_r($eduarray);
                  	 echo '<br>';
                  	 echo gettype($eduarray);
-                 	  echo '<br>';
-print_r($salaryarray);
-echo '<br>';
+                 	 echo '<br>';
+					 print_r($salaryarray);
+					 echo '<br>';
 //echo ($salaryarray[0][1]);
+					 echo count($salaryarray);
                  }
 ?>
 
