@@ -105,26 +105,23 @@
     resume<br>
 
 <?php
-        $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
+       /* $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
         $myresumes = json_decode($resumes, TRUE);  
         echo gettype($myresumes);//$resumes is now an array of key val pairs
         for ($i=0; $i<count($myresumes); $i++) {
 
         echo '<br>';
         echo $myresumes[$i];
-      }
+      }*/
 ?>
 
 <script type="text/javascript">
 //document.getElementById("res1").value='1';
 </script>
 
-<select name="resumeUsed" id="resumeused">
-  <option id="res1" value="000000">12:00 am</option>
 
-</select>
 
-       <!-- {{ Form::select('resume_id', $resume_lists) }} -->
+    {{ Form::select('resume_id', $resume_lists) }} -->
     <!--{{ Form::text('resumeUsed')}} -->
  <br>
     salary<br>
