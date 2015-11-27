@@ -39,9 +39,14 @@
         $mytime = substr($interviewTime, 0, -2);  // returns first 4 digits
         if ($mytime>1200) {
           $mytime=$mytime-1200;
+          $ampm='pm';
+        }
+        else {
+          $ampm='am';
         }
         $mytime=substr_replace($mytime, ':', -2, 0);
         echo  $mytime;
+        echo $ampm;
         echo '<br>';
 
         echo '<b>Your stored application date is:</b><br>';
