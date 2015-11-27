@@ -38,7 +38,8 @@ $a=array("red","green");
 					 echo '<br>';
 //echo ($salaryarray[0][1]);
 					 echo count($salaryarray);
-					 echo ($salaryarray[1]);
+					 					 echo '<br>';
+					 echo $salaryarray[1];
                  }
 ?>
 
