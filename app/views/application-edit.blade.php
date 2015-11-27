@@ -49,7 +49,7 @@
         }
         $mytime=substr_replace($mytime, ':', -2, 0);
         echo  $mytime;
-        echo $ampm;
+        echo ' '.$ampm;
         echo '<br>';
 
         echo '<b>Your stored application date is:</b><br>';
