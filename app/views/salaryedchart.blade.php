@@ -37,7 +37,8 @@ $a=array("red","green");
                  	 echo '<br>';
                  	 echo gettype($eduarray);
                  	  echo '<br>';
-
+print_r($salaryarray);
+echo '<br>';
                  }
 ?>
 
