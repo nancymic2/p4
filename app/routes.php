@@ -1681,7 +1681,7 @@ Route::post('/applicationsrating',
        /////////////////
         // return our view 
         return View::make('application-edit', array('company_lists' => $company_lists)) // pulls app/views/application-edit.blade.php use company/edit/1 or other id number
-            ->with('application', Application::find($id));
+            ->with('application', Application::find($id), 'id', $id);
     }));
 
 
