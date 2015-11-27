@@ -1680,8 +1680,9 @@ Route::post('/applicationsrating',
       //$currentintdate=$application['followupBy'];  /////
        Session::put('appid', $id); /////
        /////////////////
+   
         // return our view 
-        return View::make('application-edit', array('company_lists' => $company_lists, 'resume_lists' => $resume_lists)) // pulls app/views/application-edit.blade.php use company/edit/1 or other id number
+        return View::make('application-edit', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists)) // pulls app/views/application-edit.blade.php use company/edit/1 or other id number
             ->with('application', Application::find($id));
     }));
 
