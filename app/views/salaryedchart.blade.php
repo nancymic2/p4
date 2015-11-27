@@ -25,7 +25,7 @@ $a=array("red","green");
 
  			$salaryarray=[];
             $eduarray= array();
-
+			$i=0;
             $profiles = Profile::all();
                  foreach ($profiles as $profile) {
                   	array_push($salaryarray, $profile['salrange']);
@@ -39,7 +39,8 @@ $a=array("red","green");
 //echo ($salaryarray[0][1]);
 					 echo count($salaryarray);
 					 echo '<br>';
-					 echo $salaryarray[0];
+					 echo $salaryarray[$i];
+					 $i++;
                  }
 ?>
 
