@@ -43,9 +43,11 @@ $curapp=Application::where('id', '=', $appid);
     echo '<br>';
 //echo gettype($application);
     echo '<br>';
-    echo gettype($curapp);
+    echo gettype($curapp); //is an object
+    $job = json_decode($curapp, TRUE);
+    $followupBy=$job['followupBy'];
         echo '<br>';
-            //echo gettype($newestdate);
+            echo  $followupBy;
             echo '<br>';
 
     echo $appid;
