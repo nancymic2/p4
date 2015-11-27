@@ -35,7 +35,9 @@
         echo '<br>';
         echo '<b>Your stored interview time is:</b><br>';
         $interviewTime=$job['rating'];
-        echo  $interviewTime;
+
+        $mytime = substr($interviewTime, 0, -2);  // returns first 4 digits
+        echo  $mytime;
         echo '<br>';
 
         echo '<b>Your stored application date is:</b><br>';
