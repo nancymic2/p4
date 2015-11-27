@@ -31,7 +31,7 @@ $a=array("red","green");
                   	array_push($salaryarray, $profile['salrange']);
                  	$eduarray = $profile['degree'];
                  	 //print_r($eduarray);
-                 	 echo '<br>';
+                 	/* echo '<br>';
                  	 //echo gettype($eduarray);
                  	 echo '<br>';
 					 //print_r($salaryarray);
@@ -42,7 +42,7 @@ $a=array("red","green");
 					 echo $salaryarray[$i];
 					 echo '<br>';
 					 //echo $i;
-            		 $i++;
+            		 $i++; */
                  }
              
 ?>
