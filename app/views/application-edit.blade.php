@@ -72,19 +72,19 @@
     <a name="divs"></a><br>
      You MUST reenter the company<br>
     {{ Form::select('company_id', $company_lists) }} <!--this yieds the INDEX of the selected 11/6-->
-<br> <br>
+ <br>
     role<br>
     {{ Form::text('role')}} 
-<br> <br>
+ <br>
     resume<br>
     {{ Form::text('resumeUsed')}} 
-<br> <br>
+ <br>
     salary<br>
     {{ Form::text('salary')}} 
 
-    <br> <br>
+    <br>
 
-interview time<br>
+interview time. You MUST reenter the time<br>
 <select name="rating">
   <option value="000000">12:00 am</option>
   <option value="010000">1:00 am</option>
@@ -116,25 +116,25 @@ interview time<br>
 
    Interview Date. Note you MUST<br> re-enter this date<br> <a href="/completedapps"> <br>
      <br><input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
-<br>
+
     Applied Date. Note you MUST<br> re-enter this date <br>
      <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
     
-<br>
+
     
     city<br>
     {{ Form::text('city')}} 
-<br> <br>
+ <br>
 
 
     hire manager<br>
     {{ Form::text('hiringMgr')}} 
 
-  <br> <br>
+<br>
       job name<br>
     {{ Form::text('recnumber')}} 
 <br>
-<br>
+
  {{ Form::hidden('id', $application->id) }}  <!-- just added -->
         {{ Form::submit('Update job') }}
 <br><br>
