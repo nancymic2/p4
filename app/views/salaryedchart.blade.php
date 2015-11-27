@@ -40,6 +40,8 @@ $a=array("red","green");
 					 //echo count($salaryarray);
 					 echo '<br>';
 					 echo $salaryarray[$i];
+					 echo '<br>';
+					 echo $i;
             		 $i++;
                  }
              
