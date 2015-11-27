@@ -64,7 +64,7 @@ $curapp=Application::where('id', '=', $appid);
      echo '<br>';
     echo $appid;
     echo '<br>';
-    echo $curapp['followupBy'];
+    //echo $curapp['followupBy'];
    // echo $interviewDate;
     //echo $id;
 
