@@ -108,6 +108,11 @@
         $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
         $myresumes = json_decode($resumes, TRUE);  
         echo gettype($myresumes);//$resumes is now an array of key val pairs
+        for ($i=0; $i<count($myresumes; $i++)) {
+
+        echo '<br>';
+        echo $myresumes['name'];
+      }
 ?>
 
 <script type="text/javascript">
