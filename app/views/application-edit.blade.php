@@ -107,7 +107,7 @@
 <?php
         $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
         $myresumes = json_decode($resumes, TRUE);  
-        echo $myresumes;//$resumes is now an array of key val pairs
+        echo gettype($myresumes);//$resumes is now an array of key val pairs
 ?>
 
 <script type="text/javascript">
