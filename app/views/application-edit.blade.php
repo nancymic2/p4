@@ -32,7 +32,7 @@ call_user_func(function() {
   //$interviewDate = Session::get('currentintdate');
 $application  = Application::find($appid); 
     
-$curapp=Application::where('id', '=', $appid);
+//$curapp=Application::where('id', '=', $appid);
 
     //foreach($applications as $application) {
         foreach($curapp as $application) {
@@ -43,14 +43,14 @@ $curapp=Application::where('id', '=', $appid);
     echo '<br>';
 //echo gettype($application);
     echo '<br>';
-    echo gettype($curapp); //is an object
+    //echo gettype($curapp); //is an object
     $job = json_decode($application, TRUE);
     $followupBy=$job['followupBy'];
         echo '<br>';
             echo  $followupBy;
             echo '<br>';
 
-    echo $appid;
+   // echo $appid;
     echo '<br>';
     //echo $curapp['followupBy'];
    // echo $interviewDate;
