@@ -140,20 +140,21 @@
 <br>
     company Name<br>
     {{ Form::text('company', '', array('class'=>'form-control'))}} 
-
+<br>
     company career site<br>
     {{ Form::text('website', '', array('class'=>'form-control'))}} 
-
+<br>
     career site user name<br>
     {{ Form::text('username', '', array('class'=>'form-control'))}} 
-
+<br>
     career site password<br>
     {{ Form::text('pasword', '', array('class'=>'form-control'))}} 
-
+<br>
     company street<br>
-    {{ Form::text('street', '', array('class'=>'form-control'))}} <br>
-        company city<br>
-    {{ Form::text('city', '', array('class'=>'form-control'))}} <br>
+    {{ Form::text('street', '', array('class'=>'form-control'))}} 
+ <br>   company city<br>
+    {{ Form::text('city', '', array('class'=>'form-control'))}} 
+<br>
  
 
 
@@ -213,13 +214,13 @@
 </select>
 <br>
 <br>
-        company zip<br>
+    company zip<br>
     {{ Form::text('careersite', '', array('class'=>'form-control'))}} <br>  <!-- used for zip -->
         company phone<br>
     {{ Form::text('phone', '', array('class'=>'form-control'))}} <br>
 
     {{ Form::submit('Create', array('class'=>'btn btn-default'))}}         
-
+<br>
     {{ Form::close() }}
 <br>
 
