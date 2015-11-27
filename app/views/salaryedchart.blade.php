@@ -64,7 +64,7 @@ $a=array("red","green");
     function drawSeriesChart() {
 
       var data = google.visualization.arrayToDataTable([
-        ['ID', 'Life Expectancy', 'Fertility Rate', 'Region',     'Population'],
+        ['ID', 'Salary', 'Degree', 'Region',     'Total Pop'],
         ['NE',    80.66,              1.67,      'Northeast',  33739900],
         ['NE',    79.84,              1.36,      'Northeast',         81902307],
         ['SO',    78.6,               1.84,      'South',         5523095],
