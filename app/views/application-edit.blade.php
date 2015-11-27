@@ -32,14 +32,7 @@ call_user_func(function() {
   //$interviewDate = Session::get('currentintdate');
 $application  = Application::find($appid); 
     
-//$curapp=Application::where('id', '=', $appid);
 
-    //foreach($applications as $application) {
-        foreach($curapp as $application) {
-       $newestdate= $application->role;
-       echo $newestdate;
-         
-       }
     echo '<br>';
 //echo gettype($application);
     echo '<br>';
@@ -52,12 +45,7 @@ $application  = Application::find($appid);
 
    // echo $appid;
     echo '<br>';
-    //echo $curapp['followupBy'];
-   // echo $interviewDate;
-    //echo $id;
 
-    //$curintdate=$application->'followupBy';
-    //echo $curintdate;
 
 });
 ?>
