@@ -30,7 +30,7 @@ call_user_func(function() {
   $appid = Session::get('appid');
 //$mynewdate= 'route' -> ('application.edit', $application->id);
   //$interviewDate = Session::get('currentintdate');
-
+$application  = Application::find($appid); 
     
 $curapp=Application::where('id', '=', $appid);
 
@@ -44,7 +44,7 @@ $curapp=Application::where('id', '=', $appid);
 //echo gettype($application);
     echo '<br>';
     echo gettype($curapp); //is an object
-    $job = json_decode($curapp, TRUE);
+    $job = json_decode($application, TRUE);
     $followupBy=$job['followupBy'];
         echo '<br>';
             echo  $followupBy;
