@@ -29,12 +29,16 @@
         $application  = Application::find($appid); 
         
         $job = json_decode($application, TRUE);
-        echo '<b>Your current interview date is:</b><br>';
+        echo '<b>Your stored interview date is:</b><br>';
         $followupBy=$job['followupBy'];
         echo  $followupBy;
         echo '<br>';
+        echo '<b>Your stored interview time is:</b><br>';
+        $interviewTime=$job['rating'];
+        echo  $interviewTime;
+        echo '<br>';
 
-        echo '<b>Your current application date is:</b><br>';
+        echo '<b>Your stored application date is:</b><br>';
         $applyDate=$job['applyDate'];
         echo $applyDate;
         echo '<br>';
