@@ -114,19 +114,15 @@ interview time. You MUST reenter the time<br>
 <br><br>
 
 
-   Interview Date. Note you MUST<br> re-enter this date<br> <a href="/completedapps"> <br>
+   Interview Date. Note you MUST<br> re-enter this date
      <br><input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
 
     Applied Date. Note you MUST<br> re-enter this date <br>
      <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
     
-
-    
     city<br>
     {{ Form::text('city')}} 
  <br>
-
-
     hire manager<br>
     {{ Form::text('hiringMgr')}} 
 
