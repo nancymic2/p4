@@ -27,8 +27,11 @@
     call_user_func(function() {
         $appid = Session::get('appid');
         $application  = Application::find($appid); 
-        
         $job = json_decode($application, TRUE);
+
+        $resumes = Resume::where('user_id', '=', Auth::user()->id)->get(); 
+
+        //////// TIME AD DATE  ////////////////
         echo '<b>Your stored interview date is:</b><br>';
         $followupBy=$job['followupBy'];
         echo  $followupBy;
@@ -56,7 +59,17 @@
         $applyDate=$job['applyDate'];
         echo $applyDate;
         echo '<br>';
+        //////// END TIME AD DATE  ////////////////
+
 //company is stored by id so get from companies table
+        echo 'Your stored resume is:<br>';
+        foreach($resumes as $resume) {
+          if ($resume['id']==$job['resumeUsed']);
+          echo $resume['name'];
+
+        }  
+
+
     });
 ?>
 
