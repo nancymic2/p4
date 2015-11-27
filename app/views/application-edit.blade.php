@@ -101,8 +101,25 @@
     role<br>
     {{ Form::text('role')}} 
  <br>
+
     resume<br>
-        {{ Form::select('resume_id', $resume_lists) }}
+
+<?php
+        $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
+        $myresumes = json_decode($resumes, TRUE);  
+        echo $myresumes;//$resumes is now an array of key val pairs
+?>
+
+<script type="text/javascript">
+//document.getElementById("res1").value='1';
+</script>
+
+<select name="resumeUsed" id="resumeused">
+  <option id="res1" value="000000">12:00 am</option>
+
+</select>
+
+       <!-- {{ Form::select('resume_id', $resume_lists) }} -->
     <!--{{ Form::text('resumeUsed')}} -->
  <br>
     salary<br>
