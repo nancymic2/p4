@@ -32,7 +32,7 @@ call_user_func(function() {
   //$interviewDate = Session::get('currentintdate');
     $application=0;
     
-
+$curapp=Application::where('id', '=', $appid);
     $myid=0;
     $applications = Application::where('user_id', '=', Auth::user()->id)->get();
     $dates[]="";
