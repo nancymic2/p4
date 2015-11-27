@@ -37,7 +37,10 @@
         $interviewTime=$job['rating'];
 
         $mytime = substr($interviewTime, 0, -2);  // returns first 4 digits
-        echo  $mytime;
+        if ($mytime>1200) {
+          $mytime=$mytime-1200;
+        }
+        echo  $mytime-1000;
         echo '<br>';
 
         echo '<b>Your stored application date is:</b><br>';
