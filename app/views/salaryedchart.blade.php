@@ -34,14 +34,14 @@ $a=array("red","green");
                  	 echo '<br>';
                  	 //echo gettype($eduarray);
                  	 echo '<br>';
-					 print_r($salaryarray);
+					 //print_r($salaryarray);
 					 echo '<br>';
 //echo ($salaryarray[0][1]);
 					 //echo count($salaryarray);
 					 echo '<br>';
 					 echo $salaryarray[$i];
 					 echo '<br>';
-					 echo $i;
+					 //echo $i;
             		 $i++;
                  }
              
