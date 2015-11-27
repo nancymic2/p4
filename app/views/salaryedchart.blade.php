@@ -21,7 +21,6 @@
 
 
 <?php
-$a=array("red","green");
 
  			$salaryarray=array();
             $eduarray= array();
@@ -29,6 +28,7 @@ $a=array("red","green");
             $profiles = Profile::all();
                  foreach ($profiles as $profile) {
                   	array_push($salaryarray, $profile['salrange']);
+                  	echo $profile['degree'];
                  	$eduarray = $profile['degree'];
                  	 //print_r($eduarray);
                  	/* echo '<br>';
