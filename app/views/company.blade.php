@@ -213,7 +213,7 @@
     <option value="WY">Wyoming</option>
 </select>
 <br>
-<br>
+
     company zip<br>
     {{ Form::text('careersite', '', array('class'=>'form-control'))}} <br>  <!-- used for zip -->
         company phone<br>
