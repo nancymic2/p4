@@ -78,9 +78,9 @@ $a=array("red","green");
       ]);
 
       var options = {
-        title: 'Correlation between life expectancy, fertility rate and population of some world countries (2010)',
-        hAxis: {title: 'Life Expectancy'},
-        vAxis: {title: 'Fertility Rate'},
+        title: 'Correlation between Salary, Highest educational degree, and US region',
+        hAxis: {title: 'Education'},
+        vAxis: {title: 'Salary'},
         bubble: {textStyle: {fontSize: 11}}
       };
 
