@@ -72,7 +72,7 @@
         }  
 
          //////// END RESUME  ////////////////
-         //////// GET RESUME  ////////////////
+         //////// GET COMPANY  ////////////////
         echo '<br>';
         echo '<b>The company you stored for this job is:</b><br>';
         foreach($companies as $company) {
@@ -81,6 +81,7 @@
             }
 
         }  
+        //////// END GET COMPANY  ////////////////
     });
 ?>
 
