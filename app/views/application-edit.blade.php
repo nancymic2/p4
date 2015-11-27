@@ -34,7 +34,7 @@ call_user_func(function() {
     
 $curapp=Application::where('id', '=', $appid);
     $myid=0;
-    $applications = Application::where('user_id', '=', Auth::user()->id)->get();
+    //$applications = Application::where('user_id', '=', Auth::user()->id)->get();
     $dates[]="";
     $dates2[]="";
     $dateids[]="";
