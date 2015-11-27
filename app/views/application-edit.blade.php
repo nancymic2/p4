@@ -57,6 +57,8 @@ call_user_func(function() {
     echo $mydate;
     echo '<br>';
     echo $mydate2;
+     echo '<br>';
+    echo $id;
    // echo $interviewDate;
     //echo $id;
 
