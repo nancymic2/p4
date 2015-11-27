@@ -41,7 +41,7 @@ $curapp=Application::where('id', '=', $appid);
          
        }
     echo '<br>';
-echo gettype($application);
+//echo gettype($application);
     echo '<br>';
     echo gettype($curapp);
         echo '<br>';
