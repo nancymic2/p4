@@ -41,8 +41,10 @@ $curapp=Application::where('id', '=', $appid);
     $mydate="";
     $mydate2="";
     $k=0;
-        foreach($applications as $application) {
-       
+    //foreach($applications as $application) {
+        foreach($curapp as $application) {
+       $newestdate= $application->followupBy;
+       echo $newestdate;
            $dates[$k] = $application->followupBy;
            $dates2[$k] = $application->applyDate;
 
@@ -55,6 +57,7 @@ $curapp=Application::where('id', '=', $appid);
             $k++;
            //echo $state[]
        }
+           echo '<br>';
     echo $mydate;
     echo '<br>';
     echo $mydate2;
