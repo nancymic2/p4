@@ -22,19 +22,19 @@
 
 <h3>View or Edit Appication</h3>
 <br>
-<b>Current date is:&nbsp;</b>
+
 <?php
     call_user_func(function() {
         $appid = Session::get('appid');
         $application  = Application::find($appid); 
         
         $job = json_decode($application, TRUE);
-        echo 'Your current interview date is:<br>';
+        echo '<b>Your current interview date is:</b><br>';
         $followupBy=$job['followupBy'];
         echo  $followupBy;
         echo '<br>';
 
-        echo 'Your current application date is:<br>';
+        echo '<b>Your current application date is:</b><br>';
         $applyDate=$job['applyDate'];
         echo $applyDate;
         echo '<br>';
