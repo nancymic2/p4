@@ -111,7 +111,7 @@
         for ($i=0; $i<count($myresumes); $i++) {
 
         echo '<br>';
-        echo $myresumes['name'];
+        echo $myresumes[$i];
       }
 ?>
 
