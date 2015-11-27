@@ -40,7 +40,7 @@
         if ($mytime>1200) {
           $mytime=$mytime-1200;
         }
-        $mytime=substr_replace($mytime, ':', 2, 0);
+        $mytime=substr_replace($mytime, ':', -2, 0);
         echo  $mytime;
         echo '<br>';
 
