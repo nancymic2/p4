@@ -133,7 +133,7 @@
 <h3>Rate this company</h3><br>
  
 
-  <input type="radio" name="rating" value="1">1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5
+  <input type="radio" class="form-control" name="rating" value="1">1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="6">6&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="7">7
 
   <br>
   
@@ -158,7 +158,7 @@
 
 
    Company state<br>
-<select name="state">
+<select name="state" class="form-control">
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>
     <option value="AZ">Arizona</option>
