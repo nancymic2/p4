@@ -18,36 +18,28 @@
                 </script>
 
 <div class="container">
-    <div class="col-sm-6">
-<h2>&nbsp;</h2>
-
+<div class="col-sm-6">
 
 <h3>View or Edit Appication</h3>
 <br>
 <b>Current date is:&nbsp;</b>
- <?php
-call_user_func(function() {
-  $appid = Session::get('appid');
-//$mynewdate= 'route' -> ('application.edit', $application->id);
-  //$interviewDate = Session::get('currentintdate');
-$application  = Application::find($appid); 
-    
-
-    echo '<br>';
-//echo gettype($application);
-    echo '<br>';
-    //echo gettype($curapp); //is an object
-    $job = json_decode($application, TRUE);
-    $followupBy=$job['followupBy'];
+<?php
+    call_user_func(function() {
+        $appid = Session::get('appid');
+        $application  = Application::find($appid); 
+        
+        $job = json_decode($application, TRUE);
+        echo 'Your current interview date is:<br>';
+        $followupBy=$job['followupBy'];
+        echo  $followupBy;
         echo '<br>';
-            echo  $followupBy;
-            echo '<br>';
 
-   // echo $appid;
-    echo '<br>';
+        echo 'Your current application date is:<br>';
+        $applyDate=$job['applyDate'];
+        echo $applyDate;
+        echo '<br>';
 
-
-});
+    });
 ?>
 
 
