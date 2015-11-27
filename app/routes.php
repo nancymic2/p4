@@ -1677,11 +1677,11 @@ Route::post('/applicationsrating',
       $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
       $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
       //$currentintdate=$application['followupBy'];  /////
-       //Session::put('currentintdate', $currentintdate); /////
+       Session::put('appid', $id); /////
        /////////////////
         // return our view 
         return View::make('application-edit', array('company_lists' => $company_lists)) // pulls app/views/application-edit.blade.php use company/edit/1 or other id number
-            ->with('application', Application::find($id), 'id', $id);
+            ->with('application', Application::find($id));
     }));
 
 
