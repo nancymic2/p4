@@ -65,16 +65,16 @@ $a=array("red","green");
 
       var data = google.visualization.arrayToDataTable([
         ['ID', 'Life Expectancy', 'Fertility Rate', 'Region',     'Population'],
-        ['CAN',    80.66,              1.67,      'Northeast',  33739900],
-        ['DEU',    79.84,              1.36,      'South',         81902307],
-        ['DNK',    78.6,               1.84,      'South',         5523095],
-        ['EGY',    72.73,              2.78,      'Midwest',    79716203],
-        ['GBR',    80.05,              2,         'Pacific Northwest',         61801570],
-        ['IRN',    72.49,              1.7,       'Midwest',    73137148],
-        ['IRQ',    68.09,              4.77,      'Middle',    31090763],
-        ['ISR',    81.55,              2.96,      'California',    7485600],
-        ['RUS',    68.6,               1.54,      'South',         141850000],
-        ['USA',    78.09,              2.05,      'Northeast',  307007000]
+        ['NE',    80.66,              1.67,      'Northeast',  33739900],
+        ['NE',    79.84,              1.36,      'Northeast',         81902307],
+        ['SO',    78.6,               1.84,      'South',         5523095],
+        ['MIDW',    72.73,              2.78,      'Midwest',    79716203],
+        ['NW',    80.05,              2,         'Pacific Northwest',         61801570],
+        ['MIDW',    72.49,              1.7,       'Midwest',    73137148],
+        ['MID',    68.09,              4.77,      'Middle',    31090763],
+        ['CA',    81.55,              2.96,      'California',    7485600],
+        ['SO',    68.6,               1.54,      'South',         141850000],
+        ['NE',    78.09,              2.05,      'Northeast',  307007000]
       ]);
 
       var options = {
