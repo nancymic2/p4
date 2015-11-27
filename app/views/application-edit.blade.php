@@ -56,7 +56,7 @@
         $applyDate=$job['applyDate'];
         echo $applyDate;
         echo '<br>';
-
+//company is stored by id so get from companies table
     });
 ?>
 
@@ -114,7 +114,7 @@ interview time<br>
 <br><br>
 
 
-   Interview Date. Note you MUST<br> re-enter this date<br> <a href="/completedapps"><b><u>Check your stored dates</u></b></a> <br>
+   Interview Date. Note you MUST<br> re-enter this date<br> <a href="/completedapps"> <br>
      <br><input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
 <br>
     Applied Date. Note you MUST<br> re-enter this date <br>
