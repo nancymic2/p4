@@ -14,7 +14,25 @@
                     $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
                     })
                 </script>
+<script type="text/javascript"> 
 
+          var canvas=document.getelementById('salaryed');
+          var ctx=canvas.getContent('2d');
+          var scores=[100, 90, 85, 45, 72, 88];
+          var width=50;
+          var currx=50;
+          var base=200;
+
+          ctx.fillStyle='green';
+
+          for (var i=0; i<scores.length; i++) {
+              var h=scores[i];
+              ctx.fillRect(currx, canvas.height-h, width, h);
+              currx+=width+10;
+
+          }
+
+</script>
 
 <div class="container">
     <div class="col-sm-6">
@@ -99,25 +117,7 @@ foreach($expenses as $expense) {
 				</script>
 
 
-<script type="text/javascript"> 
 
-          var canvas=document.getelementById('salaryed');
-          var ctx=canvas.getContent('2d');
-          var scores=[100, 90, 85, 45, 72, 88];
-          var width=50;
-          var currx=50;
-          var base=200;
-
-          ctx.fillStyle='green';
-
-          for (var i=0; i<scores.length; i++) {
-              var h=scores[i];
-              ctx.fillRect(currx, canvas.height-h, width, h);
-              currx+=width+10;
-
-          }
-
-</script>
 
 
 <canvas id="myCanvas" width="800" height="500" />
