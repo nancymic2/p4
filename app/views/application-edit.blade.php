@@ -92,7 +92,7 @@ $resume_lists = Resume::lists('title', 'id');
 
  {{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company)) }}    
 
-{{ Form::select('resume_id', $resume_lists) }}
+{{ Form::select('id', $resume_lists) }}
 <br>
     
     <!--If you want to associate this job with another company, you must <b><u><a href="#divs" onclick='document.getElementById("companies").style.display="block";'>view your companies</a></u></b> 
