@@ -1779,7 +1779,7 @@ $stylesend='<br><br><img style="float:left; max-width: 100%;" class="img-respons
 foreach($companies as $company) {
 
     echo '<tr>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
   
 
 
@@ -1790,41 +1790,41 @@ foreach($companies as $company) {
 
 
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     echo $company['id'];    
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     echo $company['website'];
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     echo $company['username'];
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
 
     echo $company['pasword'];
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
 
     echo $company['street'];
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
 
     echo $company['city'];
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
 
     echo $company['state'];
     echo '</td>';
 
-    echo '<td>';
+    echo '<td style="text-align:left;">';
 
     echo $company['careersite']; //use for zip
    
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     echo $company['phone'];
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     echo $company['rating'];
     echo '</td>';
      
