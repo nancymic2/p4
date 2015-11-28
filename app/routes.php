@@ -2341,3 +2341,104 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
         }
     )
 );
+
+
+   Route::get('jobhuntcosts', array('before' => 'auth', function()
+         {
+            $salaryarray=[''];
+            $eduarray=[''];
+
+            $profiles = Profile::all();
+                 foreach ($profiles as $profile) {
+                  array_push($salaryarray, $profile['salrange']);
+                  array_push($eduarray, $profile['degree']);
+                    echo $profile['degree'];
+                    echo $profile['salrange'];
+
+                 }
+       }
+    )
+);
+
+
+Route::get('jobhuntexpenseold', array('before' => 'auth', function()
+  {      
+////////////////
+
+$stylesend='<br><br><img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
+$tgas=0;
+$tair=0;
+$ttrain=0;
+$thotel=0;
+$tmeals=0;
+$tstamps=0;
+$tink=0;
+$tpaper=0;
+$thardware=0;
+$tportfolio=0;
+$tphone=0;
+$tclothing=0;
+$tentertainment=0;
+$ttransport=0;
+$tsupplies=0;
+
+
+$categories = 'transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, entertainment';
+ 
+$expenses = Expense::all();
+  
+include 'head.php';
+
+  echo '<div class="container">'; 
+  echo '<h2>Your Expenses</h2>';
+
+
+# loop through the Collection and access just the data
+foreach($expenses as $expense) {
+  
+   $trimgas=trim($expense['gas']);
+   $tgas=$trimgas+$tgas;
+   $trimair=trim($expense['airfare']);
+   $tair=$trimair+$tair;
+   $trimtrain=trim($expense['train']);
+   $ttrain=$trimtrain+$ttrain;
+   $trimhotel=trim($expense['hotel']);
+   $thotel=$trimhotel+$thotel;
+   $trimmeals=trim($expense['meals']);
+   $tmeals=$trimmeals+$tmeals;
+   $trimstamps=trim($expense['stamps']);
+   $tstamps=$trimstamps+$tstamps;
+   $trimink=trim($expense['ink']);
+   $tink=$trimink+$tink;
+   $trimpaper=trim($expense['paper']);
+   $tpaper=$trimpaper+$tpaper;
+   $trimhardware=trim($expense['hardware']);
+   $thardware=$trimhardware+$thardware;
+   $trimportfolio=trim($expense['portfolio']);
+   $tportfolio=$trimportfolio+$tportfolio;
+   $trimphone=trim($expense['phone']);
+   $tphone=$trimphone+$tphone;
+   $trimclothing=trim($expense['clothing']);
+   $tclothing=$trimclothing+$tclothing;
+   $trimentertainment=trim($expense['entertainment']);
+   $tentertainment=$trimentertainment+$tentertainment;
+   $ttransport+=($tgas + $tair + $ttrain);
+   $tsupplies+=($tstamps+$tpaper+$tink);
+
+
+ }
+    
+
+echo '</p>';
+echo '<br><br>';
+
+echo '</div>';
+echo $stylesend;   
+}));
+
+   Route::get('jobhuntexpense', array('before' => 'auth', function()
+         {
+            return View::make('jobhuntexpense');
+        }
+    )
+);

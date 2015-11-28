@@ -156,6 +156,7 @@
 @yield ('recruiter-edit')
 @yield ('calendar2')
 @yield ('salaryedchart')
+@yield ('jobhuntcosts')
 <!--/////////////////-->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
