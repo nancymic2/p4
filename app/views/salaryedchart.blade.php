@@ -29,7 +29,7 @@
                  foreach ($profiles as $profile) {
                   	array_push($salaryarray, $profile['salrange']);
                   	echo $profile['degree'];
-                 	$eduarray = $profile['degree'];
+                 	$eduarray = $profile['degree'];  //ok all degrees
                  	 //print_r($eduarray);
                  	/* echo '<br>';
                  	 //echo gettype($eduarray);
@@ -68,11 +68,11 @@
         ['NE',    80.66,              1.67,      'Northeast',  33739900],
         ['NE',    79.84,              1.36,      'Northeast',         81902307],
         ['SO',    78.6,               1.84,      'South',         5523095],
-        ['MIDW',    72.73,              2.78,      'Midwest',    79716203],
-        ['NW',    80.05,              2,         'Pacific Northwest',         61801570],
-        ['MIDW',    72.49,              1.7,       'Midwest',    73137148],
-        ['MID',    68.09,              4.77,      'Middle',    31090763],
-        ['CA',    81.55,              2.96,      'California',    7485600],
+        ['MIDW',    72.73,              2.78,    'Midwest',    79716203],
+        ['W',    80.05,              2,          'West',         61801570],
+        ['MW',    72.49,              1.7,       'West',    73137148],
+        ['MW',    68.09,              4.77,      'Midwest',    31090763],
+        ['W',    81.55,              2.96,       'West',    7485600],
         ['SO',    68.6,               1.54,      'South',         141850000],
         ['NE',    78.09,              2.05,      'Northeast',  307007000]
       ]);
