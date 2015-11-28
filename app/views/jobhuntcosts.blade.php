@@ -117,7 +117,7 @@ window.onload=function(){
           var currx=50;
           var base=200;
 
-          ctx.fillStyle='green';
+          ctx.fillStyle='blue';
 
           for (var i=0; i<scores.length; i++) {
               var h=scores[i];
