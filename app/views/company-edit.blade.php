@@ -100,23 +100,23 @@ State <br>
 
 
 <br>
-        {{ Form::label('phone', 'Phone', null, ['class'=>'form-control']) }}
+        {{ Form::label('phone', 'Phone') }}
           <br>
         {{ Form::text('phone', null, ['class'=>'form-control']) }}
   <br>
-        {{ Form::label('careersite', 'Careersite', null, ['class'=>'form-control']) }}
+        {{ Form::label('careersite', 'Careersite') }}
           <br>
         {{ Form::text('careersite', null, ['class'=>'form-control']) }}
   <br>
-        {{ Form::label('rating', 'Rating', null, ['class'=>'form-control']) }}
+        {{ Form::label('rating', 'Rating') }}
           <br>
         {{ Form::text('rating, null, ['class'=>'form-control']) }}
   <br>
-        {{ Form::label('username', 'Username', null, ['class'=>'form-control']) }}
+        {{ Form::label('username', 'Username') }}
           <br>
         {{ Form::text('username', null, ['class'=>'form-control']) }}
   <br>     <!-- name -->
-        {{ Form::label('pasword', 'Pasword', null, ['class'=>'form-control']) }}
+        {{ Form::label('pasword', 'Pasword') }}
           <br>
         {{ Form::text('pasword', null, ['class'=>'form-control']) }}
 <br>
