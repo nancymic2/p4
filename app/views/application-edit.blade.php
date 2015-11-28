@@ -21,7 +21,7 @@
 <div class="col-sm-6">
 
 <h3>View or Edit Appication</h3>
-<h4>Your previously stored values for this job are below. Note, You MUST reenter the company, resume, time, and dates even if they are correct above.<br></h4>
+<h4>Your previously stored values for this job are below. </h4>
 <br>
 
 <?php
@@ -84,11 +84,9 @@
         }  
         //////// END GET COMPANY  ////////////////
     });
-
-
-
-
 ?>
+
+<h4>Note, you MUST reenter the company, resume, time, and dates even if they are correct above.</h4>
  {{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company)) }}    
 
 
@@ -96,7 +94,7 @@
     
     <!--If you want to associate this job with another company, you must <b><u><a href="#divs" onclick='document.getElementById("companies").style.display="block";'>view your companies</a></u></b> 
     and change this ID accordingly.<br>--> 
-    <a name="divs"></a><br>
+<a name="divs"></a><br>
    
 
  {{ Form::select('company_id', $company_lists, null, ['class'=>'form-control']) }}
@@ -174,7 +172,7 @@ interview time. You MUST reenter the time<br>
 
 <div id="companies" style="display:none; background-color: #dddddd; position: absolute; top: 200px; width: 500px; left: 300px; z-index: 5;">
 <b><a href="#" onclick='document.getElementById("companies").style.display="none";'>Close</a></b> 
-   <br>
+ 
 <?php
   $companies = Company::where('user_id', '=', Auth::user()->id)->get();
     
