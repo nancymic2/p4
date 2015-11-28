@@ -14,25 +14,7 @@
                     $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
                     })
                 </script>
-<script type="text/javascript"> 
-window.onload=function(){
-          var canvas=document.getElementById('salaryed');
-          var ctx=canvas.getContext('2d');
-          var scores=[<?php echo $ttransport; ?>, <?php echo $tgas; ?>, <?php echo $tgas; ?>, <?php echo $tphone; ?>, <?php echo $tink; ?>, <?php echo $paper; ?>];
-          var width=50;
-          var currx=50;
-          var base=200;
 
-          ctx.fillStyle='green';
-
-          for (var i=0; i<scores.length; i++) {
-              var h=scores[i];
-              ctx.fillRect(currx, canvas.height-h, width, h);
-              currx+=width+10;
-
-          }
-};
-</script>
 
 <div class="container">
     <div class="col-sm-6">
@@ -125,6 +107,26 @@ foreach($expenses as $expense) {
 
 transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, entertainment
 <br><a class="btn btn-success" onclick="window.history.back()">Cancel</a>
+
+<script type="text/javascript"> 
+window.onload=function(){
+          var canvas=document.getElementById('salaryed');
+          var ctx=canvas.getContext('2d');
+          var scores=[<?php echo $ttransport; ?>, <?php echo $tgas; ?>, <?php echo $tgas; ?>, <?php echo $tphone; ?>, <?php echo $tink; ?>, <?php echo $paper; ?>];
+          var width=50;
+          var currx=50;
+          var base=200;
+
+          ctx.fillStyle='green';
+
+          for (var i=0; i<scores.length; i++) {
+              var h=scores[i];
+              ctx.fillRect(currx, canvas.height-h, width, h);
+              currx+=width+10;
+
+          }
+};
+</script>
 <!-- note use email as the type vs text if you want validation -->
 <br><br>
 </div>
