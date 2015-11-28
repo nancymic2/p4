@@ -12,23 +12,23 @@
 	
 		<div class='form-group'>
 		name
-			{{ Form::text('company') }}
+			{{ Form::text('company', null, ['class'=>'form-control']) }}
 		</div>
 		
 	
 		
 		<div class='form-group'>
 website
-			{{ Form::text('website') }}
+			{{ Form::text('website', null, ['class'=>'form-control']) }}
 		</div>
 		
 		<div class='form-group'>
 street
-			{{ Form::text('street') }}
+			{{ Form::text('street', null, ['class'=>'form-control']) }}
 		</div>
 		
-		rating<br>
-			{{ Form::text('rating') }}
+		rating 1-7<br>
+			{{ Form::text('rating', null, ['class'=>'form-control']) }}
 			<br>
 
 		
