@@ -85,9 +85,10 @@
     });
 ?>
 
+<?php
 $resume_lists = YourResumeModel::lists('title', 'id');
 
-
+?>
 
  {{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company)) }}    
 
