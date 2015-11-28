@@ -1898,7 +1898,7 @@ $stylesend='<br><br><img style="float:left; max-width: 100%;" class="img-respons
 foreach($resumes as $resume) {
 
     echo '<tr>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
   
 
 
@@ -1909,13 +1909,13 @@ foreach($resumes as $resume) {
 
 
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     echo $resume['id'];    
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     echo $resume['created_at'];
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     echo '<a href="';
     echo $resume['url'];
     echo '">';
@@ -1923,7 +1923,7 @@ foreach($resumes as $resume) {
     echo '</a>';
 
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
 
     echo $resume['resumetext'];
     echo '</td>';
