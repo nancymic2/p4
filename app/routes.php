@@ -638,7 +638,7 @@ Route::post('/signup',
             # Log the user in
            Auth::login($user);
 
-            return Redirect::to('/success')->with('flash_message', 'Welcome to CareerTrax!');
+            return Redirect::to('/profile')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
@@ -2260,3 +2260,58 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
              return Redirect::to('/success'); // YES NO? 
 }
 ));
+
+    Route::get('companyRatings', array('before' => 'auth', function()
+         {
+          include 'head.php';
+          echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.tablesorter.min.js"></script>';
+          echo '<div class="container">'; 
+          echo '<h2>Company ratings from all users</h2>';
+
+          echo '<p>';
+          echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4" style="width: 50%; table-layout: fixed;">';
+          echo '<thead>
+                <tr>  
+                  <th style="width: 60%;">Company</th>
+                  <th style="width: 40%;">Average Rating</th></tr>  </thead>   <tbody>';
+                      $companies = Company::all();
+                      foreach ($companies as $company) {
+                          echo '<tr><td style="text-align: left;">';
+                          echo $company['company'];
+                          echo '</td><td style="text-align:left;">';
+                          echo $company['rating'];
+                          echo '</td></tr>';
+
+                      }
+                      echo '</tbody></table>';
+                      echo '</div>';
+                      echo '<br><br><img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
+
+
+        }
+    )
+);
+
+   Route::get('edsalary', array('before' => 'auth', function()
+         {
+            $salaryarray=[''];
+            $eduarray=[''];
+
+            $profiles = Profile::all();
+                 foreach ($profiles as $profile) {
+                  array_push($salaryarray, $profile['salrange']);
+                  array_push($eduarray, $profile['degree']);
+                    echo $profile['degree'];
+                    echo $profile['salrange'];
+
+                 }
+       }
+    )
+);
+
+   Route::get('salaryedchart', array('before' => 'auth', function()
+         {
+            return View::make('salaryedchart');
+        }
+    )
+);
