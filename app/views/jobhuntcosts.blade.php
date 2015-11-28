@@ -120,7 +120,7 @@ foreach($expenses as $expense) {
 
 
 
-<canvas id="myCanvas" width="800" height="500" />
+<canvas id="salaryed" width="800" height="500" />
 
 
 
