@@ -86,8 +86,7 @@
 
 
 
-      $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
-      $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');  
+
 ?>
  {{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company)) }}    
 
@@ -98,8 +97,8 @@
     and change this ID accordingly.<br> 
     <a name="divs"></a><br>
      You MUST reenter the company<br>
-      <!--{{ Form::text('company', null, ['class'=>'form-control']) }} -->
-    {{ Form::select('company_id', $company_lists) }} --this yieds the INDEX of the selected 11/6
+      {{ Form::text('company', null, ['class'=>'form-control']) }} 
+    <!--{{ Form::select('company_id', $company_lists) }} --this yieds the INDEX of the selected 11/6-->
  <br>
     role<br>
     {{ Form::text('role', null, ['class'=>'form-control']) }}
