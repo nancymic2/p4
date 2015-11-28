@@ -1679,8 +1679,8 @@ Route::post('/applicationsrating',
           
           /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
       $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
-      //$resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');   //changed resume to name
-       $resume_lists = Resume::where('user_id', '=', $user->id)->lists('name', 'id')->toArray();
+      $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');   //changed resume to name
+      
       $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
       //$currentintdate=$application['followupBy'];  /////
        Session::put('appid', $id); /////
