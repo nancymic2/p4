@@ -26,15 +26,15 @@
 <br>
  {{ Form::model($resume, array('route' => 'resume.edit', $resume->id)) }}    
     Resume  name<br>
-    {{ Form::text('name')}} 
+    {{ Form::text('name', null, ['class'=>'form-control']) }}
 <br>
 
     Resume link<br>
-    {{ Form::text('url')}} 
+    {{ Form::text('url', null, ['class'=>'form-control']) }}
 <br>
 
     notes<br>
-    {{ Form::textarea('resumetext')}} 
+    {{ Form::textarea('resumetext', null, ['class'=>'form-control']) }}
 
 
   <br><br>
