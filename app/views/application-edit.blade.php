@@ -104,8 +104,8 @@
     {{ Form::text('role', null, ['class'=>'form-control']) }}
  <br>
 
-    resume<br>
- {{ Form::text('resumeUsed', null, ['class'=>'form-control']) }} 
+    <!--resume<br>
+ {{ Form::text('resumeUsed', null, ['class'=>'form-control']) }} -->
    <!--{{ Form::select('resume_id', $resume_lists) }} -->
     <!--{{ Form::text('resumeUsed')}} -->
  <br>
