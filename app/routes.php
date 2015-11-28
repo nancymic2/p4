@@ -341,7 +341,7 @@ foreach($completedapps as $completedapp) {
 
 
     echo '<tr>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
 
     $thecompany=$completedapp['company'];
 
@@ -355,14 +355,14 @@ foreach($completedapps as $completedapp) {
   $current .= $corp[$key];
   $current .= ",";
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     //echo '<b>role:</b> ';
     echo $completedapp['role']."<br>";
   $current .= $completedapp['role'];
   $current .= ",";
 
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     //echo '<b>Application id:</b> ';
     //echo $completedapp['id']."<br>";
 
@@ -371,19 +371,19 @@ foreach($completedapps as $completedapp) {
   $current .= $completedapp['city'];
   $current .= ",";
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     //echo '<b>Applied date:</b> ';
     echo $completedapp['applyDate']."<br>";
   $current .= $completedapp['applyDate'];
   $current .= ",";
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     //echo '<b>Hiring Manager:</b> ';
     echo $completedapp['hiringMgr']."<br>";
   $current .= $completedapp['hiringMgr'];
   $current .= ",";
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     //echo '<b>Salary:</b> ';
     //echo $completedapp['salary']."<br>";
    
@@ -392,7 +392,7 @@ foreach($completedapps as $completedapp) {
   $current .= $completedapp['followupBy'];
   $current .= ",";
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     //echo '<b>Decision:</b> ';
     //echo $completedapp['decision']."<br>";
 
@@ -401,7 +401,7 @@ foreach($completedapps as $completedapp) {
   $current .= $completedapp['rating'];
   $current .= ",";
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     //echo '<b>resume used:</b> ';
     //echo $completedapp['resumeUsed']."<br>"; //this equals the resume id on resume table
     $theresume=$completedapp['resumeUsed'];
@@ -430,7 +430,7 @@ foreach($completedapps as $completedapp) {
 //echo $res[$keys[1]];
 
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     //echo '<b>How Applied:</b> ';
     //echo $completedapp['howapplied']."<br>";
 
@@ -443,7 +443,7 @@ foreach($completedapps as $completedapp) {
   $current .= $completedapp['website'];
   $current .= ",";
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     //echo '<b>user name:</b> ';
     //echo $completedapp['username']."<br>";
 
