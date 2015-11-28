@@ -15,9 +15,9 @@
                     })
                 </script>
 <script type="text/javascript"> 
-
-          var canvas=document.getelementById('salaryed');
-          var ctx=canvas.getContent('2d');
+window.onload=function(){
+          var canvas=document.getElementById('salaryed');
+          var ctx=canvas.getContext('2d');
           var scores=[100, 90, 85, 45, 72, 88];
           var width=50;
           var currx=50;
@@ -31,7 +31,7 @@
               currx+=width+10;
 
           }
-
+};
 </script>
 
 <div class="container">
