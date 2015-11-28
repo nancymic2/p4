@@ -110,7 +110,7 @@ State <br>
   <br>
         {{ Form::label('rating', 'Rating') }}
           <br>
-        {{ Form::text('rating, null, ['class'=>'form-control']) }}
+        {{ Form::text('rating', null, ['class'=>'form-control']) }}
   <br>
         {{ Form::label('username', 'Username') }}
           <br>
