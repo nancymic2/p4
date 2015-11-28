@@ -1688,7 +1688,7 @@ Route::post('/applicationsrating',
        /////////////////
    
       //return var_dump($resume_lists);  
-        return View::make('application-edit', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists)) // pulls app/views/application-edit.blade.php use company/edit/1 or other id number
+        return View::make('application-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
             ->with('application', Application::find($id));
     }));
 
