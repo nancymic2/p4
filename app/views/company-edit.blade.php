@@ -102,7 +102,7 @@ State <br>
 <br>
         {{ Form::label('phone', 'Phone', null, ['class'=>'form-control']) }}
           <br>
-        {{ Form::text('phone') }}  
+        {{ Form::text('phone', null, ['class'=>'form-control']) }}
   <br>
         {{ Form::label('careersite', 'Careersite', null, ['class'=>'form-control']) }}
           <br>
@@ -110,7 +110,7 @@ State <br>
   <br>
         {{ Form::label('rating', 'Rating', null, ['class'=>'form-control']) }}
           <br>
-        {{ Form::text('rating') }}  
+        {{ Form::text('rating, null, ['class'=>'form-control']) }}
   <br>
         {{ Form::label('username', 'Username', null, ['class'=>'form-control']) }}
           <br>
