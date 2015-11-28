@@ -21,6 +21,7 @@
 <div class="col-sm-6">
 
 <h3>View or Edit Appication</h3>
+<h4>Your previously stored values for this job are:</h4>
 <br>
 
 <?php
@@ -33,11 +34,11 @@
         $companies = Company::where('user_id', '=', Auth::user()->id)->get();  
 
         //////// GET TIME AD DATE  ////////////////
-        echo '<b>Your stored interview date is:</b><br>';
+        echo '<b>Interview date:</b><br>';
         $followupBy=$job['followupBy'];
         echo  $followupBy;
         echo '<br>';
-        echo '<b>Your stored interview time is:</b><br>';
+        echo '<b>Interview time:</b><br>';
         $interviewTime=$job['rating'];
 
         $mytime = substr($interviewTime, 0, -2);  // returns first 4 digits
@@ -56,14 +57,14 @@
         echo ' '.$ampm;
         echo '<br>';
 
-        echo '<b>Your stored application date is:</b><br>';
+        echo '<b>Application date:</b><br>';
         $applyDate=$job['applyDate'];
         echo $applyDate;
         echo '<br>';
         //////// END TIME AD DATE  ////////////////
         //////// GET RESUME  ////////////////
 //company is stored by id so get from companies table
-        echo '<b>The resume you used for this job is:</b><br>';
+        echo '<b>The resume you used:</b><br>';
         foreach($resumes as $resume) {
             if ($resume['id']==$job['resumeUsed']){
                echo $resume['name'];
@@ -74,7 +75,7 @@
          //////// END RESUME  ////////////////
          //////// GET COMPANY  ////////////////
         echo '<br>';
-        echo '<b>The company you stored for this job is:</b><br>';
+        echo '<b>The company:</b><br>';
         foreach($companies as $company) {
             if ($company['id']==$job['company']){
                echo $company['company'];
@@ -98,7 +99,7 @@
     <a name="divs"></a><br>
      You MUST reenter the company<br>
 
-           {{ Form::select('company_id', $company_lists, null, ['class'=>'form-control']) }}
+ {{ Form::select('company_id', $company_lists, null, ['class'=>'form-control']) }}
 
  <br>
     role<br>
