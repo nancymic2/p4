@@ -26,58 +26,58 @@
 <br>
  {{ Form::model($expense, array('route' => 'expense.edit', $expense->id)) }}    
     gasoline<br>
-    {{ Form::text('gas')}} 
+    {{ Form::text('gas', null, ['class'=>'form-control']) }}
 <br>
 
     airfare<br>
-    {{ Form::text('airfare')}} 
+    {{ Form::text('airfare', null, ['class'=>'form-control']) }}
 <br>
 
     train<br>
-    {{ Form::text('train')}} 
+    {{ Form::text('train', null, ['class'=>'form-control']) }}
 <br>
     hotel<br>
-    {{ Form::text('hotel')}} 
+    {{ Form::text('hotel', null, ['class'=>'form-control']) }}
 <br>
 
     meals<br>
-    {{ Form::text('meals')}} 
+    {{ Form::text('meals', null, ['class'=>'form-control']) }}
 <br>
 
     postage<br>
-    {{ Form::text('stamps')}} 
+    {{ Form::text('stamps', null, ['class'=>'form-control']) }}
 <br>
 
     ink<br>
-    {{ Form::text('ink')}} 
+    {{ Form::text('ink', null, ['class'=>'form-control']) }}
 <br>
 
     paper<br>
-    {{ Form::text('paper')}} 
+    {{ Form::text('paper', null, ['class'=>'form-control']) }}
 <br>
 
     hardware<br>
-    {{ Form::text('hardware')}} 
+    {{ Form::text('hardware', null, ['class'=>'form-control']) }}
 <br>
 
     portfolio<br>
-    {{ Form::text('portfolio')}} 
+    {{ Form::text('portfolio', null, ['class'=>'form-control']) }}
 <br>
 
     phone<br>
-    {{ Form::text('phone')}} 
+    {{ Form::text('phone', null, ['class'=>'form-control']) }}
 <br>
 
     clothing<br>
-    {{ Form::text('clothing')}} 
+    {{ Form::text('clothing', null, ['class'=>'form-control']) }}
 <br>
 
     entertainment<br>
-    {{ Form::text('entertainment')}} 
+    {{ Form::text('entertainment', null, ['class'=>'form-control']) }}
 <br>
 
     comments<br>
-    {{ Form::textarea('comments')}} 
+    {{ Form::textarea('comments', null, ['class'=>'form-control']) }}
 <br>
 
 
