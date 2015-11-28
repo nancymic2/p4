@@ -124,7 +124,7 @@ $resume_lists = Resume::lists('name', 'id');
 
 
 
-   <!-- {{ Form::select('resume_id', $resume_lists) }} -->
+   {{ Form::select('resume_id', $resume_lists) }} 
     <!--{{ Form::text('resumeUsed')}} -->
  <br>
     salary<br>
