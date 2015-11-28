@@ -638,7 +638,7 @@ Route::post('/signup',
             # Log the user in
            Auth::login($user);
 
-            return Redirect::to('/success')->with('flash_message', 'Welcome to CareerTrax!');
+            return Redirect::to('/profile')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
@@ -2050,7 +2050,7 @@ Route::post('/profile',
             # Log the user in
            // Auth::login($user);
 
-           return Redirect::to('/profile')->with('flash_message', 'Welcome to CareerTrax!');
+           return Redirect::to('/success')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
