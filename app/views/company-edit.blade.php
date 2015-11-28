@@ -31,18 +31,18 @@
   <br>          <!-- email -->
         {{ Form::label('website', 'Website') }}
           <br>
-        {{ Form::text('website') }} 
+        {{ Form::text('website', null, ['class'=>'form-control']) }}
   <br>
         {{ Form::label('street', 'Street') }}
           <br>
-        {{ Form::text('street') }}  
+        {{ Form::text('street', null, ['class'=>'form-control']) }}
   <br>
         {{ Form::label('city', 'City') }}
           <br>
-        {{ Form::text('city') }}  
+        {{ Form::text('city', null, ['class'=>'form-control']) }}
   <br>
 State <br>
-<select name="state">
+<select name="state" class="form-control">
     <option value=""></option>
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>
@@ -100,25 +100,25 @@ State <br>
 
 
 <br>
-        {{ Form::label('phone', 'Phone') }}
+        {{ Form::label('phone', 'Phone', null, ['class'=>'form-control']) }}
           <br>
         {{ Form::text('phone') }}  
   <br>
-        {{ Form::label('careersite', 'Careersite') }}
+        {{ Form::label('careersite', 'Careersite', null, ['class'=>'form-control']) }}
           <br>
-        {{ Form::text('careersite') }}  
+        {{ Form::text('careersite', null, ['class'=>'form-control']) }}
   <br>
-        {{ Form::label('rating', 'Rating') }}
+        {{ Form::label('rating', 'Rating', null, ['class'=>'form-control']) }}
           <br>
         {{ Form::text('rating') }}  
   <br>
-        {{ Form::label('username', 'Username') }}
+        {{ Form::label('username', 'Username', null, ['class'=>'form-control']) }}
           <br>
-        {{ Form::text('username') }}  
+        {{ Form::text('username', null, ['class'=>'form-control']) }}
   <br>     <!-- name -->
-        {{ Form::label('pasword', 'Pasword') }}
+        {{ Form::label('pasword', 'Pasword', null, ['class'=>'form-control']) }}
           <br>
-        {{ Form::text('pasword') }}
+        {{ Form::text('pasword', null, ['class'=>'form-control']) }}
 <br>
     
 <br>
