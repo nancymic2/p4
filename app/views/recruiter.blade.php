@@ -40,7 +40,7 @@ email<br>
 company<br>
     <!--{{ Form::text('recruiter_company', '', array('class'=>'form-control'))}} -->
 
-{{ Form::select('recruiter_company', $company_lists, null, ['class'=>'form-control']) }}
+{{ Form::select('company_id', $company_lists, null, ['class'=>'form-control']) }}
 <br>
 Rating<br>
   <input type="radio" name="recruiter_rating" value="1">1 &nbsp;&nbsp;&nbsp; <input type="radio" name="recruiter_rating" value="2">2&nbsp;&nbsp;&nbsp; <input type="radio" name="recruiter_rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="recruiter_rating" value="4">4&nbsp;&nbsp;&nbsp; <input type="radio" name="recruiter_rating" value="5">5&nbsp;&nbsp;&nbsp; <input type="radio" name="recruiter_rating" value="6">6&nbsp;&nbsp;&nbsp; <input type="radio" name="recruiter_rating" value="7">7
