@@ -1879,7 +1879,7 @@ $stylesend='<br><br><img style="float:left; max-width: 100%;" class="img-respons
 
   echo '<p>';
   echo '<div class="table-responsive">';
-  echo '<table id="myTable" class="tablesorter table" border="2" cellpadding="4" style="width: 100%; table-layout: fixed;"> 
+  echo '<table id="myTable" class="tablesorter table" border="2" cellpadding="4" style="width: 100%; table-layout: fixed; text-align:left;"> 
 
   <caption>
   <h4>Sort Your Resumes by field</h4>
