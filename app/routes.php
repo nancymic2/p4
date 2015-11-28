@@ -638,7 +638,7 @@ Route::post('/signup',
             # Log the user in
            Auth::login($user);
 
-            return Redirect::to('/profile')->with('flash_message', 'Welcome to CareerTrax!');
+            return Redirect::to('/success')->with('flash_message', 'Welcome to CareerTrax!');
 
         }
     )
@@ -970,10 +970,6 @@ Route::get('applications', array('before' => 'auth', function()
 
           $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');
 
-         
-
-
-
           return View::make('applications', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists));  ///10/31/15
         }
     )
@@ -1021,7 +1017,7 @@ Route::post('/applications',
             catch (Exception $e) {
                 return Redirect::to('/applications')->with('flash_message', 'resume addition failed; please try again.')->withInput();
             }
-
+            
             $mycompany= Input::get('company_id');
             foreach($companies as $company) {   ///////////
                 if ($company['id']==$mycompany) {  /////////////
@@ -1675,20 +1671,9 @@ Route::post('/applicationsrating',
 
   Route::get('application/edit/{id}', array('as' => 'application.edit', function($id) 
     {
-      $user = Auth::user();
-          
-          /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
-      $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
-      $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');  
-       //changed resume to name
-
       $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
-      //$currentintdate=$application['followupBy'];  /////
-       Session::put('appid', $id); /////
-       /////////////////
-   
-      //return var_dump($resume_lists);  
-    return View::make('application-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
+        // return our view 
+        return View::make('application-edit') // pulls app/views/application-edit.blade.php use company/edit/1 or other id number
             ->with('application', Application::find($id));
     }));
 
@@ -1700,51 +1685,20 @@ Route::post('/applicationsrating',
         function() {
           $id =Input::get('id');
            //$company  = Company::find(1);  got to get the co id. take from url if need be cause ive had enough
-
-
-             $application  = Application::find($id);  ///works when id is hardcoded
-
-             $location='';
-             $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
-             
-             $application->user()->associate(Auth::user());
-             $application->company   = Input::get('company_id'); //Input::only('company_id') gets array. 
+           $application  = Application::find($id);  ///works when id is hardcoded
             //$company->id   =Input::get('id');  //just added
-              //$application->company   = Input::get('company');   //calulate later
+              $application->company   = Input::get('company');   //calulate later
               $application->role   = Input::get('role');
               $application->resumeUsed   = Input::get('resumeUsed');
               $application->salary   = Input::get('salary');
               $application->applyDate   = Input::get('applyDate');
               $application->followupBy   = Input::get('followupBy');
               $application->city   = Input::get('city');
-              $application->rating   = Input::get('rating');
+
               $application->hiringMgr   = Input::get('hiringMgr');
               $application->recnumber   = Input::get('recnumber');
               $application->save();
-             
-
-            $mycompany= Input::get('company_id');
-            foreach($companies as $company) {   ///////////
-                if ($company['id']==$mycompany) {  /////////////
-                  $location=$company['company'];   ///////////
-                }
-
-            }
-
-
-            $jobs = json_decode($application, TRUE);
-            $followupBy=$jobs['followupBy'];
-            $time=$jobs['rating'];
-
-            $newdate=str_replace('-', '', $followupBy); 
-            $newtime='T'.$jobs['rating'];
-            $googlecal=$location.'&dates='.$newdate.$newtime.'/'.$newdate.$newtime;
-
-            Session::put('googlecal', $googlecal);
-             //Session::put('intTime', $time);
-
-
-            return View::make('calendar2'); // YES NO? 
+             return Redirect::to('/success'); // YES NO? 
 }
 ));
 
@@ -2301,58 +2255,3 @@ Route::get('recruiter/edit/{id}', array('as' => 'recruiter.edit', function($id)
              return Redirect::to('/success'); // YES NO? 
 }
 ));
-
-   Route::get('companyRatings', array('before' => 'auth', function()
-         {
-          include 'head.php';
-          echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.tablesorter.min.js"></script>';
-          echo '<div class="container">'; 
-          echo '<h2>Company ratings from all users</h2>';
-
-          echo '<p>';
-          echo '<table id="myTable" class="tablesorter" border="2" cellpadding="4" style="width: 50%; table-layout: fixed;">';
-          echo '<thead>
-                <tr>  
-                  <th style="width: 60%;">Company</th>
-                  <th style="width: 40%;">Average Rating</th></tr>  </thead>   <tbody>';
-                      $companies = Company::all();
-                      foreach ($companies as $company) {
-                          echo '<tr><td style="text-align: left;">';
-                          echo $company['company'];
-                          echo '</td><td style="text-align:left;">';
-                          echo $company['rating'];
-                          echo '</td></tr>';
-
-                      }
-                      echo '</tbody></table>';
-                      echo '</div>';
-                      echo '<br><br><img style="float:left; max-width: 100%;" class="img-responsive" src="http://p4.scholarpaws.com/foot.png"></body></html>';
-
-
-        }
-    )
-);
-
-   Route::get('edsalary', array('before' => 'auth', function()
-         {
-            $salaryarray=[''];
-            $eduarray=[''];
-
-            $profiles = Profile::all();
-                 foreach ($profiles as $profile) {
-                  array_push($salaryarray, $profile['salrange']);
-                  array_push($eduarray, $profile['degree']);
-                    echo $profile['degree'];
-                    echo $profile['salrange'];
-
-                 }
-       }
-    )
-);
-
-   Route::get('salaryedchart', array('before' => 'auth', function()
-         {
-            return View::make('salaryedchart');
-        }
-    )
-);
