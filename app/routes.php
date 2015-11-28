@@ -1712,7 +1712,7 @@ Route::post('/applicationsrating',
             //$company->id   =Input::get('id');  //just added
               //$application->company   = Input::get('company');   //calulate later
               $application->role   = Input::get('role');
-              $application->resumeUsed   = Input::get('resumeUsed');
+              $application->resumeUsed   = Input::get('resume_id');
               $application->salary   = Input::get('salary');
               $application->applyDate   = Input::get('applyDate');
               $application->followupBy   = Input::get('followupBy');
