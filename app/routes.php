@@ -2436,9 +2436,9 @@ echo '</div>';
 echo $stylesend;   
 }));
 
-   Route::get('jobhuntexpense', array('before' => 'auth', function()
+   Route::get('jobhuntcosts', array('before' => 'auth', function()
          {
-            return View::make('jobhuntexpense');
+            return View::make('jobhuntcosts');
         }
     )
 );
