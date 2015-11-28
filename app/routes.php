@@ -1708,7 +1708,6 @@ Route::post('/applicationsrating',
              $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
              
              $application->user()->associate(Auth::user());
-         
              $application->company   = Input::get('company_id'); //Input::only('company_id') gets array. 
             //$company->id   =Input::get('id');  //just added
               //$application->company   = Input::get('company');   //calulate later
