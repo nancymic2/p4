@@ -1703,9 +1703,34 @@ Route::post('/applicationsrating',
               $application->hiringMgr   = Input::get('hiringMgr');
               $application->recnumber   = Input::get('recnumber');
               $application->save();
-             return Redirect::to('/success'); // YES NO? 
+
+
+            $mycompany= Input::get('company_id');
+            foreach($companies as $company) {   ///////////
+                if ($company['id']==$mycompany) {  /////////////
+                  $location=$company['company'];   ///////////
+                }
+
+            }
+
+
+            $jobs = json_decode($application, TRUE);
+            $followupBy=$jobs['followupBy'];
+            $time=$jobs['rating'];
+
+            $newdate=str_replace('-', '', $followupBy); 
+            $newtime='T'.$jobs['rating'];
+            $googlecal=$location.'&dates='.$newdate.$newtime.'/'.$newdate.$newtime;
+
+            Session::put('googlecal', $googlecal);
+             //Session::put('intTime', $time);
+
+
+            return View::make('calendar2'); // YES NO? 
 }
 ));
+
+
 
 
 
