@@ -18,7 +18,7 @@
 window.onload=function(){
           var canvas=document.getElementById('salaryed');
           var ctx=canvas.getContext('2d');
-          var scores=[100, 90, 85, 45, 72, 88];
+          var scores=[<?php echo $ttransport; ?>, <?php echo $tgas; ?>, <?php echo $tgas; ?>, <?php echo $tphone; ?>, <?php echo $tink; ?>, <?php echo $paper; ?>];
           var width=50;
           var currx=50;
           var base=200;
