@@ -169,7 +169,7 @@ interview time. You MUST reenter the time<br>
 
 <br><a class="btn btn-danger" onclick="window.history.back()">Cancel</a>
 
-<div id="companies" style="display:none; position: absolute; top: 200px; left: 200px; z-index: 5;">
+<div id="companies" style="display:none; background-color: #dddddd; position: absolute; top: 200px; left: 300px; z-index: 5;">
 <b><a href="#" onclick='document.getElementById("companies").style.display="none";'>Close</a></b> 
    <br>
 <?php
