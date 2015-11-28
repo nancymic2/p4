@@ -97,7 +97,8 @@
     and change this ID accordingly.<br> 
     <a name="divs"></a><br>
      You MUST reenter the company<br>
-      {{ Form::text('company', null, ['class'=>'form-control']) }} 
+
+           {{ Form::select('company_id', $company_lists, null, ['class'=>'form-control']) }}
 
  <br>
     role<br>
