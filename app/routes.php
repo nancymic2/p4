@@ -1706,7 +1706,7 @@ Route::post('/applicationsrating',
 
              $location='';
              $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
-             $application = new Application;
+             
              $application->user()->associate(Auth::user());
          
              $application->company   = Input::get('company_id'); //Input::only('company_id') gets array. 
