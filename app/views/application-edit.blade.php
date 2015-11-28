@@ -24,6 +24,7 @@
 <br>
 
 <?php
+/*
     call_user_func(function() {
         $appid = Session::get('appid');
         $application  = Application::find($appid); 
@@ -83,6 +84,7 @@
         }  
         //////// END GET COMPANY  ////////////////
     });
+*/
 ?>
 
 
