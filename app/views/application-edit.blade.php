@@ -84,10 +84,11 @@
         //////// END GET COMPANY  ////////////////
     });
 
+
+
+      $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
+      $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');  
 ?>
-
-
-
  {{ Form::model($application, array('route' => 'application.edit', $application->id, $application->company)) }}    
 
 
