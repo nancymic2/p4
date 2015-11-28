@@ -1672,6 +1672,7 @@ Route::post('/applicationsrating',
   Route::get('application/edit/{id}', array('as' => 'application.edit', function($id) 
     {
       $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
+      $user=Auth::user()->id)->get();
         // return our view 
           $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
                     $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('resume', 'id');
