@@ -86,7 +86,7 @@
 ?>
 
 <?php
-$resume_lists = Resume::lists('title', 'id');
+$resume_lists = Resume::lists('name', 'id');
 
 ?>
 
