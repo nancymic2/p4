@@ -112,7 +112,7 @@ transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, en
 window.onload=function(){
           var canvas=document.getElementById('salaryed');
           var ctx=canvas.getContext('2d');
-          var scores=[<?php echo $tink/10; ?>, <?php echo $tgas/10; ?>, <?php echo $tclothing/10; ?>, <?php echo $tphone/10; ?>, <?php echo $tink; ?>, <?php echo $tpaper; ?>];
+          var scores=[<?php echo $tink/10; ?>, <?php echo $tgas/100; ?>, <?php echo $tclothing/10; ?>, <?php echo $tphone/10; ?>, <?php echo $tink/10; ?>, <?php echo $tpaper/10; ?>];
           var width=50;
           var currx=50;
           var base=200;
