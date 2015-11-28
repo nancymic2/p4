@@ -1676,7 +1676,7 @@ Route::post('/applicationsrating',
       $user=Auth::user();
         // return our view 
           $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
-                    $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('resume', 'id');
+                    $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');
 
               return View::make('application-edit', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists)) 
               ->with('application', Application::find($id));;   

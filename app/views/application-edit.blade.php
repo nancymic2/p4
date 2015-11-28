@@ -106,7 +106,7 @@
  <br>
 
     resume<br>
-     {{ Form::select('user_id', $resume_lists, null, ['class'=>'form-control']) }}
+{{ Form::select('resume_id', $resume_lists) }}
 
     <!--{{ Form::text('resumeUsed')}} -->
  <br>
