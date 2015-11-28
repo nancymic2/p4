@@ -970,6 +970,10 @@ Route::get('applications', array('before' => 'auth', function()
 
           $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');
 
+         
+
+
+
           return View::make('applications', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists));  ///10/31/15
         }
     )
@@ -1675,7 +1679,8 @@ Route::post('/applicationsrating',
           
           /////NEED TO ASSOCIATE WITH LOGGED IN USER FOR RESUMES AD COMPANIES SOMEHOW 11/6/15
       $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
-      $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');   //changed resume to name
+      //$resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('name', 'id');   //changed resume to name
+       $resume_lists = Resume::where('user_id', '=', $user->id)->lists('name', 'id')->toArray();
       $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
       //$currentintdate=$application['followupBy'];  /////
        Session::put('appid', $id); /////
