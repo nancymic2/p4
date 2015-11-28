@@ -97,8 +97,8 @@
     and change this ID accordingly.<br> 
     <a name="divs"></a><br>
      You MUST reenter the company<br>
-      {{ Form::text('company', null, ['class'=>'form-control']) }}
-    <!--{{ Form::select('company_id', $company_lists) }} --this yieds the INDEX of the selected 11/6-->
+      <!--{{ Form::text('company', null, ['class'=>'form-control']) }} -->
+    {{ Form::select('company_id', $company_lists) }} --this yieds the INDEX of the selected 11/6
  <br>
     role<br>
     {{ Form::text('role', null, ['class'=>'form-control']) }}
