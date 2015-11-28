@@ -43,7 +43,8 @@ company<br>
 {{ Form::select('company_id', $company_lists) }}
 <br>
 Rating<br>
-    {{ Form::text('recruiter_rating', '', array('class'=>'form-control'))}} 
+  <input type="radio" name="rating" value="1">1 &nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="2">2&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="3">3&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="4">4&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="5">5&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="6">6&nbsp;&nbsp;&nbsp; <input type="radio" name="rating" value="7">7
+
 <br>
 Comments<br>
     {{ Form::textarea('recruiter_comments', '', array('class'=>'form-control'))}} 
