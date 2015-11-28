@@ -115,7 +115,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Metrics<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/charter">Salary Chart</a></li>
-            <li><a href="/charter">Industry Stats</a></li>
+            <li><a href="/jobhuntcosts">Job Hunt Expenses</a></li>
             <li><a href="/companyRatings">Company Ratings</a></li>
 
           </ul>

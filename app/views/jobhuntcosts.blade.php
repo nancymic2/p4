@@ -87,7 +87,7 @@ foreach($expenses as $expense) {
    $tentertainment=$trimentertainment+$tentertainment;
    $ttransport+=($tgas + $tair + $ttrain);
    $tsupplies+=($tstamps+$tpaper+$tink);
-
+//also maybe divide each by a counter i as an average as these are too big and getting bigger
 
  }
  ?>
@@ -102,7 +102,7 @@ foreach($expenses as $expense) {
 
 
 
-<canvas id="salaryed" width="800" height="900" />
+<canvas id="salaryed" width="800" height="600" />
 
 
 transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, entertainment
