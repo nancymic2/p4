@@ -102,7 +102,7 @@ foreach($expenses as $expense) {
 
 
 <script type="text/javascript"> 
-window.onload=function(){
+
           var canvas=document.getelementById('salaryed');
           var ctx=canvas.getContent('2d');
           var scores=[100, 90, 85, 45, 72, 88];
@@ -118,7 +118,7 @@ window.onload=function(){
               currx+=width+10;
 
           }
-};
+
 </script>
 
 
