@@ -123,7 +123,7 @@ foreach($expenses as $expense) {
 <canvas id="salaryed" width="800" height="500" />
 
 
-
+transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, entertainment
 <br><a class="btn btn-success" onclick="window.history.back()">Cancel</a>
 <!-- note use email as the type vs text if you want validation -->
 <br><br>
