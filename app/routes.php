@@ -1673,8 +1673,11 @@ Route::post('/applicationsrating',
     {
       $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
         // return our view 
-        return View::make('application-edit') // pulls app/views/application-edit.blade.php use company/edit/1 or other id number
-            ->with('application', Application::find($id));
+          $company_lists = Company::where('user_id', '=', $user->id)->get()->lists('company', 'id');
+                    $resume_lists = Resume::where('user_id', '=', $user->id)->get()->lists('resume', 'id');
+
+              return View::make('application-edit', array('company_lists' => $company_lists), array('resume_lists' => $resume_lists)) 
+              ->with('application', Application::find($id));;   
     }));
 
 
