@@ -102,7 +102,7 @@ foreach($expenses as $expense) {
 
 
 
-<canvas id="salaryed" width="800" height="300" />
+<canvas id="salaryed" width="800" height="900" />
 
 
 transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, entertainment
