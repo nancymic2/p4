@@ -1688,9 +1688,10 @@ Route::post('/applicationsrating',
     array(
         'before' => 'csrf', 
         function() {
-          $id =Input::get('id');
-           //$company  = Company::find(1);  got to get the co id. take from url if need be cause ive had enough
-           $application  = Application::find($id);  ///works when id is hardcoded
+             $id =Input::get('id');
+             $location='';
+             $companies = Company::where('user_id', '=', Auth::user()->id)->get(); //just added
+             $application  = Application::find($id);  ///works when id is hardcoded
             //$company->id   =Input::get('id');  //just added
               $application->company   = Input::get('company_id');   //calulate later
               $application->role   = Input::get('role');
