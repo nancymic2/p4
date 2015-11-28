@@ -92,45 +92,29 @@
 
 <br>
     
-    <!--If you want to associate this job with another company, you must <b><u><a href="#divs" onclick='document.getElementById("companies").style.display="block";'>view your companies</a></u></b> 
-    and change this ID accordingly.<br> -->
+    If you want to associate this job with another company, you must <b><u><a href="#divs" onclick='document.getElementById("companies").style.display="block";'>view your companies</a></u></b> 
+    and change this ID accordingly.<br> 
     <a name="divs"></a><br>
      You MUST reenter the company<br>
-    {{ Form::select('company_id', $company_lists) }} <!--this yieds the INDEX of the selected 11/6-->
+      {{ Form::text('company', null, ['class'=>'form-control']) }}
+    <!--{{ Form::select('company_id', $company_lists) }} --this yieds the INDEX of the selected 11/6-->
  <br>
     role<br>
-    {{ Form::text('role')}} 
+    {{ Form::text('role', null, ['class'=>'form-control']) }}
  <br>
 
     resume<br>
-
-<?php
-       /* $resumes = Resume::where('user_id', '=', Auth::user()->id)->get();
-        $myresumes = json_decode($resumes, TRUE);  
-        echo gettype($myresumes);//$resumes is now an array of key val pairs
-        for ($i=0; $i<count($myresumes); $i++) {
-
-        echo '<br>';
-        echo $myresumes[$i];
-      }*/
-?>
-
-<script type="text/javascript">
-//document.getElementById("res1").value='1';
-</script>
-
-
 
     {{ Form::select('resume_id', $resume_lists) }} 
     <!--{{ Form::text('resumeUsed')}} -->
  <br>
     salary<br>
-    {{ Form::text('salary')}} 
+    {{ Form::text('salary', null, ['class'=>'form-control']) }}
 
     <br>
 
 interview time. You MUST reenter the time<br>
-<select name="rating">
+<select class="forn-control" name="rating">
   <option value="000000">12:00 am</option>
   <option value="010000">1:00 am</option>
   <option value="020000">2:00 am</option>
@@ -166,14 +150,14 @@ interview time. You MUST reenter the time<br>
      <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
     
     city<br>
-    {{ Form::text('city')}} 
+    {{ Form::text('city', null, ['class'=>'form-control']) }}
  <br>
     hire manager<br>
-    {{ Form::text('hiringMgr')}} 
+    {{ Form::text('hiringMgr', null, ['class'=>'form-control']) }}
 
 <br>
       job name<br>
-    {{ Form::text('recnumber')}} 
+    {{ Form::text('recnumber', null, ['class'=>'form-control']) }}
 <br>
 
  {{ Form::hidden('id', $application->id) }}  <!-- just added -->
