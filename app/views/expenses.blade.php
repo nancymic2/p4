@@ -39,7 +39,7 @@
  <h5>Associate expense with one of your jobs</h5>
     <!--{{ Form::text('application_id', '', array('class'=>'form-control'))}}  add select instead -->
 
-     {{ Form::select('recnumber', $application_lists) }}
+     {{ Form::select('recnumber', $application_lists, null, ['class'=>'form-control']) }}
 <br>
 <h4>Add expenses for:</h4>
 gasoline<br>
