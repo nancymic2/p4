@@ -2178,7 +2178,7 @@ $stylesend='<br><br><img style="float:left; max-width: 100%;" class="img-respons
 foreach($recruiters as $recruiter) {
 
     echo '<tr>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
   
 
 
@@ -2189,28 +2189,28 @@ foreach($recruiters as $recruiter) {
 
 
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     echo $recruiter['recruiter_address'];    
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     echo $recruiter['recruiter_phone'];
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
     echo $recruiter['recruiter_email'];
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
 
     echo $recruiter['company_id'];
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
 
     echo $recruiter['recruiter_rating'];
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
 
     echo $recruiter['recruiter_comments'];
     echo '</td>';
-    echo '<td>';
+    echo '<td style="text-align:left;">';
 
     echo $recruiter['recruiter_referred_by'];
     echo '</td>';
