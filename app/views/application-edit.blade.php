@@ -104,8 +104,8 @@
  <br>
 
     resume<br>
-
-    {{ Form::select('resume_id', $resume_lists) }} 
+ {{ Form::text('resumeUsed', null, ['class'=>'form-control']) }}
+   <!-- {{ Form::select('resume_id', $resume_lists) }} -->
     <!--{{ Form::text('resumeUsed')}} -->
  <br>
     salary<br>
@@ -114,7 +114,7 @@
     <br>
 
 interview time. You MUST reenter the time<br>
-<select class="forn-control" name="rating">
+<select class="form-control" name="rating">
   <option value="000000">12:00 am</option>
   <option value="010000">1:00 am</option>
   <option value="020000">2:00 am</option>
