@@ -1689,7 +1689,7 @@ Route::post('/applicationsrating',
    
       //return var_dump($resume_lists);  
     return View::make('application-edit') // pulls app/views/nerd-edit.blade.php use company/edit/1 or other id number
-            ->with('application', Application::find($id), ['company' => $companyname], ['company_lists' => $company_lists] );
+            ->with('application', Application::find($id), ['resume_lists' => $resume_lists], ['company_lists' => $company_lists] );
     }));
 
 
