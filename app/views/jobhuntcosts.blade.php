@@ -32,9 +32,6 @@
                  	$eduarray = $profile['degree'];  //ok all degrees
               
                  }
-             
-
-
 $tgas=0;
 $tair=0;
 $ttrain=0;
@@ -50,7 +47,7 @@ $tclothing=0;
 $tentertainment=0;
 $ttransport=0;
 $tsupplies=0;
-
+$counter=0;
 
 $categories = 'transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, entertainment';
  
@@ -88,31 +85,24 @@ foreach($expenses as $expense) {
    $ttransport+=($tgas + $tair + $ttrain);
    $tsupplies+=($tstamps+$tpaper+$tink);
 //also maybe divide each by a counter i as an average as these are too big and getting bigger
-
+   $counter++;
  }
  ?>
           <script type="text/javascript">
 					//alert('<?php echo $salaryarray[1]; ?>');  //this is how to wrap js around php statement. uck or insert php into js function
 					//alert('hi');   // also see chart.blade for js in php in
+  				</script>
 
-
-				</script>
-
-
-
-
-
-<canvas id="salaryed" width="800" height="600" />
-
+<canvas id="allexpense" width="800" height="600" />
 
 transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, entertainment
 <br><a class="btn btn-success" onclick="window.history.back()">Cancel</a>
 
 <script type="text/javascript"> 
 window.onload=function(){
-          var canvas=document.getElementById('salaryed');
+          var canvas=document.getElementById('allexpense');
           var ctx=canvas.getContext('2d');
-          var scores=[<?php echo $tink/10; ?>,<?php echo $tair/10; ?>, <?php echo $tmeals/10; ?>, <?php echo $thardware/10; ?>, <?php echo $tportfolio/10; ?>, <?php echo $tgas/10; ?>, <?php echo $tclothing/10; ?>, <?php echo $tentertainment/10; ?>, <?php echo $tphone/10; ?>, <?php echo $thotel/10; ?>, <?php echo $ttrain/10; ?>, <?php echo $tink/10; ?>, <?php echo $tpaper/10; ?>];
+          var scores=[<?php echo $tink/$counter; ?>,<?php echo $tair/$counter; ?>, <?php echo $tmeals/$counter; ?>, <?php echo $thardware/10; ?>, <?php echo $tportfolio/10; ?>, <?php echo $tgas/10; ?>, <?php echo $tclothing/10; ?>, <?php echo $tentertainment/10; ?>, <?php echo $tphone/10; ?>, <?php echo $thotel/10; ?>, <?php echo $ttrain/10; ?>, <?php echo $tink/10; ?>, <?php echo $tpaper/10; ?>];
           var width=50;
           var currx=50;
           var base=200;
