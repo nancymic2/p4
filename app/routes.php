@@ -415,7 +415,7 @@ foreach($completedapps as $completedapp) {
 
         echo  $mytime;
         echo ' '.$ampm;
-  $current .= $completedapp['rating'];
+  $current .= $mytime;
   $current .= ",";
     echo '</td>';
     echo '<td style="text-align:left;">';
