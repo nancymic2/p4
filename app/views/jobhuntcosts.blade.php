@@ -103,9 +103,10 @@ foreach($expenses as $expense) {
 <script type="text/javascript"> 
     window.onload=function(){
           var canvas=document.getElementById('allexpense');
+                    var ctx=canvas.getContext('2d');
           var status=document.getElementById('status');
           status.innerHTML=mouseX +" | " +mouseY;
-          var ctx=canvas.getContext('2d');
+
           canvas.addEventListener('mousemove', function(event) {
                                   var mouseX = event.clientX;
                                   var mouseY = event.clientY;
