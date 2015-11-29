@@ -21,12 +21,7 @@
                   } 
                 </style>
 
-                <script type="text/javascript" >
-                  $(document).ready(function() 
-                  { 
-                    $("#myTable").tablesorter(); 
-                  }); 
-                </script>
+
 
 <div class="container">
 <div class="col-sm-6">
