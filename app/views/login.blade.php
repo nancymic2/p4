@@ -18,7 +18,8 @@
                 </script>
                  <script type="text/javascript">
                     window.onload=function(){
-                        alert(date.getDate());
+                    var d =  new Date();
+                    alert(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
                     };
                  </script>
 
