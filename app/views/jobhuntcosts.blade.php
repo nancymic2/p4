@@ -113,15 +113,15 @@ foreach($expenses as $expense) {
                                   status.innerHTML=mouseX +" | " +mouseY;
 
                                   });
-          var scores=[<?php echo $tink/$counter; ?>,<?php echo $tair/$counter; ?>, <?php echo $tmeals/$counter; ?>, <?php echo $thardware/$counter; ?>, <?php echo $tportfolio/$counter; ?>, <?php echo $tgas/$counter; ?>, <?php echo $tclothing/$counter; ?>, <?php echo $tentertainment/$counter; ?>, <?php echo $tphone/$counter; ?>, <?php echo $thotel/$counter; ?>, <?php echo $ttrain/$counter; ?>, <?php echo $tink/$counter; ?>, <?php echo $tpaper/$counter; ?>];
+          var costs=[<?php echo $tink/$counter; ?>,<?php echo $tair/$counter; ?>, <?php echo $tmeals/$counter; ?>, <?php echo $thardware/$counter; ?>, <?php echo $tportfolio/$counter; ?>, <?php echo $tgas/$counter; ?>, <?php echo $tclothing/$counter; ?>, <?php echo $tentertainment/$counter; ?>, <?php echo $tphone/$counter; ?>, <?php echo $thotel/$counter; ?>, <?php echo $ttrain/$counter; ?>, <?php echo $tink/$counter; ?>, <?php echo $tpaper/$counter; ?>];
           var width=50;
           var currx=50;
           var base=200;
 
           ctx.fillStyle='#88B9EE';
 
-          for (var i=0; i<scores.length; i++) {
-              var h=scores[i];
+          for (var i=0; i<costs.length; i++) {
+              var h=costs[i];
               ctx.fillRect(currx, canvas.height-h, width, h);
               currx+=width+10;
 
