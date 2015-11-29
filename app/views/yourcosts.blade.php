@@ -378,7 +378,7 @@ transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, en
           var currx=50;
           var base=200;
 
-          ctx.fillStyle='#88B9EE';
+          ctx.fillStyle='#E38AAE';
 
           for (var i=0; i<scores.length; i++) {
               var h=scores[i];
