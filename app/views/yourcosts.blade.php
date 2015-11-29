@@ -14,7 +14,18 @@
                     $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
                     })
                 </script>
+                <style type="text/css">
+                  #myTable > thead{
+                    cursor: pointer;
+                  } 
+                </style>
 
+                <script type="text/javascript" >
+                  $(document).ready(function() 
+                  { 
+                    $("#myTable").tablesorter(); 
+                  }); 
+                </script>
 
 <div class="container">
 <div class="col-sm-6">
