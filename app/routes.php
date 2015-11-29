@@ -269,7 +269,7 @@ file_put_contents($file, "");  ///
 // Open the file to get existing content
 $current = file_get_contents($file);  ///
 
-$current .= 'Company, Role, City, Date Applied, Contact, Followup, Job Rating, Resume, Job Link, Job ID / Name';
+$current .= 'Company, Role, City, Date Applied, Contact, Followup, Interview Time, Resume, Job Link, Job ID / Name';
 
 $current .= "\n";
 
