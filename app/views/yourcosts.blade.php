@@ -6,6 +6,7 @@
                 <script src="jquery.knob.js"></script>
                 <link href="/css/layout.css" rel="stylesheet">
                 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" type="text/css" media="all" />
+                <link href="/css/niceTables.css" rel="stylesheet">
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
                 <script src="//code.jquery.com/jquery-1.9.1.js"></script> 
                 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>
