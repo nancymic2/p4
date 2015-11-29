@@ -114,6 +114,7 @@ foreach($expenses as $expense) {
                                   if (mouseY==canvas.height-<?php echo $tink/$counter; ?>) { /////
                                       alert('<?php echo $tink/$counter; ?>'); ////////////////////
                                   } /////////////////////////////////////////////////////////////
+                                      alert('<?php echo $tink/$counter; ?>'); ////////////////////
 
                                   });
           var costs=[<?php echo $tink/$counter; ?>,<?php echo $tair/$counter; ?>, <?php echo $tmeals/$counter; ?>, <?php echo $thardware/$counter; ?>, <?php echo $tportfolio/$counter; ?>, <?php echo $tgas/$counter; ?>, <?php echo $tclothing/$counter; ?>, <?php echo $tentertainment/$counter; ?>, <?php echo $tphone/$counter; ?>, <?php echo $thotel/$counter; ?>, <?php echo $ttrain/$counter; ?>, <?php echo $tink/$counter; ?>, <?php echo $tpaper/$counter; ?>];
