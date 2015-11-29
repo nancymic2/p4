@@ -112,7 +112,7 @@ foreach($expenses as $expense) {
                                   var mouseY = event.clientY;
                                   status.innerHTML=mouseX +" | " +mouseY;
                                   if (mouseY==canvas.height-<?php echo $tink/$counter; ?>) { /////
-                                      alert('<?php echo $tink/$counter; ?>'); ////////////////////
+                                      alert('<?php echo $tair/$counter; ?>'); ////////////////////
                                   } /////////////////////////////////////////////////////////////
                                       //alert('<?php echo $tink/$counter; ?>'); ////////////////////
 
