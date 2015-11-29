@@ -55,7 +55,7 @@
 
 <!--password field was called password not text change  for bootstrap-->
 <br>
- <a class="btn btn-warning" href="/signup">Or sign up</a> <p>&nbsp;</p>
+ <a class="btn btn-warning" href="/signup">Or sign up</a> <br>
  <a class="btn btn-primary" href="password/remind">Forgot Password?</a> <p>&nbsp;</p>
 
 
