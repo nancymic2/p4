@@ -47,7 +47,7 @@ $tclothing=0;
 $tentertainment=0;
 $ttransport=0;
 $tsupplies=0;
-$counter=0;
+$counter=0; //should end up being the length of expenses so safe to use
 
 $categories = 'transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, entertainment';
  
@@ -111,18 +111,28 @@ foreach($expenses as $expense) {
                                   var mouseX = event.clientX;
                                   var mouseY = event.clientY;
                                   status.innerHTML=mouseX +" | " +mouseY;
+                                  if (mouseY==canvas.height-<?php echo $tink/$counter; ?>) { /////
+                                      alert('<?php echo $tink/$counter; ?>'); ////////////////////
+                                  } /////////////////////////////////////////////////////////////
 
                                   });
           var costs=[<?php echo $tink/$counter; ?>,<?php echo $tair/$counter; ?>, <?php echo $tmeals/$counter; ?>, <?php echo $thardware/$counter; ?>, <?php echo $tportfolio/$counter; ?>, <?php echo $tgas/$counter; ?>, <?php echo $tclothing/$counter; ?>, <?php echo $tentertainment/$counter; ?>, <?php echo $tphone/$counter; ?>, <?php echo $thotel/$counter; ?>, <?php echo $ttrain/$counter; ?>, <?php echo $tink/$counter; ?>, <?php echo $tpaper/$counter; ?>];
           var width=50;
-          var currx=50;
+          var currx=50; ///start left i.e. X coord
           var base=200;
 
           ctx.fillStyle='#88B9EE';
 
           for (var i=0; i<costs.length; i++) {
-              var h=costs[i];
-              ctx.fillRect(currx, canvas.height-h, width, h);
+              var h=costs[i];  //height of bar
+
+//make i number of new arrays here and store 4 vals of each bar and call them arrayi
+
+//currx each time = currx + width*i + 10*i
+//each time h = costs[i]
+//canvas.height is a const
+
+              ctx.fillRect(currx, canvas.height-h, width, h);  // x, y, width, height
               currx+=width+10;
 
           }
