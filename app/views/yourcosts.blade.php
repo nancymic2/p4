@@ -364,7 +364,7 @@ echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quick
 
 ?>
 
-<canvas id="allexpense" width="1000" height="350" style="margin-left: 100px;"/>
+<canvas id="allexpense" width="1000" height="350" style="margin-left: 85px;"/>
 
 transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, entertainment
 <br><a class="btn btn-success" onclick="window.history.back()">Cancel</a>
@@ -383,7 +383,7 @@ transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, en
           for (var i=0; i<scores.length; i++) {
               var h=scores[i];
               ctx.fillRect(currx, canvas.height-h, width, h);
-              currx+=width+15;
+              currx+=width+13;
 
           }
     };
