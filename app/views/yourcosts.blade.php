@@ -385,7 +385,7 @@ echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quick
           var currx=50;
           var base=200;
 
-          ctx.fillStyle='#E38AAE';
+          ctx.fillStyle='#52D017';
 
           for (var i=0; i<scores.length; i++) {
               var h=scores[i];
