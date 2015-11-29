@@ -105,13 +105,15 @@ foreach($expenses as $expense) {
           var canvas=document.getElementById('allexpense');
           var ctx=canvas.getContext('2d');
           var status=document.getElementById('status');
+          var xlist = new Array();
           
 
           canvas.addEventListener('mousemove', function(event) {
                                   var mouseX = event.clientX;
                                   var mouseY = event.clientY;
                                   status.innerHTML=mouseX +" | " +mouseY;
-                                  if (mouseY>parseInt((685-<?php echo $tair/$counter; ?>)) && mouseY<parseInt((685-<?php echo $tair/$counter; ?>))+7) { /////
+                                  if (mouseY>parseInt((685-<?php echo $tair/$counter; ?>)) && 
+                                  mouseY<parseInt((685-<?php echo $tair/$counter; ?>))+7 && mouseX>110 && mouseX<160) { /////
                                       alert('<?php echo $tair/$counter; ?>'); ////////////////////
                                   } /////////////////////////////////////////////////////////////
                                       //alert('<?php echo $tink/$counter; ?>'); ////////////////////
@@ -122,6 +124,7 @@ foreach($expenses as $expense) {
           var width=50;
           var currx=50; ///start left i.e. X coord
           var base=200;
+
 
           ctx.fillStyle='#88B9EE';
 
