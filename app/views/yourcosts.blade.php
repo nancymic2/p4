@@ -374,7 +374,7 @@ transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, en
           var canvas=document.getElementById('allexpense');
           var ctx=canvas.getContext('2d');
           var scores=[<?php echo $tgas/10; ?>, <?php echo $tair/10; ?>, <?php echo $ttrain/10; ?>, <?php echo $thotel/10; ?>, <?php echo $tmeals/10; ?>, <?php echo $tstamps/10; ?>, <?php echo $tink/10; ?>, <?php echo $tpaper/10; ?>, <?php echo $thardware/10; ?>, <?php echo $tportfolio/10; ?>, <?php echo $tphone/10; ?>, <?php echo $tclothing/10; ?>, <?php echo $tentertainment/10; ?>];
-          var width=50;
+          var width=70;
           var currx=50;
           var base=200;
 
