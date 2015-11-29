@@ -20,6 +20,21 @@
                     window.onload=function(){
                     var d =  new Date();
                     alert(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
+   
+
+                      var history = localStorage.getItem("login");
+
+                        if (history){
+                            alert(history);
+                        }
+                        
+                            var somedate=(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
+                            window.localStorage.setItem("login", somedate);   
+
+
+
+
+
                     };
                  </script>
 
