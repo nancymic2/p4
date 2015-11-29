@@ -383,7 +383,7 @@ transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, en
           for (var i=0; i<scores.length; i++) {
               var h=scores[i];
               ctx.fillRect(currx, canvas.height-h, width, h);
-              currx+=width+10;
+              currx+=width+15;
 
           }
     };
