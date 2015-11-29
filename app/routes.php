@@ -1507,11 +1507,9 @@ echo '<br><br>';
 
 file_put_contents($file, $current);
 
-
+echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quickbooks">Import your CSV to QuickBooks</a><br><a href="http://money.mvps.org/faq/article/27.aspx">Import your CSV to MS Money</a><br><a href="https://ttlc.intuit.com/questions/1945069-import-data-from-csv-file">Import your CSV to Turbo Tax</a><br>';
 echo '</div>';
-
-
- echo $stylesend;   
+echo $stylesend;   
 }));
 
 
