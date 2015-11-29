@@ -75,7 +75,7 @@
             <li><a href="/choose_resume">Your Resumes</a></li>
             <li><a href="/companyreport">Your Companies</a></li>
             <li><a href="/contactreport">Your Contacts</a></li>
-            <li><a href="/expensereport">Your Expense Report</a></li>
+            <li><a href="/yourcosts">Your Expense Report</a></li>
 
           </ul>
         </li>
@@ -86,7 +86,7 @@
             <li><a href="/choose_resume">Your Resumes</a></li>
             <li><a href="/companyreport">Your Companies</a></li>
             <li><a href="/contactreport">Your Contacts</a></li>
-            <li><a href="/expensereport">Your Expenses</a></li>
+            <li><a href="/yourcosts">Your Expenses</a></li>
    
           </ul>
         </li>
