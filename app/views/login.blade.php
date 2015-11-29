@@ -17,25 +17,19 @@
                     })
                 </script>
                  <script type="text/javascript">
-                    window.onload=function(){
-                    var d =  new Date();
-                    alert(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
-   
+                        window.onload=function(){
+                            var d =  new Date();
+                            //alert(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
+                            var history = localStorage.getItem("login");
 
-                      var history = localStorage.getItem("login");
-
-                        if (history){
-                            alert("last logged on: " + history);
-                        }
-                        
+                            if (history){
+                                    alert("last logged on: " + history);
+                                }
+                                
                             var somedate=(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
                             window.localStorage.setItem("login", somedate);   
 
-
-
-
-
-                    };
+                        };
                  </script>
 
 <div class="container">
