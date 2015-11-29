@@ -364,7 +364,7 @@ echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quick
 
 ?>
 
-<canvas id="allexpense" width="1000" height="350" style="margin-left: 300px;"/>
+<canvas id="allexpense" width="1000" height="350" style="margin-left: 100px;"/>
 
 transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, entertainment
 <br><a class="btn btn-success" onclick="window.history.back()">Cancel</a>
