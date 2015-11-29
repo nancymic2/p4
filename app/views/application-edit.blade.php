@@ -104,7 +104,7 @@
     {{ Form::text('role', null, ['class'=>'form-control']) }}
  <br>
 
-    resume<br>
+    resume Note you MUST<br> re-enter your chosen resume name<br>
 {{ Form::select('resume_id', $resume_lists, null, ['class'=>'form-control']) }}
 
     <!--{{ Form::text('resumeUsed')}} -->
