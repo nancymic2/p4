@@ -17,7 +17,7 @@
                     })
                 </script>
                  <script type="text/javascript">
-                    window.onload=funtion(){
+                    window.onload=function(){
                         alert(date.getDate());
                     };
                  </script>
