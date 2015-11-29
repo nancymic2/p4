@@ -16,6 +16,9 @@
                     $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
                     })
                 </script>
+                 <script type="text/javascript">
+                    alert(date.getDate());
+                 </script>
 
 <div class="container">
     <div class="col-sm-6">
@@ -42,10 +45,8 @@
 <br>
  <a class="btn btn-warning" href="/signup">Or sign up</a> <p>&nbsp;</p>
  <a class="btn btn-primary" href="password/remind">Forgot Password?</a> <p>&nbsp;</p>
- 
- <script type="text/javascript">
-alert(date.getDate());
- </script>
+
+
 
 </div>
 </div>
