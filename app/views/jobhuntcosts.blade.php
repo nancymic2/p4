@@ -93,7 +93,9 @@ foreach($expenses as $expense) {
 					//alert('hi');   // also see chart.blade for js in php in
   				</script>
 
-<canvas id="allexpense" width="800" height="350" />
+<canvas id="allexpense" width="800" height="350"></canvas>
+<span style="margin-left: 130px; font-size: 17px; font-weight: bold;">Gas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Airfare &nbsp;&nbsp;&nbsp;Train&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hotel&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Meals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Postage &nbsp;&nbsp;Ink &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paper &nbsp;&nbsp;Hardware &nbsp;&nbsp;Portfolio&nbsp;&nbsp; Phone &nbsp;&nbsp;Clothing &nbsp;&nbsp;Entertain</span>
+
 
 transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, entertainment
 <br><a class="btn btn-success" onclick="window.history.back()">Cancel</a>
