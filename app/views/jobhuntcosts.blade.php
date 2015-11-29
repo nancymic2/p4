@@ -102,7 +102,7 @@ transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, en
 window.onload=function(){
           var canvas=document.getElementById('allexpense');
           var ctx=canvas.getContext('2d');
-          var scores=[<?php echo $tink/$counter; ?>,<?php echo $tair/$counter; ?>, <?php echo $tmeals/$counter; ?>, <?php echo $thardware/10; ?>, <?php echo $tportfolio/10; ?>, <?php echo $tgas/10; ?>, <?php echo $tclothing/10; ?>, <?php echo $tentertainment/10; ?>, <?php echo $tphone/10; ?>, <?php echo $thotel/10; ?>, <?php echo $ttrain/10; ?>, <?php echo $tink/10; ?>, <?php echo $tpaper/10; ?>];
+          var scores=[<?php echo $tink/$counter; ?>,<?php echo $tair/$counter; ?>, <?php echo $tmeals/$counter; ?>, <?php echo $thardware/$counter; ?>, <?php echo $tportfolio/$counter; ?>, <?php echo $tgas/$counter; ?>, <?php echo $tclothing/$counter; ?>, <?php echo $tentertainment/$counter; ?>, <?php echo $tphone/$counter; ?>, <?php echo $thotel/$counter; ?>, <?php echo $ttrain/$counter; ?>, <?php echo $tink/$counter; ?>, <?php echo $tpaper/$counter; ?>];
           var width=50;
           var currx=50;
           var base=200;
