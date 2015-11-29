@@ -306,7 +306,7 @@ echo '<script type="text/javascript" src="http://p4.scholarpaws.com/js/jquery.ta
       <th>Hiring manager</th>
 
       <th>Interview date</th>
-      <th>Job rating</th>
+      <th>Interview time</th>
       <th>Resume name</th>
       <th>Job link</th>
       <th>Job ID / name</th>
@@ -394,10 +394,27 @@ foreach($completedapps as $completedapp) {
     echo '</td>';
     echo '<td style="text-align:left;">';
     //echo '<b>Decision:</b> ';
-    //echo $completedapp['decision']."<br>";
 
-    //echo '<b>rating:</b> ';
-    echo $completedapp['rating']."<br>";
+
+
+        $interviewTime=$completedapp['rating'];
+
+        $mytime = substr($interviewTime, 0, -2);  // returns first 4 digits
+        if ($mytime>1200) {
+          $mytime=$mytime-1200;
+          $ampm='pm';
+        }
+        elseif ($mytime==1200) {
+          $ampm='noon';
+        }
+        else {
+          $ampm='am';
+        }
+        $mytime=substr_replace($mytime, ':', -2, 0);
+
+
+        echo  $mytime;
+        echo ' '.$ampm;
   $current .= $completedapp['rating'];
   $current .= ",";
     echo '</td>';
