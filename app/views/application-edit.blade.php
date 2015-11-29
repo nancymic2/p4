@@ -145,10 +145,10 @@ interview time. You MUST reenter the time<br>
 
 
    Interview Date. Note you MUST<br> re-enter this date
-     <br><input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br>
+     <br><input class="date" name="followupBy" type="text" size="10"  id="followupBy" /><br><br>
 
     Applied Date. Note you MUST<br> re-enter this date <br>
-     <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br>
+     <input class="date" name="applyDate" type="text" size="10"  id="applyDate" /><br><br>
     
     city<br>
     {{ Form::text('city', null, ['class'=>'form-control']) }}
