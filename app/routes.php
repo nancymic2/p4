@@ -2457,3 +2457,10 @@ echo $stylesend;
         }
     )
 );
+
+   Route::get('yourcosts', array('before' => 'auth', function()
+         {
+            return View::make('yourcosts');
+        }
+    )
+);
