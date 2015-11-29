@@ -111,7 +111,7 @@ foreach($expenses as $expense) {
                                   var mouseX = event.clientX;
                                   var mouseY = event.clientY;
                                   status.innerHTML=mouseX +" | " +mouseY;
-                                  if (mouseY>=parseInt((685-<?php echo $tair/$counter; ?>))) { /////
+                                  if (mouseY>parseInt((685-<?php echo $tair/$counter; ?>)) && mouseY<parseInt((685-<?php echo $tair/$counter; ?>))+7) { /////
                                       alert('<?php echo $tair/$counter; ?>'); ////////////////////
                                   } /////////////////////////////////////////////////////////////
                                       //alert('<?php echo $tink/$counter; ?>'); ////////////////////
