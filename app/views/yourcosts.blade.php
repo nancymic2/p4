@@ -373,7 +373,7 @@ transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, en
     window.onload=function(){
           var canvas=document.getElementById('allexpense');
           var ctx=canvas.getContext('2d');
-          var scores=[<?php echo $gas; ?>,<?php echo $tair; ?>, <?php echo $ttrain; ?>, <?php echo $thotel; ?>, <?php echo $tmeals; ?>, <?php echo $tstamps; ?>, <?php echo $tink; ?>, <?php echo $tpaper; ?>, <?php echo $thardware; ?>, <?php echo $tportfolio; ?>, <?php echo $tphone; ?>, <?php echo $tclothing; ?>, <?php echo $tentertainment; ?>];
+          var scores=[<?php echo $tgas; ?>, <?php echo $tair; ?>, <?php echo $ttrain; ?>, <?php echo $thotel; ?>, <?php echo $tmeals; ?>, <?php echo $tstamps; ?>, <?php echo $tink; ?>, <?php echo $tpaper; ?>, <?php echo $thardware; ?>, <?php echo $tportfolio; ?>, <?php echo $tphone; ?>, <?php echo $tclothing; ?>, <?php echo $tentertainment; ?>];
           var width=50;
           var currx=50;
           var base=200;
