@@ -33,6 +33,7 @@ $tportfolio=0;
 $tphone=0;
 $tclothing=0;
 $tentertainment=0;
+$counter=0;
 
 $file = 'myexpenses.csv'; ///
 file_put_contents($file, "");  ///
@@ -120,7 +121,7 @@ $corpid[]="";
 foreach($expenses as $expense) {
    $n++;
    $exp_id[$n] = $expense->id;
-
+$counter++;
 
     echo '<tr>';
     echo '<td>';
