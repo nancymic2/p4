@@ -25,8 +25,8 @@
                             if (history){
                                     alert("You last logged in on: " + history);
                                 }
-                                
-                            var somedate=(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
+                            var month = d.getMonth()+1;
+                            var somedate=(month +" " + d.getDate()+" " + d.getFullYear());
                             window.localStorage.setItem("login", somedate);   
 
                         };
