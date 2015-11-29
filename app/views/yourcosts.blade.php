@@ -370,7 +370,24 @@ file_put_contents($file, $current);
 echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quickbooks" target="_blank">Import your CSV to QuickBooks</a><br><a href="http://money.mvps.org/faq/article/27.aspx" target="_blank">Import your CSV to MS Money</a><br><a href="https://ttlc.intuit.com/questions/1945069-import-data-from-csv-file" target="_blank">Import your CSV to Turbo Tax</a><br>';
 
 ?>
+<div style="float: left; width: 50px;"><pre>5000
 
+
+
+  4000
+
+
+  3000
+
+
+  2000
+
+
+  1000
+
+
+</pre>
+</div>
 <canvas id="allexpense" width="1110" height="450" style="margin-left: 78px;"></canvas>
 
 <span style="margin-left: 130px; font-size: 17px; font-weight: bold;">Gas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Airfare &nbsp;&nbsp;&nbsp;Train&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hotel&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Meals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Postage &nbsp;&nbsp;Ink &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paper &nbsp;&nbsp;Hardware &nbsp;&nbsp;Portfolio&nbsp;&nbsp; Phone &nbsp;&nbsp;Clothing &nbsp;&nbsp;Entertain</span>
