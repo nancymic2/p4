@@ -23,7 +23,7 @@
                             var history = localStorage.getItem("login");
 
                             if (history){
-                                    alert("last logged on: " + history);
+                                    alert("You last logged in on: " + history);
                                 }
                                 
                             var somedate=(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
