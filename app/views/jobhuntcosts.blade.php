@@ -3,13 +3,13 @@
 @section ('jobhuntcosts')
 
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-                        <script src="jquery.knob.js"></script>
+                <script src="jquery.knob.js"></script>
                 <link href="/css/layout.css" rel="stylesheet">
                 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" type="text/css" media="all" />
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
                 <script src="//code.jquery.com/jquery-1.9.1.js"></script> 
                 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>
-            <script type="text/javascript">
+                <script type="text/javascript">
                     $(document).ready(function(){
                     $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
                     })
@@ -17,7 +17,7 @@
 
 
 <div class="container">
-    <div class="col-sm-6">
+<div class="col-sm-6">
 
 
 <?php
@@ -99,7 +99,7 @@ transportation, hotel, meals, supplies, hardware, portfolio, phone, clothing, en
 <br><a class="btn btn-success" onclick="window.history.back()">Cancel</a>
 
 <script type="text/javascript"> 
-window.onload=function(){
+    window.onload=function(){
           var canvas=document.getElementById('allexpense');
           var ctx=canvas.getContext('2d');
           var scores=[<?php echo $tink/$counter; ?>,<?php echo $tair/$counter; ?>, <?php echo $tmeals/$counter; ?>, <?php echo $thardware/$counter; ?>, <?php echo $tportfolio/$counter; ?>, <?php echo $tgas/$counter; ?>, <?php echo $tclothing/$counter; ?>, <?php echo $tentertainment/$counter; ?>, <?php echo $tphone/$counter; ?>, <?php echo $thotel/$counter; ?>, <?php echo $ttrain/$counter; ?>, <?php echo $tink/$counter; ?>, <?php echo $tpaper/$counter; ?>];
@@ -115,9 +115,10 @@ window.onload=function(){
               currx+=width+10;
 
           }
-};
+    };
+    
 </script>
-<!-- note use email as the type vs text if you want validation -->
+
 <br><br>
 </div>
 </div>
