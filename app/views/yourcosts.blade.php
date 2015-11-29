@@ -373,7 +373,7 @@ echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quick
 
 <canvas id="allexpense" width="1110" height="450" style="margin-left: 78px;"></canvas>
 
-<span style="margin-left: 200px;"><h4> Gas Airfare Train Hotel Meals Postage Ink Paper Hardware Portfolio Phone Clothing Entrtainment</h4></span>
+<span style="margin-left: 300px;"><h4> Gas Airfare Train Hotel Meals Postage Ink Paper Hardware Portfolio Phone Clothing Entrtainment</h4></span>
 <br><a class="btn btn-success" onclick="window.history.back()">Cancel</a>
 
 <script type="text/javascript"> 
