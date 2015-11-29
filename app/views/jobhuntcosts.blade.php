@@ -103,14 +103,14 @@ foreach($expenses as $expense) {
 <script type="text/javascript"> 
     window.onload=function(){
           var canvas=document.getElementById('allexpense');
-                    var ctx=canvas.getContext('2d');
+          var ctx=canvas.getContext('2d');
           var status=document.getElementById('status');
-          status.innerHTML=mouseX +" | " +mouseY;
+          
 
           canvas.addEventListener('mousemove', function(event) {
                                   var mouseX = event.clientX;
                                   var mouseY = event.clientY;
-
+                                  status.innerHTML=mouseX +" | " +mouseY;
 
                                   });
           var scores=[<?php echo $tink/$counter; ?>,<?php echo $tair/$counter; ?>, <?php echo $tmeals/$counter; ?>, <?php echo $thardware/$counter; ?>, <?php echo $tportfolio/$counter; ?>, <?php echo $tgas/$counter; ?>, <?php echo $tclothing/$counter; ?>, <?php echo $tentertainment/$counter; ?>, <?php echo $tphone/$counter; ?>, <?php echo $thotel/$counter; ?>, <?php echo $ttrain/$counter; ?>, <?php echo $tink/$counter; ?>, <?php echo $tpaper/$counter; ?>];
