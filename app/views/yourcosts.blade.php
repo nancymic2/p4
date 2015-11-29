@@ -373,7 +373,7 @@ echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quick
 
 <canvas id="allexpense" width="1110" height="450" style="margin-left: 78px;"></canvas>
 
-<span style="margin-left: 130px; font-size: 17px; font-weight: bold;">Gas&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Airfare &nbsp;&nbsp;&nbsp;Train&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hotel&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Meals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Postage &nbsp;&nbsp;Ink &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paper &nbsp;&nbsp;Hardware &nbsp;&nbsp;Portfolio&nbsp;&nbsp; &nbsp;&nbsp;Phone &nbsp;&nbsp;Clothing &nbsp;&nbsp;Entrtainment</span>
+<span style="margin-left: 130px; font-size: 17px; font-weight: bold;">Gas&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Airfare &nbsp;&nbsp;&nbsp;Train&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hotel&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Meals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Postage &nbsp;&nbsp;Ink &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paper &nbsp;&nbsp;Hardware &nbsp;&nbsp;Portfolio&nbsp;&nbsp; Phone &nbsp;&nbsp;Cloth &nbsp;&nbsp;Entrtain</span>
 <br><a class="btn btn-success" onclick="window.history.back()">Cancel</a>
 
 <script type="text/javascript"> 
