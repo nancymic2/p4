@@ -115,7 +115,8 @@ foreach($expenses as $expense) {
                                   if (mouseY>parseInt((685-<?php echo $tair/$counter; ?>)) && 
                                   mouseY<parseInt((685-<?php echo $tair/$counter; ?>))+70 && mouseX>154 && mouseX<204) { 
                                       document.body.style.cursor = "pointer";
-                                      alert('<?php echo $tair/$counter; ?>'); ////////////////////
+                                      alert('<?php echo $tair/$counter; ?>');
+                                      document.body.style.cursor = "auto"; ////////////////////
                                   } /////////////////////////////////////////////////////////////
                                       //alert('<?php echo $tink/$counter; ?>'); ////////////////////
                                         //alert(685-<?php echo $tair/$counter; ?>);
