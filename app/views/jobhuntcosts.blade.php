@@ -111,7 +111,7 @@ foreach($expenses as $expense) {
           canvas.addEventListener('mousemove', function(event) {
                                   var mouseX = event.clientX;
                                   var mouseY = event.clientY;
-                                  status.innerHTML=mouseX +" | " +mouseY;
+                                  status.innerHTML=parseInt(mouseX) +" | " +parseInt(mouseY);
                                   if (mouseY>parseInt((685-<?php echo $tair/$counter; ?>)) && 
                                   mouseY<parseInt((685-<?php echo $tair/$counter; ?>))+70 && mouseX>154 && mouseX<204) { /////
                                       alert('<?php echo $tair/$counter; ?>'); ////////////////////
