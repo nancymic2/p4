@@ -160,14 +160,14 @@ foreach($expenses as $expense) {
           ctx.closePath();
 
           ctx.beginPath();
-          ctx.moveTo(60, 48);
-          ctx.lineTo(80, 48);
+          ctx.moveTo(10, 88);
+          ctx.lineTo(30, 88);
           ctx.stroke();
           ctx.closePath();
 
           ctx.beginPath();
-          ctx.moveTo(110, 48);
-          ctx.lineTo(130, 48);
+          ctx.moveTo(10, 128);
+          ctx.lineTo(30, 128);
           ctx.stroke();
           ctx.closePath();
     };
