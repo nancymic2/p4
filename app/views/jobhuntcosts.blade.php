@@ -145,11 +145,11 @@ foreach($expenses as $expense) {
 
           }
 
-          canvas.beginPath();
-          canvas.moveTo(500, 500);
-          canvas.lineTo(500, 800);
-          canvas.stroke;
-          canvas.closePath();
+          ctx.beginPath();
+          ctx.moveTo(500, 500);
+          ctx.lineTo(500, 800);
+          ctx.stroke;
+          ctx.closePath();
     };
     
 </script>
