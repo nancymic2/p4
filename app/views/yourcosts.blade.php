@@ -393,6 +393,59 @@ echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quick
               currx+=width+16;
 
           }
+           ctx.beginPath();
+          ctx.moveTo(20, 28);
+          ctx.lineTo(20, 350);
+          ctx.stroke();
+          ctx.closePath(); 
+
+          ctx.beginPath();
+          ctx.moveTo(10, 48);
+          ctx.lineTo(30, 48);
+          ctx.stroke();
+          ctx.closePath();
+
+          ctx.beginPath();
+          ctx.moveTo(10, 88);
+          ctx.lineTo(30, 88);
+          ctx.stroke();
+          ctx.closePath();
+
+          ctx.beginPath();
+          ctx.moveTo(10, 128);
+          ctx.lineTo(30, 128);
+          ctx.stroke();
+          ctx.closePath();
+
+          ctx.beginPath();
+          ctx.moveTo(10, 168);
+          ctx.lineTo(30, 168);
+          ctx.stroke();
+          ctx.closePath();
+
+          ctx.beginPath();
+          ctx.moveTo(10, 208);
+          ctx.lineTo(30, 208);
+          ctx.stroke();
+          ctx.closePath();
+
+          ctx.beginPath();
+          ctx.moveTo(10, 248);
+          ctx.lineTo(30, 248);
+          ctx.stroke();
+          ctx.closePath();
+
+          ctx.beginPath();
+          ctx.moveTo(10, 288);
+          ctx.lineTo(30, 288);
+          ctx.stroke();
+          ctx.closePath();
+
+          ctx.beginPath();
+          ctx.moveTo(10, 328);
+          ctx.lineTo(30, 328);
+          ctx.stroke();
+          ctx.closePath();
     };
     
 </script>
