@@ -106,7 +106,11 @@ foreach($expenses as $expense) {
           var ctx=canvas.getContext('2d');
           var status=document.getElementById('status');
           var xlist = new Array();
-          
+          ctx.beginPath();
+          ctx.moveTo(577, 551);
+          ctx.lineTo(1196, 551);
+          ctx.stroke;
+          ctx.closePath();
 
           canvas.addEventListener('mousemove', function(event) {
                                   var mouseX = event.clientX;
@@ -144,12 +148,12 @@ foreach($expenses as $expense) {
               currx+=width+10;
 
           }
-ctx2=document.getElementById('allexpense').getContext('2d');
+          /*ctx2=document.getElementById('allexpense').getContext('2d');
           ctx2.beginPath();
           ctx2.moveTo(577, 551);
           ctx2.lineTo(1196, 551);
           ctx2.stroke;
-          ctx2.closePath();
+          ctx2.closePath();*/
     };
     
 </script>
