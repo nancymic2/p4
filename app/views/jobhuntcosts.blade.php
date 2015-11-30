@@ -144,12 +144,12 @@ foreach($expenses as $expense) {
               currx+=width+10;
 
           }
-
-          ctx.beginPath();
-          ctx.moveTo(200, 200);
-          ctx.lineTo(500, 800);
-          ctx.stroke;
-          ctx.closePath();
+ctx2=document.getElementById('allexpense').getContext('2d');
+          ctx2.beginPath();
+          ctx2.moveTo(200, 200);
+          ctx2.lineTo(500, 800);
+          ctx2.stroke;
+          ctx2.closePath();
     };
     
 </script>
