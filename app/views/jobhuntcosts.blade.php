@@ -158,6 +158,18 @@ foreach($expenses as $expense) {
           ctx.lineTo(30, 48);
           ctx.stroke();
           ctx.closePath();
+
+          ctx.beginPath();
+          ctx.moveTo(60, 48);
+          ctx.lineTo(80, 48);
+          ctx.stroke();
+          ctx.closePath();
+
+          ctx.beginPath();
+          ctx.moveTo(110, 48);
+          ctx.lineTo(130, 48);
+          ctx.stroke();
+          ctx.closePath();
     };
     
 </script>
