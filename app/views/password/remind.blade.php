@@ -35,7 +35,7 @@
 
  
   <p>{{ Form::label('email', 'Email') }}
-  {{ Form::text('email') }}&nbsp;&nbsp;&nbsp;{{ Form::submit('Submit') }}</p>
+  {{ Form::text('email', '', array('class'=>'form-control'))}} <br>{{ Form::submit('Submit') }}</p>
  
 {{ Form::close() }}
 
