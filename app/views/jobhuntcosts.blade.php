@@ -113,7 +113,8 @@ foreach($expenses as $expense) {
                                   var mouseY = event.clientY;
                                   status.innerHTML=parseInt(mouseX) +" | " +parseInt(mouseY);
                                   if (mouseY>parseInt((685-<?php echo $tair/$counter; ?>)) && 
-                                  mouseY<parseInt((685-<?php echo $tair/$counter; ?>))+70 && mouseX>154 && mouseX<204) { /////
+                                  mouseY<parseInt((685-<?php echo $tair/$counter; ?>))+70 && mouseX>154 && mouseX<204) { 
+                                      document.body.style.cursor = "pointer";
                                       alert('<?php echo $tair/$counter; ?>'); ////////////////////
                                   } /////////////////////////////////////////////////////////////
                                       //alert('<?php echo $tink/$counter; ?>'); ////////////////////
