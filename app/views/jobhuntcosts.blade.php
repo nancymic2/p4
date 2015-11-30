@@ -148,10 +148,16 @@ foreach($expenses as $expense) {
           }
           //ctx2=document.getElementById('allexpense').getContext('2d');
           ctx.beginPath();
-          ctx.moveTo(0, 28);
-          ctx.lineTo(0, 350);
+          ctx.moveTo(20, 28);
+          ctx.lineTo(20, 350);
           ctx.stroke();
           ctx.closePath(); 
+
+          ctx.beginPath();
+          ctx.moveTo(10, 48);
+          ctx.lineTo(40, 48);
+          ctx.stroke();
+          ctx.closePath();
     };
     
 </script>
