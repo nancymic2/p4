@@ -149,7 +149,7 @@ foreach($expenses as $expense) {
           //ctx2=document.getElementById('allexpense').getContext('2d');
           ctx.beginPath();
           ctx.moveTo(0, 28);
-          ctx.lineTo(96, 65);
+          ctx.lineTo(0, 300);
           ctx.stroke();
           ctx.closePath(); 
     };
