@@ -19,21 +19,20 @@
                  <script type="text/javascript">
                         window.onload=function(){
                             var d =  new Date();
-                            var month = d.getMonth()+1;
-                            var somedate=(month +" " + d.getDate()+" " + d.getFullYear());//alert(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
                             var history = localStorage.getItem("login");
 
                             if (history){
-                                 if (history!=somedate) {
+                                
                                     //alert("You last logged in on: " + history);
                                     logalert=document.getElementById('alert');
                                     logalert.style.display="block";
                                     logalert.innerHTML="You last logged in on: " + history;
                                     logalert.addEventListener('click', function(){
                                                                 logalert.style.display="none";
-                                                             }});
+                                                             });
                                 }
-
+                            var month = d.getMonth()+1;
+                            var somedate=(month +" " + d.getDate()+" " + d.getFullYear());//alert(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
                             window.localStorage.setItem("login", somedate);   
 
                         };
