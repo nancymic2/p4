@@ -24,8 +24,12 @@
 
                             if (history){
                                     alert("You last logged in on: " + history);
-                                    document.getElementById('alert').style.display="block";
-                                    document.getElementById('alert').innerHTML="You last logged in on: " + history;
+                                    logalert=document.getElementById('alert');
+                                    logalert.style.display="block";
+                                    logalert.innerHTML="You last logged in on: " + history;
+                                    logalert.addEventListener('click', hideit(){
+                                        logalert.style.display="none";
+                                    });
                                 }
                             var month = d.getMonth()+1;
                             var somedate=(month +" " + d.getDate()+" " + d.getFullYear());
