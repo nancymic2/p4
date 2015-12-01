@@ -27,7 +27,7 @@
                                     logalert=document.getElementById('alert');
                                     logalert.style.display="block";
                                     logalert.innerHTML="You last logged in on: " + history;
-                                    logalert.addEventListener('click', hideit(){
+                                    logalert.addEventListener('click', function(){
                                         logalert.style.display="none";
                                     });
                                 }
