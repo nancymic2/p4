@@ -39,7 +39,7 @@
 <h2>&nbsp;</h2>
 <h2>Please log in</h2>
 
-<div id="alert" style="z-index: 90; padding: 10px; border-radius: 12px; width: 300px; height: 100px; color: white; background-color: #9172EC; display:none; position: relative; top: 10px; left: 130px;">Your hsfhakldd</div>
+<div id="alert" style="z-index: 90; padding: 10px; border-radius: 12px; width: 300px; height: 100px; color: white; background-color: #9172EC; display:none; position: relative; top: 10px; left: 230px;">Your hsfhakldd</div>
 
 
 
