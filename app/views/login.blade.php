@@ -19,10 +19,11 @@
                  <script type="text/javascript">
                         window.onload=function(){
                             var d =  new Date();
-                            //alert(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
+                            var month = d.getMonth()+1;
+                            var somedate=(month +" " + d.getDate()+" " + d.getFullYear());//alert(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
                             var history = localStorage.getItem("login");
 
-                            if (history){
+                            if (history&&somedeate!=somedate){
                                     //alert("You last logged in on: " + history);
                                     logalert=document.getElementById('alert');
                                     logalert.style.display="block";
@@ -31,8 +32,7 @@
                                                                 logalert.style.display="none";
                                                              });
                                 }
-                            var month = d.getMonth()+1;
-                            var somedate=(month +" " + d.getDate()+" " + d.getFullYear());
+
                             window.localStorage.setItem("login", somedate);   
 
                         };
