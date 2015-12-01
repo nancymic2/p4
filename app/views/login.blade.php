@@ -25,6 +25,7 @@
                             if (history){
                                     alert("You last logged in on: " + history);
                                     document.getElementById('alert').style.display="block";
+                                    document.getElementById('alert').innerHTML="You last logged in on: " + history;
                                 }
                             var month = d.getMonth()+1;
                             var somedate=(month +" " + d.getDate()+" " + d.getFullYear());
@@ -38,7 +39,7 @@
 <h2>&nbsp;</h2>
 <h2>Please log in</h2>
 
-<div id="alert" style="z-index: 90; width: 300px; height: 100px; background-color: #dddddd; display:none; position: relative; top: 10px; left: 10px;">Your hsfhakldd</div>
+<div id="alert" style="z-index: 90; border-radius: 15px; width: 300px; height: 100px; background-color: #dddddd; display:none; position: relative; top: 10px; left: 10px;">Your hsfhakldd</div>
 
 
 
