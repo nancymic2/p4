@@ -23,14 +23,15 @@
                             var somedate=(month +" " + d.getDate()+" " + d.getFullYear());//alert(d.getMonth() +" " + d.getDate()+" " + d.getFullYear());
                             var history = localStorage.getItem("login");
 
-                            if (history&&somedeate!=somedate){
+                            if (history){
+                                 if (history!=somedate) {
                                     //alert("You last logged in on: " + history);
                                     logalert=document.getElementById('alert');
                                     logalert.style.display="block";
                                     logalert.innerHTML="You last logged in on: " + history;
                                     logalert.addEventListener('click', function(){
                                                                 logalert.style.display="none";
-                                                             });
+                                                             }});
                                 }
 
                             window.localStorage.setItem("login", somedate);   
