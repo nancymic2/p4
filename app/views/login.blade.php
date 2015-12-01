@@ -38,7 +38,7 @@
 <h2>&nbsp;</h2>
 <h2>Please log in</h2>
 
-<div id="alert" style="z-index: 90; width: 400px; height: 200px; background-color: #dddddd; display:none; position: relative; top: 10px; left: 10px;">Your hsfhakldd</div>
+<div id="alert" style="z-index: 90; width: 300px; height: 100px; background-color: #dddddd; display:none; position: relative; top: 10px; left: 10px;">Your hsfhakldd</div>
 
 
 
