@@ -39,7 +39,18 @@
         });
     });
 </script>
-
+<script>
+function isValid(pw) { 
+    var field=document.getElementById('password');
+    value=field.value;
+    if (/\D/.test(value)){
+        if (/\W/.test(value)){
+        alert ('Please enter only numbers and letters');
+        field.value='';
+        } 
+    }
+}
+</script>
 
 {{ Form::open(array('url' => '/signup')) }}
 
@@ -54,8 +65,9 @@
     Email&nbsp;<br>
     {{ Form::text('email', '', array('class'=>'form-control'))}}  &nbsp; <br>
 
-    <span>Password:</span>
-    {{ Form::text('password', '', array('class'=>'form-control', 'id'=> 'password'))}} &nbsp; 
+    <span>Password: (only letters and numbers permited</span>
+   <!-- {{ Form::text('password', '', array('class'=>'form-control', 'id'=> 'password'))}} &nbsp; -->
+    <input name="password" id="password" type="password" class="form-control" onblur="isValid('password');">
 
     <div id="progressbar"><div id="progress"></div></div>
 
