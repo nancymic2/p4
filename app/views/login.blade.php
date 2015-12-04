@@ -80,7 +80,10 @@ function isValid(pw) {
     <!--{{ Form::text('password', '', array('class'=>'form-control'))}}--> &nbsp; <br><br>
 
     <!--{{ Form::submit('Log In', array('class'=>'btn btn-success'))}}   -->
-    <input type="submit" value="submit" class="btn-success">
+    <?php
+    $submitbutton='<input type="submit" id="login" value="Log In" class="btn-success">';
+    echo $submitbutton;
+    ?>
 
 {{ Form::close() }}
 
