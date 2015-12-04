@@ -63,10 +63,6 @@ function isValid(pw) {
                 logalert.style.display="none";
             });
 
-
-
-
-        //alert ('Please enter only numbers and letters');
         field.value='';
         } 
     }
@@ -83,7 +79,8 @@ function isValid(pw) {
 
     <!--{{ Form::text('password', '', array('class'=>'form-control'))}}--> &nbsp; <br><br>
 
-    {{ Form::submit('Log In', array('class'=>'btn btn-success'))}}   
+    <!--{{ Form::submit('Log In', array('class'=>'btn btn-success'))}}   -->
+    <input type="submit" value="submit" class="btn-success">
 
 {{ Form::close() }}
 
