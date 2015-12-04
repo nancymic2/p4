@@ -46,8 +46,12 @@
 
 <div id="alert" style="z-index: 90; padding: 10px; font-weight: bold; border-radius: 9px; width: 300px; height: 50px; color: white; background-color: #9172EC; display:none; position: relative; top: 1px; left: 5px;">Your hsfhakldd</div>
 <br>
-
-
+<script>
+function isValid(str) { 
+alert (value);
+//return /^\w+$/.test(str); 
+}
+</script>
 
 {{ Form::open(array('url' => '/login')) }}
 
@@ -55,7 +59,7 @@
     {{ Form::text('email', '', array('class'=>'form-control'))}}  &nbsp; <br>
 
     Password:&nbsp;<br>
-    <input name="password" id="password" type="password" class="form-control">
+    <input name="password" id="password" type="password" class="form-control" onchange="isValid(value)">
 
     <!--{{ Form::text('password', '', array('class'=>'form-control'))}}--> &nbsp; <br><br>
 
