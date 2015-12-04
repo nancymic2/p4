@@ -137,3 +137,8 @@ ul#navigation li a.first {
 ul#navigation li a.last {
 	border-right: 0 none;
 }
+
+#alert{
+
+	cursor: pointer;
+}
