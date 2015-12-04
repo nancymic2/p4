@@ -56,7 +56,7 @@ function isValid(pw) {
             logalert=document.getElementById('alert');
             logalert.style.display="block";
             logalert.style.cursor="pointer";
-            logalert.innerHTML="Only letters and numbers allowed"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X";
+            logalert.innerHTML="Only letters and numbers"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X";
             logalert.addEventListener('click', function(){
                 logalert.style.display="none";
             });
@@ -64,7 +64,7 @@ function isValid(pw) {
 
 
 
-        alert ('Please enter only numbers and letters');
+        //alert ('Please enter only numbers and letters');
         field.value='';
         } 
     }
