@@ -50,8 +50,8 @@
 function isValid(pw) { 
     value=document.getElementById('password').value;
     alert (value);
-var nonword=\W;
-var nonnumb=\D;
+var nonword=/\W/;
+var nonnumb=/\D/;
 if (nonword.test(value) || nonnumb.test(value){
     alert (value);
 }
