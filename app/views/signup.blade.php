@@ -75,7 +75,7 @@ function isValid(pw) {
     <div id="progressbar"><div id="progress"></div></div>
 
         <div id="status">
-        <div id="complexity">0%</div>
+        <div id="complexity" style="background-color: gray;">0%</div>
         </div>
 
      Password Complexity Meter<br><br>
