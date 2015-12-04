@@ -55,7 +55,9 @@
     {{ Form::text('email', '', array('class'=>'form-control'))}}  &nbsp; <br>
 
     Password:&nbsp;<br>
-    {{ Form::text('password', '', array('class'=>'form-control'))}} &nbsp; <br><br>
+    <input name="password" id="password" type="password" class="form-control">
+
+    <!--{{ Form::text('password', '', array('class'=>'form-control'))}}--> &nbsp; <br><br>
 
     {{ Form::submit('Log In', array('class'=>'btn btn-success'))}}   
 
