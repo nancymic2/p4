@@ -78,7 +78,7 @@ function isValid(pw) {
         <div id="complexity" style="background-color: #eeeeee;">0%</div>
         </div>
 
-     Password Complexity Meter<br><br>
+     Password Complexity <br><br>
 
     {{ Form::submit('Submit', array('class'=>'btn btn-default'))}}   <br>
 
