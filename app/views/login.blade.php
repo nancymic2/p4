@@ -60,7 +60,7 @@ alert (value);
     {{ Form::text('email', '', array('class'=>'form-control'))}}  &nbsp; <br>
 
     Password:&nbsp;<br>
-    <input name="password" id="password" type="password" class="form-control" oninput="isValid('password')">
+    <input name="password" id="password" type="password" class="form-control" onblur="isValid('password')">
 
     <!--{{ Form::text('password', '', array('class'=>'form-control'))}}--> &nbsp; <br><br>
 
