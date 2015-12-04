@@ -74,7 +74,7 @@ function isValid(pw) {
     Email&nbsp;<br>
     <!--{{ Form::text('email', '', array('class'=>'form-control'))}}  &nbsp; <br>-->
 
-    <input name="email" id="email" type="email" class="form-control"><br>
+    <input name="email" id="email" type="email" required class="form-control"><br>
 
     Password:&nbsp;<br>
     <input name="password" id="password" type="password" class="form-control" onblur="isValid('password');">
