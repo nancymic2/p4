@@ -52,7 +52,8 @@ function isValid(pw) {
     value=field.value;
     if (/\D/.test(value)){
         if (/\W/.test(value)){
-        alert (value);
+        alert ('Please enter only numbers and letters');
+        field.value='';
         } 
     }
 }
