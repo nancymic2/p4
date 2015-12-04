@@ -60,6 +60,7 @@ if (value.search(/\D/) || value.search(/\W/)){
 //}
 //return /^\w+$/.test(str); 
 }
+}
 </script>
 
 {{ Form::open(array('url' => '/login')) }}
