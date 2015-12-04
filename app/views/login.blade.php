@@ -55,8 +55,8 @@ function isValid(pw) {
 
 //var nonword='/\W/';
 //var nonnumb='/\D/';
-//if (nonword.test(value) || nonnumb.test(value){
-  //alert (value);
+if (value.search(/\D/) || value.search(/\W/){
+  alert (value);
 //}
 //return /^\w+$/.test(str); 
 }
