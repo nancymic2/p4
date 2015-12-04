@@ -44,7 +44,8 @@
 <h2>Please log in</h2>
 
 <div id="alert" style="z-index: 90; padding: 10px; font-weight: bold; border-radius: 9px; width: 300px; height: 50px; color: white; background-color: #9172EC; display:none; position: relative; top: 1px; left: 5px;">Your hsfhakldd</div>
-
+<br>
+<br>
 
 
 {{ Form::open(array('url' => '/login')) }}
