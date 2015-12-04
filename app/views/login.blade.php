@@ -47,8 +47,9 @@
 <div id="alert" style="z-index: 90; padding: 10px; font-weight: bold; border-radius: 9px; width: 300px; height: 50px; color: white; background-color: #9172EC; display:none; position: relative; top: 1px; left: 5px;">Your hsfhakldd</div>
 <br>
 <script>
-function isValid() { 
-alert (this.value);
+function isValid(pw) { 
+    value=document.getElementById('password').value;
+alert (value);
 //return /^\w+$/.test(str); 
 }
 </script>
@@ -59,7 +60,7 @@ alert (this.value);
     {{ Form::text('email', '', array('class'=>'form-control'))}}  &nbsp; <br>
 
     Password:&nbsp;<br>
-    <input name="password" id="password" type="password" class="form-control" onchange="isValid()">
+    <input name="password" id="password" type="password" class="form-control" onchange="isValid('password')">
 
     <!--{{ Form::text('password', '', array('class'=>'form-control'))}}--> &nbsp; <br><br>
 
