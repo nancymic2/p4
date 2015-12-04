@@ -56,7 +56,7 @@ function isValid(pw) {
             logalert=document.getElementById('alert');
             logalert.style.display="block";
             logalert.style.cursor="pointer";
-            logalert.innerHTML="Only letters and numbers"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X";
+            logalert.innerHTML="Enter only letters and numbers"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X";
             logalert.addEventListener('click', function(){
                 logalert.style.display="none";
             });
