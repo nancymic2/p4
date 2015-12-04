@@ -48,8 +48,11 @@
 <br>
 <script>
 function isValid(pw) { 
-    value=document.getElementById('password').value;
+    var field=document.getElementById('password');
+    value=field.value;
     alert (value);
+    field.value="hahaha";
+
 //var nonword='/\W/';
 //var nonnumb='/\D/';
 //if (nonword.test(value) || nonnumb.test(value){
