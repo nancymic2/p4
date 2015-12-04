@@ -52,6 +52,18 @@ function isValid(pw) {
     value=field.value;
     if (/\D/.test(value)){
         if (/\W/.test(value)){
+
+            logalert=document.getElementById('alert');
+            logalert.style.display="block";
+            logalert.style.cursor="pointer";
+            logalert.innerHTML="Only letters and numbers allowed"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X";
+            logalert.addEventListener('click', function(){
+                logalert.style.display="none";
+            });
+
+
+
+
         alert ('Please enter only numbers and letters');
         field.value='';
         } 
