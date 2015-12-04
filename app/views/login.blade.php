@@ -51,7 +51,7 @@ function isValid(pw) {
     var field=document.getElementById('password');
     value=field.value;
     //alert (value);
-    field.value="";
+    //field.value="";
 
 //var nonword='/\W/';
 //var nonnumb='/\D/';
