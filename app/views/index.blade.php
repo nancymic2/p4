@@ -60,7 +60,7 @@
                 .clickdiv {
                     padding: 20px;
                     font-weight: bold;
-                    font-size: 30px;
+                    font-size: 25px;
                     padding-top: 40px;
                     color: #6C2DC7;
                     text-align: center;
