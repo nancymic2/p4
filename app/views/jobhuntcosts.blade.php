@@ -142,7 +142,11 @@ foreach($expenses as $expense) {
 //each time h = costs[i]
 //canvas.height is a const
 
-              ctx.fillRect(currx, canvas.height-h, width, h);  // x, y, width, height
+              ctx.fillRect(currx, canvas.height-h, width, h);  
+
+ctx.fillText(costs[i]);  ///added 12 5 547pm
+
+              // x, y, width, height
               currx+=width+10;
 
           }
