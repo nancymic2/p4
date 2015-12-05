@@ -28,10 +28,10 @@
   
 </p>
 </div><br>
-<div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"> </div>
-<div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
-    <div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
-        <div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
+<div style="background-color: #C3B6D7; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"> </div>
+<div style="background-color: #A2B2CD; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
+    <div style="background-color: #A2C7CD; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
+        <div style="background-color: #E6BEBC; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
     
 
 
