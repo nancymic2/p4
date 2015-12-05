@@ -48,7 +48,7 @@
 <br>
 <script>
 function isValid(pw) { 
-    //document.getElementById('login').style.visibility="visible";
+    document.getElementById('login').style.visibility="visible";
      logalert.style.visibility="hidden";
     var field=document.getElementById('password');
     value=field.value;
@@ -67,6 +67,7 @@ function isValid(pw) {
             });
 
         field.value='';
+        document.getElementById('login').style.visibility="hidden";
         } 
     }
 
