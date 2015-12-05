@@ -32,7 +32,7 @@
      function gothere(){
 
         this.style.backgroundColor="gray";
-        window.load(this.dataset.link);
+        window.location=this.dataset.link;
      }
       </script>
 
