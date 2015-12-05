@@ -24,14 +24,8 @@
 <p>test credentials: user test@test.com, password: testtest</p>
 <p>To see some data, try user: 4@5.com,  password: 123456
 <p>CareerTrax lets you keep track of 
-    <ul><li>your job appplications</li>
-        <li>your job listings</li>
-        <li>your contacts</li>
-        <li>your resumes</li>
-        <li>your expenses</li>
-        <li>important dates</li>
-        <li>your candidate system login info</li>
-    </ul>    
+   your job appplications, job listings, contacts, resumes, expenses, and all te information you collect when searching for a job.</li>
+  
 </p>
 </div><br>
 <div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"> </div>
