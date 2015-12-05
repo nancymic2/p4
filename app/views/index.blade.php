@@ -43,7 +43,7 @@
                     padding-top: 40px;
                 }
                 .clickdiv:hover {
-                    background-color: yellow;
+                    background-color: #ffffff;
                 }
                 </style>
 
