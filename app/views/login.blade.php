@@ -48,7 +48,7 @@
 <br>
 <script>
 function isValid(pw) { 
-    document.getElementById('login')style.visibility="visible";
+    document.getElementById('login').style.visibility="visible";
     var field=document.getElementById('password');
     value=field.value;
     if (/\D/.test(value)){
@@ -62,7 +62,7 @@ function isValid(pw) {
             logalert.innerHTML="Enter a valid password."+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X";
             logalert.addEventListener('click', function(){
             logalert.style.visibility="hidden";
-            document.getElementById('login')style.visibility="hidden";
+            document.getElementById('login').style.visibility="hidden";
             });
 
         field.value='';
