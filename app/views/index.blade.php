@@ -40,6 +40,7 @@
                     padding: 20px;
                     font-weight: bold;
                     font-size: 20px;
+                    padding-top: 40px;
                 }
                 </style>
 
