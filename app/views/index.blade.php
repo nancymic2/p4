@@ -18,7 +18,7 @@
                 <script>
      $(document).ready(function()
       { 
-        alert('hi');
+
           buttons=document.getElementsByClassName("clickdiv");
           for(var i=0;i<buttons.length;i++){
 
@@ -28,6 +28,11 @@
       
       } 
       );
+
+     function gothere(){
+
+        this.style.backgroundColor="gray";
+     }
       </script>
 
 <!--<div class="container" style="background-image: url('home.jpg'); margin-top: -40px; width: 100%; background-repeat: no-repeat;">-->
