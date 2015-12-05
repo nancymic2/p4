@@ -39,7 +39,7 @@
                      }
 
                      function hilite(){
-                        this.style.backgroundColor="yellow";
+                        this.style.backgroundColor="#FFFFC2";
                         this.style.width="148px";
                         this.style.height="148px";
                         this.style.boxShadow="2px 2px 1px #888888";
