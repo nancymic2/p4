@@ -48,6 +48,7 @@
 <br>
 <script>
 function isValid(pw) { 
+    document.getElementById('login')style.visibility="visible";
     var field=document.getElementById('password');
     value=field.value;
     if (/\D/.test(value)){
@@ -61,6 +62,7 @@ function isValid(pw) {
             logalert.innerHTML="Enter a valid password."+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X";
             logalert.addEventListener('click', function(){
             logalert.style.visibility="hidden";
+            document.getElementById('login')style.visibility="hidden";
             });
 
         field.value='';
@@ -82,10 +84,8 @@ function isValid(pw) {
     <!--{{ Form::text('password', '', array('class'=>'form-control'))}}--> &nbsp; <br><br>
 
     <!--{{ Form::submit('Log In', array('class'=>'btn btn-success'))}}   -->
-    <?php
-    $submitbutton='<input type="submit" id="login" value="Log In" class="btn-success">'; //make button go away??
-    echo $submitbutton;
-    ?>
+    <input type="submit" id="login" value="Log In" class="btn-success"> 
+  
 
 {{ Form::close() }}
 
