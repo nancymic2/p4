@@ -64,7 +64,7 @@
                     padding-top: 40px;
                     color: #6C2DC7;
                     text-align: center;
-                    border-radius: 33px;
+border-radius: 5px 20px 5px;
                 }
 
                 </style>
