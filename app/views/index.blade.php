@@ -50,6 +50,7 @@
                         this.style.width="150px";
                         this.style.height="150px";
                         this.style.boxShadow="10px 10px 5px #888888";
+                        this.style.margin="30px";
                      }
 
 
