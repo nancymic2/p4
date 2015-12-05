@@ -32,6 +32,7 @@
      function gothere(){
 
         this.style.backgroundColor="gray";
+        window.load(this.dataset.link);
      }
       </script>
 
@@ -47,7 +48,7 @@
   
 </p>
 </div><br>
-<div class="clickdiv" style="border: 1px solid gray; background-color: #C3B6D7; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"> </div>
+<div class="clickdiv" data-link= "/login"; style="border: 1px solid gray; background-color: #C3B6D7; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"> </div>
 <div class="clickdiv" style="border: 1px solid gray; background-color: #A2B2CD; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
     <div class="clickdiv" style="border: 1px solid gray; background-color: #A2C7CD; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
         <div class="clickdiv" style="border: 1px solid gray; background-color: #DCDEE9; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
