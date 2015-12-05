@@ -45,6 +45,8 @@
                      }
                     function oldcolor(){
                         this.style.backgroundColor=this.dataset.bgcolor;
+                        this.style.width="150px";
+                        this.style.height="150px";
                      }
 
 
