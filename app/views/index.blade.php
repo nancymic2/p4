@@ -22,7 +22,8 @@
                           buttons=document.getElementsByClassName("clickdiv");
                           for(var i=0;i<buttons.length;i++){
 
-                             buttons[i].addEventListener('mouseover', hilite, false);
+                              buttons[i].addEventListener('mouseover', hilite, false);
+                              buttons[i].addEventListener('mouseout', oldcolor, false);
 
                               buttons[i].addEventListener('click', gothere, false);
                               buttons[i].style.cursor="pointer";
@@ -39,6 +40,9 @@
 
                      function hilite(){
                         this.style.backgroundColor="yellow";
+                     }
+                    function oldcolor(){
+                        this.style.backgroundColor=this.dataset.bgcolor;
                      }
 
 
@@ -68,12 +72,12 @@
   
 </p>
 </div><br>
-<div class="clickdiv" data-link= "signup"; style="border: 1px solid gray; background-color: #C3B6D7; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Sign Up </div>
-        <div class="clickdiv" data-link= "login"; style="border: 1px solid gray; background-color: #eeeeee; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Log In</div>
+<div class="clickdiv" data-link= "signup"; data-bgcolor="#C3B6D7" style="border: 1px solid gray; background-color: #C3B6D7; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Sign Up </div>
+<div class="clickdiv" data-link= "login"; data-bgcolor="#eeeeee" style="border: 1px solid gray; background-color: #eeeeee; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Log In</div>
 
-<div class="clickdiv" data-link= "profile"; style="border: 1px solid gray; background-color: #A2B2CD; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Create a Profile</div>
-    <div class="clickdiv" data-link= "applications"; style="border: 1px solid gray; background-color: #A2C7CD; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Add a Job</div>
-        <div class="clickdiv" data-link= "recruiter"; style="border: 1px solid gray; background-color: #DCDEE9; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Add a Contact</div>
+<div class="clickdiv" data-link= "profile"; data-bgcolor="#A2B2CD" style="border: 1px solid gray; background-color: #A2B2CD; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Create a Profile</div>
+<div class="clickdiv" data-link= "applications"; data-bgcolor="#A2C7CD" style="border: 1px solid gray; background-color: #A2C7CD; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Add a Job</div>
+<div class="clickdiv" data-link= "recruiter"; data-bgcolor="#DCDEE9" style="border: 1px solid gray; background-color: #DCDEE9; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Add a Contact</div>
     
 
 
