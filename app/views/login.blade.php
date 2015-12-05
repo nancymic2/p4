@@ -27,7 +27,7 @@
                                     logalert=document.getElementById('alert');
                                     logalert.style.visibility="visible";
                                     logalert.style.cursor="pointer";
-                                    logalert.innerHTML="You last logged in on: " + history +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X";
+                                    logalert.innerHTML="You last logged in on: " + history;
                                     logalert.addEventListener('click', function(){
                                                                 logalert.style.visibility="hidden";
                                                              });
@@ -60,7 +60,7 @@ function isValid(pw) {
                 logalert.style.visibility="visible";
                 logalert.style.cursor="pointer";
             }
-            logalert.innerHTML="Enter a valid password."+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X";
+            logalert.innerHTML="Please nter a valid password.";
             logalert.addEventListener('click', function(){
             //logalert.style.visibility="hidden";
             //document.getElementById('login').style.visibility="hidden";
