@@ -44,7 +44,7 @@
 <h2>&nbsp;</h2>
 <h2>Please log in</h2>
 
-<div id="alert" style="z-index: 90; padding: 10px; font-weight: bold; border-radius: 9px; width: 300px; height: 50px; color: white; background-color: #9172EC; display:none; position: relative; top: 1px; left: 5px;">Your hsfhakldd</div>
+<div id="alert" style="z-index: 90; padding: 10px; font-weight: bold; border-radius: 9px; width: 300px; height: 50px; color: white; background-color: #9172EC; visibility: hidden; position: relative; top: 1px; left: 5px;">Your hsfhakldd</div>
 <br>
 <script>
 function isValid(pw) { 
@@ -54,13 +54,13 @@ function isValid(pw) {
         if (/\W/.test(value)){
 
             logalert=document.getElementById('alert');
-            if (logalert.style.display=="none"){
-                logalert.style.display="block";
+            if (logalert.style.visibility=="hidden"){
+                logalert.style.visibility="visible";
                 logalert.style.cursor="pointer";
             }
             logalert.innerHTML="Enter a valid password."+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X";
             logalert.addEventListener('click', function(){
-            logalert.style.display="none";
+            logalert.style.visibility="hidden";
             });
 
         field.value='';
