@@ -61,13 +61,14 @@ function isValid(pw) {
             }
             logalert.innerHTML="Enter a valid password."+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X";
             logalert.addEventListener('click', function(){
-            logalert.style.visibility="hidden";
-            document.getElementById('login').style.visibility="hidden";
+            //logalert.style.visibility="hidden";
+            //document.getElementById('login').style.visibility="hidden";
             });
 
         field.value='';
         } 
     }
+    logalert.style.visibility="hidden";
 }
 </script>
 
