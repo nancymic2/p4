@@ -60,7 +60,7 @@ function isValid(pw) {
                 logalert.style.visibility="visible";
                 logalert.style.cursor="pointer";
             }
-            logalert.innerHTML="Please nter a valid password.";
+            logalert.innerHTML="Please enter a valid password.";
             logalert.addEventListener('click', function(){
             //logalert.style.visibility="hidden";
             //document.getElementById('login').style.visibility="hidden";
