@@ -22,6 +22,8 @@
                           buttons=document.getElementsByClassName("clickdiv");
                           for(var i=0;i<buttons.length;i++){
 
+                             buttons[i].addEventListener('mouseover', hilite, false);
+
                               buttons[i].addEventListener('click', gothere, false);
                               buttons[i].style.cursor="pointer";
                           }
@@ -34,6 +36,13 @@
                         this.style.backgroundColor="#5EFB6E";
                         window.location=this.dataset.link;
                      }
+
+                     function hilite(){
+                        this.style.backgroundColor="yellow";
+                     }
+
+
+
                 </script>
                 <style type="text/css">
                 .clickdiv {
