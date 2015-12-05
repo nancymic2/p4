@@ -15,6 +15,18 @@
                     $('input.date').datepicker({dateFormat: 'yy-mm-dd'});
                     })
                 </script>
+                <script>
+     $(document).ready(function()
+      { 
+          buttons=document.getElementsByClassName("clickdiv");
+          for(var i=0;i<buttons.length;i++){
+
+              buttons[i].addEventListener('click', gothere, false);
+          }
+      
+      } 
+      );
+      </script>
 
 <!--<div class="container" style="background-image: url('home.jpg'); margin-top: -40px; width: 100%; background-repeat: no-repeat;">-->
 <div class="container">
@@ -28,10 +40,10 @@
   
 </p>
 </div><br>
-<div style="border: 1px solid gray; background-color: #C3B6D7; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"> </div>
-<div style="background-color: #A2B2CD; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
-    <div style="background-color: #A2C7CD; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
-        <div style="background-color: #DCDEE9; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
+<div class="clickdiv" style="border: 1px solid gray; background-color: #C3B6D7; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"> </div>
+<div class="clickdiv" style="border: 1px solid gray; background-color: #A2B2CD; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
+    <div class="clickdiv" style="border: 1px solid gray; background-color: #A2C7CD; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
+        <div class="clickdiv" style="border: 1px solid gray; background-color: #DCDEE9; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
     
 
 
