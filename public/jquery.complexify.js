@@ -173,6 +173,18 @@
         complexity = (complexity / MAX_COMPLEXITY) * 100;
         complexity = (complexity > 100) ? 100 : complexity;
 
+        ////////////////////////////////nm 12 5 15
+
+        pwtest=document.getElementById('complexity');
+
+        if (pwtest<50) {
+        	pwtest.style.backgroundColor="red";
+        }
+        else
+        	pwtest.style.backgroundColor="green";
+
+        /////////////////////////////////////////////
+
         callback.call(this, valid, complexity);
       }
 
