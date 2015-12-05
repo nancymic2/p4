@@ -195,7 +195,7 @@
                 else if (complexity>=32) {
         	pwtest.style.backgroundColor="#CCFB5D";
         }
-                else if (complexity>=40) {
+                else (complexity>=40) {
         	pwtest.style.backgroundColor="green";
         }
 
