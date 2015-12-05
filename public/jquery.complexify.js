@@ -177,10 +177,10 @@
 
         pwtest=document.getElementById('complexity');
 
-        if (complexity<50) {
+        if (complexity<30) {
         	pwtest.style.backgroundColor="red";
         }
-        else if (complexity>=50) {
+        else if (complexity>=30) {
         	pwtest.style.backgroundColor="green";
         }
 
