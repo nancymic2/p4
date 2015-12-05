@@ -18,6 +18,7 @@
                 <script>
      $(document).ready(function()
       { 
+        alert('hi');
           buttons=document.getElementsByClassName("clickdiv");
           for(var i=0;i<buttons.length;i++){
 
