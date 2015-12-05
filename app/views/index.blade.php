@@ -42,6 +42,7 @@
                         this.style.backgroundColor="yellow";
                         this.style.width="148px";
                         this.style.height="148px";
+                        this.style.boxShadow="7px 7px 3px #888888";
                      }
                     function oldcolor(){
                         this.style.backgroundColor=this.dataset.bgcolor;
