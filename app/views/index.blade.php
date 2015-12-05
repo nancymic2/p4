@@ -65,6 +65,7 @@
                     color: #6C2DC7;
                     text-align: center;
                     border-radius: 5px 40px 5px;
+                        text-shadow: 2px 2px 8px #FF0000;
                 }
 
                 </style>
