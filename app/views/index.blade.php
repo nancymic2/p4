@@ -61,6 +61,7 @@
                     font-size: 20px;
                     padding-top: 40px;
                     color: #6C2DC7;
+                    text-align: center;
                 }
 
                 </style>
