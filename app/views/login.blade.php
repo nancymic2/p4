@@ -84,7 +84,7 @@ function isValid(pw) {
     <!--{{ Form::text('password', '', array('class'=>'form-control'))}}--> &nbsp; <br><br>
 
     <!--{{ Form::submit('Log In', array('class'=>'btn btn-success'))}}   -->
-    <input type="submit" id="login" value="Log In" class="btn-success"> 
+    <input type="submit" id="login" value="Log In" class="btn-success" style="visibility: visible;"> 
   
 
 {{ Form::close() }}
