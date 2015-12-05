@@ -54,7 +54,7 @@
                     font-weight: bold;
                     font-size: 20px;
                     padding-top: 40px;
-                    color: white;
+                    color: #6C2DC7;
                 }
 
                 </style>
