@@ -22,6 +22,7 @@
           for(var i=0;i<buttons.length;i++){
 
               buttons[i].addEventListener('click', gothere, false);
+              buttons[i].style.cursor="pointer";
           }
       
       } 
