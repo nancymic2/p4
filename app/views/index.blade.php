@@ -16,7 +16,7 @@
                     })
                 </script>
 
-<div class="container" style="background-image: url("home.jpg"); repeat: no-repeat; ">
+<div class="container" style="background-image: url('home.jpg');">
     <div class="col-sm-6">
 <h2>&nbsp;</h2>
 <h2>Welcome to CareerTrax!</h2>
