@@ -40,6 +40,8 @@
 
                      function hilite(){
                         this.style.backgroundColor="yellow";
+                        this.style.width="148px";
+                        this.style.height="148px";
                      }
                     function oldcolor(){
                         this.style.backgroundColor=this.dataset.bgcolor;
