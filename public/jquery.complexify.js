@@ -177,12 +177,29 @@
 
         pwtest=document.getElementById('complexity');
 
-        if (complexity<30) {
+        if (complexity<7) {
         	pwtest.style.backgroundColor="red";
         }
-        else if (complexity>=30) {
+        else if (complexity>=12) {
+        	pwtest.style.backgroundColor="#F88017";
+        }
+                else if (complexity>=16) {
+        	pwtest.style.backgroundColor="#FBB917";
+        }
+                else if (complexity>=21) {
+        	pwtest.style.backgroundColor="#FFDB58";
+        }
+                else if (complexity>=26) {
+        	pwtest.style.backgroundColor="#FFFF00";
+        }
+                else if (complexity>=32) {
+        	pwtest.style.backgroundColor="#CCFB5D";
+        }
+                else if (complexity>=40) {
         	pwtest.style.backgroundColor="green";
         }
+
+
 
         /////////////////////////////////////////////
 
