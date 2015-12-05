@@ -77,7 +77,7 @@ function isValid(pw) {
     <input name="email" id="email" type="email" required placeholder="Enter a valid email address" class="form-control"><br>
 
     Password:&nbsp;<br>
-    <input name="password" id="password" type="password" class="form-control" onblur="isValid('password');">
+    <input name="password" id="password" type="password" class="form-control" onmouseout="isValid('password');">
 
     <!--{{ Form::text('password', '', array('class'=>'form-control'))}}--> &nbsp; <br><br>
 
