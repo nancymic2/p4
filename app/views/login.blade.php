@@ -25,11 +25,11 @@
                                 
                                     //alert("You last logged in on: " + history);
                                     logalert=document.getElementById('alert');
-                                    logalert.style.display="block";
+                                    logalert.style.visibility="visible";
                                     logalert.style.cursor="pointer";
                                     logalert.innerHTML="You last logged in on: " + history +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X";
                                     logalert.addEventListener('click', function(){
-                                                                logalert.style.display="none";
+                                                                logalert.style.visibility="hidden";
                                                              });
                                 }
                             var month = d.getMonth()+1;
