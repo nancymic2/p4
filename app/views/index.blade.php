@@ -34,11 +34,11 @@
     </ul>    
 </p>
 </div><br>
-<div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left;"> </div>
-<div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left;"></div>
-    <div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left;"></div>
-        <div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left;"></div>
-            <div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left;"></div>
+<div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"> </div>
+<div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
+    <div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
+        <div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;"></div>
+    
 
 
 
