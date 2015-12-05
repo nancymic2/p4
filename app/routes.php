@@ -782,8 +782,8 @@ Route::post('/company',
             $company->website   = Input::get('website');
             $company->username    = Input::get('username');
 
-            $encrypted = Input::get('pasword');
-            
+
+
             $company->pasword    = Input::get('pasword');
 
 
