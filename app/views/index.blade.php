@@ -18,7 +18,13 @@
 
 <!--<div class="container" style="background-image: url('home.jpg'); margin-top: -40px; width: 100%; background-repeat: no-repeat;">-->
 <div class="container">
+<!--     <div class="col-sm-6">  -->
 
+<div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left;">
+<div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left;">
+    <div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left;">
+        <div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left;">
+            <div style="background-color: red; margin: 40px; width: 150px; height: 150px; float: left;">
 <h2>&nbsp;</h2>
 <h2>Welcome to CareerTrax!</h2>
 <p>test credentials: user test@test.com, password: testtest</p>
