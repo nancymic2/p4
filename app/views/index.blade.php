@@ -42,6 +42,9 @@
                     font-size: 20px;
                     padding-top: 40px;
                 }
+                .clickdiv:hover {
+                    background-color: yellow;
+                }
                 </style>
 
 <!--<div class="container" style="background-image: url('home.jpg'); margin-top: -40px; width: 100%; background-repeat: no-repeat;">-->
