@@ -49,6 +49,7 @@
 <script>
 function isValid(pw) { 
     //document.getElementById('login').style.visibility="visible";
+     logalert.style.visibility="hidden";
     var field=document.getElementById('password');
     value=field.value;
     if (/\D/.test(value)){
@@ -68,7 +69,7 @@ function isValid(pw) {
         field.value='';
         } 
     }
-    logalert.style.visibility="hidden";
+
 }
 </script>
 
