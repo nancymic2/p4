@@ -43,7 +43,7 @@
                         this.style.width="148px";
                         this.style.height="148px";
                         this.style.boxShadow="2px 2px 1px #888888";
-                        this.style.margin="32px";
+                        this.style.margin="40px";
                      }
                     function oldcolor(){
                         this.style.backgroundColor=this.dataset.bgcolor;
