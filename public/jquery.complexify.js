@@ -179,29 +179,25 @@
 
         if (complexity<7) {
         	pwtest.style.backgroundColor="red";
-        
-         if (complexity>=12) {
+        }
+         else if (complexity<=12) {
         	pwtest.style.backgroundColor="#F88017";
-        
-                 if (complexity>=16) {
+        }
+               else if (complexity<=16) {
         			pwtest.style.backgroundColor="#FBB917";
-        
-	                 if (complexity>=21) {
+        }
+	                else if (complexity<=21) {
 	        			pwtest.style.backgroundColor="#FFDB58";
-        
-		                 if (complexity>=26) {
+        }
+		                else if (complexity<=26) {
 		        			pwtest.style.backgroundColor="#FFFF00";
-        
-			                 if (complexity>=32) {
+        }
+			                else if (complexity<=32) {
 			        			pwtest.style.backgroundColor="#CCFB5D";
-        					}
-  					     }
-					}
-				}
-			}
-		}
+        }
+  					    
 
-          else (complexity>=40) {
+          else  {
         	 pwtest.style.backgroundColor="green";
         }
 
