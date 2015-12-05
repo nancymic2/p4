@@ -64,6 +64,7 @@
                     padding-top: 40px;
                     color: #6C2DC7;
                     text-align: center;
+                    border-radius: 33px;
                 }
 
                 </style>
@@ -80,7 +81,7 @@
   
 </p>
 </div><br>
-<div class="clickdiv" data-link= "signup"; data-bgcolor="#C3B6D7" style="border: 8px solid gray; background-color: #C3B6D7; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Sign Up </div>
+<div class="clickdiv" data-link= "signup"; data-bgcolor="#C3B6D7" style="border: 1px solid gray; background-color: #C3B6D7; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Sign Up </div>
 <div class="clickdiv" data-link= "login"; data-bgcolor="#eeeeee" style="border: 1px solid gray; background-color: #eeeeee; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Log In</div>
 
 <div class="clickdiv" data-link= "profile"; data-bgcolor="#A2B2CD" style="border: 1px solid gray; background-color: #A2B2CD; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Create a Profile</div>
