@@ -16,7 +16,7 @@
                     })
                 </script>
 
-<div class="container" style="background-image: url('home.jpg'); margin-left: -0px; width: 100%;">
+<div class="container" style="background-image: url('home.jpg'); width: 100%; background-repeat: no-repeat;">
     <div class="col-sm-6">
 <h2>&nbsp;</h2>
 <h2>Welcome to CareerTrax!</h2>
