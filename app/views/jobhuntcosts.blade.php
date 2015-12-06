@@ -108,7 +108,7 @@ foreach($expenses as $expense) {
           var ctx=canvas.getContext('2d');
           var status=document.getElementById('status');
           var xlist = new Array();
-          ctx.font = 'bold 12pt';
+
 
 
           canvas.addEventListener('mousemove', function(event) {
@@ -148,6 +148,7 @@ foreach($expenses as $expense) {
               ctx.fillStyle='#88B9EE';  ////
               ctx.fillRect(currx, canvas.height-h, width, h); 
               ctx.fillStyle='#000000';   ////
+              ctx.font="13px Arial";
               ctx.fillText(parseInt(costs[i]), currx+20, canvas.height-h);  ///////////////////just added
 
  ///added 12 5 547pm
