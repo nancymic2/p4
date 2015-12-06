@@ -134,7 +134,7 @@ foreach($expenses as $expense) {
           var base=200;
 
 
-          ctx.fillStyle='#88B9EE';
+          //ctx.fillStyle='#88B9EE';
 
           for (var i=0; i<costs.length; i++) {
               var h=costs[i];  //height of bar
@@ -144,9 +144,10 @@ foreach($expenses as $expense) {
 //currx each time = currx + width*i + 10*i
 //each time h = costs[i]
 //canvas.height is a const
-
-              ctx.fillRect(currx, canvas.height-h, width, h);  
-              ctx.fillText(parseInt(costs[i]), width, h);  ///////////////////just added
+              ctx.fillStyle='#88B9EE';  ////
+              ctx.fillRect(currx, canvas.height-h, width, h); 
+              ctx.fillStyle='#000000';   ////
+              ctx.fillText(parseInt(costs[i]), h, width);  ///////////////////just added
 
  ///added 12 5 547pm
 
@@ -219,3 +220,6 @@ foreach($expenses as $expense) {
 </div>
 </div>
 @stop
+
+
+
