@@ -146,6 +146,7 @@ foreach($expenses as $expense) {
 //canvas.height is a const
 
               ctx.fillRect(currx, canvas.height-h, width, h);  
+              ctx.fillText(costs[i], width, h);  ///////////////////just added
 
  ///added 12 5 547pm
 
@@ -208,15 +209,6 @@ foreach($expenses as $expense) {
           ctx.stroke();
           ctx.closePath();
 
-ctx.font = "30px Verdana";
-// Create gradient
-var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
-gradient.addColorStop("0", "magenta");
-gradient.addColorStop("0.5", "blue");
-gradient.addColorStop("1.0", "red");
-// Fill with gradient
-ctx.fillStyle = gradient;
-ctx.fillText("Big smile!", 10, 90);
 
 
     };
