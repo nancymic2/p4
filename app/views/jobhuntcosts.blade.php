@@ -219,7 +219,7 @@ foreach($expenses as $expense) {
     };
     
 </script>
-<h2>Based on <span style="background-color: pink;"><?php echo $counter; ?></span> users</h2>
+<h2>Based on <span style="background-color: pink;"><?php echo $counter; ?></span> user expense records.</h2>
 <br><br>
 </div>
 </div>
