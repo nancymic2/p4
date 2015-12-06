@@ -385,11 +385,19 @@ echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quick
           var currx=50;
           var base=200;
 
-          ctx.fillStyle='#52D017';
+          //ctx.fillStyle='#52D017';  //12 6 15
 
           for (var i=0; i<scores.length; i++) {
               var h=scores[i];
-              ctx.fillRect(currx, canvas.height-h, width, h);
+              //ctx.fillRect(currx, canvas.height-h, width, h);  // 12 6 15
+
+              ctx.fillStyle='#88B9EE';  ////
+              ctx.fillRect(currx, canvas.height-h, width, h); 
+              ctx.fillStyle='#000000';   ////
+              ctx.font="13px Arial";
+              ctx.fillText(parseInt(scores[i]), currx+18, canvas.height-h); 
+
+
               currx+=width+16;
 
           }
