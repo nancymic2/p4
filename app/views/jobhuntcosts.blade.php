@@ -18,7 +18,7 @@
 
 <div class="container">
 <div class="col-sm-6">
-<h2>Average annual costs per category for all users combined</h2>
+<h2>Average annual costs per category for all <?php echo $counter; ?> users combined</h2>
 
 <?php
 
