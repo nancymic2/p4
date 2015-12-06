@@ -213,7 +213,7 @@ foreach($expenses as $expense) {
           ctx.closePath();
 
 
-
+alert(counter);
     };
     
 </script>
