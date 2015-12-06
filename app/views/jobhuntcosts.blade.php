@@ -144,7 +144,7 @@ foreach($expenses as $expense) {
 
               ctx.fillRect(currx, canvas.height-h, width, h);  
 
-ctx.fillText(costs[i]);  ///added 12 5 547pm
+ ///added 12 5 547pm
 
               // x, y, width, height
               currx+=width+10;
