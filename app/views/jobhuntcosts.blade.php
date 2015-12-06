@@ -108,6 +108,7 @@ foreach($expenses as $expense) {
           var ctx=canvas.getContext('2d');
           var status=document.getElementById('status');
           var xlist = new Array();
+          ctx.font = 'bold 12pt';
 
 
           canvas.addEventListener('mousemove', function(event) {
