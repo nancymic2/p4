@@ -146,7 +146,7 @@ foreach($expenses as $expense) {
 //canvas.height is a const
 
               ctx.fillRect(currx, canvas.height-h, width, h);  
-              ctx.fillText(costs[i], width, h);  ///////////////////just added
+              ctx.fillText(parseInt(costs[i]), width, h);  ///////////////////just added
 
  ///added 12 5 547pm
 
