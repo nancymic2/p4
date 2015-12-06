@@ -18,7 +18,7 @@
 
 <div class="container">
 <div class="col-sm-6">
-<h2>Average annual costs per category for all <?php echo $counter; ?> users combined</h2>
+<h2>Average annual costs per category for all  users combined</h2>
 
 <?php
 
@@ -213,11 +213,11 @@ foreach($expenses as $expense) {
           ctx.closePath();
 
 
-alert('<?php echo $counter; ?>');
+//alert('<?php echo $counter; ?>');
     };
     
 </script>
-
+<h2>Based on <?php echo $counter; ?> users</h2>
 <br><br>
 </div>
 </div>
