@@ -125,6 +125,9 @@ foreach($expenses as $expense) {
                                         //alert(parseInt((685-<?php echo $tair/$counter; ?>)));
 
                                   });
+
+
+
           var costs=[<?php echo $tink/$counter; ?>,<?php echo $tair/$counter; ?>, <?php echo $tmeals/$counter; ?>, <?php echo $thardware/$counter; ?>, <?php echo $tportfolio/$counter; ?>, <?php echo $tgas/$counter; ?>, <?php echo $tclothing/$counter; ?>, <?php echo $tentertainment/$counter; ?>, <?php echo $tphone/$counter; ?>, <?php echo $thotel/$counter; ?>, <?php echo $ttrain/$counter; ?>, <?php echo $tink/$counter; ?>, <?php echo $tpaper/$counter; ?>];
           var width=50;
           var currx=50; ///start left i.e. X coord
@@ -204,6 +207,15 @@ foreach($expenses as $expense) {
           ctx.lineTo(30, 328);
           ctx.stroke();
           ctx.closePath();
+
+
+
+
+          var c=document.getElementById("allexpese");
+var ctx=c.getContext("2d");
+
+ctx.font="20px Georgia";
+ctx.fillText("Hello World!",10,50);
     };
     
 </script>
