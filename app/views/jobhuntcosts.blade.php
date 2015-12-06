@@ -147,7 +147,7 @@ foreach($expenses as $expense) {
               ctx.fillStyle='#88B9EE';  ////
               ctx.fillRect(currx, canvas.height-h, width, h); 
               ctx.fillStyle='#000000';   ////
-              ctx.fillText(parseInt(costs[i]), canvas.height-h, currx+50);  ///////////////////just added
+              ctx.fillText(parseInt(costs[i]), currx+50, canvas.height-h);  ///////////////////just added
 
  ///added 12 5 547pm
 
