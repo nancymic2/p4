@@ -110,11 +110,13 @@ foreach($expenses as $expense) {
           var xlist = new Array();
 
 
-
-          canvas.addEventListener('mousemove', function(event) {
-                                  var mouseX = event.clientX;
+/////////////////////////USED FOR COORDINATES ///////////////////////////////////////////////
+         /*canvas.addEventListener('mousemove', function(event) {
+                                  var mouseX = event.clientX;       
                                   var mouseY = event.clientY;
                                   status.innerHTML=parseInt(mouseX) +" | " +parseInt(mouseY);
+          */
+//////////////////////////////////////////UNUSED///////////////////////////////////////
                                   /*if (mouseY>parseInt((685-<?php echo $tair/$counter; ?>)) && 
                                   mouseY<parseInt((685-<?php echo $tair/$counter; ?>))+170 && mouseX>200 && mouseX<260) { 
                                       document.body.style.cursor = "pointer";
@@ -124,9 +126,9 @@ foreach($expenses as $expense) {
                                       //alert('<?php echo $tink/$counter; ?>'); ////////////////////
                                         //alert(685-<?php echo $tair/$counter; ?>);
                                         //alert(parseInt((685-<?php echo $tair/$counter; ?>)));
-
-                                  });
-
+//////////////////////////////////////////END UNUSED///////////////////////////////////////
+                                //  }); ///USED FOR COORDINATES
+           
 
 
           var costs=[<?php echo $tgas/$counter; ?>, <?php echo $tair/$counter; ?>, <?php echo $ttrain/$counter; ?>, <?php echo $thotel/$counter; ?>, <?php echo $tmeals/$counter; ?>, <?php echo $tstamps/$counter; ?>, <?php echo $tink/$counter; ?>, <?php echo $tpaper/$counter; ?>, <?php echo $thardware/$counter; ?>, <?php echo $tportfolio/$counter; ?>, <?php echo $tphone/$counter; ?>, <?php echo $tclothing/$counter; ?>, <?php echo $tentertainment/$counter; ?>];
