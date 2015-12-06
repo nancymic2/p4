@@ -470,7 +470,7 @@ echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quick
           ctx.stroke();
           ctx.closePath();
     };
-    
+    document.write(scores.length);
 </script>
 
 <br><br>
