@@ -136,7 +136,7 @@ foreach($expenses as $expense) {
           var currx=50; ///start left i.e. X coord
           var base=200;
 
-
+          var labels=["Gas", "Airfare", "Train", "Hotel", "Meals", "Postage", "Ink", "Paper", "Hardware", "Portfolio", "Phone", "Clothing", "Entertain" ]
           //ctx.fillStyle='#88B9EE';
 
           for (var i=0; i<costs.length; i++) {
@@ -151,7 +151,11 @@ foreach($expenses as $expense) {
               ctx.fillRect(currx, canvas.height-h, width, h); 
               ctx.fillStyle='#000000';   ////
               ctx.font="13px Arial";
-              ctx.fillText(parseInt(costs[i]), currx+18, canvas.height-h);  ///////////////////just added
+              ctx.fillText(parseInt(costs[i]), currx+18, canvas.height-h);
+              ctx.font="17px Arial";
+              ctx.fillText(labels[i]), currx+18, 200);
+
+                ///////////////////just added
 
  ///added 12 5 547pm
 
