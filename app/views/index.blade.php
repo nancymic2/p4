@@ -78,12 +78,13 @@
 <p>test credentials: user test@test.com, password: testtest</p>
 <p>To see some data, try user: 4@5.com,  password: 123456
 <p>CareerTrax lets you keep track of 
-   your job appplications, job listings, contacts, resumes, expenses, and all te information you collect when searching for a job.</li>
+   your job appplications, job listings, contacts, resumes, expenses, and all the information you collect when searching for a job.</p>
+   <p>Watch the video below to see why you need CareerTrax.</p>
 
 </p>
 </div><br>
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/yWgx5a3Su8o" frameborder="0" allowfullscreen></iframe><br>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/o2iHedm10xg" frameborder="0" allowfullscreen></iframe> <br>
 <div class="clickdiv" data-link= "signup"; data-bgcolor="#C3B6D7" style="border: 1px solid gray; background-color: #C3B6D7; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Sign Up </div>
 <div class="clickdiv" data-link= "login"; data-bgcolor="#eeeeee" style="border: 1px solid gray; background-color: #eeeeee; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Log In</div>
 
