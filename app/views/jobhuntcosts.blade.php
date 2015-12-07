@@ -158,7 +158,7 @@ nbsp;Clothing&nbsp;&nbsp;&nbsp;&nbsp;Entertain</span>-->
               ctx.font="13px Arial";
               ctx.fillText(parseInt(costs[i]), currx+18, canvas.height-h-40);
               ctx.font="14px Arial";
-              ctx.fillText(labels[i], currx+14, canvas.height-10);
+              ctx.fillText(labels[i], currx+11, canvas.height-10);
 
                 ///////////////////just added
 
