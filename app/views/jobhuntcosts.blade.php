@@ -156,7 +156,7 @@ nbsp;Clothing&nbsp;&nbsp;&nbsp;&nbsp;Entertain</span>-->
               ctx.fillRect(currx, canvas.height-h-30, width, h); 
               ctx.fillStyle='#000000';   ////
               ctx.font="13px Arial";
-              ctx.fillText(parseInt(costs[i]), currx+18, canvas.height-h-20);
+              ctx.fillText(parseInt(costs[i]), currx+18, canvas.height-h-40);
               ctx.font="14px Arial";
               ctx.fillText(labels[i], currx+14, canvas.height-10);
 
