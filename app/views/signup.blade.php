@@ -46,6 +46,13 @@ function isValid(pw) {
     if (/\D/.test(value)){
         if (/\W/.test(value)){
         alert ('Please enter only numbers and letters');
+
+
+$('#myModal').modal('show');
+
+
+
+        
         field.value='';
         } 
     }
@@ -85,6 +92,22 @@ function isValid(pw) {
     {{ Form::close() }}
 
 
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is a small modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <br>
  <a class="btn btn-warning" href="/login">Or log in</a> <br> &nbsp;
