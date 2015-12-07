@@ -143,7 +143,7 @@ foreach($expenses as $expense) {
               var h=costs[i];  //height of bar
 
 //make i number of new arrays here and store 4 vals of each bar and call them arrayi
-alert(labels[i]);
+//alert(labels[i]);
 //currx each time = currx + width*i + 10*i
 //each time h = costs[i]
 //canvas.height is a const
@@ -152,8 +152,8 @@ alert(labels[i]);
               ctx.fillStyle='#000000';   ////
               ctx.font="13px Arial";
               ctx.fillText(parseInt(costs[i]), currx+18, canvas.height-h);
-              //ctx.font="17px Arial";
-              //ctx.fillText(labels[i]), currx+18, 200);
+              ctx.font="17px Arial";
+              ctx.fillText(labels[i]), currx+18, 0);
 
                 ///////////////////just added
 
