@@ -404,7 +404,7 @@ echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quick
           }
            ctx.beginPath();
           ctx.moveTo(20, 28);
-          ctx.lineTo(20, 370);
+          ctx.lineTo(20, 420);
           ctx.stroke();
           ctx.closePath(); 
 
