@@ -373,7 +373,6 @@ echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quick
 
 <canvas id="allexpense" width="1110" height="450" style="margin-left: 78px;"></canvas>
 
-<span style="margin-left: 130px; font-size: 17px; font-weight: bold;">Gas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Airfare &nbsp;&nbsp;&nbsp;Train&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hotel&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Meals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Postage &nbsp;&nbsp;Ink &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paper &nbsp;&nbsp;Hardware &nbsp;&nbsp;Portfolio&nbsp;&nbsp; Phone &nbsp;&nbsp;Clothing &nbsp;&nbsp;Entertain</span>
 <!--<br><a class="btn btn-success" onclick="window.history.back()">Cancel</a>-->
 
 <script type="text/javascript"> 
@@ -384,7 +383,7 @@ echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quick
           var width=60;
           var currx=50;
           var base=200;
-
+          var labels=["Gas", "Air", "Train", "Hotel", "Meals", "Post", "Ink", "Paper", "Hardwr", "Portfolio", "Phone", "Clothing", "Entertain"]
           //ctx.fillStyle='#52D017';  //12 6 15
 
           for (var i=0; i<scores.length; i++) {
@@ -392,10 +391,12 @@ echo '<a href="http://help.webconnex.com/article/196-import-csv-files-into-quick
               //ctx.fillRect(currx, canvas.height-h, width, h);  // 12 6 15
 
               ctx.fillStyle='#88B9EE';  ////
-              ctx.fillRect(currx, canvas.height-h, width, h); 
+              ctx.fillRect(currx, canvas.height-h-30, width, h); 
               ctx.fillStyle='#000000';   ////
               ctx.font="13px Arial";
-              ctx.fillText(parseInt(scores[i]), currx+18, canvas.height-h); 
+              ctx.fillText(parseInt(costs[i]), currx+18, canvas.height-h-40);
+              ctx.font="14px Arial";
+              ctx.fillText(labels[i], currx+9, canvas.height-10); 
 
 
               currx+=width+16;
