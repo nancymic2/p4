@@ -171,7 +171,7 @@ nbsp;Clothing&nbsp;&nbsp;&nbsp;&nbsp;Entertain</span>-->
           //ctx2=document.getElementById('allexpense').getContext('2d');
           ctx.beginPath();
           ctx.moveTo(20, 28);
-          ctx.lineTo(20, 350);
+          ctx.lineTo(20, 335);
           ctx.stroke();
           ctx.closePath(); 
 
