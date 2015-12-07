@@ -141,7 +141,7 @@ nbsp;Clothing&nbsp;&nbsp;&nbsp;&nbsp;Entertain</span>-->
           var currx=50; ///start left i.e. X coord
           var base=200;
 
-          var labels=["Gas", "Air", "Train", "Hotel", "Meals", "Post", "Ink", "Paper", "Hardware", "Portfolio", "Phone", "Clothing", "Entertain"]
+          var labels=["Gas", "Air", "Train", "Hotel", "Meals", "Post", "Ink", "Paper", "Hardwr", "Portfolio", "Phone", "Clothing", "Entertain"]
           //ctx.fillStyle='#88B9EE';
 
           for (var i=0; i<costs.length; i++) {
