@@ -148,7 +148,7 @@ foreach($expenses as $expense) {
 //each time h = costs[i]
 //canvas.height is a const
               ctx.fillStyle='#88B9EE';  ////
-              ctx.fillRect(currx, canvas.height-h, width, h); 
+              ctx.fillRect(currx, canvas.height-h-30, width, h); 
               ctx.fillStyle='#000000';   ////
               ctx.font="13px Arial";
               ctx.fillText(parseInt(costs[i]), currx+18, canvas.height-h);
