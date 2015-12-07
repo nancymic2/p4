@@ -153,7 +153,7 @@ foreach($expenses as $expense) {
               ctx.font="13px Arial";
               ctx.fillText(parseInt(costs[i]), currx+18, canvas.height-h);
               ctx.font="17px Arial";
-              ctx.fillText(labels[i]), currx+18, 0);
+              ctx.fillText(labels[i]), currx+18, canvas.height+h);
 
                 ///////////////////just added
 
