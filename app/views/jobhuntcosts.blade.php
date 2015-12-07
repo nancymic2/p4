@@ -217,11 +217,11 @@ nbsp;Clothing&nbsp;&nbsp;&nbsp;&nbsp;Entertain</span>-->
           ctx.stroke();
           ctx.closePath();
 
-          ctx.beginPath();
+          /*ctx.beginPath();
           ctx.moveTo(10, 328);
           ctx.lineTo(30, 328);
           ctx.stroke();
-          ctx.closePath();
+          ctx.closePath(); */
 
 
 //alert('<?php echo $counter; ?>');
