@@ -69,7 +69,7 @@
         </li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View/Edit<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/completedapps">Your Job Applications</a></li>
             <li><a href="/choose_resume">Your Resumes</a></li>
@@ -79,7 +79,7 @@
 
           </ul>
         </li>
-        <li class="dropdown">
+       <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/completedapps">Your Jobs</a></li>
@@ -89,7 +89,7 @@
             <li><a href="/yourcosts">Your Expenses</a></li>
    
           </ul>
-        </li>
+        </li>-->
 
                 <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
