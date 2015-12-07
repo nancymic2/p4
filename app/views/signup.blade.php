@@ -5,11 +5,8 @@
 @section ('signup')
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  
+
+
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
                         <script src="jquery.knob.js"></script>
                 <link href="/css/layout.css" rel="stylesheet">
@@ -54,12 +51,9 @@ function isValid(pw) {
         alert ('Please enter only numbers and letters');
 
 
-$('#myModal').modal('show');
+//$('#myModal').modal('show');
 
-
-
-
-        field.value='';
+       field.value='';
         } 
     }
 }
@@ -97,7 +91,7 @@ $('#myModal').modal('show');
 
     {{ Form::close() }}
 
-
+<!--
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
@@ -114,7 +108,7 @@ $('#myModal').modal('show');
       </div>
     </div>
   </div>
-
+-->
 <br>
  <a class="btn btn-warning" href="/login">Or log in</a> <br> &nbsp;
 </div>
