@@ -75,11 +75,9 @@
 <!--     <div class="col-sm-6">  -->
 
 <div style="width: 100%"><h2>Welcome to CareerTrax!</h2>
-<p>test credentials: user test@test.com, password: testtest</p>
-<p>To see some data, try user: 4@5.com,  password: 123456
-<p>CareerTrax lets you keep track of 
-   your job appplications, job listings, contacts, resumes, expenses, and all the information you collect when searching for a job.</p>
-   <p>Watch the video below to see why you need CareerTrax.</p>
+
+
+   
 
 </p>
 </div><br>
