@@ -75,7 +75,7 @@
 <!--     <div class="col-sm-6">  -->
 
 
- <img src="hp2.png" style="margin: 30px;" class="img-responsive"><img src="hp1.png" style="margin: 30px;" class="img-responsive"><img src="hp3.png" style="margin: 30px;" class="img-responsive">
+ <img src="hp2.png" style="margin: 30px;"><img src="hp1.png" style="margin: 30px;"><img src="hp3.png" style="margin: 30px;">
 <!--<iframe width="853" height="480" src="https://www.youtube.com/embed/o2iHedm10xg" frameborder="0" allowfullscreen></iframe> <br>
 <div class="clickdiv" data-link= "signup"; data-bgcolor="#C3B6D7" style="border: 1px solid gray; background-color: #C3B6D7; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Sign Up </div>
 <div class="clickdiv" data-link= "login"; data-bgcolor="#eeeeee" style="border: 1px solid gray; background-color: #eeeeee; margin: 30px; width: 150px; height: 150px; float: left; box-shadow: 10px 10px 5px #888888;">Log In</div>
