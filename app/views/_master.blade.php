@@ -102,14 +102,7 @@
          
           </ul>
         </li>
-
-
-      </ul>
-
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/logout">Log Out</a></li>
-        <li class="dropdown">
+<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Metrics<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/charter">Salary Charts</a></li>
@@ -118,6 +111,13 @@
 
           </ul>
         </li>
+
+      </ul>
+
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/logout">Log Out</a></li>
+        
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
