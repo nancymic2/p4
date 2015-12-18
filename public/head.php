@@ -112,7 +112,7 @@
 
           </ul>
         </li>
-
+   <li><a href="/logout">Log Out</a></li>
       </ul>
 
 
