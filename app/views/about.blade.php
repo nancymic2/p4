@@ -49,7 +49,7 @@ Take a look at the video below. You'll see the problem we all have keeping our d
 </ol>
 <h3>Give CareerTrax a spin and get your job hunt on track!</h3>
 
-
+<a class="btn btn-warning" href="/signup">Sign up!</a> <br><br>
 
 </div>
 </div>
