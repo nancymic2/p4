@@ -47,7 +47,7 @@ Take a look at the video below. You'll see the problem we all have keeping our d
     <li>Get google calendar reminders for your interview appointments</li>
     <li>And lots more!</li>
 </ol>
-<h3>Give CareerTrax a spin and get yuor job hunt on track!</h3>
+<h3>Give CareerTrax a spin and get your job hunt on track!</h3>
 
 
 
