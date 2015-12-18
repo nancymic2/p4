@@ -29,6 +29,27 @@ Take a look at the video below. You'll see the problem we all have keeping our d
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/o2iHedm10xg" frameborder="0" allowfullscreen></iframe> <br>
 
+<br>
+<h3>So sign up and get organized</h3>
+<ol>
+    <li>Sign up</li>
+    <li>Create a profile</li>
+    <li>Add your first job
+        <ol><li>Add the company to the database so you can easily add other jobs there later</li>
+            <li>Add a link to you resume and all the information about it so you can point to it again</li>
+            <li>Add the job</li>
+        </ol>
+    </li>
+    <li>Add expenses and associate them with a job. For example, any travel, postage, entertainment expenses related to that job appication</li>
+    <li>Keep track of your expenses with reporting</li>
+    <li>Download Excel file expense reports</li>
+    <li>Download Excel file for yuor job applications, in case you need to report on your search</li>
+    <li>Get google calendar reminders for your interview appointments</li>
+    <li>And lots more!</li>
+</ol>
+<h3>Give CareerTrax a spin and get yuor job hunt on track!</h3>
+
+
 
 </div>
 </div>
