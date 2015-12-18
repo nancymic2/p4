@@ -113,7 +113,7 @@
         </li>
 
       </ul>
-   <li><a href="/logout">Log Out</a></li>
+
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/logout">Log Out</a></li>
