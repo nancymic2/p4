@@ -18,6 +18,14 @@
 <div class="container">
     <div class="col-sm-6">
 <h2>&nbsp;</h2>
+<h2>Welcome to CareerTrax</h2>
+
+When you're looking for a job, whether you're unemployed or just shopping around, there's a lot of information you'll collect. It's likely that you'll collect
+more than you expected. And it is not always apparent that you can use this information in the future<br>
+Have you ever lost a hard drive with all your resumes on it or wish you remembered a job for which you interviewed in the past?<br>
+Do you wish you had kept track of all your job hunt expenses when tax time came around?<br>
+<br>
+Take a look at the video below. You'll see the problem we all have keeping our data organized, and what you can do to get on track! <br><br>
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/o2iHedm10xg" frameborder="0" allowfullscreen></iframe> <br>
 
