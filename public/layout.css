@@ -20,7 +20,7 @@ body{
     margin: 0px;
     padding: 0px;
     text-rendering: optimizelegibility;
-    width: 1vw !important;
+    max-width: 800px !important;
 }
 body.layout-default {}
 body.layout-document {
