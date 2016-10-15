@@ -8,7 +8,7 @@
 **Git URL [https://github.com/nancymic2/p4.git](https://github.com/nancymic2/p4.git)**
 
 + Project 4 is a website and database for keeping track of your activities during a job search.
-It features operations for:
+<!--It features operations for:
 	+ creating records for completed job applications
 	+ creating records for new posted jobs
 	+ creating records for resumes
@@ -63,6 +63,6 @@ CRUD operations are:
 	+ I might encrypt the job site password field. The career trax password is of course hashed
 
 
-
+-->
 
 ***
