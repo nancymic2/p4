@@ -27,10 +27,10 @@ more than you expected. And it is not always apparent that you can use this info
 Have you ever lost a hard drive with all your resumes on it or wish you remembered a job for which you interviewed in the past?<br>
 Do you wish you had kept track of all your job hunt expenses when tax time came around?<br>
 <br>
-Take a look at the video below. You'll see the problem we all have keeping our data organized, and what you can do to get on track! <br><br>
+<!--Take a look at the video below. You'll see the problem we all have keeping our data organized, and what you can do to get on track! <br><br>
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/o2iHedm10xg" frameborder="0" allowfullscreen></iframe> <br>
-
+-->
 <br>
 <h3>So sign up and get organized</h3>
 <ol>
