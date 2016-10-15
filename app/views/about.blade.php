@@ -16,7 +16,9 @@
                 </script>
 
 <div class="container">
-    <div class="col-sm-6">
+<div class="col-sm-4">
+</div>
+    <div class="col-sm-8">
 <h2>&nbsp;</h2>
 <h2>Welcome to CareerTrax</h2>
 
